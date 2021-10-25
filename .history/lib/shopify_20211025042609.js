@@ -80,6 +80,4 @@ export async function getAllProducts() {
   const slugs = response.data.products.edges
     ? response.data.products.edges
     : [];
-
-   return slugs;
 }

@@ -62,8 +62,11 @@ export async function getProductsInCollection() {
   return allProducts;
 }
 
+
+
 export async function getAllProducts() {
-  const query = `
+
+   const query = `
    {
       products(first: 25) {
         edges {
@@ -76,10 +79,9 @@ export async function getAllProducts() {
     }
     `;
 
-  const response = await ShopifyData(query);
-  const slugs = response.data.products.edges
-    ? response.data.products.edges
-    : [];
-
-   return slugs;
+    const response = await ShopifyData(query);
+    const slugs = response.data.collectionByHandle.products.edges
+      ? response.data.collectionByHandle.products.edges
+      : [];
+  
 }

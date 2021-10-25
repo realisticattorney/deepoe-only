@@ -1,7 +1,7 @@
 import { getAllProducts } from '../../lib/shopify';
 
 const Product = () => {
-  //   console.log(paths);
+  console.log(paths);
   return <div>Yep</div>;
 };
 
@@ -18,13 +18,3 @@ export async function getStaticPaths() {
     fallback: false,
   };
 }
-
-// export async function getStaticProps({ params }) {
-//   const product = await getAllProducts(params.handle);
-
-//   return {
-//     props: {
-//       product: product.node,
-//     },
-//   };
-// }

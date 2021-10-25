@@ -19,12 +19,12 @@ export async function getStaticPaths() {
   };
 }
 
-// export async function getStaticProps({ params }) {
-//   const product = await getAllProducts(params.handle);
+export async function getStaticProps({ params }) {
+  const product = await getAllProducts(params.handle);
 
-//   return {
-//     props: {
-//       product: product.node,
-//     },
-//   };
-// }
+  return {
+    props: {
+      product: product.node,
+    },
+  };
+}

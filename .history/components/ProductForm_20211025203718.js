@@ -39,16 +39,11 @@ const ProductForm = ({ product }) => {
     <div className="rounded-2xl p-4 shadow-lg flex-col flex w-full">
       <h2 className="text-2xl font-bold">{product.title}</h2>
       <span className="pb-6">
-        {formatter.format(product.variants.edges[0].node.priceV2.amount)}
+        {formatter.format(product.variant.edges[0].node.priceV2.amount)}
       </span>
       {product.options.map(({ name, values }) => {
-        <ProductOptions
-          key={`key-${name}`}
-          name={name}
-          values={values}
-          selectedOptions={selectedOptions}
-        />;
-      })}
+         <ProductOptions key={`key-${}`} />
+      })}) }
     </div>
   );
 };

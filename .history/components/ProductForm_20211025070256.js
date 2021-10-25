@@ -5,9 +5,9 @@ const ProductForm = ({ product }) => {
 
   const allVariantOptions = product.variants.edges?.map((variant) => {
     const allOptions = {};
-    variant.node.selectedOptions.map((item) => {
+    variant.node.selectedOptions.map(item => {
       allOptions[item.name] = item.value;
-    });
+    })
 
     return {
       id: variant.node.id,

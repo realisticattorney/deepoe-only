@@ -5,10 +5,9 @@ const ProductForm = ({ product }) => {
 
   const allVariantOptions = product.variants.edges?.map((variant) => {
     const allOptions = {};
-    variant.node.selectedOptions.map((item) => {
-      allOptions[item.name] = item.value;
+    variant.node.selectedOptions.map(item => {
+      allOptions[option.name] = option.value;
     });
-
     return {
       id: variant.node.id,
       title: product.title,
@@ -22,9 +21,8 @@ const ProductForm = ({ product }) => {
   });
 
   const defaultValues = {};
-
   product.options.map((item) => {
-    defaultValues[item.name] = item.values[0];
+    defaultValues[item.name] = item.values[0].value;
   });
 
   const [selectedVariant, setSelectedVariant] = useState(allVariantOptions[0]);

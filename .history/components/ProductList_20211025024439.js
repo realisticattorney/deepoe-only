@@ -7,7 +7,7 @@ const ProductList = ({ products }) => {
       </h2>
       <div className="grid grid-cols-1 gap-y-10 gap-x-6">
          {products.map(product => (
-            product.node.handle
+            
          ))}
       </div>
     </div>

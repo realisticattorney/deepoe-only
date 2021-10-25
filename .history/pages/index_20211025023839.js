@@ -13,7 +13,6 @@ export default function Home({ products }) {
       {/* {products.map(({ node }) => (
         
       ))} */}
-      <ProductList products={products} />
     </div>
   );
 }

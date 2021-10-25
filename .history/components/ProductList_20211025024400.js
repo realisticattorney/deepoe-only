@@ -5,11 +5,7 @@ const ProductList = ({ products }) => {
       <h2 className="text-2xl font-extrabold text-gray-900 mb-6">
          Products
       </h2>
-      <div className="grid grid-cols-1 gap-y-10 gap-x-6">
-         {products.map(product => (
-            product.node.handle
-         ))}
-      </div>
+      <div className=""></div>
     </div>
     </div>
   );

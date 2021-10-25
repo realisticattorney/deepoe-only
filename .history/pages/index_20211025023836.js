@@ -11,9 +11,8 @@ export default function Home({ products }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* {products.map(({ node }) => (
-        
+        <ProductList key={node.id} product={node} />
       ))} */}
-      <ProductList products={products} />
     </div>
   );
 }

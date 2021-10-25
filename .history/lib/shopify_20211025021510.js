@@ -50,6 +50,6 @@ export async function getProductsInCollection() {
     }`
     
    const response = await ShopifyData(query);
-   return response.data.collectionByHandle.products.edges;
+   
     
 }

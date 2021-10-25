@@ -25,31 +25,5 @@ async function ShopifyData(query) {
 }
 
 export async function getProductsInCollection() {
-   const query = `
-   {
-      collectionByHandle(handle: "frontpage"){
-        title
-        products(first: 25) {
-          edges{
-            node{
-                   id
-              title
-              handle
-              images(first: 5){
-                edges {
-                  node {
-                    originalSrc
-                    altText
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }`
-    
-   const response = await ShopifyData(query);
-   return response.data.collectionByHandle.products.edges;
-    
+   
 }

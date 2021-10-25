@@ -1,4 +1,4 @@
-import { getAllProducts, getProduct } from '../../lib/shopify';
+import { getAllProducts } from '../../lib/shopify';
 
 const Product = () => {
   //   console.log(paths);
@@ -20,10 +20,20 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-   const product = await getProduct(params.handle);
-   return {
-      props: {
-         product,
-      },
-   };
+   {
+      product(handle: "player-ready") {
+        id
+        title
+        handle
+        description
+        images(first: 5) {
+          edges{
+            node{
+              originalSrc	
+              altText
+            }
+          }
+        }
+      }
+    }
 }

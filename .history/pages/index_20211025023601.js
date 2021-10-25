@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import { getProductsInCollection } from '../lib/shopify';
-import ProductList from '../components/ProductList';
+import ProductList
 
 export default function Home({ products }) {
+
   console.log(products);
   return (
     <div className="">
@@ -10,9 +11,12 @@ export default function Home({ products }) {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {products.map(({ node }) => (
-        <ProductList key={node.id} product={node} />
-      ))}
+      <ul>
+        { products.map(({node}) => (
+          <li>
+            {node.title}
+            </li>))}
+      </ul>
     </div>
   );
 }
@@ -21,6 +25,6 @@ export async function getStaticProps() {
   const products = await getProductsInCollection();
 
   return {
-    props: { products },
+    props: { products},
   };
 }

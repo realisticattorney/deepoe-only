@@ -8,8 +8,7 @@ const ProductCard = ({ product }) => {
 
    
    return (
-   <Link
-      href={`/product/handle`}>
+   <Link>
       <a className="group">
          <div className="w-full bg-gray-200 rounded-3xl overflow-hidden">
             <div className="relative group-hover:opacity-75 h-72">
@@ -18,7 +17,7 @@ const ProductCard = ({ product }) => {
                   alt={altText}
                   layout="fill"
                   objectFit="cover"
-
+                  
                   />
             </div>
          </div>

@@ -1,0 +1,1 @@
+const domain = process.env.SHOPIFY_DOMAIN;

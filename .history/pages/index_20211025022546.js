@@ -6,17 +6,17 @@ export default function Home({ products }) {
 
   console.log(products);
   return (
-    <div className="">
+    <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <ul>
-        { products.map(({node}) => (
-          <li>
-            {node.title}
-            </li>))}
-      </ul>
+      <main>
+        { products.map(product => (
+          <div className="flex flex-col items-center justify-center min-h-screen py-2">
+            {product}
+            </div>))}
+      </main>
     </div>
   );
 }

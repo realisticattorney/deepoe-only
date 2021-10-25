@@ -25,7 +25,7 @@ async function ShopifyData(query) {
 }
 
 export async function getProductsInCollection() {
-  const query = `
+   const query = `
    {
       collectionByHandle(handle: "frontpage"){
         title
@@ -47,12 +47,11 @@ export async function getProductsInCollection() {
           }
         }
       }
-    }`;
+    }`
+    
+   const response = await ShopifyData(query);
+   const all response.data.collectionByHandle.products.edges ? response.data.collectionByHandle.products.edges : [];
 
-  const response = await ShopifyData(query);
-  const allProducts = response.data.collectionByHandle.products.edges
-    ? response.data.collectionByHandle.products.edges
-    : [];
-
-  return allProducts;
+   
 }
+

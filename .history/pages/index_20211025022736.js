@@ -6,7 +6,7 @@ export default function Home({ products }) {
 
   console.log(products);
   return (
-    <div className="">
+    <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />

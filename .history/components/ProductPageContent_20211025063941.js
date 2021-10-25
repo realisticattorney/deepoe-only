@@ -1,8 +1,7 @@
-import Image from "next/image";
+import image from "next/image";
 
 const ProductPageContent = ({ product }) => {
-  return (
-  <div className="flex flex-col justify-between items-center space-y-8">
+  return (<div>
    {product.title}
   </div>);
 };

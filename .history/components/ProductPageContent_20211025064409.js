@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const ProductPageContent = ({ product }) => {
   return (
-    <div className="flex flex-col justify-between items-center space-y-8 max-w-6xl w-11/12 mx-auto">
+    <div className="flex flex-col justify-between items-center space-y-8 ">
       <div className="w-full max-w-md border bg-white rounded-2xl overflow-hidden shadow-lg">
         <div className="relative h-96 w-full">
           <Image

@@ -1,5 +1,4 @@
 import { useState, useContext } from 'react';
-import { formatter } from '../utils/helpers';
 
 const ProductForm = ({ product }) => {
   console.log(product);
@@ -24,27 +23,19 @@ const ProductForm = ({ product }) => {
 
   const defaultValues = {};
 
-  product.options.map((item) => {
+  product.options.map(item => {
     defaultValues[item.name] = item.values[0];
   });
 
   const [selectedVariant, setSelectedVariant] = useState(allVariantOptions[0]);
   const [selectedOptions, setSelectedOptions] = useState(defaultValues);
 
-  //   console.log('defaultValues', defaultValues);
-  //   console.log('variant options', allVariantOptions);
+//   console.log('defaultValues', defaultValues);
+//   console.log('variant options', allVariantOptions);
 
-  return (
-    <div className="rounded-2xl p-4 shadow-lg flex-col flex w-full">
-      <h2 className="text-2xl font-bold">{product.title}</h2>
-      <span className="pb-6">
-        {formatter.format(product.variant.edges[0].node.priceV2.amount)}
-      </span>
-      {product.options.map(({ name, values }) => {
-         <ProductOptions></ProductOptions>
-      })}) }
-    </div>
-  );
+  return (<div className="rounded-2xl p-4 shadow-lg flex-col flex w-full">
+   <h2 className="tex">{product.title}</h2>
+  </div>);
 };
 
 export default ProductForm;

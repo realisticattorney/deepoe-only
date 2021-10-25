@@ -41,7 +41,7 @@ const ProductForm = ({ product }) => {
         {formatter.format(product.variant.edges[0].node.priceV2.amount)}
       </span>
       {product.options.map(({ name, values }) => {
-         <ProductOptions></ProductOptions>
+         ProductOptions
       })}) }
     </div>
   );

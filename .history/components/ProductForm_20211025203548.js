@@ -40,9 +40,7 @@ const ProductForm = ({ product }) => {
       <span className="pb-6">
         {formatter.format(product.variant.edges[0].node.priceV2.amount)}
       </span>
-      {product.options.map(({ name, values }) => {
-         <ProductOptions></ProductOptions>
-      })}) }
+      {product.options.map(({ name, values }) => {})}) }
     </div>
   );
 };

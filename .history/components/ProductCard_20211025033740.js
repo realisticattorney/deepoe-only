@@ -4,7 +4,7 @@ import { formatter } from '../utils/helpers';
 const ProductCard = ({ product }) => {
   const { handle, title } = product.node;
   const { altText, originalSrc } = product.node.images.edges[0].node;
-  const price  = product.node.priceRange.minVariantPrice.amount;
+  const { price } = product.node.variants.edges[0].node;
 
   return (
     <Link href={`/product/handle`}>
@@ -20,7 +20,6 @@ const ProductCard = ({ product }) => {
           </div>
         </div>
         <h3 className="mt-4 text-lg font-medium text-gray-900">{title}</h3>
-        <p className="mt-1 text-sm text-gray-700">{price}</p>
       </a>
     </Link>
   );

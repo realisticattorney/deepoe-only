@@ -4,7 +4,7 @@ import { formatter } from '../utils/helpers';
 const ProductCard = ({ product }) => {
   const { handle, title } = product.node;
   const { altText, originalSrc } = product.node.images.edges[0].node;
-  const price  = product.node.priceRange.minVariantPrice.amount;
+  const { price } = product.node.priceRange.minVariantPrice.amount;
 
   return (
     <Link href={`/product/handle`}>

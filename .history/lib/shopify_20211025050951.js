@@ -128,7 +128,7 @@ export async function getProduct(handle) {
     }`;
 
   const response = await ShopifyData(query);
-  const product = response.data.product ? response.data.product : [];
+  const product = response.data.product ? ;
 
   return product;
 }

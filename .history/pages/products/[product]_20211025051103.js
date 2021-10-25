@@ -10,7 +10,7 @@ export default Product;
 export async function getStaticPaths() {
   const products = await getAllProducts();
   const paths = products.map((product) => ({
-    params: { product: String(product.node.handle) },
+    params: { handle: String(product.node.handle) },
   }));
 
   return {
@@ -20,7 +20,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-   const product = await getProduct(params.product);
+   const product = await getProduct(params.handle);
    return {
       props: {
          product,

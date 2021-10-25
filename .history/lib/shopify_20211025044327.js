@@ -85,10 +85,10 @@ export async function getAllProducts() {
 }
 
 
-export async function getProduct(handle) {
+export async function getProductByHandle(handle) {
    const query = `
     {
-         product(handle: "${handle}") {
+         productByHandle(handle: "${handle}") {
          title
          handle
          description
@@ -109,7 +109,7 @@ export async function getProduct(handle) {
       }`;
    
    const response = await ShopifyData(query);
-   const product = response.data.product;
+   const product = response.data.productByHandle;
    
    return product;
    }

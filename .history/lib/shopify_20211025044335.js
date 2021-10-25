@@ -85,10 +85,10 @@ export async function getAllProducts() {
 }
 
 
-export async function getProduct(handle) {
+export async function getProductByHandle(handle) {
    const query = `
     {
-         product(handle: "${handle}") {
+         productByHandle(handle: "${handle}") {
          title
          handle
          description

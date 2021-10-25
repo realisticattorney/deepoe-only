@@ -88,7 +88,7 @@ export async function getAllProducts() {
 export async function getProduct(handle) {
    const query = `
     {
-         product(handle: "${handle}") {
+         productByHandle(handle: "${handle}") {
          title
          handle
          description

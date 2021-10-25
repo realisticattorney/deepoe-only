@@ -85,31 +85,5 @@ export async function getAllProducts() {
 }
 
 
-export async function getProduct(handle) {
-   const query = `
-    {
-         product(handle: "${handle}") {
-         title
-         handle
-         description
-         priceRange{
-            minVariantPrice {
-               amount
-            }
-         }
-         images(first: 5){
-            edges {
-               node {
-               originalSrc
-               altText
-               }
-            }
-         }
-         }
-      }`;
-   
-   const response = await ShopifyData(query);
-   const product = response.data.product;
-   
-   return product;
-   }
+export async function getProductByHandle(handle) {
+  

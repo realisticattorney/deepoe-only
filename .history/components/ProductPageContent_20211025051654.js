@@ -2,7 +2,7 @@
 
 const ProductPageContent = ({ product }) => {
   return (<div>
-   {product.title}
+   
   </div>);
 };
 

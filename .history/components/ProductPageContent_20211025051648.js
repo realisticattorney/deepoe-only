@@ -2,8 +2,8 @@
 
 const ProductPageContent = ({ product }) => {
   return (<div>
-   {product.title}
-  </div>);
+
+  </div>;
 };
 
 export default ProductPageContent;

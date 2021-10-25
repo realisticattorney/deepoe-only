@@ -2,12 +2,10 @@ import ProductPageContent from '../../components/ProductPageContent';
 import { getAllProducts, getProduct } from '../../lib/shopify';
 
 const Product = ({ product }) => {
-  console.log(product);
-  return (
-    <div>
-      <ProductPageContent product={product} />
-    </div>
-  );
+    console.log(product);
+  return <div>
+     <ProductPageContent product={product} />
+  </div>;
 };
 
 export default Product;
@@ -25,10 +23,10 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const product = await getProduct(params.product);
-  return {
-    props: {
-      product,
-    },
-  };
+   const product = await getProduct(params.product);
+   return {
+      props: {
+         product,
+      },
+   };
 }

@@ -14,7 +14,7 @@ const ProductPageContent = ({ product }) => {
           />
         </div>
       </div>
-      <ProductForm product={product} />
+      <ProductForm product= />
     </div>
   );
 };

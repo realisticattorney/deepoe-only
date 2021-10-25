@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import ProductForm from './ProductForm';
 
 const ProductPageContent = ({ product }) => {
   return (
@@ -14,7 +13,7 @@ const ProductPageContent = ({ product }) => {
           />
         </div>
       </div>
-      <ProductForm product={product} />
+      
     </div>
   );
 };

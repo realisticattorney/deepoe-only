@@ -24,4 +24,3 @@ async function ShopifyData(query) {
   }
 }
 
-// export async function getProducts(productId) {

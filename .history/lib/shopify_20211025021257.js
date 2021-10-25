@@ -23,5 +23,3 @@ async function ShopifyData(query) {
     throw new Error('Product not fetched' + error);
   }
 }
-
-// export async function getProducts(productId) {

@@ -81,13 +81,14 @@ export async function getAllProducts() {
     ? response.data.products.edges
     : [];
 
-  return slugs;
+   return slugs;
 }
 
+
 export async function getProduct(handle) {
-  const query = `
+   const query = `
    {
-      product(handle: ${handle}) {
+      product(handle: "player-ready") {
         id
         title
         handle
@@ -126,9 +127,9 @@ export async function getProduct(handle) {
         }
       }
     }`;
-
-  const response = await ShopifyData(query);
-  const product = response.data.product;
-
-  return product;
-}
+   
+   const response = await ShopifyData(query);
+   const product = response.data.product;
+   
+   return product;
+   }

@@ -47,8 +47,8 @@ const ProductForm = ({ product }) => {
           key={`key-${name}`}
           name={name}
           values={values}
-          selectedOptions={selectedOptions}
-        />
+          selectedOptions={selectedOptios}
+        />;
       ))}
     </div>
   );

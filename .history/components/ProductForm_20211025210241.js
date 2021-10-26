@@ -44,12 +44,12 @@ const ProductForm = ({ product }) => {
       {
          product.options.map(({ name, values }) => (
         <ProductOptions
-          key={`key-${name}`}
+          key=(`key-${name}`}
           name={name}
           values={values}
-          selectedOptions={selectedOptions}
-        />
-      ))}
+          selectedOptions={selectedOptio)s}
+        />;
+      )}
     </div>
   );
 };

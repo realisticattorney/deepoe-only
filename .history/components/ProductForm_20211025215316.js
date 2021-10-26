@@ -3,7 +3,7 @@ import { formatter } from '../utils/helpers';
 import ProductOptions from './ProductOptions';
 
 const ProductForm = ({ product }) => {
-  console.log(product);
+//   console.log(product);
 
   const allVariantOptions = product.variants.edges?.map((variant) => {
     const allOptions = {};
@@ -56,7 +56,7 @@ const ProductForm = ({ product }) => {
           name={name}
           values={values}
           selectedOptions={selectedOptions}
-          setOptions={setOptions} //just passing the function to the ProductOptions component to be called when the user changes the selected option
+          setOptions={setOptions}
         />
       ))
       }

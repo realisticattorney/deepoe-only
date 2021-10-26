@@ -30,12 +30,12 @@ const ProductForm = ({ product }) => {
   });
 
   const [selectedVariant, setSelectedVariant] = useState(allVariantOptions[0]);
-  const [selectedOptions, setSelectedOptions] = useState(defaultValues); //this will re-render the component every time the user changes the selected option
+  const [selectedOptions, setSelectedOptions] = useState(defaultValues); //this will 
 
   //   console.log('defaultValues', defaultValues);
   //   console.log('variant options', allVariantOptions);
 
-  function setOptions(name, value) { //this function will be called every time the user changes the selected option (onChange, in the ProductOptions component) and will update the selectedOptions state
+  function setOptions(name, value) {
     setSelectedOptions((previousState) => {
       return {
         ...previousState,
@@ -56,7 +56,7 @@ const ProductForm = ({ product }) => {
           name={name}
           values={values}
           selectedOptions={selectedOptions}
-          setOptions={setOptions} //just passing the function to the ProductOptions component to be called when the user changes the selected option
+          setOptions={setOptions}
         />
       ))
       }

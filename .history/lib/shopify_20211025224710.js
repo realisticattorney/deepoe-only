@@ -147,9 +147,5 @@ export async function createCheckout(id, quantity) {
     }
   }`;
 
-  const response = await ShopifyData(query);
-  const checkout = response.data.checkoutCreate.checkout
-    ? response.data.checkoutCreate.checkout
-    : [];
-  return checkout;
+  
 }

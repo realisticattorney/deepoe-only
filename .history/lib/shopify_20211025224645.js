@@ -137,8 +137,8 @@ export async function createCheckout(id, quantity) {
   const query = `
   mutation {
     checkoutCreate(input: {
-      lineItems: [{variantId: "${id}"
-  , quantity: ${quantity}}]
+      lineItems: [{variantId: "${()}"
+  , quantity: 1}]
     }) {
       checkout {
         id
@@ -146,10 +146,4 @@ export async function createCheckout(id, quantity) {
       }
     }
   }`;
-
-  const response = await ShopifyData(query);
-  const checkout = response.data.checkoutCreate.checkout
-    ? response.data.checkoutCreate.checkout
-    : [];
-  return checkout;
 }

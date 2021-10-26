@@ -133,23 +133,24 @@ export async function getProduct(handle) {
   return product;
 }
 
+
+
 export async function createCheckout(id, quantity) {
   const query = `
-  mutation {
-    checkoutCreate(input: {
-      lineItems: [{variantId: "${id}"
-  , quantity: ${quantity}}]
-    }) {
-      checkout {
-        id
-        webUrl
-      }
-    }
-  }`;
-
-  const response = await ShopifyData(query);
-  const checkout = response.data.checkoutCreate.checkout
-    ? response.data.checkoutCreate.checkout
-    : [];
-  return checkout;
+   mutation createCheckout($checkoutInput: CheckoutCreateInput!) {
+      checkoutCreate(input: $checkoutInput) {
+        userErrors {
+          field
+          message
+        }
+        checkout {
+          id
+          webUrl
+          totalPrice
+          subtotalPrice
+          totalTax
+          lineItems(first: 250) {
+            edges {
+              node {
+                title
 }

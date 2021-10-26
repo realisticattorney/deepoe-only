@@ -24,7 +24,7 @@ const ProductOptions = ({ name, values, selectedOptions }) => {
                     : 'text-gray-900 bg-gray-200'
                 }`}
               >
-                <span className="px-2">{value}</span>
+               <span className="px-2"></span> {value}
               </div>
             </label>
           );

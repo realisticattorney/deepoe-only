@@ -6,7 +6,7 @@ import { CartContext } from '../context/shopContext';
 const ProductForm = ({ product }) => {
   
    
-const { addToCart } = useContext(CartContext);
+   const { addToCart } = useContext(CartContext);
 
   const allVariantOptions = product.variants.edges?.map((variant) => {
     const allOptions = {};

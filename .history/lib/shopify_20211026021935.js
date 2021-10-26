@@ -171,6 +171,8 @@ export async function updateCheckout(id, lineItems) {
     }
   }`;
 
+  
+
   const response = await ShopifyData(query);
   console.log('response', response);
   const checkout = response.data.checkoutLineItemsReplace.checkout

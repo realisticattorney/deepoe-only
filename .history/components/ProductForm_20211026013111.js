@@ -47,14 +47,9 @@ const ProductForm = ({ product }) => {
 
     const selection = {
       ...selectedOptions,
-      [name]: value,
-    };
-
-    allVariantOptions.map((item) => {
-      if (JSON.stringify(item.options) === JSON.stringify(selection)) {
-        setSelectedVariant(item);
-      }
-    });
+      
+    }
+    
   }
 
   return (

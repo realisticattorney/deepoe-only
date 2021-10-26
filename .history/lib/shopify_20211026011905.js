@@ -145,6 +145,7 @@ export async function createCheckout(id, quantity) {
       }
     }
   }`;
+  console.log("quantity")
   const response = await ShopifyData(query);
   const checkout = response.data.checkoutCreate.checkout
     ? response.data.checkoutCreate.checkout
@@ -163,7 +164,7 @@ export async function updateCheckout(id, lineItems) {
 
   const query = `
   mutation {
-    checkoutLineItemsReplace(lineItems: [${lineItemsObject}], checkoutId:"${id}"){
+    checkoutLineItemsReplace(lineItems: [], checkoutId:""){
       checkout {
         id
         webUrl
@@ -172,7 +173,6 @@ export async function updateCheckout(id, lineItems) {
   }`;
 
   const response = await ShopifyData(query);
-  console.log('response', response);
   const checkout = response.data.checkoutLineItemsReplace.checkout
     ? response.data.checkoutLineItemsReplace.checkout
     : [];

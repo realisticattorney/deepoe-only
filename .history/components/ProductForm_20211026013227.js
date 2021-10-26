@@ -51,11 +51,12 @@ const ProductForm = ({ product }) => {
     };
 
     allVariantOptions.map((item) => {
-      if (JSON.stringify(item.options) === JSON.stringify(selection)) {
+      if (
+        JSON.stringify(item.options) === JSON.stringify(selection)
+      ) {
         setSelectedVariant(item);
       }
-    });
-  }
+    }
 
   return (
     <div className="rounded-2xl p-4 shadow-lg flex-col flex w-full">

@@ -10,7 +10,7 @@ export default function ShopProvider({ children }) {
   const [checkoutUrl, setCheckoutUrl] = useState('');
 
   async function addToCart(newItem) {
-   console.log('addToCart', newItem);
+   console.log*
     if (cart.length === 0) {
       setCart([newItem]);
       const checkout = await createCheckout(

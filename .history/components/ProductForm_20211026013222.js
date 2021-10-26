@@ -51,10 +51,12 @@ const ProductForm = ({ product }) => {
     };
 
     allVariantOptions.map((item) => {
-      if (JSON.stringify(item.options) === JSON.stringify(selection)) {
+      if (
+        JSON.stringify(item.options) === JSON.stringify(selection)
+      ) {
         setSelectedVariant(item);
       }
-    });
+    }
   }
 
   return (

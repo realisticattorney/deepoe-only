@@ -11,7 +11,7 @@ const Nav = () => {
     cartQuantity += item?.variantQuantity;
   });
   return (
-    <header className="sticky top-0 z-20 bg-white">
+    <header className="border-b sticky top-0 z-20 bg-white">
       <div className="flex items-center justify-between max-w-6xl pt-8 pb-2 px-4 mx-auto">
       <a
           className="text-sm font-semibold cursor-pointer"

@@ -11,13 +11,13 @@ const Nav = () => {
     cartQuantity += item?.variantQuantity;
   });
   return (
-    <header className="sticky top-0 z-20 bg-white">
-      <div className="flex items-center justify-between max-w-6xl pt-8 pb-2 px-4 mx-auto">
+    <header className="border-b sticky top-0 z-20 bg-white">
+      <div className="flex items-center justify-between max-w-6xl pt-4 pb-2 px-4 mx-auto">
       <a
-          className="text-sm font-semibold cursor-pointer"
+          className="text-md font-bold cursor-pointer"
           onClick={() => setCartOpen(!cartOpen)}
         >
-          Menu
+          Cart ({cartQuantity})
         </a>
         <Link href="/" passHref>
           <a className="cursor-pointer">
@@ -25,7 +25,7 @@ const Nav = () => {
           </a>
         </Link>
         <a
-          className="text-sm font-semibold cursor-pointer"
+          className="text-md font-bold cursor-pointer"
           onClick={() => setCartOpen(!cartOpen)}
         >
           Cart ({cartQuantity})

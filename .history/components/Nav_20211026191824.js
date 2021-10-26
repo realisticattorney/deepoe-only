@@ -21,7 +21,7 @@ const Nav = () => {
             <span className="text-4xl font-medium">deepoe</span>
           </a>
         </Link>
-        <a className="cursor-pointer font-light" onClick={() => setCartOpen(!cartOpen)}>
+        <a className="cursor-pointer" onClick={() => setCartOpen(!cartOpen)}>
           cart ({cartQuantity})
         </a>
         <MiniCart cart={cart} />

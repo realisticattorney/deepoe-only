@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  font-family: 'TiffanyStd-Demi';
+}
+
+@font-face {
+  font-family: 'TiffanyStd-Demi';
+  src: url('/fonts/Tiffany/TiffanyStd-Demi.otf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+public\fonts\Tiffany\TiffanyStd-Demi.otf

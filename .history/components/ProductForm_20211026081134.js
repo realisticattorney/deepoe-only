@@ -59,8 +59,8 @@ const ProductForm = ({ product }) => {
 
   return (
     <div className="flex-col flex w-full pt-1">
-      <h2 className="text-2xl font-medium text-gray-800">{product.title}</h2>
-      <span className="pb-6 pt-2 text-lg font-light text-gray-700">
+      <h2 className="text-2xl font-semibold text-gray-800">{product.title}</h2>
+      <span className="pb-6 pt-2 text-lg font-light">
         {formatter.format(product.variants.edges[0].node.priceV2.amount)}
       </span>
       {product.options.map(({ name, values }) => (

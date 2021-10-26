@@ -1,5 +1,4 @@
 import 'tailwindcss/tailwind.css';
-import '../styles/globals.css';
 import Layout from '../components/Layout';
 import ShopProvider from '../context/shopContext';
 import { useRouter } from 'next/router';

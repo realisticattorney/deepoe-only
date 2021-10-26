@@ -1,5 +1,5 @@
 import 'tailwindcss/tailwind.css';
-import '../styles/globals.css';
+import 'styles/globals.css';
 import Layout from '../components/Layout';
 import ShopProvider from '../context/shopContext';
 import { useRouter } from 'next/router';
@@ -16,3 +16,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 export default MyApp;
+styles\globals.css

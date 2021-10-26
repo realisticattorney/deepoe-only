@@ -154,15 +154,8 @@ export async function createCheckout(id, quantity) {
   return checkout;
 }
 
-export async function updateCheckout(id, lineItemId) {
-  const lineItemsObject = lineItems.map((item) => {
-    return `{
-      variantId: "${item.id}"
-      quantity: ${item.variantQuantity}
-    
-    }`;
-  });
 
+export async function updateCheckout(id, lineItemId) {
   const query = `
   mutation {
     checkoutLineItemsReplace(lineItems: [], checkoutId:""){
@@ -171,12 +164,12 @@ export async function updateCheckout(id, lineItemId) {
         webUrl
       }
     }
+    
   }`;
 
   const response = await ShopifyData(query);
-  const checkout = response.data.checkoutLineItemsReplace.checkout
-    ? response.data.checkoutLineItemsReplace.checkout
+  const checkout = response.data.checkoutLineItemsUpdate.checkout
+    ? response.data.checkoutLineItemsUpdate.checkout
     : [];
-
   return checkout;
 }

@@ -35,12 +35,10 @@ const ProductForm = ({ product }) => {
   //   console.log('defaultValues', defaultValues);
   //   console.log('variant options', allVariantOptions);
 
-  function setOptions(name, value) {
-    setSelectedOptions((previousState) => {
-      return {
-        ...previousState,
-        [name]: value,
-      };
+  function setOptions(name,value) {
+    setSelectedOptions(previousState => {
+      
+      
     });
   }
 
@@ -50,13 +48,13 @@ const ProductForm = ({ product }) => {
       <span className="pb-6">
         {formatter.format(product.variants.edges[0].node.priceV2.amount)}
       </span>
-      {product.options.map(({ name, values }) => (
+      {
+         product.options.map(({ name, values }) => (
         <ProductOptions
           key={`key-${name}`}
           name={name}
           values={values}
           selectedOptions={selectedOptions}
-          setOptions={setOptions}
         />
       ))}
     </div>

@@ -56,7 +56,6 @@ const ProductForm = ({ product }) => {
           name={name}
           values={values}
           selectedOptions={selectedOptions}
-          setOptions={setOptions}
         />
       ))}
     </div>

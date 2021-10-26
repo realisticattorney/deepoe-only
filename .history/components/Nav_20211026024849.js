@@ -21,7 +21,7 @@ const Nav = () => {
         <a className="text-md font-bold cursor-pointer">
           Cart ({cartQuantity})
         </a>
-        <MiniCart cart={cart} />
+        <MiniCart
       </div>
     </header>
   );

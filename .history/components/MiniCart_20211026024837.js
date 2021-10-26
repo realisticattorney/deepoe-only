@@ -1,25 +1,18 @@
-import { Fragment, useContext, useState } from 'react';
-import { Dialog, Transition } from '@headlessui/react';
-import { XIcon } from '@heroicons/react/outline';
-import Image from 'next/image';
-import { CartContext } from '../context/shopContext';
-import { formatter } from '../utils/helpers';
+import { Fragment, useState } from 'react'
+import { Dialog, Transition } from '@headlessui/react'
+import { XIcon } from '@heroicons/react/outline'
+import Image from 'next/image'
+import { CartContext } from '../context/shopContext'
+import { formatter } from '../utils/helpers'
 
-export default function MiniCart({ cart }) {
-  const { cartOpen, setCartOpen, checkoutUrl } = useContext(CartContext);
 
-  let cartTotal = 0;
-  cart.map((item) => {
-    cartTotal += item?.variantPrice * item?.variantQuantity;
-  });
+
+export default function MiniCart() {
+  const [open, setOpen] = useState(true)
 
   return (
     <Transition.Root show={open} as={Fragment}>
-      <Dialog
-        as="div"
-        className="fixed inset-0 overflow-hidden"
-        onClose={setOpen}
-      >
+      <Dialog as="div" className="fixed inset-0 overflow-hidden" onClose={setOpen}>
         <div className="absolute inset-0 overflow-hidden">
           <Transition.Child
             as={Fragment}
@@ -47,9 +40,7 @@ export default function MiniCart({ cart }) {
                 <div className="h-full flex flex-col bg-white shadow-xl overflow-y-scroll">
                   <div className="flex-1 py-6 overflow-y-auto px-4 sm:px-6">
                     <div className="flex items-start justify-between">
-                      <Dialog.Title className="text-lg font-medium text-gray-900">
-                        Shopping cart
-                      </Dialog.Title>
+                      <Dialog.Title className="text-lg font-medium text-gray-900">Shopping cart</Dialog.Title>
                       <div className="ml-3 h-7 flex items-center">
                         <button
                           type="button"
@@ -64,10 +55,7 @@ export default function MiniCart({ cart }) {
 
                     <div className="mt-8">
                       <div className="flow-root">
-                        <ul
-                          role="list"
-                          className="-my-6 divide-y divide-gray-200"
-                        >
+                        <ul role="list" className="-my-6 divide-y divide-gray-200">
                           {products.map((product) => (
                             <li key={product.id} className="py-6 flex">
                               <div className="flex-shrink-0 w-24 h-24 border border-gray-200 rounded-md overflow-hidden">
@@ -86,20 +74,13 @@ export default function MiniCart({ cart }) {
                                     </h3>
                                     <p className="ml-4">{product.price}</p>
                                   </div>
-                                  <p className="mt-1 text-sm text-gray-500">
-                                    {product.color}
-                                  </p>
+                                  <p className="mt-1 text-sm text-gray-500">{product.color}</p>
                                 </div>
                                 <div className="flex-1 flex items-end justify-between text-sm">
-                                  <p className="text-gray-500">
-                                    Qty {product.quantity}
-                                  </p>
+                                  <p className="text-gray-500">Qty {product.quantity}</p>
 
                                   <div className="flex">
-                                    <button
-                                      type="button"
-                                      className="font-medium text-indigo-600 hover:text-indigo-500"
-                                    >
+                                    <button type="button" className="font-medium text-indigo-600 hover:text-indigo-500">
                                       Remove
                                     </button>
                                   </div>
@@ -117,9 +98,7 @@ export default function MiniCart({ cart }) {
                       <p>Subtotal</p>
                       <p>$262.00</p>
                     </div>
-                    <p className="mt-0.5 text-sm text-gray-500">
-                      Shipping and taxes calculated at checkout.
-                    </p>
+                    <p className="mt-0.5 text-sm text-gray-500">Shipping and taxes calculated at checkout.</p>
                     <div className="mt-6">
                       <a
                         href="#"
@@ -136,8 +115,7 @@ export default function MiniCart({ cart }) {
                           className="text-indigo-600 font-medium hover:text-indigo-500"
                           onClick={() => setOpen(false)}
                         >
-                          Continue Shopping
-                          <span aria-hidden="true"> &rarr;</span>
+                          Continue Shopping<span aria-hidden="true"> &rarr;</span>
                         </button>
                       </p>
                     </div>
@@ -149,5 +127,5 @@ export default function MiniCart({ cart }) {
         </div>
       </Dialog>
     </Transition.Root>
-  );
+  )
 }

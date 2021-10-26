@@ -10,7 +10,7 @@ export default function MiniCart({ cart }) {
 
   let cartTotal = 0;
   cart.map((item) => {
-    cartTotal += item?.variantPrice * item?.variantQuantity;
+    cartTotal += item.price * item.variantQuantity;
   });
 
   return (

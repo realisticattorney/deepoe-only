@@ -9,10 +9,9 @@ export default function MiniCart({ cart }) {
   const { cartOpen, setCartOpen, checkoutUrl } = useContext(CartContext);
 
   let cartTotal = 0;
-  cart.map((item) => {
-    cartTotal += item?.variantPrice * item?.variantQuantity;
-  });
-
+  cart.map(item => {
+     cartTotal += item.price * item.quantity;})
+   
   return (
     <Transition.Root show={open} as={Fragment}>
       <Dialog

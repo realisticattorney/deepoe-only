@@ -7,7 +7,7 @@ import { formatter } from '../utils/helpers';
 
 export default function MiniCart({ cart }) {
   const { cartOpen, setCartOpen, checkoutUrl } = useContext(CartContext);
-
+  console.log('cart', cart);
   let cartTotal = 0;
   cart.map((item) => {
     cartTotal += item?.variantPrice * item?.variantQuantity;
@@ -18,7 +18,9 @@ export default function MiniCart({ cart }) {
       <Dialog
         as="div"
         className="fixed inset-0 overflow-hidden"
-        onClose={() => setCartOpen(!cartOpen)}
+        onClose={() => {
+          setCartOpen(!cartOpen);
+        }}
       >
         <div className="absolute inset-0 overflow-hidden">
           <Transition.Child
@@ -70,7 +72,7 @@ export default function MiniCart({ cart }) {
                         >
                           {cart.map((product) => (
                             <li key={product.id} className="py-6 flex">
-                              <div className="flex-shrink-0 w-24 h-24 border border-gray-200 rounded-md overflow-hidden">
+                              <div className="relative flex-shrink-0 w-24 h-24 border border-gray-200 rounded-md overflow-hidden">
                                 <Image
                                   src={product.image}
                                   alt={product.title}

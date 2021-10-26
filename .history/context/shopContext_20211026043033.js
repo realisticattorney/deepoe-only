@@ -76,7 +76,6 @@ export default function ShopProvider({ children }) {
         setCartOpen,
         addToCart,
         checkoutUrl,
-        removeCartItem,
       }}
     >
       {children}

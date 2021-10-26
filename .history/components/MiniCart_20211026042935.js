@@ -8,8 +8,7 @@ import { formatter } from '../utils/helpers';
 export default function MiniCart({ cart }) {
   const cancelButtonRef = useRef();
 
-  const { cartOpen, setCartOpen, checkoutUrl, removeCartItem } =
-    useContext(CartContext);
+  const { cartOpen, setCartOpen, checkoutUrl, removeCartItem } = useContext(CartContext);
   console.log('cart', cart);
   let cartTotal = 0;
   cart.map((item) => {
@@ -109,7 +108,8 @@ export default function MiniCart({ cart }) {
                                     <button
                                       type="button"
                                       className="font-medium text-gray-500 hover:text-gray-800"
-                                      onClick={() => removeCartItem(product.id)}
+                                      onClick={() =>
+                                          removeCartItem(product.id, product.variantId)}
                                     >
                                       Remove
                                     </button>

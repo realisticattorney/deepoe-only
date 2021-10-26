@@ -57,7 +57,7 @@ export default function ShopProvider({ children }) {
     }
   }
 
-  async function removeCartItem(itemToRemove) {
+  async function removeCartItem(itemToRemove) { 
     const updatedCart = cart.filter((item) => item.id !== itemToRemove);
     setCart(updatedCart);
     const newCheckout = await updateCheckout(checkoutId, updatedCart);
@@ -76,7 +76,6 @@ export default function ShopProvider({ children }) {
         setCartOpen,
         addToCart,
         checkoutUrl,
-        removeCartItem,
       }}
     >
       {children}

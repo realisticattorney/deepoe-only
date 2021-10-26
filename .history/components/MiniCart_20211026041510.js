@@ -129,7 +129,7 @@ export default function MiniCart({ cart }) {
                       <div className="mt-6">
                         <a
                           href="#"
-                          className="flex justify-center items-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-black hover:bg-gray-800"
+                          className="flex justify-center items-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
                         >
                           Checkout
                         </a>
@@ -139,7 +139,7 @@ export default function MiniCart({ cart }) {
                           or{' '}
                           <button
                             type="button"
-                            className="font-medium hover:text-gray-800"
+                            className="text-indigo-600 font-medium hover:text-indigo-500"
                             onClick={() => setCartOpen(false)}
                           >
                             Continue Shopping

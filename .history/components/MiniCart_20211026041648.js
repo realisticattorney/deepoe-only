@@ -139,7 +139,7 @@ export default function MiniCart({ cart }) {
                           or{' '}
                           <button
                             type="button"
-                            className="font-medium hover:text-gray-800"
+                            className=" font-medium "
                             onClick={() => setCartOpen(false)}
                           >
                             Continue Shopping

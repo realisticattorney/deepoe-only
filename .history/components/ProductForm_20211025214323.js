@@ -60,7 +60,7 @@ const ProductForm = ({ product }) => {
         />
       ))
       }
-      <button className="bg-black rounded-lg text-white px-2 py-3 hover:bg-gray-800">Add to cart</button>
+      <button className="bg-black rounded-lg text-white px-2 py-3 hover:bg8"></button>
     </div>
   );
 };

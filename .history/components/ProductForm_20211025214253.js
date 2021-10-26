@@ -58,9 +58,8 @@ const ProductForm = ({ product }) => {
           selectedOptions={selectedOptions}
           setOptions={setOptions}
         />
-      ))
-      }
-      <button className="bg-black rounded-lg text-white px-2 py-3 hover:bg-gray-800">Add to cart</button>
+      ))}
+      
     </div>
   );
 };

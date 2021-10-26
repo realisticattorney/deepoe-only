@@ -6,6 +6,7 @@ import { CartContext } from '../context/shopContext';
 import { formatter } from '../utils/helpers';
 
 export default function MiniCart({ cart }) {
+
   const cancelButtonRef = useRef();
 
   const { cartOpen, setCartOpen, checkoutUrl } = useContext(CartContext);
@@ -18,7 +19,7 @@ export default function MiniCart({ cart }) {
   return (
     <Transition.Root show={cartOpen} as={Fragment}>
       <Dialog
-        initialFocus={cancelButtonRef}
+      initialFocusRef={cancelButtonRef}
         as="div"
         className="fixed z-50 inset-0 overflow-hidden"
         onClose={() => {
@@ -57,7 +58,6 @@ export default function MiniCart({ cart }) {
                       </Dialog.Title>
                       <div className="ml-3 h-7 flex items-center">
                         <button
-                          ref={cancelButtonRef}
                           type="button"
                           className="-m-2 p-2 text-gray-400 hover:text-gray-500"
                           onClick={() => setCartOpen(false)}

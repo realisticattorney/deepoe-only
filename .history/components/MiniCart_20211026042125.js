@@ -57,7 +57,7 @@ export default function MiniCart({ cart }) {
                       </Dialog.Title>
                       <div className="ml-3 h-7 flex items-center">
                         <button
-                          ref={cancelButtonRef}
+                           ref={cancelButtonRef}
                           type="button"
                           className="-m-2 p-2 text-gray-400 hover:text-gray-500"
                           onClick={() => setCartOpen(false)}

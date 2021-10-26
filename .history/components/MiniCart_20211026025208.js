@@ -18,7 +18,7 @@ export default function MiniCart({ cart }) {
       <Dialog
         as="div"
         className="fixed inset-0 overflow-hidden"
-        onClose={() => setCartOpen(!cartOpen)}
+        onClose={()}
       >
         <div className="absolute inset-0 overflow-hidden">
           <Transition.Child
@@ -54,7 +54,7 @@ export default function MiniCart({ cart }) {
                         <button
                           type="button"
                           className="-m-2 p-2 text-gray-400 hover:text-gray-500"
-                          onClick={() => setCartOpen(false)}
+                          onClick={() => setOpen(false)}
                         >
                           <span className="sr-only">Close panel</span>
                           <XIcon className="h-6 w-6" aria-hidden="true" />
@@ -68,14 +68,13 @@ export default function MiniCart({ cart }) {
                           role="list"
                           className="-my-6 divide-y divide-gray-200"
                         >
-                          {cart.map((product) => (
+                          {products.map((product) => (
                             <li key={product.id} className="py-6 flex">
                               <div className="flex-shrink-0 w-24 h-24 border border-gray-200 rounded-md overflow-hidden">
-                                <Image
-                                  src={product.image}
-                                  alt={product.title}
-                                  layout="fill"
-                                  objectFit="cover"
+                                <img
+                                  src={product.imageSrc}
+                                  alt={product.imageAlt}
+                                  className="w-full h-full object-center object-cover"
                                 />
                               </div>
 

@@ -74,8 +74,7 @@ export default function MiniCart({ cart }) {
                                 <Image
                                   src={product.image}
                                   alt={product.title}
-                                  layout="fill"
-                                  objectFit="cover"
+                                  className="w-full h-full object-center object-cover"
                                 />
                               </div>
 

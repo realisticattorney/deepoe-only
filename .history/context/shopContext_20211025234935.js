@@ -57,9 +57,3 @@ export default function ShopProvider({ children }) {
     </div>
   );
 }
-
-const ShopConsumer = CartContext.Consumer;
-
-export { ShopConsumer, CartContext };
-
-

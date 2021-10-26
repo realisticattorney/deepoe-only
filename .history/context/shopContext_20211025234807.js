@@ -31,35 +31,9 @@ export default function ShopProvider({ children }) {
           newCart = [...cart, newItem];
         }
       });
-      setCart(newCart);
-      const newCheckout = await updateCheckout(checkoutId, newCart);
-      localStorage.setItem(
-        'checkout_id',
-        JSON.stringify([newCart, newCheckout])
-      );
+      
     }
   }
 
-  return (
-    <div>
-      <CartContext.Provider
-        value={{
-          cart,
-          cartOpen,
-          setCartOpen,
-          checkoutId,
-          checkoutUrl,
-          addToCart,
-        }}
-      >
-        {children}
-      </CartContext.Provider>
-    </div>
-  );
+  return <div></div>;
 }
-
-const ShopConsumer = CartContext.Consumer;
-
-export { ShopConsumer, CartContext };
-
-

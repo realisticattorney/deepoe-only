@@ -58,8 +58,4 @@ export default function ShopProvider({ children }) {
   );
 }
 
-const ShopConsumer = CartContext.Consumer;
-
-export { ShopConsumer, CartContext };
-
-
+const 

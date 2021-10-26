@@ -3,9 +3,9 @@ import ProductForm from './ProductForm';
 
 const ProductPageContent = ({ product }) => {
   return (
-    <div className="flex flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 px-2 mx-auto">
+    <div className="flex flex-col justify-between items-center space-y-8 max-w-6xl w-11/12 mx-auto">
       <div className="w-full max-w-md border overflow-hidden shadow-sm">
-        <div className="relative h-80 w-full">
+        <div className="relative h-0 w-full">
           <Image
             src={product.images.edges[0].node.originalSrc}
             alt={product.images.edges[0].node.altText}

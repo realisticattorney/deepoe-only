@@ -18,7 +18,7 @@ const Nav = () => {
         </a>
         <Link href="/" passHref>
           <a className="cursor-pointer">
-            <span className="text-4xl font-bold">deepoe</span>
+            <span className="text-4xl pb-1 font-bold">deepoe</span>
           </a>
         </Link>
         <a className="cursor-pointer" onClick={() => setCartOpen(!cartOpen)}>

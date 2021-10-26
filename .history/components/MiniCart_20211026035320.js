@@ -35,12 +35,12 @@ export default function MiniCart({ cart }) {
             <Dialog.Overlay className="absolute inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
           </Transition.Child>
 
-          <div className="fixed inset-y-0 right-0 pl-10 max-w-full flex">
+          <div className="fixed inset-y-0 left-0 pr-10 max-w-full flex">
             <Transition.Child
               as={Fragment}
               enter="transform transition ease-in-out duration-500 sm:duration-700"
               enterFrom="translate-x-full"
-              enterTo="translate-x-0"
+              enterTo="-translate-x-0"
               leave="transform transition ease-in-out duration-500 sm:duration-700"
               leaveFrom="translate-x-0"
               leaveTo="translate-x-full"
@@ -158,10 +158,3 @@ export default function MiniCart({ cart }) {
     </Transition.Root>
   );
 }
-
-
-// enterFrom="-translate-x-full"
-// enterTo="translate-x-0"
-// leave="transform transition ease-in-out duration-500 sm:duration-700"
-// leaveFrom="translate-x-0"
-// leaveTo="-translate-x-full"

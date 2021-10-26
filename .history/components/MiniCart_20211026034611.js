@@ -39,11 +39,11 @@ export default function MiniCart({ cart }) {
             <Transition.Child
               as={Fragment}
               enter="transform transition ease-in-out duration-500 sm:duration-700"
-              enterFrom="translate-x-full"
-              enterTo="translate-x-0"
+              enterFrom="translate-x-0"
+              enterTo="translate-x-full"
               leave="transform transition ease-in-out duration-500 sm:duration-700"
-              leaveFrom="translate-x-0"
-              leaveTo="translate-x-full"
+              leaveFrom="translate-x-full"
+              leaveTo="translate-x-0"
             >
               <div className="w-screen max-w-md">
                 <div className="h-full flex flex-col bg-white shadow-xl overflow-y-scroll">
@@ -158,10 +158,3 @@ export default function MiniCart({ cart }) {
     </Transition.Root>
   );
 }
-
-
-// enterFrom="-translate-x-full"
-// enterTo="translate-x-0"
-// leave="transform transition ease-in-out duration-500 sm:duration-700"
-// leaveFrom="translate-x-0"
-// leaveTo="-translate-x-full"

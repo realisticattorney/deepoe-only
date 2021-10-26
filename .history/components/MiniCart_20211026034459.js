@@ -17,7 +17,7 @@ export default function MiniCart({ cart }) {
     <Transition.Root show={cartOpen} as={Fragment}>
       <Dialog
         as="div"
-        className="fixed z-50 inset-0 overflow-hidden"
+        className="fixed z-50 inset-x-100 overflow-hidden"
         onClose={() => {
           setCartOpen(!cartOpen);
         }}
@@ -158,10 +158,3 @@ export default function MiniCart({ cart }) {
     </Transition.Root>
   );
 }
-
-
-// enterFrom="-translate-x-full"
-// enterTo="translate-x-0"
-// leave="transform transition ease-in-out duration-500 sm:duration-700"
-// leaveFrom="translate-x-0"
-// leaveTo="-translate-x-full"

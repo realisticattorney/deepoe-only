@@ -63,7 +63,7 @@ const { addToCart } = useContext(CartContext);
         />
       ))
       }
-      <button  
+      <button 
       onClick={() => addToCart(selectedVariant)}
       className="bg-black rounded-lg text-white px-2 py-3 hover:bg-gray-800">Add to cart</button>
     </div>

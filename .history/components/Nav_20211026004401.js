@@ -4,11 +4,11 @@ import { CartContext } from '../context/shopContext';
 
 const Nav = () => {
   const { cart, cartOpen, setCartOpen } = useContext(CartContext);
-
+  
   let cartQuantity = 0;
-  cart.map((item) => {
+  cart.map(item => {
     cartQuantity += item?.variantQuantity;
-  });
+    )
   return (
     <header className="border-b sticky top-0 z-20 bg-white">
       <div className="flex items-center justify-between max-w-6xl pt-4 pb-2 px-4 mx-auto">
@@ -17,9 +17,7 @@ const Nav = () => {
             <span className="text-lg pt-1 font-bold">deepoe</span>
           </a>
         </Link>
-        <a className="text-md font-bold cursor-pointer">
-          Cart ({cartQuantity})
-        </a>
+        <a className="text-md font-bold cursor-pointer">Cart</a>
       </div>
     </header>
   );

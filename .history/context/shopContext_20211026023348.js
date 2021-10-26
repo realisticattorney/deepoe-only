@@ -24,8 +24,6 @@ export default function ShopProvider({ children }) {
   }, []);
 
   async function addToCart(newItem) {
-    setCartOpen(true); //annoying
-
     console.log('addToCart', newItem);
     if (cart.length === 0) {
       setCart([newItem]);
@@ -55,17 +53,6 @@ export default function ShopProvider({ children }) {
         JSON.stringify([newCart, newCheckout])
       );
     }
-  }
-
-  async function removeCartItem(itemToRemove) {
-    const updatedCart = cart.filter((item) => item.id !== itemToRemove);
-    setCart(updatedCart);
-    const newCheckout = await updateCheckout(checkoutId, updatedCart);
-
-    localStorage.setItem(
-      'checkout_id',
-      JSON.stringify([updatedCart, newCheckout])
-    );
   }
 
   return (

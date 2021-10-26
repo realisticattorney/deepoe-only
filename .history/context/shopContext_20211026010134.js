@@ -21,7 +21,7 @@ export default function ShopProvider({ children }) {
 
       localStorage.setItem('checkout_id', JSON.stringify([newItem, checkout]));
     } else {
-      let newCart = [...cart];
+      const newCart = [...cart];
       cart.map((item) => {
         if (item.id === newItem.id) {
           // item.variantQuantity += newItem.variantQuantity // I think this is wrong
@@ -41,20 +41,24 @@ export default function ShopProvider({ children }) {
   }
 
   return (
-    <CartContext.Provider
-      value={{
-        cart,
-        cartOpen,
-        setCartOpen,
-        addToCart,
-        checkoutUrl,
-      }}
-    >
-      {children}
-    </CartContext.Provider>
+      <CartContext.Provider
+        value={{
+          cart,
+          cartOpen,
+          setCartOpen,
+          checkoutId,
+          checkoutUrl,
+          addToCart,
+        }}
+      >
+        {children}
+      </CartContext.Provider>
+    
   );
 }
 
 const ShopConsumer = CartContext.Consumer;
 
 export { ShopConsumer, CartContext };
+
+

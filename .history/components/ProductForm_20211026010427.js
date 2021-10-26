@@ -4,7 +4,9 @@ import ProductOptions from './ProductOptions';
 import { CartContext } from '../context/shopContext';
 
 const ProductForm = ({ product }) => {
-  const { addToCart } = useContext(CartContext);
+  
+   
+const { addToCart } = useContext(CartContext);
 
   const allVariantOptions = product.variants.edges?.map((variant) => {
     const allOptions = {};
@@ -36,8 +38,7 @@ const ProductForm = ({ product }) => {
   //   console.log('defaultValues', defaultValues);
   //   console.log('variant options', allVariantOptions);
 
-  function setOptions(name, value) {
-    //this function will be called every time the user changes the selected option (onChange, in the ProductOptions component) and will update the selectedOptions state
+  function setOptions(name, value) { //this function will be called every time the user changes the selected option (onChange, in the ProductOptions component) and will update the selectedOptions state
     setSelectedOptions((previousState) => {
       return {
         ...previousState,
@@ -60,15 +61,11 @@ const ProductForm = ({ product }) => {
           selectedOptions={selectedOptions}
           setOptions={setOptions} //just passing the function to the ProductOptions component to be called when the user changes the selected option
         />
-      ))}
-      <button
-        onClick={() => {
-          addToCart(selectedVariant);
-        }}
-        className="bg-black rounded-lg text-white px-2 py-3 hover:bg-gray-800"
-      >
-        Add to cart
-      </button>
+      ))
+      }
+      <button  
+      onClick={() => { addToCart(selectedVariant)}}
+      className="bg-black rounded-lg text-white px-2 py-3 hover:bg-gray-800">Add to cart</button>
     </div>
   );
 };

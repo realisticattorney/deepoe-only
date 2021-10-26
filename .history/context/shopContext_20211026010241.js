@@ -21,7 +21,7 @@ export default function ShopProvider({ children }) {
 
       localStorage.setItem('checkout_id', JSON.stringify([newItem, checkout]));
     } else {
-      let newCart = [...cart];
+      const newCart = [...cart];
       cart.map((item) => {
         if (item.id === newItem.id) {
           // item.variantQuantity += newItem.variantQuantity // I think this is wrong

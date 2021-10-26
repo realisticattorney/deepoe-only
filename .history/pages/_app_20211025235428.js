@@ -4,8 +4,9 @@ import ShopProvider from '../context/shopContext';
 import { useRouter } from 'next/router';
 
 function MyApp({ Component, pageProps }) {
-  const router = useRouter();
 
+  const router = useRouter();
+  
   return (
     <ShopProvider>
       <Layout>

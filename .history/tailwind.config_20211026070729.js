@@ -5,9 +5,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        deepoe: {
-          cream: '#F5F3EE',
-          chocolate: '#302E2F',
+        darkGrey: {
+          blue: '#2D3277',
+          DEFAULT: '#FFF159',
+          gray: '#363636',
         },
       },
     },
@@ -16,4 +17,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-};
+}

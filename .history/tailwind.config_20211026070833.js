@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       colors: {
         deepoe: {
-          cream: '#F5F3EE',
+          cream: '#2D3277',
           chocolate: '#302E2F',
         },
       },
@@ -16,4 +16,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-};
+}

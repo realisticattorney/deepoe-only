@@ -6,8 +6,9 @@ module.exports = {
     extend: {
       colors: {
         deepoe: {
-          cream: '#F5F3EE',
-          chocolate: '#302E2F',
+          blue: '#2D3277',
+          DEFAULT: '#FFF159',
+          gray: '#363636',
         },
       },
     },
@@ -16,4 +17,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-};
+}

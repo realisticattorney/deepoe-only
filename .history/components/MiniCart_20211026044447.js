@@ -133,11 +133,7 @@ export default function MiniCart({ cart }) {
                               </li>
                             ))}
                           </ul>
-                        ) : (
-                          <div className="">
-                            <p>Nothing in your cart</p>
-                          </div>
-                        )}
+                        ) : null}
                       </div>
                     </div>
                   </div>

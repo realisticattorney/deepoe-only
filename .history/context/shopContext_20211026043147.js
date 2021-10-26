@@ -62,14 +62,12 @@ export default function ShopProvider({ children }) {
     setCart(updatedCart);
     const newCheckout = await updateCheckout(checkoutId, updatedCart);
 
-    if (cart.length === 1) {
-      setCartOpen(false);
-    }
-
     localStorage.setItem(
       'checkout_id',
       JSON.stringify([updatedCart, newCheckout])
     );
+
+    if ()
   }
 
   return (

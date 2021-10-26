@@ -65,7 +65,6 @@ export default function ShopProvider({ children }) {
     if (cart.length === 1) {
       setCartOpen(false);
     }
-
     localStorage.setItem(
       'checkout_id',
       JSON.stringify([updatedCart, newCheckout])

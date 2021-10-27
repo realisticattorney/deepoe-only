@@ -1,21 +1,21 @@
 import Link from 'next/link';
-import { useContext, useState, useEffect, useCallback, useRef } from 'react';
+import { useContext, useState, useEffect, useCallback, useRef  } from 'react';
 import { CartContext } from '../context/shopContext';
 import MiniCart from './MiniCart';
 import MenuDropdown from './MenuDropdown';
 
 const Nav = () => {
   const { cart, cartOpen, setCartOpen } = useContext(CartContext);
-  const [parentState, setParentState] = useState(false);
+  const { menuOpen, setMenuOpen } = useState(false);
 
   let cartQuantity = 0;
   cart.map((item) => {
     cartQuantity += item?.variantQuantity;
   });
-  // make wrapper function to give child
-  const wrapperSetParentState = useCallback(val => {
-    setParentState(val);
-  }, [setParentState]);
+
+  const wrapperSetMenuOpen = useCallback(val => {
+    setMenuOpen(val);
+  }, [setMenuOpen]);
 
 
   return (
@@ -23,11 +23,11 @@ const Nav = () => {
       <div className="flex items-center justify-between max-w-6xl pt-14 pb-2 px-4 mx-auto">
         <a
           className="cursor-pointer font-light"
-          onClick={() => setParentState(!parentState)}
+          onClick={() => setMenuOpen(!menuOpen)}
         >
           menu
         </a>
-        <MenuDropdown  parentState={parentState} wrapperSetParentState={wrapperSetParentState} />
+        <MenuDropdown menuOpen={menuOpen} setMenuOpen={() => setMenuOpen()} />
         <Link href="/" passHref>
           <a className="cursor-pointer">
             <span className="text-4xl font-medium">deepoe</span>

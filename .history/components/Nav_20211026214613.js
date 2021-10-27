@@ -6,7 +6,7 @@ import MenuDropdown from './MenuDropdown';
 
 const Nav = () => {
   const { cart, cartOpen, setCartOpen } = useContext(CartContext);
-  const [parentState, setParentState] = useState(false);
+  const [parentState, setParentState] = useState(0);
 
   let cartQuantity = 0;
   cart.map((item) => {
@@ -23,7 +23,7 @@ const Nav = () => {
       <div className="flex items-center justify-between max-w-6xl pt-14 pb-2 px-4 mx-auto">
         <a
           className="cursor-pointer font-light"
-          onClick={() => setParentState(!parentState)}
+          onClick={() => setParentState(!menuOpen)}
         >
           menu
         </a>

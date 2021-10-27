@@ -27,7 +27,7 @@ const Nav = () => {
         >
           menu
         </a>
-        <MenuDropdown  parentState={parentState} wrapperSetParentState={wrapperSetParentState} />
+        <MenuDropdown wrapperSetParentState={wrapperSetParentState} />
         <Link href="/" passHref>
           <a className="cursor-pointer">
             <span className="text-4xl font-medium">deepoe</span>

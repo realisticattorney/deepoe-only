@@ -6,28 +6,30 @@ import MenuDropdown from './MenuDropdown';
 
 const Nav = () => {
   const { cart, cartOpen, setCartOpen } = useContext(CartContext);
-  const [parentState, setParentState] = useState(false);
+  
 
   let cartQuantity = 0;
   cart.map((item) => {
     cartQuantity += item?.variantQuantity;
   });
-  // make wrapper function to give child
-  const wrapperSetParentState = useCallback(val => {
-    setParentState(val);
-  }, [setParentState]);
 
+  const wrapperSetMenuOpen = useCallback(
+    (val) => {
+      setMenuOpen(val);
+    },
+    [setMenuOpen]
+  );
 
   return (
     <header className="sticky top-0 z-20 bg-deepoe-cream">
       <div className="flex items-center justify-between max-w-6xl pt-14 pb-2 px-4 mx-auto">
         <a
           className="cursor-pointer font-light"
-          onClick={() => setParentState(!parentState)}
+          onClick={() => setMenuOpen(!menuOpen)}
         >
           menu
         </a>
-        <MenuDropdown  parentState={parentState} wrapperSetParentState={wrapperSetParentState} />
+        <MenuDropdown menuOpen={menuOpen} wrapperSetMenuOpen={wrapperSetMenuOpen} />
         <Link href="/" passHref>
           <a className="cursor-pointer">
             <span className="text-4xl font-medium">deepoe</span>

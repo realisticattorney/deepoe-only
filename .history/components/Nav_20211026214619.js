@@ -6,7 +6,7 @@ import MenuDropdown from './MenuDropdown';
 
 const Nav = () => {
   const { cart, cartOpen, setCartOpen } = useContext(CartContext);
-  const [parentState, setParentState] = useState(false);
+  const [parentState, setParentState] = useState(0);
 
   let cartQuantity = 0;
   cart.map((item) => {

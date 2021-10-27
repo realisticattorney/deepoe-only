@@ -103,23 +103,21 @@ export default function MiniCart({ cart }) {
                                       </h3>
                                     </div>
                                     <div className="flex items-center justify-between mt-2">
-                                      <p className="mt-1 text-xs font-extralight text-gray-500">
-                                        {product.variantTitle}
-                                      </p>
+                                    <p className="mt-1 text-xs font-extralight text-gray-500">
+                                      {product.variantTitle}
+                                    </p>
                                       <p className="ml-4">
                                         <button
-                                          type="button"
-                                          className="font-medium text-gray-500 hover:text-gray-800"
-                                          onClick={() =>
-                                            removeCartItem(product.id)
-                                          }
-                                        >
-                                          <TrashIcon
-                                            className="mt-1 h-4 w-4"
-                                            aria-hidden="true"
-                                          />
-                                        </button>
+                                        type="button"
+                                        className="font-medium text-gray-500 hover:text-gray-800"
+                                        onClick={() =>
+                                          removeCartItem(product.id)
+                                        }
+                                      >
+                                        <TrashIcon className="mt-1 h-4 w-4" aria-hidden="true" />
+                                      </button>
                                       </p>
+                                
                                     </div>
                                   </div>
                                   <div className="flex-1 flex items-end justify-between text-sm">
@@ -128,7 +126,7 @@ export default function MiniCart({ cart }) {
                                     </p>
 
                                     <div className="flex text-xs font-extralight text-gray-700">
-                                      {formatter.format(product.variantPrice)}
+                                    {formatter.format(product.variantPrice)}
                                     </div>
                                   </div>
                                 </div>
@@ -146,27 +144,20 @@ export default function MiniCart({ cart }) {
 
                   {cart.length > 0 ? (
                     <div className="px-4 sm:px-6">
-                      <div className="pt-4 border-t border-gray-900 space-y-1.5 flex-col text-sm font-extralight text-gray-900">
-                        <div className="flex justify-between">
-                          <p>Subtotal</p>
-                          <p>{formatter.format(cartTotal)}</p>
+                      <div className="pt-4 border-t border-gray-900 flex-col text-sm font-extralight text-gray-900">
+                      <div className="flex justify-between">
+                        <p>Subtotal</p>
+                        <p>{formatter.format(cartTotal)}</p>
                         </div>
-                        <div className="flex justify-between">
-                          <p>Subtotal</p>
-                          <p>Free</p>
-                        </div>
-                        <div className="flex justify-between underline">
-                          <p>Add Promo Code</p>
-                        </div>
-                        <div className="flex justify-between font-normal">
-                          <p>Subtotal</p>
-                          <p>{formatter.format(cartTotal)}</p>
+                      <div>
+                        <p>Subtotal</p>
+                        <p>{formatter.format(cartTotal)}</p>
                         </div>
                       </div>
-                      {/* <p className="mt-0.5 text-sm text-gray-500">
+                      <p className="mt-0.5 text-sm text-gray-500">
                         Shipping and taxes calculated at checkout.
-                      </p> */}
-                      <div className="mt-5">
+                      </p>
+                      <div className="mt-6">
                         <a
                           href={checkoutUrl}
                           className="flex justify-center items-center px-6 py-1.5 border border-transparent shadow-sm text-lg font-medium text-white bg-deepoe-chocolate hover:bg-gray-800"

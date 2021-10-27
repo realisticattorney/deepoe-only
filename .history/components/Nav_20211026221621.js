@@ -13,34 +13,23 @@ const Nav = () => {
   cart.map((item) => {
     cartQuantity += item?.variantQuantity;
   });
+  // make wrapper function to give child
+  const wrapperSetParentState = useCallback(val => {
+    setParentState(val);
+  }, [setParentState]);
 
-  const wrapperSetParentState = useCallback(
-    (val) => {
-      setParentState(val);
-    },
-    [setParentState]
-  );
 
   return (
     <header className="sticky top-0 z-20 bg-deepoe-cream">
       <div className="flex items-center justify-between max-w-6xl pt-14 pb-2 px-4 mx-auto">
-       {!parentState ? <a
+        <a
           className="cursor-pointer font-light"
-          onClick={() => wrapperSetParentState(!parentState)}
-          ref={cancelButtonRef}
+          onClick={() => setParentState(!parentState)}
+          initialFocus={cancelButtonRef}
         >
-     menu
-        </a> : 
-        <p
-          className="cursor-pointer font-light"
-        >
-close
-        </p>} 
-        <MenuDropdown
-          parentState={parentState}
-          wrapperSetParentState={wrapperSetParentState}
-          // cancelButtonRef={cancelButtonRef}
-        />
+         { !parentState ? "menu" : "close" }
+        </a>
+        <MenuDropdown  parentState={parentState} wrapperSetParentState={wrapperSetParentState} cancelButtonRef={cancelButtonRef} />
         <Link href="/" passHref>
           <a className="cursor-pointer">
             <span className="text-4xl font-medium">deepoe</span>

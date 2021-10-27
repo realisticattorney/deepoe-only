@@ -6,15 +6,15 @@ import Link from 'next/link';
 // import { CartContext } from '../context/shopContext';
 import { formatter } from '../utils/helpers';
 
-export default function MenuDropdown({ parentState, wrapperSetParentState
-   // , cancelButtonRef 
-}) {
-//   const cancelButtonRef = useRef();
+export default function MenuDropdown({ parentState, wrapperSetParentState }) {
+  const cancelButtonRef = useRef();
+
+  const { childState, setChildState } = useState(false);
 
   return (
     <Transition.Root show={parentState} as={Fragment}>
       <Dialog
-      //   initialFocus={cancelButtonRef}
+        initialFocus={cancelButtonRef}
         as="div"
         className="fixed  inset-0 overflow-hidden"
         onClose={() => {
@@ -53,7 +53,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState
                       </Dialog.Title>
                       <div className="ml-3 h-7 flex items-center">
                         <button
-                        //   ref={cancelButtonRef}
+                          ref={cancelButtonRef}
                           type="button"
                           className="-m-2 p-2 text-gray-400 hover:text-gray-500"
                           onClick={() => wrapperSetParentState(false)}

@@ -24,18 +24,13 @@ const Nav = () => {
   return (
     <header className="sticky top-0 z-20 bg-deepoe-cream">
       <div className="flex items-center justify-between max-w-6xl pt-14 pb-2 px-4 mx-auto">
-       {!parentState ? <a
+        <a
           className="cursor-pointer font-light"
           onClick={() => wrapperSetParentState(!parentState)}
-          ref={cancelButtonRef}
+          // ref={cancelButtonRef}
         >
-     menu
-        </a> : 
-        <p
-          className="cursor-pointer font-light"
-        >
-close
-        </p>} 
+          {!parentState ? 'menu' : 'close'}
+        </a>
         <MenuDropdown
           parentState={parentState}
           wrapperSetParentState={wrapperSetParentState}

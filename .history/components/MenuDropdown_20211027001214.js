@@ -6,9 +6,7 @@ import Link from 'next/link';
 // import { CartContext } from '../context/shopContext';
 import { formatter } from '../utils/helpers';
 
-export default function MenuDropdown({ parentState, wrapperSetParentState
-   // , cancelButtonRef 
-}) {
+export default function MenuDropdown({ parentState, wrapperSetParentState, cancelButtonRef }) {
 //   const cancelButtonRef = useRef();
 
   return (
@@ -53,7 +51,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState
                       </Dialog.Title>
                       <div className="ml-3 h-7 flex items-center">
                         <button
-                        //   ref={cancelButtonRef}
+                          ref={cancelButtonRef}
                           type="button"
                           className="-m-2 p-2 text-gray-400 hover:text-gray-500"
                           onClick={() => wrapperSetParentState(false)}

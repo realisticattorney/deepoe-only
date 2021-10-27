@@ -9,7 +9,7 @@ import { formatter } from '../utils/helpers';
 export default function MenuDropdown({ parentState, wrapperSetParentState
    // , cancelButtonRef 
 }) {
-//   const cancelButtonRef = useRef();
+  const cancelButtonRef = useRef();
 
   return (
     <Transition.Root show={parentState} as={Fragment}>

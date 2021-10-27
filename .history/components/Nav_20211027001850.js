@@ -29,7 +29,7 @@ const Nav = () => {
           onClick={() => wrapperSetParentState(!parentState)}
           ref={cancelButtonRef}
         >
-     menu
+          {!parentState ? 'menu' : 'close'}
         </a> : 
         <p
           className="cursor-pointer font-light"
@@ -39,7 +39,7 @@ close
         <MenuDropdown
           parentState={parentState}
           wrapperSetParentState={wrapperSetParentState}
-          // cancelButtonRef={cancelButtonRef}
+          cancelButtonRef={cancelButtonRef}
         />
         <Link href="/" passHref>
           <a className="cursor-pointer">

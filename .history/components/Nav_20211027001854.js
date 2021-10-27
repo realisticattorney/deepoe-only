@@ -39,7 +39,7 @@ close
         <MenuDropdown
           parentState={parentState}
           wrapperSetParentState={wrapperSetParentState}
-          // cancelButtonRef={cancelButtonRef}
+          cancelButtonRef={cancelButtonRef}
         />
         <Link href="/" passHref>
           <a className="cursor-pointer">

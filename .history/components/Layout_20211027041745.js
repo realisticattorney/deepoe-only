@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
       <main>{children}</main>
       <footer className=" text-white justify-between flex p-5 bg-deepoe-chocolate">
         <div className="inline-flex ">
-          <ul className="flex-col space-y-0.5 font-extralight">
+          <ul className="flex-col space-y-0.5 font-exlight">
             <li>Instagram</li>
             <li>Twitter</li>
             <li>Careers</li>

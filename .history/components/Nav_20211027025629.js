@@ -46,18 +46,13 @@ close
             <span className="text-4xl font-medium">deepoe</span>
           </a>
         </Link>
-        {!cartOpen ? 
+        {!parentState ? <a
         <a
           className="cursor-pointer font-light"
           onClick={() => setCartOpen(!cartOpen)}
         >
           cart ({cartQuantity})
-        </a> :  <p
-          className="cursor-pointer font-light"
-        >
-close
-        </p>}
-
+        </a>
         <MiniCart cart={cart} />
       </div>
     </header>

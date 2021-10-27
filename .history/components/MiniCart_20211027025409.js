@@ -22,7 +22,7 @@ export default function MiniCart({ cart }) {
       <Dialog
         initialFocus={cancelButtonRef}
         as="div"
-        className="fixed inset-0 overflow-hidden"
+        className="fixed z-50 inset-0 overflow-hidden"
         onClose={() => {
           setCartOpen(!cartOpen);
         }}
@@ -40,7 +40,7 @@ export default function MiniCart({ cart }) {
             <Dialog.Overlay className="absolute inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
           </Transition.Child>
 
-          <div className="fixed inset-y-0  top-20 right-0 pl-0 max-w-full flex">
+          <div className="fixed inset-y-0  top-20 right-0 pl-10 max-w-full flex">
             <Transition.Child
               as={Fragment}
               enter="transform transition ease-in-out duration-500 sm:duration-700"
@@ -62,10 +62,10 @@ export default function MiniCart({ cart }) {
                           ref={cancelButtonRef}
                           type="button"
                           className="-m-2 p-2 text-gray-400 hover:text-gray-500"
-                          // onClick={() => setCartOpen(false)}
+                          onClick={() => setCartOpen(false)}
                         >
                           <span className="sr-only">Close panel</span>
-                          {/* <XIcon className="h-6 w-6" aria-hidden="true" /> */}
+                          <XIcon className="h-6 w-6" aria-hidden="true" />
                         </button>
                       </div>
                     </div>

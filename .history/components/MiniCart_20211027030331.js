@@ -65,7 +65,7 @@ export default function MiniCart({ cart }) {
                           // onClick={() => setCartOpen(false)}
                         >
                           <span className="sr-only">Close panel</span>
-                          {/* <XIcon className="h-6 w-6" aria-hidden="true" /> */}
+                          <XIcon className="h-6 w-6" aria-hidden="true" />
                         </button>
                       </div>
                     </div>

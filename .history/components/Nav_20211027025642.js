@@ -52,12 +52,8 @@ close
           onClick={() => setCartOpen(!cartOpen)}
         >
           cart ({cartQuantity})
-        </a> :  <p
-          className="cursor-pointer font-light"
-        >
-close
-        </p>}
-
+        </a>
+        
         <MiniCart cart={cart} />
       </div>
     </header>

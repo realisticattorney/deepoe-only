@@ -56,7 +56,7 @@ close
           className="cursor-pointer font-light"
         >
 close
-        </p>}
+        </p>
 
         <MiniCart cart={cart} />
       </div>

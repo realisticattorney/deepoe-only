@@ -22,7 +22,7 @@ export default function MiniCart({ cart }) {
       <Dialog
         initialFocus={cancelButtonRef}
         as="div"
-        className="fixed inset-0 overflow-hidden"
+        className="fixed z-50 inset-0 overflow-hidden"
         onClose={() => {
           setCartOpen(!cartOpen);
         }}
@@ -62,10 +62,10 @@ export default function MiniCart({ cart }) {
                           ref={cancelButtonRef}
                           type="button"
                           className="-m-2 p-2 text-gray-400 hover:text-gray-500"
-                          // onClick={() => setCartOpen(false)}
+                          onClick={() => setCartOpen(false)}
                         >
                           <span className="sr-only">Close panel</span>
-                          {/* <XIcon className="h-6 w-6" aria-hidden="true" /> */}
+                          <XIcon className="h-6 w-6" aria-hidden="true" />
                         </button>
                       </div>
                     </div>

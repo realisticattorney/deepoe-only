@@ -18,7 +18,7 @@ export default function MenuDropdown({
   return (
     <Transition.Root show={parentState} as={Fragment}>
       <Dialog
-      //   initialFocus={cancelButtonRef}
+        initialFocus={cancelButtonRef}
         as="div"
         className="fixed  inset-0 overflow-hidden"
         onClose={() => {
@@ -55,7 +55,7 @@ export default function MenuDropdown({
                       onClick={() => {
                         setOpen(!open);
                       }}
-                     //  ref={cancelButtonRef}
+                      ref={cancelButtonRef}
                     >
                       <div className="py-6 overflow-y-auto space-y-6 mt-7 px-6 sm:px-6">
                         <div className="flex justify-between">

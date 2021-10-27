@@ -18,7 +18,7 @@ export default function MenuDropdown({
   return (
     <Transition.Root show={parentState} as={Fragment}>
       <Dialog
-        initialFocus={cancelButtonRef}
+          initialFocus={cancelButtonRef}
         as="div"
         className="fixed  inset-0 overflow-hidden"
         onClose={() => {
@@ -57,7 +57,7 @@ export default function MenuDropdown({
                       }}
                       ref={cancelButtonRef}
                     >
-                      <div className="py-6 overflow-y-auto space-y-6 mt-7 px-6 sm:px-6">
+                      <div className="flex-1 py-6 overflow-y-auto space-y-6 mt-7 px-6 sm:px-6">
                         <div className="flex justify-between">
                           <p className="font-extralight text-3xl">Products</p>{' '}
                           <span className="mr-7 justify-self-end">^</span>
@@ -65,17 +65,17 @@ export default function MenuDropdown({
                       </div>
                     </Disclosure.Button>
                     <Transition
-                      //  show={open}
-                      appear={true}
-                      enter="transform transition ease-in duration-250"
+                     //  show={open}
+                     appear={true}
+                      enter="transform transition ease-in-out duration-150"
                       enterFrom="-translate-y-2/4 opacity-0"
                       enterTo="translate-y-0 opacity-100"
-                      leave="transform transition ease-out duration-200"
+                      leave="transform transition ease-out duration-150"
                       leaveFrom="translate-y-0 opacity-100"
                       leaveTo="-translate-y-3/4  opacity-0"
                     >
-                      <Disclosure.Panel className="text-gray-500 font-light">
-                        <ul className="space-y-2 pl-11 mb-6">
+                      <Disclosure.Panel className="text-gray-500 font-light pl-7">
+                        <ul className="space-y-2">
                           <li>Shop All</li>
                           <li>Dishware</li>
                           <li>Linens & Towels</li>
@@ -95,11 +95,11 @@ export default function MenuDropdown({
          
                     </Transition> */}
                     </Transition>
-                    <div className="flex-1 overflow-y-auto space-y-6 px-6 sm:px-6">
-                      <p className="font-extralight text-3xl">Sustainability</p>
+                    <div className="flex-1 py-6 overflow-y-auto space-y-6 mt-7 px-6 sm:px-6">
+                    <p className="font-extralight text-3xl">Sustainability</p>
                       <p className="font-extralight text-3xl">About</p>
                       <p className="font-extralight text-3xl">Contact</p>
-                    </div>
+                     </div>
                   </Disclosure>
                 </div>
               </div>

@@ -67,15 +67,15 @@ export default function MenuDropdown({
                     <Transition
                       //  show={open}
                       appear={true}
-                      enter="transform transition ease-in duration-250"
+                      enter="transform transition ease-in-out duration-150"
                       enterFrom="-translate-y-2/4 opacity-0"
                       enterTo="translate-y-0 opacity-100"
-                      leave="transform transition ease-out duration-200"
+                      leave="transform transition ease-out duration-150"
                       leaveFrom="translate-y-0 opacity-100"
                       leaveTo="-translate-y-3/4  opacity-0"
                     >
                       <Disclosure.Panel className="text-gray-500 font-light">
-                        <ul className="space-y-2 pl-11 mb-6">
+                        <ul className="space-y-2 pl-11">
                           <li>Shop All</li>
                           <li>Dishware</li>
                           <li>Linens & Towels</li>

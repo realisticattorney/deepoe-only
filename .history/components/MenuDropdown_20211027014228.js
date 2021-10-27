@@ -70,7 +70,7 @@ export default function MenuDropdown({
                       enter="transform transition ease-in duration-250"
                       enterFrom="-translate-y-2/4 opacity-0"
                       enterTo="translate-y-0 opacity-100"
-                      leave="transform transition ease-out duration-200"
+                      leave="transform transition ease-out duration-150"
                       leaveFrom="translate-y-0 opacity-100"
                       leaveTo="-translate-y-3/4  opacity-0"
                     >

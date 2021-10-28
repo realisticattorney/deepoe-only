@@ -30,7 +30,7 @@ const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
               >
                 <span className="px-2">{value}</span>
               </div>  
-              ) : null}
+                }
                 <div
                 className={`p-2 my-3 text-lg rounded-full block cursor-pointer mr-3 ${
                   checked

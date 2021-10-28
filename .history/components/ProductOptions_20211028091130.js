@@ -20,25 +20,14 @@ const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
                   setOptions(name, value);
                 }}
               />
-              {name === "color" ? (
-                <div
+              <div
                 className={`p-2 my-3 text-lg rounded-full block cursor-pointer mr-3 ${
                   checked
                     ? 'text-white bg-gray-900 '
                     : 'text-gray-900 bg-gray-200'
                 }`}
               >
-                <span className="px-2">{value}</span>
-              </div>  
-              ) : null}
-                <div
-                className={`p-2 my-3 text-lg rounded-full block cursor-pointer mr-3 ${
-                  checked
-                    ? 'text-white bg-gray-900 '
-                    : 'text-gray-900 bg-gray-200'
-                }`}
-              >
-                <span className="px-2">{value}</span>
+                <span className="px-2"></span>
               </div>
             </label>
           );

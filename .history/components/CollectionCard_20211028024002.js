@@ -5,8 +5,8 @@ import { formatter } from '../utils/helpers';
 const CollectionCard = ({ collection }) => {
   console.log(collection);
   const { handle, title } = collection.node;
-  const { originalSrc } = collection.node.image ? collection.node.image : collection.node.products.edges[0].node.images.edges[0].node;
-  console.log(originalSrc)
+//   const { originalSrc } = collection.node.image ? collection.node.image : collection.node.products.edges.node.originalSrc;
+  
   return (
     <Link href={`/products/${handle}`}>
       <a className="group px-2">

@@ -1,9 +1,9 @@
 import Head from 'next/head';
-import { getProductsInCollection } from '../../lib/shopify';
-import ProductList from '../../components/ProductList';
+import { getProductsInCollection } from '../lib/shopify';
+import ProductList from '../components/ProductList';
 import { useRouter } from 'next/router';
 
-export default function Collection({ products }) {
+export default function Home({ products }) {
   console.log(products);
   return (
     <div className="">

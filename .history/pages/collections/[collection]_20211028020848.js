@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { getProductsInCollection } from '../../lib/shopify';
-import ProductList from '../../components/ProductList';
+import ProductList from '../components/ProductList';
 import { useRouter } from 'next/router';
 
 export default function Collection({ products }) {

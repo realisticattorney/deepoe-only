@@ -1,9 +1,9 @@
 import Head from 'next/head';
-import { getProductsInCollection } from '../../lib/shopify';
-import ProductList from '../../components/ProductList';
+import { getProductsInCollection } from '../lib/shopify';
+import ProductList from '../components/ProductList';
 import { useRouter } from 'next/router';
 
-export default function Collection({ products }) {
+export default function Home({ products }) {
   console.log(products);
   return (
     <div className="">
@@ -20,11 +20,11 @@ export default function Collection({ products }) {
 }
 
 export async function getStaticProps() {
-//   const { asPath, pathname } = useRouter();
-//   console.log('aspath', asPath); // '/blog/xyz'
-//   console.log('path', pathname); // '/blog/[slug]'
+  const { asPath, pathname } = useRouter();
+  console.log('aspath', asPath); // '/blog/xyz'
+  console.log('path', pathname); // '/blog/[slug]'
 
-  const products = await getProductsInCollection("frontpage");
+  const products = await getProductsInCollection();
 
   return {
     props: { products },

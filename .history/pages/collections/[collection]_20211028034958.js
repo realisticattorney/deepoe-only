@@ -11,8 +11,8 @@ export default function Collection({ collection, products }) {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Link href={`/collections/${collection}`}>
-      <a>{collection}</a></Link>
+      <Link >
+      <a></a></Link>
       <ProductList products={products} />
     </div>
   );

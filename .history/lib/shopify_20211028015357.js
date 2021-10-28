@@ -24,6 +24,11 @@ async function ShopifyData(query) {
   }
 }
 
+
+
+
+
+
 export async function getCollections() {
   const query = `
   { 
@@ -44,17 +49,18 @@ export async function getCollections() {
   }`;
 
   const response = await ShopifyData(query);
-  const allCollections = response.data.collections.edges
-    ? response.data.collections.edges
+  const allCollections = response.data.collections.products.edges
+    ? response.data.collectionByHandle.products.edges
     : [];
 
   return allCollections;
 }
 
-export async function getProductsInCollection(handle) {
+
+export async function getProductsInCollection() {
   const query = `
    {
-      collectionByHandle(handle: "${handle}"){
+      collectionByHandle(handle: "frontpage"){
         title
         products(first: 25) {
           edges{
@@ -65,7 +71,7 @@ export async function getProductsInCollection(handle) {
               priceRange{
                minVariantPrice {
                  amount
-               } 
+               }
              }
               images(first: 5){
                 edges {

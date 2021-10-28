@@ -65,7 +65,7 @@ export async function getProductsInCollection(handle) {
               priceRange{
                minVariantPrice {
                  amount
-               } 
+               }
              }
               images(first: 5){
                 edges {

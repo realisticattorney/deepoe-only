@@ -51,10 +51,10 @@ export async function getCollections() {
   return allCollections;
 }
 
-export async function getProductsInCollection(handle) {
+export async function getProductsInCollection() {
   const query = `
    {
-      collectionByHandle(handle: "${handle}"){
+      collectionByHandle(handle: "frontpage"){
         title
         products(first: 25) {
           edges{
@@ -65,7 +65,7 @@ export async function getProductsInCollection(handle) {
               priceRange{
                minVariantPrice {
                  amount
-               } 
+               }
              }
               images(first: 5){
                 edges {

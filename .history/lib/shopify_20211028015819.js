@@ -54,7 +54,7 @@ export async function getCollections() {
 export async function getProductsInCollection(handle) {
   const query = `
    {
-      collectionByHandle(handle: "${handle}"){
+      collectionByHandle(handle: handle){
         title
         products(first: 25) {
           edges{
@@ -65,7 +65,7 @@ export async function getProductsInCollection(handle) {
               priceRange{
                minVariantPrice {
                  amount
-               } 
+               }
              }
               images(first: 5){
                 edges {

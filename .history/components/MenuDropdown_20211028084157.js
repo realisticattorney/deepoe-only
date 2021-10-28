@@ -57,7 +57,7 @@ export default function MenuDropdown({
                       }}
                       //  ref={cancelButtonRef}
                     >
-                      <div className="py-6 overflow-y-auto space-y-6 mt-7 px-6 sm:px-6 focus:outline-none active:outline-none">
+                      <div className="py-6 overflow-y-auto space-y-6 mt-7 px-6 sm:px-6 focus:outline-none focus:outline-none">
                         <div className="flex justify-between">
                           <p className="font-extralight text-3xl">Products</p>{' '}
                           <span className="mr-7 justify-self-end">^</span>

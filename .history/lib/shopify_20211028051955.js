@@ -102,39 +102,42 @@ export async function getProductsInCollection(handle) {
   return allProducts;
 }
 
-export async function getProductFromCollections() {
+export async function getProductInCollection(handle, productId) {
   const query = `
-  { 
-    collections(first:25) {
-      edges {
-        node {
-           id,
-           handle,
-           title,
-           description,
-           image {
-             id
-             originalSrc
-           }
-        	products(first: 25){
-            edges{
-              node{
-                handle
-                id
+   {
+      collectionByHandle(handle: "${handle}"){
+        title
+        product(handle: "${productId}") {
+          edges{
+            node{
+                   id
+              title
+              handle
+              priceRange{
+               minVariantPrice {
+                 amount
+               } 
+             }
+              images(first: 5){
+                edges {
+                  node {
+                    originalSrc
+                    altText
+                  }
+                }
               }
             }
           }
         }
       }
-    }  
-  }`;
+    }`;
 
   const response = await ShopifyData(query);
-  const allCollections = response.data.collections.edges
-    ? response.data.collections.edges
+  const allProducts = response.data.collectionByHandle.products.edges
+    ? response.data.collectionByHandle.products.edges
     : [];
 
-  return allCollections;
+  return allProducts;
 }
 
 export async function getAllProducts() {

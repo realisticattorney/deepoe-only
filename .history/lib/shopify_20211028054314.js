@@ -119,8 +119,13 @@ export async function getProductFromCollections() {
         	products(first: 25){
             edges{
               node{
-                handle
-                id
+                images(first:1){
+                  edges{
+                    node {
+                      originalSrc
+                    }
+                  }
+                }
               }
             }
           }

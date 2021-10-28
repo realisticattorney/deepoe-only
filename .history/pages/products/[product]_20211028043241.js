@@ -17,7 +17,7 @@ export async function getStaticPaths() {
   const paths = products.map((product) => ({
     params: { product: String(product.node.handle) },
   }));
-  
+  console.log
   return {
     paths,
     fallback: false,
@@ -26,7 +26,6 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const product = await getProduct(params.product);
-  console.log(params)
   return {
     props: {
       product,

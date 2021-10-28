@@ -102,7 +102,7 @@ export async function getProductsInCollection(handle) {
   return allProducts;
 }
 
-export async function getProductFromCollections() {
+export async function getProductsFrom() {
   const query = `
   { 
     collections(first:25) {
@@ -116,11 +116,16 @@ export async function getProductFromCollections() {
              id
              originalSrc
            }
-        	products(first: 25){
+        	products(first: 1){
             edges{
               node{
-                handle
-                id
+                images(first:1){
+                  edges{
+                    node {
+                      originalSrc
+                    }
+                  }
+                }
               }
             }
           }

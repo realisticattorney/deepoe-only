@@ -12,13 +12,13 @@ const CollectionCard = ({ collection }) => {
       <a className="group px-2">
         <div className="w-full  overflow-hidden">
           <div className="relative group-hover:opacity-75 h-72">
-            {/* <Image
+            <Image
               src={originalSrc}
               alt={altText}
               alt={title}
               layout="fill"
               objectFit="cover"
-            /> */}
+            />
           </div>
         </div>
         <h3 className="mt-3 text-2xl font-medium text-gray-800">{title}</h3>

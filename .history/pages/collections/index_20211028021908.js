@@ -6,7 +6,7 @@ const AllCollections = ({allCollections}) => {
    console.log(allCollections)
    return (
       <div>
-        <CollectionList allCollections={allCollections} />
+        <CollectionList products={products} />
       </div>
    )
 }

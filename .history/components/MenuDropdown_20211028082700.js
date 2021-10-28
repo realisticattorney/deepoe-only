@@ -77,34 +77,28 @@ export default function MenuDropdown({
                       <Disclosure.Panel className="text-gray-500 font-light">
                         <ul className="space-y-2 pl-11 mb-6">
                           <Link href={`/collections/frontpage`}>
-                            <a className="block" onClick={() => wrapperSetParentState(false)}>
-                              Shop All
-                            </a>
+                            <a 
+                                            onClick={() => setCartOpen(false)}>Shop All</>
                           </Link>
                           <Link href={`/collections/dishware`}>
-                            <a className="block" onClick={() => wrapperSetParentState(false)}>
-                              Dishware
-                            </a>
+                            <a 
+                                            onClick={() => setCartOpen(false)}>Dishware</>
                           </Link>
                           <Link href={`/collections/towels`}>
-                            <a className="block" onClick={() => wrapperSetParentState(false)}>
-                              Linens & Towels
-                            </a>
+                            <a 
+                                            onClick={() => setCartOpen(false)}>Linens & Towels</>
                           </Link>
                           <Link href={`/collections/rugs`}>
-                            <a className="block" onClick={() => wrapperSetParentState(false)}>
-                              Rugs
-                            </a>
+                            <a 
+                                            onClick={() => setCartOpen(false)}>Rugs</>
                           </Link>
                           <Link href={`/collections/furniture`}>
-                            <a className="block" onClick={() => wrapperSetParentState(false)}>
-                              Furniture
-                            </a>
+                            <a 
+                                            onClick={() => setCartOpen(false)}>Furniture</>
                           </Link>
                           <Link href={`/collections/miscellaneous`}>
-                            <a className="block" onClick={() => wrapperSetParentState(false)}>
-                              Miscellaneous
-                            </a>
+                            <a 
+                                            onClick={() => setCartOpen(false)}>Miscellaneous</>
                           </Link>
                         </ul>
                       </Disclosure.Panel>{' '}

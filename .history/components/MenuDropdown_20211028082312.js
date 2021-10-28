@@ -9,7 +9,7 @@ import { formatter } from '../utils/helpers';
 export default function MenuDropdown({
   parentState,
   wrapperSetParentState,
-  //   cancelButtonRef,
+//   cancelButtonRef,
 }) {
   //   const cancelButtonRef = useRef();
   const { open, setOpen } = useState(true);
@@ -18,7 +18,7 @@ export default function MenuDropdown({
   return (
     <Transition.Root show={parentState} as={Fragment}>
       <Dialog
-        //   initialFocus={cancelButtonRef}
+      //   initialFocus={cancelButtonRef}
         as="div"
         className="fixed  inset-0 overflow-hidden"
         onClose={() => {
@@ -55,7 +55,7 @@ export default function MenuDropdown({
                       onClick={() => {
                         setOpen(!open);
                       }}
-                      //  ref={cancelButtonRef}
+                     //  ref={cancelButtonRef}
                     >
                       <div className="py-6 overflow-y-auto space-y-6 mt-7 px-6 sm:px-6">
                         <div className="flex justify-between">
@@ -76,36 +76,12 @@ export default function MenuDropdown({
                     >
                       <Disclosure.Panel className="text-gray-500 font-light">
                         <ul className="space-y-2 pl-11 mb-6">
-                          <Link href={`/collections/frontpage`}>
-                            <a className="block" onClick={() => wrapperSetParentState(false)}>
-                              Shop All
-                            </a>
-                          </Link>
-                          <Link href={`/collections/dishware`}>
-                            <a className="block" onClick={() => wrapperSetParentState(false)}>
-                              Dishware
-                            </a>
-                          </Link>
-                          <Link href={`/collections/towels`}>
-                            <a className="block" onClick={() => wrapperSetParentState(false)}>
-                              Linens & Towels
-                            </a>
-                          </Link>
-                          <Link href={`/collections/rugs`}>
-                            <a className="block" onClick={() => wrapperSetParentState(false)}>
-                              Rugs
-                            </a>
-                          </Link>
-                          <Link href={`/collections/furniture`}>
-                            <a className="block" onClick={() => wrapperSetParentState(false)}>
-                              Furniture
-                            </a>
-                          </Link>
-                          <Link href={`/collections/miscellaneous`}>
-                            <a className="block" onClick={() => wrapperSetParentState(false)}>
-                              Miscellaneous
-                            </a>
-                          </Link>
+                          <Link><li>Shop All</li></Link>
+                          <Link><li>Dishware</li></Link>
+                          <Link><li>Linens & Towels</li>
+                          <Link><li>Rugs</li></Link>
+                          <Link><li>Furniture</li></Link>
+                          <Link><li>Miscellaneous</li></Link>
                         </ul>
                       </Disclosure.Panel>{' '}
                       {/* <Transition

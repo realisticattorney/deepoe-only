@@ -77,34 +77,22 @@ export default function MenuDropdown({
                       <Disclosure.Panel className="text-gray-500 font-light">
                         <ul className="space-y-2 pl-11 mb-6">
                           <Link href={`/collections/frontpage`}>
-                            <a className="block" onClick={() => wrapperSetParentState(false)}>
-                              Shop All
-                            </a>
+                            <li>Shop All</li>
                           </Link>
                           <Link href={`/collections/dishware`}>
-                            <a className="block" onClick={() => wrapperSetParentState(false)}>
-                              Dishware
-                            </a>
+                            <li>Dishware</li>
                           </Link>
                           <Link href={`/collections/towels`}>
-                            <a className="block" onClick={() => wrapperSetParentState(false)}>
-                              Linens & Towels
-                            </a>
+                            <li>Linens & Towels</li>
                           </Link>
                           <Link href={`/collections/rugs`}>
-                            <a className="block" onClick={() => wrapperSetParentState(false)}>
-                              Rugs
-                            </a>
+                            <li>Rugs</li>
                           </Link>
                           <Link href={`/collections/furniture`}>
-                            <a className="block" onClick={() => wrapperSetParentState(false)}>
-                              Furniture
-                            </a>
+                            <li>Furniture</li>
                           </Link>
                           <Link href={`/collections/miscellaneous`}>
-                            <a className="block" onClick={() => wrapperSetParentState(false)}>
-                              Miscellaneous
-                            </a>
+                            <li>Miscellaneous</li>
                           </Link>
                         </ul>
                       </Disclosure.Panel>{' '}

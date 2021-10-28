@@ -25,12 +25,12 @@ export async function getStaticPaths() {
          combinations.push({ params: {
          collection: collection.node.handle,
          product: product.node.handle,
-         }});
+         });
       }
    }
    return combinations;
    }
-   const paths = getAllCombinations(products);
+   console.log(getAllCombinations(products));
 
   return {
     paths,

@@ -30,7 +30,7 @@ export async function getStaticPaths() {
    }
    return combinations;
    }
-   const paths = getAllCombinations(products);
+   console.log(getAllCombinations(products));
 
   return {
     paths,

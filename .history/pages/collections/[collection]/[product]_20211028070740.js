@@ -22,15 +22,15 @@ export async function getStaticPaths() {
       const products = collection.node.products.edges;
       for (let j = 0; j < products.length; j++) {
          const product = products[j];
-         combinations.push({ params: {
+         combinations.push({ params
          collection: collection.node.handle,
          product: product.node.handle,
-         }});
+         });
       }
    }
    return combinations;
    }
-   const paths = getAllCombinations(products);
+   console.log(getAllCombinations(products));
 
   return {
     paths,

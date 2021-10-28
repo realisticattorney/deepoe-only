@@ -3,10 +3,8 @@ import ProductForm from './ProductForm';
 import Link from 'next/link';
 const ProductPageContent = ({ collection, product }) => {
   return (
-    <div>
-    <div className="px-5 py-5"><Link href={`/collections/${collection}/`}><a className="text-left text-sm font-medium">collections {">"} {collection}</a></Link></div>
     <div className="flex flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 px-2 mx-auto">
-    
+    <Link href={`/collections/${collection}/`}><a className="text-left">{collection}</a></Link>
       <div className="w-full max-w-md border overflow-hidden shadow-sm">
         <div className="relative h-80 w-full">
           <Image
@@ -18,7 +16,7 @@ const ProductPageContent = ({ collection, product }) => {
         </div>
       </div>
       <ProductForm product={product} />
-    </div></div>
+    </div>
   );
 };
 

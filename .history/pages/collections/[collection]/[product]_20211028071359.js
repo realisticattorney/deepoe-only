@@ -1,11 +1,11 @@
 import ProductPageContent from '../../../components/ProductPageContent';
 import { getProduct, getProductFromCollections } from '../../../lib/shopify';
 
-const Product = ({ collection, product }) => {
-//   console.log(product);
+const Product = ({ product }) => {
+  console.log(product);
   return (
-    <div className="min-h-screen py-2">
-      <ProductPageContent product={product} collection={collection} />
+    <div className="min-h-screen py-12">
+      <ProductPageContent product={product} />
     </div>
   );
 };
@@ -42,7 +42,6 @@ export async function getStaticProps({ params }) {
   console.log(params)
   return {
     props: {
-      collection: params.collection,
       product,
     },
   };

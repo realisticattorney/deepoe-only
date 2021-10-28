@@ -4,7 +4,7 @@ import Link from 'next/link';
 const ProductPageContent = ({ collection, product }) => {
   return (
     <div>
-    <div className="px-5 py-5"><Link href={`/collections/${collection}/`}><a className="text-left text-sm font-medium">collections {">"} {collection}</a></Link></div>
+    <div><Link href={`/collections/${collection}/`}><a className="text-left">{collection}</a></Link>
     <div className="flex flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 px-2 mx-auto">
     
       <div className="w-full max-w-md border overflow-hidden shadow-sm">

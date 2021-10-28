@@ -4,8 +4,8 @@ import { getProduct, getProductFromCollections } from '../../../lib/shopify';
 const Product = ({ collection, product }) => {
 //   console.log(product);
   return (
-    <div className="min-h-screen py-2">
-      <ProductPageContent product={product} collection={collection} />
+    <div className="min-h-screen py-12">
+      <ProductPageContent product={product} />
     </div>
   );
 };

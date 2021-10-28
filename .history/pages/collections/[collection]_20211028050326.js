@@ -31,6 +31,8 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const products = await getProductsInCollection(params.collection);
+  console.log(params)
+  // console.log(products);
 
   return {
     props: {

@@ -2,13 +2,13 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { formatter } from '../utils/helpers';
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ collection, product }) => {
   const { handle, title } = product.node;
   const { altText, originalSrc } = product.node.images.edges[0].node;
   const price  = product.node.priceRange.minVariantPrice.amount;
 
   return (
-    <Link href={`/products/${handle}`}>
+    <Link href={`/collections/${collection}/${handle}`}>
       <a className="group px-2">
         <div className="w-full  overflow-hidden">
           <div className="relative group-hover:opacity-75 h-72">

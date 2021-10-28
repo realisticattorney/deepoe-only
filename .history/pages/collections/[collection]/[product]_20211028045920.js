@@ -1,6 +1,6 @@
-import ProductPageContent from '../../components/ProductPageContent';
-import { getAllProducts, getProduct } from '../../lib/shopify';
-
+import ProductPageContent from '../../../components/ProductPageContent';
+import { getAllProducts, getProduct, getProductsInCollection } from '../../../lib/shopify';
+import { useRouter } from 'next/router';
 const Product = ({ product }) => {
   console.log(product);
   return (
@@ -13,11 +13,14 @@ const Product = ({ product }) => {
 export default Product;
 
 export async function getStaticPaths() {
-  const products = await getAllProducts();
+   const router = useRouter();
+   const { collection } = router.query;
+   
+  const products = await getProductsInCollection();
   const paths = products.map((product) => ({
     params: { product: String(product.node.handle) },
   }));
-  console.log
+  console.log;
   return {
     paths,
     fallback: false,
@@ -25,7 +28,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const product = await getProduct(params.product);
+  const product = await getProduct(params.collection.product);
   return {
     props: {
       product,

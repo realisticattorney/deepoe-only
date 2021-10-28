@@ -19,7 +19,7 @@ const CollectionCard = ({ collection }) => {
             />
           </div>
         </div>
-        <h3 className="mt-3 relative -top-14 left-2 text-2xl text-white font-medium">{title}</h3>
+        <h3 className="mt-3 relative -top-14 left-4 text-2xl  font-medium text-gray-800">{title}</h3>
       </a>
     </Link>
   );

@@ -7,7 +7,7 @@ const CollectionCard = ({ collection }) => {
   const { handle, title } = collection.node;
   const { originalSrc } = collection.node.image ? collection.node.image : collection.node.products.edges[0].node.images.edges[0].node;
   return (
-    <Link href={`/collections/${handle}`}>
+    <Link href={`/products/${handle}`}>
       <a className="group px-2">
         <div className="w-full  overflow-hidden">
           <div className="relative group-hover:opacity-75 h-72">
@@ -19,7 +19,7 @@ const CollectionCard = ({ collection }) => {
             />
           </div>
         </div>
-        <h3 className="mt-3 relative -top-14 left-2 text-2xl text-white font-medium">{title}</h3>
+        <h3 className="mt-3 text-2xl font-medium text-gray-800">{title}</h3>
       </a>
     </Link>
   );

@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { getCollections, getProductsInCollection } from '../../lib/shopify';
 import ProductList from '../../components/ProductList';
 import { useRouter } from 'next/router';
-import Link from 'next/link';
+
 export default function Collection({ collection, products }) {
   console.log(collection);
   return (
@@ -11,7 +11,7 @@ export default function Collection({ collection, products }) {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Link></Link>
+      <h3></h3>
       <ProductList products={products} />
     </div>
   );

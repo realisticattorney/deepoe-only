@@ -2,17 +2,22 @@ import Head from 'next/head';
 import { getCollections, getProductsInCollection } from '../../lib/shopify';
 import ProductList from '../../components/ProductList';
 import { useRouter } from 'next/router';
-import Link from 'next/link';
-export default function Collection({ collection, products }) {
-  console.log(collection);
+
+export default function Collection(
+  {
+     products
+  }
+) {
+    console.log(products);
   return (
     <div className="">
-      <Head>
+     <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Link></Link>
+ 
       <ProductList products={products} />
+        
     </div>
   );
 }
@@ -37,7 +42,7 @@ export async function getStaticProps({ params }) {
 
   return {
     props: {
-      collection: params.collection,
+       collection: params.collection
       products,
     },
   };

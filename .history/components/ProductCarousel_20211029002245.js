@@ -33,7 +33,6 @@ const Banner = ({ product }) => {
         interval={5000}
         emulateTouch
         selectedItem={1}
-        showArrows={false}
         
       >
         {imageSrc.map((index) => (

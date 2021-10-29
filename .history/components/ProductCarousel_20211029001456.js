@@ -19,21 +19,25 @@ const Banner = ({ product }) => {
     .flat();
   console.log('imageSrc', imageSrc);
 
-  function handleChange(event) {}
+renderIndicator: (
+    clickHandler: (e: React.MouseEvent | React.KeyboardEvent) => void,
+    isSelected: boolean,
+    index: number,
+    label: string
+) => React.ReactNode;
+
+  
 
   return (
     <div className="relative mb-10">
-      <Carousel
-        onChange={handleChange}
+      <Carousel onChange={handleChange}
         //   autoPlay
         infiniteLoop
         showStatus={false}
-        showIndicators
+        showIndicators={true}
         showThumbs={false}
         interval={5000}
-        emulateTouch
-        selectedItem={1}
-        showArrows={false}
+        selectedItem={event};
         
       >
         {imageSrc.map((index) => (
@@ -43,7 +47,6 @@ const Banner = ({ product }) => {
               loading="lazy"
               objectFit="cover"
               layout="fill"
-              key={index}
               src={index}
               alt=""
             />

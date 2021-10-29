@@ -19,22 +19,20 @@ const Banner = ({ product }) => {
     .flat();
   console.log('imageSrc', imageSrc);
 
-  function handleChange(event) {}
+  function handleChange(event) {
+    console.log("event",event);
+  }
+  
 
   return (
     <div className="relative mb-10">
-      <Carousel
-        onChange={handleChange}
+      <Carousel onChange={handleChange}
         //   autoPlay
         infiniteLoop
         showStatus={false}
-        showIndicators
+        showIndicators={true}
         showThumbs={false}
         interval={5000}
-        emulateTouch
-        selectedItem={1}
-        showArrows={false}
-        
       >
         {imageSrc.map((index) => (
           <div className="w-full h-72  from-gray-100 bottom-0 z-20">
@@ -43,7 +41,6 @@ const Banner = ({ product }) => {
               loading="lazy"
               objectFit="cover"
               layout="fill"
-              key={index}
               src={index}
               alt=""
             />

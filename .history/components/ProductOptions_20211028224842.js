@@ -26,12 +26,8 @@ const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
                     checked ? 'border-black' : 'border-none'
                   }
                   ${value == 'Black' ? 'bg-black border-gray-400' : ''}
-                  ${
-                    value == 'Grey' || value == 'Gray'
-                      ? 'bg-gray-600 border-black'
-                      : ''
-                  }
-                  ${value == 'Olive' ? 'bg-green-600 border-black' : ''}`}
+                  ${value == 'Grey' || value == 'Gray'? 'bg-gray-600 border-black' : ''}
+                  ${value == 'Grey' ? 'bg-gray-600 border-black' : ''}`
                 ></div>
               ) : null}
               {name === 'Size' ? (

@@ -31,7 +31,7 @@ const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
                       ? 'bg-gray-600 border-black'
                       : ''
                   }
-                  ${value == 'Olive' ? 'bg-green-600 border-black' : ''}`}
+                  ${value == 'Grey' ? 'bg-gray-600 border-black' : ''}`}
                 ></div>
               ) : null}
               {name === 'Size' ? (

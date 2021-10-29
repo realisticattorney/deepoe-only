@@ -1,4 +1,16 @@
-const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
+const ProductOptions = ({
+  name,
+  values,
+  selectedOptions,
+  setOptions,
+  // quantityAvailable,
+  // currentlyNotInStock,
+}) => {
+
+  // console.log(quantityAvailable)
+  // console.log(currentlyNotInStock)
+  
+  
   return (
     <fieldset>
       <legend className="text-xl font-semibold">{name}</legend>

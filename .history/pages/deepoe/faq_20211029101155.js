@@ -116,7 +116,7 @@ const Faq = () => {
           </div>
         </button>
       </div>
-      <div className="flex flex-col w-full py-5">
+      <div className="flex flex-col w-full pt-5">
         <h4 className="px-3">Miscellaneous</h4>
         <button className="group focus:outline-none px-3" onClick={handleShow}>
           <div className="flex justify-between py-2 text-sm font-light text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">

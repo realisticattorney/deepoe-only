@@ -5,7 +5,7 @@ import { CartContext } from '../context/shopContext';
 
 const ProductForm = ({ product }) => {
   const { addToCart } = useContext(CartContext);
-
+  
   const allVariantOptions = product.variants.edges?.map((variant) => {
     const allOptions = {};
     variant.node.selectedOptions.map((item) => {
@@ -24,7 +24,7 @@ const ProductForm = ({ product }) => {
       currentlyNotInStock: variant.node.currentlyNotInStock,
     };
   });
-  console.log(allVariantOptions);
+  console.log(allVariantOptions)
   const defaultValues = {}; //saving here the default values of the form
 
   product.options.map((item) => {
@@ -35,7 +35,7 @@ const ProductForm = ({ product }) => {
   const [selectedOptions, setSelectedOptions] = useState(defaultValues); //this will re-render the component every time the user changes the selected option
 
   //   console.log('defaultValues', defaultValues);
-  console.log('variant options', selectedVariant);
+    console.log('variant options', selectedVariant);
 
   function setOptions(name, value) {
     //this function will be called every time the user changes the selected option (onChange, in the ProductOptions component) and will update the selectedOptions state
@@ -62,20 +62,10 @@ const ProductForm = ({ product }) => {
     <div className="flex-col flex w-full pt-1">
       <h2 className="text-2xl font-medium text-gray-800">{product.title}</h2>
       <div className="pb-6 pt-2 items-center flex justify-between">
-        <span className="  text-lg font-light text-gray-700">
-          {formatter.format(product.variants.edges[0].node.priceV2.amount)}
-        </span>
-        <h3
-          className={`text-right text-sm font-extralight ${
-            selectedVariant.currentlyNotInStock
-              ? 'text-red-700'
-              : 'text-gray-700'
-          }`}
-        >
-          {selectedVariant.currentlyNotInStock
-            ? 'Currently out of stock'
-            : 'In Stock'}
-        </h3>
+      <span className="  text-lg font-light text-gray-700">
+        {formatter.format(product.variants.edges[0].node.priceV2.amount)}
+      </span>
+      <h3 className={`text-right text-sm font-extralight ${selectedVariant.currentlyNotInStock ? "text-red-700" : "text-gray-700"}`}>{selectedVariant.currentlyNotInStock ? "Currently out of stock" : "In Stock"}</h3>
       </div>
       {product.options.map(({ name, values }) => (
         <ProductOptions
@@ -83,10 +73,11 @@ const ProductForm = ({ product }) => {
           name={name}
           values={values}
           selectedOptions={selectedOptions}
+         
           setOptions={setOptions} //just passing the function to the ProductOptions component to be called when the user changes the selected option
         />
       ))}
-
+      
       <button
         onClick={() => {
           addToCart(selectedVariant);

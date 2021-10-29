@@ -1,7 +1,12 @@
 import Image from 'next/image';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-
+renderIndicator: (
+  clickHandler: (e: React.MouseEvent | React.KeyboardEvent) => void,
+  isSelected: boolean,
+  index: number,
+  label: string
+) => React.ReactNode;
 const Banner = ({ product }) => {
   console.log('product', product);
 
@@ -21,13 +26,15 @@ const Banner = ({ product }) => {
 
   console.log('imageSrc', imageSrc);
 
-  function handleChange(event) {}
+  function renderIndicator(event) {console.log("lalala", event)}
 
   return (
-    <div className="relative z-0  mb-10">
+    <div className="relative  mb-10">
       <Carousel
-        onChange={handleChange}
+      className="z-0"
+        // onChange={handleChange}
         //   autoPlay
+        renderIndicators={renderIndicator}
         infiniteLoop
         showStatus={false}
         showIndicators
@@ -38,7 +45,7 @@ const Banner = ({ product }) => {
         showArrows={false}
       >
         {imageSrc.map((index) => (
-          <div className="w-full h-72  from-gray-100 bottom-0">
+          <div className="w-full h-72  from-gray-100 bottom-0 z-auto">
             <Image
               quality={100}
               loading="lazy"

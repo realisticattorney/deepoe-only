@@ -24,7 +24,7 @@ const Banner = ({ product }) => {
   function handleChange(event) {}
 
   return (
-    <div className="relative z-0  mb-10">
+    <div className="relative  mb-10">
       <Carousel
         onChange={handleChange}
         //   autoPlay

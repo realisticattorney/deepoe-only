@@ -16,7 +16,7 @@ export default function MenuDropdown({
   const { closed, setClosed } = useState(false);
 
   return (
-    <Transition.Root show={parentState} as={Fragment} className="z-40">
+    <Transition.Root show={parentState} as={Fragment}>
       <Dialog
         //   initialFocus={cancelButtonRef}
         as="div"
@@ -25,7 +25,7 @@ export default function MenuDropdown({
           wrapperSetParentState(!parentState);
         }}
       >
-        <div className="absolute  inset-0 overflow-hidden">
+        <div className="absolute z-40 inset-0 overflow-hidden">
           <Transition.Child
             as={Fragment}
             enter="ease-in-out duration-500"

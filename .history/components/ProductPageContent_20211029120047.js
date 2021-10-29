@@ -8,7 +8,7 @@ const ProductPageContent = ({ collection, product }) => {
 
   return (
     <div>
-      <div className="px-5 py-5 z-0">
+      <div className="px-5 py-5 z-10">
         <Link href={`/collections/${collection}/`}>
           <a className="text-left text-sm font-medium">
             collections {'>'} {collection}

@@ -21,13 +21,35 @@ const Banner = ({ product }) => {
 
   console.log('imageSrc', imageSrc);
 
-  function handleChange(event) {}
+  function renderIndicator(event) {console.log("lalala", event)}
 
   return (
-    <div className="relative z-0  mb-10">
+    <div className="relative  mb-10">
       <Carousel
-        onChange={handleChange}
+      className="z-0"
+        // onChange={handleChange}
         //   autoPlay
+        renderIndicator={(
+    onClickHandler: (e: React.MouseEvent | React.KeyboardEvent) => void,
+    isSelected: boolean,
+    index: number,
+    label: string
+  ) => (
+    // it will render inside an ul element
+    <li
+      style={{ ...indicatorStyles, opacity: isSelected ? '1' : '0.7' }}
+      onClick={onClickHandler}
+      onKeyDown={onClickHandler}
+      value={index}
+      key={index}
+      role="button"
+      tabIndex={0}
+      aria-label={`${label} ${index + 1}`}
+    >
+      {/* render the number instead of a box*/}
+      {index + 1}
+    </li>
+  )}
         infiniteLoop
         showStatus={false}
         showIndicators
@@ -38,7 +60,7 @@ const Banner = ({ product }) => {
         showArrows={false}
       >
         {imageSrc.map((index) => (
-          <div className="w-full h-72  from-gray-100 bottom-0">
+          <div className="w-full h-72  from-gray-100 bottom-0 z-auto">
             <Image
               quality={100}
               loading="lazy"

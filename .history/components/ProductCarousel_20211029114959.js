@@ -21,16 +21,38 @@ const Banner = ({ product }) => {
 
   console.log('imageSrc', imageSrc);
 
-  function handleChange(event) {}
-
+  function renderIndicator(event) {
+    console.log('lalala', event);
+  }
+  const indicatorStyles = {
+    display: 'inline-block',
+    marginRight: '10px',
+    color: '#fff',
+    cursor: 'pointer',
+  };
+  
   return (
-    <div className="relative z-0  mb-10">
+    <div className="relative  mb-10">
       <Carousel
-        onChange={handleChange}
-        //   autoPlay
+        renderIndicator={(
+          // it will render inside an ul element
+          <li
+            style={{ ...indicatorStyles, opacity: isSelected ? '1' : '0.7' }}
+            onClick={onClickHandler}
+            onKeyDown={onClickHandler}
+            value={index}
+            key={index}
+            role="button"
+            tabIndex={0}
+            aria-label={`${label} ${index + 1}`}
+          >
+            {/* render the number instead of a box*/}
+            {index + 1}
+          </li>
+        )}
         infiniteLoop
         showStatus={false}
-        showIndicators
+        // showIndicators
         showThumbs={false}
         interval={5000}
         emulateTouch
@@ -38,7 +60,7 @@ const Banner = ({ product }) => {
         showArrows={false}
       >
         {imageSrc.map((index) => (
-          <div className="w-full h-72  from-gray-100 bottom-0">
+          <div className="w-full h-72  from-gray-100 bottom-0 z-auto">
             <Image
               quality={100}
               loading="lazy"

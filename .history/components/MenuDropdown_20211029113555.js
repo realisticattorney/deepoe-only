@@ -16,7 +16,7 @@ export default function MenuDropdown({
   const { closed, setClosed } = useState(false);
 
   return (
-    <Transition.Root show={parentState} as={Fragment} className="z-40">
+    <Transition.Root show={parentState} as={Fragment}>
       <Dialog
         //   initialFocus={cancelButtonRef}
         as="div"

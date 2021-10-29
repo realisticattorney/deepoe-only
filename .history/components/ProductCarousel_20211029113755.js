@@ -24,8 +24,9 @@ const Banner = ({ product }) => {
   function handleChange(event) {}
 
   return (
-    <div className="relative z-0  mb-10">
+    <div className="relative  mb-10">
       <Carousel
+      className="z-0"
         onChange={handleChange}
         //   autoPlay
         infiniteLoop
@@ -38,7 +39,7 @@ const Banner = ({ product }) => {
         showArrows={false}
       >
         {imageSrc.map((index) => (
-          <div className="w-full h-72  from-gray-100 bottom-0">
+          <div className="w-full h-72  from-gray-100 bottom-0 z-0">
             <Image
               quality={100}
               loading="lazy"

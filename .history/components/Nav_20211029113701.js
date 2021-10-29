@@ -22,7 +22,7 @@ const Nav = () => {
   );
 
   return (
-    <header className="sticky top-0  bg-deepoe-cream z-50">
+    <header className="sticky top-0  bg-deepoe-cream z-0">
       <div className="flex items-center justify-between max-w-6xl pt-14 pb-2 px-4 mx-auto">
        {!parentState ? <a
           className="cursor-pointer font-light"

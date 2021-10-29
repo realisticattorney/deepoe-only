@@ -35,9 +35,9 @@ const ProductOptions = ({
               {name === 'Color' ? (
                 <div
                   className={`p-3 border-2 my-3 text-lg rounded-full block cursor-pointer mr-3 ${
-                    checked ? 'border-black' : 'border-gray-300'
+                    checked ? 'border-black' : 'border-gray-400'
                   }
-                  ${value == 'Black' ? 'bg-gray-900 border-yellow-200' : ''}
+                  ${value == 'Black' ? 'bg-gray-900 border-white' : ''}
                   ${
                     value == 'Grey' || value == 'Gray'
                       ? 'bg-gray-600 border-black'

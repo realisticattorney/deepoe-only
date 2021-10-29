@@ -193,7 +193,7 @@ export async function getProduct(handle) {
               }
               title
               id
-              currentlyNotInStock
+              quantityAvailable
               priceV2 {
                 amount
               }

@@ -41,7 +41,7 @@ close
           wrapperSetParentState={wrapperSetParentState}
           // cancelButtonRef={cancelButtonRef}
         />
-        <Link href="/collections/frontpage" passHref>
+        <Link href="/" passHref>
           <a className="cursor-pointer">
             <span className="text-4xl font-medium">deepoe</span>
           </a>

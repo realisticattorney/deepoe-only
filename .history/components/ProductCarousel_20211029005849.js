@@ -18,7 +18,6 @@ const Banner = ({ product }) => {
     )
     .flat()
     .filter((value, index, self) => self.indexOf(value) === index);
-    
   console.log('imageSrc', imageSrc);
 
   function handleChange(event) {}

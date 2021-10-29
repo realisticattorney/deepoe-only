@@ -16,9 +16,10 @@ const Banner = ({ product }) => {
           ).node.image.originalSrc
       )
     )
-    .flat()
-    .filter((value, index, self) => self.indexOf(value) === index);
-    
+    .flat().filter(
+      //remove duplicates
+      (value, index, self) => self.indexOf(value) === index
+   )
   console.log('imageSrc', imageSrc);
 
   function handleChange(event) {}
@@ -36,6 +37,7 @@ const Banner = ({ product }) => {
         emulateTouch
         selectedItem={1}
         showArrows={false}
+        
       >
         {imageSrc.map((index) => (
           <div className="w-full h-72  from-gray-100 bottom-0 z-20">

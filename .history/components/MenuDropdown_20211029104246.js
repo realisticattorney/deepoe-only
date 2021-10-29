@@ -138,14 +138,13 @@ export default function MenuDropdown({
                     </Transition>
                     <div className="flex-1 overflow-y-auto space-y-6 px-6 sm:px-6">
                       <p className="font-extralight text-3xl">Sustainability</p>
-                      <Link href={`/deepoe/faq`}>
-                        <a
-                          className="font-extralight text-3xl"
-                          onClick={() => wrapperSetParentState(false)}
-                        >
-                          FAQ
-                        </a>
-                      </Link>
+                      <Link href={`/collections/miscellaneous`}>
+                            <a
+                              className="font-extralight text-3xl"
+                              onClick={() => wrapperSetParentState(false)}
+                            >
+                              Miscellaneous
+                            </a>
                       <p className="font-extralight text-3xl">Contact</p>
                     </div>
                   </Disclosure>

@@ -20,26 +20,24 @@ const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
                   setOptions(name, value);
                 }}
               />
-              {name === 'Color' ? (
-                <div
-                  className={`p-3 border-2 my-3 text-lg rounded-full block cursor-pointer mr-3 ${
-                    checked ? 'border-black' : 'border-none'
-                  }
-                  ${value == 'Black' ? 'bg-black border-gray-400' : ''}
-                  ${value == 'Grey' ? 'bg-gray-600 border-black' : ''}`}
-                ></div>
-              ) : null}
-              {name === 'Size' ? (
+              {name === 'color' ? (
                 <div
                   className={`p-2 my-3 text-lg rounded-full block cursor-pointer mr-3 ${
                     checked
                       ? 'text-white bg-gray-900 '
                       : 'text-gray-900 bg-gray-200'
                   }`}
-                >
-                  <span className="px-2">{value}</span>
-                </div>
+                ></div>
               ) : null}
+              <div
+                className={`p-2 my-3 text-lg rounded-full block cursor-pointer mr-3 ${
+                  checked
+                    ? 'text-white bg-gray-900 '
+                    : 'text-gray-900 bg-gray-200'
+                }`}
+              >
+                <span className="px-2"></span>
+              </div>
             </label>
           );
         })}

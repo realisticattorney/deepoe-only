@@ -25,7 +25,7 @@ const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
                   className={`p-3 border-2 my-3 text-lg rounded-full block cursor-pointer mr-3 ${
                     checked ? 'border-black' : 'border-none'
                   }
-                  ${value == 'Black' ? 'bg-black border-gray-400' : ''}
+                  ${value == 'Black' ? 'bg-black border-gray-100' : ''}
                   ${value == 'Grey' ? 'bg-gray-600 border-black' : ''}`}
                 ></div>
               ) : null}

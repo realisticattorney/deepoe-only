@@ -2,9 +2,9 @@ import Nav from './Nav';
 
 const Layout = ({ children }) => {
   return (
-    <div className="flex flex-col min-h-screen bg-deepoe-cream">
+    <div className="flex flex-col justify-between min-h-screen bg-deepoe-cream">
       <Nav />
-      <main className="h-full flex-grow overflow-scroll">{children}</main>
+      <main className="h-full ju">{children}</main>
       <footer className=" text-white justify-between flex p-5 bg-deepoe-chocolate">
         <div className="inline-flex ">
           <ul className="flex-col space-y-0.5 font-extralight">

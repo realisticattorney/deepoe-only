@@ -164,6 +164,7 @@ export default function MenuDropdown({
                           Contact
                         </a>
                       </Link>
+                      <p className="font-extralight text-3xl">Contact</p>
                     </div>
                   </Disclosure>
                 </div>

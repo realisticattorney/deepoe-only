@@ -144,15 +144,7 @@ export default function Contact() {
               {...register('message', {
                 required: {
                   value: true,
-                  message: 'You need to enter your message',
-                },
-                maxLength: {
-                  value: 1000,
-                  message: "Your message can't be more than 1000 characters",
-                },
-                minLength: {
-                  value: 50,
-                  message: 'Your message must be longer than this!',
+                  message: 'Please enter your name',
                 },
               })}
               // ref={register({

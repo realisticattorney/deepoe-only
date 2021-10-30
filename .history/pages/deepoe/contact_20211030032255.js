@@ -144,7 +144,7 @@ export default function Contact() {
               {...register('message', {
                 required: {
                   value: true,
-                  message: 'You need to enter your message',
+                  message: 'Please enter your name',
                 },
                 maxLength: {
                   value: 1000,

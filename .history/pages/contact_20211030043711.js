@@ -15,7 +15,7 @@ export default function Contact() {
   async function onSubmitForm(values) {
     let config = {
       method: 'post',
-      url: `/api/contact`,
+      url: `${process.env.}/api/contact`,
       headers: {
         'Content-Type': 'application/json',
       },
@@ -43,7 +43,7 @@ export default function Contact() {
           className="grid grid-cols-1 gap-y-6"
         >
           <div>
-            <label htmlFor="name" className="sr-only">
+            <label for="name" className="sr-only">
               Full name
             </label>
             <input

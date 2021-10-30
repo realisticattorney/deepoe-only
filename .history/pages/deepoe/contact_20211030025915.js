@@ -1,10 +1,10 @@
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import { useRouter } from 'next/router';
-import { useToast } from '../../hooks/useToast';
+// import { useToast } from '../hooks/useToast';
 
 export default function Contact() {
-  const toast = useToast();
+  // const toast = useToast();
   const { register, handleSubmit, errors, reset } = useForm();
   const router = useRouter();
   async function onSubmitForm(values) {
@@ -92,7 +92,7 @@ export default function Contact() {
               {errors?.email?.message}
             </span>
           </div>
-          <div>
+          {/* <div>
             <label for="phone" className="sr-only">
               Phone
             </label>
@@ -103,7 +103,7 @@ export default function Contact() {
               className="block w-full shadow py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md focus:outline-none focus:ring-2"
               placeholder="Phone"
             />
-          </div>
+          </div> */}
           <div>
             <label for="message" className="sr-only">
               Message

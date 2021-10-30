@@ -1,10 +1,10 @@
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import { useRouter } from 'next/router';
-import { useToast } from '../../hooks/useToast';
+// import { useToast } from '../hooks/useToast';
 
 export default function Contact() {
-  const toast = useToast();
+  // const toast = useToast();
   const { register, handleSubmit, errors, reset } = useForm();
   const router = useRouter();
   async function onSubmitForm(values) {
@@ -35,13 +35,14 @@ export default function Contact() {
       <div className="mx-auto w-full max-w-2xl rounded-xl bg-white p-8 shadow">
         <form
           onSubmit={handleSubmit(onSubmitForm)}
-          className="grid grid-cols-1 gap-y-6">
+          className="grid grid-cols-1 gap-y-6"
+        >
           <div>
             <label for="name" className="sr-only">
               Full name
             </label>
             <input
-              type="text"
+              type="string"
               name="name"
               ref={register({
                 required: {
@@ -128,7 +129,8 @@ export default function Contact() {
               className={`block w-full shadow py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md focus:outline-none focus:ring-2 ${
                 errors.message ? 'ring-2 ring-red-500' : null
               }`}
-              placeholder="Message"></textarea>
+              placeholder="Message"
+            ></textarea>
             <span className="text-red-400 text-sm py-2">
               {errors?.message?.message}
             </span>
@@ -136,7 +138,8 @@ export default function Contact() {
           <div>
             <button
               type="submit"
-              className="inline-flex justify-center py-3 px-6 border border-transparent shadow text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+              className="inline-flex justify-center py-3 px-6 border border-transparent shadow text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            >
               Submit
             </button>
           </div>

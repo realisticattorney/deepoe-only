@@ -1,7 +1,7 @@
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import { useRouter } from 'next/router';
-import { useToast } from '../../hooks/useToast';
+import { useToast } from '../hooks/useToast';
 
 export default function Contact() {
   const toast = useToast();

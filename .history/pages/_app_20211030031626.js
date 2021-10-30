@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
     <ShopProvider>
       <Layout>
         <Component {...pageProps} key={router.asPath} />
-      <ToastContainer />
+    <ToastContainer />
       </Layout>
     </ShopProvider>
       </ToastProvider>

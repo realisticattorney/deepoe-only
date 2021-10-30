@@ -161,7 +161,7 @@ export default function MenuDropdown({
                           className="font-extralight text-3xl block pt-14"
                           onClick={() => wrapperSetParentState(false)}
                         >
-                          Log In/Sign Up
+                          Log In/Sign UP
                         </a>
                       </Link>
             

@@ -16,6 +16,7 @@ export default function MenuDropdown({
   const { closed, setClosed } = useState(false);
 
   return (
+    <div>
     <Transition.Root show={parentState} as={Fragment} className="z-40">
       <Dialog
         //   initialFocus={cancelButtonRef}
@@ -153,15 +154,6 @@ export default function MenuDropdown({
                           onClick={() => wrapperSetParentState(false)}
                         >
                           Contact
-                        </a>
-                      </Link>
-                      
-                      <Link href={`/deepoe/contact`}>
-                        <a
-                          className="font-extralight text-3xl block pt-14"
-                          onClick={() => wrapperSetParentState(false)}
-                        >
-                          Log In/Sign Up
                         </a>
                       </Link>
             

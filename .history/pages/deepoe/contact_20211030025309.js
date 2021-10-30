@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useRouter } from 'next/router';
 import { useToast } from '../hooks/useToast';
 
-export default function Contact() {
+export default function Home() {
   const toast = useToast();
   const { register, handleSubmit, errors, reset } = useForm();
   const router = useRouter();

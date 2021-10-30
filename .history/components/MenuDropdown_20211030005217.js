@@ -155,18 +155,14 @@ export default function MenuDropdown({
                           Contact
                         </a>
                       </Link>
-                      
                       <Link href={`/deepoe/contact`}>
                         <a
-                          className="font-extralight text-3xl block pt-14"
+                          className="font-extralight text-3xl block pt-12"
                           onClick={() => wrapperSetParentState(false)}
                         >
-                          Log In/Sign Up
+                          Contact
                         </a>
                       </Link>
-            
-            
-            
                     </div>
                   </Disclosure>
                 </div>

@@ -155,18 +155,83 @@ export default function MenuDropdown({
                           Contact
                         </a>
                       </Link>
-                      
-                      <Link href={`/deepoe/contact`}>
-                        <a
-                          className="font-extralight text-3xl block pt-14"
-                          onClick={() => wrapperSetParentState(false)}
-                        >
-                          Log In/Sign Up
-                        </a>
-                      </Link>
+                      <Disclosure>
+                    <Disclosure.Button
+                      onClick={() => {
+                        setOpen(!open);
+                      }}
+                    >
+                      <div className="py-6 overflow-y-auto space-y-6 mt-7 px-6 sm:px-6 focus:outline-none active:outline-none">
+                        <div className="flex justify-between">
+                          <p className="font-extralight text-3xl">Products</p>{' '}
+                          <span className="mr-7 justify-self-end">^</span>
+                        </div>{' '}
+                      </div>
+                    </Disclosure.Button>
+                    <Transition
+                      //  show={open}
+                      appear={true}
+                      enter="transform transition ease-in duration-250"
+                      enterFrom="-translate-y-1/4 opacity-0"
+                      enterTo="translate-y-0 opacity-100"
+                      leave="transform transition ease-out duration-200"
+                      leaveFrom="translate-y-0 opacity-100"
+                      leaveTo="-translate-y-4  opacity-0"
+                    >
+                      <Disclosure.Panel className="text-gray-500 font-light">
+                        <ul className="space-y-2 pl-11 mb-6">
+                          <Link href={`/collections/frontpage`}>
+                            <a
+                              className="block"
+                              onClick={() => wrapperSetParentState(false)}
+                            >
+                              Shop All
+                            </a>
+                          </Link>
+                          <Link href={`/collections/dishware`}>
+                            <a
+                              className="block"
+                              onClick={() => wrapperSetParentState(false)}
+                            >
+                              Dishware
+                            </a>
+                          </Link>
+                          <Link href={`/collections/towels`}>
+                            <a
+                              className="block"
+                              onClick={() => wrapperSetParentState(false)}
+                            >
+                              Linens & Towels
+                            </a>
+                          </Link>
+                          <Link href={`/collections/rugs`}>
+                            <a
+                              className="block"
+                              onClick={() => wrapperSetParentState(false)}
+                            >
+                              Rugs
+                            </a>
+                          </Link>
+                          <Link href={`/collections/furniture`}>
+                            <a
+                              className="block"
+                              onClick={() => wrapperSetParentState(false)}
+                            >
+                              Furniture
+                            </a>
+                          </Link>
+                          <Link href={`/collections/miscellaneous`}>
+                            <a
+                              className="block"
+                              onClick={() => wrapperSetParentState(false)}
+                            >
+                              Miscellaneous
+                            </a>
+                          </Link>
+                        </ul>
+                      </Disclosure.Panel>{' '}
             
-            
-            
+                    </Transition>
                     </div>
                   </Disclosure>
                 </div>

@@ -1,7 +1,7 @@
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import { useRouter } from 'next/router';
-import { useToast } from '../../hooks/useToast';
+import { useToast } from '../hooks/useToast';
 
 export default function Contact() {
   const toast = useToast();
@@ -15,7 +15,7 @@ export default function Contact() {
   async function onSubmitForm(values) {
     let config = {
       method: 'post',
-      url: `${process.env.NEXT_PUBLIC_API_URL}/api/contact`,
+      url: `/api/contact`,
       headers: {
         'Content-Type': 'application/json',
       },
@@ -141,13 +141,7 @@ export default function Contact() {
             <textarea
               name="message"
               rows="4"
-              {...register('name', {
-                required: {
-                  value: true,
-                  message: 'Please enter your name',
-                },
-              })}
-              ref={register({
+              {...register('message', {
                 required: {
                   value: true,
                   message: 'You need to enter your message',
@@ -157,10 +151,24 @@ export default function Contact() {
                   message: "Your message can't be more than 1000 characters",
                 },
                 minLength: {
-                  value: 50,
+                  value: 30,
                   message: 'Your message must be longer than this!',
                 },
               })}
+              // ref={register({
+              //   required: {
+              //     value: true,
+              //     message: 'You need to enter your message',
+              //   },
+              //   maxLength: {
+              //     value: 1000,
+              //     message: "Your message can't be more than 1000 characters",
+              //   },
+              //   minLength: {
+              //     value: 50,
+              //     message: 'Your message must be longer than this!',
+              //   },
+              // })}
               className={`block w-full shadow py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md focus:outline-none focus:ring-2 ${
                 errors.message ? 'ring-2 ring-red-500' : null
               }`}

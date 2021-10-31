@@ -64,7 +64,7 @@ const ProductPageContent = ({ collection, product }) => {
             </div>
           </button>
           <button className="group focus:outline-none">
-            <div className="flex justify-between py-2 font-extralight text-left text-lg text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+            <div className="flex justify-between py-2 font-extralight text-left text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
               <span className="truncate font-public-sans-normal">
                 Reviews (432)
               </span>

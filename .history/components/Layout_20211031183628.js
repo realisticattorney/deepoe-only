@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
         </div>
 
         <div className="inline-flex text-right self-end">
-          <ul className="text-xs flex-col font-public-sans-light">
+          <ul className="text-xs flex-col">
             <li>Mereride Brands, LLC</li>
             <li>1018 Tenessee St.</li>
             <li>San Francisco, CA 94107</li>

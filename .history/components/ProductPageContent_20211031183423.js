@@ -49,9 +49,7 @@ const ProductPageContent = ({ collection, product }) => {
           </button>
           <button className="group focus:outline-none">
             <div className="flex justify-between py-2 text-lg font-extralight text-left items-center text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
-              <span className="truncate font-public-sans-normal">
-                Item Specifications
-              </span>
+              <span className="truncate font-public-sans-normal">Item Specifications</span>
               <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
               <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
@@ -64,10 +62,8 @@ const ProductPageContent = ({ collection, product }) => {
             </div>
           </button>
           <button className="group focus:outline-none">
-            <div className="flex justify-between py-2 font-extralight text-left text-lg text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
-              <span className="truncate font-public-sans-normal">
-                Reviews (432)
-              </span>
+            <div className="flex justify-between py-2 font-extralight text-left text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+              <span className="truncate font-public-sans-normal">Reviews (432)</span>
               <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
               <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />

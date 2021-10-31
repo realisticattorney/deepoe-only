@@ -256,14 +256,15 @@ export default function Contact() {
           </div>
         </button>
         <div className="justify-self-end pt-2.5 self-end">
-        <Link href={`deepoe/faq`}>
+        <Link href={`deepoe/about`}>
+              <a>FAQ's</a>
+            
           <button
             type="submit"
             className="inline-flex justify-center py-0.5 px-6 border border-transparent shadow text-xs font-light text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
           >
             View More
           </button>
-          </Link>
         </div>
       </div>
     </div>

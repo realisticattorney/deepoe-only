@@ -205,7 +205,7 @@ export default function Contact() {
         <h4 className="px-3 text-2xl font-light">
           Or check our{' '}
           <span className="underline">
-            <Link href={`deepoe/about`}>
+            <Link href={`/contact`}>
               <a>FAQ's</a>
             </Link>
           </span>
@@ -256,14 +256,12 @@ export default function Contact() {
           </div>
         </button>
         <div className="justify-self-end pt-2.5 self-end">
-        <Link href={`deepoe/faq`}>
           <button
             type="submit"
-            className="inline-flex justify-center py-0.5 px-6 border border-transparent shadow text-xs font-light text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
+            className="inline-flex  justify-center py-1.5 px-6 border border-transparent shadow text-base font-medium text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
           >
             View More
           </button>
-          </Link>
         </div>
       </div>
     </div>

@@ -242,7 +242,7 @@ export default function Contact() {
           </div>
         </button>
         <button className="group focus:outline-none px-3">
-          <div className="flex justify-between py-2 text-sm font-light text-left text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+          <div className="flex justify-between py-2 text-sm font-light text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
             <span className="truncate">Do your items have a warranty?</span>
             <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 

@@ -64,10 +64,10 @@ export default function Contact() {
               //     message: 'You must enter your name',
               //   },
               // })}
-              className={`block w-full shadow-sm border bg-deepoe-cream text-xs font-extralight py-1 px-2 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-600 focus:outline-none focus:ring-2 ${
+              className={`block w-full shadow-sm border bg-deepoe-cream text-xs font-extralight py-1 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 focus:outline-none focus:ring-2 ${
                 errors.name ? 'ring-2 ring-red-500' : null
               }`}
-              placeholder="name*"
+              placeholder="Full name"
             />
             <span className="text-red-400 text-sm py-2">
               {errors?.name?.message}
@@ -116,10 +116,10 @@ export default function Contact() {
               //     message: 'This needs to be a valid email address',
               //   },
               // })}
-              className={`block w-full border shadow-sm bg-deepoe-cream text-xs font-extralight  py-1 px-2 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-600 focus:outline-none focus:ring-2 ${
+              className={`block w-full border shadow-sm bg-deepoe-cream text-xs font-extralight  py-1 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-600 focus:outline-none focus:ring-2 ${
                 errors.email ? 'ring-2 ring-red-500' : null
               }`}
-              placeholder="e-mail*"
+              placeholder="Email"
             />
             <span className="text-red-400 text-sm py-2">
               {errors?.email?.message}
@@ -172,10 +172,10 @@ export default function Contact() {
               //     message: 'Your message must be longer than this!',
               //   },
               // })}
-              className={`block w-full shadow-sm border bg-deepoe-cream text-xs font-extralight py-1 px-2 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-500 focus:outline-none focus:ring-2 ${
+              className={`block w-full shadow-sm border bg-deepoe-cream text-xs font-extralight py-1 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-500 focus:outline-none focus:ring-2 ${
                 errors.message ? 'ring-2 ring-red-500' : null
               }`}
-              placeholder="message"
+              placeholder="Message"
             ></textarea>
             <span className="text-red-400 text-sm py-2">
               {errors?.message?.message}

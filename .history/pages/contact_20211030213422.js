@@ -119,7 +119,7 @@ export default function Contact() {
               className={`block w-full border shadow-sm bg-deepoe-cream text-xs font-extralight  py-1 px-2 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-600 focus:outline-none focus:ring-2 ${
                 errors.email ? 'ring-2 ring-red-500' : null
               }`}
-              placeholder="e-mail*"
+              placeholder="e-mail"
             />
             <span className="text-red-400 text-sm py-2">
               {errors?.email?.message}

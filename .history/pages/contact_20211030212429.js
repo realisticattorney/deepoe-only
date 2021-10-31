@@ -37,7 +37,7 @@ export default function Contact() {
 
   return (
     <div className="b  bg-deepoe-cream px-4 sm:px-6 flex ">
-      <div className="mx-auto w-full max-w-2xl rounded-xl bg-deepoe-cream p-8 shadow">
+      <div className="mx-auto w-full max-w-2xl rounded-xl bg-white p-8 shadow">
         <form
           onSubmit={handleSubmit(onSubmitForm)}
           className="grid grid-cols-1 gap-y-6"

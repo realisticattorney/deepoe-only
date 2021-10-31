@@ -26,7 +26,7 @@ const Nav = () => {
       <div className="flex items-center justify-between max-w-6xl pt-14 pb-2 px-4 mx-auto">
         {!parentState ? (
           <a
-            className="cursor-pointer font-public-sans-normal text-sm"
+            className="cursor-pointer font-public-sans-normal"
             onClick={() => wrapperSetParentState(!parentState)}
             ref={cancelButtonRef}
           >

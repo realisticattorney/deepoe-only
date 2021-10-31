@@ -50,49 +50,25 @@ const Layout = ({ children }) => {
           />
           <link
             rel="preload"
-            href="public\fonts\PublicSans\PublicSans-ExtraLightItalic.ttf"
+            href="public\fonts\PublicSans\PublicSans-ExtraLight.ttf"
             as="font"
             crossOrigin=""
           />
           <link
             rel="preload"
-            href="public\fonts\PublicSans\PublicSans-Medium.ttf"
+            href="public\fonts\PublicSans\PublicSans-ExtraLight.ttf"
             as="font"
             crossOrigin=""
           />
           <link
             rel="preload"
-            href="public\fonts\PublicSans\PublicSans-MediumItalic.ttf"
+            href="public\fonts\PublicSans\PublicSans-ExtraLight.ttf"
             as="font"
             crossOrigin=""
           />
           <link
             rel="preload"
-            href="public\fonts\PublicSans\PublicSans-Regular.ttf"
-            as="font"
-            crossOrigin=""
-          />
-          <link
-            rel="preload"
-            href="public\fonts\PublicSans\PublicSans-SemiBold.ttf"
-            as="font"
-            crossOrigin=""
-          />
-          <link
-            rel="preload"
-            href="public\fonts\PublicSans\PublicSans-SemiBoldItalic.ttf"
-            as="font"
-            crossOrigin=""
-          />
-          <link
-            rel="preload"
-            href="public\fonts\PublicSans\PublicSans-Thin.ttf"
-            as="font"
-            crossOrigin=""
-          />
-          <link
-            rel="preload"
-            href="public\fonts\PublicSans\PublicSans-ThinItalic.ttf"
+            href="public\fonts\PublicSans\PublicSans-ExtraLight.ttf"
             as="font"
             crossOrigin=""
           />

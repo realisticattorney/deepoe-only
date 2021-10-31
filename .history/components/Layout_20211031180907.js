@@ -20,79 +20,31 @@ const Layout = ({ children }) => {
           />
           <link
             rel="preload"
-            href="public\fonts\PublicSans\PublicSans-Bold.ttf"
+            href="public\fonts\PublicSans\PublicSans-BlackItalic.ttf"
             as="font"
             crossOrigin=""
           />
           <link
             rel="preload"
-            href="public\fonts\PublicSans\PublicSans-BoldItalic.ttf"
+            href="public\fonts\PublicSans\PublicSans-BlackItalic.ttf"
             as="font"
             crossOrigin=""
           />
           <link
             rel="preload"
-            href="public\fonts\PublicSans\PublicSans-ExtraBold.ttf"
+            href="public\fonts\PublicSans\PublicSans-BlackItalic.ttf"
             as="font"
             crossOrigin=""
           />
           <link
             rel="preload"
-            href="public\fonts\PublicSans\PublicSans-ExtraBoldItalic.ttf"
+            href="public\fonts\PublicSans\PublicSans-BlackItalic.ttf"
             as="font"
             crossOrigin=""
           />
           <link
             rel="preload"
-            href="public\fonts\PublicSans\PublicSans-ExtraLight.ttf"
-            as="font"
-            crossOrigin=""
-          />
-          <link
-            rel="preload"
-            href="public\fonts\PublicSans\PublicSans-ExtraLightItalic.ttf"
-            as="font"
-            crossOrigin=""
-          />
-          <link
-            rel="preload"
-            href="public\fonts\PublicSans\PublicSans-Medium.ttf"
-            as="font"
-            crossOrigin=""
-          />
-          <link
-            rel="preload"
-            href="public\fonts\PublicSans\PublicSans-MediumItalic.ttf"
-            as="font"
-            crossOrigin=""
-          />
-          <link
-            rel="preload"
-            href="public\fonts\PublicSans\PublicSans-Regular.ttf"
-            as="font"
-            crossOrigin=""
-          />
-          <link
-            rel="preload"
-            href="public\fonts\PublicSans\PublicSans-SemiBold.ttf"
-            as="font"
-            crossOrigin=""
-          />
-          <link
-            rel="preload"
-            href="public\fonts\PublicSans\PublicSans-SemiBoldItalic.ttf"
-            as="font"
-            crossOrigin=""
-          />
-          <link
-            rel="preload"
-            href="public\fonts\PublicSans\PublicSans-Thin.ttf"
-            as="font"
-            crossOrigin=""
-          />
-          <link
-            rel="preload"
-            href="public\fonts\PublicSans\PublicSans-ThinItalic.ttf"
+            href="public\fonts\PublicSans\PublicSans-BlackItalic.ttf"
             as="font"
             crossOrigin=""
           />

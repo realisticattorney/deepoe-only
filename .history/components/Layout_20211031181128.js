@@ -90,12 +90,6 @@ const Layout = ({ children }) => {
             as="font"
             crossOrigin=""
           />
-          <link
-            rel="preload"
-            href="public\fonts\PublicSans\PublicSans-ThinItalic.ttf"
-            as="font"
-            crossOrigin=""
-          />
         </Head>
     
     <div className="flex flex-col min-h-screen bg-deepoe-cream">

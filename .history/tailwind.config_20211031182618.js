@@ -6,7 +6,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      fontFamily: { mono: ["'Public Sans'", ...defaultTheme.fontFamily.mono] },
+      fontFamily: { mono: ["'Public Sans'", ...defaultTheme.fontFamily.sans] },
       colors: {
         deepoe: {
           cream: '#F5F3EE',

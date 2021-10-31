@@ -24,7 +24,7 @@ const Faq = () => {
       <div className="flex flex-col w-full">
         <h4 className="px-3">Orders</h4>
         <button className="group focus:outline-none px-3" onClick={handleShow}>
-          <div className="flex justify-between py-2 text-sm font-light items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+          <div className="flex justify-between py-2 text-sm font-light text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
             <span className="truncate">Where's my order?</span>
             
               <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
@@ -40,7 +40,7 @@ const Faq = () => {
           </div>
         </button>
         <button className="group focus:outline-none px-3">
-          <div className="flex justify-between py-2 text-sm font-light items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+          <div className="flex justify-between py-2 text-sm font-light text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
             <span className="truncate">How can I change or cancel my order?</span>
             <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
             
@@ -54,7 +54,7 @@ const Faq = () => {
           </div>
         </button>
         <button className="group focus:outline-none px-3">
-          <div className="flex justify-between py-2 text-sm font-light items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+          <div className="flex justify-between py-2 text-sm font-light text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
             <span className="truncate">Do your items have a warranty?</span>
             <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
             
@@ -72,7 +72,7 @@ const Faq = () => {
       <div className="flex flex-col w-full pt-5">
         <h4 className="px-3">Products</h4>
         <button className="group focus:outline-none px-3" onClick={handleShow}>
-          <div className="flex justify-between py-2 text-sm font-light items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+          <div className="flex justify-between py-2 text-sm font-light text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
             <span className="truncate">Where's my order?</span>
             
               <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
@@ -88,7 +88,7 @@ const Faq = () => {
           </div>
         </button>
         <button className="group focus:outline-none px-3">
-          <div className="flex justify-between py-2 text-sm font-light items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+          <div className="flex justify-between py-2 text-sm font-light text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
             <span className="truncate">How can I change or cancel my order?</span>
             <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
             
@@ -102,7 +102,7 @@ const Faq = () => {
           </div>
         </button>
         <button className="group focus:outline-none px-3">
-          <div className="flex justify-between py-2 text-sm font-light items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+          <div className="flex justify-between py-2 text-sm font-light text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
             <span className="truncate">Do your items have a warranty?</span>
             <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
             
@@ -119,7 +119,7 @@ const Faq = () => {
       <div className="flex flex-col w-full py-5">
         <h4 className="px-3">Miscellaneous</h4>
         <button className="group focus:outline-none px-3" onClick={handleShow}>
-          <div className="flex justify-between py-2 text-sm font-light items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+          <div className="flex justify-between py-2 text-sm font-light text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
             <span className="truncate">Where's my order?</span>
             
               <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
@@ -135,7 +135,7 @@ const Faq = () => {
           </div>
         </button>
         <button className="group focus:outline-none px-3">
-          <div className="flex justify-between py-2 text-sm font-light items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+          <div className="flex justify-between py-2 text-sm font-light text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
             <span className="truncate">How can I change or cancel my order?</span>
             <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
             
@@ -149,7 +149,7 @@ const Faq = () => {
           </div>
         </button>
         <button className="group focus:outline-none px-3">
-          <div className="flex justify-between py-2 text-sm font-light items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+          <div className="flex justify-between py-2 text-sm font-light text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
             <span className="truncate">Do your items have a warranty?</span>
             <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
             

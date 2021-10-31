@@ -24,17 +24,18 @@ const Nav = () => {
   return (
     <header className="sticky top-0  bg-deepoe-cream z-50">
       <div className="flex items-center justify-between max-w-6xl pt-14 pb-2 px-4 mx-auto">
-        {!parentState ? (
-          <a
-            className="cursor-pointer font-light"
-            onClick={() => wrapperSetParentState(!parentState)}
-            ref={cancelButtonRef}
-          >
-            menu
-          </a>
-        ) : (
-          <p className="cursor-pointer font-light">close</p>
-        )}
+       {!parentState ? <a
+          className="cursor-pointer font-light"
+          onClick={() => wrapperSetParentState(!parentState)}
+          ref={cancelButtonRef}
+        >
+     menu
+        </a> : 
+        <p
+          className="cursor-pointer font-light"
+        >
+close
+        </p>} 
         <MenuDropdown
           parentState={parentState}
           wrapperSetParentState={wrapperSetParentState}
@@ -45,16 +46,17 @@ const Nav = () => {
             <span className="text-4xl font-medium">deepoe</span>
           </a>
         </Link>
-        {!cartOpen ? (
-          <a
-            className="cursor-pointer font-light"
-            onClick={() => setCartOpen(!cartOpen)}
-          >
-            cart ({cartQuantity})
-          </a>
-        ) : (
-          <p className="cursor-pointer font-light">close</p>
-        )}
+        {!cartOpen ? 
+        <a
+          className="cursor-pointer font-light"
+          onClick={() => setCartOpen(!cartOpen)}
+        >
+          cart ({cartQuantity})
+        </a> :  <p
+          className="cursor-pointer font-light"
+        >
+close
+        </p>}
 
         <MiniCart cart={cart} />
       </div>

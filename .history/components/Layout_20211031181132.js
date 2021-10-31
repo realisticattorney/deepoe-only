@@ -92,7 +92,7 @@ const Layout = ({ children }) => {
           />
           <link
             rel="preload"
-            href="public\fonts\PublicSans\PublicSans-ThinItalic.ttf"
+            href="public\fonts\PublicSans\PublicSans-Thin.ttf"
             as="font"
             crossOrigin=""
           />

@@ -33,28 +33,28 @@ body {
     @apply font-mono font-black;
   }
   .font-public-sans-normal-italic {
-    @apply font-mono font-normal italic;
+    @apply font-mono font-normal font
   }
   .font-public-sans-light-italic {
-    @apply font-mono font-light italic;
+    @apply font-mono font-light font
   }
   .font-public-sans-extralight-italic {
-    @apply font-mono font-extralight italic;
+    @apply font-mono font-extralight font
   }
   .font-public-sans-thin-italic {
-    @apply font-mono font-thin italic;
+    @apply font-mono font-thin font
   }
   .font-public-sans-semibold-italic {
-    @apply font-mono font-semibold italic;
+    @apply font-mono font-semibold font
   }
   .font-public-sans-bold-italic {
-    @apply font-mono font-bold italic;
+    @apply font-mono font-bold font
   }
   .font-public-sans-extrabold-italic {
-    @apply font-mono font-extrabold italic;
+    @apply font-mono font-extrabold font
   }
   .font-public-sans-black-italic {
-    @apply font-mono font-black italic;
+    @apply font-mono font-black font
   }
 }
 

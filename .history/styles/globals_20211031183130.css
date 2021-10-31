@@ -14,47 +14,17 @@ body {
   .font-public-sans-light {
     @apply font-mono font-light;
   }
-  .font-public-sans-extralight {
-    @apply font-mono font-extralight;
+  .font-public-sans-normal {
+    @apply font-mono font-normal;
   }
-  .font-public-sans-thin {
-    @apply font-mono font-thin;
+  .font-public-sans-normal {
+    @apply font-mono font-normal;
   }
-  .font-public-sans-semibold {
-    @apply font-mono font-semibold;
+  .font-public-sans-normal {
+    @apply font-mono font-normal;
   }
-  .font-public-sans-bold {
-    @apply font-mono font-bold;
-  }
-  .font-public-sans-extrabold {
-    @apply font-mono font-extrabold;
-  }
-  .font-public-sans-black {
-    @apply font-mono font-black;
-  }
-  .font-public-sans-normal-italic {
-    @apply font-mono font-normal italic;
-  }
-  .font-public-sans-light-italic {
-    @apply font-mono font-light italic;
-  }
-  .font-public-sans-extralight-italic {
-    @apply font-mono font-extralight italic;
-  }
-  .font-public-sans-thin-italic {
-    @apply font-mono font-thin italic;
-  }
-  .font-public-sans-semibold-italic {
-    @apply font-mono font-semibold italic;
-  }
-  .font-public-sans-bold-italic {
-    @apply font-mono font-bold italic;
-  }
-  .font-public-sans-extrabold-italic {
-    @apply font-mono font-extrabold italic;
-  }
-  .font-public-sans-black-italic {
-    @apply font-mono font-black italic;
+  .font-public-sans-normal {
+    @apply font-mono font-normal;
   }
 }
 

@@ -2,18 +2,9 @@ import Image from 'next/image';
 import ProductForm from './ProductForm';
 import Link from 'next/link';
 import ProductCarousel from './ProductCarousel';
-import { MinusIcon, PlusIcon } from '@heroicons/react/outline';
-import { useState } from 'react';
 
 const ProductPageContent = ({ collection, product }) => {
   console.log(product.images.edges);
-
-  const [show, setShow] = useState(false);
-
-  const handleShow = () => {
-    show ? setShow(false) : setShow(true);
-  };
-
 
   return (
     <div>
@@ -32,13 +23,11 @@ const ProductPageContent = ({ collection, product }) => {
         </div>
         <ProductForm product={product} />
 
-
-
-
-        <div className="flex flex-col w-full border-t pt-2 border-deepoe-chocolate">
-        <button className="group focus:outline-none" onClick={handleShow}>
-          <div className="flex justify-between pb-2 pt-0.5 text-lg font-extralight items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
-            <span className="truncate">Details</span>
+        <div className="flex flex-col w-full">
+        <h4 className="px-3">Orders</h4>
+        <button className="group focus:outline-none px-3" onClick={handleShow}>
+          <div className="flex justify-between py-2 text-sm font-light text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+            <span className="truncate">Where's my order?</span>
             
               <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
             
@@ -52,9 +41,9 @@ const ProductPageContent = ({ collection, product }) => {
             warehouse.
           </div>
         </button>
-        <button className="group focus:outline-none">
-          <div className="flex justify-between py-2 text-lg font-extralight text-left items-center text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
-            <span className="truncate">Item Specifications</span>
+        <button className="group focus:outline-none px-3">
+          <div className="flex justify-between py-2 text-sm font-light text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+            <span className="truncate">How can I change or cancel my order?</span>
             <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
             
             <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
@@ -66,9 +55,9 @@ const ProductPageContent = ({ collection, product }) => {
             warehouse.
           </div>
         </button>
-        <button className="group focus:outline-none">
-          <div className="flex justify-between py-2 font-extralight text-left text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
-            <span className="truncate">Reviews (432)</span>
+        <button className="group focus:outline-none px-3">
+          <div className="flex justify-between py-2 text-sm font-light text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+            <span className="truncate">Do your items have a warranty?</span>
             <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
             
             <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />

@@ -4,7 +4,6 @@ import { useRouter } from 'next/router';
 import { useToast } from '../hooks/useToast';
 import { useState } from 'react';
 import { MinusIcon, PlusIcon } from '@heroicons/react/outline';
-import Link from 'next/link';
 
 export default function Contact() {
   const toast = useToast();
@@ -206,8 +205,8 @@ export default function Contact() {
       </div>
 
       
-       <div className="flex flex-col w-full pt-8">
-        <h4 className="px-3 text-2xl font-light">Or check our <span className="underline"><Link  href={`/contact`}><a>FAQ's</a></Link></span></h4>
+       <div className="flex flex-col w-full">
+        <h4 className="px-3 text-2xl font-extralight">Or checko our <span><Link  href={`/contact`}><a>FAQ's</a></Link></span></h4>
         <button className="group focus:outline-none px-3" onClick={handleShow}>
           <div className="flex justify-between py-2 text-sm font-light text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
             <span className="truncate">Where's my order?</span>

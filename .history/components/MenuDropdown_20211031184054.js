@@ -16,7 +16,7 @@ export default function MenuDropdown({
   const { closed, setClosed } = useState(false);
 
   return (
-    <Transition.Root show={parentState} as={Fragment} className="z-40 font-public-sans-normal">
+    <Transition.Root show={parentState} as={Fragment} className="z-40 fon">
       <Dialog
         //   initialFocus={cancelButtonRef}
         as="div"
@@ -73,7 +73,7 @@ export default function MenuDropdown({
                       leaveFrom="translate-y-0 opacity-100"
                       leaveTo="-translate-y-4  opacity-0"
                     >
-                      <Disclosure.Panel className="text-gray-700 font-public-sans-normal">
+                      <Disclosure.Panel className="text-gray-500 font-light">
                         <ul className="space-y-2 pl-11 mb-6">
                           <Link href={`/collections/frontpage`}>
                             <a

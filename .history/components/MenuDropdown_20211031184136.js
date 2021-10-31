@@ -73,7 +73,7 @@ export default function MenuDropdown({
                       leaveFrom="translate-y-0 opacity-100"
                       leaveTo="-translate-y-4  opacity-0"
                     >
-                      <Disclosure.Panel className="text-gray-700 font-public-sans-normal">
+                      <Disclosure.Panel className="font-public-sans-light">
                         <ul className="space-y-2 pl-11 mb-6">
                           <Link href={`/collections/frontpage`}>
                             <a

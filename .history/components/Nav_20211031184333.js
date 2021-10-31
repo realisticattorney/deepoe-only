@@ -23,7 +23,7 @@ const Nav = () => {
 
   return (
     <header className="sticky top-0  bg-deepoe-cream z-50">
-      <div className="flex items-center justify-between max-w-6xl pt-14 pb-2 px-5 mx-auto">
+      <div className="flex items-center justify-between max-w-6xl pt-14 pb-2 px-6 mx-auto">
         {!parentState ? (
           <a
             className="cursor-pointer font-public-sans-normal text-gray-700 text-sm"

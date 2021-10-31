@@ -181,7 +181,7 @@ export default function Contact() {
               {errors?.message?.message}
             </span>
           </div>
-          <div className="justify-self-end">
+          <div>
             <button
               type="submit"
               className="inline-flex justify-center py-1.5 px-6 border border-transparent shadow text-base font-medium text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
@@ -191,9 +191,6 @@ export default function Contact() {
           </div>
         </form>
       </div>
-      
-      
-      
     </div>
   );
 }

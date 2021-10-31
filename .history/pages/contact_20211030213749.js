@@ -36,11 +36,11 @@ export default function Contact() {
   }
 
   return (
-    <div className="flex-col bg-deepoe-cream px-4 sm:px-6 flex">
-      <div className="mx-auto w-full max-w-2xl  bg-deepoe-cream py-2 items-center">
-      <h2 className="text-2xl font-extralight pb-2">
+    <div className="flex-col bg-deepoe-cream px-4 sm:px-6 flex items">
+      <h2 className="text-2xl font-extralight pt-2">
         Questions? Get in touch.
       </h2>
+      <div className="mx-auto w-full max-w-2xl  bg-deepoe-cream py-2">
         <form
           onSubmit={handleSubmit(onSubmitForm)}
           className="grid grid-cols-1 gap-y-2.5"
@@ -181,7 +181,7 @@ export default function Contact() {
               {errors?.message?.message}
             </span>
           </div>
-          <div className="justify-self-end">
+          <div>
             <button
               type="submit"
               className="inline-flex justify-center py-1.5 px-6 border border-transparent shadow text-base font-medium text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
@@ -191,9 +191,6 @@ export default function Contact() {
           </div>
         </form>
       </div>
-      
-      
-      
     </div>
   );
 }

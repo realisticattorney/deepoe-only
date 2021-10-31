@@ -158,7 +158,7 @@ export default function MiniCart({ cart }) {
                         <div className="flex justify-between underline">
                           <p>Add Promo Code</p>
                         </div>
-                        <div className="flex justify-between font-semibold">
+                        <div className="flex justify-between font-normal">
                           <p>Subtotal</p>
                           <p>{formatter.format(cartTotal)}</p>
                         </div>
@@ -169,7 +169,7 @@ export default function MiniCart({ cart }) {
                       <div className="mt-5">
                         <a
                           href={checkoutUrl}
-                          className="flex justify-center items-center px-6 py-1.5 border border-transparent shadow-sm text-2xl font-base text-white bg-deepoe-chocolate hover:bg-gray-800 font-sans"
+                          className="flex justify-center items-center px-6 py-1.5 border border-transparent shadow-sm text-lg font-medium text-white bg-deepoe-chocolate hover:bg-gray-800"
                         >
                           Checkout
                         </a>

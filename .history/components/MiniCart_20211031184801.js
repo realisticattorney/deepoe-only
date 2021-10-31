@@ -127,7 +127,7 @@ export default function MiniCart({ cart }) {
                                       Qty {product.variantQuantity}
                                     </p>
 
-                                    <div className="flex text-xs font-public-sans-normal">
+                                    <div className="flex text-xs font-extralight text-gray-700">
                                       {formatter.format(product.variantPrice)}
                                     </div>
                                   </div>
@@ -145,20 +145,20 @@ export default function MiniCart({ cart }) {
                   </div>
 
                   {cart.length > 0 ? (
-                    <div className="px-4 sm:px-6 font-public-sans-normal">
-                      <div className="pt-4 border-t border-gray-900 space-y-1.5 flex-col  text-gray-900">
+                    <div className="px-4 sm:px-6">
+                      <div className="pt-4 border-t border-gray-900 space-y-1.5 flex-col text-sm font-extralight text-gray-900">
                         <div className="flex justify-between">
                           <p>Subtotal</p>
                           <p>{formatter.format(cartTotal)}</p>
                         </div>
                         <div className="flex justify-between">
-                          <p>Shipping</p>
+                          <p>Subtotal</p>
                           <p>Free</p>
                         </div>
                         <div className="flex justify-between underline">
                           <p>Add Promo Code</p>
                         </div>
-                        <div className="flex justify-between font-semibold">
+                        <div className="flex justify-between font-normal">
                           <p>Subtotal</p>
                           <p>{formatter.format(cartTotal)}</p>
                         </div>
@@ -169,7 +169,7 @@ export default function MiniCart({ cart }) {
                       <div className="mt-5">
                         <a
                           href={checkoutUrl}
-                          className="flex justify-center items-center px-6 py-1.5 border border-transparent shadow-sm text-2xl font-base text-white bg-deepoe-chocolate hover:bg-gray-800 font-sans"
+                          className="flex justify-center items-center px-6 py-1.5 border border-transparent shadow-sm text-lg font-medium text-white bg-deepoe-chocolate hover:bg-gray-800"
                         >
                           Checkout
                         </a>

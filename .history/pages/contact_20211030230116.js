@@ -38,18 +38,22 @@ export default function Contact() {
     } catch (err) {}
   }
 
+
   const [show, setShow] = useState(false);
 
   const handleShow = () => {
     show ? setShow(false) : setShow(true);
   };
 
+  
+  
+
   return (
     <div className="flex-col bg-deepoe-cream px-4 sm:px-6 flex">
       <div className="mx-auto w-full max-w-2xl  bg-deepoe-cream py-2 items-center">
-        <h2 className="text-2xl font-extralight pb-2">
-          Questions? Get in touch.
-        </h2>
+      <h2 className="text-2xl font-extralight pb-2">
+        Questions? Get in touch.
+      </h2>
         <form
           onSubmit={handleSubmit(onSubmitForm)}
           className="grid grid-cols-1 gap-y-2.5"
@@ -201,22 +205,17 @@ export default function Contact() {
         </form>
       </div>
 
-      <div className="flex flex-col w-full pt-8">
-        <h4 className="px-3 text-2xl font-light">
-          Or check our{' '}
-          <span className="underline">
-            <Link href={`/contact`}>
-              <a>FAQ's</a>
-            </Link>
-          </span>
-        </h4>
+      
+       <div className="flex flex-col w-full pt-8">
+        <h4 className="px-3 text-2xl font-light">Or check our <span className="underline"><Link  href={`/contact`}><a>FAQ's</a></Link></span></h4>
         <button className="group focus:outline-none px-3" onClick={handleShow}>
           <div className="flex justify-between py-2 text-sm font-light text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
             <span className="truncate">Where's my order?</span>
-
-            <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
-
-            <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
+            
+              <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
+            
+              <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
+            
           </div>
           <div className="max-h-0 overflow-hidden duration-300 px-4  group-focus:max-h-40  text-xs text-left font-extralight text-gray-500 border-b border-gray-700">
             Please contact us as soon as possible with your order number and
@@ -227,11 +226,9 @@ export default function Contact() {
         </button>
         <button className="group focus:outline-none px-3">
           <div className="flex justify-between py-2 text-sm font-light text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
-            <span className="truncate">
-              How can I change or cancel my order?
-            </span>
+            <span className="truncate">How can I change or cancel my order?</span>
             <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
-
+            
             <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
           </div>
           <div className="max-h-0 overflow-hidden duration-300 px-4  group-focus:max-h-40  text-xs text-left font-extralight text-gray-500 border-b border-gray-700">
@@ -245,7 +242,7 @@ export default function Contact() {
           <div className="flex justify-between py-2 text-sm font-light text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
             <span className="truncate">Do your items have a warranty?</span>
             <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
-
+            
             <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
           </div>
           <div className="max-h-0 overflow-hidden duration-300 px-4  group-focus:max-h-40  text-xs text-left font-extralight text-gray-500 border-b border-gray-700">
@@ -255,14 +252,12 @@ export default function Contact() {
             warehouse.
           </div>
         </button>
-        <div className="justify-self-end pt-2.5 self-end">
-          <button
-            type="submit"
-            className="inline-flex justify-center py-1.5 px-6 border border-transparent shadow text-base font-medium text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
-          >
-            View More
-          </button>
-        </div>
+        <button
+              type="submit"
+              className="inline-flex justify-center py-1.5 px-6 border border-transparent shadow text-base font-medium text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
+            >
+              Submit
+            </button>
       </div>
     </div>
   );

@@ -255,12 +255,12 @@ export default function Contact() {
             warehouse.
           </div>
         </button>
-        <div className="justify-self-end pt-2.5 self-end">
+        <div className="justify-self-end pt-2.5 self">
           <button
             type="submit"
             className="inline-flex justify-center py-1.5 px-6 border border-transparent shadow text-base font-medium text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
           >
-            View More
+            Submit
           </button>
         </div>
       </div>

@@ -1,5 +1,4 @@
 import Nav from './Nav';
-import Link from 'next/link';
 
 const Layout = ({ children }) => {
   return (
@@ -12,12 +11,7 @@ const Layout = ({ children }) => {
             <li>Instagram</li>
             <li>Twitter</li>
             <li>Careers</li>
-            <li>
-              {' '}
-              <Link href={`deepoe/about`}>
-                <a>Contact Us</a>
-              </Link>
-            </li>
+            <li>Contact Us</li>
           </ul>
         </div>
 

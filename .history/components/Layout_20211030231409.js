@@ -1,5 +1,4 @@
 import Nav from './Nav';
-import Link from 'next/link';
 
 const Layout = ({ children }) => {
   return (

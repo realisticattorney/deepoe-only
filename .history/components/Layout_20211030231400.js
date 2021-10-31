@@ -1,5 +1,4 @@
 import Nav from './Nav';
-import Link from 'next/link';
 
 const Layout = ({ children }) => {
   return (
@@ -15,7 +14,7 @@ const Layout = ({ children }) => {
             <li>
               {' '}
               <Link href={`deepoe/about`}>
-                <a>Contact Us</a>
+                <a>FAQ's</a>
               </Link>
             </li>
           </ul>

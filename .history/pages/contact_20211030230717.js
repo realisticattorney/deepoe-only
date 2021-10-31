@@ -73,7 +73,7 @@ export default function Contact() {
               //     message: 'You must enter your name',
               //   },
               // })}
-              className={`block w-full shadow-sm border bg-deepoe-cream text-xs font-extralight py-1 px-2 placeholder-gray-500 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2 ${
+              className={`block w-full shadow-sm border bg-deepoe-cream text-xs font-extralight py-1 px-2 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-600 focus:outline-none focus:ring-2 ${
                 errors.name ? 'ring-2 ring-red-500' : null
               }`}
               placeholder="name*"
@@ -181,7 +181,7 @@ export default function Contact() {
               //     message: 'Your message must be longer than this!',
               //   },
               // })}
-              className={`block w-full shadow-sm border bg-deepoe-cream text-xs font-extralight py-1 px-2 placeholder-gray-500 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none focus:ring-2 ${
+              className={`block w-full shadow-sm border bg-deepoe-cream text-xs font-extralight py-1 px-2 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-500 focus:outline-none focus:ring-2 ${
                 errors.message ? 'ring-2 ring-red-500' : null
               }`}
               placeholder="message"

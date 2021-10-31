@@ -1,6 +1,5 @@
 import Nav from './Nav';
-import Link from 'next/link';
-
+import link from 'next/link';
 const Layout = ({ children }) => {
   return (
     <div className="flex flex-col min-h-screen bg-deepoe-cream">

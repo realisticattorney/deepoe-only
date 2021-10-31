@@ -26,16 +26,14 @@ const Nav = () => {
       <div className="flex items-center justify-between max-w-6xl pt-14 pb-2 px-5 mx-auto">
         {!parentState ? (
           <a
-            className="cursor-pointer font-public-sans-normal font-medium text-gray-700 text-sm"
+            className="cursor-pointer font-public-sans-medium text-gray-700 text-sm"
             onClick={() => wrapperSetParentState(!parentState)}
             ref={cancelButtonRef}
           >
             menu
           </a>
         ) : (
-          <p className="cursor-pointer font-public-sans-normal font-medium text-gray-700 text-sm">
-            close
-          </p>
+          <p className="cursor-pointer font-public-sans-medium text-gray-700 text-sm">close</p>
         )}
         <MenuDropdown
           parentState={parentState}
@@ -49,15 +47,13 @@ const Nav = () => {
         </Link>
         {!cartOpen ? (
           <a
-            className="cursor-pointer text-sm font-public-sans-normal font-medium text-gray-700"
+            className="cursor-pointer text-sm font-public-sans-medium text-gray-700"
             onClick={() => setCartOpen(!cartOpen)}
           >
             cart ({cartQuantity})
           </a>
         ) : (
-          <p className="cursor-pointer text-sm font-public-sans-normal font-medium text-gray-700">
-            close
-          </p>
+          <p className="cursor-pointer text-sm font-public-sans-medium text-gray-700">close</p>
         )}
 
         <MiniCart cart={cart} />

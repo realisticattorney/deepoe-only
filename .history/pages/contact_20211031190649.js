@@ -143,7 +143,7 @@ export default function Contact() {
           <div className="justify-self-end">
             <button
               type="submit"
-              className="inline-flex justify-center py-1.5 px-6 border border-transparent shadow text-base  text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
+              className="inline-flex justify-center py-1.5 px-6 border border-transparent shadow text-base font-medium text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
             >
               Submit
             </button>
@@ -152,7 +152,7 @@ export default function Contact() {
       </div>
 
       <div className="flex flex-col w-full pt-8">
-        <h4 className="px-2.5 py-2 text-2xl font-light font-public-sans-normal">
+        <h4 className="px-3 text-2xl font-light">
           Or check our{' '}
           <span className="underline">
             <Link href={`deepoe/about`}>
@@ -161,14 +161,14 @@ export default function Contact() {
           </span>
         </h4>
         <button className="group focus:outline-none px-3" onClick={handleShow}>
-          <div className="flex justify-between py-2 text-sm font-public-sans-normal text-left text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+          <div className="flex justify-between py-2 text-sm font-light text-left text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
             <span className="truncate">Where's my order?</span>
 
             <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
             <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
           </div>
-          <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2 font-public-sans-normal group-focus:max-h-40  text-xs text-left font-extralight text-gray-500 border-b border-gray-700">
+          <div className="max-h-0 overflow-hidden duration-300 px-4  group-focus:max-h-40  text-xs text-left font-extralight text-gray-500 border-b border-gray-700">
             Please contact us as soon as possible with your order number and
             email and we will try our best to accomodate your request. Please
             note that some orders may not be cancellable after leaving our
@@ -176,7 +176,7 @@ export default function Contact() {
           </div>
         </button>
         <button className="group focus:outline-none px-3">
-          <div className="flex justify-between py-2 text-sm font-public-sans-normal text-left text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+          <div className="flex justify-between py-2 text-sm font-light text-left text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
             <span className="truncate">
               How can I change or cancel my order?
             </span>
@@ -184,7 +184,7 @@ export default function Contact() {
 
             <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
           </div>
-          <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2 font-public-sans-normal group-focus:max-h-40  text-xs text-left font-extralight text-gray-500 border-b border-gray-700">
+          <div className="max-h-0 overflow-hidden duration-300 px-4  group-focus:max-h-40  text-xs text-left font-extralight text-gray-500 border-b border-gray-700">
             Please contact us as soon as possible with your order number and
             email and we will try our best to accomodate your request. Please
             note that some orders may not be cancellable after leaving our
@@ -192,13 +192,13 @@ export default function Contact() {
           </div>
         </button>
         <button className="group focus:outline-none px-3">
-          <div className="flex justify-between py-2 text-sm font-public-sans-normal text-left text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+          <div className="flex justify-between py-2 text-sm font-light text-left text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
             <span className="truncate">Do your items have a warranty?</span>
             <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
             <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
           </div>
-          <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2 font-public-sans-normal  group-focus:max-h-40  text-xs text-left font-extralight text-gray-500 border-b border-gray-700">
+          <div className="max-h-0 overflow-hidden duration-300 px-4  group-focus:max-h-40  text-xs text-left font-extralight text-gray-500 border-b border-gray-700">
             Please contact us as soon as possible with your order number and
             email and we will try our best to accomodate your request. Please
             note that some orders may not be cancellable after leaving our

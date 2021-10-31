@@ -67,7 +67,7 @@ export default function Contact() {
                   message: 'Please enter your name',
                 },
               })}
-              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-public-sans-normal  py-0.5 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2 ${
+              className={`block w-full shadow-sm border bg-deepoe-cream text-xs font-extralight py-1 px-2 placeholder-gray-500 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2 ${
                 errors.name ? 'ring-2 ring-red-500' : null
               }`}
               placeholder="name*"
@@ -101,7 +101,8 @@ export default function Contact() {
                   message: 'This needs to be a valid email address',
                 },
               })}
-              className={`block w-full border shadow-sm bg-deepoe-cream text-sm font-light font-public-sans-normal  py-0.5 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2 ${
+           
+              className={`block w-full border shadow-sm bg-deepoe-cream text-xs font-extralight  py-1 px-2 placeholder-gray-500 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2 ${
                 errors.email ? 'ring-2 ring-red-500' : null
               }`}
               placeholder="e-mail*"
@@ -110,6 +111,18 @@ export default function Contact() {
               {errors?.email?.message}
             </span>
           </div>
+          {/* <div>
+            <label for="phone" className="sr-only">
+              Phone
+            </label>
+            <input
+              type="text"
+              name="phone"
+              ref={register}
+              className="block w-full shadow py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 focus:outline-none focus:ring-2"
+              placeholder="Phone"
+            />
+          </div> */}
           <div>
             <label for="message" className="sr-only">
               Message
@@ -131,7 +144,21 @@ export default function Contact() {
                   message: 'Your message must be longer than this!',
                 },
               })}
-              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-public-sans-normal  py-0.5 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none focus:ring-2 ${
+              // ref={register({
+              //   required: {
+              //     value: true,
+              //     message: 'You need to enter your message',
+              //   },
+              //   maxLength: {
+              //     value: 1000,
+              //     message: "Your message can't be more than 1000 characters",
+              //   },
+              //   minLength: {
+              //     value: 50,
+              //     message: 'Your message must be longer than this!',
+              //   },
+              // })}
+              className={`block w-full shadow-sm border bg-deepoe-cream text-xs font-extralight py-1 px-2 placeholder-gray-500 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none focus:ring-2 ${
                 errors.message ? 'ring-2 ring-red-500' : null
               }`}
               placeholder="message"
@@ -143,7 +170,7 @@ export default function Contact() {
           <div className="justify-self-end">
             <button
               type="submit"
-              className="inline-flex justify-center py-1.5 px-6 border border-transparent shadow text-base  text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
+              className="inline-flex justify-center py-1.5 px-6 border border-transparent shadow text-base font-medium text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
             >
               Submit
             </button>
@@ -152,7 +179,7 @@ export default function Contact() {
       </div>
 
       <div className="flex flex-col w-full pt-8">
-        <h4 className="px-2.5 py-2 text-2xl font-light font-public-sans-normal">
+        <h4 className="px-3 text-2xl font-light">
           Or check our{' '}
           <span className="underline">
             <Link href={`deepoe/about`}>
@@ -161,14 +188,14 @@ export default function Contact() {
           </span>
         </h4>
         <button className="group focus:outline-none px-3" onClick={handleShow}>
-          <div className="flex justify-between py-2 text-sm font-public-sans-normal text-left text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+          <div className="flex justify-between py-2 text-sm font-light text-left text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
             <span className="truncate">Where's my order?</span>
 
             <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
             <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
           </div>
-          <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2 font-public-sans-normal group-focus:max-h-40  text-xs text-left font-extralight text-gray-500 border-b border-gray-700">
+          <div className="max-h-0 overflow-hidden duration-300 px-4  group-focus:max-h-40  text-xs text-left font-extralight text-gray-500 border-b border-gray-700">
             Please contact us as soon as possible with your order number and
             email and we will try our best to accomodate your request. Please
             note that some orders may not be cancellable after leaving our
@@ -176,7 +203,7 @@ export default function Contact() {
           </div>
         </button>
         <button className="group focus:outline-none px-3">
-          <div className="flex justify-between py-2 text-sm font-public-sans-normal text-left text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+          <div className="flex justify-between py-2 text-sm font-light text-left text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
             <span className="truncate">
               How can I change or cancel my order?
             </span>
@@ -184,7 +211,7 @@ export default function Contact() {
 
             <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
           </div>
-          <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2 font-public-sans-normal group-focus:max-h-40  text-xs text-left font-extralight text-gray-500 border-b border-gray-700">
+          <div className="max-h-0 overflow-hidden duration-300 px-4  group-focus:max-h-40  text-xs text-left font-extralight text-gray-500 border-b border-gray-700">
             Please contact us as soon as possible with your order number and
             email and we will try our best to accomodate your request. Please
             note that some orders may not be cancellable after leaving our
@@ -192,13 +219,13 @@ export default function Contact() {
           </div>
         </button>
         <button className="group focus:outline-none px-3">
-          <div className="flex justify-between py-2 text-sm font-public-sans-normal text-left text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+          <div className="flex justify-between py-2 text-sm font-light text-left text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
             <span className="truncate">Do your items have a warranty?</span>
             <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
             <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
           </div>
-          <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2 font-public-sans-normal  group-focus:max-h-40  text-xs text-left font-extralight text-gray-500 border-b border-gray-700">
+          <div className="max-h-0 overflow-hidden duration-300 px-4  group-focus:max-h-40  text-xs text-left font-extralight text-gray-500 border-b border-gray-700">
             Please contact us as soon as possible with your order number and
             email and we will try our best to accomodate your request. Please
             note that some orders may not be cancellable after leaving our
@@ -206,13 +233,13 @@ export default function Contact() {
           </div>
         </button>
         <div className="justify-self-end pt-2.5 self-end">
-          <Link href={`deepoe/faq`}>
-            <button
-              type="submit"
-              className="inline-flex justify-center py-0.5 px-6 border border-transparent shadow text-xs font-light text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
-            >
-              View More
-            </button>
+        <Link href={`deepoe/faq`}>
+          <button
+            type="submit"
+            className="inline-flex justify-center py-0.5 px-6 border border-transparent shadow text-xs font-light text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
+          >
+            View More
+          </button>
           </Link>
         </div>
       </div>

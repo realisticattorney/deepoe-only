@@ -40,19 +40,11 @@ const ProductPageContent = ({ collection, product }) => {
 
               <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
             </div>
-            <div className="max-h-0 overflow-hidden duration-300   group-focus:py-2 font-public-sans-normal  group-focus:max-h-56  text-xs text-left font-extralight  border-b border-gray-700">
-              Enjoy your next meal with a stylish and conscious choice. Whether
-              its indoors or outdoors, our bamboo plates are perfect for
-              entertaining, simple meals with the family, or quick snacks with
-              the little ones.
-              <br></br>
-              <br></br>
-              Our plates are completely free of plastics and made from bamboo,
-              cornstarch, and use food-grade inks. They are bio-degradable,
-              dishwasher safe, lightweight, and durablly built for seasons of
-              use. These plates don’t just replace your outdoor styrofoam and
-              plastic options, they’re sturdy and stylish enough to belong on
-              your dinner table.
+            <div className="max-h-0 overflow-hidden duration-300   group-focus:py-2 font-public-sans-normal  group-focus:max-h-40  text-xs text-left font-extralight  border-b border-gray-700">
+              Please contact us as soon as possible with your order number and
+              email and we will try our best to accomodate your request. Please
+              note that some orders may not be cancellable after leaving our
+              warehouse.
             </div>
           </button>
           <button className="group focus:outline-none">
@@ -99,38 +91,22 @@ const ProductPageContent = ({ collection, product }) => {
             </div>
           </button>
         </div>
+
       </div>
-      <div className="flex flex-col w-full py-5 font-public-sans-normal">
+        <div className="flex flex-col w-full py-5 font-public-sans-normal">
         <div className="py-3.5">
           <h2 className="text-left text-xl px-5">Sustainable Style</h2>
-          <p className="text-left text-xs font-light pt-1 px-5">
-            Sustainability should not be dull, muted, or monotone. We believe
-            sustainabile choices should be designed for impact and bring joy and
-            smiles. Our bamboo plate avoid plastics and melamines and are
-            crafted from renewable bamboo and cornstarch.
-          </p>
-        </div>
+          <p className="text-left text-xs font-light pt-1 px-5">Sustainability should not be dull, muted, or monotone. We believe sustainabile choices should be designed for impact and bring joy and smiles. Our bamboo plate avoid plastics and melamines and are crafted from renewable bamboo and cornstarch</p>
+          </div>
         <div className="py-3.5 bg-deepoe-chocolate">
-          <h2 className="text-left text-xl px-5 font-light text-white">
-            Function First
-          </h2>
-          <p className="text-left text-xs font-light pt-1 px-5 text-white">
-            We aim to provide products that actually work, and ideally across
-            settings. These sturdy plates are perfect for outdoor BBQs, picnics
-            or an evening on the porch but perform just as well when
-            entertaining a dinner party or snack time with the kids.
-          </p>
-        </div>
+          <h2 className="text-left text-xl px-5 font-light text-white">Function First</h2>
+          <p className="text-left text-xs font-light pt-1 px-5 text-white">Sustainability should not be dull, muted, or monotone. We believe sustainabile choices should be designed for impact and bring joy and smiles. Our bamboo plate avoid plastics and melamines and are crafted from renewable bamboo and cornstarch</p>
+          </div>
         <div className="py-3.5">
-          <h2 className="text-left text-xl px-5">Conscious Commerce</h2>
-          <p className="text-left text-xs font-light pt-1 px-5">
-            Deepoe aims to consider each step of the product’s journey and
-            ensure conscious decisions fuel our business success. We have
-            removed plastics from packaing and are on the path to carbon
-            neutrality.
-          </p>
+          <h2 className="text-left text-xl px-5">Sustainable Style</h2>
+          <p className="text-left text-xs font-light pt-1 px-5">Sustainability should not be dull, muted, or monotone. We believe sustainabile choices should be designed for impact and bring joy and smiles. Our bamboo plate avoid plastics and melamines and are crafted from renewable bamboo and cornstarch</p>
+          </div>
         </div>
-      </div>
     </div>
   );
 };

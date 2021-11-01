@@ -107,7 +107,7 @@ const ProductPageContent = ({ collection, product }) => {
             Sustainability should not be dull, muted, or monotone. We believe
             sustainabile choices should be designed for impact and bring joy and
             smiles. Our bamboo plate avoid plastics and melamines and are
-            crafted from renewable bamboo and cornstarch.
+            crafted from renewable bamboo and cornstarch
           </p>
         </div>
         <div className="py-3.5 bg-deepoe-chocolate">
@@ -122,12 +122,12 @@ const ProductPageContent = ({ collection, product }) => {
           </p>
         </div>
         <div className="py-3.5">
-          <h2 className="text-left text-xl px-5">Conscious Commerce</h2>
+          <h2 className="text-left text-xl px-5">Sustainable Style</h2>
           <p className="text-left text-xs font-light pt-1 px-5">
-            Deepoe aims to consider each step of the product’s journey and
-            ensure conscious decisions fuel our business success. We have
-            removed plastics from packaing and are on the path to carbon
-            neutrality.
+            Sustainability should not be dull, muted, or monotone. We believe
+            sustainabile choices should be designed for impact and bring joy and
+            smiles. Our bamboo plate avoid plastics and melamines and are
+            crafted from renewable bamboo and cornstarch
           </p>
         </div>
       </div>

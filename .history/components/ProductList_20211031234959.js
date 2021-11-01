@@ -12,8 +12,9 @@ const ProductList = ({ collection, products }) => {
               layout="fill"
               objectFit="cover"
             />
-            <h2 className={`text-5xl text-white absolute top-32 italic font-medium mb-6 ${collection === "frontpage" ? "left-10" : "left-28"}`}>
-              {collection === 'frontpage' ? 'all products' : collection}
+            <div>
+            <h2 className="text-5xl text-white absolute top-32 left-20 italic font-medium mb-6">
+              {collection === 'frontpage' ? 'All Products' : collection}
             </h2>
           </div>
         </div>

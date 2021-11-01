@@ -18,12 +18,10 @@ const Faq = () => {
   return (
     <div className=" w-full px-2.5 font-mono">
       <div className="w-full max-w-md  mx-auto bg-deepoe-cream rounded-2xl space-y-5">
-        <h3 className="text-xl pt-3.5 font-normal px-3">
-          Frequently Asked Questions
-        </h3>
+        <h3 className="text-xl pt-3.5 px-3">Frequently Asked Questions</h3>
 
         <div className="flex flex-col w-full">
-          <h4 className="px-3 font-medium">Orders</h4>
+          <h4 className="px-3">Orders</h4>
           <button
             className="group focus:outline-none px-3"
             onClick={handleShow}
@@ -75,7 +73,7 @@ const Faq = () => {
         </div>
 
         <div className="flex flex-col w-full pt-5">
-          <h4 className="px-3 font-medium">Products</h4>
+          <h4 className="px-3">Products</h4>
           <button
             className="group focus:outline-none px-3"
             onClick={handleShow}
@@ -126,7 +124,7 @@ const Faq = () => {
           </button>
         </div>
         <div className="flex flex-col w-full py-5">
-          <h4 className="px-3 font-medium">Miscellaneous</h4>
+          <h4 className="px-3">Miscellaneous</h4>
           <button
             className="group focus:outline-none px-3"
             onClick={handleShow}

@@ -16,26 +16,24 @@ const Faq = () => {
   };
 
   return (
-    <div className=" w-full px-2.5 font-mono">
+    <div className=" w-full px-4 font-mono font-semibolf">
       <div className="w-full max-w-md  mx-auto bg-deepoe-cream rounded-2xl space-y-5">
-        <h3 className="text-xl pt-3.5 font-normal px-3">
-          Frequently Asked Questions
-        </h3>
+        <h3 className="text-lg font-light px-3">Frequently Asked Questions</h3>
 
         <div className="flex flex-col w-full">
-          <h4 className="px-3 font-medium">Orders</h4>
+          <h4 className="px-3">Orders</h4>
           <button
             className="group focus:outline-none px-3"
             onClick={handleShow}
           >
-            <div className="flex justify-between py-2 text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+            <div className="flex justify-between py-2 text-sm font-light items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
               <span className="truncate">Where's my order?</span>
 
               <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
               <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
             </div>
-            <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2  group-focus:max-h-40  text-xs text-left font-light  border-b border-gray-700">
+            <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2 font-public-sans-normal  group-focus:max-h-40  text-xs text-left font-extralight text-gray-500 border-b border-gray-700">
               Please contact us as soon as possible with your order number and
               email and we will try our best to accomodate your request. Please
               note that some orders may not be cancellable after leaving our
@@ -43,7 +41,7 @@ const Faq = () => {
             </div>
           </button>
           <button className="group focus:outline-none px-3">
-            <div className="flex justify-between py-2 text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+            <div className="flex justify-between py-2 text-sm font-light items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
               <span className="truncate">
                 How can I change or cancel my order?
               </span>
@@ -51,7 +49,7 @@ const Faq = () => {
 
               <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
             </div>
-            <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2  group-focus:max-h-40  text-xs text-left font-light  border-b border-gray-700">
+            <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2 font-public-sans-normal  group-focus:max-h-40  text-xs text-left font-extralight text-gray-500 border-b border-gray-700">
               Please contact us as soon as possible with your order number and
               email and we will try our best to accomodate your request. Please
               note that some orders may not be cancellable after leaving our
@@ -59,13 +57,13 @@ const Faq = () => {
             </div>
           </button>
           <button className="group focus:outline-none px-3">
-            <div className="flex justify-between py-2 text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+            <div className="flex justify-between py-2 text-sm font-light items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
               <span className="truncate">Do your items have a warranty?</span>
               <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
               <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
             </div>
-            <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2  group-focus:max-h-40  text-xs text-left font-light  border-b border-gray-700">
+            <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2 font-public-sans-normal  group-focus:max-h-40  text-xs text-left font-extralight text-gray-500 border-b border-gray-700">
               Please contact us as soon as possible with your order number and
               email and we will try our best to accomodate your request. Please
               note that some orders may not be cancellable after leaving our
@@ -75,19 +73,19 @@ const Faq = () => {
         </div>
 
         <div className="flex flex-col w-full pt-5">
-          <h4 className="px-3 font-medium">Products</h4>
+          <h4 className="px-3">Products</h4>
           <button
             className="group focus:outline-none px-3"
             onClick={handleShow}
           >
-            <div className="flex justify-between py-2 text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+            <div className="flex justify-between py-2 text-sm font-light items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
               <span className="truncate">Where's my order?</span>
 
               <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
               <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
             </div>
-            <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2  group-focus:max-h-40  text-xs text-left font-light  border-b border-gray-700">
+            <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2 font-public-sans-normal  group-focus:max-h-40  text-xs text-left font-extralight text-gray-500 border-b border-gray-700">
               Please contact us as soon as possible with your order number and
               email and we will try our best to accomodate your request. Please
               note that some orders may not be cancellable after leaving our
@@ -95,7 +93,7 @@ const Faq = () => {
             </div>
           </button>
           <button className="group focus:outline-none px-3">
-            <div className="flex justify-between py-2 text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+            <div className="flex justify-between py-2 text-sm font-light items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
               <span className="truncate">
                 How can I change or cancel my order?
               </span>
@@ -103,7 +101,7 @@ const Faq = () => {
 
               <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
             </div>
-            <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2  group-focus:max-h-40  text-xs text-left font-light  border-b border-gray-700">
+            <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2 font-public-sans-normal  group-focus:max-h-40  text-xs text-left font-extralight text-gray-500 border-b border-gray-700">
               Please contact us as soon as possible with your order number and
               email and we will try our best to accomodate your request. Please
               note that some orders may not be cancellable after leaving our
@@ -111,13 +109,13 @@ const Faq = () => {
             </div>
           </button>
           <button className="group focus:outline-none px-3">
-            <div className="flex justify-between py-2 text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+            <div className="flex justify-between py-2 text-sm font-light items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
               <span className="truncate">Do your items have a warranty?</span>
               <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
               <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
             </div>
-            <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2  group-focus:max-h-40  text-xs text-left font-light  border-b border-gray-700">
+            <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2 font-public-sans-normal  group-focus:max-h-40  text-xs text-left font-extralight text-gray-500 border-b border-gray-700">
               Please contact us as soon as possible with your order number and
               email and we will try our best to accomodate your request. Please
               note that some orders may not be cancellable after leaving our
@@ -126,19 +124,19 @@ const Faq = () => {
           </button>
         </div>
         <div className="flex flex-col w-full py-5">
-          <h4 className="px-3 font-medium">Miscellaneous</h4>
+          <h4 className="px-3">Miscellaneous</h4>
           <button
             className="group focus:outline-none px-3"
             onClick={handleShow}
           >
-            <div className="flex justify-between py-2 text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+            <div className="flex justify-between py-2 text-sm font-light items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
               <span className="truncate">Where's my order?</span>
 
               <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
               <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
             </div>
-            <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2  group-focus:max-h-40  text-xs text-left font-light  border-b border-gray-700">
+            <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2 font-public-sans-normal  group-focus:max-h-40  text-xs text-left font-extralight text-gray-500 border-b border-gray-700">
               Please contact us as soon as possible with your order number and
               email and we will try our best to accomodate your request. Please
               note that some orders may not be cancellable after leaving our
@@ -146,7 +144,7 @@ const Faq = () => {
             </div>
           </button>
           <button className="group focus:outline-none px-3">
-            <div className="flex justify-between py-2 text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+            <div className="flex justify-between py-2 text-sm font-light items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
               <span className="truncate">
                 How can I change or cancel my order?
               </span>
@@ -154,7 +152,7 @@ const Faq = () => {
 
               <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
             </div>
-            <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2  group-focus:max-h-40  text-xs text-left font-light  border-b border-gray-700">
+            <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2 font-public-sans-normal  group-focus:max-h-40  text-xs text-left font-extralight text-gray-500 border-b border-gray-700">
               Please contact us as soon as possible with your order number and
               email and we will try our best to accomodate your request. Please
               note that some orders may not be cancellable after leaving our
@@ -162,13 +160,13 @@ const Faq = () => {
             </div>
           </button>
           <button className="group focus:outline-none px-3">
-            <div className="flex justify-between py-2 text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+            <div className="flex justify-between py-2 text-sm font-light items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
               <span className="truncate">Do your items have a warranty?</span>
               <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
               <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
             </div>
-            <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2  group-focus:max-h-40  text-xs text-left font-light  border-b border-gray-700">
+            <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2 font-public-sans-normal  group-focus:max-h-40  text-xs text-left font-extralight text-gray-500 border-b border-gray-700">
               Please contact us as soon as possible with your order number and
               email and we will try our best to accomodate your request. Please
               note that some orders may not be cancellable after leaving our

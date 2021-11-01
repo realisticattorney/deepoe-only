@@ -11,8 +11,8 @@ body {
   .font-public-sans-normal {
     @apply font-mono font-normal;
   }
-  .font-public-sans-medium {
-    @apply font-mono font-medium;
+  .font-public-sans-normal {
+    @apply font-mono font-normal;
   }
   .font-public-sans-light {
     @apply font-mono font-light;
@@ -37,9 +37,6 @@ body {
   }
   .font-public-sans-normal-italic {
     @apply font-mono font-normal italic;
-  }
-  .font-public-sans-medium-italic {
-    @apply font-mono font-medium italic;
   }
   .font-public-sans-light-italic {
     @apply font-mono font-light italic;

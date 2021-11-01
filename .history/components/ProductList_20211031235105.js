@@ -4,16 +4,16 @@ import Image from 'next/image';
 const ProductList = ({ collection, products }) => {
   return (
     <div className="bg-deepoe-cream">
-      <div className="max-w-2xl mx-auto py-2 ">
-        <div className="w-full  overflow-hidden">
+      <div className="max-w-2xl mx-auto py-2 text-center">
+        <div className="w-full  overflow-hidden ">
           <div className="relative h-80">
             <Image
               src={products.image.originalSrc}
               layout="fill"
               objectFit="cover"
             />
-            <h2 className={`text-5xl text-white absolute top-32 italic font-medium mb-6 ${collection === "frontpage" ? "left-10" : "left-28"}`}>
-              {collection === 'frontpage' ? 'all products' : collection}
+            <h2 className="text-5xl text-white absolute top-32 italic font-medium mb-6">
+              {collection === 'frontpage' ? 'All Products' : collection}
             </h2>
           </div>
         </div>

@@ -18,9 +18,7 @@ const Faq = () => {
   return (
     <div className=" w-full px-2.5 font-mono">
       <div className="w-full max-w-md  mx-auto bg-deepoe-cream rounded-2xl space-y-5">
-        <h3 className="text-xl pt-3.5 font-normal px-3">
-          Frequently Asked Questions
-        </h3>
+        <h3 className="text-xl pt-3.5 font px-3">Frequently Asked Questions</h3>
 
         <div className="flex flex-col w-full">
           <h4 className="px-3 font-medium">Orders</h4>

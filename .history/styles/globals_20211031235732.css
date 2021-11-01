@@ -38,8 +38,8 @@ body {
   .font-public-sans-normal-italic {
     @apply font-mono font-normal italic;
   }
-  .font-public-sans-medium-italic {
-    @apply font-mono font-medium italic;
+  .font-public-sans-normal-italic {
+    @apply font-mono font-normal italic;
   }
   .font-public-sans-light-italic {
     @apply font-mono font-light italic;

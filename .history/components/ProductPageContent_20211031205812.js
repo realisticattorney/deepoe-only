@@ -71,7 +71,7 @@ const ProductPageContent = ({ collection, product }) => {
               <li>Avoid soaking in water for prolonged times </li>
               <li>Suitable for hot foods </li>
               <li>Store in cool and dry place</li>
-              <p className="group-focus:pb-2"> Set of 4</p>
+             <p> Set of 4</p>
             </div>
           </button>
           <button className="group focus:outline-none">

@@ -58,19 +58,21 @@ const ProductPageContent = ({ collection, product }) => {
             </div>
             <div className="max-h-0 overflow-hidden duration-300 text-sm  group-focus:pb-2 font-public-sans-normal group-focus:max-h-40  text-left font-extralight text-gray-500 border-b border-gray-700">
               9.85” in diameter (25cm)
-              <li>Non-toxic and compostable </li>
-              <li>
-                Composed of bamboo fiber and corn starch and printed with food
-                grade ink
-              </li>
-              <li>BPA, PVC and Phthalates free</li>
-              <li>General Care</li>
-              <li>Do not microwave</li>
-              <li>Handwash before use </li>
-              <li>Dishwasher safe</li>
-              <li>Avoid soaking in water for prolonged times </li>
-              <li>Suitable for hot foods </li>
-              <li>Store in cool and dry place</li>
+              <ol>
+                <li>Non-toxic and compostable </li>
+                <li>
+                  Composed of bamboo fiber and corn starch and printed with food
+                  grade ink
+                </li>
+                <li>BPA, PVC and Phthalates free</li>
+                <li>General Care</li>
+                <li>Do not microwave</li>
+                <li>Handwash before use </li>
+                <li>Dishwasher safe</li>
+                <li>Avoid soaking in water for prolonged times </li>
+                <li>Suitable for hot foods </li>
+                <li>Store in cool and dry place</li>
+              </ol>
               <p className="group-focus:pb-2"> Set of 4</p>
             </div>
           </button>

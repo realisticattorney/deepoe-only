@@ -40,7 +40,7 @@ const ProductPageContent = ({ collection, product }) => {
 
               <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
             </div>
-            <div className="max-h-0 overflow-hidden duration-300   group-focus:py-2 font-public-sans-normal  group-focus:max-h-40  text-sm text-left font-extralight text-gray-500 border-b border-gray-700">
+            <div className="max-h-0 overflow-hidden duration-300   group-focus:max-h-40  text-sm text-left font-extralight text-gray-500 border-b border-gray-700">
               Please contact us as soon as possible with your order number and
               email and we will try our best to accomodate your request. Please
               note that some orders may not be cancellable after leaving our
@@ -56,22 +56,22 @@ const ProductPageContent = ({ collection, product }) => {
 
               <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
             </div>
-            <div className="max-h-0 overflow-hidden duration-300 text-sm  group-focus:pb-2 font-public-sans-normal group-focus:max-h-40  text-left font-extralight text-gray-500 border-b border-gray-700">
-              9.85” in diameter (25cm)
-              <li>Non-toxic and compostable </li>
-              <li>
-                Composed of bamboo fiber and corn starch and printed with food
-                grade ink
-              </li>
-              <li>BPA, PVC and Phthalates free</li>
-              <li>General Care</li>
-              <li>Do not microwave</li>
-              <li>Handwash before use </li>
-              <li>Dishwasher safe</li>
-              <li>Avoid soaking in water for prolonged times </li>
-              <li>Suitable for hot foods </li>
-              <li>Store in cool and dry place</li>
-              <p className="group-focus:pb-2"> Set of 4</p>
+            <div className="max-h-0 overflow-hidden duration-300 text-sm  group-focus:max-h-40  text-left font-extralight text-gray-500 border-b border-gray-700">
+            9.85” in diameter (25cm) 
+<li>Non-toxic and compostable </li>
+<li>Composed of bamboo fiber and corn starch and printed with food grade ink</li>
+<li>BPA, PVC and Phthalates free</li>
+
+<li>General Care</li>
+<li>Do not microwave</li>
+<li>Handwash before use </li>
+<li>Dishwasher safe</li>
+<li>Avoid soaking in water for prolonged times </li>
+<li>Suitable for hot foods </li>
+vStore in cool and dry place</li>
+
+Set of 4
+
             </div>
           </button>
           <button className="group focus:outline-none">
@@ -83,7 +83,7 @@ const ProductPageContent = ({ collection, product }) => {
 
               <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
             </div>
-            <div className="max-h-0 overflow-hidden duration-300   group-focus:py-2 font-public-sans-normal  group-focus:max-h-40  text-sm text-left font-extralight text-gray-500 border-b border-gray-700">
+            <div className="max-h-0 overflow-hidden duration-300   group-focus:max-h-40  text-sm text-left font-extralight text-gray-500 border-b border-gray-700">
               Please contact us as soon as possible with your order number and
               email and we will try our best to accomodate your request. Please
               note that some orders may not be cancellable after leaving our

@@ -6,9 +6,11 @@ const ProductOptions = ({
   // quantityAvailable,
   // currentlyNotInStock,
 }) => {
+
   // console.log(quantityAvailable)
   // console.log(setOptions)
-
+  
+  
   return (
     <fieldset>
       {/* <legend className="text-xl font-semibold">{name}</legend> */}
@@ -32,23 +34,22 @@ const ProductOptions = ({
               />
               {name === 'Color' ? (
                 <div
-                  className={`border p-0.5 border-deepoe-chocolate rounded-full ${
-                    checked ? 'border-deepoe-chocolate' : 'border-none'
-                  }`}
-                >
-                  <div
-                    className={`p-3.5  text-lg rounded-full block cursor-pointer
-                  
-                  ${value == 'Black' ? 'bg-gray-900' : ''}
+                  className={`p-3.5 border-opacity-90 b text-lg rounded-full block cursor-pointer mr-3 ${
+                    checked ? 'border-gray-800' : 'border-gray-300'
+                  }
+                  ${value == 'Black' ? 'bg-gray-900 border-yellow-200' : ''}
                   ${
                     value == 'Grey' || value == 'Gray'
-                      ? 'bg-gray-600'
+                      ? 'bg-gray-600 border-black'
                       : ''
                   }
-                  ${value == 'White' ? 'bg-white' : ''}
-                  ${value == 'Olive' ? 'bg-green-600' : ''}`}
-                  ></div>
-                </div>
+                  ${
+                    value == 'White'
+                      ? 'bg-white border-black'
+                      : ''
+                  }
+                  ${value == 'Olive' ? 'bg-green-600 border-black' : ''}`}
+                ></div>
               ) : null}
               {name === 'Size' ? (
                 <div

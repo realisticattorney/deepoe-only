@@ -12,7 +12,7 @@ const ProductOptions = ({
   return (
     <fieldset>
       {/* <legend className="text-xl font-semibold">{name}</legend> */}
-      <div className="inline-flex items-center flex-wrap">
+      <div className="inline-flex  flex-wrap">
         {values.map((value) => {
           const id = `option-${name}-${value}`;
           const checked = selectedOptions[name] === value;

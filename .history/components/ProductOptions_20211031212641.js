@@ -32,21 +32,21 @@ const ProductOptions = ({
               />
               {name === 'Color' ? (
                 <div
-                  className={`border p-0.5 border-deepoe-chocolate rounded-full ${
+                  className={`border-2 p-0.5 border border-deepoe-chocolate rounded-full ${
                     checked ? 'border-deepoe-chocolate' : 'border-none'
                   }`}
                 >
                   <div
-                    className={`p-3.5  text-lg rounded-full block cursor-pointer
+                    className={`p-3.5  border-2 text-lg rounded-full block cursor-pointer
                   
-                  ${value == 'Black' ? 'bg-gray-900' : ''}
+                  ${value == 'Black' ? 'bg-gray-900 border-yellow-200' : ''}
                   ${
                     value == 'Grey' || value == 'Gray'
-                      ? 'bg-gray-600'
+                      ? 'bg-gray-600 border-black'
                       : ''
                   }
-                  ${value == 'White' ? 'bg-white' : ''}
-                  ${value == 'Olive' ? 'bg-green-600' : ''}`}
+                  ${value == 'White' ? 'bg-white border-black' : ''}
+                  ${value == 'Olive' ? 'bg-green-600 border-black' : ''}`}
                   ></div>
                 </div>
               ) : null}

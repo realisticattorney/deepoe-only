@@ -39,14 +39,14 @@ const ProductOptions = ({
                   <div
                     className={`p-3.5  text-lg rounded-full block cursor-pointer
                   
-                  ${value == 'Black' ? 'bg-gray-900' : ''}
+                  ${value == 'Black' ? 'bg-gray-900 border-yellow-200' : ''}
                   ${
                     value == 'Grey' || value == 'Gray'
-                      ? 'bg-gray-600'
+                      ? 'bg-gray-600 border-black'
                       : ''
                   }
-                  ${value == 'White' ? 'bg-white' : ''}
-                  ${value == 'Olive' ? 'bg-green-600' : ''}`}
+                  ${value == 'White' ? 'bg-white border-black' : ''}
+                  ${value == 'Olive' ? 'bg-green-600 border-black' : ''}`}
                   ></div>
                 </div>
               ) : null}

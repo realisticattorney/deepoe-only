@@ -59,14 +59,14 @@ const ProductForm = ({ product }) => {
   }
 
   return (
-    <div className="flex-col flex w-full pt-1 font-public-sans-normal">
+    <div className="flex-col flex w-full pt-1 font-p">
       <h2 className="text-2xl font-medium text-gray-800">{product.title}</h2>
-      <div className="pb-2 pt-2 items-center flex justify-between">
-        <span className="  text-lg text-gray-600">
+      <div className="pb-6 pt-2 items-center flex justify-between">
+        <span className="  text-lg font-light text-gray-700">
           {formatter.format(product.variants.edges[0].node.priceV2.amount)}
         </span>
         <h3
-          className={`text-right text-sm font-normal text-gray-600 ${
+          className={`text-right text-sm font-extralight ${
             selectedVariant.currentlyNotInStock
               ? 'text-red-700'
               : 'text-gray-700'

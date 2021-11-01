@@ -18,8 +18,8 @@ const ProductPageContent = ({ collection, product }) => {
     <div>
       <div className="px-5 py-5 z-0">
         <Link href={`/collections/${collection}/`}>
-          <a className="text-left pl-1 font-medium font-public-sans-normal">
-          {'<'} back to {collection}
+          <a className="text-left text-sm font-medium">
+            collections {'>'} {collection}
           </a>
         </Link>
       </div>
@@ -83,7 +83,7 @@ const ProductPageContent = ({ collection, product }) => {
 
               <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
             </div>
-            <div className="max-h-0 overflow-hidden duration-300   group-focus:py-2 font-public-sans-normal  group-focus:max-h-40  text-xs text-left font-extralight border-b border-gray-700">
+            <div className="max-h-0 overflow-hidden duration-300   group-focus:py-2 font-public-sans-normal  group-focus:max-h-40  text-sm text-left font-extralight border-b border-gray-700">
               Please contact us as soon as possible with your order number and
               email and we will try our best to accomodate your request. Please
               note that some orders may not be cancellable after leaving our

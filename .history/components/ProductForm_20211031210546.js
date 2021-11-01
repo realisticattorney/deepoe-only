@@ -61,7 +61,7 @@ const ProductForm = ({ product }) => {
   return (
     <div className="flex-col flex w-full pt-1 font-public-sans-normal">
       <h2 className="text-2xl font-medium text-gray-800">{product.title}</h2>
-      <div className="pb-2 pt-2 items-center flex justify-between">
+      <div className="pb-6 pt-2 items-center flex justify-between">
         <span className="  text-lg text-gray-600">
           {formatter.format(product.variants.edges[0].node.priceV2.amount)}
         </span>

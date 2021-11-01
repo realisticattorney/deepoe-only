@@ -102,8 +102,8 @@ const ProductPageContent = ({ collection, product }) => {
       </div>
       <div className="flex flex-col w-full py-5 font-public-sans-normal">
         <div className="py-3.5">
-          <h2 className="text-left text-2xl pb-2 px-6 font-mono font-normal">Sustainable Style</h2>
-          <p className="text-left text-xs font-light pt-1 px-6">
+          <h2 className="text-left text-xl px-5 ">Sustainable Style</h2>
+          <p className="text-left text-xs font-light pt-1 px-5">
             Sustainability should not be dull, muted, or monotone. We believe
             sustainabile choices should be designed for impact and bring joy and
             smiles. Our bamboo plate avoid plastics and melamines and are
@@ -111,10 +111,10 @@ const ProductPageContent = ({ collection, product }) => {
           </p>
         </div>
         <div className="py-3.5 bg-deepoe-chocolate">
-          <h2 className="text-left text-2xl pb-2 px-6 font-mono font-normal text-deepoe-cream">
+          <h2 className="text-left text-xl px-5  font-light text-white">
             Function First
           </h2>
-          <p className="text-left text-xs font-light pt-1 px-6 text-deepoe-cream">
+          <p className="text-left text-xs font-light pt-1 px-5 text-white">
             We aim to provide products that actually work, and ideally across
             settings. These sturdy plates are perfect for outdoor BBQs, picnics
             or an evening on the porch but perform just as well when
@@ -122,8 +122,8 @@ const ProductPageContent = ({ collection, product }) => {
           </p>
         </div>
         <div className="py-3.5">
-          <h2 className="text-left text-2xl pb-2 px-6 font-mono font-normal">Conscious Commerce</h2>
-          <p className="text-left text-xs font-light pt-1 px-6">
+          <h2 className="text-left text-xl px-5 ">Conscious Commerce</h2>
+          <p className="text-left text-xs font-light pt-1 px-5">
             Deepoe aims to consider each step of the product’s journey and
             ensure conscious decisions fuel our business success. We have
             removed plastics from packaing and are on the path to carbon

@@ -91,7 +91,7 @@ const ProductForm = ({ product }) => {
         onClick={() => {
           addToCart(selectedVariant);
         }}
-        className="bg-deepoe-chocolate text-white px-2 py-2.5 my-1 text-xl hover:bg-gray-800"
+        className="bg-deepoe-chocolate text-white px-2 py-3 mb-2 text-xl hover:bg-gray-800"
       >
         Add to cart
       </button>

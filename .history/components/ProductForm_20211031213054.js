@@ -61,7 +61,7 @@ const ProductForm = ({ product }) => {
   return (
     <div className="flex-col flex w-full pt-1 font-public-sans-normal">
       <h2 className="text-2xl font-medium text-gray-800">{product.title}</h2>
-      <div className="pb-2 pt-2 items-center flex justify-between">
+      <div className="pb-2 pt- items-center flex justify-between">
         <span className="  text-lg text-gray-600">
           {formatter.format(product.variants.edges[0].node.priceV2.amount)}
         </span>
@@ -91,7 +91,7 @@ const ProductForm = ({ product }) => {
         onClick={() => {
           addToCart(selectedVariant);
         }}
-        className="bg-deepoe-chocolate text-white px-2 py-2.5 my-1 text-xl hover:bg-gray-800"
+        className="bg-deepoe-chocolate text-white px-2 py-2.5 mb-2 text-xl hover:bg-gray-800"
       >
         Add to cart
       </button>

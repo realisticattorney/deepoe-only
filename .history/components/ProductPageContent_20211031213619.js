@@ -16,7 +16,7 @@ const ProductPageContent = ({ collection, product }) => {
 
   return (
     <div>
-      <div className="px-5 pb-3.5 pt-1 z-0">
+      <div className="px-5 pb-2.5 z-0">
         <Link href={`/collections/${collection}/`}>
           <a className="text-left pl-1 font-medium font-public-sans-normal">
           {'<'} back to {collection}

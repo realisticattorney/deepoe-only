@@ -44,7 +44,7 @@ const Nav = () => {
         />
         <Link href="/collections/frontpage" passHref>
           <a className="cursor-pointer">
-            <span className="text-4xl font-medium tracking-tighter">deepoe</span>
+            <span className="text-4xl font-medium ">deepoe</span>
           </a>
         </Link>
         {!cartOpen ? (

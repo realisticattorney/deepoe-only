@@ -135,7 +135,7 @@ const ProductPageContent = ({ collection, product }) => {
           </p>
         </div>
         <div className="pt-2.5 self-center">
-          <Link href={`/deepoe/sustainability`}>
+          <Link href={`deepoe/faq`}>
             <button
               type="submit"
               className="inline-flex justify-center py-1 px-10 mt-2 border border-transparent font-sans shadow text-xl font-light text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"

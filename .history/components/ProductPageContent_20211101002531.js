@@ -102,9 +102,7 @@ const ProductPageContent = ({ collection, product }) => {
       </div>
       <div className="flex flex-col w-full py-5 font-public-sans-normal">
         <div className="py-3.5">
-          <h2 className="text-left text-2xl pb-2 px-6 font-mono font-normal">
-            Sustainable Style
-          </h2>
+          <h2 className="text-left text-2xl pb-2 px-6 font-mono font-normal">Sustainable Style</h2>
           <p className="text-left text-xs font-light pt-1 px-6">
             Sustainability should not be dull, muted, or monotone. We believe
             sustainabile choices should be designed for impact and bring joy and
@@ -124,9 +122,7 @@ const ProductPageContent = ({ collection, product }) => {
           </p>
         </div>
         <div className="py-3.5">
-          <h2 className="text-left text-2xl pb-2 px-6 font-mono font-normal">
-            Conscious Commerce
-          </h2>
+          <h2 className="text-left text-2xl pb-2 px-6 font-mono font-normal">Conscious Commerce</h2>
           <p className="text-left text-xs font-light pt-1 px-6">
             Deepoe aims to consider each step of the product’s journey and
             ensure conscious decisions fuel our business success. We have
@@ -135,7 +131,7 @@ const ProductPageContent = ({ collection, product }) => {
           </p>
         </div>
         <div className="pt-2.5 self-center">
-          <Link href={`/deepoe/sustainability`}>
+          <Link href={`deepoe/sustainability`}>
             <button
               type="submit"
               className="inline-flex justify-center py-1 px-10 mt-2 border border-transparent font-sans shadow text-xl font-light text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"

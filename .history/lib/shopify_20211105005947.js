@@ -269,7 +269,17 @@ export async function updateCheckout(id, lineItems) {
   return checkout;
 }
 
+
+
 export async function customerCreate(customerCreateInput) {
+  const lineItemsObject = lineItems.map((item) => {
+    return `{
+      variantId: "${item.id}",
+      quantity: ${item.variantQuantity}
+    
+    }`;
+  });
+
   const query = `
   mutation customerCreate($input: CustomerCreateInput!) {
     customerCreate(input: $input) {
@@ -285,7 +295,11 @@ export async function customerCreate(customerCreateInput) {
 
   const response = await ShopifyData(query);
   console.log('response', response);
-  const user = response.data ? response.data : [];
+  const checkout = response.data.checkoutLineItemsReplace.checkout
+    ? response.data.checkoutLineItemsReplace.checkout
+    : [];
 
-  return user;
+  return checkout;
 }
+
+

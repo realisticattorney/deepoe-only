@@ -127,7 +127,7 @@ export default function Contact() {
                   message: "Your message can't be more than 1000 characters",
                 },
                 minLength: {
-                  value: 20,
+                  value: 30,
                   message: 'Your message must be longer than this!',
                 },
               })}

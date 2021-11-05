@@ -269,7 +269,10 @@ export async function updateCheckout(id, lineItems) {
   return checkout;
 }
 
+
+
 export async function customerCreate(customerCreateInput) {
+
   const query = `
   mutation customerCreate($input: CustomerCreateInput!) {
     customerCreate(input: $input) {
@@ -285,7 +288,11 @@ export async function customerCreate(customerCreateInput) {
 
   const response = await ShopifyData(query);
   console.log('response', response);
-  const user = response.data ? response.data : [];
+  const user = response.data
+    ? response.data
+    : [];
 
   return user;
 }
+
+

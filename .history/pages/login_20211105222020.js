@@ -98,12 +98,12 @@ export default function Login() {
                 },
               })}
               className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-public-sans-normal  py-0.5 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2 ${
-                errors.password ? 'ring-2 ring-red-500' : null
+                errors.name ? 'ring-2 ring-red-500' : null
               }`}
-              placeholder="password*"
+              placeholder="name*"
             />
             <span className="text-red-400 text-sm py-2">
-              {errors?.password?.message}
+              {errors?.name?.message}
             </span>
           </div>
     

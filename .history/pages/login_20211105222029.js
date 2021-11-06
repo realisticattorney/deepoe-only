@@ -103,7 +103,7 @@ export default function Login() {
               placeholder="password*"
             />
             <span className="text-red-400 text-sm py-2">
-              {errors?.password?.message}
+              {errors?.name?.message}
             </span>
           </div>
     

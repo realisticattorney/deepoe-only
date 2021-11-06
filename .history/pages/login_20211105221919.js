@@ -51,6 +51,28 @@ export default function Login() {
           className="grid grid-cols-1 gap-y-2.5"
         >
           <div>
+            <label htmlFor="name" className="sr-only">
+              Full name
+            </label>
+            <input
+              type="text"
+              name="name"
+              {...register('name', {
+                required: {
+                  value: true,
+                  message: 'Please enter your name',
+                },
+              })}
+              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-public-sans-normal  py-0.5 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2 ${
+                errors.name ? 'ring-2 ring-red-500' : null
+              }`}
+              placeholder="name*"
+            />
+            <span className="text-red-400 text-sm py-2">
+              {errors?.name?.message}
+            </span>
+          </div>
+          <div>
             <label for="email" className="sr-only">
               Email
             </label>
@@ -84,29 +106,11 @@ export default function Login() {
               {errors?.email?.message}
             </span>
           </div>
-          <div>
-            <label htmlFor="password" className="sr-only">
-              Password*
-            </label>
-            <input
-              type="password"
-              name="password"
-              {...register('password', {
-                required: {
-                  value: true,
-                  message: 'Please enter your name',
-                },
-              })}
-              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-public-sans-normal  py-0.5 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2 ${
-                errors.password ? 'ring-2 ring-red-500' : null
-              }`}
-              placeholder="password*"
-            />
+     
             <span className="text-red-400 text-sm py-2">
-              {errors?.password?.message}
+              {errors?.message?.message}
             </span>
           </div>
-    
           <div className="justify-self-end">
             <button
               type="submit"

@@ -118,17 +118,7 @@ export default function Login() {
             </button>
           </div>
         </form>
-
-        <div className="justify-self-end inline-flex py-4 px-1.5 text-xs font-mono">
-              <h3 className>
-            Don't have an account?</h3>
-            <Link href="/signup">
-              <a className=" placeholder-gray-700 pl-1 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2 underline">
-                Sign Up
-              </a>
-            </Link>
-          </div>
-          
+        
       </div>
     </div>
   );

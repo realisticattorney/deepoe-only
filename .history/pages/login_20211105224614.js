@@ -119,7 +119,7 @@ export default function Login() {
           </div>
         </form>
 
-        <div className="justify-self-end inline-flex py-4 px-1.5 text-xs font-mono">
+        <div className="justify-self-end inline-flex py-0.5 px-1.5 text-xs  font-mono font-l">
               <h3 className>
             Don't have an account?</h3>
             <Link href="/signup">

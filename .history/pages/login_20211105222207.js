@@ -31,13 +31,17 @@ export default function Login() {
       console.log(response);
       if (response.status == 200) {
         reset();
-        toast('success', 'Check your email box to confirm your account');
+        toast(
+          'success',
+          'Check your email box to confirm your account'
+        );
       }
     } catch (err) {}
   }
 
+
   return (
-    <div className="flex-col bg-deepoe-cream px-4 sm:px-6 flex mt-24 mx-2">
+    <div className="flex-col bg-deepoe-cream px-4 sm:px-6 flex">
       <div className="mx-auto w-full max-w-2xl  bg-deepoe-cream py-2 items-center">
         <h2 className="text-2xl font-light pb-2 font-public-sans-normal ">
           Welcome Back!
@@ -102,23 +106,23 @@ export default function Login() {
               {errors?.password?.message}
             </span>
           </div>
+    
           <div className="justify-self-end">
-            <Link href="/forgot-password">
-              <a className="text-xs  font-mono font-medium  py-0.5 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2">
-                Forgot Password?
-              </a>
-            </Link>
-          </div>
-          <div className="w-full">
             <button
               type="submit"
-              className=" w-full inline-flex justify-center py-1.5 px-6 border border-transparent shadow text-base   text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
+              className="inline-flex justify-center py-1.5 px-6 border border-transparent shadow text-base  text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
             >
               Log In
             </button>
           </div>
         </form>
+
+        <div className="">
+            <Link href="/forgot-password">
+               <a className="text-sm font-light font-public-sans-normal  py-0.5 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2">
+        </div>
+        
       </div>
-    </div>
-  );
+      </div>
+   );
 }

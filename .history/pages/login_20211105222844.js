@@ -37,7 +37,7 @@ export default function Login() {
   }
 
   return (
-    <div className="flex-col bg-deepoe-cream px-4 sm:px-6 flex mt-24 mx-2">
+    <div className="flex-col bg-deepoe-cream px-4 sm:px-6 flex mt-24">
       <div className="mx-auto w-full max-w-2xl  bg-deepoe-cream py-2 items-center">
         <h2 className="text-2xl font-light pb-2 font-public-sans-normal ">
           Welcome Back!

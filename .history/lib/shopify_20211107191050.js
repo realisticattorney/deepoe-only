@@ -271,7 +271,7 @@ export async function updateCheckout(id, lineItems) {
 
 export async function customerCreate(customerCreateInput) {
   const query = `
-  mutation customerCreate($input: ${customerCreateInput}!) {
+  mutation customerCreate($input: {CustomerCreateInput}!) {
     customerCreate(input: $input) {
       customerUserErrors {
         code

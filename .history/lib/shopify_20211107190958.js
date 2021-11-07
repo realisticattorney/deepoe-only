@@ -271,15 +271,16 @@ export async function updateCheckout(id, lineItems) {
 
 export async function customerCreate(customerCreateInput) {
   const query = `
-  mutation customerCreate($input: ${customerCreateInput}!) {
-    customerCreate(input: $input) {
+  mutation customerAccessTokenCreate($input: ${customerCreateInput}) {
+    customerAccessTokenCreate(input: $input) {
+      customerAccessToken {
+        accessToken
+        expiresAt
+      }
       customerUserErrors {
         code
         field
         message
-      }
-      customer {
-        id
       }
     }
   }`;
@@ -292,7 +293,7 @@ export async function customerCreate(customerCreateInput) {
 }
 export async function customerAccessTokenCreate(customerInput) {
   const query = `
-  mutation customerAccessTokenCreate($input: ${customerInput}) {
+  mutation customerAccessTokenCreate($input: ${customerCreateInput}) {
     customerAccessTokenCreate(input: $input) {
       customerAccessToken {
         accessToken

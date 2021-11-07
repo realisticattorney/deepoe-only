@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
             <li>Careers</li>
             <li>
               {' '}
-              <Link href="/deepoe/about">
+              <Link href={`deepoe/about`}>
                 <a>Contact Us</a>
               </Link>
             </li>

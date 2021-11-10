@@ -62,16 +62,16 @@ export default function Signup() {
         reset();
         toast('success', 'Check your email box to confirm your account');
       } else if (response.data.customerCreate.customerUserErrors) {
-        error = response.data.customerCreate.customerUserErrors[0].message
+        error = 
         console.log(
           'eerr',
           response.data.customerCreate.customerUserErrors[0].message
         );
-        toast('error', `${response.data.customerCreate.customerUserErrors[0].message}`);
+        toast('error', 'Something went wrong');
       }
     } catch (err) {
-      console.log('err', err);
-      toast('error', `${err}`);
+      console.log(err);
+      toast('error', 'Something went wrong');
     }
   }
 

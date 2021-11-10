@@ -67,11 +67,11 @@ export default function Signup() {
           'eerr',
           response.data.customerCreate.customerUserErrors[0].message
         );
-        toast('error', `${response.data.customerCreate.customerUserErrors[0].message}`);
+        toast('error', ` response.data.customerCreate.customerUserErrors[0].message`);
       }
     } catch (err) {
-      console.log('err', err);
-      toast('error', `${err}`);
+      console.log(err);
+      toast('error', 'Something went wrong');
     }
   }
 

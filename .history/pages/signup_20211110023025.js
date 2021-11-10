@@ -35,7 +35,7 @@ export default function Signup() {
   const [createCustomer, { data, loading, error }] =
     useMutation(CREATE_CUSTOMER);
 
-  // if (loading) return 'Submitting...';
+  if (loading) return 'Submitting...';
   // if (error) return `Submission error! ${error.message}`;
   if (data) {
     //data is NOT sufficient criteria to determine if the user is logged in
@@ -46,32 +46,22 @@ export default function Signup() {
     const { email, password } = values;
     // console.log(values);
 
-    try {
-      const response = await createCustomer({
-        variables: {
-          input: {
-            email,
-            password,
-          },
+    const response = await createCustomer({
+      variables: {
+        input: {
+          email,
+          password,
         },
-      });
-      console.log('response', response);
-      if (response.data.customerCreate.customer) {
-        console.log('data', response.data.customerCreate.customer.id);
-
-        reset();
-        toast('success', 'Check your email box to confirm your account');
-      } else if (response.data.customerCreate.customerUserErrors) {
-        error = response.data.customerCreate.customerUserErrors[0].message
-        console.log(
-          'eerr',
-          response.data.customerCreate.customerUserErrors[0].message
-        );
-        toast('error', `${response.data.customerCreate.customerUserErrors[0].message}`);
-      }
-    } catch (err) {
-      console.log('err', err);
-      toast('error', `${err}`);
+      },
+    });
+    console.log('response', response);
+    if (response.data.customerCreate.customer) {
+      console.log('data', data.customerCreate.customer);
+      reset();
+      toast('success', 'Check your email box to confirm your account');
+    } else if (response.data.customerCreate.customerUserErrors) {
+      console.log('eerr', response.data.customerCreate.customerUserErrors[0].message);
+      toast('error', 'Something went wrong');
     }
   }
 
@@ -172,11 +162,9 @@ export default function Signup() {
             </a>
           </Link>
         </div>
-
-        {loading ? <p className="text-gray-700">Loading...</p> : null}
-        {error ? (
-          <p className="text-red-700">Submission error! {error.message}</p>
-        ) : null}
+        {error? (
+          }
+        <p>dlsafksjfkd</p>
       </div>
     </div>
   );

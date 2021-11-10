@@ -1,28 +1,12 @@
 import { useForm } from 'react-hook-form';
-import { gql, useMutation } from '@apollo/client';
+import axios from 'axios';
 import { useRouter } from 'next/router';
 import { useToast } from '../hooks/useToast';
 import { useState } from 'react';
+import { MinusIcon, PlusIcon } from '@heroicons/react/outline';
 import Link from 'next/link';
-// import { customerCreate } from '../lib/shopify';
-// import signupAPI from './api/signup';
 
-const CREATE_CUSTOMER = gql`
-  mutation customerCreate($input: CustomerCreateInput!) {
-    customerCreate(input: $input) {
-      customer {
-        id
-      }
-      customerUserErrors {
-        code
-        field
-        message
-      }
-    }
-  }
-`;
-
-export default function Signup() {
+export default function Login() {
   const toast = useToast();
   const {
     register,
@@ -32,74 +16,46 @@ export default function Signup() {
   } = useForm();
   const router = useRouter();
 
-  const [createCustomer, { data, loading, error }] =
-    useMutation(CREATE_CUSTOMER);
-
-  // if (loading) return 'Submitting...';
-  // if (error) return `Submission error! ${error.message}`;
-  if (data) {
-    //data is NOT sufficient criteria to determine if the user is logged in
-    // console.log("data",data);
-  }
-
-  async function onSubmitForm(values) {
-    const { email, password } = values;
-    // console.log(values);
-
-    try {
-      const response = await createCustomer({
-        variables: {
-          input: {
-            email,
-            password,
-          },
-        },
-      });
-      console.log('response', response);
-      if (response.data.customerCreate.customer) {
-        console.log('data', response.data.customerCreate.customer.id);
-
-        reset();
-        toast('success', 'Check your email box to confirm your account');
-      } else if (response.data.customerCreate.customerUserErrors) {
-        error = response.data.customerCreate.customerUserErrors[0].message
-        console.log(
-          'eerr',
-          response.data.customerCreate.customerUserErrors[0].message
-        );
-        toast('error', `${response.data.customerCreate.customerUserErrors[0].message}`);
+  import React, { useState, useEffect } from 'react'
+  import { useMutation } from '@apollo/client'
+  import { LOGIN } from '../queries'
+  
+  const LoginForm = ({ setError, setToken }) => {
+    const [username, setUsername] = useState('')
+    const [password, setPassword] = useState('')
+  
+    const [ login, result ] = useMutation(LOGIN, {
+      onError: (error) => {
+        setError(error.graphQLErrors[0].message)
       }
-    } catch (err) {
-      console.log('err', err);
-      toast('error', `${err}`);
+    })
+  
+    useEffect(() => {
+      if ( result.data ) {
+        const token = result.data.login.value
+        setToken(token)
+        localStorage.setItem('phonenumbers-user-token', token)
+      }
+    }, [result.data]) // eslint-disable-line
+  
+    const submit = async (event) => {
+      event.preventDefault()
+  
+      login({ variables: { username, password } })
     }
-  }
-
+  
   return (
     <div className="flex-col bg-deepoe-cream px-4 sm:px-6 flex mt-24 mx-2">
       <div className="mx-auto w-full max-w-2xl  bg-deepoe-cream py-2 items-center">
         <h2 className="text-2xl font-light pb-2 font-public-sans-normal ">
-          Signup
+          Welcome Back!
         </h2>
         <form
-          onSubmit={
-            handleSubmit(onSubmitForm)
-            // (e) => {
-            // e.preventDefault();
-            // createCustomer({
-            //   variables: {
-            //     input: {
-            //       email: e.target[0].value,
-            //       password: e.target[1].value,
-            //     },
-            //   },
-            // });
-            // }
-          }
+          onSubmit={handleSubmit(onSubmitForm)}
           className="grid grid-cols-1 gap-y-2.5"
         >
           <div>
-            <label htmlFor="email" className="sr-only">
+            <label for="email" className="sr-only">
               Email
             </label>
             <input
@@ -124,7 +80,7 @@ export default function Signup() {
                 },
               })}
               className={`block w-full border shadow-sm bg-deepoe-cream text-sm font-light font-public-sans-normal  py-0.5 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2 ${
-                errors.email ? 'ring-2 ring-red-500' : ''
+                errors.email ? 'ring-2 ring-red-500' : null
               }`}
               placeholder="e-mail*"
             />
@@ -146,7 +102,7 @@ export default function Signup() {
                 },
               })}
               className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-public-sans-normal  py-0.5 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2 ${
-                errors.password ? 'ring-2 ring-red-500' : ''
+                errors.password ? 'ring-2 ring-red-500' : null
               }`}
               placeholder="password*"
             />
@@ -154,29 +110,33 @@ export default function Signup() {
               {errors?.password?.message}
             </span>
           </div>
-          <div className="w-full pt-4">
+          <div className="justify-self-end">
+            <Link href="/signup">
+              <a className="text-xs  font-mono font-medium  py-0.5 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2">
+                Forgot Password?
+              </a>
+            </Link>
+          </div>
+          <div className="w-full">
             <button
               type="submit"
               className=" w-full inline-flex justify-center py-1.5 px-6 border border-transparent shadow text-base   text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
             >
-              Sign up
+              Log In
             </button>
           </div>
         </form>
 
         <div className="justify-self-end inline-flex py-4 px-1.5 text-xs font-mono">
-          <h3 className="">Already have an account?</h3>
-          <Link href="/login">
-            <a className=" placeholder-gray-700 pl-1 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2 underline">
-              Log In
-            </a>
-          </Link>
-        </div>
-
-        {loading ? <p className="text-gray-700">Loading...</p> : null}
-        {error ? (
-          <p className="text-red-700">Submission error! {error.message}</p>
-        ) : null}
+              <h3 className>
+            Don't have an account?</h3>
+            <Link href="/signup">
+              <a className=" placeholder-gray-700 pl-1 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2 underline">
+                Sign Up
+              </a>
+            </Link>
+          </div>
+          
       </div>
     </div>
   );

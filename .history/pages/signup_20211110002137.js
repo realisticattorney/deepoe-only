@@ -21,7 +21,6 @@ const CREATE_CUSTOMER = gql`
     }
   }
 `;
-
 export default function Signup() {
   const toast = useToast();
   const {
@@ -32,48 +31,12 @@ export default function Signup() {
   } = useForm();
   const router = useRouter();
 
+  //  console.log('input', input);
   const [createCustomer, { data, loading, error }] =
     useMutation(CREATE_CUSTOMER);
 
-  // if (loading) return 'Submitting...';
-  // if (error) return `Submission error! ${error.message}`;
-  if (data) {
-    //data is NOT sufficient criteria to determine if the user is logged in
-    // console.log("data",data);
-  }
-
-  async function onSubmitForm(values) {
-    const { email, password } = values;
-    // console.log(values);
-
-    try {
-      const response = await createCustomer({
-        variables: {
-          input: {
-            email,
-            password,
-          },
-        },
-      });
-      console.log('response', response);
-      if (response.data.customerCreate.customer) {
-        console.log('data', response.data.customerCreate.customer.id);
-
-        reset();
-        toast('success', 'Check your email box to confirm your account');
-      } else if (response.data.customerCreate.customerUserErrors) {
-        error = response.data.customerCreate.customerUserErrors[0].message
-        console.log(
-          'eerr',
-          response.data.customerCreate.customerUserErrors[0].message
-        );
-        toast('error', `${response.data.customerCreate.customerUserErrors[0].message}`);
-      }
-    } catch (err) {
-      console.log('err', err);
-      toast('error', `${err}`);
-    }
-  }
+  if (loading) return 'Submitting...';
+  if (error) return `Submission error! ${error.message}`;
 
   return (
     <div className="flex-col bg-deepoe-cream px-4 sm:px-6 flex mt-24 mx-2">
@@ -82,20 +45,17 @@ export default function Signup() {
           Signup
         </h2>
         <form
-          onSubmit={
-            handleSubmit(onSubmitForm)
-            // (e) => {
-            // e.preventDefault();
-            // createCustomer({
-            //   variables: {
-            //     input: {
-            //       email: e.target[0].value,
-            //       password: e.target[1].value,
-            //     },
-            //   },
-            // });
-            // }
-          }
+          onSubmit={(e) => {
+            e.preventDefault();
+            createCustomer({
+              variables: {
+                input: {
+                  email: e.target[0].value,
+                  password: e.target[1].value,
+                },
+              },
+            });
+          }}
           className="grid grid-cols-1 gap-y-2.5"
         >
           <div>
@@ -172,11 +132,6 @@ export default function Signup() {
             </a>
           </Link>
         </div>
-
-        {loading ? <p className="text-gray-700">Loading...</p> : null}
-        {error ? (
-          <p className="text-red-700">Submission error! {error.message}</p>
-        ) : null}
       </div>
     </div>
   );

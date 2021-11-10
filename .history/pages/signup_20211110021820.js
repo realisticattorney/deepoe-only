@@ -35,11 +35,10 @@ export default function Signup() {
   const [createCustomer, { data, loading, error }] =
     useMutation(CREATE_CUSTOMER);
 
-  // if (loading) return 'Submitting...';
-  // if (error) return `Submission error! ${error.message}`;
+  if (loading) return 'Submitting...';
+  if (error) return `Submission error! ${error.message}`;
   if (data) {
-    //data is NOT sufficient criteria to determine if the user is logged in
-    // console.log("data",data);
+    console.log(data);
   }
 
   async function onSubmitForm(values) {
@@ -51,28 +50,16 @@ export default function Signup() {
         variables: {
           input: {
             email,
-            password,
+            password: e.target[1].value,
           },
         },
       });
-      console.log('response', response);
-      if (response.data.customerCreate.customer) {
-        console.log('data', response.data.customerCreate.customer.id);
-
+      console.log(response);
+      if (response.status == 200) {
         reset();
         toast('success', 'Check your email box to confirm your account');
-      } else if (response.data.customerCreate.customerUserErrors) {
-        error = response.data.customerCreate.customerUserErrors[0].message
-        console.log(
-          'eerr',
-          response.data.customerCreate.customerUserErrors[0].message
-        );
-        toast('error', `${response.data.customerCreate.customerUserErrors[0].message}`);
       }
-    } catch (err) {
-      console.log('err', err);
-      toast('error', `${err}`);
-    }
+    } catch (err) {}
   }
 
   return (
@@ -172,11 +159,6 @@ export default function Signup() {
             </a>
           </Link>
         </div>
-
-        {loading ? <p className="text-gray-700">Loading...</p> : null}
-        {error ? (
-          <p className="text-red-700">Submission error! {error.message}</p>
-        ) : null}
       </div>
     </div>
   );

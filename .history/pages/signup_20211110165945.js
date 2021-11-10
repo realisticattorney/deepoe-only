@@ -7,24 +7,6 @@ import Link from 'next/link';
 // import { customerCreate } from '../lib/shopify';
 // import signupAPI from './api/signup';
 
-const CREATE_CUSTOMER_ACCESS_TOKEN = gql`mutation customerAccessTokenCreate($input: CustomerAccessTokenCreateInput!) {
-  customerAccessTokenCreate(input: $input) {
-    customerAccessToken {
-      accessToken
-      expiresAt
-    }
-    customerUserErrors {
-      code
-      field
-      message
-    }
-  }
-}
-​`
-
-
-
-
 const CREATE_CUSTOMER = gql`
   mutation customerCreate($input: CustomerCreateInput!) {
     customerCreate(input: $input) {
@@ -77,11 +59,8 @@ export default function Signup() {
       if (response.data.customerCreate.customer) {
         console.log('data', response.data.customerCreate.customer.id);
         toast('success', 'Check your email box to confirm your account');
-        
 
-        
         reset();
-        router.push('/');
       } else if (response.data.customerCreate.customerUserErrors) {
         error = response.data.customerCreate.customerUserErrors[0].message
         console.log(
@@ -96,7 +75,7 @@ export default function Signup() {
     }
   }
 
-
+  
 
   return (
     <div className="flex-col bg-deepoe-cream px-4 sm:px-6 flex mt-24 mx-2">

@@ -7,24 +7,6 @@ import Link from 'next/link';
 // import { customerCreate } from '../lib/shopify';
 // import signupAPI from './api/signup';
 
-const CREATE_CUSTOMER_ACCESS_TOKEN = gql`mutation customerAccessTokenCreate($input: CustomerAccessTokenCreateInput!) {
-  customerAccessTokenCreate(input: $input) {
-    customerAccessToken {
-      accessToken
-      expiresAt
-    }
-    customerUserErrors {
-      code
-      field
-      message
-    }
-  }
-}
-​`
-
-
-
-
 const CREATE_CUSTOMER = gql`
   mutation customerCreate($input: CustomerCreateInput!) {
     customerCreate(input: $input) {
@@ -59,7 +41,7 @@ export default function Signup() {
     //data is NOT sufficient criteria to determine if the user is logged in
     // console.log("data",data);
   }
-
+//Z2lkOi8vc2hvcGlmeS9DdXN0b21lci81OTI0Mzg3NzUwMTA1
   async function onSubmitForm(values) {
     const { email, password } = values;
     // console.log(values);
@@ -76,12 +58,9 @@ export default function Signup() {
       console.log('response', response);
       if (response.data.customerCreate.customer) {
         console.log('data', response.data.customerCreate.customer.id);
-        toast('success', 'Check your email box to confirm your account');
-        
 
-        
         reset();
-        router.push('/');
+        toast('success', 'Check your email box to confirm your account');
       } else if (response.data.customerCreate.customerUserErrors) {
         error = response.data.customerCreate.customerUserErrors[0].message
         console.log(
@@ -95,8 +74,6 @@ export default function Signup() {
       toast('error', `${err}`);
     }
   }
-
-
 
   return (
     <div className="flex-col bg-deepoe-cream px-4 sm:px-6 flex mt-24 mx-2">

@@ -7,24 +7,7 @@ import Link from 'next/link';
 // import { customerCreate } from '../lib/shopify';
 // import signupAPI from './api/signup';
 
-const CREATE_CUSTOMER_ACCESS_TOKEN = gql`mutation customerAccessTokenCreate($input: CustomerAccessTokenCreateInput!) {
-  customerAccessTokenCreate(input: $input) {
-    customerAccessToken {
-      accessToken
-      expiresAt
-    }
-    customerUserErrors {
-      code
-      field
-      message
-    }
-  }
-}
-​`
-
-
-
-
+const CREATE_CUSTOMER = gql`
 const CREATE_CUSTOMER = gql`
   mutation customerCreate($input: CustomerCreateInput!) {
     customerCreate(input: $input) {

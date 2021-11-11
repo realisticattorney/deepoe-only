@@ -149,7 +149,7 @@ export default function MiniCart({ cart }) {
                                       >
                                         <MinusIcon className="h-5 w-5" />
                                       </button>
-                                      <p className="text-gray-500">
+                                      <p className="text-gray-800">
                                         {product.variantQuantity}
                                       </p>
 
@@ -160,7 +160,7 @@ export default function MiniCart({ cart }) {
                                           setButtonDisabled(true);
                                           setTimeout(() => {
                                             setButtonDisabled(false);
-                                          }, 800);
+                                          }, 500);
                                         }}
                                       >
                                         <PlusIcon className="h-5 w-5" />

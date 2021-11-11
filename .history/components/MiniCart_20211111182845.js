@@ -160,7 +160,7 @@ export default function MiniCart({ cart }) {
                                           setButtonDisabled(true);
                                           setTimeout(() => {
                                             setButtonDisabled(false);
-                                          }, 800);
+                                          }, 500);
                                         }}
                                       >
                                         <PlusIcon className="h-5 w-5" />

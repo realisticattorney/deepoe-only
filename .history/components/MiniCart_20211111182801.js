@@ -30,6 +30,16 @@ export default function MiniCart({ cart }) {
 
   const [isButtonDisabled, setButtonDisabled] = useState(false);
 
+  // const onLaunchClicked = product => {
+
+  //   setButtonDisabled(!isButtonDisabled);
+  //   setTimeout(() => setButtonDisabled(!isButtonDisabled), 500);
+  //   console.log('lalalalala');
+  //   subtractCartItem(product);
+
+  //   return subtractCartItem(product);
+  // };
+
   return (
     <Transition.Root show={cartOpen} as={Fragment}>
       <Dialog
@@ -144,7 +154,7 @@ export default function MiniCart({ cart }) {
                                           setButtonDisabled(true);
                                           setTimeout(() => {
                                             setButtonDisabled(false);
-                                          }, 800);
+                                          }, 500);
                                         }}
                                       >
                                         <MinusIcon className="h-5 w-5" />
@@ -160,7 +170,7 @@ export default function MiniCart({ cart }) {
                                           setButtonDisabled(true);
                                           setTimeout(() => {
                                             setButtonDisabled(false);
-                                          }, 800);
+                                          }, 500);
                                         }}
                                       >
                                         <PlusIcon className="h-5 w-5" />

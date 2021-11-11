@@ -156,7 +156,7 @@ export default function Contact() {
         <h4 className="px-2.5 py-2 text-2xl font-light font-public-sans-normal">
           Or check our{' '}
           <span className="underline">
-            <Link href={`/deepoe/about`}>
+            <Link href={`deepoe/about`}>
               <a>FAQ's</a>
             </Link>
           </span>

@@ -54,8 +54,8 @@ export default function MiniCart({ cart }) {
                 <div className="h-full flex flex-col bg-deepoe-cream shadow-xl overflow-y-scroll">
                   <div className="flex-1 pb-6 overflow-y-auto px-4 sm:px-6">
                     {/* <div className="flex items-start justify-between"> */}
-                    {/* <div className="ml-3 h-3 flex items-center"> */}
-                    {/* <button
+                      {/* <div className="ml-3 h-3 flex items-center"> */}
+                        {/* <button
                           ref={cancelButtonRef}
                           type="button"
                           className="-m-2 p-2 text-gray-400 hover:text-gray-500"
@@ -63,7 +63,7 @@ export default function MiniCart({ cart }) {
                         >
                           <span className="sr-only">Close panel</span>
                           {/* <XIcon className="h-6 w-6" aria-hidden="true" /> */}
-                    {/* </div> */}
+                      {/* </div> */}
                     {/* </div> */}
 
                     <div className="mt-8">
@@ -101,8 +101,8 @@ export default function MiniCart({ cart }) {
                                         </Link>
                                       </h3>
                                     </div>
-                                    <div className="flex justify-between mt-2">
-                                      <p className="text-sm font-public-sans-normal text-gray-600">
+                                    <div className="flex items-center justify-between mt-2">
+                                      <p className="mt-1 text-sm font-public-sans-normal text-gray-600">
                                         {product.variantTitle}
                                       </p>
                                       <p className="ml-4">

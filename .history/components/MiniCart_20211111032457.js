@@ -101,7 +101,7 @@ export default function MiniCart({ cart }) {
                                         </Link>
                                       </h3>
                                     </div>
-                                    <div className="flex justify-between mt-2">
+                                    <div className="flex items-center justify-between mt-2">
                                       <p className="text-sm font-public-sans-normal text-gray-600">
                                         {product.variantTitle}
                                       </p>

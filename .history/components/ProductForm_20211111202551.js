@@ -8,7 +8,7 @@ const ProductForm = ({ product }) => {
 
   const allVariantOptions = product.variants.edges?.map((variant) => {
     const allOptions = {};
-    console.log('laldala', variant);
+    console.log("laldala",variant)
     variant.node.selectedOptions.map((item) => {
       allOptions[item.name] = item.value;
     });
@@ -22,8 +22,7 @@ const ProductForm = ({ product }) => {
       variantTitle: variant.node.title,
       variantPrice: variant.node.priceV2.amount,
       variantQuantity: 1,
-      currentlyNotInStock: variant.node.currentlyNotInStock,
-      availableForSale: variant.node.availableForSale,
+      currentlyNotInStock: variant.node.availableForSale,
     };
   });
   console.log(allVariantOptions);
@@ -69,12 +68,12 @@ const ProductForm = ({ product }) => {
         </span>
         <h3
           className={`text-right text-sm font-normal text-gray-600 ${
-            selectedVariant.availableForSale === false
-              ? 'text-red-800'
+            selectedVariant.currentlyNotInStock
+              ? 'text-red-700'
               : 'text-gray-700'
           }`}
         >
-          {selectedVariant.availableForSale === false
+          {selectedVariant.currentlyNotInStock
             ? 'Currently out of stock'
             : 'In Stock'}
         </h3>

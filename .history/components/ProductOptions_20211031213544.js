@@ -4,11 +4,10 @@ const ProductOptions = ({
   selectedOptions,
   setOptions,
   // quantityAvailable,
-  currentlyNotInStock,
+  // currentlyNotInStock,
 }) => {
   // console.log(quantityAvailable)
   // console.log(setOptions)
-  console.log("kakakakaka",selectedOptions)
 
   return (
     <fieldset>

@@ -22,7 +22,6 @@ const ProductForm = ({ product }) => {
       variantTitle: variant.node.title,
       variantPrice: variant.node.priceV2.amount,
       variantQuantity: 1,
-      currentlyNotInStock: variant.node.currentlyNotInStock,
       availableForSale: variant.node.availableForSale,
     };
   });
@@ -69,12 +68,12 @@ const ProductForm = ({ product }) => {
         </span>
         <h3
           className={`text-right text-sm font-normal text-gray-600 ${
-            selectedVariant.availableForSale === false
-              ? 'text-red-800'
+            selectedVariant.availableForSale
+              ? 'text-red-700'
               : 'text-gray-700'
           }`}
         >
-          {selectedVariant.availableForSale === false
+          {selectedVariant.availableForSale
             ? 'Currently out of stock'
             : 'In Stock'}
         </h3>

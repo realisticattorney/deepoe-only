@@ -8,7 +8,6 @@ const ProductOptions = ({
 }) => {
   // console.log(quantityAvailable)
   // console.log(setOptions)
-  console.log("kakakakaka",selectedOptions)
 
   return (
     <fieldset>

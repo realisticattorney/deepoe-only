@@ -69,9 +69,7 @@ const ProductForm = ({ product }) => {
         </span>
         <h3
           className={`text-right text-sm font-normal text-gray-600 ${
-            selectedVariant.availableForSale === false
-              ? 'text-red-800'
-              : 'text-gray-700'
+            selectedVariant.availableForSale === false ? 'text-red-700' : 'text-gray-700'
           }`}
         >
           {selectedVariant.availableForSale === false

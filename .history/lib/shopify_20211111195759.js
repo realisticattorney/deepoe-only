@@ -121,11 +121,18 @@ export async function getProductFromCollections() {
              id
              originalSrc
            }
-        	products(first: 25){
+        	products(first: 50){
             edges{
               node{
                 handle
                 id
+                variants(first:50) {
+                  edges {
+                    node {
+                      currentlyNotInStock
+                    }
+                  }
+                }
               }
             }
           }
@@ -199,7 +206,6 @@ export async function getProduct(handle) {
               title
               id
               currentlyNotInStock
-              availableForSale
               priceV2 {
                 amount
               }

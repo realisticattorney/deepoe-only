@@ -68,9 +68,9 @@ const ProductForm = ({ product }) => {
           {formatter.format(product.variants.edges[0].node.priceV2.amount)}
         </span>
         <h3
-          className={`text-right text-sm font-normal text-gray-600 ${
+          className={`text-right text-xl font-normal text-gray-600 ${
             selectedVariant.availableForSale === false
-              ? 'text-red-800'
+              ? 'text-red-700'
               : 'text-gray-700'
           }`}
         >

@@ -30,15 +30,14 @@ export default function MiniCart({ cart }) {
 
   const [isButtonDisabled, setButtonDisabled] = useState(false);
 
-  // const onLaunchClicked = product => {
+  const onLaunchClicked = (e) => {
+    e.preventDefault();
+    setButtonDisabled(!isButtonDisabled);
 
-  //   setButtonDisabled(!isButtonDisabled);
-  //   setTimeout(() => setButtonDisabled(!isButtonDisabled), 500);
-  //   console.log('lalalalala');
-  //   subtractCartItem(product);
+    setTimeout(() => setButtonDisabled(!isButtonDisabled), 5000);
 
-  //   return subtractCartItem(product);
-  // };
+    return this.props.onLaunchClicked();
+  };
 
   return (
     <Transition.Root show={cartOpen} as={Fragment}>
@@ -150,11 +149,7 @@ export default function MiniCart({ cart }) {
                                       <button
                                         disabled={isButtonDisabled}
                                         onClick={() => {
-                                          subtractCartItem(product);
-                                          setButtonDisabled(true);
-                                          setTimeout(() => {
-                                            setButtonDisabled(false);
-                                          }, 500);
+                                          onLaunchClicked(subtractCartItem());
                                         }}
                                       >
                                         <MinusIcon className="h-5 w-5" />
@@ -166,11 +161,7 @@ export default function MiniCart({ cart }) {
                                       <button
                                         disabled={isButtonDisabled}
                                         onClick={() => {
-                                          addItemToCart(product);
-                                          setButtonDisabled(true);
-                                          setTimeout(() => {
-                                            setButtonDisabled(false);
-                                          }, 500);
+                                          onLaunchClicked()
                                         }}
                                       >
                                         <PlusIcon className="h-5 w-5" />

@@ -1,4 +1,4 @@
-import { Fragment, useContext, useRef, useState } from 'react';
+import { Fragment, useContext, useRef } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import {
   XIcon,
@@ -14,11 +14,14 @@ import { formatter } from '../utils/helpers';
 export default function MiniCart({ cart }) {
   const cancelButtonRef = useRef();
 
+  
+
   const {
     cartOpen,
     setCartOpen,
     checkoutUrl,
     removeCartItem,
+    addToCart,
     subtractCartItem,
     addItemToCart,
   } = useContext(CartContext);
@@ -28,18 +31,11 @@ export default function MiniCart({ cart }) {
     cartTotal += item?.variantPrice * item?.variantQuantity;
   });
 
-  const [isButtonDisabled, setButtonDisabled] = useState(false);
 
-  // const onLaunchClicked = product => {
 
-  //   setButtonDisabled(!isButtonDisabled);
-  //   setTimeout(() => setButtonDisabled(!isButtonDisabled), 500);
-  //   console.log('lalalalala');
-  //   subtractCartItem(product);
 
-  //   return subtractCartItem(product);
-  // };
 
+  
   return (
     <Transition.Root show={cartOpen} as={Fragment}>
       <Dialog
@@ -148,13 +144,9 @@ export default function MiniCart({ cart }) {
                                   <div className="flex-1 flex items-end justify-between text-sm">
                                     <div className="flex space-x-2">
                                       <button
-                                        disabled={isButtonDisabled}
                                         onClick={() => {
+                                          console.log('subtract', product);
                                           subtractCartItem(product);
-                                          setButtonDisabled(true);
-                                          setTimeout(() => {
-                                            setButtonDisabled(false);
-                                          }, 500);
                                         }}
                                       >
                                         <MinusIcon className="h-5 w-5" />
@@ -164,13 +156,10 @@ export default function MiniCart({ cart }) {
                                       </p>
 
                                       <button
-                                        disabled={isButtonDisabled}
                                         onClick={() => {
-                                          addItemToCart(product);
-                                          setButtonDisabled(true);
                                           setTimeout(() => {
-                                            setButtonDisabled(false);
-                                          }, 500);
+                                            addItemToCart(product);
+                                          }, 400);
                                         }}
                                       >
                                         <PlusIcon className="h-5 w-5" />

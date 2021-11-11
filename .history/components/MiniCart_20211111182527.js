@@ -31,7 +31,7 @@ export default function MiniCart({ cart }) {
   const [isButtonDisabled, setButtonDisabled] = useState(false);
 
   // const onLaunchClicked = product => {
-
+    
   //   setButtonDisabled(!isButtonDisabled);
   //   setTimeout(() => setButtonDisabled(!isButtonDisabled), 500);
   //   console.log('lalalalala');
@@ -150,7 +150,7 @@ export default function MiniCart({ cart }) {
                                       <button
                                         disabled={isButtonDisabled}
                                         onClick={() => {
-                                          subtractCartItem(product);
+                                          subtractCartItem(product.id);
                                           setButtonDisabled(true);
                                           setTimeout(() => {
                                             setButtonDisabled(false);
@@ -166,7 +166,7 @@ export default function MiniCart({ cart }) {
                                       <button
                                         disabled={isButtonDisabled}
                                         onClick={() => {
-                                          addItemToCart(product);
+                                          addCartItem(product.id);
                                           setButtonDisabled(true);
                                           setTimeout(() => {
                                             setButtonDisabled(false);

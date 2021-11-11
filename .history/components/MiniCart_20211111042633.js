@@ -1,11 +1,6 @@
-import { Fragment, useContext, useRef, useState } from 'react';
+import { Fragment, useContext, useRef } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
-import {
-  XIcon,
-  TrashIcon,
-  MinusIcon,
-  PlusIcon,
-} from '@heroicons/react/outline';
+import { XIcon, TrashIcon } from '@heroicons/react/outline';
 import Image from 'next/image';
 import Link from 'next/link';
 import { CartContext } from '../context/shopContext';
@@ -14,31 +9,13 @@ import { formatter } from '../utils/helpers';
 export default function MiniCart({ cart }) {
   const cancelButtonRef = useRef();
 
-  const {
-    cartOpen,
-    setCartOpen,
-    checkoutUrl,
-    removeCartItem,
-    subtractCartItem,
-    addItemToCart,
-  } = useContext(CartContext);
+  const { cartOpen, setCartOpen, checkoutUrl, removeCartItem } =
+    useContext(CartContext);
   console.log('cart', cart);
   let cartTotal = 0;
   cart.map((item) => {
     cartTotal += item?.variantPrice * item?.variantQuantity;
   });
-
-  const [isButtonDisabled, setButtonDisabled] = useState(false);
-
-  // const onLaunchClicked = product => {
-
-  //   setButtonDisabled(!isButtonDisabled);
-  //   setTimeout(() => setButtonDisabled(!isButtonDisabled), 500);
-  //   console.log('lalalalala');
-  //   subtractCartItem(product);
-
-  //   return subtractCartItem(product);
-  // };
 
   return (
     <Transition.Root show={cartOpen} as={Fragment}>
@@ -114,6 +91,7 @@ export default function MiniCart({ cart }) {
                                         <Link
                                           href={`/products/${product.handle}`}
                                           passHref
+                                          className="focus:outline-none active:outline-none active:no-underline"
                                         >
                                           <a
                                             onClick={() => setCartOpen(false)}
@@ -133,9 +111,9 @@ export default function MiniCart({ cart }) {
                                         <button
                                           type="button"
                                           className="font-medium text-gray-500 hover:text-gray-800"
-                                          onClick={() => {
-                                            removeCartItem(product.id);
-                                          }}
+                                          onClick={() =>
+                                            removeCartItem(product.id)
+                                          }
                                         >
                                           <TrashIcon
                                             className="h-6 w-6"
@@ -146,36 +124,10 @@ export default function MiniCart({ cart }) {
                                     </div>
                                   </div>
                                   <div className="flex-1 flex items-end justify-between text-sm">
-                                    <div className="flex space-x-2">
-                                      <button
-                                        disabled={isButtonDisabled}
-                                        onClick={() => {
-                                          subtractCartItem(product);
-                                          setButtonDisabled(true);
-                                          setTimeout(() => {
-                                            setButtonDisabled(false);
-                                          }, 500);
-                                        }}
-                                      >
-                                        <MinusIcon className="h-5 w-5" />
-                                      </button>
-                                      <p className="text-gray-500">
-                                        {product.variantQuantity}
-                                      </p>
+                                    <p className="text-gray-500">
+                                      Qty {product.variantQuantity}
+                                    </p>
 
-                                      <button
-                                        disabled={isButtonDisabled}
-                                        onClick={() => {
-                                          addItemToCart(product);
-                                          setButtonDisabled(true);
-                                          setTimeout(() => {
-                                            setButtonDisabled(false);
-                                          }, 500);
-                                        }}
-                                      >
-                                        <PlusIcon className="h-5 w-5" />
-                                      </button>
-                                    </div>
                                     <div className="flex text-xs font-public-sans-normal">
                                       {formatter.format(product.variantPrice)}
                                     </div>

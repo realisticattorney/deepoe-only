@@ -31,7 +31,7 @@ export default function MiniCart({ cart }) {
   const [isButtonDisabled, setButtonDisabled] = useState(false);
 
   // const onLaunchClicked = product => {
-
+    
   //   setButtonDisabled(!isButtonDisabled);
   //   setTimeout(() => setButtonDisabled(!isButtonDisabled), 500);
   //   console.log('lalalalala');
@@ -149,13 +149,7 @@ export default function MiniCart({ cart }) {
                                     <div className="flex space-x-2">
                                       <button
                                         disabled={isButtonDisabled}
-                                        onClick={() => {
-                                          subtractCartItem(product);
-                                          setButtonDisabled(true);
-                                          setTimeout(() => {
-                                            setButtonDisabled(false);
-                                          }, 500);
-                                        }}
+                                        onClick={() => {onLaunchClicked(product)}}
                                       >
                                         <MinusIcon className="h-5 w-5" />
                                       </button>
@@ -166,11 +160,8 @@ export default function MiniCart({ cart }) {
                                       <button
                                         disabled={isButtonDisabled}
                                         onClick={() => {
+                                          onLaunchClicked;
                                           addItemToCart(product);
-                                          setButtonDisabled(true);
-                                          setTimeout(() => {
-                                            setButtonDisabled(false);
-                                          }, 500);
                                         }}
                                       >
                                         <PlusIcon className="h-5 w-5" />

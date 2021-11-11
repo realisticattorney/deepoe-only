@@ -21,12 +21,10 @@ const Banner = ({ product }) => {
 
   console.log('imageSrc', imageSrc);
 
-  // function handleChange(event) {}
-
   return (
     <div className="relative z-0  mb-10">
       <Carousel
-        // onChange={handleChange}
+        onChange={handleChange}
         //   autoPlay
         infiniteLoop
         showStatus={false}

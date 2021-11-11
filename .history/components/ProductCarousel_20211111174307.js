@@ -21,7 +21,7 @@ const Banner = ({ product }) => {
 
   console.log('imageSrc', imageSrc);
 
-  // function handleChange(event) {}
+  function handleChange(event) {}
 
   return (
     <div className="relative z-0  mb-10">

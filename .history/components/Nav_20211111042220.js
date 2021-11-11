@@ -28,7 +28,7 @@ const Nav = () => {
           <a
             className="cursor-pointer font-public-sans-normal  text-gray-700 "
             onClick={() => wrapperSetParentState(!parentState)}
-            // ref={cancelButtonRef}
+            ref={cancelButtonRef}
           >
             menu
           </a>
@@ -52,10 +52,7 @@ const Nav = () => {
         {!cartOpen ? (
           <a
             className="cursor-pointer  font-public-sans-normal  text-gray-700"
-            onClick={() => {
-              setCartOpen(!cartOpen);
-              wrapperSetParentState(false);
-            }}
+            onClick={() => setCartOpen(!cartOpen)}
           >
             cart ({cartQuantity})
           </a>

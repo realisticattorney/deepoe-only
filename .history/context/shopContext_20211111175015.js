@@ -23,7 +23,7 @@ export default function ShopProvider({ children }) {
     }
   }, []);
 
-  async function addItemToCart(newItem) {
+  async function addToCart(newItem) {
     let newCart = [...cart];
     cart.map((item) => {
       if (item.id === newItem.id) {
@@ -35,8 +35,13 @@ export default function ShopProvider({ children }) {
     });
     setCart(newCart);
     const newCheckout = await updateCheckout(checkoutId, newCart);
-    localStorage.setItem('checkout_id', JSON.stringify([newCart, newCheckout]));
+    localStorage.setItem(
+      'checkout_id',
+      JSON.stringify([newCart, newCheckout])
+    );
   }
+
+  
 
   async function addToCart(newItem) {
     setCartOpen(true); //annoying
@@ -114,7 +119,6 @@ export default function ShopProvider({ children }) {
         checkoutUrl,
         removeCartItem,
         subtractCartItem,
-        addItemToCart,
       }}
     >
       {children}

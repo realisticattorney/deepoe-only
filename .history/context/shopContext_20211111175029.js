@@ -35,8 +35,13 @@ export default function ShopProvider({ children }) {
     });
     setCart(newCart);
     const newCheckout = await updateCheckout(checkoutId, newCart);
-    localStorage.setItem('checkout_id', JSON.stringify([newCart, newCheckout]));
+    localStorage.setItem(
+      'checkout_id',
+      JSON.stringify([newCart, newCheckout])
+    );
   }
+
+  
 
   async function addToCart(newItem) {
     setCartOpen(true); //annoying
@@ -114,7 +119,7 @@ export default function ShopProvider({ children }) {
         checkoutUrl,
         removeCartItem,
         subtractCartItem,
-        addItemToCart,
+        addItemToCart
       }}
     >
       {children}

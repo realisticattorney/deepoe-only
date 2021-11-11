@@ -30,15 +30,14 @@ export default function MiniCart({ cart }) {
 
   const [isButtonDisabled, setButtonDisabled] = useState(false);
 
-  // const onLaunchClicked = product => {
+  const onLaunchClicked = (e) => {
+    e.preventDefault();
+    setButtonDisabled(!isButtonDisabled);
+    // **** here's the timeout ****
+    setTimeout(() => setButtonDisabled(!isButtonDisabled), 5000);
 
-  //   setButtonDisabled(!isButtonDisabled);
-  //   setTimeout(() => setButtonDisabled(!isButtonDisabled), 500);
-  //   console.log('lalalalala');
-  //   subtractCartItem(product);
-
-  //   return subtractCartItem(product);
-  // };
+    return this.props.onLaunchClicked();
+  };
 
   return (
     <Transition.Root show={cartOpen} as={Fragment}>
@@ -150,11 +149,8 @@ export default function MiniCart({ cart }) {
                                       <button
                                         disabled={isButtonDisabled}
                                         onClick={() => {
+                                          console.log('subtract', product);
                                           subtractCartItem(product);
-                                          setButtonDisabled(true);
-                                          setTimeout(() => {
-                                            setButtonDisabled(false);
-                                          }, 500);
                                         }}
                                       >
                                         <MinusIcon className="h-5 w-5" />
@@ -166,11 +162,8 @@ export default function MiniCart({ cart }) {
                                       <button
                                         disabled={isButtonDisabled}
                                         onClick={() => {
+                                          onLaunchClicked
                                           addItemToCart(product);
-                                          setButtonDisabled(true);
-                                          setTimeout(() => {
-                                            setButtonDisabled(false);
-                                          }, 500);
                                         }}
                                       >
                                         <PlusIcon className="h-5 w-5" />

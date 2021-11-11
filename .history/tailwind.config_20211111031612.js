@@ -14,7 +14,7 @@ module.exports = {
         deepoe: {
           cream: '#F5F3EE',
           chocolate: '#302E2F',
-          pink: '#dfd0e1',
+          pink: "#dfd0e1"
         },
       },
     },

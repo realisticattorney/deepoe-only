@@ -1,6 +1,8 @@
-import { Fragment, useState } from 'react';
+import { Fragment, useContext, useRef, useState, useEffect } from 'react';
 import { Dialog, Transition, Disclosure } from '@headlessui/react';
-import { ChevronUpIcon } from '@heroicons/react/outline';
+import {
+  ChevronUpIcon,
+} from '@heroicons/react/outline';
 import Link from 'next/link';
 // import { CartContext } from '../context/shopContext';
 
@@ -57,7 +59,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                           <ChevronUpIcon
                             className={`w-5 h-5 ${
                               open ? 'transform rotate-180' : ''
-                            } text-gray-600 `}
+                            } w-5 h-5 `}
                           />
                           {/* {open ? (
                               <ChevronUpIcon className="w-5 h-5" />

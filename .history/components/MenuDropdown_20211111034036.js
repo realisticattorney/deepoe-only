@@ -1,11 +1,19 @@
-import { Fragment, useState } from 'react';
+import { Fragment, useContext, useRef, useState, useEffect } from 'react';
 import { Dialog, Transition, Disclosure } from '@headlessui/react';
-import { ChevronUpIcon } from '@heroicons/react/outline';
+import { ChevronUpIcon, XIcon } from '@heroicons/react/outline';
+import Image from 'next/image';
 import Link from 'next/link';
 // import { CartContext } from '../context/shopContext';
+import { formatter } from '../utils/helpers';
 
-export default function MenuDropdown({ parentState, wrapperSetParentState }) {
-  const [open, setOpen] = useState(false);
+export default function MenuDropdown({
+  parentState,
+  wrapperSetParentState,
+  //   cancelButtonRef,
+}) {
+  //   const cancelButtonRef = useRef();
+  const { open, setOpen } = useState(true);
+  const { closed, setClosed } = useState(false);
 
   return (
     <Transition.Root
@@ -47,24 +55,24 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
               <div className="w-screen max-w-md">
                 <div className="h-full flex flex-col bg-deepoe-cream shadow-xl overflow-y-scroll">
                   <Disclosure>
-                    <Disclosure.Button className=" focus:outline-none active:outline-none active:no-underline">
-                      <div
-                        className="py-6 overflow-y-auto mt-7 px-6 sm:px-6 flex justify-between items-center"
-                        onClick={() => setOpen(!open)}
-                      >
-                        <p className="font-extralight text-3xl">Products</p>
-                        <span className="mr-7 justify-self-end">
-                          <ChevronUpIcon
-                            className={`w-5 h-5 ${
-                              open ? 'transform rotate-180' : ''
-                            } text-gray-600 `}
-                          />
-                          {/* {open ? (
-                              <ChevronUpIcon className="w-5 h-5" />
-                            ) : (
-                              <ChevronDownIcon className="w-5 h-5" />
-                            )} */}
-                        </span>
+                    <Disclosure.Button
+                      onClick={() => {
+                        setOpen(!open);
+                      }}
+                    >
+                      <div className="py-6 overflow-y-auto space-y-6 mt-7 px-6 sm:px-6 focus:outline-none active:outline-none">
+                        <div className="flex justify-between">
+                          <p className="font-extralight text-3xl">Products</p>{' '}
+                          <span className="mr-7 justify-self-end">
+                            <ChevronUpIcon
+                              className={`${
+                                open
+                                  ? 'transform rotate-180'
+                                  : 'transform rotate-90'
+                              } w-5 h-5 `}
+                            />
+                          </span>
+                        </div>{' '}
                       </div>
                     </Disclosure.Button>
                     <Transition

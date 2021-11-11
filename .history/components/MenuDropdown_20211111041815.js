@@ -1,12 +1,24 @@
-import { Fragment, useState } from 'react';
+import { Fragment, useContext, useRef, useState, useEffect } from 'react';
 import { Dialog, Transition, Disclosure } from '@headlessui/react';
-import { ChevronUpIcon } from '@heroicons/react/outline';
+import {
+  ChevronDownIcon,
+  ChevronUpIcon,
+  XIcon,
+} from '@heroicons/react/outline';
+import Image from 'next/image';
 import Link from 'next/link';
 // import { CartContext } from '../context/shopContext';
+import { formatter } from '../utils/helpers';
 
-export default function MenuDropdown({ parentState, wrapperSetParentState }) {
-  const [open, setOpen] = useState(false);
-
+export default function MenuDropdown({
+  parentState,
+  wrapperSetParentState,
+  //   cancelButtonRef,
+}) {
+  //   const cancelButtonRef = useRef();
+  // const elementRef = useRef();
+  const [{] open, setOpen } = useState(false);
+  console.log(open);
   return (
     <Transition.Root
       show={parentState}
@@ -49,15 +61,17 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                   <Disclosure>
                     <Disclosure.Button className=" focus:outline-none active:outline-none active:no-underline">
                       <div
-                        className="py-6 overflow-y-auto mt-7 px-6 sm:px-6 flex justify-between items-center"
+                        className="py-6 overflow-y-auto mt-7 px-6 sm:px-6 flex justify-between"
                         onClick={() => setOpen(!open)}
                       >
                         <p className="font-extralight text-3xl">Products</p>
                         <span className="mr-7 justify-self-end">
                           <ChevronUpIcon
                             className={`w-5 h-5 ${
-                              open ? 'transform rotate-180' : ''
-                            } text-gray-600 `}
+                              "elementRef.current?.ariaExpanded"
+                                ? 'transform rotate-180 text-blue-700'
+                                : 'text-red-700'
+                            } w-5 h-5 `}
                           />
                           {/* {open ? (
                               <ChevronUpIcon className="w-5 h-5" />

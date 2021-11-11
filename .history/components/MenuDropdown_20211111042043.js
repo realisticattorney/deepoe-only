@@ -57,7 +57,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                           <ChevronUpIcon
                             className={`w-5 h-5 ${
                               open ? 'transform rotate-180' : ''
-                            } text-gray-600 `}
+                            } text `}
                           />
                           {/* {open ? (
                               <ChevronUpIcon className="w-5 h-5" />

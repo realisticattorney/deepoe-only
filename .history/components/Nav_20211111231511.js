@@ -24,7 +24,7 @@ const Nav = () => {
   return (
     <header className="sticky top-0  bg-deepoe-cream z-50 border-b border-deepoe-pink">
       <div className="flex items-center justify-between max-w-6xl pt-9 pb-2 px-5 mx-auto">
-        {!parentState && !cartOpen ? (
+        {!parentState ? (
           <a
             className="cursor-pointer font-public-sans-normal  text-gray-700 "
             onClick={() => wrapperSetParentState(!parentState)}
@@ -49,7 +49,7 @@ const Nav = () => {
             </span>
           </a>
         </Link>
-        {!cartOpen && !parentState ? (
+        {!cartOpen && parentState ? (
           <a
             className="cursor-pointer  font-public-sans-normal  text-gray-700"
             onClick={() => {

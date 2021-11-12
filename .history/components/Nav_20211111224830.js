@@ -24,19 +24,13 @@ const Nav = () => {
   return (
     <header className="sticky top-0  bg-deepoe-cream z-50 border-b border-deepoe-pink">
       <div className="flex items-center justify-between max-w-6xl pt-9 pb-2 px-5 mx-auto">
-        {!parentState && !cartOpen ? (
           <a
             className="cursor-pointer font-public-sans-normal  text-gray-700 "
             onClick={() => wrapperSetParentState(!parentState)}
             // ref={cancelButtonRef}
           >
-            menu
+            {!parentState ? "menu" :  close}
           </a>
-        ) : (
-          <p className="cursor-pointer font-public-sans-normal  text-gray-700 ">
-            close
-          </p>
-        )}
         <MenuDropdown
           parentState={parentState}
           wrapperSetParentState={wrapperSetParentState}
@@ -49,12 +43,12 @@ const Nav = () => {
             </span>
           </a>
         </Link>
-        {!cartOpen && !parentState ? (
+        {!cartOpen ? (
           <a
             className="cursor-pointer  font-public-sans-normal  text-gray-700"
             onClick={() => {
               setCartOpen(!cartOpen);
-              
+              wrapperSetParentState(false);
             }}
           >
             cart ({cartQuantity})

@@ -24,11 +24,11 @@ const Nav = () => {
   return (
     <header className="sticky top-0  bg-deepoe-cream z-50 border-b border-deepoe-pink">
       <div className="flex items-center justify-between max-w-6xl pt-9 pb-2 px-5 mx-auto">
-        {!parentState && !cartOpen ? (
+        {!parentState ? (
           <a
             className="cursor-pointer font-public-sans-normal  text-gray-700 "
             onClick={() => wrapperSetParentState(!parentState)}
-            // ref={cancelButtonRef}
+            ref={cancelButtonRef}
           >
             menu
           </a>
@@ -44,18 +44,13 @@ const Nav = () => {
         />
         <Link href="/collections/frontpage" passHref>
           <a className="cursor-pointer">
-            <span className="text-4xl font-medium tracking-tighter">
-              deepoe
-            </span>
+            <span className="text-4xl font-medium tracking-tighter">deepoe</span>
           </a>
         </Link>
-        {!cartOpen && !parentState ? (
+        {!cartOpen ? (
           <a
             className="cursor-pointer  font-public-sans-normal  text-gray-700"
-            onClick={() => {
-              setCartOpen(!cartOpen);
-              
-            }}
+            onClick={() => setCartOpen(!cartOpen)}
           >
             cart ({cartQuantity})
           </a>

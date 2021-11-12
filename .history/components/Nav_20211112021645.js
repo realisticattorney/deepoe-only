@@ -34,7 +34,7 @@ const Nav = () => {
             menu
           </a>
         ) : (
-          <p className="cursor-pointer font-public-sans-normal text-gray-700 ">
+          <p className="cursor-pointer font-public-sans-normal pl-1  text-gray-700 ">
             {!parentState ? `menu` : 'close'}
           </p>
         )}

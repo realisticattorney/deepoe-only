@@ -24,7 +24,7 @@ const Nav = () => {
   return (
     <header className="sticky top-0  bg-deepoe-cream z-50 border-b border-deepoe-pink">
       <div className="flex items-center justify-between max-w-6xl pt-9 pb-2 px-5 mx-auto">
-      <div className="w-12 pl-1">
+      <div className="w-10">
         {!parentState && !cartOpen ? (
           <a
             className="cursor-pointer font-public-sans-normal  text-gray-700 "
@@ -34,7 +34,7 @@ const Nav = () => {
             menu
           </a>
         ) : (
-          <p className="cursor-pointer font-public-sans-normal text-gray-700 ">
+          <p className="cursor-pointer font-public-sans-normal  text-gray-700 ">
             {!parentState ? `menu` : 'close'}
           </p>
         )}
@@ -59,11 +59,11 @@ const Nav = () => {
               setCartOpen(!cartOpen);
             }}
           >
-            cart({cartQuantity})
+            cart ({cartQuantity})
           </a>
         ) : (
           <p className="cursor-pointer  font-public-sans-normal  text-gray-700">
-            {!cartOpen ? `cart(${cartQuantity})` : 'close'}
+            {!cartOpen ? `cart (${cartQuantity})` : 'close'}
           </p>
         )}
           </div>

@@ -34,7 +34,7 @@ const Nav = () => {
           </a>
         ) : (
           <p className="cursor-pointer font-public-sans-normal  text-gray-700 ">
-            {!parentState ? `menu` : 'close'}
+            close
           </p>
         )}
         <MenuDropdown
@@ -54,13 +54,14 @@ const Nav = () => {
             className="cursor-pointer  font-public-sans-normal  text-gray-700"
             onClick={() => {
               setCartOpen(!cartOpen);
+              
             }}
           >
             cart ({cartQuantity})
           </a>
         ) : (
           <p className="cursor-pointer  font-public-sans-normal  text-gray-700">
-            {!cartOpen ? `cart (${cartQuantity})` : 'close'}
+           {!cartOpen ? "cart" : "close"}
           </p>
         )}
 

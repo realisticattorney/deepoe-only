@@ -34,7 +34,7 @@ const Nav = () => {
           </a>
         ) : (
           <p className="cursor-pointer font-public-sans-normal  text-gray-700 ">
-            {!parentState ? `menu` : 'close'}
+            {!cartOpen ? `menu` : 'close'}
           </p>
         )}
         <MenuDropdown

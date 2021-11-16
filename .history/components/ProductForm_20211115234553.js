@@ -69,8 +69,8 @@ const ProductForm = ({ product }) => {
           <span className="text-lg text-gray-600">
             {formatter.format(product.variants.edges[0].node.priceV2.amount)}
           </span>
-          <span className="text-sm text-gray-500 pl-2 line-through">
-            {formatter.format(product.variants.edges[0].node.compareAtPriceV2.amount)}
+          <span className="text-sm text-gray-600 pl-2 underline">
+            {formatter.format(product.variants.edges[0].node.priceV2.amount)}
           </span>
         </div>
         <h3

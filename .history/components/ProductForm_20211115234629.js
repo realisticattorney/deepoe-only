@@ -67,10 +67,10 @@ const ProductForm = ({ product }) => {
       <div className="pb-2 pt-2 items-center flex justify-between">
         <div className="flex items-start">
           <span className="text-lg text-gray-600">
-            {formatter.format(product.variants.edges[0].node.priceV2.amount)}
+            {formatter.format(variantComparedAtPrice)}
           </span>
           <span className="text-sm text-gray-500 pl-2 line-through">
-            {formatter.format(product.variants.edges[0].node.compareAtPriceV2.amount)}
+            {formatter.format(product.variants.edges[0].node.priceV2.amount)}
           </span>
         </div>
         <h3

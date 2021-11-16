@@ -60,7 +60,7 @@ const ProductPageContent = ({ collection, product }) => {
           </a>
         </Link>
       </div>
-      {/* <div
+      <div
         className="yotpo yotpo-main-widget "
         data-product-id={`Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzczMzUzNTYyMzU5OTM`}
         data-currency="USD"
@@ -72,7 +72,7 @@ const ProductPageContent = ({ collection, product }) => {
       <div
         className="yotpo bottomLine"
         data-yotpo-product-id={`Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzczMzUzNTYyMzU5OTM`}
-      ></div> */}
+      ></div>
 
 
       <div className="flex flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 px-2 mx-auto">

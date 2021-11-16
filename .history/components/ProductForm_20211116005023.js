@@ -63,9 +63,9 @@ const ProductForm = ({ product }) => {
   }
 
   return (
-    <div className="flex-col flex w-full pt-1 font-public-sans-normal">
+    <div>
       <div className="relative h-80 w-full">
-        <ProductCarousel product={product} selectedVariant={selectedVariant} />
+        <ProductCarousel product={product} />
       </div>
 
       <div >

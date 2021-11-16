@@ -17,12 +17,10 @@ const Banner = ({ product , selectedVariant}) => {
       )
     )
     .flat()
-    .filter((value, index, self) => self.indexOf(value) === index)
-    
-    // imageSrc.push(selectedVariant.image)
+    .filter((value, index, self) => self.indexOf(value) === index);
 
   console.log('imageSrc', imageSrc);
-  console.log('selectedVariant', selectedVariant);
+  console.log()
 
   // function handleChange(event) {}
 

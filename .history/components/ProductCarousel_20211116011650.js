@@ -17,7 +17,7 @@ const Banner = ({ product , selectedVariant}) => {
       )
     )
     .flat()
-    .filter((value, index, self) => self.indexOf(value) === index)
+    // .filter((value, index, self) => self.indexOf(value) === index)
     
     // imageSrc.push(selectedVariant.image)
 

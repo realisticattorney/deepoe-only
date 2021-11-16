@@ -17,9 +17,7 @@ const Banner = ({ product , selectedVariant}) => {
       )
     )
     .flat()
-    .filter((value, index, self) => self.indexOf(value) === index)
-    
-    // imageSrc.push(selectedVariant.image)
+    .filter((value, index, self) => self.indexOf(value) === index);
 
   console.log('imageSrc', imageSrc);
   console.log('selectedVariant', selectedVariant);
@@ -40,7 +38,7 @@ const Banner = ({ product , selectedVariant}) => {
         selectedItem={1}
         showArrows={false}
       >
-        {imageSrc.map((index) => (
+        {selectedVariant.map((index) => (
           <div className="w-full h-72  from-gray-100 bottom-0">
             <Image
               quality={100}

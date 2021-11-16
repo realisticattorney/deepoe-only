@@ -5,21 +5,21 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 const Banner = ({ product , selectedVariant}) => {
   console.log('product', product);
 
-  const imageSrc = product.options
-    .map((option) =>
-      option.values.map(
-        (value) =>
-          product.variants.edges.find((variant) =>
-            variant.node.selectedOptions.find(
-              (selectedOption) => selectedOption.value === value
-            )
-          ).node.image.originalSrc
-      )
-    )
-    .flat()
-    .filter((value, index, self) => self.indexOf(value) === index)
+  // const imageSrc = product.options
+  //   .map((option) =>
+  //     option.values.map(
+  //       (value) =>
+  //         product.variants.edges.find((variant) =>
+  //           variant.node.selectedOptions.find(
+  //             (selectedOption) => selectedOption.value === value
+  //           )
+  //         ).node.image.originalSrc
+  //     )
+  //   )
+  //   .flat()
+  //   .filter((value, index, self) => self.indexOf(value) === index)
     
-    // imageSrc.push(selectedVariant.image)
+    imageSrc.push(selectedVariant.image)
 
   console.log('imageSrc', imageSrc);
   console.log('selectedVariant', selectedVariant);

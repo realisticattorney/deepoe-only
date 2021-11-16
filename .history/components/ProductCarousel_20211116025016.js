@@ -23,6 +23,7 @@ const Banner = ({ product, selectedVariant }) => {
   return (
     <div className="relative z-0  mb-10">
       <Carousel
+        // onChange={handleChange}
         infiniteLoop
         showStatus={false}
         showThumbs={false}

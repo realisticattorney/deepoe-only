@@ -19,15 +19,21 @@ const Banner = ({ product, selectedVariant }) => {
 
   
 
+  useEffect(() => {
+    handleChange();
+  }, [selectedVariant]);
 
   return (
     <div className="relative z-0  mb-10">
       <Carousel
+        onChange={handleChange}
         infiniteLoop
         showStatus={false}
+        // showIndicators
         showThumbs={false}
         interval={5000}
         emulateTouch
+        // selectedItem={0}
         showArrows={true}
       >
         {imageSrc.map((index) => (

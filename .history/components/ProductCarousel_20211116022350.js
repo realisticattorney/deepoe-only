@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
@@ -12,25 +11,28 @@ const Banner = ({ product, selectedVariant }) => {
         node.node.altText === selectedVariant.options.Color ||
         node.node.altText === 'All'
     )
-    .sort((a, b) => (a.node.altText > b.node.altText ? -1 : 1))
     .map((node) => node.node.originalSrc);
+  const imageSrcArray = imageSrc.concat(imageColorSrc);
 
-  imageSrc.push(...imageColorSrc);
+  console.log('selectedVariant', selectedVariant);
 
-  
-
+  // function handleChange(event) {}
 
   return (
     <div className="relative z-0  mb-10">
       <Carousel
+        // onChange={handleChange}
+        //   autoPlay
         infiniteLoop
         showStatus={false}
+        showIndicators
         showThumbs={false}
         interval={5000}
         emulateTouch
-        showArrows={true}
+        selectedItem={0}
+        showArrows={false}
       >
-        {imageSrc.map((index) => (
+        {imageSrcArray.map((index) => (
           <div className="w-full h-72  from-gray-100 bottom-0">
             <Image
               quality={100}

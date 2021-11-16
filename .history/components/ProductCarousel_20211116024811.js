@@ -23,11 +23,16 @@ const Banner = ({ product, selectedVariant }) => {
   return (
     <div className="relative z-0  mb-10">
       <Carousel
+        // onChange={handleChange}
         infiniteLoop
         showStatus={false}
+        // showIndicators
         showThumbs={false}
         interval={5000}
         emulateTouch
+        renderItem={imageSrc => ( 
+          <div>
+            <Image}
         showArrows={true}
       >
         {imageSrc.map((index) => (

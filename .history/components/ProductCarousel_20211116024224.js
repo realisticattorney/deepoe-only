@@ -17,18 +17,25 @@ const Banner = ({ product, selectedVariant }) => {
 
   imageSrc.push(...imageColorSrc);
 
-  
+  // function handleChange(event) {}
 
+  useEffect(() => {
+    
+  }, [imageSrc]);
 
   return (
     <div className="relative z-0  mb-10">
       <Carousel
+        // onChange={handleChange}
+        //   autoPlay
         infiniteLoop
         showStatus={false}
+        showIndicators
         showThumbs={false}
         interval={5000}
         emulateTouch
-        showArrows={true}
+        selectedItem={0}
+        showArrows={false}
       >
         {imageSrc.map((index) => (
           <div className="w-full h-72  from-gray-100 bottom-0">

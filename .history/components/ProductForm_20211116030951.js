@@ -68,7 +68,7 @@ const ProductForm = ({ product }) => {
         <ProductCarousel product={product} selectedVariant={selectedVariant} />
       </div>
 
-      <div>
+      <div >
         <h2 className="text-2xl font-medium text-gray-800">{product.title}</h2>
         <div className="pb-2 pt-2 items-center flex justify-between">
           <div className="flex items-start">

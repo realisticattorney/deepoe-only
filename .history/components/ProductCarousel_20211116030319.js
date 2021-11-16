@@ -20,6 +20,7 @@ const Banner = ({ product, selectedVariant }) => {
   //change carousel index to 0
   const [index, setIndex] = useState(0);
 
+
   useEffect(() => {
     setIndex(0);
   }, [selectedVariant]);
@@ -35,6 +36,7 @@ const Banner = ({ product, selectedVariant }) => {
         autoFocus
         selectedItem={index}
         onChange={(index) => setIndex(index)}
+        
         showArrows={true}
       >
         {imageSrc.map((i) => (

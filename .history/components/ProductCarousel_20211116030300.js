@@ -20,9 +20,9 @@ const Banner = ({ product, selectedVariant }) => {
   //change carousel index to 0
   const [index, setIndex] = useState(0);
 
+
   useEffect(() => {
-    setIndex(0);
-  }, [selectedVariant]);
+    
 
   return (
     <div className="relative z-0  mb-10">
@@ -35,6 +35,7 @@ const Banner = ({ product, selectedVariant }) => {
         autoFocus
         selectedItem={index}
         onChange={(index) => setIndex(index)}
+        
         showArrows={true}
       >
         {imageSrc.map((i) => (

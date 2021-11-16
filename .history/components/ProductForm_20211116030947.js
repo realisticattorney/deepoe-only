@@ -68,7 +68,7 @@ const ProductForm = ({ product }) => {
         <ProductCarousel product={product} selectedVariant={selectedVariant} />
       </div>
 
-      <div>
+      <div >
         <h2 className="text-2xl font-medium text-gray-800">{product.title}</h2>
         <div className="pb-2 pt-2 items-center flex justify-between">
           <div className="flex items-start">
@@ -111,7 +111,7 @@ const ProductForm = ({ product }) => {
           onClick={() => {
             addToCart(selectedVariant);
           }}
-          className="bg-deepoe-chocolate text-white px-2 py-2.5 my-1 text-xl  w-full hover:bg-gray-800"
+          className="bg-deepoe-chocolate text-white px-2 py-2.5 my-1 text-xl  hover:bg-gray-800"
         >
           Add to cart
         </button>

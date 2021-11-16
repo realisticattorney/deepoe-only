@@ -20,9 +20,9 @@ const Banner = ({ product, selectedVariant }) => {
   //change carousel index to 0
   const [index, setIndex] = useState(0);
 
-  useEffect(() => {
-    setIndex(0);
-  }, [selectedVariant]);
+  const changeCarousel = (index) => {
+    setIndex(index);
+    
 
   return (
     <div className="relative z-0  mb-10">
@@ -33,19 +33,19 @@ const Banner = ({ product, selectedVariant }) => {
         interval={5000}
         emulateTouch
         autoFocus
-        selectedItem={index}
-        onChange={(index) => setIndex(index)}
+        onChange={e => changeCarousel(e)}
+        
         showArrows={true}
       >
-        {imageSrc.map((i) => (
+        {imageSrc.map((index) => (
           <div className="w-full h-72  from-gray-100 bottom-0">
             <Image
               quality={100}
               loading="lazy"
               objectFit="cover"
               layout="fill"
-              key={i}
-              src={i}
+              key={index}
+              src={index}
               alt=""
             />
           </div>

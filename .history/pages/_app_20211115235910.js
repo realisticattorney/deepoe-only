@@ -47,7 +47,7 @@ const client = new ApolloClient({
 ///progress bar
 const progress = new ProgressBar({
   size: 4,
-  color: '#dfd0e1',
+  color: '#ffcc00',
   className: 'z-50',
   speed: 100,
 });

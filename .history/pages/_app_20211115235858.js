@@ -2,7 +2,7 @@ import 'tailwindcss/tailwind.css';
 import '../styles/globals.css';
 import Layout from '../components/Layout';
 import ShopProvider from '../context/shopContext';
-import Router, { useRouter } from 'next/router';
+import import Router from 'next/router';,{ useRouter } from 'next/router';
 import ToastContainer from '../components/ToastContainer';
 import { ToastProvider } from '../context/ToastContext';
 import { ApolloProvider } from '@apollo/react-hooks';
@@ -14,6 +14,7 @@ import {
 } from '@apollo/client';
 import { onError } from '@apollo/client/link/error';
 import ProgressBar from '@badrap/bar-of-progress';
+
 
 const domain = process.env.SHOPIFY_STORE_DOMAIN;
 const storefrontAccessToken = process.env.SHOPIFY_STOREFRONT_ACCESSTOKEN;
@@ -47,14 +48,14 @@ const client = new ApolloClient({
 ///progress bar
 const progress = new ProgressBar({
   size: 4,
-  color: '#dfd0e1',
+  color: '#ffcc00',
   className: 'z-50',
   speed: 100,
 });
 
-Router.events.on('routeChangeStart', progress.start);
-Router.events.on('routeChangeComplete', progress.finish);
-Router.events.on('routeChangeError', progress.finish);
+useRouter.events.on('routeChangeStart', progress.start);
+useRouter.events.on('routeChangeComplete', progress.finish);
+useRouter.events.on('routeChangeError', progress.finish);
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();

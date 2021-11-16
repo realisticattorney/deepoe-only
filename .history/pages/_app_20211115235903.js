@@ -47,14 +47,14 @@ const client = new ApolloClient({
 ///progress bar
 const progress = new ProgressBar({
   size: 4,
-  color: '#dfd0e1',
+  color: '#ffcc00',
   className: 'z-50',
   speed: 100,
 });
 
-Router.events.on('routeChangeStart', progress.start);
-Router.events.on('routeChangeComplete', progress.finish);
-Router.events.on('routeChangeError', progress.finish);
+useRouter.events.on('routeChangeStart', progress.start);
+useRouter.events.on('routeChangeComplete', progress.finish);
+useRouter.events.on('routeChangeError', progress.finish);
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();

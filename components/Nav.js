@@ -44,7 +44,7 @@ const Nav = () => {
           wrapperSetParentState={wrapperSetParentState}
           // cancelButtonRef={cancelButtonRef}
         />
-        <Link href="/collections/frontpage" passHref>
+        <Link href="/collections/all-products" passHref>
           <a className="cursor-pointer">
             <span className="text-4xl font-medium tracking-tighter">
               deepoe

@@ -39,12 +39,13 @@ const Banner = ({ product, selectedVariant }) => {
         showArrows={true}
       >
         {imageSrc.map((i) => (
-          <div className="w-full h-72  from-gray-100 bottom-0" key={i}>
+          <div className="w-full h-72  from-gray-100 bottom-0" key="uniqueId1>
             <Image
               quality={100}
               loading="lazy"
               objectFit="cover"
               layout="fill"
+              // key={i}
               src={i}
               alt=""
             />

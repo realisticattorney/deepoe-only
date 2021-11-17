@@ -5,7 +5,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Banner = ({ product, selectedVariant }) => {
   console.log('product', product);
-  console.log('selectedVariant', selectedVariant);
+  
   const imageSrc = [selectedVariant.image];
   const imageColorSrc = product.images.edges
     .filter(
@@ -39,12 +39,13 @@ const Banner = ({ product, selectedVariant }) => {
         showArrows={true}
       >
         {imageSrc.map((i) => (
-          <div className="w-full h-72  from-gray-100 bottom-0" key={i}>
+          <div className="w-full h-72  from-gray-100 bottom-0">
             <Image
               quality={100}
               loading="lazy"
               objectFit="cover"
               layout="fill"
+              // key={i}
               src={i}
               alt=""
             />

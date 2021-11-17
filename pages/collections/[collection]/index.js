@@ -4,7 +4,8 @@ import ProductList from '../../../components/ProductList';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 export default function Collection({ collection, products }) {
-  // console.log(collection);
+  // console.log('collection222', collection);
+  console.log('collection223123123', products);
   return (
     <div className="">
       <Head>
@@ -18,7 +19,6 @@ export default function Collection({ collection, products }) {
 
 export async function getStaticPaths() {
   const collections = await getCollections();
-  console.log(collections);
   const paths = collections.map((collection) => ({
     params: { collection: String(collection.node.handle) },
   }));

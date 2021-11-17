@@ -45,6 +45,7 @@ const Banner = ({ product, selectedVariant }) => {
               loading="lazy"
               objectFit="cover"
               layout="fill"
+              // key={i}
               src={i}
               alt=""
             />

@@ -2,7 +2,7 @@ import ProductPageContent from '../../../components/ProductPageContent';
 import { getProduct, getProductFromCollections } from '../../../lib/shopify';
 
 const Product = ({ collection, product }) => {
-  // console.log('proooooodcut', product);
+  console.log('proooooodcut', product);
   return (
     <div className={`min-h-screen py-2`}>
       {/* <div

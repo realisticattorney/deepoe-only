@@ -6,7 +6,7 @@ import { MinusIcon, PlusIcon } from '@heroicons/react/outline';
 import { useEffect, useState } from 'react';
 
 const ProductPageContent = ({ collection, product }) => {
-  // console.log('product_id', product);
+  console.log('product_id', product);
 
   // const [reviews, setReviews] = useState([]);
 
@@ -43,7 +43,7 @@ const ProductPageContent = ({ collection, product }) => {
   //   }
   // });
 
-  // console.log(product.images.edges);
+  console.log(product.images.edges);
 
   const [show, setShow] = useState(false);
 

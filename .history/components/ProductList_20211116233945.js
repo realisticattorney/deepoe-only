@@ -2,7 +2,7 @@ import ProductCard from './ProductCard';
 import Link from 'next/link';
 import Image from 'next/image';
 const ProductList = ({ collection, products }) => {
-  // console.log("proudctssd",products);
+  console.log("proudctssd",products);
   return (
     <div className="bg-deepoe-cream">
       <div className="max-w-2xl mx-auto pb-2 ">

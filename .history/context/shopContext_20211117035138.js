@@ -32,7 +32,7 @@ export default function ShopProvider({ children }) {
         item.variantTitle === newItem.variantTitle
       ) {
         item.variantQuantity++;
-        newItemAddedExists = true;
+        newItemExists = true;
       }
     });
 

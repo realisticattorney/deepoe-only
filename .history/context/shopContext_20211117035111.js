@@ -25,18 +25,28 @@ export default function ShopProvider({ children }) {
 
   async function addItemToCart(newItem) {
     let newCart = [...cart];
-    let newItemAddedExists = false;
+    // newCart.map((item) => {
+    //   if (
+    //     item.id === newItem.id
+    //   ) {
+    //     item.variantQuantity++;
+    //     newCart = [...cart];
+    //   } else {
+    //     newCart = [...cart, newItem];
+    //   }
+    // });
+    let newItemExists = false;
     newCart.map((item) => {
       if (
         item.id === newItem.id &&
         item.variantTitle === newItem.variantTitle
       ) {
         item.variantQuantity++;
-        newItemAddedExists = true;
+        newItemExists = true;
       }
     });
 
-    if (!newItemAddedExists) {
+    if (!newItemExists) {
       newCart = [...cart, newItem];
     }
 

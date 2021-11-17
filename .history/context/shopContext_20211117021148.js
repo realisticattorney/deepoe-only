@@ -24,23 +24,20 @@ export default function ShopProvider({ children }) {
   }, []);
 
   async function addItemToCart(newItem) {
+    console.log('addItemToCart', newItem, cart);
     let newCart = [...cart];
-    let newItemAddedExists = false;
-    newCart.map((item) => {
+    cart.map((item) => {
       if (
         item.id === newItem.id &&
         item.variantTitle === newItem.variantTitle
       ) {
         item.variantQuantity++;
-        newItemAddedExists = true;
+        newCart = [...cart];
+      } else {
+        newCart = [...cart, newItem];
       }
     });
-
-    if (!newItemAddedExists) {
-      newCart = [...cart, newItem];
-    }
-
-    setCart(newCart);
+    // setCart(newCart);
     const newCheckout = await updateCheckout(checkoutId, newCart);
     localStorage.setItem('checkout_id', JSON.stringify([newCart, newCheckout]));
   }
@@ -61,19 +58,20 @@ export default function ShopProvider({ children }) {
       localStorage.setItem('checkout_id', JSON.stringify([newItem, checkout]));
     } else {
       let newCart = [...cart];
-      let newItemExists = false;
-      newCart.map((item) => {
+      console.log('newCart', newCart);
+      cart.map((item) => {
         if (item.id === newItem.id) {
           item.variantQuantity++;
-          newItemExists = true;
+          newCart = [...cart];
+        } else {
+          newCart = [...cart, newItem];
+
         }
       });
+      console.log('newCartModified', newCart);
+      console.log('cart', cart);
 
-      if (!newItemExists) {
-        newCart = [...cart, newItem];
-      }
-
-      setCart(newCart);
+      console.log('cart2', cart);
       const newCheckout = await updateCheckout(checkoutId, newCart);
       localStorage.setItem(
         'checkout_id',

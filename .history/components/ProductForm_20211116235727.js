@@ -28,7 +28,7 @@ const ProductForm = ({ product }) => {
       availableForSale: variant.node.availableForSale,
     };
   });
-  // console.log(allVariantOptions);
+  console.log(allVariantOptions);
   const defaultValues = {}; //saving here the default values of the form
 
   product.options.map((item) => {
@@ -39,7 +39,7 @@ const ProductForm = ({ product }) => {
   const [selectedOptions, setSelectedOptions] = useState(defaultValues); //this will re-render the component every time the user changes the selected option
 
   //   console.log('defaultValues', defaultValues);
-  // console.log('variant options', selectedVariant);
+  console.log('variant options', selectedVariant);
 
   function setOptions(name, value) {
     //this function will be called every time the user changes the selected option (onChange, in the ProductOptions component) and will update the selectedOptions state

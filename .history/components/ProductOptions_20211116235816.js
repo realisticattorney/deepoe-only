@@ -1,4 +1,11 @@
-const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
+const ProductOptions = ({
+  name,
+  values,
+  selectedOptions,
+  setOptions,
+  // quantityAvailable,
+  currentlyNotInStock,
+}) => {
   // console.log(quantityAvailable)
   // console.log(setOptions)
   // console.log("kakakakaka",selectedOptions)
@@ -34,7 +41,11 @@ const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
                     className={`p-3.5  text-lg rounded-full block cursor-pointer
                   
                   ${value == 'Black' ? 'bg-gray-900' : ''}
-                  ${value == 'Grey' || value == 'Gray' ? 'bg-gray-600' : ''}
+                  ${
+                    value == 'Grey' || value == 'Gray'
+                      ? 'bg-gray-600'
+                      : ''
+                  }
                   ${value == 'White' ? 'bg-white' : ''}
                   ${value == 'Olive' ? 'bg-green-600' : ''}`}
                   ></div>

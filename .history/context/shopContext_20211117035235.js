@@ -32,7 +32,7 @@ export default function ShopProvider({ children }) {
         item.variantTitle === newItem.variantTitle
       ) {
         item.variantQuantity++;
-        newItemAddedExists = true;
+        newItemExists = true;
       }
     });
 
@@ -61,7 +61,7 @@ export default function ShopProvider({ children }) {
       localStorage.setItem('checkout_id', JSON.stringify([newItem, checkout]));
     } else {
       let newCart = [...cart];
-      let newItemExists = false;
+      
       newCart.map((item) => {
         if (item.id === newItem.id) {
           item.variantQuantity++;

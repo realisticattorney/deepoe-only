@@ -26,7 +26,7 @@ const Banner = ({ product, selectedVariant }) => {
   }, [selectedVariant]);
 
   return (
-    <div className="relative z-0  mb-10">
+    <div className="z-0  mb-10">
       <Carousel
         infiniteLoop
         showStatus={false}

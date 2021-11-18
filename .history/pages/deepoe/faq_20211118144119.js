@@ -29,7 +29,7 @@ const Faq = () => {
             onClick={handleShow}
           >
             <div className="flex justify-between py-2 text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
-              <span className="truncate text-lg font-extralight">Where's my order?</span>
+              <span className="truncate text-lg font">Where's my order?</span>
 
               <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
@@ -44,7 +44,7 @@ const Faq = () => {
           </button>
           <button className="group focus:outline-none px-3">
             <div className="flex justify-between py-2 text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
-              <span className="truncate text-lg font-extralight">
+              <span className="truncate text-lg font">
                 How can I change or cancel my order?
               </span>
               <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
@@ -60,7 +60,7 @@ const Faq = () => {
           </button>
           <button className="group focus:outline-none px-3">
             <div className="flex justify-between py-2 text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
-              <span className="truncate text-lg font-extralight">Do your items have a warranty?</span>
+              <span className="truncate text-lg font">Do your items have a warranty?</span>
               <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
               <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
@@ -81,7 +81,7 @@ const Faq = () => {
             onClick={handleShow}
           >
             <div className="flex justify-between py-2 text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
-              <span className="truncate text-lg font-extralight">Where's my order?</span>
+              <span className="truncate text-lg font">Where's my order?</span>
 
               <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
@@ -96,7 +96,7 @@ const Faq = () => {
           </button>
           <button className="group focus:outline-none px-3">
             <div className="flex justify-between py-2 text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
-              <span className="truncate text-lg font-extralight">
+              <span className="truncate text-lg font">
                 How can I change or cancel my order?
               </span>
               <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
@@ -112,7 +112,7 @@ const Faq = () => {
           </button>
           <button className="group focus:outline-none px-3">
             <div className="flex justify-between py-2 text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
-              <span className="truncate text-lg font-extralight">Do your items have a warranty?</span>
+              <span className="truncate text-lg font">Do your items have a warranty?</span>
               <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
               <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
@@ -132,7 +132,7 @@ const Faq = () => {
             onClick={handleShow}
           >
             <div className="flex justify-between py-2 text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
-              <span className="truncate text-lg font-extralight">Where's my order?</span>
+              <span className="truncate text-lg font">Where's my order?</span>
 
               <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
@@ -147,7 +147,7 @@ const Faq = () => {
           </button>
           <button className="group focus:outline-none px-3">
             <div className="flex justify-between py-2 text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
-              <span className="truncate text-lg font-extralight">
+              <span className="truncate text-lg font">
                 How can I change or cancel my order?
               </span>
               <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
@@ -163,7 +163,7 @@ const Faq = () => {
           </button>
           <button className="group focus:outline-none px-3">
             <div className="flex justify-between py-2 text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
-              <span className="truncate text-lg font-extralight">Do your items have a warranty?</span>
+              <span className="truncate text-lg font">Do your items have a warranty?</span>
               <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
               <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />

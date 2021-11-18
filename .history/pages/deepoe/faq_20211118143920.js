@@ -23,7 +23,7 @@ const Faq = () => {
         </h3>
 
         <div className="flex flex-col w-full">
-          <h4 className="px-3 text-2xl font-light">Orders</h4>
+          <h4 className="px-3 text-lg font-medium">Orders</h4>
           <button
             className="group focus:outline-none px-3"
             onClick={handleShow}
@@ -75,7 +75,7 @@ const Faq = () => {
         </div>
 
         <div className="flex flex-col w-full pt-5">
-          <h4 className="px-3 text-2xl font-light">Products</h4>
+          <h4 className="px-3 text-lg font-medium">Products</h4>
           <button
             className="group focus:outline-none px-3"
             onClick={handleShow}
@@ -126,7 +126,7 @@ const Faq = () => {
           </button>
         </div>
         <div className="flex flex-col w-full py-5">
-          <h4 className="px-3 text-2xl font-light">Miscellaneous</h4>
+          <h4 className="px-3 text-lg font-medium">Miscellaneous</h4>
           <button
             className="group focus:outline-none px-3"
             onClick={handleShow}

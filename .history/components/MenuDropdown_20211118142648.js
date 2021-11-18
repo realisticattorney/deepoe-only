@@ -77,7 +77,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                       leaveFrom="translate-y-0 opacity-100"
                       leaveTo="-translate-y-4  opacity-0"
                     >
-                      <Disclosure.Panel className="font-extralight font-public-sans-normal">
+                      <Disclosure.Panel className="text-gray-700 font-public-sans-normal">
                         <ul className="space-y-2 pl-11 mb-6">
                           <Link href={`/collections/all-products`}>
                             <a
@@ -142,7 +142,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
 
                       <Link href={`/deepoe/faq`}>
                         <a
-                          className="font-thin text-3xl block"
+                          className="font-extralight text-3xl block"
                           onClick={() => wrapperSetParentState(false)}
                         >
                           FAQ
@@ -151,7 +151,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
 
                       <Link href={`/contact`}>
                         <a
-                          className="font-thin text-3xl block"
+                          className="font-extralight text-3xl block"
                           onClick={() => wrapperSetParentState(false)}
                         >
                           Contact

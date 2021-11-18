@@ -54,7 +54,7 @@ const Nav = () => {
         <div className="w-14">
         {!cartOpen && !parentState ? (
           <a
-            className="cursor-pointer  font-public-sans-normal  font-extralight"
+            className="cursor-pointer  font-public-sans-normal pt-1 font-extralight"
             onClick={() => {
               setCartOpen(!cartOpen);
             }}

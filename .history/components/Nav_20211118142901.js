@@ -27,14 +27,14 @@ const Nav = () => {
       <div className="w-12 pl-1">
         {!parentState && !cartOpen ? (
           <a
-            className="cursor-pointer font-public-sans-normal pt-1  font-extralight"
+            className="cursor-pointer font-public-sans-normal  font-extralight "
             onClick={() => wrapperSetParentState(!parentState)}
             // ref={cancelButtonRef}
           >
             menu
           </a>
         ) : (
-          <p className={`cursor-pointer pt-1 font-public-sans-normal font-extralight ${!parentState ? `` : 'font-normal'}`}>
+          <p className="cursor-pointer font-public-sans-normal font-extralight ">
             {!parentState ? `menu` : 'close'}
           </p>
         )}
@@ -54,7 +54,7 @@ const Nav = () => {
         <div className="w-14">
         {!cartOpen && !parentState ? (
           <a
-            className="cursor-pointer  font-public-sans-normal  font-extralight"
+            className="cursor-pointer  font-public-sans-normal  font"
             onClick={() => {
               setCartOpen(!cartOpen);
             }}
@@ -62,7 +62,7 @@ const Nav = () => {
             cart({cartQuantity})
           </a>
         ) : (
-          <p className="cursor-pointer pt-1 font-public-sans-normal  font-extralight">
+          <p className="cursor-pointer  font-public-sans-normal  font">
             {!cartOpen ? `cart(${cartQuantity})` : 'close'}
           </p>
         )}

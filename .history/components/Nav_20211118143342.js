@@ -24,20 +24,24 @@ const Nav = () => {
   return (
     <header className="sticky top-0  bg-deepoe-cream z-50 border-b ">
       <div className="flex items-center justify-between max-w-6xl pt-9 pb-2 px-5 mx-auto">
-      <div className="w-12 pl-1">
-        {!parentState && !cartOpen ? (
-          <a
-            className="cursor-pointer font-public-sans-normal pt-1  font-extralight"
-            onClick={() => wrapperSetParentState(!parentState)}
-            // ref={cancelButtonRef}
-          >
-            menu
-          </a>
-        ) : (
-          <p className={`cursor-pointer pt-1 font-public-sans-normal font-extralight ${!parentState ? `` : 'font-normal'}`}>
-            {!parentState ? `menu` : 'close'}
-          </p>
-        )}
+        <div className="w-12 pl-1">
+          {!parentState && !cartOpen ? (
+            <a
+              className="cursor-pointer font-public-sans-normal pt-1  font-extralight"
+              onClick={() => wrapperSetParentState(!parentState)}
+              // ref={cancelButtonRef}
+            >
+              menu
+            </a>
+          ) : (
+            <p
+              className={`cursor-pointer pt-1 font-public-sans-normal font-extralight ${
+                !parentState ? `` : 'font-normal'
+              }`}
+            >
+              {!parentState ? `menu` : 'close'}
+            </p>
+          )}
         </div>
         <MenuDropdown
           parentState={parentState}
@@ -52,21 +56,21 @@ const Nav = () => {
           </a>
         </Link>
         <div className="w-14">
-        {!cartOpen && !parentState ? (
-          <a
-            className="cursor-pointer  font-public-sans-normal  font-extralight"
-            onClick={() => {
-              setCartOpen(!cartOpen);
-            }}
-          >
-            cart({cartQuantity})
-          </a>
-        ) : (
-          <p className="cursor-pointer pt-1 font-public-sans-normal  font-extralight">
-            {!cartOpen ? `cart(${cartQuantity})` : 'close'}
-          </p>
-        )}
-          </div>
+          {!cartOpen && !parentState ? (
+            <a
+              className="cursor-pointer  font-public-sans-normal pt-1 font-extralight"
+              onClick={() => {
+                setCartOpen(!cartOpen);
+              }}
+            >
+              cart({cartQuantity})
+            </a>
+          ) : (
+            <p className="cursor-pointer pt-1 font-public-sans-normal  font-extralight">
+              {!cartOpen ? `cart(${cartQuantity})` : 'close'}
+            </p>
+          )}
+        </div>
         <MiniCart cart={cart} />
       </div>
     </header>

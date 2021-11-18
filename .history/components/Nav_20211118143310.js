@@ -27,7 +27,7 @@ const Nav = () => {
       <div className="w-12 pl-1">
         {!parentState && !cartOpen ? (
           <a
-            className="cursor-pointer font-public-sans-normal pt-1  font-extralight"
+            className="cursor-pointer font-public-sans-normal  font-extralight"
             onClick={() => wrapperSetParentState(!parentState)}
             // ref={cancelButtonRef}
           >

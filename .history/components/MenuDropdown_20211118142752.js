@@ -55,7 +55,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                         <p className="font-thin text-3xl">Products</p>
                         <span className="mr-7 justify-self-end">
                           <ChevronUpIcon
-                            className={`w-5 h-5 ${
+                            className={`w-7 h-5 ${
                               open ? 'transform rotate-180' : ''
                             } text-gray-600 `}
                           />

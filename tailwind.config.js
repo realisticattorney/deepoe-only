@@ -17,8 +17,12 @@ module.exports = {
           pink: '#dfd0e1',
         },
       },
+      // fontSize: {
+      //   xs: ' 0.825rem',
+      // },
     },
   },
+
   variants: {
     extend: {},
   },

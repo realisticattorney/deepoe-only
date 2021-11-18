@@ -17,18 +17,16 @@
 //   } = useForm();
 //   const router = useRouter();
 
-
-  
 //   const LoginForm = ({ setError, setToken }) => {
 //     const [username, setUsername] = useState('')
 //     const [password, setPassword] = useState('')
-  
+
 //     const [ login, result ] = useMutation(LOGIN, {
 //       onError: (error) => {
 //         setError(error.graphQLErrors[0].message)
 //       }
 //     })
-  
+
 //     useEffect(() => {
 //       if ( result.data ) {
 //         const token = result.data.login.value
@@ -36,13 +34,13 @@
 //         localStorage.setItem('phonenumbers-user-token', token)
 //       }
 //     }, [result.data]) // eslint-disable-line
-  
+
 //     const submit = async (event) => {
 //       event.preventDefault()
-  
+
 //       login({ variables: { username, password } })
 //     }
-  
+
 //   return (
 //     <div className="flex-col bg-deepoe-cream px-4 sm:px-6 flex mt-24 mx-2">
 //       <div className="mx-auto w-full max-w-2xl  bg-deepoe-cream py-2 items-center">
@@ -111,7 +109,7 @@
 //           </div>
 //           <div className="justify-self-end">
 //             <Link href="/signup">
-//               <a className="text-xs  font-mono font-medium  py-0.5 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2">
+//               <a className="text-sm  font-mono font-medium  py-0.5 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2">
 //                 Forgot Password?
 //               </a>
 //             </Link>
@@ -126,7 +124,7 @@
 //           </div>
 //         </form>
 
-//         <div className="justify-self-end inline-flex py-4 px-1.5 text-xs font-mono">
+//         <div className="justify-self-end inline-flex py-4 px-1.5 text-sm font-mono">
 //               <h3 className>
 //             Don't have an account?</h3>
 //             <Link href="/signup">
@@ -135,7 +133,7 @@
 //               </a>
 //             </Link>
 //           </div>
-          
+
 //       </div>
 //     </div>
 //   );

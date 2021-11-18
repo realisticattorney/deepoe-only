@@ -153,7 +153,7 @@ export default function MiniCart({ cart }) {
                                         <PlusIcon className="h-2.5 w-2.5" />
                                       </button>
                                     </div>
-                                    <div className="flex text-xs font-public-sans-normal mb-1 font-normal">
+                                    <div className="flex text-sm font-public-sans-normal mb-1 font-normal">
                                       {formatter.format(product.variantPrice)}
                                     </div>
                                   </div>

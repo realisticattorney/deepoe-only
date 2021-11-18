@@ -169,7 +169,7 @@ export default function Contact() {
 
             <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
           </div>
-          <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2 font-public-sans-normal group-focus:max-h-40  text-xs text-left font-extralight text-gray-500 border-b border-gray-700">
+          <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2 font-public-sans-normal group-focus:max-h-40  text-sm text-left font-extralight text-gray-500 border-b border-gray-700">
             Please contact us as soon as possible with your order number and
             email and we will try our best to accomodate your request. Please
             note that some orders may not be cancellable after leaving our
@@ -185,7 +185,7 @@ export default function Contact() {
 
             <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
           </div>
-          <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2 font-public-sans-normal group-focus:max-h-40  text-xs text-left font-extralight text-gray-500 border-b border-gray-700">
+          <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2 font-public-sans-normal group-focus:max-h-40  text-sm text-left font-extralight text-gray-500 border-b border-gray-700">
             Please contact us as soon as possible with your order number and
             email and we will try our best to accomodate your request. Please
             note that some orders may not be cancellable after leaving our
@@ -199,7 +199,7 @@ export default function Contact() {
 
             <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
           </div>
-          <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2 font-public-sans-normal  group-focus:max-h-40  text-xs text-left font-extralight text-gray-500 border-b border-gray-700">
+          <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2 font-public-sans-normal  group-focus:max-h-40  text-sm text-left font-extralight text-gray-500 border-b border-gray-700">
             Please contact us as soon as possible with your order number and
             email and we will try our best to accomodate your request. Please
             note that some orders may not be cancellable after leaving our
@@ -210,7 +210,7 @@ export default function Contact() {
           <Link href={`deepoe/faq`}>
             <button
               type="submit"
-              className="inline-flex justify-center py-0.5 px-6 border border-transparent shadow text-xs font-light text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
+              className="inline-flex justify-center py-0.5 px-6 border border-transparent shadow text-sm font-light text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
             >
               View More
             </button>

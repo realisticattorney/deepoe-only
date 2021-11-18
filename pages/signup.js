@@ -22,9 +22,6 @@ import Link from 'next/link';
 // }
 // ​`
 
-
-
-
 const CREATE_CUSTOMER = gql`
   mutation customerCreate($input: CustomerCreateInput!) {
     customerCreate(input: $input) {
@@ -77,26 +74,25 @@ export default function Signup() {
       if (response.data.customerCreate.customer) {
         console.log('data', response.data.customerCreate.customer.id);
         toast('success', 'Check your email box to confirm your account');
-        
 
-        
         reset();
         router.push('/');
       } else if (response.data.customerCreate.customerUserErrors) {
-        error = response.data.customerCreate.customerUserErrors[0].message
+        error = response.data.customerCreate.customerUserErrors[0].message;
         console.log(
           'eerr',
           response.data.customerCreate.customerUserErrors[0].message
         );
-        toast('error', `${response.data.customerCreate.customerUserErrors[0].message}`);
+        toast(
+          'error',
+          `${response.data.customerCreate.customerUserErrors[0].message}`
+        );
       }
     } catch (err) {
       console.log('err', err);
       toast('error', `${err}`);
     }
   }
-
-
 
   return (
     <div className="flex-col bg-deepoe-cream px-4 sm:px-6 flex mt-24 mx-2">
@@ -187,7 +183,7 @@ export default function Signup() {
           </div>
         </form>
 
-        <div className="justify-self-end inline-flex py-4 px-1.5 text-xs font-mono">
+        <div className="justify-self-end inline-flex py-4 px-1.5 text-sm font-mono">
           <h3 className="">Already have an account?</h3>
           <Link href="/login">
             <a className=" placeholder-gray-700 pl-1 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2 underline">

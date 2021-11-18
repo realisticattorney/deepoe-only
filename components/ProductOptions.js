@@ -42,7 +42,7 @@ const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
               ) : null}
               {name === 'Size' ? (
                 <div
-                  className={`p-1 my-2 text-xs rounded-full block cursor-pointer mr-2 ${
+                  className={`p-1 my-2 text-sm rounded-full block cursor-pointer mr-2 ${
                     checked
                       ? 'text-white bg-gray-900 '
                       : 'text-gray-900 bg-deepoe-cream border border-gray-700'

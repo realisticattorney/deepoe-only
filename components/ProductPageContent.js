@@ -74,11 +74,8 @@ const ProductPageContent = ({ collection, product }) => {
         data-yotpo-product-id={`Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzczMzUzNTYyMzU5OTM`}
       ></div> */}
 
-
       <div className="flex flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 px-2 mx-auto">
-        <div className="w-full max-w-md border overflow-hidden shadow-sm">
-    
-        </div>
+        <div className="w-full max-w-md border overflow-hidden shadow-sm"></div>
         <ProductForm product={product} />
 
         <div className="flex flex-col w-full border-t pt-2 border-deepoe-chocolate">
@@ -90,7 +87,7 @@ const ProductPageContent = ({ collection, product }) => {
 
               <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
             </div>
-            <div className="max-h-0 overflow-hidden duration-300   group-focus:py-2 font-public-sans-normal  group-focus:max-h-56  text-xs text-left font-extralight  border-b border-gray-700">
+            <div className="max-h-0 overflow-hidden duration-300   group-focus:py-2 font-public-sans-normal  group-focus:max-h-56  text-sm text-left font-extralight  border-b border-gray-700">
               Enjoy your next meal with a stylish and conscious choice. Whether
               its indoors or outdoors, our bamboo plates are perfect for
               entertaining, simple meals with the family, or quick snacks with
@@ -114,7 +111,7 @@ const ProductPageContent = ({ collection, product }) => {
 
               <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
             </div>
-            <div className="max-h-0 overflow-hidden duration-300 text-xs  group-focus:pb-2 font-public-sans-normal group-focus:max-h-56  text-left font-extralight border-b border-gray-700">
+            <div className="max-h-0 overflow-hidden duration-300 text-sm  group-focus:pb-2 font-public-sans-normal group-focus:max-h-56  text-left font-extralight border-b border-gray-700">
               9.85” in diameter (25cm)
               <li>Non-toxic and compostable </li>
               <li>
@@ -134,25 +131,26 @@ const ProductPageContent = ({ collection, product }) => {
           </button>
           <button className="group focus:outline-none">
             <div className="flex justify-between py-2 font-extralight text-left text-lg text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
-              <span className="font-mono font-normal">
-                Reviews (432)
-              </span>
-              
+              <span className="font-mono font-normal">Reviews (432)</span>
             </div>
-            <div className="text-xs text-left font-mono font-extralight ">
-            Bought these for the kids thanksgiving table and they looked so good! Loved that they were dishwasher safe, will definitely be reusing for other parties.
+            <div className="text-sm text-left font-mono font-extralight ">
+              Bought these for the kids thanksgiving table and they looked so
+              good! Loved that they were dishwasher safe, will definitely be
+              reusing for other parties.
             </div>
           </button>
         </div>
       </div>
-      
+
       <div className="flex flex-col w-full py-5 font-public-sans-normal">
-      <div className="font-sans italic text-2xl">At deepoe, we believe in</div>
+        <div className="font-sans italic text-2xl">
+          At deepoe, we believe in
+        </div>
         <div className="py-3.5">
           <h2 className="text-left text-2xl pb-2 px-6 font-mono font-extralight">
             Sustainable Style
           </h2>
-          <p className="text-left text-xs font-extralight pt-1 px-6">
+          <p className="text-left text-sm font-extralight pt-1 px-6">
             Sustainability should not be dull, muted, or monotone. We believe
             sustainabile choices should be designed for impact and bring joy and
             smiles. Our bamboo plate avoid plastics and melamines and are
@@ -163,7 +161,7 @@ const ProductPageContent = ({ collection, product }) => {
           <h2 className="text-left text-2xl pb-2 px-6 font-mono font-extralight text-deepoe-cream">
             Function First
           </h2>
-          <p className="text-left text-xs font-extralight pt-1 px-6 text-deepoe-cream">
+          <p className="text-left text-sm font-extralight pt-1 px-6 text-deepoe-cream">
             We aim to provide products that actually work, and ideally across
             settings. These sturdy plates are perfect for outdoor BBQs, picnics
             or an evening on the porch but perform just as well when
@@ -174,7 +172,7 @@ const ProductPageContent = ({ collection, product }) => {
           <h2 className="text-left text-2xl pb-2 px-6 font-mono font-extralight">
             Conscious Commerce
           </h2>
-          <p className="text-left text-xs font-extralight pt-1 px-6">
+          <p className="text-left text-sm font-extralight pt-1 px-6">
             Deepoe aims to consider each step of the product’s journey and
             ensure conscious decisions fuel our business success. We have
             removed plastics from packaing and are on the path to carbon

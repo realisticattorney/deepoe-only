@@ -65,11 +65,17 @@ const ProductForm = ({ product }) => {
   return (
     <div className="flex-col flex w-full pt-1 font-public-sans-normal ">
       <div className="relative h-80 w-full">
-        <ProductCarousel product={product} selectedVariant={selectedVariant} key={selectedVariant.id} />
+        <ProductCarousel
+          product={product}
+          selectedVariant={selectedVariant}
+          key={selectedVariant.id}
+        />
       </div>
 
       <div>
-        <h2 className="text-2xl font-mono font-extralight text-gray-800 -mt-5">{product.title}</h2>
+        <h2 className="text-2xl font-mono font-extralight text-gray-800 -mt-5">
+          {product.title}
+        </h2>
         <div className="pb-2 pt-2.5 items-center flex justify-between">
           <div className="flex items-start">
             <span className="text-lg  text-gray-600">
@@ -106,10 +112,10 @@ const ProductForm = ({ product }) => {
             setOptions={setOptions} //just passing the function to the ProductOptions component to be called when the user changes the selected option
           />
         ))}
-          <div className="text-xs font-light mb-2.5 mt-0.5 space-y-1.5">
-            <p>Usually ships in 1-2 weeks</p>
-            <p>Final Sale! No Returns</p>
-          </div>
+        <div className="text-sm font-light mb-2.5 mt-0.5 space-y-1.5">
+          <p>Usually ships in 1-2 weeks</p>
+          <p>Final Sale! No Returns</p>
+        </div>
         <button
           onClick={() => {
             addToCart(selectedVariant);

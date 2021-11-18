@@ -18,7 +18,7 @@ const Faq = () => {
   return (
     <div className=" w-full px-2.5 font-mono">
       <div className="w-full max-w-md  mx-auto bg-deepoe-cream rounded-2xl space-y-5">
-        <h3 className="text-3xl pt-3.5 font-thin px-3 tracking-tighter">
+        <h3 className="text-3xl pt-3.5 font-thin px-3 l">
           Frequently Asked Questions
         </h3>
 

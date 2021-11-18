@@ -98,16 +98,14 @@ export default function Reviews() {
     <div>
       <div className="px-3 pb-3.5 pt-3 z-0">
         <Link href={`/`}>
-          <a className="text-left pl-1 font-medium text-sm font-public-sans-normal">
+          <a className="text-left pl-1 font-medium text-sm font-mono">
             {'<'} back to homepage
           </a>
         </Link>
       </div>
       <div className="flex-col bg-deepoe-cream px-4 sm:px-6 flex mt-24 mx-2">
         <div className="mx-auto w-full max-w-2xl  bg-deepoe-cream py-2 items-center">
-          <h2 className="text-2xl font-light pb-2 font-public-sans-normal ">
-            Reviews
-          </h2>
+          <h2 className="text-2xl font-light pb-2 font-mono ">Reviews</h2>
           <div className="relative">
             <div
               className="yotpo yotpo-main-widget "

@@ -81,7 +81,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                         <ul className="space-y-2 pl-11 mb-6">
                           <Link href={`/collections/all-products`}>
                             <a
-                              className="block"
+                              className="block "
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Shop All

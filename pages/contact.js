@@ -48,7 +48,7 @@ export default function Contact() {
   return (
     <div className="flex-col bg-deepoe-cream px-4 sm:px-6 flex">
       <div className="mx-auto w-full max-w-2xl  bg-deepoe-cream py-2 items-center">
-        <h2 className="text-2xl font-light pb-2 font-public-sans-normal ">
+        <h2 className="text-2xl font-light pb-2 font-mono ">
           Questions? Get in touch.
         </h2>
         <form
@@ -68,7 +68,7 @@ export default function Contact() {
                   message: 'Please enter your name',
                 },
               })}
-              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-public-sans-normal  py-0.5 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2 ${
+              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-0.5 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2 ${
                 errors.name ? 'ring-2 ring-red-500' : null
               }`}
               placeholder="name*"
@@ -102,7 +102,7 @@ export default function Contact() {
                   message: 'This needs to be a valid email address',
                 },
               })}
-              className={`block w-full border shadow-sm bg-deepoe-cream text-sm font-light font-public-sans-normal  py-0.5 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2 ${
+              className={`block w-full border shadow-sm bg-deepoe-cream text-sm font-light font-mono  py-0.5 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2 ${
                 errors.email ? 'ring-2 ring-red-500' : null
               }`}
               placeholder="e-mail*"
@@ -132,7 +132,7 @@ export default function Contact() {
                   message: 'Your message must be longer than this!',
                 },
               })}
-              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-public-sans-normal  py-0.5 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none focus:ring-2 ${
+              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-0.5 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none focus:ring-2 ${
                 errors.message ? 'ring-2 ring-red-500' : null
               }`}
               placeholder="message"
@@ -153,7 +153,7 @@ export default function Contact() {
       </div>
 
       <div className="flex flex-col w-full pt-8">
-        <h4 className="px-2.5 py-2 text-2xl font-light font-public-sans-normal">
+        <h4 className="px-2.5 py-2 text-2xl font-light font-mono">
           Or check our{' '}
           <span className="underline">
             <Link href={`/deepoe/faq`}>
@@ -162,14 +162,14 @@ export default function Contact() {
           </span>
         </h4>
         <button className="group focus:outline-none px-3" onClick={handleShow}>
-          <div className="flex justify-between py-2 text-sm font-public-sans-normal text-left text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+          <div className="flex justify-between py-2 text-sm font-mono text-left text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
             <span className="truncate">Where's my order?</span>
 
             <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
             <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
           </div>
-          <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2 font-public-sans-normal group-focus:max-h-40  text-sm text-left font-extralight text-gray-500 border-b border-gray-700">
+          <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2 font-mono group-focus:max-h-40  text-sm text-left font-extralight text-gray-500 border-b border-gray-700">
             Please contact us as soon as possible with your order number and
             email and we will try our best to accomodate your request. Please
             note that some orders may not be cancellable after leaving our
@@ -177,7 +177,7 @@ export default function Contact() {
           </div>
         </button>
         <button className="group focus:outline-none px-3">
-          <div className="flex justify-between py-2 text-sm font-public-sans-normal text-left text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+          <div className="flex justify-between py-2 text-sm font-mono text-left text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
             <span className="truncate">
               How can I change or cancel my order?
             </span>
@@ -185,7 +185,7 @@ export default function Contact() {
 
             <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
           </div>
-          <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2 font-public-sans-normal group-focus:max-h-40  text-sm text-left font-extralight text-gray-500 border-b border-gray-700">
+          <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2 font-mono group-focus:max-h-40  text-sm text-left font-extralight text-gray-500 border-b border-gray-700">
             Please contact us as soon as possible with your order number and
             email and we will try our best to accomodate your request. Please
             note that some orders may not be cancellable after leaving our
@@ -193,13 +193,13 @@ export default function Contact() {
           </div>
         </button>
         <button className="group focus:outline-none px-3">
-          <div className="flex justify-between py-2 text-sm font-public-sans-normal text-left text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+          <div className="flex justify-between py-2 text-sm font-mono text-left text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
             <span className="truncate">Do your items have a warranty?</span>
             <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
             <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
           </div>
-          <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2 font-public-sans-normal  group-focus:max-h-40  text-sm text-left font-extralight text-gray-500 border-b border-gray-700">
+          <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2 font-mono  group-focus:max-h-40  text-sm text-left font-extralight text-gray-500 border-b border-gray-700">
             Please contact us as soon as possible with your order number and
             email and we will try our best to accomodate your request. Please
             note that some orders may not be cancellable after leaving our

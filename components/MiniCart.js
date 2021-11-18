@@ -103,7 +103,7 @@ export default function MiniCart({ cart }) {
                                       </h3>
                                     </div>
                                     <div className="flex justify-between mt-2">
-                                      <p className="text-sm font-public-sans-normal text-gray-600">
+                                      <p className="text-sm font-mono text-gray-600">
                                         {product.variantTitle}
                                       </p>
                                       <p className="ml-4">
@@ -153,7 +153,7 @@ export default function MiniCart({ cart }) {
                                         <PlusIcon className="h-2.5 w-2.5" />
                                       </button>
                                     </div>
-                                    <div className="flex text-sm font-public-sans-normal mb-1 font-normal">
+                                    <div className="flex text-sm font-mono mb-1 font-normal">
                                       {formatter.format(product.variantPrice)}
                                     </div>
                                   </div>
@@ -171,7 +171,7 @@ export default function MiniCart({ cart }) {
                   </div>
 
                   {cart.length > 0 ? (
-                    <div className="px-4 sm:px-6 font-public-sans-normal">
+                    <div className="px-4 sm:px-6 font-mono">
                       <div className="pt-4 border-t border-gray-900 space-y-1.5 flex-col  text-gray-900">
                         <div className="flex justify-between">
                           <p>Subtotal</p>

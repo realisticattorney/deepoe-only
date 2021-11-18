@@ -97,9 +97,7 @@ export default function Signup() {
   return (
     <div className="flex-col bg-deepoe-cream px-4 sm:px-6 flex mt-24 mx-2">
       <div className="mx-auto w-full max-w-2xl  bg-deepoe-cream py-2 items-center">
-        <h2 className="text-2xl font-light pb-2 font-public-sans-normal ">
-          Signup
-        </h2>
+        <h2 className="text-2xl font-light pb-2 font-mono ">Signup</h2>
         <form
           onSubmit={
             handleSubmit(onSubmitForm)
@@ -142,7 +140,7 @@ export default function Signup() {
                   message: 'This needs to be a valid email address',
                 },
               })}
-              className={`block w-full border shadow-sm bg-deepoe-cream text-sm font-light font-public-sans-normal  py-0.5 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2 ${
+              className={`block w-full border shadow-sm bg-deepoe-cream text-sm font-light font-mono  py-0.5 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2 ${
                 errors.email ? 'ring-2 ring-red-500' : ''
               }`}
               placeholder="e-mail*"
@@ -164,7 +162,7 @@ export default function Signup() {
                   message: 'Please enter your name',
                 },
               })}
-              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-public-sans-normal  py-0.5 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2 ${
+              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-0.5 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2 ${
                 errors.password ? 'ring-2 ring-red-500' : ''
               }`}
               placeholder="password*"

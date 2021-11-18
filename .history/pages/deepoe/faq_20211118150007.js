@@ -47,7 +47,7 @@ const Faq = () => {
               <span className="truncate text-lg font-extralight">
                 How can I change or cancel my order? 
               </span>
-              <p className="font-extralight text-3xl group-focus:hidden" >+</p>
+              <p className="text-gray-900 h-4 w-4 group-focus:hidden" > </p>
 
               <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
             </div>

@@ -45,9 +45,9 @@ const Faq = () => {
           <button className="group focus:outline-none px-3">
             <div className="flex justify-between py-1 tracking-tight text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
               <span className="truncate text-lg font-extralight">
-                How can I change or cancel my order? 
+                How can I change or cancel my order?
               </span>
-              <p className="font-extralight text-3xl group-focus:hidden" >+</p>
+              <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
               <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
             </div>

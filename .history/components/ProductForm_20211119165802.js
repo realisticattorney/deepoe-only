@@ -74,10 +74,10 @@ const ProductForm = ({ product }) => {
       </div>
 
       <div>
-        <h2 className="text-2xl font-mono font-extralight -mt-5">
+        <h2 className="text-2xl font-mono font-extralight -mt-6">
           {product.title}
         </h2>
-        <div className="pb-3.5 pt-1 items-center flex justify-between">
+        <div className="pb-2 pt-2.5 items-center flex justify-between">
           <div className="flex items-start">
             <span className="text-lg  text-gray-600">
               {formatter.format(product.variants.edges[0].node.priceV2.amount)}

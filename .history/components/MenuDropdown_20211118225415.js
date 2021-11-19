@@ -52,7 +52,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                         className="py-6 overflow-y-auto mt-7 px-6 sm:px-6 flex justify-between items-center"
                         onClick={() => setOpen(!open)}
                       >
-                        <p className="font-thin text-4xl">Products</p>
+                        <p className="font-thin text-3xl">Products</p>
                         <span className="mr-7 justify-self-end">
                           <ChevronUpIcon
                             className={`w-5 h-5 ${
@@ -77,11 +77,11 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                       leaveFrom="translate-y-0 opacity-100"
                       leaveTo="-translate-y-4  opacity-0"
                     >
-                      <Disclosure.Panel className="font-extralight font-mono">
+                      <Disclosure.Panel className="font-extralight font-public-sans-normal">
                         <ul className="space-y-2 pl-11 mb-6">
                           <Link href={`/collections/all-products`}>
                             <a
-                              className="block text-lg "
+                              className="block  "
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Shop All
@@ -89,7 +89,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                           </Link>
                           <Link href={`/collections/dishware`}>
                             <a
-                              className="block text-lg"
+                              className="block "
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Dishware
@@ -97,7 +97,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                           </Link>
                           <Link href={`/collections/towels`}>
                             <a
-                              className="block text-lg"
+                              className="block "
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Linens & Towels
@@ -105,7 +105,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                           </Link>
                           <Link href={`/collections/rugs`}>
                             <a
-                              className="block text-lg"
+                              className="block "
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Rugs
@@ -113,7 +113,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                           </Link>
                           <Link href={`/collections/furniture`}>
                             <a
-                              className="block text-lg"
+                              className="block "
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Furniture
@@ -121,7 +121,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                           </Link>
                           <Link href={`/collections/miscellaneous`}>
                             <a
-                              className="block text-lg"
+                              className="block "
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Miscellaneous
@@ -133,7 +133,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                     <div className="flex-1 overflow-y-auto space-y-6 px-6 sm:px-6">
                       <Link href={`/deepoe/sustainability`}>
                         <a
-                          className="font-thin text-4xl block"
+                          className="font-thin text-3xl block"
                           onClick={() => wrapperSetParentState(false)}
                         >
                           Sustainability
@@ -142,7 +142,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
 
                       <Link href={`/deepoe/faq`}>
                         <a
-                          className="font-thin text-4xl block"
+                          className="font-thin text-3xl block"
                           onClick={() => wrapperSetParentState(false)}
                         >
                           FAQ
@@ -151,7 +151,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
 
                       <Link href={`/contact`}>
                         <a
-                          className="font-thin text-4xl block"
+                          className="font-thin text-3xl block"
                           onClick={() => wrapperSetParentState(false)}
                         >
                           Contact

@@ -142,7 +142,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
 
                       <Link href={`/deepoe/faq`}>
                         <a
-                          className="font-thin text-4xl block"
+                          className="font-thin text-3xl block"
                           onClick={() => wrapperSetParentState(false)}
                         >
                           FAQ
@@ -151,7 +151,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
 
                       <Link href={`/contact`}>
                         <a
-                          className="font-thin text-4xl block"
+                          className="font-thin text-3xl block"
                           onClick={() => wrapperSetParentState(false)}
                         >
                           Contact

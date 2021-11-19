@@ -23,7 +23,7 @@ module.exports = {
         120: '30rem',
       },
       borderWidth: {
-        DEFAULT: '0.8px',
+        DEFAULT: '0.5px',
         0: '0',
         2: '2px',
         3: '3px',

@@ -204,7 +204,7 @@ export default function Contact() {
           <div className="justify-self-end">
             <button
               type="submit"
-              className="inline-flex justify-center py-1.5 mt-2.5 w-36 border border-transparent shadow text-2xl  text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2 active:outline-none"
+              className="inline-flex justify-center py-1.5 mt-2.5 w-36 border border-transparent shadow text-2xl font-medium  text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2 active:outline-none"
             >
               Submit
             </button>
@@ -283,7 +283,7 @@ export default function Contact() {
           <Link href={`deepoe/faq`}>
             <button
               type="submit"
-              className="inline-flex font-sans justify-center py-0.5 text-base px-4 w-36 mb-12 border border-transparent shadow  text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2 active:outline-none"
+              className="inline-flex font-sans justify-center py-0.5 px-4 w-36 mb-12 border border-transparent shadow text-sm font-light text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2 active:outline-none"
             >
               View More
             </button>

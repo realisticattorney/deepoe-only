@@ -18,9 +18,9 @@ const ProductList = ({ collection, products }) => {
                 collection === 'all-products' ? 'left-16' : ''
               } ${collection === 'dishware' ? 'left-24' : ''} ${
                 collection === 'towels' ? 'left-32' : ''
-              } ${collection === 'miscellaneous' ? 'left-11' : ''}
-               ${collection === 'rugs' ? 'left-40' : ''} ${
-                collection === 'furniture' ? 'left-24' : ''
+              } ${collection === 'miscellaneous' ? 'left-6' : ''}
+               ${collection === 'rugs' ? 'left-36' : ''} ${
+                collection === 'furniture' ? 'left-20' : ''
               }`}
             >
               {collection === 'all-products' ? 'all products' : collection}

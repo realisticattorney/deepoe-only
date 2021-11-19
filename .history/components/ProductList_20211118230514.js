@@ -20,7 +20,7 @@ const ProductList = ({ collection, products }) => {
                 collection === 'towels' ? 'left-32' : ''
               } ${collection === 'miscellaneous' ? 'left-11' : ''}
                ${collection === 'rugs' ? 'left-40' : ''} ${
-                collection === 'furniture' ? 'left-24' : ''
+                collection === 'furniture' ? 'left-20' : ''
               }`}
             >
               {collection === 'all-products' ? 'all products' : collection}

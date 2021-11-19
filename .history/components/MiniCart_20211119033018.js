@@ -162,8 +162,8 @@ export default function MiniCart({ cart }) {
                             ))}
                           </ul>
                         ) : (
-                          <div className="font-mono">
-                            <p>Nothing in your cart!</p>
+                          <div className="">
+                            <p>Nothing in your cart</p>
                           </div>
                         )}
                       </div>

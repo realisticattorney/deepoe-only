@@ -81,7 +81,7 @@ const ProductPageContent = ({ collection, product }) => {
         <div className="flex flex-col w-full border-t pt-2 border-deepoe-chocolate">
           <button className="group focus:outline-none" onClick={handleShow}>
             <div className="flex justify-between pb-2 pt-0.5 text-lg font-extralight items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
-              <span className="truncate font-mono font-extralight text-lg2">Details</span>
+              <span className="truncate font-mono font-normal text">Details</span>
 
               <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
@@ -104,7 +104,7 @@ const ProductPageContent = ({ collection, product }) => {
           </button>
           <button className="group focus:outline-none">
             <div className="flex justify-between py-2 text-lg font-extralight text-left items-center text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
-              <span className="truncate font-mono font-extralight text-lg2">
+              <span className="truncate font-mono font-normal">
                 Item Specifications
               </span>
               <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
@@ -131,7 +131,7 @@ const ProductPageContent = ({ collection, product }) => {
           </button>
           <button className="group focus:outline-none">
             <div className="flex justify-between py-2 font-extralight text-left text-lg text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
-              <span className="font-mono font-extralight text-lg2">Reviews (432)</span>
+              <span className="font-mono font-normal">Reviews (432)</span>
             </div>
             <div className="text-sm text-left font-mono font-extralight ">
               Bought these for the kids thanksgiving table and they looked so

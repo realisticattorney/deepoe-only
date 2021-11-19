@@ -19,7 +19,7 @@ module.exports = {
       },
       fontSize: {
         xs: ' 0.625rem',
-        lg2: '1.25rem',
+        lg2: '1.125rem',
       },
     },
   },

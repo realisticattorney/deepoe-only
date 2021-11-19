@@ -78,7 +78,7 @@ const ProductPageContent = ({ collection, product }) => {
         <div className="w-full max-w-md border overflow-hidden shadow-sm"></div>
         <ProductForm product={product} />
 
-        <div className="flex flex-col w-full border-t pt-2 border-deepoe-chocolate">
+        <div className="flex flex-col w-full border-t pt-2 mt-1.5 border-deepoe-chocolate">
           <button className="group focus:outline-none" onClick={handleShow}>
             <div className="flex justify-between pb-2 pt-0.5 text-lg font-extralight items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
               <span className="truncate font-mono font-extralight text-lg2">Details</span>

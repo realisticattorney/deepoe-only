@@ -200,7 +200,7 @@ export default function MiniCart({ cart }) {
                           Checkout
                         </a>
                       </div>
-                      <div className="mt-10 flex justify-center text-sm text-center text-gray-500">
+                      <div className="mt-8 flex justify-center text-sm text-center text-gray-500">
                         {/* <p>
                           or{' '} */}
                           {/* <button

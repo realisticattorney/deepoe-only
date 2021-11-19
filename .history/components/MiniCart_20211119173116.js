@@ -200,18 +200,18 @@ export default function MiniCart({ cart }) {
                           Checkout
                         </a>
                       </div>
-                      <div className="mt-10 flex justify-center text-sm text-center text-gray-500">
-                        {/* <p>
-                          or{' '} */}
-                          {/* <button
+                      <div className="mt-6 flex justify-center text-sm text-center text-gray-500">
+                        <p>
+                          or{' '}
+                          <button
                             type="button"
                             className="font-medium hover:text-gray-800"
                             onClick={() => setCartOpen(false)}
                           >
                             Continue Shopping
                             <span aria-hidden="true"> &rarr;</span>
-                          </button> */}
-                        {/* </p> */}
+                          </button>
+                        </p>
                       </div>
                     </div>
                   ) : null}

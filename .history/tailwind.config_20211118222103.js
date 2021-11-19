@@ -11,14 +11,14 @@ module.exports = {
         sans: ["'TiffanyStd-Demi'", ...defaultTheme.fontFamily.sans],
       },
       borderWidth: {
-        DEFAULT: '0.5px',
-        0: '0',
-        2: '2px',
-        3: '3px',
-        4: '4px',
-        6: '6px',
-        8: '8px',
-      },
+        DEFAULT: '1px',
+        '0': '0',
+        '2': '2px',
+       '3': '3px',
+        '4': '4px',
+       '6': '6px',
+       '8': '8px',
+      }
       colors: {
         deepoe: {
           cream: '#F5F3EE',

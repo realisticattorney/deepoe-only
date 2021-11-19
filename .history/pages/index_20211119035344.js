@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -9,19 +8,20 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Link href="/collections/all-products" passHref> </Link>
       <div className="bg-deepoe-cream">
-        <div className="absolute w-full h-120 top-0 left-0">
-          <Link href="/collections/all-products" passHref>
-            <a href="">
+        <div className="max-w-2xl mx-auto ">
+          <div className="w-full  overflow-hidden ">
+            <div className="relative h-96 -mt-0.7">
               <Image
                 src="/deepoeHome.jpg"
                 layout="fill"
                 objectFit="cover"
-                objectPosition="top"
-                className=""
+                objectPosition=""
+                className="mt-1"
               />
-            </a>
-          </Link>
+            </div>
+          </div>
         </div>
       </div>
     </div>

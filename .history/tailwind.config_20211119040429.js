@@ -20,7 +20,7 @@ module.exports = {
         0.7: ' 0.19rem',
       },
       height: {
-        120: '30rem',
+        120: '31.5rem',
       },
       borderWidth: {
         DEFAULT: '0.5px',

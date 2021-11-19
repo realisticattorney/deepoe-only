@@ -10,18 +10,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="bg-deepoe-cream">
-        <div className="absolute w-full h-120 top-0 left-0">
-          <Link href="/collections/all-products" passHref>
-            <a href="">
-              <Image
-                src="/deepoeHome.jpg"
-                layout="fill"
-                objectFit="cover"
-                objectPosition="top"
-                className=""
-              />
-            </a>
-          </Link>
+        <div className="max-w-2xl mx-auto ">
+          <div className="w-full  overflow-hidden ">
+            <div className="relative h-96 -mt-0.7">
+              <Link href="/collections/all-products" passHref>
+                <Image
+                  src="/deepoeHome.jpg"
+                  layout="fill"
+                  objectFit="cover"
+                  objectPosition=""
+                  className="mt-1"
+                />
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </div>

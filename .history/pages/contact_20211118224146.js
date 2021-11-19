@@ -144,7 +144,7 @@ export default function Contact() {
           <div className="justify-self-end">
             <button
               type="submit"
-              className="inline-flex justify-center py-1.5 w-36 border border-transparent shadow text-2xl  text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
+              className="inline-flex justify-center py-1.5 px-6 border border-transparent shadow text-base  text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
             >
               Submit
             </button>
@@ -161,7 +161,7 @@ export default function Contact() {
             </Link>
           </span>
         </h4>
-        <button className="group focus:outline-none pr-0.5" onClick={handleShow}>
+        <button className="group focus:outline-none" onClick={handleShow}>
           <div className="flex justify-between pb-1 pt-2 tracking-tight text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
             <span className="truncate text-lg font-extralight group-focus:font-light">
               Where's my order?
@@ -180,7 +180,7 @@ export default function Contact() {
             warehouse.
           </div>
         </button>
-        <button className="group focus:outline-none pr-0.5">
+        <button className="group focus:outline-none ">
           <div className="flex justify-between py-1 tracking-tight text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
             <span className="truncate text-lg font-extralight group-focus:font-light">
               How can I change or cancel my order?
@@ -198,7 +198,7 @@ export default function Contact() {
             warehouse.
           </div>
         </button>
-        <button className="group focus:outline-none pr-0.5">
+        <button className="group focus:outline-none pr-1">
           <div className="flex justify-between py-1 tracking-tight text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
             <span className="truncate text-lg font-extralight group-focus:font-light">
               Do your items have a warranty?
@@ -216,11 +216,11 @@ export default function Contact() {
             warehouse.
           </div>
         </button>
-        <div className="justify-self-end pt-2.5 mt-2 self-end">
+        <div className="justify-self-end pt-2.5 self-end">
           <Link href={`deepoe/faq`}>
             <button
               type="submit"
-              className="inline-flex font-sans justify-center py-0.5 px-4 w-36 border border-transparent shadow text-sm font-light text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
+              className="inline-flex justify-center py-0.5 px-6 border border-transparent shadow text-sm font-light text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
             >
               View More
             </button>

@@ -216,7 +216,7 @@ export default function Contact() {
             warehouse.
           </div>
         </button>
-        <div className="justify-self-end pt-2.5 mt-2 self-end">
+        <div className="justify-self-end pt-2.5 self-end">
           <Link href={`deepoe/faq`}>
             <button
               type="submit"

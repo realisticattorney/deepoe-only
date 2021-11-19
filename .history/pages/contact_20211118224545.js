@@ -216,11 +216,11 @@ export default function Contact() {
             warehouse.
           </div>
         </button>
-        <div className="justify-self-end pt-2.5 mt-2 self-end">
+        <div className="justify-self-end pt-2.5 self-end">
           <Link href={`deepoe/faq`}>
             <button
               type="submit"
-              className="inline-flex font-sans justify-center py-0.5 px-4 w-36 border border-transparent shadow text-sm font-light text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
+              className="inline-flex font-sans justify-center mt01 py-0.5 px-4 w-36 border border-transparent shadow text-sm font-light text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
             >
               View More
             </button>

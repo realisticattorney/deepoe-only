@@ -44,8 +44,8 @@ const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
                 <div
                   className={`p-1 my-2 text-sm rounded-full block cursor-pointer mr-2 ${
                     checked
-                      ? 'text-deepoe-cream bg-deepoe_default-black'
-                      : 'bg-deepoe-cream border border-deepoe_default-black'
+                      ? ''
+                      : 'bg-deepoe-cream border border-gray-700'
                   }`}
                 >
                   <span className="px-2">{value}</span>

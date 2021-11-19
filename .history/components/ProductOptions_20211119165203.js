@@ -33,7 +33,7 @@ const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
                   <div
                     className={`p-3.5  text-lg rounded-full block cursor-pointer
                   
-                  ${value == 'Black' ? 'bg-deepoe_default-black' : ''}
+                  ${value == 'Black' ? 'bg-gray-900' : ''}
                   ${value == 'Grey' || value == 'Gray' ? 'bg-gray-600' : ''}
                   ${value == 'White' ? 'bg-white' : ''}
                   ${value == 'Olive' ? 'bg-green-600' : ''}`}
@@ -44,8 +44,8 @@ const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
                 <div
                   className={`p-1 my-2 text-sm rounded-full block cursor-pointer mr-2 ${
                     checked
-                      ? 'text-deepoe-cream bg-deepoe_default-black'
-                      : 'bg-deepoe-cream border border-deepoe_default-black'
+                      ? 'text-white bg- '
+                      : 'text-gray-900 bg-deepoe-cream border border-gray-700'
                   }`}
                 >
                   <span className="px-2">{value}</span>

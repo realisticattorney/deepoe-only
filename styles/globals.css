@@ -6,6 +6,9 @@ html,
 body {
   font-family: 'TiffanyStd-Demi';
 }
+.carousel-indicators li {
+  background-color: black;
+}
 
 @layer components {
   .font-public-sans-normal {

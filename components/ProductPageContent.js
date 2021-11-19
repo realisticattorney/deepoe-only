@@ -75,7 +75,7 @@ const ProductPageContent = ({ collection, product }) => {
       ></div> */}
 
       <div className="flex flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 px-2 mx-auto">
-        <div className="w-full max-w-md border overflow-hidden shadow-sm"></div>
+        <div className="w-full max-w-md  overflow-hidden"></div>
         <ProductForm product={product} />
 
         <div className="flex flex-col w-full border-t pt-2 border-deepoe-chocolate">
@@ -85,9 +85,11 @@ const ProductPageContent = ({ collection, product }) => {
                 Details
               </span>
 
-              <p className="font-thin text-3xl group-focus:hidden">+</p>
+              <p className="font-mono font-thin text-3xl group-focus:hidden">
+                +
+              </p>
 
-              <p className="font-thin text-3xl  -mt-5  hidden group-focus:flex">
+              <p className="font-mono font-thin text-3xl  -mt-5  hidden group-focus:flex">
                 _
               </p>
             </div>
@@ -111,9 +113,11 @@ const ProductPageContent = ({ collection, product }) => {
               <span className="truncate font-mono font-extralight text-lg2">
                 Item Specifications
               </span>
-              <p className="font-thin text-3xl group-focus:hidden">+</p>
+              <p className="font-mono font-thin text-3xl group-focus:hidden">
+                +
+              </p>
 
-              <p className="font-thin text-3xl  -mt-5  hidden group-focus:flex">
+              <p className="font-mono font-thin text-3xl  -mt-5  hidden group-focus:flex">
                 _
               </p>
             </div>
@@ -151,7 +155,10 @@ const ProductPageContent = ({ collection, product }) => {
       </div>
 
       <div className="flex flex-col w-full py-5 font-public-sans-normal">
-        <div className="font-sans italic font-medium text-3xl tracking-tighter px-6">
+        <div className="relative h-96">
+          <Image src="/brunch.jpg" layout="fill" objectFit="cover" />
+        </div>
+        <div className="font-sans italic font-medium text-3xl tracking-tighter mt-5 mb-1 px-6">
           At deepoe, we believe in
         </div>
         <div className="py-3.5">

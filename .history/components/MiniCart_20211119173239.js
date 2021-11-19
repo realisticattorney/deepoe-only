@@ -122,7 +122,7 @@ export default function MiniCart({ cart }) {
                                       </p>
                                     </div>
                                   </div>
-                                  <div className="flex-1 flex items-end justify-between text-sm font-light ">
+                                  <div className="flex-1 flex items-end justify-between text-sm font-light pl-1">
                                     <div className="flex space-x-2">
                                       <button
                                         disabled={isButtonDisabled}
@@ -134,16 +134,7 @@ export default function MiniCart({ cart }) {
                                           }, 800);
                                         }}
                                       >
-                                        {/* <MinusIcon className="h-2.5 w-2.5 text-deepoe_default-black" /> */}
-                                        <p
-                                          className={` -mt-2.7 pr-0.1 ${
-                                            product.variantQuantity === 1
-                                              ? 'text-gray-400'
-                                              : ''
-                                          }`}
-                                        >
-                                          _
-                                        </p>
+                                        <MinusIcon className="h-2.5 w-2.5" />
                                       </button>
                                       <p className=" text-xl font-mono">
                                         {product.variantQuantity}
@@ -159,7 +150,7 @@ export default function MiniCart({ cart }) {
                                           }, 800);
                                         }}
                                       >
-                                        <p className="-mt-0.1"> + </p>
+                                        <PlusIcon className="h-2.5 w-2.5" />
                                       </button>
                                     </div>
                                     <div className="flex text-sm font-mono mb-1 font-normal">
@@ -212,7 +203,7 @@ export default function MiniCart({ cart }) {
                       <div className="mt-10 flex justify-center text-sm text-center text-gray-500">
                         {/* <p>
                           or{' '} */}
-                        {/* <button
+                          {/* <button
                             type="button"
                             className="font-medium hover:text-gray-800"
                             onClick={() => setCartOpen(false)}

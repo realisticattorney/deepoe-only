@@ -136,7 +136,7 @@ export default function MiniCart({ cart }) {
                                       >
                                         {/* <MinusIcon className="h-2.5 w-2.5 text-deepoe_default-black" /> */}
                                         <p
-                                          className={` -mt-2.7 pr-0.1 ${
+                                          className={` -mt-2.7 ${
                                             product.variantQuantity === 1
                                               ? 'text-gray-400'
                                               : ''
@@ -159,7 +159,7 @@ export default function MiniCart({ cart }) {
                                           }, 800);
                                         }}
                                       >
-                                        <p className="-mt-0.1"> + </p>
+                                        <p className="mt-0.1"> + </p>
                                       </button>
                                     </div>
                                     <div className="flex text-sm font-mono mb-1 font-normal">

@@ -122,7 +122,7 @@ export default function MiniCart({ cart }) {
                                       </p>
                                     </div>
                                   </div>
-                                  <div className="flex-1 flex items-end justify-between text-sm font-light ">
+                                  <div className="flex-1 flex items-end justify-between text-sm font-light pl-1">
                                     <div className="flex space-x-2">
                                       <button
                                         disabled={isButtonDisabled}
@@ -136,7 +136,7 @@ export default function MiniCart({ cart }) {
                                       >
                                         {/* <MinusIcon className="h-2.5 w-2.5 text-deepoe_default-black" /> */}
                                         <p
-                                          className={` -mt-2.7 pr-0.1 ${
+                                          className={` -mt-2.7 ${
                                             product.variantQuantity === 1
                                               ? 'text-gray-400'
                                               : ''
@@ -159,7 +159,7 @@ export default function MiniCart({ cart }) {
                                           }, 800);
                                         }}
                                       >
-                                        <p className="-mt-0.1"> + </p>
+                                        <p className=" text-deepoe_default-black"> + </p>
                                       </button>
                                     </div>
                                     <div className="flex text-sm font-mono mb-1 font-normal">

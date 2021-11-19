@@ -66,11 +66,9 @@ const Nav = () => {
               cart({cartQuantity})
             </a>
           ) : (
-            <p
-              className={`cursor-pointer font-mono text-lg  font-extralight${
+            <p className={`cursor-pointer font-mono text-lg  font-extralight${
                 !cartOpen ? `` : 'font-normal pt-0'
-              }`}
-            >
+              }`}>
               {!cartOpen ? `cart(${cartQuantity})` : 'close'}
             </p>
           )}

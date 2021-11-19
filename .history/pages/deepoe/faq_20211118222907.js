@@ -33,9 +33,9 @@ const Faq = () => {
                 Where's my order?
               </span>
 
-              <p className="font-thin text-3xl  group-focus:hidden">+</p>
+              <p className="font-extralight text-3xl group-focus:hidden">+</p>
 
-              <p className="font-thin text-3xl -mt-5 hidden group-focus:flex">
+              <p className="font-extralight text-3xl -pt-0.5 hidden group-focus:flex">
                 _
               </p>
             </div>
@@ -51,9 +51,9 @@ const Faq = () => {
               <span className="truncate text-lg font-extralight group-focus:font-light">
                 How can I change or cancel my order?
               </span>
-              <p className="font-thin text-3xl group-focus:hidden">+</p>
+              <p className="font-extralight text-3xl group-focus:hidden">+</p>
 
-              <p className="font-thin text-3xl  -mt-5  hidden group-focus:flex">
+              <p className="font-extralight text-3xl -pt-0.5 hidden group-focus:flex">
                 _
               </p>
             </div>
@@ -69,11 +69,9 @@ const Faq = () => {
               <span className="truncate text-lg font-extralight group-focus:font-light">
                 Do your items have a warranty?
               </span>
-              <p className="font-thin text-3xl group-focus:hidden">+</p>
+              <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
-              <p className="font-thin text-3xl  -mt-5  hidden group-focus:flex">
-                _
-              </p>
+              <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
             </div>
             <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2  group-focus:max-h-40  text-sm text-left font-extralight  border-b">
               Please contact us as soon as possible with your order number and
@@ -95,11 +93,9 @@ const Faq = () => {
                 Where's my order?
               </span>
 
-              <p className="font-thin text-3xl group-focus:hidden">+</p>
+              <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
-              <p className="font-thin text-3xl  -mt-5  hidden group-focus:flex">
-                _
-              </p>
+              <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
             </div>
             <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2  group-focus:max-h-40  text-sm text-left font-extralight  border-b">
               Please contact us as soon as possible with your order number and
@@ -113,11 +109,9 @@ const Faq = () => {
               <span className="truncate text-lg font-extralight group-focus:font-light">
                 How can I change or cancel my order?
               </span>
-              <p className="font-thin text-3xl group-focus:hidden">+</p>
+              <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
-              <p className="font-thin text-3xl  -mt-5  hidden group-focus:flex">
-                _
-              </p>
+              <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
             </div>
             <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2  group-focus:max-h-40  text-sm text-left font-extralight  border-b">
               Please contact us as soon as possible with your order number and
@@ -131,11 +125,9 @@ const Faq = () => {
               <span className="truncate text-lg font-extralight group-focus:font-light">
                 Do your items have a warranty?
               </span>
-              <p className="font-thin text-3xl group-focus:hidden">+</p>
+              <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
-              <p className="font-thin text-3xl  -mt-5  hidden group-focus:flex">
-                _
-              </p>
+              <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
             </div>
             <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2  group-focus:max-h-40  text-sm text-left font-extralight  border-b">
               Please contact us as soon as possible with your order number and
@@ -158,11 +150,9 @@ const Faq = () => {
                 Where's my order?
               </span>
 
-              <p className="font-thin text-3xl group-focus:hidden">+</p>
+              <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
-              <p className="font-thin text-3xl  -mt-5  hidden group-focus:flex">
-                _
-              </p>
+              <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
             </div>
             <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2  group-focus:max-h-40  text-sm text-left font-extralight  border-b">
               Please contact us as soon as possible with your order number and
@@ -176,11 +166,9 @@ const Faq = () => {
               <span className="truncate text-lg font-extralight group-focus:font-light">
                 How can I change or cancel my order?
               </span>
-              <p className="font-thin text-3xl group-focus:hidden">+</p>
+              <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
-              <p className="font-thin text-3xl  -mt-5  hidden group-focus:flex">
-                _
-              </p>
+              <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
             </div>
             <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2  group-focus:max-h-40  text-sm text-left font-extralight  border-b">
               Please contact us as soon as possible with your order number and
@@ -194,11 +182,9 @@ const Faq = () => {
               <span className="truncate text-lg font-extralight group-focus:font-light">
                 Do your items have a warranty?
               </span>
-              <p className="font-thin text-3xl group-focus:hidden">+</p>
+              <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
-              <p className="font-thin text-3xl  -mt-5  hidden group-focus:flex">
-                _
-              </p>
+              <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
             </div>
             <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2  group-focus:max-h-40  text-sm text-left font-extralight  border-b">
               Please contact us as soon as possible with your order number and

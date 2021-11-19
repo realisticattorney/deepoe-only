@@ -143,7 +143,7 @@ const ProductPageContent = ({ collection, product }) => {
       </div>
 
       <div className="flex flex-col w-full py-5 font-public-sans-normal">
-        <div className="font-sans italic font-medium text-3xl tracking-tighter px-6">
+        <div className="font-sans italic font-medium text-3xl tracking-tighter">
           At deepoe, we believe in
         </div>
         <div className="py-3.5">

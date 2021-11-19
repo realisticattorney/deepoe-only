@@ -56,7 +56,7 @@ const ProductPageContent = ({ collection, product }) => {
       <div className="px-3.5 pb-2.5 pt-1.5 z-0">
         <Link href={`/collections/${collection}/`}>
           <a className="text-left pl-1 font-medium font-mono">
-            {'<'} back to {collection === "frontpage" ? "all products" : collection}
+            {'<'} back to {collection === "frontpage" ? "home" : collection}
           </a>
         </Link>
       </div>

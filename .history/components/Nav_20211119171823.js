@@ -43,8 +43,7 @@ const Nav = () => {
                 !parentState ? `` : 'font-normal pt-0'
               }`}
             >
-              {/* menu */}
-              {!parentState ? `` : 'close'}
+              {!parentState ? `menu` : 'close'}
             </p>
           )}
         </div>
@@ -76,8 +75,10 @@ const Nav = () => {
                 !cartOpen ? `` : 'font-normal pt-0'
               }`}
             >
-              {/* `cart(${cartQuantity})` */}
-              {!cartOpen ? '' : 'close'}
+            {/* `cart(${cartQuantity})` */}
+              {!cartOpen ? 
+              ""
+               : 'close'}
             </p>
           )}
         </div>

@@ -152,8 +152,8 @@ export default function Contact() {
         </form>
       </div>
 
-      <div className="flex flex-col w-full pt-8 font-mono">
-        <h4 className="text-3xl font-thin pt-5 py-2 font-mono tracking-tighter">
+      <div className="flex flex-col w-full pt-8">
+        <h4 className="px-2.5 py-2 text-2xl font-light font-mono">
           Or check our{' '}
           <span className="underline">
             <Link href={`/deepoe/faq`}>
@@ -161,61 +161,65 @@ export default function Contact() {
             </Link>
           </span>
         </h4>
-        <button className="group focus:outline-none px-3" onClick={handleShow}>
-          <div className="flex justify-between pb-1 pt-2 tracking-tight text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
-            <span className="truncate text-lg font-extralight group-focus:font-light">
-              Where's my order?
-            </span>
+          <h4 className="px-3 text-2xl font-light text-gray-800">Products</h4>
+          <button
+            className="group focus:outline-none px-3"
+            onClick={handleShow}
+          >
+            <div className="flex justify-between pb-1 pt-2 tracking-tight text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+              <span className="truncate text-lg font-extralight group-focus:font-light">
+                Where's my order?
+              </span>
 
-            <p className="font-thin text-3xl group-focus:hidden">+</p>
+              <p className="font-thin text-3xl group-focus:hidden">+</p>
 
-            <p className="font-thin text-3xl  -mt-5  hidden group-focus:flex">
-              _
-            </p>
-          </div>
-          <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2  group-focus:max-h-40  text-sm text-left font-extralight  border-b">
-            Please contact us as soon as possible with your order number and
-            email and we will try our best to accomodate your request. Please
-            note that some orders may not be cancellable after leaving our
-            warehouse.
-          </div>
-        </button>
-        <button className="group focus:outline-none px-3">
-          <div className="flex justify-between py-1 tracking-tight text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
-            <span className="truncate text-lg font-extralight group-focus:font-light">
-              How can I change or cancel my order?
-            </span>
-            <p className="font-thin text-3xl group-focus:hidden">+</p>
+              <p className="font-thin text-3xl  -mt-5  hidden group-focus:flex">
+                _
+              </p>
+            </div>
+            <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2  group-focus:max-h-40  text-sm text-left font-extralight  border-b">
+              Please contact us as soon as possible with your order number and
+              email and we will try our best to accomodate your request. Please
+              note that some orders may not be cancellable after leaving our
+              warehouse.
+            </div>
+          </button>
+          <button className="group focus:outline-none px-3">
+            <div className="flex justify-between py-1 tracking-tight text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+              <span className="truncate text-lg font-extralight group-focus:font-light">
+                How can I change or cancel my order?
+              </span>
+              <p className="font-thin text-3xl group-focus:hidden">+</p>
 
-            <p className="font-thin text-3xl  -mt-5  hidden group-focus:flex">
-              _
-            </p>
-          </div>
-          <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2  group-focus:max-h-40  text-sm text-left font-extralight  border-b">
-            Please contact us as soon as possible with your order number and
-            email and we will try our best to accomodate your request. Please
-            note that some orders may not be cancellable after leaving our
-            warehouse.
-          </div>
-        </button>
-        <button className="group focus:outline-none px-3">
-          <div className="flex justify-between py-1 tracking-tight text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
-            <span className="truncate text-lg font-extralight group-focus:font-light">
-              Do your items have a warranty?
-            </span>
-            <p className="font-thin text-3xl group-focus:hidden">+</p>
+              <p className="font-thin text-3xl  -mt-5  hidden group-focus:flex">
+                _
+              </p>
+            </div>
+            <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2  group-focus:max-h-40  text-sm text-left font-extralight  border-b">
+              Please contact us as soon as possible with your order number and
+              email and we will try our best to accomodate your request. Please
+              note that some orders may not be cancellable after leaving our
+              warehouse.
+            </div>
+          </button>
+          <button className="group focus:outline-none px-3">
+            <div className="flex justify-between py-1 tracking-tight text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+              <span className="truncate text-lg font-extralight group-focus:font-light">
+                Do your items have a warranty?
+              </span>
+              <p className="font-thin text-3xl group-focus:hidden">+</p>
 
-            <p className="font-thin text-3xl  -mt-5  hidden group-focus:flex">
-              _
-            </p>
-          </div>
-          <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2  group-focus:max-h-40  text-sm text-left font-extralight  border-b">
-            Please contact us as soon as possible with your order number and
-            email and we will try our best to accomodate your request. Please
-            note that some orders may not be cancellable after leaving our
-            warehouse.
-          </div>
-        </button>
+              <p className="font-thin text-3xl  -mt-5  hidden group-focus:flex">
+                _
+              </p>
+            </div>
+            <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2  group-focus:max-h-40  text-sm text-left font-extralight  border-b">
+              Please contact us as soon as possible with your order number and
+              email and we will try our best to accomodate your request. Please
+              note that some orders may not be cancellable after leaving our
+              warehouse.
+            </div>
+          </button>
         <div className="justify-self-end pt-2.5 self-end">
           <Link href={`deepoe/faq`}>
             <button

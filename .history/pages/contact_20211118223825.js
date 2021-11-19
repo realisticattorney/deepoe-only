@@ -152,8 +152,8 @@ export default function Contact() {
         </form>
       </div>
 
-      <div className="flex flex-col w-full pt-8 font-mono">
-        <h4 className="text-3xl font-thin pt-5 py-2 font-mono tracking-tighter">
+      <div className="flex flex-col w-full pt-8">
+        <h4 className="px-2.5 py-2 text-2xl font-light font-mono">
           Or check our{' '}
           <span className="underline">
             <Link href={`/deepoe/faq`}>

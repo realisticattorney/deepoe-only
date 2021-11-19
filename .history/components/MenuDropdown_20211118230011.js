@@ -79,7 +79,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                     >
                       <Disclosure.Panel className="font-extralight font-mono">
                         <ul className="space-y-2 pl-11 mb-6">
-                          <Link href={`/collections/all`}>
+                          <Link href={`/collections/all-products`}>
                             <a
                               className="block text-lg "
                               onClick={() => wrapperSetParentState(false)}

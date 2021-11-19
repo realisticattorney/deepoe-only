@@ -52,7 +52,7 @@ const Nav = () => {
           wrapperSetParentState={wrapperSetParentState}
           // cancelButtonRef={cancelButtonRef}
         />
-        <Link href="/collections/all" passHref>
+        <Link href="/collections/all-products" passHref>
           <a className="cursor-pointer z-50">
             <span className="text-4xl font-medium tracking-tighter">
               deepoe
@@ -82,7 +82,7 @@ const Nav = () => {
         <MiniCart cart={cart} />
       </div>
       {router.pathname === '/' && (
-        <Link href="/collections/all" passHref>
+        <Link href="/collections/all-products" passHref>
           <div className="absolute w-full h-24 top-0 left-0 z-40">
             <Image
               src="/deepoeHome.jpg"

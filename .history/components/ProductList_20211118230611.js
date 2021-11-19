@@ -15,7 +15,7 @@ const ProductList = ({ collection, products }) => {
             />
             <h2
               className={`text-5xl text-white absolute top-24 italic font-medium mb-6 ${
-                collection === 'all' ? 'left-16' : ''
+                collection === 'all-products' ? 'left-16' : ''
               } ${collection === 'dishware' ? 'left-24' : ''} ${
                 collection === 'towels' ? 'left-32' : ''
               } ${collection === 'miscellaneous' ? 'left-11' : ''}
@@ -23,7 +23,7 @@ const ProductList = ({ collection, products }) => {
                 collection === 'furniture' ? 'left-24' : ''
               }`}
             >
-              {collection === 'all' ? 'all products' : collection}
+              {collection === 'all-products' ? 'all products' : collection}
             </h2>
           </div>
         </div>

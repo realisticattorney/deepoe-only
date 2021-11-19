@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
       <div className="bg-deepoe-cream">
         <div className="absolute w-full h-120 top-0 left-0">
-          <Link href="/collections/all" passHref>
+          <Link href="/collections/all-products" passHref>
             <a href="">
               <Image
                 src="/deepoeHome.jpg"

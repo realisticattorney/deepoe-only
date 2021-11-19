@@ -23,7 +23,7 @@ const ProductList = ({ collection, products }) => {
                 collection === 'furniture' ? 'left-24' : ''
               }`}
             >
-              {collection === 'all' ? 'all products' : collection}
+              {collection === 'all-products' ? 'all products' : collection}
             </h2>
           </div>
         </div>

@@ -142,11 +142,11 @@ export default function Contact() {
             </span>
           </div>
           <div>
-            <label htmlFor="subject" className="sr-only">
-              subject
+            <label htmlFor="message" className="sr-only">
+              Message
             </label>
             <textarea
-              name="subject"
+              name="message"
               rows="1"
               {...register('message', {
                 required: {
@@ -165,7 +165,7 @@ export default function Contact() {
               className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-0.5 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none focus:ring-2 ${
                 errors.message ? 'ring-2 ring-red-500' : null
               }`}
-              placeholder="subject"
+              placeholder="message"
             ></textarea>
             <span className="text-red-400 text-sm py-2">
               {errors?.message?.message}
@@ -283,7 +283,7 @@ export default function Contact() {
           <Link href={`deepoe/faq`}>
             <button
               type="submit"
-              className="inline-flex font-sans justify-center py-0.5 px-4 w-36 mb-12 border border-transparent shadow text-sm font-light text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
+              className="inline-flex font-sans justify-center py-0.5 px-4 w-36 border border-transparent shadow text-sm font-light text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
             >
               View More
             </button>

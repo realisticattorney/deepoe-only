@@ -37,7 +37,7 @@ const ProductList = ({ collection, products }) => {
               />
             ))}
           </div>
-          <div className="py-6"></div>
+          <div className="py-3"></div>
         </div>
       </div>
     </div>

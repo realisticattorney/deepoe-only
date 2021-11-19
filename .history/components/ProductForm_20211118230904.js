@@ -3,7 +3,7 @@ import { formatter } from '../utils/helpers';
 import ProductOptions from './ProductOptions';
 import { CartContext } from '../context/shopContext';
 import ProductCarousel from './ProductCarousel';
-import { ExclamationCircleIcon, TruckIcon } from '@heroicons/react/outline';
+import { ExclamationCircleIcon } from '@heroicons/react/outline';
 
 const ProductForm = ({ product }) => {
   const { addToCart } = useContext(CartContext);
@@ -114,13 +114,11 @@ const ProductForm = ({ product }) => {
           />
         ))}
         <div className="text-sm font-light mb-2.5 mt-0.5 space-y-1.5">
-          <p className="flex items-center text-xs">
+          <p className="flex item">
             <ExclamationCircleIcon className="h-4 flex pr-1" /> Usually ships in 1-2
             weeks
           </p>
-          <p className="flex items-center text-xs">
-            <TruckIcon className="h-4 flex pr-1" />Final Sale! No Returns
-          </p>
+          <p>Final Sale! No Returns</p>
         </div>
         <button
           onClick={() => {

@@ -85,11 +85,9 @@ const ProductPageContent = ({ collection, product }) => {
                 Details
               </span>
 
-              <p className="font-thin text-3xl group-focus:hidden">+</p>
+              <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
-              <p className="font-thin text-3xl  -mt-5  hidden group-focus:flex">
-                _
-              </p>
+              <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
             </div>
             <div className="max-h-0 overflow-hidden duration-300   group-focus:py-2 font-public-sans-normal  group-focus:max-h-56  text-sm text-left font-extralight  border-b border-gray-700">
               Enjoy your next meal with a stylish and conscious choice. Whether

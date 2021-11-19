@@ -81,15 +81,11 @@ const ProductPageContent = ({ collection, product }) => {
         <div className="flex flex-col w-full border-t pt-2 border-deepoe-chocolate">
           <button className="group focus:outline-none" onClick={handleShow}>
             <div className="flex justify-between pb-2 pt-0.5 text-lg font-extralight items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
-              <span className="truncate font-mono font-extralight text-lg2">
-                Details
-              </span>
+              <span className="truncate font-mono font-extralight text-lg2">Details</span>
 
-              <p className="font-thin text-3xl group-focus:hidden">+</p>
+              <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
-              <p className="font-thin text-3xl  -mt-5  hidden group-focus:flex">
-                _
-              </p>
+              <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
             </div>
             <div className="max-h-0 overflow-hidden duration-300   group-focus:py-2 font-public-sans-normal  group-focus:max-h-56  text-sm text-left font-extralight  border-b border-gray-700">
               Enjoy your next meal with a stylish and conscious choice. Whether
@@ -113,9 +109,7 @@ const ProductPageContent = ({ collection, product }) => {
               </span>
               <p className="font-thin text-3xl group-focus:hidden">+</p>
 
-              <p className="font-thin text-3xl  -mt-5  hidden group-focus:flex">
-                _
-              </p>
+<p className="font-thin text-3xl  -mt-5  hidden group-focus:flex">
             </div>
             <div className="max-h-0 overflow-hidden duration-300 text-sm  group-focus:pb-2 font-public-sans-normal group-focus:max-h-56  text-left font-extralight border-b border-gray-700">
               9.85” in diameter (25cm)
@@ -137,9 +131,7 @@ const ProductPageContent = ({ collection, product }) => {
           </button>
           <button className="group focus:outline-none">
             <div className="flex justify-between py-2 font-extralight text-left text-lg text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
-              <span className="font-mono font-extralight text-lg2">
-                Reviews (432)
-              </span>
+              <span className="font-mono font-extralight text-lg2">Reviews (432)</span>
             </div>
             <div className="text-sm text-left font-mono font-extralight ">
               Bought these for the kids thanksgiving table and they looked so

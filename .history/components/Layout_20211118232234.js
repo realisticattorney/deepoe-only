@@ -19,62 +19,61 @@ const Layout = ({ children }) => {
       ></Script> */}
       <Nav />
       <main className="h-full flex-grow overflow-scroll">{children}</main>
-      <footer className=" text-white h-60 text-sm font-extralight font-mono grid col-span-3 grid-cols-3 grid-rows-2 p-5 bg-deepoe-chocolate">
+      <footer className=" text-white h-64 text-sm font-extralight font-mono grid grid-cols-3 grid-rows-2 p-5 bg-deepoe-chocolate">
         <div className="inline-flex col-span-1 row-span-1 ">
-          <ul className="flex-col space-y-1.5 ">
+          <ul className="flex-col space-y-2 ">
             <li>Instagram</li>
             <li>Twitter</li>
-            <li>Facebook</li>
-            <li>Tik Tok</li>
-            <li>Pinterest</li>
-          </ul>
-        </div>
-
-        <div className="flex-col justify-between">
-          <ul className="flex-col  space-y-1.5 ">
+            <li>Careers</li>
             <li>
-              <Link href="/contact">
+              <Link href="/deepoe/about">
                 <a>Contact Us</a>
               </Link>
             </li>
-            <li>
-              <Link href="/deepoe/faq">
-                <a>FAQ</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/deepoe/about">
-                <a>About</a>
-              </Link>
-            </li>
-            <li>Product Care</li>
-          </ul>
-        </div>
-        <div className="flex-col justify-between">
-          <ul className="flex-col space-y-1.5 ">
-            <li>Terms</li>
-            <li>Privacy</li>
-            <li>Accessibility</li>
-            <li>
-              <Link href="/deepoe/sustainability">
-                <a>Sustainability</a>
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div className="flex-col text-xs self-end -mb-2">
-          <ul className="flex-col space-y-0.5 ">
-            {/* <li>Careers</li> */}
-            <li>© 2022 deepoe</li>
           </ul>
         </div>
 
-        <div className="self-end">
+        <div className="flex-col justify-between">
+          <ul className="flex-col space-y-0.5 ">
+            <li>Instagram</li>
+            <li>Twitter</li>
+            <li>Careers</li>
+            <li>
+              <Link href="/deepoe/about">
+                <a>Contact Us</a>
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="flex-col justify-between">
+          <ul className="flex-col space-y-0.5 ">
+            <li>Instagram</li>
+            <li>Twitter</li>
+            <li>Careers</li>
+            <li>
+              <Link href="/deepoe/about">
+                <a>Contact Us</a>
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="flex-col justify-between">
+          <ul className="flex-col space-y-0.5 ">
+            <li>Instagram</li>
+            <li>Twitter</li>
+            <li>Careers</li>
+            <li>
+            © 2022 D
+            </li>
+          </ul>
+        </div>
+
+        <div className="flex-col justify-between">
           <ul className="text-xs flex-col">
-            <li className="text-deepoe-cream font-thin -mb-1.5">a brand of</li>
-            <li className="-mb-1.5">Mereride Brands, LLC</li>
-            <li className="-mb-1.5">1018 Tenessee St.</li>
-            <li className="-mb-1.5">San Francisco, CA 94107</li>
+            <li className="text-deepoe-cream font-thin">a brand of</li>
+            <li>Mereride Brands, LLC</li>
+            <li>1018 Tenessee St.</li>
+            <li>San Francisco, CA 94107</li>
           </ul>
         </div>
       </footer>

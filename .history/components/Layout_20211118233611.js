@@ -24,9 +24,13 @@ const Layout = ({ children }) => {
           <ul className="flex-col space-y-1.5 ">
             <li>Instagram</li>
             <li>Twitter</li>
-            <li>Facebook</li>
-            <li>Tik Tok</li>
-            <li>Pinterest</li>
+            <li>Careers</li>
+            <li>Careers</li>
+            <li>
+              <Link href="/deepoe/about">
+                <a>Contact Us</a>
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -56,15 +60,15 @@ const Layout = ({ children }) => {
             <li>Privacy</li>
             <li>Accessibility</li>
             <li>
-              <Link href="/deepoe/sustainability">
-                <a>Sustainability</a>
+              <Link href="/deepoe/about">
+                <a>Sustain</a>
               </Link>
             </li>
           </ul>
         </div>
         <div className="flex-col text-xs self-end -mb-2">
           <ul className="flex-col space-y-0.5 ">
-            {/* <li>Careers</li> */}
+            <li>Careers</li>
             <li>© 2022 deepoe</li>
           </ul>
         </div>
@@ -72,9 +76,9 @@ const Layout = ({ children }) => {
         <div className="self-end">
           <ul className="text-xs flex-col">
             <li className="text-deepoe-cream font-thin -mb-1.5">a brand of</li>
-            <li className="-mb-1.5">Mereride Brands, LLC</li>
-            <li className="-mb-1.5">1018 Tenessee St.</li>
-            <li className="-mb-1.5">San Francisco, CA 94107</li>
+            <li className="font-thin -mb-1.5">Mereride Brands, LLC</li>
+            <li className="font-thin -mb-1.5">1018 Tenessee St.</li>
+            <li className="font-thin -mb-1.5">San Francisco, CA 94107</li>
           </ul>
         </div>
       </footer>

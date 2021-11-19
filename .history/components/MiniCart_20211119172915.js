@@ -106,10 +106,10 @@ export default function MiniCart({ cart }) {
                                       <p className="text-sm font-mono">
                                         {product.variantTitle}
                                       </p>
-                                      <p className="ml-4 -mt-0.5 text-deepoe_default-black">
+                                      <p className="ml-4 -mt-0.5 ">
                                         <button
                                           type="button"
-                                          className="text-deepoe_default-black hover:text-red-800"
+                                          className=" hover:text-red-800"
                                           onClick={() => {
                                             removeCartItem(product.id);
                                           }}

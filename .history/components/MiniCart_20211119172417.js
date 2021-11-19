@@ -87,7 +87,7 @@ export default function MiniCart({ cart }) {
                                 <div className="ml-3.5 flex-1 flex flex-col -mb-1 ">
                                   <div>
                                     <div className="flex justify-between text-lg font-medium">
-                                      <h3 className="mt-0.5">
+                                      <h3 className="mt-2">
                                         <Link
                                           href={`/products/${product.handle}`}
                                           passHref
@@ -103,19 +103,19 @@ export default function MiniCart({ cart }) {
                                       </h3>
                                     </div>
                                     <div className="flex justify-between mt-2">
-                                      <p className="text-sm font-mono">
+                                      <p className="text-sm font-mono text-gray-600">
                                         {product.variantTitle}
                                       </p>
-                                      <p className="ml-4 -mt-0.5 text-deepoe_default-black">
+                                      <p className="ml-4">
                                         <button
                                           type="button"
-                                          className="text-deepoe_default-black hover:text-red-800"
+                                          className="font-medium text-gray-500 hover:text-gray-800"
                                           onClick={() => {
                                             removeCartItem(product.id);
                                           }}
                                         >
                                           <TrashIcon
-                                            className="h-6 w-6 text-deepoe_default-black"
+                                            className="h-6 w-6"
                                             aria-hidden="true"
                                           />
                                         </button>

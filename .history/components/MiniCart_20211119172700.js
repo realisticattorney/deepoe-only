@@ -103,19 +103,19 @@ export default function MiniCart({ cart }) {
                                       </h3>
                                     </div>
                                     <div className="flex justify-between mt-2">
-                                      <p className="text-sm font-mono">
+                                      <p className="text-sm font-mono text-gray-600">
                                         {product.variantTitle}
                                       </p>
-                                      <p className="ml-4 -mt-0.5 text-deepoe_default-black">
+                                      <p className="ml-4 -mt-0.5 stroke-1 stroke-current">
                                         <button
                                           type="button"
-                                          className="text-deepoe_default-black hover:text-red-800"
+                                          className=" hover:text-red-800"
                                           onClick={() => {
                                             removeCartItem(product.id);
                                           }}
                                         >
                                           <TrashIcon
-                                            className="h-6 w-6 text-deepoe_default-black"
+                                            className="h-6 w-6 stroke-0"
                                             aria-hidden="true"
                                           />
                                         </button>

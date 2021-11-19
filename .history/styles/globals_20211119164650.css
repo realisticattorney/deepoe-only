@@ -5,11 +5,13 @@
 html,
 body {
   font-family: 'TiffanyStd-Demi';
+  font-color: '#302e2f';
 }
 
 * {
-  @apply text-deepoe_default-black;
+  @apply text-blue-500; // can also customize it to have a `text-primary-500`
 }
+
 
 @layer components {
   .font-public-sans-normal {

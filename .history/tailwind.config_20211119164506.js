@@ -39,8 +39,7 @@ module.exports = {
           pink: '#dfd0e1',
         },
         deepoe_default: {
-          black: '#302e2f',
-        },
+          black: '#1d1d1d',
       },
       fontSize: {
         xs: ' 0.625rem',

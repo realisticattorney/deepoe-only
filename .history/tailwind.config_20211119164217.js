@@ -5,6 +5,9 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    colors: {
+      black: {}
+    },
     extend: {
       fontFamily: {
         mono: ["'Public Sans'", ...defaultTheme.fontFamily.mono],
@@ -37,9 +40,6 @@ module.exports = {
           cream: '#F5F3EE',
           chocolate: '#302E2F',
           pink: '#dfd0e1',
-        },
-        deepoe_default: {
-          black: '#302e2f',
         },
       },
       fontSize: {

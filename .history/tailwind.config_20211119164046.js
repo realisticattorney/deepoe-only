@@ -10,7 +10,9 @@ module.exports = {
         mono: ["'Public Sans'", ...defaultTheme.fontFamily.mono],
         sans: ["'TiffanyStd-Demi'", ...defaultTheme.fontFamily.sans],
       },
-
+      colors:{
+        'black': '#302e2f',
+      }
       spacing: {
         1.2: '0.275rem',
         1.3: ' 0.3rem',
@@ -37,9 +39,6 @@ module.exports = {
           cream: '#F5F3EE',
           chocolate: '#302E2F',
           pink: '#dfd0e1',
-        },
-        deepoe_default: {
-          black: '#302e2f',
         },
       },
       fontSize: {

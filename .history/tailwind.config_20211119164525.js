@@ -40,8 +40,7 @@ module.exports = {
         },
         deepoe_default: {
           black: '#302e2f',
-        },
-      },
+      },}
       fontSize: {
         xs: ' 0.625rem',
         lg2: '1.25rem',

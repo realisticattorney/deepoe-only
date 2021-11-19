@@ -8,7 +8,7 @@ body {
 }
 
 * {
-  @apply text-deepoe_default-black;
+  @apply text-deepoe_default-black; // can also customize it to have a `text-primary-500`
 }
 
 @layer components {

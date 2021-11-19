@@ -5,10 +5,10 @@
 html,
 body {
   font-family: 'TiffanyStd-Demi';
+  font-color: "302e2f";
 }
-
-* {
-  @apply text-deepoe_default-black;
+.carousel-indicators li {
+  background-color: black;
 }
 
 @layer components {

@@ -81,8 +81,7 @@ const Nav = () => {
         </div>
         <MiniCart cart={cart} />
       </div>
-    {router.pathname === '/' && (
-      <Link href="/collections/all-products" passHref>
+    {router.pathname === '/' && (}
     <div className="absolute w-full h-24 top-0 left-0 z-40">
         <Image
           src="/deepoeHome.jpg"
@@ -93,7 +92,7 @@ const Nav = () => {
           // height="100hv"
           // width=""
         />
-      </div></Link> )}
+      </div>
     </header>
   );
 };

@@ -131,10 +131,6 @@ export default function Contact() {
                   value: 8,
                   message: "Your phone number can't be this long",
                 },
-                pattern: {
-                  value: /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/,
-                  message: 'This needs to be a valid US number',
-                },
               })}
               className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none focus:ring-2 ${
                 errors.message ? 'ring-2 ring-red-500' : null
@@ -151,16 +147,15 @@ export default function Contact() {
             </label>
             <textarea
               name="subject"
-              type="text"
               rows="1"
-              {...register('subject', {
+              {...register('message', {
                 required: {
                   value: true,
                   message: 'You need to enter your subject',
                 },
                 maxLength: {
                   value: 1000,
-                  message: 'Your subject must be shorter',
+                  message: "Your subject must be shorter",
                 },
                 minLength: {
                   value: 10,

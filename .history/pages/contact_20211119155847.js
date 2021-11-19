@@ -133,7 +133,7 @@ export default function Contact() {
                 },
                 pattern: {
                   value: /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/,
-                  message: 'This needs to be a valid US number',
+                  message: 'This needs to be a valid email address',
                 },
               })}
               className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none focus:ring-2 ${
@@ -151,9 +151,8 @@ export default function Contact() {
             </label>
             <textarea
               name="subject"
-              type="text"
               rows="1"
-              {...register('subject', {
+              {...register('message', {
                 required: {
                   value: true,
                   message: 'You need to enter your subject',

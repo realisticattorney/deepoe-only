@@ -153,7 +153,7 @@ export default function Contact() {
               name="subject"
               type="text"
               rows="1"
-              {...register('subject', {
+              {...register('message', {
                 required: {
                   value: true,
                   message: 'You need to enter your subject',

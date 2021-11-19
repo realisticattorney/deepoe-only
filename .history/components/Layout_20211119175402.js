@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Head from 'next/head';
 import Script from 'next/script';
-
+// import eye from "../public/svg1.svg";
 const Layout = ({ children }) => {
   return (
     <div className="flex flex-col min-h-screen bg-deepoe-cream">
@@ -65,18 +65,16 @@ const Layout = ({ children }) => {
           </ul>
         </div>
         <div className="flex-col text-xs self-end -mb-2">
-          <div className="flex-col space-y-0">
+          <ul className="flex-col space-y-0.5 ">
             {/* <li>Careers</li> */}
-            <div className="-pl-2 -mb-2.5 pr-3">
-              <Image
-                src="/logo.svg"
-                height={48}
-                width={48}
-                className="svg-stroke"
-              />
-            </div>
-            <p className="">© 2022 deepoe</p>
-          </div>
+            <img
+              src="/public/svg1.svg"
+              height={30}
+              width={30}
+              className=" bg-white"
+            />
+            <li>© 2022 deepoe</li>
+          </ul>
         </div>
 
         <div className="self-end">

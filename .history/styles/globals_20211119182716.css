@@ -12,7 +12,7 @@ svg path {
 }
 
 .svg-stroke {
-  stroke-width: 3;
+  
 }
 body {
   @apply text-deepoe_default-black;

@@ -11,9 +11,7 @@ svg path {
   /* color: #302e2f; */
 }
 
-.svg-stroke {
-  stroke-width: 3;
-}
+svg-stroke.
 body {
   @apply text-deepoe_default-black;
 }

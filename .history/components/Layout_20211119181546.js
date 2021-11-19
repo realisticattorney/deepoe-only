@@ -67,13 +67,8 @@ const Layout = ({ children }) => {
         <div className="flex-col text-xs self-end -mb-2">
           <div className="flex-col space-y-0">
             {/* <li>Careers</li> */}
-            <div className="-pl-2 -mb-2.5 pr-3">
-              <Image
-                src="/logo.svg"
-                height={48}
-                width={48}
-                className="svg-stroke"
-              />
+            <div className="-pl-2 -mb-3 ">
+              <Image src="/logo.svg" height={46} width={46} />
             </div>
             <p className="">© 2022 deepoe</p>
           </div>

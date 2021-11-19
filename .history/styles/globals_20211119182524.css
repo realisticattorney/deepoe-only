@@ -7,13 +7,10 @@ body {
   font-family: 'TiffanyStd-Demi';
 }
 svg path {
-  stroke-width: 1.2;
+  stroke-width: 2;
   /* color: #302e2f; */
 }
 
-.svg-stroke {
-  stroke-width: 3;
-}
 body {
   @apply text-deepoe_default-black;
 }

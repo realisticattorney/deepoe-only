@@ -121,7 +121,7 @@ const ProductForm = ({ product }) => {
           {product.variants.edges[0].node.compareAtPriceV2?.amount && (
             <p className="flex items-center text-xs">
               
-            <ExclamationCircleIcon className="h-4 flex pr-1" />Final Sale! No Returns
+              Final Sale! No Returns
             </p>
           )}
         </div>

@@ -16,10 +16,8 @@ svg path {
 }
 body {
   @apply text-deepoe_default-black;
-  /* overflow-y: scroll; */
+  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
-  /* height: 100%; */
-  /* position: fixed; */
 }
 
 @layer components {

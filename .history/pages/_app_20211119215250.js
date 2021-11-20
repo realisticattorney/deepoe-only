@@ -46,10 +46,11 @@ const client = new ApolloClient({
 
 ///progress bar
 const progress = new ProgressBar({
-  size: 5,
+  size: 6,
   color: '#302E2F',
   className: 'z-50',
-  delay: 30,
+  speed: 100,
+  delay: 20,
 });
 
 Router.events.on('routeChangeStart', progress.start);

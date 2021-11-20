@@ -5,8 +5,7 @@
 html,
 body {
   font-family: 'TiffanyStd-Demi';
-  min-height: -webkit-fill-available;
-  height: 100vh;
+  min-height: -webkit-fill-available
 }
 svg path {
   stroke-width: 1.2;

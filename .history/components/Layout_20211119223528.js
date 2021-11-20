@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
   console.log('routerssss', router);
 
   return (
-    <div className="flex flex-col min-h-screen h-full bg-deepoe-cream">
+    <div className="flex flex-col min-h-screen  bg-deepoe-cream">
       <Script
         async
         type="text/javascript"

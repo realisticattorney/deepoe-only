@@ -5,10 +5,9 @@
 html,
 body {
   font-family: 'TiffanyStd-Demi';
-  height: 100%;
-  box-sizing: border-box;
+  min-height: -webkit-fill-available;
+  height: 100vh;
 }
-
 svg path {
   stroke-width: 1.2;
   /* color: #302e2f; */

@@ -180,7 +180,7 @@ export default function MiniCart({ cart }) {
                   </div>
 
                   {cart.length > 0 ? (
-                    <div className="px-4 sm:px-6 font-mono ">
+                    <div className="px-4 sm:px-6 font-mono  flex-grow-0">
                       <div className="pt-4 border-t border-gray-900 space-y-1.5 flex-col  text-gray-900">
                         <div className="flex justify-between">
                           <p>Subtotal</p>
@@ -201,7 +201,7 @@ export default function MiniCart({ cart }) {
                       {/* <p className="mt-0.5 text-sm text-gray-500">
                         Shipping and taxes calculated at checkout.
                       </p> */}
-                      <div className="mt-5 mb-32">
+                      <div className="mt-5">
                         <a
                           href={checkoutUrl}
                           className="flex justify-center items-center px-6 py-1.5 border border-transparent shadow-sm text-2xl font-base text-white bg-deepoe-chocolate hover:bg-gray-800 font-sans"
@@ -209,7 +209,19 @@ export default function MiniCart({ cart }) {
                           Checkout
                         </a>
                       </div>
-            
+                      <div className="mt-10 flex justify-center text-sm text-center text-gray-500">
+                        {/* <p>
+                          or{' '} */}
+                        {/* <button
+                            type="button"
+                            className="font-medium hover:text-gray-800"
+                            onClick={() => setCartOpen(false)}
+                          >
+                            Continue Shopping
+                            <span aria-hidden="true"> &rarr;</span>
+                          </button> */}
+                        {/* </p> */}
+                      </div>
                     </div>
                   ) : null}
                 </div>

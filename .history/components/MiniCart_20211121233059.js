@@ -201,7 +201,7 @@ export default function MiniCart({ cart }) {
                       {/* <p className="mt-0.5 text-sm text-gray-500">
                         Shipping and taxes calculated at checkout.
                       </p> */}
-                      <div className="mt-5 mb-32">
+                      <div className="mt-5 mb-10">
                         <a
                           href={checkoutUrl}
                           className="flex justify-center items-center px-6 py-1.5 border border-transparent shadow-sm text-2xl font-base text-white bg-deepoe-chocolate hover:bg-gray-800 font-sans"

@@ -5,7 +5,7 @@ export default async (req, res) => {
   console.log(email, password);
   //create user for shopify store front
   const customer = await customerAccessTokenCreate(
-    JSON.stringify({ email: email, password: password })
+    JSON.stringify({email: email, password: password })
   );
   console.log(customer);
 

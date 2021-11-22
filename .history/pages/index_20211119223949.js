@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="h-full">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />

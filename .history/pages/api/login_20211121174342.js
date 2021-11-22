@@ -5,7 +5,7 @@ export default async (req, res) => {
   console.log(email, password);
   //create user for shopify store front
   const customer = await customerAccessTokenCreate(
-    JSON.stringify({ email: email, password: password })
+    JSON.stringify({email: email, password: password })
   );
   console.log(customer);
 
@@ -17,3 +17,4 @@ export default async (req, res) => {
 
   res.status(200).json(req.body);
 };
+//english being the protocol in which most of humanity's value is produced and exchanged. Character

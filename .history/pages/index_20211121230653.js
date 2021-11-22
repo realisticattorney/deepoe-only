@@ -9,7 +9,7 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-        <div className="absolute w-full min-h-screen h-full top-0 left-0">
+        <div className="absolute w-full h-screen top-0 left-0">
           <Link href="/collections/frontpage" passHref>
             <a href="">
               <Image

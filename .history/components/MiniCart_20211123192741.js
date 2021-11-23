@@ -106,9 +106,7 @@ export default function MiniCart({ cart }) {
                                     {product.variantTitle !== "Default Title" ? (
                                       <p className="text-sm font-mono">
                                         {product.variantTitle}
-                                      </p>
-                                      ) : (
-                                        <div></div>)}
+                                      </p>)}
                                       <p className="ml-4 -mt-0.5 text-deepoe_default-black">
                                         <button
                                           type="button"

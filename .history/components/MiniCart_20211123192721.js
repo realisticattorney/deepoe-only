@@ -103,12 +103,10 @@ export default function MiniCart({ cart }) {
                                       </h3>
                                     </div>
                                     <div className="flex justify-between mt-2">
-                                    {product.variantTitle !== "Default Title" ? (
+                                    {product.variantTitle === "Default Title" 
                                       <p className="text-sm font-mono">
                                         {product.variantTitle}
                                       </p>
-                                      ) : (
-                                        <div></div>)}
                                       <p className="ml-4 -mt-0.5 text-deepoe_default-black">
                                         <button
                                           type="button"

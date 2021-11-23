@@ -108,7 +108,7 @@ export default function MiniCart({ cart }) {
                                         {product.variantTitle}
                                       </p>
                                       ) : (
-                                        <div></div>)}
+                                        }
                                       <p className="ml-4 -mt-0.5 text-deepoe_default-black">
                                         <button
                                           type="button"

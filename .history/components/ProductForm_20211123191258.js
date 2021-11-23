@@ -128,7 +128,7 @@ const ProductForm = ({ product }) => {
           onClick={() => {
             addToCart(selectedVariant);
           }}
-          className="bg-deepoe-chocolate text-white px-2 py-2 mt-1 mb-3 text-2xl font-sans  w-full active:scale-95"
+          className="bg-deepoe-chocolate text-white px-2 py-2 mt-1 mb-3 text-2xl  w-full hover:size90"
         >
           Add to Cart
         </button>

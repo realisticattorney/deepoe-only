@@ -79,7 +79,7 @@ const ProductForm = ({ product }) => {
         </h2>
         <div className="pb-3.5 pt-1 items-center flex justify-between">
           <div className="flex items-start">
-            <span className="text-lg font-extralight">
+            <span className="text-lg  ">
               {formatter.format(product.variants.edges[0].node.priceV2.amount)}
             </span>
             {product.variants.edges[0].node.compareAtPriceV2 ? (
@@ -115,12 +115,13 @@ const ProductForm = ({ product }) => {
         ))}
         <div className="text-sm font-light mb-2.5 mt-0.5 space-y-1.5">
           <p className="flex items-center text-xs">
-            <TruckIcon className="h-4 flex pr-1" /> Usually ships in 1-2 weeks
+          <TruckIcon className="h-4 flex pr-1" /> Usually ships in
+            1-2 weeks
           </p>
           {product.variants.edges[0].node.compareAtPriceV2?.amount && (
             <p className="flex items-center text-xs">
-              <ExclamationCircleIcon className="h-4 flex pr-1" />
-              Final Sale! No Returns
+              
+            <ExclamationCircleIcon className="h-4 flex pr-1" />Final Sale! No Returns
             </p>
           )}
         </div>
@@ -128,7 +129,7 @@ const ProductForm = ({ product }) => {
           onClick={() => {
             addToCart(selectedVariant);
           }}
-          className="bg-deepoe-chocolate text-white px-2 py-2 mt-1 mb-3 text-2xl font-sans  w-full active:scale-95"
+          className="bg-deepoe-chocolate text-white px-2 py-2 mt-1 mb-3 text-2xl  w-full hover:bg-gray-800 font-sans"
         >
           Add to Cart
         </button>

@@ -209,7 +209,7 @@ export default function Contact() {
           <div className="justify-self-end">
             <button
               type="submit"
-              className="inline-flex font-sans items-center self-center justify-center py-1.5 mt-2.5 w-36 border border-transparent shadow text-2xl  text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2 active:outline-none"
+              className="inline-flex font-sans justify-center py-1.5 mt-2.5 w-36 border border-transparent shadow text-2xl  text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2 active:outline-none"
             >
               Submit
             </button>

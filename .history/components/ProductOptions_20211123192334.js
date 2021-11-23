@@ -7,9 +7,9 @@ const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
 
   if(selectedOptions.title === "Default Title" || name === "Title"){
     return (
-      <div className="-mb-3">
-      </div>
-    )
+      <div className="product-options">
+        <h3>{name}</h3></div>
+        
   }
 
   return (

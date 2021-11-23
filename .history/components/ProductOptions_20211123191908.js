@@ -2,15 +2,7 @@ const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
   // console.log(quantityAvailable)
   // console.log(setOptions)
   console.log("kakakakaka",selectedOptions)
-  console.log("name",name)
-  console.log("values",values)
-
-  if(selectedOptions.title === "Default Title" || name === "Title"){
-    return (
-      <div className="-mb-3">
-      </div>
-    )
-  }
+  console.log("kakakakaka",name)
 
   return (
     <fieldset>

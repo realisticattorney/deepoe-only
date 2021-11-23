@@ -76,8 +76,8 @@ const Nav = () => {
             </a>
           ) : (
             <p
-              className={`cursor-pointer font-mono text-lg  font-extralight ${
-                !cartOpen ? `` : 'pt-0'
+              className={`cursor-pointer font-mono text-lg  font-extralight${
+                !cartOpen ? `` : 'font-normal pt-0'
               }`}
             >
               {/* `cart(${cartQuantity})` */}

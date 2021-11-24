@@ -18,10 +18,12 @@ const ProductList = ({ collection, products }) => {
                 collection.length === 10 ||
                 (collection.length === 11 && 'left-18')
               } ${collection.length === 9 && 'left-16'} 
-               
-              ${collection === 'dinnerware' && 'left-20'}
-              ${collection === 'drinkware' && 'left-24'}
-              ${collection === 'accessories' && 'left-20'}
+               ${collection.length === 4 && 'left-40'} ${
+                collection.length === 8 && 'left-24'
+              }
+              ${
+                collection === '8' && 'left-24'
+              }
                ${collection.length === 7 && 'left-24'}`}
             >
               {collection === 'frontpage' ? 'all products' : collection}

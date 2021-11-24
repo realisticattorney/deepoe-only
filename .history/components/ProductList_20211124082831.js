@@ -21,7 +21,6 @@ const ProductList = ({ collection, products }) => {
                
               ${collection === 'dinnerware' && 'left-20'}
               ${collection === 'drinkware' && 'left-24'}
-              ${collection === 'accessories' && 'left-20'}
                ${collection.length === 7 && 'left-24'}`}
             >
               {collection === 'frontpage' ? 'all products' : collection}

@@ -16,7 +16,6 @@ export default AllCollections;
 export async function getStaticProps() {
   const allCollections = await getCollections();
 
-  
   return {
     props: { allCollections },
   };

@@ -37,10 +37,9 @@ const Banner = ({ product, selectedVariant }) => {
         selectedItem={index}
         onChange={(index) => setIndex(index)}
         showArrows={true}
-        
       >
         {imageSrc.map((i) => (
-          <div className="w-full h-72  from-gray-100  bottom-0 relative" key={i}>
+          <div className="w-full h-90  from-gray-100  bottom-5 relative" key={i}>
             <Image
               quality={100}
               loading="lazy"

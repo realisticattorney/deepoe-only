@@ -87,7 +87,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                               Shop All
                             </a>
                           </Link>
-                          <Link href={`/collections/dinnerware`}>
+                           <Link href={`/collections/dishware`}>
                             <a
                               className="block text-lg"
                               onClick={() => wrapperSetParentState(false)}
@@ -95,23 +95,23 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                               Dinnerware
                             </a>
                           </Link>
-                          <Link href={`/collections/drinkware`}>
+                          <Link href={`/collections/towels`}>
                             <a
                               className="block text-lg"
                               onClick={() => wrapperSetParentState(false)}
                             >
-                              Drinkware
+                              Linens & Towels
                             </a>
                           </Link>
-                          <Link href={`/collections/accessories`}>
+                          <Link href={`/collections/rugs`}>
                             <a
                               className="block text-lg"
                               onClick={() => wrapperSetParentState(false)}
                             >
-                              Accessories
+                              Rugs
                             </a>
                           </Link>
-                          {/* <Link href={`/collections/furniture`}>
+                         {/* <Link href={`/collections/furniture`}>
                             <a
                               className="block text-lg"
                               onClick={() => wrapperSetParentState(false)}

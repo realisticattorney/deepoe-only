@@ -18,7 +18,7 @@ const ProductList = ({ collection, products }) => {
                 collection === 'frontpage' ? 'left-16' : ''
               } ${collection === 'dinnerware' ? 'left-16' : ''} ${
                 collection === 'drinkware' ? 'left-20' : ''
-              } ${collection === 'accessories' ? 'left-18' : ''}
+              } ${collection === 'accessories' ? 'left-16' : ''}
                ${collection === 'rugs' ? 'left-40' : ''} ${
                 collection === 'furniture' ? 'left-24' : ''
               }`}

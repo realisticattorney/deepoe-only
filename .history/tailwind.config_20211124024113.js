@@ -21,11 +21,10 @@ module.exports = {
         0.7: ' 0.19rem',
         0.1: ' 0.04rem',
         2.7: ' 0.7rem',
-        18: "4.5rem"
       },
       height: {
         120: '60rem',
-        90: '22rem',
+        90: '60rem',
       },
       width: {
         150: '50rem',

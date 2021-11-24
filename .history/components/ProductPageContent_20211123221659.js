@@ -94,7 +94,7 @@ const ProductPageContent = ({ collection, product }) => {
               </p>
             </div>
             <div className="max-h-0 overflow-hidden duration-300   group-focus:py-2 font-public-sans-normal  group-focus:max-h-56  text-sm text-left font-extralight  border-b border-gray-700">
-              {product.description}
+              {product.}
             </div>
           </button>
           <button className="group focus:outline-none">

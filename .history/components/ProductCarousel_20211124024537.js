@@ -37,7 +37,6 @@ const Banner = ({ product, selectedVariant }) => {
         selectedItem={index}
         onChange={(index) => setIndex(index)}
         showArrows={true}
-        
       >
         {imageSrc.map((i) => (
           <div className="w-full h-72  from-gray-100  bottom-0 relative" key={i}>

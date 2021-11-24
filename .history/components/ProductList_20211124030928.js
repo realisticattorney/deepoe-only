@@ -16,9 +16,9 @@ const ProductList = ({ collection, products }) => {
             <h2
               className={`text-5xl text-white absolute top-24 italic font-medium mb-6 ${
                 collection === 'frontpage' ? 'left-16' : ''
-              } ${collection === 'dinnerware' ? 'left-16' : ''} ${
-                collection === 'drinkware' ? 'left-20' : ''
-              } ${collection === 'accessories' ? 'left-18' : ''}
+              } ${collection === 'dinnerware' ? 'left-20' : ''} ${
+                collection === 'drinkware' ? 'left-28' : ''
+              } ${collection === 'accessories' ? 'left-16' : ''}
                ${collection === 'rugs' ? 'left-40' : ''} ${
                 collection === 'furniture' ? 'left-24' : ''
               }`}

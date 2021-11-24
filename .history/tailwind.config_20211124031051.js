@@ -21,7 +21,7 @@ module.exports = {
         0.7: ' 0.19rem',
         0.1: ' 0.04rem',
         2.7: ' 0.7rem',
-        18: "4.5rem"
+        18: ""
       },
       height: {
         120: '60rem',

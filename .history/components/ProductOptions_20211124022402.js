@@ -46,8 +46,7 @@ const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
                   ${value == 'Grey' || value == 'Gray' ? 'bg-gray-600' : ''}
                   ${value == 'White' ? 'bg-white' : ''}
                   ${value == 'Tangerine' ? 'bg-yellow-500' : ''}
-                  ${value == 'Yellow' ? 'bg-yellow-300' : ''}
-                  ${value == 'Teal' ? 'bg-green-300' : ''}
+                  ${value == 'Yellow' ? 'bg-yellow-500' : ''}
                   ${value == 'Olive' || value == 'Moss' ? 'bg-green-600' : ''}`}
                   ></div>
                 </div>

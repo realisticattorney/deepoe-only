@@ -40,7 +40,7 @@ const Banner = ({ product, selectedVariant }) => {
         
       >
         {imageSrc.map((i) => (
-          <div className="w-full h-96  from-gray-100  bottom-0 relative" key={i}>
+          <div className="w-full h-72  from-gray-100  bottom-0 relative" key={i}>
             <Image
               quality={100}
               loading="lazy"

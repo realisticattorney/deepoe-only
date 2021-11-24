@@ -31,7 +31,7 @@ const Nav = () => {
         router.pathname === '/' ? 'bg-transparent' : 'bg-deepoe-cream'
       } z-30 `}
     >
-      <div className="flex items-center justify-between max-w-6xl  pt-0 px-5 mx-auto">
+      <div className="flex items-center justify-between max-w-6xl  pt-3 px-5 mx-auto">
         <div className="w-12 pl-1 pt-0 z-50">
           {!parentState && !cartOpen ? (
             <a
@@ -58,7 +58,7 @@ const Nav = () => {
           // cancelButtonRef={cancelButtonRef}
         />
         <Link href="/collections/frontpage" passHref>
-          <a className="cursor-pointer pt-2.5 z-50">
+          <a className="cursor-pointer z-50">
             {/* <span className="text-4xl font-medium tracking-tighter">
               deepoe
             </span> */}
@@ -70,7 +70,7 @@ const Nav = () => {
             />
           </a>
         </Link>
-        <div className="w-14 pt-0 z-50">
+        <div className="w-14 pt-1 z-50">
           {!cartOpen && !parentState ? (
             <a
               className="cursor-pointer  font-mono text-lg  font-extralight"

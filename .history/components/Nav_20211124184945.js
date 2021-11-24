@@ -58,7 +58,7 @@ const Nav = () => {
           // cancelButtonRef={cancelButtonRef}
         />
         <Link href="/collections/frontpage" passHref>
-          <a className="cursor-pointer pt-2.5 z-50">
+          <a className="cursor-pointer pt-1.5 z-50">
             {/* <span className="text-4xl font-medium tracking-tighter">
               deepoe
             </span> */}

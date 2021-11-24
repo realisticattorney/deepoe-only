@@ -4,7 +4,7 @@ import { getProduct, getProductFromCollections } from '../../../lib/shopify';
 const Product = ({ collection, product }) => {
   // console.log('proooooodcut', product);
   return (
-    <div className={`min-h-screen pb-2`}>
+    <div className={`min-h-screen py-2`}>
       {/* <div
         id="stamped-main-widget"
         data-product-id={`${product.id}`}

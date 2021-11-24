@@ -31,7 +31,7 @@ const Nav = () => {
         router.pathname === '/' ? 'bg-transparent' : 'bg-deepoe-cream'
       } z-30 `}
     >
-      <div className="flex items-center justify-between max-w-6xl  pt-3 px-5 mx-auto">
+      <div className="flex items-center justify-between max-w-6xl  pt-3 -pb-2 px-5 mx-auto">
         <div className="w-12 pl-1 pt-1 z-50">
           {!parentState && !cartOpen ? (
             <a
@@ -64,7 +64,7 @@ const Nav = () => {
             </span> */}
             <Image
               src="/deepoeLogo.svg"
-              height={50}
+              height={56}
               width={220}
               className="svg-stroke"
             />

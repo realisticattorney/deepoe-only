@@ -1,16 +1,20 @@
 const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
   // console.log(quantityAvailable)
   // console.log(setOptions)
-  console.log('kakakakaka', selectedOptions);
-  console.log('name', name);
-  console.log('values', values);
+  console.log("kakakakaka",selectedOptions)
+  console.log("name",name)
+  console.log("values",values)
 
-  if (selectedOptions.title === 'Default Title' || name === 'Title') {
-    return <div className="-mb-3"></div>;
+  if(selectedOptions.title === "Default Title" || name === "Title"){
+    return (
+      <div className="-mb-3">
+      </div>
+    )
   }
 
   return (
     <fieldset>
+      {/* <legend className="text-xl font-semibold">{name}</legend> */}
       <div className="inline-flex items-center flex-wrap">
         {values.map((value) => {
           const id = `option-${name}-${value}`;
@@ -31,22 +35,17 @@ const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
               />
               {name === 'Color' ? (
                 <div
-                  className={`border p-0.5 mx-0.5  rounded-full ${
-                    checked ? 'border-deepoe-chocolate' : 'border-transparent'
+                  className={`border p-0.5 mx-0.5 border-deepoe-chocolate rounded-full ${
+                    checked ? 'border-deepoe-chocolate' : 'border-none'
                   }`}
                 >
                   <div
                     className={`p-3.5  text-lg rounded-full block cursor-pointer
                   
-                  ${
-                    value == 'Black' || value == 'Forest'
-                      ? 'bg-deepoe_default-black'
-                      : ''
-                  }
+                  ${value == 'Black' ? 'bg-deepoe_default-black' : ''}
                   ${value == 'Grey' || value == 'Gray' ? 'bg-gray-600' : ''}
                   ${value == 'White' ? 'bg-white' : ''}
-                  ${value == 'Tangerine' ? 'bg-yellow-500' : ''}
-                  ${value == 'Olive' || value == 'Moss' ? 'bg-green-600' : ''}`}
+                  ${value == 'Olive'  ? 'bg-green-600' : ''}`}
                   ></div>
                 </div>
               ) : null}

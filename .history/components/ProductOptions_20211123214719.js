@@ -11,6 +11,7 @@ const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
 
   return (
     <fieldset>
+      {/* <legend className="text-xl font-semibold">{name}</legend> */}
       <div className="inline-flex items-center flex-wrap">
         {values.map((value) => {
           const id = `option-${name}-${value}`;
@@ -31,8 +32,8 @@ const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
               />
               {name === 'Color' ? (
                 <div
-                  className={`border p-0.5 mx-0.5  rounded-full ${
-                    checked ? 'border-deepoe-chocolate' : 'border-transparent'
+                  className={`border p-0.5 mx-0.5 border-deepoe-chocolate rounded-full ${
+                    checked ? 'border-deepoe-chocolate' : 'border-none'
                   }`}
                 >
                   <div

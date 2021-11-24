@@ -6,7 +6,7 @@ const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
   console.log('values', values);
 
   if (selectedOptions.title === 'Default Title' || name === 'Title') {
-    return <div className="-mb-3"></div>;
+    return <div className=""></div>;
   }
 
   return (
@@ -31,8 +31,8 @@ const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
               />
               {name === 'Color' ? (
                 <div
-                  className={`border p-0.5 mx-0.5  rounded-full ${
-                    checked ? 'border-deepoe-chocolate' : 'border-transparent'
+                  className={`border p-0.5 mx-0.5 border-deepoe-chocolate rounded-full ${
+                    checked ? 'border-deepoe-chocolate' : 'border-none'
                   }`}
                 >
                   <div

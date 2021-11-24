@@ -11,7 +11,7 @@ const ProductCard = ({ collection, product }) => {
     <Link href={`/collections/${collection}/${handle}`}>
       <a className="group px-2">
         <div className="w-full  overflow-hidden">
-          <div className="relative h-110">
+          <div className="relative h-96">
             <Image
               src={originalSrc}
               alt={altText}

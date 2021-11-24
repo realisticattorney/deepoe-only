@@ -70,7 +70,7 @@ const Nav = () => {
             />
           </a>
         </Link>
-        <div className="w-14 pt-1 z-50">
+        <div className="w-14 pt-1 pr-1 z-50">
           {!cartOpen && !parentState ? (
             <a
               className="cursor-pointer  font-mono text-lg  font-extralight"

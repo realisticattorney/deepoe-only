@@ -62,10 +62,11 @@ const Nav = () => {
             {/* <span className="text-4xl font-medium tracking-tighter">
               deepoe
             </span> */}
+            <div>
             <Image
               src="/deepoeLogo.svg"
-              height={56}
-              width={220}
+              height={64}
+              width={240}
               className="svg-stroke"
             />
           </a>

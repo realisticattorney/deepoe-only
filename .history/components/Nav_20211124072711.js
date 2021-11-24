@@ -64,7 +64,7 @@ const Nav = () => {
             </span> */}
             <Image
               src="/deepoeLogo.svg"
-              height={56}
+              height={64}
               width={220}
               className="svg-stroke"
             />

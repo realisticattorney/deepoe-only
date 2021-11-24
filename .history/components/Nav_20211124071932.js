@@ -59,15 +59,9 @@ const Nav = () => {
         />
         <Link href="/collections/frontpage" passHref>
           <a className="cursor-pointer z-50">
-            {/* <span className="text-4xl font-medium tracking-tighter">
+            <span className="text-4xl font-medium tracking-tighter">
               deepoe
-            </span> */}
-            <Image
-              src="/deepoeLogo.svg"
-              height={56}
-              width={220}
-              className="svg-stroke"
-            />
+            </span>
           </a>
         </Link>
         <div className="w-14 pt-1 z-50">

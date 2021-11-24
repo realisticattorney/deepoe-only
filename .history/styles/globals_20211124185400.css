@@ -22,7 +22,7 @@ body {
 }
 
 .my__carousel_main {
-  div {
+  /* div { */
     ol {
       li {
         background-color: red;

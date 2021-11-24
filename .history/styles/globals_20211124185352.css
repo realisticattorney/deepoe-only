@@ -23,7 +23,7 @@ body {
 
 .my__carousel_main {
   div {
-    ol {
+    /* ol { */
       li {
         background-color: red;
         border-radius: 50%;

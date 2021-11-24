@@ -16,7 +16,7 @@
 // //     customerUserErrors {
 // //       code
 // //       field
-// //       message  
+// //       messagevb
 // //     }
 // //   }
 // // }

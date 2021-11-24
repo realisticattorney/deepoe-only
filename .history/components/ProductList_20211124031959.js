@@ -17,11 +17,11 @@ const ProductList = ({ collection, products }) => {
               className={`text-5xl text-white absolute top-24 italic font-medium mb-6  ${
                 collection.length === 10 ||
                 (collection.length === 11 && 'left-18')
-              } ${collection.length === 9 && 'left-16'} 
+              } ${collection.length === 9 && 'left-'} 
                ${collection.length === 4 && 'left-40'} ${
                 collection.length === 8 ||
                 (collection.length === 7 && 'left-24')
-              }`}
+              }${collection === 'frontpage' ? 'left-20' : ''}`}
             >
               {collection === 'frontpage' ? 'all products' : collection}
             </h2>

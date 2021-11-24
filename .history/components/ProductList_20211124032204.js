@@ -21,7 +21,7 @@ const ProductList = ({ collection, products }) => {
                ${collection.length === 4 && 'left-40'} ${
                 collection.length === 8 ||
                 (collection.length === 7 && 'left-24')
-              }`}
+              }${collection === 'frontpage' ? 'left-16' : ''}`}
             >
               {collection === 'frontpage' ? 'all products' : collection}
             </h2>

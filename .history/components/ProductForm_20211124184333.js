@@ -113,7 +113,7 @@ const ProductForm = ({ product }) => {
             setOptions={setOptions} //just passing the function to the ProductOptions component to be called when the user changes the selected option
           />
         ))}
-        <div className="text-sm font-light mb-3 mt-1.5 space-y-1.5">
+        <div className="text-sm font-light mb-3.5 mt-1 space-y-1.5">
           <p className="flex items-center text-sm">
             <TruckIcon className="h-5 flex pr-1" /> Usually ships in 1-2 weeks
           </p>

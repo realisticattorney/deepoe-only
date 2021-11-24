@@ -113,9 +113,9 @@ const ProductForm = ({ product }) => {
             setOptions={setOptions} //just passing the function to the ProductOptions component to be called when the user changes the selected option
           />
         ))}
-        <div className="text-sm font-light mb-3 mt-1.5 space-y-1.5">
+        <div className="text-sm font-light mb-2.5 mt-0.5 space-y-1.5">
           <p className="flex items-center text-sm">
-            <TruckIcon className="h-5 flex pr-1" /> Usually ships in 1-2 weeks
+            <TruckIcon className="h-4 flex pr-1" /> Usually ships in 1-2 weeks
           </p>
           {product.variants.edges[0].node.compareAtPriceV2?.amount && (
             <p className="flex items-center text-xs">
@@ -128,7 +128,7 @@ const ProductForm = ({ product }) => {
           onClick={() => {
             addToCart(selectedVariant);
           }}
-          className="bg-deepoe-chocolate text-white px-2 py-2 mt-1 mb-3 text-2xl font-sans self-center justify-self-center items-center  w-full active:scale-95"
+          className="bg-deepoe-chocolate text-white px-2 py-2 mt-1 mb-3 text-2xl font-sans  w-full active:scale-95"
         >
           Add to Cart
         </button>

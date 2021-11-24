@@ -147,7 +147,7 @@ const ProductPageContent = ({ collection, product }) => {
         <div className="relative h-96">
           <Image src="/brunch.jpg" layout="fill" objectFit="cover" />
         </div>
-        <div className="font-sans italic font-medium text-xl2 tracking-tighter mt-8 mb-3 px-6">
+        <div className="font-sans italic font-medium text-3xlg tracking-tighter mt-8 mb-4 px-6">
           At deepoe, we believe in
         </div>
         <div className="py-3.5">

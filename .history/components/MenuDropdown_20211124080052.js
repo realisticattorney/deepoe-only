@@ -34,7 +34,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
             <Dialog.Overlay className="absolute inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
           </Transition.Child>
 
-          <div className="fixed inset-y-0 top-16 left-0 pr-0 max-w-full flex">
+          <div className="fixed inset-y-0 top-24 left-0 pr-0 max-w-full flex">
             <Transition.Child
               as={Fragment}
               enter="transform transition ease-in-out duration-500 sm:duration-700"

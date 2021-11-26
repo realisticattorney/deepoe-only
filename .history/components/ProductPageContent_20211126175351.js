@@ -6,7 +6,11 @@ import { MinusIcon, PlusIcon } from '@heroicons/react/outline';
 import { useEffect, useState } from 'react';
 
 const ProductPageContent = ({ collection, product }) => {
-  
+  console.log('product_id', product);
+  const atobURL = atob(product.id);
+  const atobId = atobURL.split('Product/')[1];
+  console.log('atobURL', atobURL);
+  console.log('atobId', atobId);
   // const [reviews, setReviews] = useState([]);
 
   // useEffect(() => {
@@ -77,7 +81,7 @@ const ProductPageContent = ({ collection, product }) => {
 
       <div className="flex flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 px-2 mx-auto">
         <div className="w-full max-w-md  overflow-hidden"></div>
-        <ProductForm product={product} collection={collection} />
+        <ProductForm product={product} />
 
         <div className="flex flex-col w-full border-t pt-2 border-deepoe-chocolate">
           <button className="group focus:outline-none" onClick={handleShow}>

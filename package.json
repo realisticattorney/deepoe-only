@@ -12,6 +12,7 @@
     "@heroicons/react": "^1.0.5",
     "apollo-boost": "^0.4.9",
     "apollo-client": "^2.6.10",
+    "atob": "^2.1.2",
     "axios": "^0.24.0",
     "graphql-tag": "^2.12.6",
     "next": "latest",

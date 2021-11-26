@@ -4,9 +4,8 @@ import ProductOptions from './ProductOptions';
 import { CartContext } from '../context/shopContext';
 import ProductCarousel from './ProductCarousel';
 import { ExclamationCircleIcon, TruckIcon } from '@heroicons/react/outline';
-import atob from 'atob';
 
-const ProductForm = ({ product, collection }) => {
+const ProductForm = ({ product }) => {
   const { addToCart } = useContext(CartContext);
 
   const allVariantOptions = product.variants.edges?.map((variant) => {
@@ -30,13 +29,6 @@ const ProductForm = ({ product, collection }) => {
       availableForSale: variant.node.availableForSale,
     };
   });
-
-  console.log('product_id', product);
-  const atobURL = atob(product.id);
-  const atobId = atobURL.split('Product/')[1];
-  console.log('atobURL', atobURL);
-  console.log('atobId', atobId);
-
   // console.log(allVariantOptions);
   const defaultValues = {}; //saving here the default values of the form
 
@@ -82,17 +74,16 @@ const ProductForm = ({ product, collection }) => {
       </div>
 
       <div
-        className="yotpo bottomLine h-20"
+        class="yotpo bottomLine"
         data-appkey="hr0fICvqdjkiFl7zuOBk3UhOjkZRHJ0Ro7gba2ET"
-        data-domain={`https://deepoe.myshopify.com/`}
-        data-product-id={`${atobId}`} // 6711166631996
-        data-product-models={atobId} // 6711166631996
-        data-name={product.title} // Upcycled glass cup - Set of 2, from NEUTRALL
-        data-url={`https://deepoe.myshopify.com/product/${product.handle}`}
-        data-image-url={`${product.images.edges[0].node.originalSrc}`}
-        // "https://cdn.shopify.com/s/files/1/0548/6903/3020/products/Neutrall8oz-s01-All.jpg?v=1637435765"
-        data-description="lala"
-        data-bread-crumbs="lalala"
+        data-domain="{{shop.permanent_domain | escape }}"
+        data-product-id="{{ product.id }}"
+        data-product-models="{{ product.id }}"
+        data-name="{{ product.title | escape }}"
+        data-url="{{ shop.url }}{{ product.url }}"
+        data-image-url="{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}"
+        data-description="{{ product.description | escape }}"
+        data-bread-crumbs="{% for tag in product.tags %}{{ tag | escape }};{% endfor %}"
       ></div>
 
       <div>

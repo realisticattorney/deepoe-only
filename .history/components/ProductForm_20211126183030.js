@@ -31,6 +31,7 @@ const ProductForm = ({ product, collection }) => {
     };
   });
 
+
   console.log('product_id', product);
   const atobURL = atob(product.id);
   const atobId = atobURL.split('Product/')[1];
@@ -86,7 +87,7 @@ const ProductForm = ({ product, collection }) => {
         data-appkey="hr0fICvqdjkiFl7zuOBk3UhOjkZRHJ0Ro7gba2ET"
         data-domain={`https://deepoe.myshopify.com/`}
         data-product-id={`${atobId}`} // 6711166631996
-        data-product-models={atobId} // 6711166631996
+        data-product-models={atobId}  // 6711166631996
         data-name={product.title} // Upcycled glass cup - Set of 2, from NEUTRALL
         data-url={`https://deepoe.myshopify.com/product/${product.handle}`}
         data-image-url={`${product.images.edges[0].node.originalSrc}`}

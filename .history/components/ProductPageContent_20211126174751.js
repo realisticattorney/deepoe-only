@@ -6,7 +6,11 @@ import { MinusIcon, PlusIcon } from '@heroicons/react/outline';
 import { useEffect, useState } from 'react';
 
 const ProductPageContent = ({ collection, product }) => {
-  
+  console.log('product_id', product);
+  const atobURL = atob(product.id)
+  const atobId = atobURL.split('Product/')[1]
+  console.log('atobURL', atobURL);
+  console.log('atobId', atobId);
   // const [reviews, setReviews] = useState([]);
 
   // useEffect(() => {
@@ -55,29 +59,28 @@ const ProductPageContent = ({ collection, product }) => {
       <div className="px-3.5 pb-0  z-0">
         <Link href={`/collections/${collection}/`}>
           <a className="text-left pl-3 text-lg font-extralight font-mono">
-            {'<'} back to{' '}
-            {collection === 'frontpage' ? 'all products' : collection}
+            {'<'} back to {collection === "frontpage" ? "all products" : collection}
           </a>
         </Link>
       </div>
-      {/* <div
+      <div
         className="yotpo yotpo-main-widget "
         data-product-id={`${atobId}`}
         data-currency="USD"
         data-price={`${product.variants.edges[0].node.priceV2.amount}`}
         data-name={`${product.handle}`}
-        data-url={`https://deepoe-only.vercel.app/collections/${collection}/${product.handle}`}
-        // data-url={`${atobURL}`}
+        // data-url={`/collections/${collection}/${product.handle}`}
+        data-url={`${}}`}
         data-image-url={`${product.images.edges[0].node.originalSrc}`}
       ></div>
       <div
         className="yotpo bottomLine"
         data-yotpo-product-id={`${atobId}`}
-      ></div> */}
+      ></div>
 
       <div className="flex flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 px-2 mx-auto">
         <div className="w-full max-w-md  overflow-hidden"></div>
-        <ProductForm product={product} collection={collection} />
+        <ProductForm product={product} />
 
         <div className="flex flex-col w-full border-t pt-2 border-deepoe-chocolate">
           <button className="group focus:outline-none" onClick={handleShow}>

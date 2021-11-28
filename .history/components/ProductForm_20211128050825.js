@@ -102,10 +102,7 @@ data-url="http://localhost:3000/collections/frontpage/upcycled-glass-cup-set-of-
         data-description="lala"
         data-bread-crumbs="lalala"
       ></div> */}
-      <div
-        className="yotpo bottomLine"
-        data-yotpo-product-id={`${atobId}`}
-      ></div>
+      
       <div>
         <div className="pb-3.5 pt-1 items-center flex justify-between">
           <div className="flex items-start">

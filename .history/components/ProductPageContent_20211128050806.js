@@ -137,7 +137,10 @@ const ProductPageContent = ({ collection, product }) => {
         // data-url={`${atobURL}`}
         data-image-url={`${product.images.edges[0].node.originalSrc}`}
       ></div>
-   
+      <div
+        className="yotpo bottomLine"
+        data-yotpo-product-id={`${atobId}`}
+      ></div>
 
           </button>
         </div>

@@ -127,21 +127,11 @@ const ProductPageContent = ({ collection, product }) => {
                 Reviews (432)
               </span>
             </div>
-            <div
-        className="yotpo yotpo-main-widget "
-        data-product-id={`${atobId}`}
-        data-currency="USD"
-        data-price={`${product.variants.edges[0].node.priceV2.amount}`}
-        data-name={`${product.handle}`}
-        data-url={`https://deepoe.com/products/${product.handle}`}
-        // data-url={`${atobURL}`}
-        data-image-url={`${product.images.edges[0].node.originalSrc}`}
-      ></div>
-      <div
-        className="yotpo bottomLine"
-        data-yotpo-product-id={`${atobId}`}
-      ></div>
-
+            <div className="text-sm text-left font-mono font-extralight ">
+              Bought these for the kids thanksgiving table and they looked so
+              good! Loved that they were dishwasher safe, will definitely be
+              reusing for other parties.
+            </div>
           </button>
         </div>
       </div>

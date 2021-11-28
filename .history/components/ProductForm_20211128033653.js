@@ -91,7 +91,7 @@ data-url="http://localhost:3000/collections/frontpage/upcycled-glass-cup-set-of-
       </h2>
       <div
         className="yotpo bottomLine"
-        data-appkey="hr0fICvqdjkiFl7zuOBk3UhOjkZRHJ0Ro7gba2ET"
+        data-appkey="FR6ioFgfPRJzOUdmn3i31mGt9L8tBRAKaGnWYZ5w"
         data-domain={`https://deepoe.myshopify.com/`}
         data-product-id={`${atobId}`} // 6711166631996
         data-product-models={atobId} // 6711166631996

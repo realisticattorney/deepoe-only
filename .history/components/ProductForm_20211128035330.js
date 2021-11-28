@@ -91,13 +91,13 @@ data-url="http://localhost:3000/collections/frontpage/upcycled-glass-cup-set-of-
       </h2>
       <div
         className="yotpo bottomLine"
-        data-appkey="SpF8vLr2RDGVGtgQstgtn3wGbb1k5PpFKS4GRrhD"
-        data-domain={`https://deepoe.com/`}
-        data-product-id={atobId} // 6711166631996
+        data-appkey="hr0fICvqdjkiFl7zuOBk3UhOjkZRHJ0Ro7gba2ET"
+        data-domain={`https://deepoe.myshopify.com/`}
+        data-product-id={atobId}`} // 6711166631996
         data-product-models={atobId} // 6711166631996
         data-name={product.title} // Upcycled glass cup - Set of 2, from NEUTRALL
-        // data-url={`https://deepoe.com/products/${product.handle}`}
-        data-url={`https://deepoe.com/products/plan-for-the-best`}
+        // data-url={`https://deepoe.myshopify.com/products/${product.handle}`}
+        data-url={`${atobURL}`}
         data-image-url={`${product.images.edges[0].node.originalSrc}`}
         data-description="lala"
         data-bread-crumbs="lalala"

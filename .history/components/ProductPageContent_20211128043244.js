@@ -68,7 +68,7 @@ const ProductPageContent = ({ collection, product }) => {
       </div>
       <div
         className="yotpo yotpo-main-widget "
-        data-product-id={`${atobId}`}
+        data-product-id={`${product.id}`}
         data-currency="USD"
         data-price={`${product.variants.edges[0].node.priceV2.amount}`}
         data-name={`${product.handle}`}

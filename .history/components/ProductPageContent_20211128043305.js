@@ -21,7 +21,7 @@ const ProductPageContent = ({ collection, product }) => {
 
   const fetchReviews = () => {
     fetch(
-      `https://api.yotpo.com/v1/widget/hr0fICvqdjkiFl7zuOBk3UhOjkZRHJ0Ro7gba2ET/products/${atobId}/reviews.json`
+      `https://api.yotpo.com/v1/widget/hr0fICvqdjkiFl7zuOBk3UhOjkZRHJ0Ro7gba2ET/products/${product.id}/reviews.json`
     )
       .then((response) => response.json())
       .then(({ response }) => {

@@ -66,16 +66,16 @@ const ProductPageContent = ({ collection, product }) => {
           </a>
         </Link>
       </div>
-      <div
+      {/* <div
         className="yotpo yotpo-main-widget "
         data-product-id={`${atobId}`}
         data-currency="USD"
         data-price={`${product.variants.edges[0].node.priceV2.amount}`}
         data-name={`${product.handle}`}
-        data-url={`https://deepoe.com/products/${product.handle}`}
+        data-url={`https://deepoe-only.vercel.app/products/${product.handle}`}
         // data-url={`${atobURL}`}
         data-image-url={`${product.images.edges[0].node.originalSrc}`}
-      ></div>
+      ></div> */}
       <div
         className="yotpo bottomLine"
         data-yotpo-product-id={`${atobId}`}

@@ -6,7 +6,6 @@ import { MinusIcon, PlusIcon } from '@heroicons/react/outline';
 import { useEffect, useState } from 'react';
 
 const ProductPageContent = ({ collection, product }) => {
-  
   console.log('product_id', product);
   const atobURL = atob(product.id);
   const atobId = atobURL.split('Product/')[1];
@@ -16,8 +15,8 @@ const ProductPageContent = ({ collection, product }) => {
   // const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-    fetchReviews()
-  }, [])
+    fetchReviews();
+  }, []);
 
   const fetchReviews = () => {
     fetch(
@@ -27,7 +26,7 @@ const ProductPageContent = ({ collection, product }) => {
       .then(({ response }) => {
         console.log('responseeeee', response);
       });
-  }
+  };
 
   // onMount(() => {
   //   if (!state.productId) {
@@ -68,7 +67,7 @@ const ProductPageContent = ({ collection, product }) => {
       </div>
       <div
         className="yotpo yotpo-main-widget "
-        data-product-id={`${atobId}`}
+        data-product-id={`${product.id}`}
         data-currency="USD"
         data-price={`${product.variants.edges[0].node.priceV2.amount}`}
         data-name={`${product.handle}`}

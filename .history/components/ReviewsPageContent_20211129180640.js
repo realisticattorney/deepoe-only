@@ -62,7 +62,6 @@ const ReviewsPageContent = ({ collection, product }) => {
                     className="yotpo bottomLine"
                     data-yotpo-product-id={`${atobId}`}
                   ></div>
-              </div>
                 </div>
                 <div
                   className={`yotpo yotpo-main-widget`}
@@ -74,6 +73,7 @@ const ReviewsPageContent = ({ collection, product }) => {
                   // data-url={`${atobURL}`}
                   data-image-url={`${product.images.edges[0].node.originalSrc}`}
                 ></div>
+              </div>
             </a>
           </button>
         </div>

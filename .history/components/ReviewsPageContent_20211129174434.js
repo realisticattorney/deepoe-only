@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import ProductForm from './ProductForm';
-// import styles from './ReviewsPageContent.module.css';
+import '../globals.css';
 import Link from 'next/link';
 import atob from 'atob';
 import { useState } from 'react';
@@ -10,6 +10,16 @@ const ReviewsPageContent = ({ collection, product }) => {
   const atobURL = atob(product.id);
   const atobId = atobURL.split('Product/')[1];
   console.log('atobId', atobId);
+
+  // const fetchReviews = () => {
+  //   fetch(
+  //     `https://api.yotpo.com/v1/widget/hr0fICvqdjkiFl7zuOBk3UhOjkZRHJ0Ro7gba2ET/products/${atobId}/reviews.json`
+  //   )
+  //     .then((response) => response.json())
+  //     .then(({ response }) => {
+  //       console.log('responseeeee', response);
+  //     });
+  // };
 
   const [show, setShow] = useState(false);
 
@@ -57,23 +67,12 @@ const ReviewsPageContent = ({ collection, product }) => {
                 <span className="font-mono font-extralight text-lg2">
                   Reviews
                 </span>
-                <div id="reviews-complete">
-                  <div
-                    className="yotpo bottomLine"
-                    data-yotpo-product-id={`${atobId}`}
-                  ></div>
-              </div>
-                </div>
                 <div
-                  className={`yotpo yotpo-main-widget`}
-                  data-product-id={`${atobId}`}
-                  data-currency="USD"
-                  data-price={`${product.variants.edges[0].node.priceV2.amount}`}
-                  data-name={`${product.handle}`}
-                  data-url={`https://deepoe.com/products/${product.handle}`}
-                  // data-url={`${atobURL}`}
-                  data-image-url={`${product.images.edges[0].node.originalSrc}`}
-                ></div>
+        className="yotpo bottomLine"
+        data-yotpo-product-id={`${atobId}`}
+      ></div>
+              </div>
+              <YotpoReviews product={product} atobId={atobId} />
             </a>
           </button>
         </div>

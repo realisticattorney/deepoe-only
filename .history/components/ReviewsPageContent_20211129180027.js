@@ -11,6 +11,7 @@ const ReviewsPageContent = ({ collection, product }) => {
   const atobId = atobURL.split('Product/')[1];
   console.log('atobId', atobId);
 
+
   const [show, setShow] = useState(false);
 
   const handleShow = () => {
@@ -57,13 +58,12 @@ const ReviewsPageContent = ({ collection, product }) => {
                 <span className="font-mono font-extralight text-lg2">
                   Reviews
                 </span>
-                <div id="reviews-complete">
-                  <div
-                    className="yotpo bottomLine"
-                    data-yotpo-product-id={`${atobId}`}
-                  ></div>
+                <div
+                  className="yotpo bottomLine"
+                  data-yotpo-product-id={`${atobId}`}
+                ></div>
               </div>
-                </div>
+              <div id="reviews-complete">
                 <div
                   className={`yotpo yotpo-main-widget`}
                   data-product-id={`${atobId}`}
@@ -74,6 +74,7 @@ const ReviewsPageContent = ({ collection, product }) => {
                   // data-url={`${atobURL}`}
                   data-image-url={`${product.images.edges[0].node.originalSrc}`}
                 ></div>
+              </div>
             </a>
           </button>
         </div>

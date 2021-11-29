@@ -34,11 +34,11 @@ body {
   }
 }
 
-#reviews-complete > * > * > * > * > .text-m {
-  font-size: 2rem !important;
-  /* color: #fff !important; */
+#reviews-complete > .text-m {
+  @apply text-deepoe_default-black font-semibold;
+  font-size: 0.72rem !important;
 }
-#reviews-productpage > * > .text-m {
+#reviews-complete > .text-m {
   @apply text-deepoe_default-black font-semibold;
   font-size: 0.72rem !important;
 }
@@ -47,12 +47,8 @@ body {
   /* @apply items-baseline flex flex-col justify-center; */
 }
 
-#reviews-complete > * > .yotpo-bottomline {
-  @apply gap-2;
-  margin-bottom: -0.2rem !important;
-}
-#reviews-productpage > .yotpo-bottomline {
-  @apply gap-12  items-baseline flex;
+.yotpo-bottomline {
+  @apply gap-1.5  items-baseline flex;
   margin-bottom: -0.2rem !important;
 }
 

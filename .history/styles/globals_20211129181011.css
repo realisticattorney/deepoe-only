@@ -34,9 +34,10 @@ body {
   }
 }
 
-#reviews-complete > * > * > * > * > .text-m {
+#reviews-complete > * > * > *> .text-m {
+  @apply text-deepoe-teal font-light;
   font-size: 2rem !important;
-  /* color: #fff !important; */
+  color: #fff;
 }
 #reviews-productpage > * > .text-m {
   @apply text-deepoe_default-black font-semibold;

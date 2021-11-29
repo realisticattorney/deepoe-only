@@ -36,7 +36,7 @@ body {
 
 #reviews-complete > * > * > * > * > .text-m {
   font-size: 2rem !important;
-  /* color: #fff !important; */
+  color: #fff !important;
 }
 #reviews-productpage > * > .text-m {
   @apply text-deepoe_default-black font-semibold;

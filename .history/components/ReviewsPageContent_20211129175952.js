@@ -57,23 +57,21 @@ const ReviewsPageContent = ({ collection, product }) => {
                 <span className="font-mono font-extralight text-lg2">
                   Reviews
                 </span>
-                <div id="reviews-complete">
-                  <div
-                    className="yotpo bottomLine"
-                    data-yotpo-product-id={`${atobId}`}
-                  ></div>
-              </div>
-                </div>
                 <div
-                  className={`yotpo yotpo-main-widget`}
-                  data-product-id={`${atobId}`}
-                  data-currency="USD"
-                  data-price={`${product.variants.edges[0].node.priceV2.amount}`}
-                  data-name={`${product.handle}`}
-                  data-url={`https://deepoe.com/products/${product.handle}`}
-                  // data-url={`${atobURL}`}
-                  data-image-url={`${product.images.edges[0].node.originalSrc}`}
+                  className="yotpo bottomLine"
+                  data-yotpo-product-id={`${atobId}`}
                 ></div>
+              </div>
+              <div
+                className={`yotpo yotpo-main-widget`}
+                data-product-id={`${atobId}`}
+                data-currency="USD"
+                data-price={`${product.variants.edges[0].node.priceV2.amount}`}
+                data-name={`${product.handle}`}
+                data-url={`https://deepoe.com/products/${product.handle}`}
+                // data-url={`${atobURL}`}
+                data-image-url={`${product.images.edges[0].node.originalSrc}`}
+              ></div>
             </a>
           </button>
         </div>

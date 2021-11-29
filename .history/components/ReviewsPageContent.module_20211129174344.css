@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.text-m {
+  @apply text-deepoe_default-black font-light;
+  font-size: 0.72rem !important;
+}
+
+.yotpo-display-wrapper {
+  /* @apply items-baseline flex flex-col justify-center; */
+}
+
+.yotpo-bottomline {
+  @apply gap-1.5  items-baseline flex;
+  margin-bottom: -0.2rem !important;
+}
+
+.yotpo-stars {
+  @apply flex items-baseline;
+}
+
+.yotpo-main > *,
+.yotpo-review-wrapper > * {
+  color: #302e2f !important;
+}
+
+.yotpo-small-box {
+  display: none !important;
+}
+
+.yotpo-bottomline-empty-state {
+  margin-top: -4.1rem !important;
+  margin-bottom: -1.2rem !important;
+  /* align-self: baseline !important; */
+
+  margin-left: 20% !important;
+  display: none !important;
+}

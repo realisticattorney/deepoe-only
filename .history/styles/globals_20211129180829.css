@@ -34,9 +34,9 @@ body {
   }
 }
 
-#reviews-complete > * > * > * > * > .text-m {
+#reviews-complete > .text-m {
+  @apply text-deepoe-teal font-light;
   font-size: 2rem !important;
-  /* color: #fff !important; */
 }
 #reviews-productpage > * > .text-m {
   @apply text-deepoe_default-black font-semibold;
@@ -48,7 +48,7 @@ body {
 }
 
 #reviews-complete > * > .yotpo-bottomline {
-  @apply gap-2;
+  @apply gap-2  ;
   margin-bottom: -0.2rem !important;
 }
 #reviews-productpage > .yotpo-bottomline {

@@ -1,6 +1,6 @@
 import ReviewsPageContent from '../../components/ReviewsPageContent';
 import { getAllProducts, getProduct } from '../../lib/shopify';
-
+import '../../styles/reviews.css';
 const Product = ({ product }) => {
   console.log('reviews,', product);
   return (

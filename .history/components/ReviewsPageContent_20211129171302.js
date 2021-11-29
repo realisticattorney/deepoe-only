@@ -4,7 +4,7 @@ import Link from 'next/link';
 import atob from 'atob';
 import { useState } from 'react';
 import YotpoReviews from './YotpoReviews';
-const ProductPageContent = ({ collection, product }) => {
+const ReviewsPageContent = ({ collection, product }) => {
   console.log('product_id', product);
   const atobURL = atob(product.id);
   const atobId = atobURL.split('Product/')[1];
@@ -92,13 +92,15 @@ const ProductPageContent = ({ collection, product }) => {
             </div>
           </button>
           <button className="group focus:outline-none">
-          <a href={`https://deepoe-only.vercel.app/reviews/${product.handle}`}>
-            <div className="flex justify-between py-2 font-extralight text-left text-lg text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
-              <span className="font-mono font-extralight text-lg2">
-                Reviews
-              </span>
-            </div>
-            <YotpoReviews product={product} atobId={atobId} />
+            <a
+              href={`https://deepoe-only.vercel.app/reviews/${product.handle}`}
+            >
+              <div className="flex justify-between py-2 font-extralight text-left text-lg text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+                <span className="font-mono font-extralight text-lg2">
+                  Reviews
+                </span>
+              </div>
+              <YotpoReviews product={product} atobId={atobId} />
             </a>
           </button>
         </div>
@@ -159,4 +161,4 @@ const ProductPageContent = ({ collection, product }) => {
   );
 };
 
-export default ProductPageContent;
+export default ReviewsPageContent;

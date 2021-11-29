@@ -1,5 +1,6 @@
 import ProductPageContent from '../../components/ProductPageContent';
 import { getAllProducts, getProduct } from '../../lib/shopify';
+import { useRouter } from 'next/router';
 
 const Product = ({ product }) => {
   console.log(product);

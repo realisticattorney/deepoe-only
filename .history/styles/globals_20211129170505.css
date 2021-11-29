@@ -83,10 +83,13 @@ body {
 .control-arrow {
   width: 3.8rem !important;
   opacity: 0.3 !important;
+  size: 3.8rem !important; 
 }
 .carousel.carousel-slider .control-arrow:hover {
   background: transparent !important;
   opacity: 0.7 !important;
+  
+  
 }
 
 /* 

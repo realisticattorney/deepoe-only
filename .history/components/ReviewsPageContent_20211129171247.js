@@ -4,7 +4,7 @@ import Link from 'next/link';
 import atob from 'atob';
 import { useState } from 'react';
 import YotpoReviews from './YotpoReviews';
-const ProductPageContent = ({ collection, product }) => {
+const ReviewsPageContent = ({ collection, product }) => {
   console.log('product_id', product);
   const atobURL = atob(product.id);
   const atobId = atobURL.split('Product/')[1];

@@ -82,13 +82,12 @@ body {
 
 .control-arrow {
   width: 3.8rem !important;
-  opacity: 0.3 !important;
-}
-.carousel.carousel-slider .control-arrow:hover {
-  background: transparent !important;
-  opacity: 0.7 !important;
+  opacity: 0.25 !important;
+  size: 3.8rem !important; 
 }
 
+.control-arrow .control-next::before {
+}
 /* 
 @media only screen and (min-device-width: 10px) and (max-device-width: 329px) {
   .yotpo-bottomline-empty-state {

@@ -82,13 +82,19 @@ body {
 
 .control-arrow {
   width: 3.8rem !important;
-  opacity: 0.3 !important;
+  opacity: 0.2 !important;
 }
 .carousel.carousel-slider .control-arrow:hover {
   background: transparent !important;
   opacity: 0.7 !important;
 }
 
+.control-arrow .control-next::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #302e2f;
+}
 /* 
 @media only screen and (min-device-width: 10px) and (max-device-width: 329px) {
   .yotpo-bottomline-empty-state {

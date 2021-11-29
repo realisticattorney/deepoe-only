@@ -10,7 +10,7 @@ const ProductCard = ({ collection, product }) => {
   return (
     <a
       href={`https://deepoe-only.vercel.app/collections/${collection}/${handle}`}
-      rel="noreferrer"
+      rel="noreferrer" target="_blank"
     >
       <p className="group px-2">
         <div className="w-full  overflow-hidden">

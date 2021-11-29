@@ -39,14 +39,12 @@ body {
   font-size: 0.72rem !important;
 }
 
-.yotpo-display-wrapper {
-  /* @apply items-baseline flex flex-col justify-center; */
-  
-}
+/* .yotpo-display-wrapper {
+  @apply items-baseline flex flex-col justify-center;
+} */
 
 .yotpo-bottomline {
   @apply gap-1.5  items-baseline flex;
-  margin-bottom: -0.2rem !important;
   
 }
 
@@ -57,6 +55,7 @@ body {
 .yotpo-main > *,
 .yotpo-review-wrapper > * {
   color: #302e2f !important;
+  
 }
 
 .yotpo-small-box {

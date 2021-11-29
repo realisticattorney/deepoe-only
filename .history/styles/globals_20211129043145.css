@@ -41,12 +41,12 @@ body {
 
 .yotpo-display-wrapper {
   /* @apply items-baseline flex flex-col justify-center; */
-  
+  margin-bottom: -0.3rem !important;
+
 }
 
 .yotpo-bottomline {
   @apply gap-1.5  items-baseline flex;
-  margin-bottom: -0.2rem !important;
   
 }
 

@@ -46,7 +46,7 @@ body {
 
 .yotpo-bottomline {
   @apply gap-1.5  items-baseline flex;
-  margin-bottom: -0.2rem !important;
+  margin-bottom: -0.1rem !important;
   
 }
 

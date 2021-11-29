@@ -39,19 +39,18 @@ body {
   font-size: 0.72rem !important;
 }
 
-.yotpo-display-wrapper {
-  /* @apply items-baseline flex flex-col justify-center; */
-  
-}
+/* .yotpo-display-wrapper {
+  @apply items-baseline flex flex-col justify-center;
+} */
 
 .yotpo-bottomline {
   @apply gap-1.5  items-baseline flex;
-  margin-bottom: -0.2rem !important;
   
 }
 
 .yotpo-stars {
   @apply flex items-baseline;
+  margin-bottom: -0.3rem !important;
 }
 
 .yotpo-main > *,

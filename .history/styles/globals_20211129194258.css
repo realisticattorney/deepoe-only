@@ -77,9 +77,9 @@ body {
 
 #reviews-complete > * > * > * > * > *> .yotpo-icon-default-star:before,
 #reviews-complete > * > * > * > * > *> .yotpo-icon-star:before {
-  content: '\e60e' !important;
+  content: '\e80e' !important;
   size: 3.5rem !important;
-  font-size: 3.5rem !important;
+  /* color: #fff !important; */
 
 }
 

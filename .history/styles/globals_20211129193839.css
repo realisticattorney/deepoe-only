@@ -62,25 +62,14 @@ body {
   margin-right: 0.5rem !important;
   color: #fff !important;
   background: #ffc107 !important;
-  padding: 0.5rem !important;
 }
 
 .yotpo-stars {
   @apply flex items-baseline;
 }
-#reviews-complete > * > * > * > * > .rating-stars {
+#reviews-complete > * > * > * > * > * > .rating-stars {
   @apply flex items-center;
-  font-size: 1.5rem !important;
-
   color: #fff !important;
-}
-
-#reviews-complete > * > * > * > * > *> .yotpo-icon-default-star:before,
-#reviews-complete > * > * > * > * > *> .yotpo-icon-star:before {
-  content: '\e60e' !important;
-  size: 3.5rem !important;
-  font-size: 3.5rem !important;
-
 }
 
 .yotpo-main > *,

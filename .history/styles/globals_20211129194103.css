@@ -75,12 +75,9 @@ body {
   color: #fff !important;
 }
 
-#reviews-complete > * > * > * > * > *> .yotpo-icon-default-star:before,
-#reviews-complete > * > * > * > * > *> .yotpo-icon-star:before {
-  content: '\e60e' !important;
-  size: 3.5rem !important;
-  font-size: 3.5rem !important;
-
+#reviews-complete > * > * > * > .yotpo-icon-default-star:before,
+#reviews-complete > * > * > * > .yotpo-icon-star:before {
+  content: '\e60e';
 }
 
 .yotpo-main > *,

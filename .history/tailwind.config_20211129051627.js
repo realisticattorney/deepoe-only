@@ -49,7 +49,7 @@ module.exports = {
           chocolate: '#302E2F',
           pink: '#dfd0e1',
           teal: '#a6e0c7',
-          mustard: '#fcdf50',
+          mustard: '#f2d546',
           moss: '#A8A425',
           tangerine: '#E9610E',
         },

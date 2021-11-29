@@ -8,10 +8,11 @@ const ProductCard = ({ collection, product }) => {
   const price = product.node.priceRange.minVariantPrice.amount;
 
   return (
-    <Link href={`/collections/${collection}/${handle}`}>
-      {/* //<a href={`https://deepoe-only.vercel.app/collections/${collection}/${handle}`} */}
-      {/* //   rel="noreferrer" */}
-      {/* // > */}
+    <Link href={`/collections/${collection}/${handle}`} >
+     
+    {/* //<a href={`https://deepoe-only.vercel.app/collections/${collection}/${handle}`} */}
+    //   rel="noreferrer"
+    // >
       <p className="group px-2">
         <div className="w-full  overflow-hidden">
           <div className="relative h-110">
@@ -30,8 +31,7 @@ const ProductCard = ({ collection, product }) => {
           {formatter.format(price)}
         </p>
       </p>
-      {/* // </a> */}
-    </Link>
+    // </a>
   );
 };
 

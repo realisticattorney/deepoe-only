@@ -145,12 +145,11 @@ const ProductForm = ({ product, collection }) => {
             selectedVariant.availableForSale ? 'disabled' : ''
           }`} //disabled if the selected variant is not available for sale (out of stock)
 
-          disabled={selectedVariant.availableForSale === false
-              ? true : false}
+          disabled={selectedVariant.availableForSale === false}
           
           
         >
-          {selectedVariant.availableForSale === false ? "Out of Stock" : "Add to Cart"}
+          Add to Cart
         </button>
       </div>
     </div>

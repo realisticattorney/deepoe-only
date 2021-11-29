@@ -146,7 +146,7 @@ const ProductForm = ({ product, collection }) => {
           }`} //disabled if the selected variant is not available for sale (out of stock)
 
           disabled={selectedVariant.availableForSale === false
-              ? true : false}
+              ? false : true}
           
           
         >

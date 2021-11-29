@@ -144,13 +144,11 @@ const ProductForm = ({ product, collection }) => {
           className={`bg-deepoe-chocolate text-white px-2 py-2 mt-1 mb-3 text-2xl font-sans self-center justify-self-center items-center  w-full active:scale-95 ${
             selectedVariant.availableForSale ? 'disabled' : ''
           }`} //disabled if the selected variant is not available for sale (out of stock)
-
-          disabled={selectedVariant.availableForSale === false
-              ? true : false}
+          
           
           
         >
-          {selectedVariant.availableForSale === false ? "Out of Stock" : "Add to Cart"}
+          Add to Cart
         </button>
       </div>
     </div>

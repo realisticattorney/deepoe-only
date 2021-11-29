@@ -70,15 +70,10 @@ body {
   display: none !important;
 }
 
-.control-dots > .dot {
+.control-dots > * {
   background: #fff !important;
-  opacity: 0.2 !important;
-  box-shadow:none !important;
 }
-.control-dots > .selected {
-  background: #fff !important;
-  opacity: 0.9 !important;
-}
+.dot-
 
 /* 
 @media only screen and (min-device-width: 10px) and (max-device-width: 329px) {

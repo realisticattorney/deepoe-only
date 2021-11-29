@@ -70,12 +70,10 @@ body {
   display: none !important;
 }
 
-.control-dots > .dot {
+.control-dots > * {
   background: #fff !important;
-  opacity: 0.2 !important;
-  box-shadow:none !important;
 }
-.control-dots > .selected {
+.selected {
   background: #fff !important;
   opacity: 0.9 !important;
 }

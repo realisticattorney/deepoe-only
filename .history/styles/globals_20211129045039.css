@@ -70,16 +70,13 @@ body {
   display: none !important;
 }
 
-.control-dots > .dot {
-  background: #fff !important;
-  opacity: 0.2 !important;
-  box-shadow:none !important;
+.control-dots > * {
+  color: #302e2f !important;
 }
-.control-dots > .selected {
-  background: #fff !important;
-  opacity: 0.9 !important;
+.dot-selected {
+  color: #302e2f !important;
 }
-
+.carousel .control-dots .dot
 /* 
 @media only screen and (min-device-width: 10px) and (max-device-width: 329px) {
   .yotpo-bottomline-empty-state {

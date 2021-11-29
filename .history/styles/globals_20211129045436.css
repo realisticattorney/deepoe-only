@@ -71,13 +71,11 @@ body {
 }
 
 .control-dots > .dot {
-  background: #fff !important;
-  opacity: 0.2 !important;
-  box-shadow:none !important;
+  background: #302e2f !important;
 }
 .control-dots > .selected {
-  background: #fff !important;
-  opacity: 0.9 !important;
+  background: #302e2f !important;
+  opacity: 0 !important;
 }
 
 /* 

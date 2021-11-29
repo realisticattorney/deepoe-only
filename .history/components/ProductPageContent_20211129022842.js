@@ -119,7 +119,7 @@ const ProductPageContent = ({ collection, product }) => {
           <button className="group focus:outline-none">
             <div className="flex justify-between py-2 font-extralight text-left text-lg text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
               <span className="font-mono font-extralight text-lg2">
-                Reviews
+                Reviews ()
               </span>
             </div>
             <YotpoReviews product={product} atobId={atobId} />

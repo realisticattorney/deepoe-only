@@ -66,14 +66,9 @@ body {
   margin-bottom: -1.2rem !important;
   /* align-self: baseline !important; */
 
-  margin-left: 20% !important;
+  /* margin-left: 52% !important; */
 }
 
-@media only screen and (min-device-width: 10px) and (max-device-width: 329px) {
-  .yotpo-bottomline-empty-state {
-    display: none !important;
-  }
-}
 @media only screen and (min-device-width: 330px) and (max-device-width: 345px) {
   .yotpo-bottomline-empty-state {
     margin-left: 47% !important;
@@ -99,7 +94,7 @@ body {
     margin-left: 58% !important;
   }
 }
-@media only screen and (min-device-width: 424px) and (max-device-width: 458px) {
+@media only screen and (min-device-width: 424px) and (max-device-width: 434px) {
   .yotpo-bottomline-empty-state {
     margin-left: 59% !important;
   }

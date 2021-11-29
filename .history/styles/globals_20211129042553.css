@@ -69,7 +69,7 @@ body {
   margin-left: 20% !important;
 }
 
-@media only screen and (min-device-width: 10px) and (max-device-width: 329px) {
+@media only screen and (min-device-width: 330px) and (max-device-width: 329px) {
   .yotpo-bottomline-empty-state {
     display: none !important;
   }

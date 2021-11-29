@@ -29,7 +29,7 @@ const ReviewsPageContent = ({ collection, product }) => {
       </div>
 
       <div className="flex flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 px-2 mx-auto">
-        <div className="flex flex-col w-full  pt-2 ">
+        <div className="flex flex-col w-full border-t pt-2 border-deepoe-chocolate">
           {/* <button className="group focus:outline-none" onClick={handleShow}>
             <div className="flex justify-between pb-2 pt-0.5 text-lg font-extralight items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
               <span className="truncate font-mono font-extralight text-lg2">
@@ -53,7 +53,7 @@ const ReviewsPageContent = ({ collection, product }) => {
             <a
               href={`https://deepoe-only.vercel.app/reviews/${product.handle}`}
             >
-              <div className="flex flex-col justify-between items-baseline py-2 font-extralight text-left text-lg text-deepoe_default-black focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+              <div className="flex flex-col justify-between items-baseline py-2 font-extralight text-left text-lg text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
                 <span className="font-mono font-extralight text-lg2">
                   Reviews For
                 </span>
@@ -65,18 +65,18 @@ const ReviewsPageContent = ({ collection, product }) => {
                     className="yotpo bottomLine"
                     data-yotpo-product-id={`${atobId}`}
                   ></div>
-                </div>
               </div>
-              <div
-                className={`yotpo yotpo-main-widget`}
-                data-product-id={`${atobId}`}
-                data-currency="USD"
-                data-price={`${product.variants.edges[0].node.priceV2.amount}`}
-                data-name={`${product.handle}`}
-                data-url={`https://deepoe.com/products/${product.handle}`}
-                // data-url={`${atobURL}`}
-                data-image-url={`${product.images.edges[0].node.originalSrc}`}
-              ></div>
+                </div>
+                <div
+                  className={`yotpo yotpo-main-widget`}
+                  data-product-id={`${atobId}`}
+                  data-currency="USD"
+                  data-price={`${product.variants.edges[0].node.priceV2.amount}`}
+                  data-name={`${product.handle}`}
+                  data-url={`https://deepoe.com/products/${product.handle}`}
+                  // data-url={`${atobURL}`}
+                  data-image-url={`${product.images.edges[0].node.originalSrc}`}
+                ></div>
             </a>
           </button>
         </div>

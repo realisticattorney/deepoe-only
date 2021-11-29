@@ -36,22 +36,20 @@ body {
 
 #reviews-complete > * > * > * > * > .text-m {
   @apply text-deepoe_default-black font-semibold;
-  font-size: 0.7rem !important;
-  margin-left: 0.2rem !important;
-
+  font-size: 2rem !important;
+  /* color: #fff !important; */
 }
 .text-m {
   @apply text-deepoe_default-black font-semibold;
   font-size: 0.72rem !important;
 }
 
-#reviews-complete > * > * > * > .yotpo-display-wrapper {
-}
-#reviews-complete > .standalone-bottomline.star-clickable {
+.yotpo-display-wrapper {
+  /* @apply items-baseline flex flex-col justify-center; */
 }
 
-#reviews-complete > * > * > * > .yotpo-bottomline {
-  @apply gap-1 flex-col;
+#reviews-complete > * > .yotpo-bottomline {
+  @apply gap-2;
   margin-bottom: -0.2rem !important;
 }
 #reviews-productpage > .yotpo-bottomline {
@@ -63,6 +61,8 @@ body {
   @apply flex items-center;
   margin-right: 0.5rem !important;
   color: #fff !important;
+  background: #ffc107 !important;
+  padding: 0.5rem !important;
 }
 
 .yotpo-stars {
@@ -75,12 +75,13 @@ body {
   color: #fff !important;
 }
 
-#reviews-complete > * > * > * > * > * > .yotpo-icon-default-star:before,
-#reviews-complete > * > * > * > * > * > .yotpo-icon-empty-star:before,
-#reviews-complete > * > * > * > * > * > .yotpo-icon-star:before {
+#reviews-complete > * > * > * > * > *> .yotpo-icon-default-star:before,
+#reviews-complete > * > * > * > * > *> .yotpo-icon-empty-star:before,
+#reviews-complete > * > * > * > * > *> .yotpo-icon-star:before {
   /* content: '\e60e' !important; */
   /* size: 3.5rem !important; */
   font-size: 2rem !important;
+
 }
 
 .yotpo-main > *,

@@ -8,10 +8,9 @@ import {
 
 const Product = ({ collection, product }) => {
   console.log(product);
-  console.log('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', collection);
   return (
     <div className="min-h-screen ">
-      <ProductPageContent product={product} collection={collection[1]} />
+      <ProductPageContent product={product} collection={collection} />
     </div>
   );
 };
@@ -57,7 +56,7 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       product,
-      collection,
+      collection: params.collection,
     },
   };
 }

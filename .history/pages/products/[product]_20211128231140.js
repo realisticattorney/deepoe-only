@@ -11,7 +11,7 @@ const Product = ({ collection, product }) => {
   console.log('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', collection);
   return (
     <div className="min-h-screen ">
-      <ProductPageContent product={product} collection={collection[1]} />
+      <ProductPageContent product={product} collection={collection} />
     </div>
   );
 };
@@ -43,7 +43,9 @@ export async function getStaticProps({ params }) {
       for (let j = 0; j < products.length; j++) {
         const product = products[j];
         if (product.node.handle === params.product) {
-          combinations.push(collection.node.handle);
+          combinations.push({
+            collection: collection.node.handle,
+          });
         }
       }
     }

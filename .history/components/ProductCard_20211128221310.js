@@ -8,8 +8,7 @@ const ProductCard = ({ collection, product }) => {
   const price  = product.node.priceRange.minVariantPrice.amount;
 
   return (
-    // <Link href={`/collections/${collection}/${handle}`}>
-    <Link href={`/products/${handle}`}>
+    <Link href={`/collections/${collection}/${handle}`}>
       <a className="group px-2">
         <div className="w-full  overflow-hidden">
           <div className="relative h-110">

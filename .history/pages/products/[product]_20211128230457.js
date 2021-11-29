@@ -1,17 +1,12 @@
 import ProductPageContent from '../../components/ProductPageContent';
-import {
-  getAllProducts,
-  getProduct,
-  getProductFromCollections,
-} from '../../lib/shopify';
+import { getAllProducts, getProduct } from '../../lib/shopify';
 // import { useRouter } from 'next/router';
 
 const Product = ({ collection, product }) => {
   console.log(product);
-  console.log('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', collection);
   return (
     <div className="min-h-screen ">
-      <ProductPageContent product={product} collection={collection[1]} />
+      <ProductPageContent product={product} collection={collection} />
     </div>
   );
 };
@@ -42,22 +37,18 @@ export async function getStaticProps({ params }) {
       const products = collection.node.products.edges;
       for (let j = 0; j < products.length; j++) {
         const product = products[j];
-        if (product.node.handle === params.product) {
-          combinations.push(collection.node.handle);
-        }
+        if
       }
     }
     return combinations;
   };
-  const collection = getAllCombinations(products);
-  console.log(
-    'OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO',
-    collection
-  );
+  const paths = getAllCombinations(products);
+
+
   return {
     props: {
       product,
-      collection,
+      // collection: params.collection,
     },
   };
 }

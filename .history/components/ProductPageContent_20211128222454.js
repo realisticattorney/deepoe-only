@@ -4,18 +4,24 @@ import Link from 'next/link';
 import atob from 'atob';
 import { MinusIcon, PlusIcon } from '@heroicons/react/outline';
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/router'
 
-const ProductPageContent = ({ collection, product }) => {
+const ProductPageContent = ({  product }) => {
+  
   console.log('product_id', product);
   const atobURL = atob(product.id);
   const atobId = atobURL.split('Product/')[1];
   console.log('atobURL', atobURL);
   console.log('atobId', atobId);
 
+  // const [reviews, setReviews] = useState([]);
+  const router = useRouter()
+  console.log('routersadfafsdsdfasdfaasdf', router.components);
+  const collection 
+
   useEffect(() => {
-    fetchReviews();
-  }, []);
+    fetchReviews()
+  }, [])
 
   const fetchReviews = () => {
     fetch(
@@ -25,7 +31,7 @@ const ProductPageContent = ({ collection, product }) => {
       .then(({ response }) => {
         console.log('responseeeee', response);
       });
-  };
+  }
 
   // onMount(() => {
   //   if (!state.productId) {
@@ -64,7 +70,7 @@ const ProductPageContent = ({ collection, product }) => {
           </a>
         </Link>
       </div>
-
+     
       <div className="flex flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 px-2 mx-auto">
         <div className="w-full max-w-md  overflow-hidden"></div>
         <ProductForm product={product} collection={collection} />
@@ -126,15 +132,17 @@ const ProductPageContent = ({ collection, product }) => {
               </span>
             </div>
             <div
-              className="yotpo yotpo-main-widget "
-              data-product-id={`${atobId}`}
-              data-currency="USD"
-              data-price={`${product.variants.edges[0].node.priceV2.amount}`}
-              data-name={`${product.handle}`}
-              data-url={`https://deepoe.com/products/${product.handle}`}
-              // data-url={`${atobURL}`}
-              data-image-url={`${product.images.edges[0].node.originalSrc}`}
-            ></div>
+        className="yotpo yotpo-main-widget "
+        data-product-id={`${atobId}`}
+        data-currency="USD"
+        data-price={`${product.variants.edges[0].node.priceV2.amount}`}
+        data-name={`${product.handle}`}
+        data-url={`https://deepoe.com/products/${product.handle}`}
+        // data-url={`${atobURL}`}
+        data-image-url={`${product.images.edges[0].node.originalSrc}`}
+      ></div>
+   
+
           </button>
         </div>
       </div>

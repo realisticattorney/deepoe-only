@@ -1,22 +1,11 @@
-import ProductPageContent from '../../../components/ProductPageContent';
-import { getProduct, getProductFromCollections } from '../../../lib/shopify';
+import ProductPageContent from '../../components/ProductPageContent';
+import { getAllProducts, getProduct, getProduct, getProductFromCollections } from '../../lib/shopify';
+// import { useRouter } from 'next/router';
 
 const Product = ({ collection, product }) => {
-  // console.log('proooooodcut', product);
+  console.log(product);
   return (
-    <div className={`min-h-screen pb-2`}>
-      {/* <div
-        id="stamped-main-widget"
-        data-product-id={`${product.id}`}
-        data-name={`${product.title}`}
-        data-url={`https://deepoedevstore.myshopify.com/${collection}/products/${product.handle}`}
-        data-description={`${product.description}`}
-        data-product-sku={`SKU/${product.handle}`}
-        data-product-title={`${product.title}`}
-        data-product-type={`${product.type}`}
-      >
-        {product.metafields?.stamped?.reviews}
-      </div> */}
+    <div className="min-h-screen ">
       <ProductPageContent product={product} collection={collection} />
     </div>
   );
@@ -25,7 +14,12 @@ const Product = ({ collection, product }) => {
 export default Product;
 
 export async function getStaticPaths() {
-  const products = await getProductFromCollections();
+  // const products = await getAllProducts();
+  // const paths = products.map((product) => ({
+  //   params: { product: String(product.node.handle) },
+  // }));
+  
+    const products = await getProductFromCollections();
   const getAllCombinations = (collections) => {
     const combinations = [];
     for (let i = 0; i < collections.length; i++) {
@@ -53,11 +47,11 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const product = await getProduct(params.product);
-  console.log("PARAAAAAAMSLJASDFJLASJFKLFSDLJSFADLJSDFJLSADFLJK",params);
+  console.log(params)
   return {
     props: {
-      collection: params.collection,
       product,
+      collection: params.collection,
     },
   };
 }

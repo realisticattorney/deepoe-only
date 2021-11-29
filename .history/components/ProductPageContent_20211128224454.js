@@ -6,12 +6,24 @@ import { MinusIcon, PlusIcon } from '@heroicons/react/outline';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 
-const ProductPageContent = ({ collection, product }) => {
+const ProductPageContent = ({ product }) => {
   console.log('product_id', product);
   const atobURL = atob(product.id);
   const atobId = atobURL.split('Product/')[1];
   console.log('atobURL', atobURL);
   console.log('atobId', atobId);
+
+  // const [reviews, setReviews] = useState([]);
+  const router = useRouter().components['/collections/[collection]'] ? ;
+  console.log('routersadfafsdsdfasdfaasdf', router);
+  // const collection = router.components['/collections/[collection]']
+  //   ? router.components['/collections/[collection]']?.props?.pageProps
+  //       ?.collection
+  //   : 'frontpage';
+  // const collectionOne = router.components
+  // const collection  = collectionOne['/collections/[collection]'] ? "frontpage" : "dinnerware"
+  const collection = 'frontpage';
+  // console.log('collection', collection);
 
   useEffect(() => {
     fetchReviews();

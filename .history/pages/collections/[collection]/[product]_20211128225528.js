@@ -53,7 +53,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const product = await getProduct(params.product);
-  console.log("PARAAAAAAMSLJASDFJLASJFKLFSDLJSFADLJSDFJLSADFLJK",params);
+  console.log("paraaaams",params);
   return {
     props: {
       collection: params.collection,

@@ -13,6 +13,7 @@ const ProductPageContent = ({ collection, product }) => {
   console.log('atobURL', atobURL);
   console.log('atobId', atobId);
 
+
   useEffect(() => {
     fetchReviews();
   }, []);

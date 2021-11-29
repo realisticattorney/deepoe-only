@@ -13,6 +13,18 @@ const ProductPageContent = ({ collection, product }) => {
   console.log('atobURL', atobURL);
   console.log('atobId', atobId);
 
+  // const [reviews, setReviews] = useState([]);
+  // const router = useRouter();
+  // console.log('routersadfafsdsdfasdfaasdf', router);
+  // const collection = router.components['/collections/[collection]']
+  //   ? router.components['/collections/[collection]']?.props?.pageProps
+  //       ?.collection
+  //   : 'frontpage';
+  // const collectionOne = router.components
+  // const collection  = collectionOne['/collections/[collection]'] ? "frontpage" : "dinnerware"
+  // const collection = 'frontpage';
+  // console.log('collection', collection);
+
   useEffect(() => {
     fetchReviews();
   }, []);

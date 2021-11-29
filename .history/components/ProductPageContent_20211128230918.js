@@ -13,6 +13,7 @@ const ProductPageContent = ({ collection, product }) => {
   console.log('atobURL', atobURL);
   console.log('atobId', atobId);
 
+
   useEffect(() => {
     fetchReviews();
   }, []);
@@ -57,7 +58,7 @@ const ProductPageContent = ({ collection, product }) => {
   return (
     <div>
       <div className="px-3.5 pb-0  z-0">
-        <Link href={`/collections/${collection}/`}>
+        <Link href={`/collections/${collection[0]}/`}>
           <a className="text-left pl-3 text-lg font-extralight font-mono">
             {'<'} back to{' '}
             {collection === 'frontpage' ? 'all products' : collection}

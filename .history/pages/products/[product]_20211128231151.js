@@ -11,7 +11,7 @@ const Product = ({ collection, product }) => {
   console.log('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', collection);
   return (
     <div className="min-h-screen ">
-      <ProductPageContent product={product} collection={collection[1]} />
+      <ProductPageContent product={product} collection={collection} />
     </div>
   );
 };

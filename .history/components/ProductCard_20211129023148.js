@@ -31,7 +31,6 @@ const ProductCard = ({ collection, product }) => {
           {formatter.format(price)}
         </p>
       </p>
-      {/* </Link> */}
     </a>
   );
 };

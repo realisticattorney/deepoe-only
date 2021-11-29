@@ -28,7 +28,7 @@ const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
                   className={`border p-0.5 mx-0.5  rounded-full ${
                     checked ? 'border-deepoe-chocolate' : 'border-transparent'
                   }
-                  ${name === 'Size' ? null : '-mt-2'}`}
+                  ${name === 'Size' ? null : "-mt-2"}`}
                 >
                   <div
                     className={`p-3.5  text-lg rounded-full block cursor-pointer
@@ -40,13 +40,11 @@ const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
                   }
                   ${value == 'Grey' || value == 'Gray' ? 'bg-gray-600' : ''}
                   ${value == 'White' ? 'bg-white' : ''}
-                  ${value == 'Tangerine' ? 'bg-deepoe-tangerine' : ''}
-                  ${value == 'Yellow' ? 'bg-deepoe-mustard' : ''}
-                  ${value == 'Teal' ? 'bg-deepoe-teal' : ''}
+                  ${value == 'Tangerine' ? 'bg-yellow-500' : ''}
+                  ${value == 'Yellow' ? 'bg-yellow-300' : ''}
+                  ${value == 'Teal' ? 'bg-green-300' : ''}
                   ${value == 'Magenta' ? 'bg-pink-700' : ''}
-                  ${
-                    value == 'Olive' || value == 'Moss' ? 'bg-deepoe-moss' : ''
-                  }`}
+                  ${value == 'Olive' || value == 'Moss' ? 'bg-' : ''}`}
                   ></div>
                 </div>
               ) : null}

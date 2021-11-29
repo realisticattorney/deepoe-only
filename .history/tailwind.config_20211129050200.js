@@ -48,10 +48,7 @@ module.exports = {
           cream: '#F5F3EE',
           chocolate: '#302E2F',
           pink: '#dfd0e1',
-          teal: '#7D8975',
-          mustard: '#f2d546',
-          moss: '#A8A425',
-          tangerine: '#E9610E',
+          olive: '#7D8975'
         },
         deepoe_default: {
           black: '#302e2f',

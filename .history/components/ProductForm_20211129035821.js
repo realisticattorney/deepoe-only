@@ -140,7 +140,7 @@ const ProductForm = ({ product, collection }) => {
           onClick={() => {
             addToCart(selectedVariant);
           }}
-          className={`bg-deepoe-chocolate text-white px-2 pt-2 pb-1.5 mt-1 mb-3 text-2xl font-sans self-center justify-self-center items-center  w-full active:scale-95 ${
+          className={`bg-deepoe-chocolate text-white px-2 pt-2  mt-1 mb-3 text-2xl font-sans self-center justify-self-center items-center  w-full active:scale-95 ${
             selectedVariant.availableForSale ? 'disabled' : ''
           }`} //disabled if the selected variant is not available for sale (out of stock)
           disabled={selectedVariant.availableForSale === false ? true : false}

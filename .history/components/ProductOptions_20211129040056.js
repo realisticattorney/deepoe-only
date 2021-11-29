@@ -28,7 +28,7 @@ const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
                   className={`border p-0.5 mx-0.5  rounded-full ${
                     checked ? 'border-deepoe-chocolate' : 'border-transparent'
                   }
-                  ${name === 'Size' ? null : "-mt-1.5"}`}
+                  ${name === 'Size' ? null : "-mt-3"}`}
                 >
                   <div
                     className={`p-3.5  text-lg rounded-full block cursor-pointer

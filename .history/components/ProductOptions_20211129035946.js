@@ -27,8 +27,7 @@ const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
                 <div
                   className={`border p-0.5 mx-0.5  rounded-full ${
                     checked ? 'border-deepoe-chocolate' : 'border-transparent'
-                  }
-                  ${name === 'Size' ? null : "-mt-1.5"}`}
+                  }`}
                 >
                   <div
                     className={`p-3.5  text-lg rounded-full block cursor-pointer
@@ -58,7 +57,9 @@ const ProductOptions = ({ name, values, selectedOptions, setOptions }) => {
                 >
                   <span className="px-2">{value}</span>
                 </div>
-              ) : null}
+              ) : (
+                <div className="-mb-2"></div>
+              )}
             </label>
           );
         })}

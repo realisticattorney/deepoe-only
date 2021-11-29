@@ -1,6 +1,9 @@
 import React from 'react';
-
+import { useRouter } from 'next/router';
 const YotpoReviews = ({ atobId, product }) => {
+  const router = useRouter();
+
+
   return (
     <div
       className="yotpo yotpo-main-widget "

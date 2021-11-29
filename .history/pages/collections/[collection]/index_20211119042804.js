@@ -4,7 +4,8 @@ import ProductList from '../../../components/ProductList';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 export default function Collection({ collection, products }) {
-  // console.log('collection223123123', products);
+  // console.log('collection222', collection);
+  console.log('collection223123123', products);
   return (
     <div className="">
       <Head>
@@ -29,7 +30,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  // console.log('params collection', params);
+  console.log('params collection', params);
   const products = await getProductsInCollection(params.collection);
   console.log("get products in collection", products);
   return {

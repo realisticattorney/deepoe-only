@@ -16,6 +16,7 @@ const Layout = ({ children }) => {
         type="text/javascript"
         src="//staticw2.yotpo.com/SpF8vLr2RDGVGtgQstgtn3wGbb1k5PpFKS4GRrhD/widget.js"
       ></Script>
+
       <Nav />
       <main className="h-full flex-grow overflow-scroll">{children}</main>
       {router.pathname !== '/' && (

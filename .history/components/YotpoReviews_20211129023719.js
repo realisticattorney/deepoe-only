@@ -1,5 +1,4 @@
 import React from 'react';
-
 const YotpoReviews = ({ atobId, product }) => {
   return (
     <div

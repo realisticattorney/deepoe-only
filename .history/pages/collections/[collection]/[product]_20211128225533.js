@@ -2,8 +2,21 @@ import ProductPageContent from '../../../components/ProductPageContent';
 import { getProduct, getProductFromCollections } from '../../../lib/shopify';
 
 const Product = ({ collection, product }) => {
+  // console.log('proooooodcut', product);
   return (
     <div className={`min-h-screen pb-2`}>
+      {/* <div
+        id="stamped-main-widget"
+        data-product-id={`${product.id}`}
+        data-name={`${product.title}`}
+        data-url={`https://deepoedevstore.myshopify.com/${collection}/products/${product.handle}`}
+        data-description={`${product.description}`}
+        data-product-sku={`SKU/${product.handle}`}
+        data-product-title={`${product.title}`}
+        data-product-type={`${product.type}`}
+      >
+        {product.metafields?.stamped?.reviews}
+      </div> */}
       <ProductPageContent product={product} collection={collection} />
     </div>
   );
@@ -40,7 +53,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const product = await getProduct(params.product);
-  console.log('PARAAAAAAMSLJASDFJLASJFKLFSDLJSFADLJSDFJLSADFLJK', params);
+  console.log("PARAAAAAAMSLJASDFJLASJFKLFSDLJSFADLJSDFJLSADFLJK",params);
   return {
     props: {
       collection: params.collection,

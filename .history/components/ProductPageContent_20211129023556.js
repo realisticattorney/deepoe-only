@@ -2,14 +2,18 @@ import Image from 'next/image';
 import ProductForm from './ProductForm';
 import Link from 'next/link';
 import atob from 'atob';
-import { useState } from 'react';
+import { MinusIcon, PlusIcon } from '@heroicons/react/outline';
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
+import Router from 'next/router';
 import YotpoReviews from './YotpoReviews';
 const ProductPageContent = ({ collection, product }) => {
   console.log('product_id', product);
   const atobURL = atob(product.id);
   const atobId = atobURL.split('Product/')[1];
+  console.log('atobURL', atobURL);
   console.log('atobId', atobId);
-
+  
   // const fetchReviews = () => {
   //   fetch(
   //     `https://api.yotpo.com/v1/widget/hr0fICvqdjkiFl7zuOBk3UhOjkZRHJ0Ro7gba2ET/products/${atobId}/reviews.json`
@@ -19,6 +23,26 @@ const ProductPageContent = ({ collection, product }) => {
   //       console.log('responseeeee', response);
   //     });
   // };
+
+  // onMount(() => {
+  //   if (!state.productId) {
+  //     const shopifyProduct = window?.ShopifyAnalytics?.meta?.product;
+
+  //     if (shopifyProduct) {
+  //       state.productId = shopifyProduct.id;
+  //       state.productUrl = `https://${window.Shopify.shop}/products/${shopifyProduct.id}`; // the first part of the variant name is the product title
+
+  //       state.productTitle = shopifyProduct.variants[0].name;
+  //     }
+  //   }
+
+  //   if (state.productId) {
+  //     state.fetchReviews();
+  //   } else {
+  //     // add blank state
+  //   }
+  // });
+
 
   const [show, setShow] = useState(false);
 

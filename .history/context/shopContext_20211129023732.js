@@ -97,16 +97,16 @@ export default function ShopProvider({ children }) {
     );
   }
   async function subtractCartItem(newItem) {
-    // console.log('cart', cart);
+    console.log('cart', cart);
     let newCart = [...cart];
     cart.map((item) => {
       if (item.id === newItem.id) {
         if (item.variantQuantity > 1) {
-          // console.log('item.variantQuantity', item.variantQuantity);
+          console.log('item.variantQuantity', item.variantQuantity);
           item.variantQuantity--;
           newCart = [...cart];
         } else {
-          // console.log('just 1 item bruh');
+          console.log('just 1 item bruh');
           return;
         }
       }

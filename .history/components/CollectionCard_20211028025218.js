@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { formatter } from '../utils/helpers';
 
 const CollectionCard = ({ collection }) => {
-  // console.log(collection);
+  console.log(collection);
   const { handle, title } = collection.node;
   const { originalSrc } = collection.node.image ? collection.node.image : collection.node.products.edges[0].node.images.edges[0].node;
   return (

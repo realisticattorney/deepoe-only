@@ -106,7 +106,7 @@ export default function ShopProvider({ children }) {
           item.variantQuantity--;
           newCart = [...cart];
         } else {
-          // console.log('just 1 item bruh');
+          console.log('just 1 item bruh');
           return;
         }
       }

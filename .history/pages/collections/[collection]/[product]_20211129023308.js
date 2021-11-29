@@ -4,6 +4,7 @@ import { getProduct, getProductFromCollections } from '../../../lib/shopify';
 const Product = ({ collection, product }) => {
   return (
     <div className={`min-h-screen pb-2`}>
+
       <ProductPageContent product={product} collection={collection} />
     </div>
   );
@@ -40,7 +41,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const product = await getProduct(params.product);
-  console.log('PARAAAAAAMSLJASDFJLASJFKLFSDLJSFADLJSDFJLSADFLJK', params);
+  console.log("PARAAAAAAMSLJASDFJLASJFKLFSDLJSFADLJSDFJLSADFLJK",params);
   return {
     props: {
       collection: params.collection,

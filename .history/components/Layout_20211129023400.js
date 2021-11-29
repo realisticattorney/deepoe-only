@@ -16,6 +16,13 @@ const Layout = ({ children }) => {
         type="text/javascript"
         src="//staticw2.yotpo.com/SpF8vLr2RDGVGtgQstgtn3wGbb1k5PpFKS4GRrhD/widget.js"
       ></Script>
+      {/* <Script
+        async
+        type="text/javascript"
+        data-api-key=""
+        id="stamped-script-widget"
+        src="https://cdn-stamped-io.azureedge.net/files/widget.min.js"
+      ></Script> */}
       <Nav />
       <main className="h-full flex-grow overflow-scroll">{children}</main>
       {router.pathname !== '/' && (

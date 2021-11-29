@@ -1,4 +1,5 @@
 import ProductCard from './ProductCard';
+import Link from 'next/link';
 import Image from 'next/image';
 const ProductList = ({ collection, products }) => {
   return (

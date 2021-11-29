@@ -5,7 +5,7 @@ import atob from 'atob';
 import { useState } from 'react';
 import YotpoReviews from './YotpoReviews';
 const ProductPageContent = ({ collection, product }) => {
-  console.log('product_handle', product.handle);
+  console.log('product_id', product);
   const atobURL = atob(product.id);
   const atobId = atobURL.split('Product/')[1];
   console.log('atobId', atobId);
@@ -92,15 +92,13 @@ const ProductPageContent = ({ collection, product }) => {
             </div>
           </button>
           <button className="group focus:outline-none">
-          <Link href={`/reviews/${product.handle}`}>
-          <a>
+          <Link href={`/reviews/`}>
             <div className="flex justify-between py-2 font-extralight text-left text-lg text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
               <span className="font-mono font-extralight text-lg2">
                 Reviews
               </span>
             </div>
             <YotpoReviews product={product} atobId={atobId} />
-            </a>
             </Link>
           </button>
         </div>

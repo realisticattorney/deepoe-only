@@ -100,7 +100,6 @@ const ProductPageContent = ({ collection, product }) => {
               </span>
             </div>
             <YotpoReviews product={product} atobId={atobId} />
-            </a>
             </Link>
           </button>
         </div>

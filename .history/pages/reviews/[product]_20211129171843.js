@@ -2,7 +2,7 @@ import ReviewsPageContent from '../../components/ReviewsPageContent';
 import { getAllProducts, getProduct } from '../../lib/shopify';
 
 const Product = ({ product }) => {
-  console.log("reviews,",product);
+  console.log(product);
   return (
     <div className="min-h-screen ">
       <ReviewsPageContent product={product} />

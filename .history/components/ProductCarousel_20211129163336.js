@@ -30,17 +30,15 @@ const Banner = ({ product, selectedVariant }) => {
         showStatus={false}
         showThumbs={false}
         interval={5000}
-        swipeable={false}
+        // emulateTouch
         autoFocus
         selectedItem={index}
         onChange={(index) => setIndex(index)}
         showArrows={true}
+        
       >
         {imageSrc.map((i) => (
-          <div
-            className="w-full h-110  from-gray-100  bottom-0 relative"
-            key={i}
-          >
+          <div className="w-full h-110  from-gray-100  bottom-0 relative" key={i}>
             <Image
               quality={100}
               loading="lazy"

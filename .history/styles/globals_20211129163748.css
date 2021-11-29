@@ -82,13 +82,12 @@ body {
 
 
 .control-arrow {
-  width: 3rem !important;
-  opacity : 0.2 !important;
+  width: 2.5rem !important;
 
 }
 .carousel.carousel-slider .control-arrow:hover {
-  background: transparent !important;
-  opacity: 0.7 !important;
+  background: #302e2f !important;
+  opacity: 0.1 !important;
 }
 /* 
 @media only screen and (min-device-width: 10px) and (max-device-width: 329px) {

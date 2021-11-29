@@ -9,7 +9,7 @@ const ProductCard = ({ collection, product }) => {
 
   return (
     <Link href={`/collections/${collection}/${handle}`}>
-      {/* <a
+    {/* <a
       href={`https://deepoe-only.vercel.app/collections/${collection}/${handle}`}
       rel="noreferrer"
     > */}
@@ -31,8 +31,8 @@ const ProductCard = ({ collection, product }) => {
           {formatter.format(price)}
         </p>
       </p>
-      {/* </a> */}
-    </Link>
+      {/* </Link> */}
+    </a>
   );
 };
 

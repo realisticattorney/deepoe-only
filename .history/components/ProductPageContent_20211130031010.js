@@ -92,8 +92,8 @@ const ProductPageContent = ({ collection, product }) => {
             <div className="max-h-0 overflow-hidden duration-300 text-sm  group-focus:pb-2 font-public-sans-normal group-focus:max-h-56  text-left font-extralight border-b border-gray-700">
               <ul className="list-disc list-outside font-mono font-extralight ">
                 {itemsSpecs2.map((item, index) => (
-                  <li key={index} className="">
-                    <span className="px-1 text-base font-black">•</span> {item}
+                  <li key={index} className="list-item list">
+                    {item}
                   </li>
                 ))}
               </ul>

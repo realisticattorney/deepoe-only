@@ -35,8 +35,7 @@ body {
 }
 
 .items-specs-list {
-  list-style-type: disc !important;
-  
+  list-style-type:  !important;
 }
 
 #reviews-complete > * > * > * > * > .text-m {

@@ -132,7 +132,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                     <div className="flex-1 overflow-y-auto space-y-6 px-6 sm:px-6">
                       <Link href={`/deepoe/sustainability`}>
                         <a
-                          className="font-thin text-3xl block"
+                          className="font-thin text-4xl block"
                           onClick={() => wrapperSetParentState(false)}
                         >
                           Sustainability
@@ -141,7 +141,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
 
                       <Link href={`/deepoe/faq`}>
                         <a
-                          className="font-thin text-3xl block"
+                          className="font-thin text-4xl block"
                           onClick={() => wrapperSetParentState(false)}
                         >
                           FAQ
@@ -150,7 +150,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
 
                       <Link href={`/contact`}>
                         <a
-                          className="font-thin text-3xl block"
+                          className="font-thin text-4xl block"
                           onClick={() => wrapperSetParentState(false)}
                         >
                           Contact

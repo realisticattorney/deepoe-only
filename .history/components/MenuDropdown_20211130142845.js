@@ -80,7 +80,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                         <ul className="space-y-2 pl-11 mb-6">
                           <Link href={`/collections/frontpage`}>
                             <a
-                              className="block text-md "
+                              className="block text-sm "
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Shop All
@@ -88,7 +88,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                           </Link>
                           <Link href={`/collections/dinnerware`}>
                             <a
-                              className="block text-md"
+                              className="block text-sm"
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Dinnerware
@@ -96,7 +96,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                           </Link>
                           <Link href={`/collections/drinkware`}>
                             <a
-                              className="block text-md"
+                              className="block text-sm"
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Drinkware
@@ -104,7 +104,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                           </Link>
                           <Link href={`/collections/accessories`}>
                             <a
-                              className="block text-md"
+                              className="block text-sm"
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Accessories

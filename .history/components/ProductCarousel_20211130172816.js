@@ -4,28 +4,8 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Banner = ({ product, selectedVariant }) => {
-  const imageSrc = [selectedVariant.image];
-  const imageColorSrc = product.images.edges
-    .filter(
-      (node) =>
-        node.node.altText === selectedVariant.options.Color ||
-        node.node.altText === 'All'
-    )
-    .sort((a, b) => (a.node.altText > b.node.altText ? -1 : 1))
-    .map((node) => node.node.originalSrc);
-
-  imageSrc.push(...imageColorSrc);
-
-  //change carousel index to 0
-  const [index, setIndex] = useState(0);
-  const [swipeEnabled, setSwipeEnabled] = useState(false);
-  const [touchEventsSet, setTouchEventsSet] = useState(false);
   useEffect(() => {
-    setIndex(0);
-  }, [selectedVariant]);
-
-  useEffect(() => {
-    if (imageSrc.length) {
+    if (images.length) {
       const disableScroll = () => {
         let carousel = document.querySelector('.carousel');
 
@@ -88,7 +68,26 @@ const Banner = ({ product, selectedVariant }) => {
 
       disableScroll();
     }
-  }, [imageSrc, swipeEnabled]);
+  }, [images, swipeEnabled]);
+
+  const imageSrc = [selectedVariant.image];
+  const imageColorSrc = product.images.edges
+    .filter(
+      (node) =>
+        node.node.altText === selectedVariant.options.Color ||
+        node.node.altText === 'All'
+    )
+    .sort((a, b) => (a.node.altText > b.node.altText ? -1 : 1))
+    .map((node) => node.node.originalSrc);
+
+  imageSrc.push(...imageColorSrc);
+
+  //change carousel index to 0
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    setIndex(0);
+  }, [selectedVariant]);
 
   return (
     <div className="relative z-0  mb-10 classes.my__carousel_main">

@@ -184,10 +184,10 @@ body {
   padding: 0rem !important;
 
 } */
-/* .carousel.carousel-slider .control-arrow:hover {
+.carousel.carousel-slider .control-arrow:hover {
   background: transparent !important;
   opacity: 0.7 !important;
-} */
+}
 
 /* 
 @media only screen and (min-device-width: 10px) and (max-device-width: 329px) {

@@ -57,7 +57,7 @@ const ProductPageContent = ({ collection, product }) => {
         </div>
         <div className="flex flex-col w-full border-t pt-2 border-deepoe-chocolate">
           <button className="group focus:outline-none" onClick={handleShow}>
-            <div className="flex justify-between pb-2 pt-0.5 text-lg font-extralight items-center text-left text-deepoe_default-black focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-deepoe_default-black group-focus:font-medium">
+            <div className="flex justify-between pb-2 pt-0.5 text-lg font-extralight items-center text-left text focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-deepoe_default-black group-focus:font-medium">
               <span className="truncate font-mono font-extralight text-lg2">
                 Details
               </span>
@@ -75,7 +75,7 @@ const ProductPageContent = ({ collection, product }) => {
             </div>
           </button>
           <button className="group focus:outline-none">
-            <div className="flex justify-between py-2 text-lg font-extralight text-left items-center text-deepoe_default-black focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-deepoe_default-black group-focus:font-medium">
+            <div className="flex justify-between py-2 text-lg font-extralight text-left items-center text focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-deepoe_default-black group-focus:font-medium">
               <span className="truncate font-mono font-extralight text-lg2">
                 Item Specifications
               </span>
@@ -100,7 +100,7 @@ const ProductPageContent = ({ collection, product }) => {
           <div className="">
             {/* <Link href={`/reviews/${product.handle}`}> */}
             {/* <a> */}
-            <div className="flex justify-between pt-2 -mb-2 font-extralight text-left text-lg text-deepoe_default-black items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-deepoe_default-black group-focus:font-medium">
+            <div className="flex justify-between pt-2 -mb-2 font-extralight text-left text-lg text items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-deepoe_default-black group-focus:font-medium">
               <span className="font-mono font-extralight text-lg2">
                 Reviews
               </span>

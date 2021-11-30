@@ -4,6 +4,8 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Banner = ({ product, selectedVariant }) => {
+ 
+
   const imageSrc = [selectedVariant.image];
   const imageColorSrc = product.images.edges
     .filter(
@@ -20,11 +22,11 @@ const Banner = ({ product, selectedVariant }) => {
   const [index, setIndex] = useState(0);
   const [swipeEnabled, setSwipeEnabled] = useState(false);
   const [touchEventsSet, setTouchEventsSet] = useState(false);
+  // useEffect(() => {
+  // }, [selectedVariant]);
+  
   useEffect(() => {
     setIndex(0);
-  }, [selectedVariant]);
-
-  useEffect(() => {
     if (imageSrc.length) {
       const disableScroll = () => {
         let carousel = document.querySelector('.carousel');
@@ -88,7 +90,10 @@ const Banner = ({ product, selectedVariant }) => {
 
       disableScroll();
     }
-  }, [imageSrc, swipeEnabled]);
+  }, [imageSrc, swipeEnabled, selectedVariant]);
+
+
+
 
   return (
     <div className="relative z-0  mb-10 classes.my__carousel_main">

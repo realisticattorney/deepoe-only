@@ -182,11 +182,15 @@ body {
 .yotpo-first-review > * > * > .yotpo-icon-star {
   font-family: 'Public Sans' !important;
   src: url('/fonts/PublicSans/PublicSans-Regular.ttf') !important;
-  font-weight: 300 !important;
+  font-weight: 400 !important;
   font-style: normal !important;
   font-display: swap !important;
   color: #302e2f !important;
   /* background-color: #fff !important; */
+}
+
+.yotpo-first-review > * > span {
+  margin-bottom: -5rem !important;
 }
 
 /* .control-arrow {

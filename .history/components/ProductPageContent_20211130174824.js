@@ -148,8 +148,8 @@ const ProductPageContent = ({ collection, product }) => {
           </div>
         </div>
       </div>
-      <div className={`${disable ? 'my-10' : ''}`}></div>
       <div className="flex flex-col w-full py-5 font-mono">
+        <div className={`hidden ${disable ? 'flex my-10' : ''}`}></div>
         <div className="relative h-96">
           <Image src="/brunch.jpg" layout="fill" objectFit="cover" />
         </div>

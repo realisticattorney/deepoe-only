@@ -179,7 +179,7 @@ body {
 }
 
 .yotpo-first-review > * > span,
-.yotpo-first-review > * > * > .yotpo-icon-star {
+.yotpo-first-review > * >  .yotpo-icon-star:before {
   font-family: 'Public Sans' !important;
   src: url('/fonts/PublicSans/PublicSans-Regular.ttf') !important;
   font-weight: 400 !important;

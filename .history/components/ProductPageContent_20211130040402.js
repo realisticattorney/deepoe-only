@@ -108,7 +108,7 @@ const ProductPageContent = ({ collection, product }) => {
 
             <div
               id="reviews-productpage "
-              className=" overflow-hidden focus:outline-none active:outline-none text-center max-h-111"
+              className=" overflow-hidden focus:outline-none active:outline-none text-center "
             >
               <div
                 ref={stageCanvasRef}

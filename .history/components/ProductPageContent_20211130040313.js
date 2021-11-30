@@ -97,7 +97,7 @@ const ProductPageContent = ({ collection, product }) => {
               </ul>
             </div>
           </button>
-          <div className="">
+          <div className="max-h-111">
             {/* <Link href={`/reviews/${product.handle}`}> */}
             {/* <a> */}
             <div className="flex justify-between pt-2 -mb-2 font-extralight text-left text-lg text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">

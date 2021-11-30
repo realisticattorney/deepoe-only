@@ -33,12 +33,8 @@ const ProductPageContent = ({ collection, product }) => {
   let itemsSpecs;
   const { description } = product;
   let [intro, details] = description.split('^^^DETAILS');
-  [details, itemsSpecs] = details.split('^^^ITEM SPECIFICATIONS');
-  const itemsSpecs2 = itemsSpecs.split('**');
-  console.log('intro', intro);
-  console.log('details', details);
-  console.log('itemsSpecs', itemsSpecs);
-  console.log('itemsSpecs2', itemsSpecs2);
+  [details, itemsSpecs] = details?.split('^^^ITEM SPECIFICATIONS');
+  const itemsSpecs2 = itemsSpecs?.split('**');
   return (
     <div>
       <div className="px-3.5 pb-0  z-0">
@@ -90,10 +86,16 @@ const ProductPageContent = ({ collection, product }) => {
               </p>
             </div>
             <div className="max-h-0 overflow-hidden duration-300 text-sm  group-focus:pb-2 font-public-sans-normal group-focus:max-h-56  text-left font-extralight border-b border-gray-700">
-              <ul className="list-disc font-mono font-extralight ">
-                {itemsSpecs2.map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))}
+              <ul>
+                {itemsSpecs2.map((item, index) => {
+                  return (
+                    <li key={index}>
+                      <p className="font-mono font-extralight">
+                      {item}
+                      </p>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           </button>

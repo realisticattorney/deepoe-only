@@ -36,8 +36,9 @@ const ReviewsPageContent = ({ collection, product }) => {
       <div className="px-3.5 pb-0 z-0">
         <Link href={`/collections/${collection}/${product.handle}`}>
           <a className="text-left pl-3 text-lg font-extralight font-mono">
-            {'<'} back to {product.title.slice(0,27)}
-            {product.title.length > 28 ? ' …' : ''}
+            {'<'} back to{' '}
+            {product.title.slice(0, 40)}
+        {product.title.length > 40 ? '…' : ''}
           </a>
         </Link>
       </div>
@@ -82,6 +83,7 @@ const ReviewsPageContent = ({ collection, product }) => {
                 </div>
               </div>
               <div
+                
                 className={`yotpo yotpo-main-widget`}
                 data-product-id={`${atobId}`}
                 data-currency="USD"

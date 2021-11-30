@@ -29,8 +29,10 @@ const Banner = ({ product, selectedVariant }) => {
         showStatus={false}
         showThumbs={false}
         preventMovementUntilSwipeScrollTolerance={true}
+        // swipeable={swipeEnabled}
         interval={5000}
         swipeScrollTolerance={50}
+        // swipeable={false}
         autoFocus={false}
         selectedItem={index}
         onChange={(index) => setIndex(index)}

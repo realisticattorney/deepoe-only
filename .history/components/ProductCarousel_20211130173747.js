@@ -18,9 +18,12 @@ const Banner = ({ product, selectedVariant }) => {
 
   //change carousel index to 0
   const [index, setIndex] = useState(0);
+  // const [swipeEnabled, setSwipeEnabled] = useState(false);
+  // const [touchEventsSet, setTouchEventsSet] = useState(false);
   useEffect(() => {
     setIndex(0);
   }, [selectedVariant]);
+
 
   return (
     <div className="relative z-0  mb-10 classes.my__carousel_main">
@@ -29,8 +32,10 @@ const Banner = ({ product, selectedVariant }) => {
         showStatus={false}
         showThumbs={false}
         preventMovementUntilSwipeScrollTolerance={true}
+        // swipeable={swipeEnabled}
         interval={5000}
         swipeScrollTolerance={50}
+        // swipeable={false}
         autoFocus={false}
         selectedItem={index}
         onChange={(index) => setIndex(index)}

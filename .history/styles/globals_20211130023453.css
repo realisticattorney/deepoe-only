@@ -43,8 +43,8 @@ body {
 .text-m {
   @apply text-deepoe_default-black font-semibold;
   font-size: 0.72rem !important;
-  margin-left: 0.28rem !important;
-  margin-top: 0.05rem !important;
+  margin-left: 0.23rem !important;
+  margin-top: 0.23rem !important;
   font-family: 'Public Sans' !important;
 }
 

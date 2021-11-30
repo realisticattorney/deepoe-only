@@ -45,7 +45,7 @@ const ProductPageContent = ({ collection, product }) => {
       if (lalala > -1) {
         setDisable(true);
       }
-    }, 300);
+    }, 200);
     return () => clearTimeout(timer);
   }, []);
 

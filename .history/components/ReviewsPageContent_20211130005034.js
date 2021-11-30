@@ -3,7 +3,7 @@ import ProductForm from './ProductForm';
 // import styles from './ReviewsPageContent.module.css';
 import Link from 'next/link';
 import atob from 'atob';
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import YotpoReviews from './YotpoReviews';
 const ReviewsPageContent = ({ collection, product }) => {
   console.log('product_id', product);
@@ -18,18 +18,7 @@ const ReviewsPageContent = ({ collection, product }) => {
   //   show ? setShow(false) : setShow(true);
   // };
 
-  const stageCanvasRef = useRef(null);
-  useEffect(() => {
-    // The 'current' property contains info of the reference:
-    console.log('stageCanvasRef', stageCanvasRef);
-    // align, title, ... , width, height, etc.
-    // if (stageCanvasRef.current) {
-      // let height = stageCanvasRef.current;
-      // let width = stageCanvasRef.current.offsetWidth;
-      // console.log('height,', height);
-      // console.log('width,', width);
-    // }
-  }, [stageCanvasRef]);
+  const stageCanvasRef = const ref = useRef(initialValue)(null);
 
   return (
     <div>
@@ -82,7 +71,7 @@ const ReviewsPageContent = ({ collection, product }) => {
                 </div>
               </div>
               <div
-                
+                ref={stageCanvasRef}
                 className={`yotpo yotpo-main-widget`}
                 data-product-id={`${atobId}`}
                 data-currency="USD"

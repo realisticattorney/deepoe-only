@@ -147,7 +147,7 @@ const ProductPageContent = ({ collection, product }) => {
 
               {/* </a> */}
               {/* </Link> */}
-              <div className={`pt-2.5 self-center ${disable ? "hidden" : "inline-block"}`}>
+              <div className={`pt-2.5 self-center ${disable ? "hidden" : "block"}`}>
                 <Link href={`/reviews/${product.handle}`}>
                   <button
                     type="submit"

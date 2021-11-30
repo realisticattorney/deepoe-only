@@ -21,33 +21,18 @@ const ProductPageContent = ({ collection, product }) => {
   // };
 
   const stageCanvasRef = useRef(null);
-  const [disable, setDisable] = useState(false);
-
-  // The 'current' property contains info of the reference:
-  // console.log('stageCanvasRef', stageCanvasRef);
-  // // align, title, ... , width, height, etc.
-  // if (stageCanvasRef.current) {
-  //   let height = stageCanvasRef.current.offsetHeight;
-  //   let width = stageCanvasRef.current.offsetWidth;
-  //   let inner =  stageCanvasRef.current.innerText;
-  // console.log('height,', height);
-  // console.log('width,', width);
-  // console.log('inner,', inner);
-  // }
-
   useEffect(() => {
-    const timer = setTimeout(() => {
-      console.log('This will run after 1 second!');
-      let inner = stageCanvasRef.current.innerText
-        ? stageCanvasRef.current.innerText
-        : 'empty';
-      let lalala = inner.indexOf('Currently, there');
-      if (lalala > -1) {
-        setDisable(true);
-      }
-    }, 1000);
-    return () => clearTimeout(timer);
-  }, []);
+    // The 'current' property contains info of the reference:
+    console.log('stageCanvasRef', stageCanvasRef);
+    // align, title, ... , width, height, etc.
+    // if (stageCanvasRef.current) {
+      // let height = stageCanvasRef.current;
+      // let width = stageCanvasRef.current.offsetWidth;
+      // console.log('height,', height);
+      // console.log('width,', width);
+    // }
+  }, [stageCanvasRef]);
+
 
   const [show, setShow] = useState(false);
 
@@ -131,27 +116,17 @@ const ProductPageContent = ({ collection, product }) => {
 
             <div
               id="reviews-productpage "
+              ref={stageCanvasRef}
               className=" overflow-hidden focus:outline-none active:outline-none text-center"
             >
-              <div
-                ref={stageCanvasRef}
-                className="yotpo yotpo-main-widget "
-                data-product-id={`${atobId}`}
-                data-currency="USD"
-                data-price={`${product.variants.edges[0].node.priceV2.amount}`}
-                data-name={`${product.handle}`}
-                data-url={`https://deepoe.com/products/${product.handle}`}
-                // data-url={`${atobURL}`}
-                data-image-url={`${product.images.edges[0].node.originalSrc}`}
-              ></div>
+              <YotpoReviews product={product} atobId={atobId} />
 
               {/* </a> */}
               {/* </Link> */}
-              <div className={`pt-2.5 self-center ${disable ? "hidden" : "inline-block"}`}>
+              <div className="pt-2.5 self-center  group-focus:block ">
                 <Link href={`/reviews/${product.handle}`}>
                   <button
                     type="submit"
-                    disabled={disable ? true : false}
                     className="inline-flex justify-center py-1 px-10 mt-2 border border-transparent font-sans shadow text-xl font-light text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
                   >
                     More Reviews

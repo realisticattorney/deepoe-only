@@ -45,7 +45,7 @@ const ProductPageContent = ({ collection, product }) => {
       if (lalala > -1) {
         setDisable(true);
       }
-    }, 1000);
+    }, 2000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -147,11 +147,11 @@ const ProductPageContent = ({ collection, product }) => {
 
               {/* </a> */}
               {/* </Link> */}
-              <div className={`pt-2.5 self-center ${disable ? "hidden" : "inline-block"}`}>
+              <div className="pt-2.5 self-center  group-focus:block ">
                 <Link href={`/reviews/${product.handle}`}>
                   <button
                     type="submit"
-                    disabled={disable ? true : false}
+                    disabled={disable ? }
                     className="inline-flex justify-center py-1 px-10 mt-2 border border-transparent font-sans shadow text-xl font-light text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
                   >
                     More Reviews

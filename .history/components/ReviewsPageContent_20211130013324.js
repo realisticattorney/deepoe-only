@@ -21,7 +21,7 @@ const ReviewsPageContent = ({ collection, product }) => {
   const stageCanvasRef = useRef(null);
   useEffect(() => {
     // The 'current' property contains info of the reference:
-    console.log('stageCanvasRef', stageCanvasRef);
+    consoselo.log('stageCanvasRef', stageCanvasRef);
     // align, title, ... , width, height, etc.
     // if (stageCanvasRef.current) {
       // let height = stageCanvasRef.current;

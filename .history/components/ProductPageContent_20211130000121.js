@@ -91,7 +91,7 @@ const ProductPageContent = ({ collection, product }) => {
               <p className="group-focus:pt-1"> Set of 4</p>
             </div>
           </button>
-          <div className="max-h-111">
+          <button className="group focus:outline-none">
             {/* <Link href={`/reviews/${product.handle}`}> */}
             {/* <a> */}
             <div className="flex justify-between pt-2 -mb-2 font-extralight text-left text-lg text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
@@ -100,10 +100,7 @@ const ProductPageContent = ({ collection, product }) => {
               </span>
             </div>
 
-            <div
-              id="reviews-productpage "
-              className=" overflow-hidden focus:outline-none active:outline-none text-center"
-            >
+            <div id="reviews-productpage ">
               <YotpoReviews product={product} atobId={atobId} />
 
               {/* </a> */}
@@ -119,7 +116,7 @@ const ProductPageContent = ({ collection, product }) => {
                 </Link>
               </div>
             </div>
-          </div>
+          </button>
         </div>
       </div>
 

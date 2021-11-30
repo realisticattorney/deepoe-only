@@ -1,5 +1,5 @@
 import ReviewsPageContent from '../../components/ReviewsPageContent';
-// import { getAllProducts, getProduct } from '../../lib/shopify';
+import { getAllProducts, getProduct } from '../../lib/shopify';
 import { useEffect } from 'react';
 import ProductPageContent from '../../components/ProductPageContent';
 import {
@@ -8,11 +8,11 @@ import {
   getProductFromCollections,
 } from '../../lib/shopify';
 
-const ProductReview = ({ collection, product }) => {
+const ProductReview = ({ product }) => {
   console.log('reviews,', product);
   return (
     <div className="min-h-screen ">
-      <ReviewsPageContent product={product} collection={collection[1]} />
+      <ReviewsPageContent product={product} />
     </div>
   );
 };

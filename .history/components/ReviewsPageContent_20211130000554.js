@@ -7,7 +7,7 @@ import { useState } from 'react';
 import YotpoReviews from './YotpoReviews';
 const ReviewsPageContent = ({ collection, product }) => {
   console.log('product_id', product);
-  console.log('collection_id', collection);
+  
   const atobURL = atob(product.id);
   const atobId = atobURL.split('Product/')[1];
   console.log('atobId', atobId);
@@ -21,7 +21,7 @@ const ReviewsPageContent = ({ collection, product }) => {
   return (
     <div>
       <div className="px-3.5 pb-0  z-0">
-        <Link href={`/collections/${collection}/${product.handle}`}>
+        <Link href={`/collections/${collection}/`}>
           <a className="text-left pl-3 text-lg font-extralight font-mono">
             {'<'} back to{' '}
             {collection === 'frontpage' ? 'all products' : collection}

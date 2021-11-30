@@ -21,7 +21,7 @@ const ReviewsPageContent = ({ collection, product }) => {
   return (
     <div>
       <div className="px-3.5 pb-0  z-0">
-        <Link href={`/collections/${collection}/${product.handle}`}>
+        <Link href={`/collections/${collection}/${product.}`}>
           <a className="text-left pl-3 text-lg font-extralight font-mono">
             {'<'} back to{' '}
             {collection === 'frontpage' ? 'all products' : collection}

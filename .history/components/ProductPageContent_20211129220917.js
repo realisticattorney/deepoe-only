@@ -91,7 +91,7 @@ const ProductPageContent = ({ collection, product }) => {
               <p className="group-focus:pt-1"> Set of 4</p>
             </div>
           </button>
-          <div className="max-h-111">
+          <button className="group focus:outline-none">
             {/* <Link href={`/reviews/${product.handle}`}> */}
             {/* <a> */}
             <div className="flex justify-between pt-2 -mb-2 font-extralight text-left text-lg text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
@@ -100,26 +100,23 @@ const ProductPageContent = ({ collection, product }) => {
               </span>
             </div>
 
-            <div
-              id="reviews-productpage "
-              className=" overflow-hidden focus:outline-none active:outline-none text-center"
-            >
+            <div id="reviews-productpage " className="max-h-36 overflow-hidden duration-300 text-sm  group-focus:pb-2 font-public-sans-normal group-focus:max-h-56 ">
               <YotpoReviews product={product} atobId={atobId} />
-
-              {/* </a> */}
-              {/* </Link> */}
-              <div className="pt-2.5 self-center  group-focus:block ">
-                <Link href={`/reviews/${product.handle}`}>
-                  <button
-                    type="submit"
-                    className="inline-flex justify-center py-1 px-10 mt-2 border border-transparent font-sans shadow text-xl font-light text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
-                  >
-                    More Reviews
-                  </button>
-                </Link>
-              </div>
             </div>
+
+            {/* </a> */}
+            {/* </Link> */}
+          <div className="pt-2.5 self-center hidden group-focus:inline-block ">
+            <Link href={`/reviews/${product.handle}`} className="z-50">
+              <button
+                type="submit"
+                className="inline-flex justify-center z-50 py-1 px-10 mt-2 border border-transparent font-sans shadow text-xl font-light text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
+              >
+                More Reviews
+              </button>
+            </Link>
           </div>
+          </button>
         </div>
       </div>
 

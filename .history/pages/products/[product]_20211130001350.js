@@ -1,7 +1,7 @@
 import ProductPageContent from '../../components/ProductPageContent';
 import { getAllProducts, getProduct } from '../../lib/shopify';
 
-const Product = ({ collection, product }) => {
+const Product = ({ product }) => {
   console.log(product);
   return (
     <div className="min-h-screen ">

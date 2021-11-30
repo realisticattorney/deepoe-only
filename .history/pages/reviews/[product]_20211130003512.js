@@ -1,34 +1,16 @@
 import ReviewsPageContent from '../../components/ReviewsPageContent';
-// import { getAllProducts, getProduct } from '../../lib/shopify';
-import { useEffect } from 'react';
-import ProductPageContent from '../../components/ProductPageContent';
-import {
-  getAllProducts,
-  getProduct,
-  getProductFromCollections,
-} from '../../lib/shopify';
+import { getAllProducts, getProduct } from '../../lib/shopify';
 
-const ProductReview = ({ collection, product }) => {
+const Product = ({ product }) => {
   console.log('reviews,', product);
   return (
     <div className="min-h-screen ">
-      <ReviewsPageContent product={product} collection={collection[1]} />
+      <ReviewsPageContent product={product} />
     </div>
   );
 };
 
-export default ProductReview;
-export async function getStaticPaths() {
-  const products = await getAllProducts();
-  const paths = products.map((product) => ({
-    params: { product: String(product.node.handle) },
-  }));
-
-  return {
-    paths,
-    fallback: false,
-  };
-}
+export default Product;
 
 export async function getStaticProps({ params }) {
   const product = await getProduct(params.product);
@@ -43,7 +25,8 @@ export async function getStaticProps({ params }) {
       for (let j = 0; j < products.length; j++) {
         const product = products[j];
         if (product.node.handle === params.product) {
-          combinations.push(collection.node.handle);
+          combinations.push(
+            {collection: collection.node.handle});
         }
       }
     }

@@ -1,11 +1,11 @@
-import ProductPageContent from '../../components/ProductPageContent';
+import ReviewsPageContent from '../../components/ReviewsPageContent';
 import { getAllProducts, getProduct } from '../../lib/shopify';
 
-const Product = ({ collection, product }) => {
-  console.log(product);
+const Product = ({ product }) => {
+  console.log('reviews,', product);
   return (
     <div className="min-h-screen ">
-      <ProductPageContent product={product} collection={collection[1]} />
+      <ReviewsPageContent product={product} />
     </div>
   );
 };
@@ -17,7 +17,7 @@ export async function getStaticPaths() {
   const paths = products.map((product) => ({
     params: { product: String(product.node.handle) },
   }));
-  
+
   return {
     paths,
     fallback: false,
@@ -26,7 +26,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const product = await getProduct(params.product);
-  console.log(params)
+  console.log(params);
   return {
     props: {
       product,

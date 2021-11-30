@@ -8,11 +8,11 @@ import {
   getProductFromCollections,
 } from '../../lib/shopify';
 
-const ProductReview = ({ collection, product }) => {
+const ProductReview = ({ product }) => {
   console.log('reviews,', product);
   return (
     <div className="min-h-screen ">
-      <ReviewsPageContent product={product} collection={collection[1]} />
+      <ReviewsPageContent product={product} />
     </div>
   );
 };

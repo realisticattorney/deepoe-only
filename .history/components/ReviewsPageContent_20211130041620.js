@@ -34,17 +34,16 @@ const ReviewsPageContent = ({ collection, product }) => {
   return (
     <div>
       <div className="px-3.5 pb-0 z-0">
-        <a
-          href={`https://deepoe-only.vercel.app/${collection}/${product.handle}`}
-          rel="noreferrer"
-        >
-          {/* <Link href={`/collections/${collection}/${product.handle}`}> */}
-          <p className="text-left pl-3 text-lg font-extralight font-mono">
+      <a
+                href={`https://deepoe-only.vercel.app/${collection}/${product.handle}`}
+                rel="noreferrer"
+              >
+        {/* <Link href={`/collections/${collection}/${product.handle}`}> */}
+          <a className="text-left pl-3 text-lg font-extralight font-mono">
             {'<'} back to {product.title.slice(0, 27)}
             {product.title.length > 28 ? ' …' : ''}
-          </p>
-          {/* </Link> */}
-        </a>
+          </a>
+        </Link>
       </div>
 
       <div className="flex flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 px-2 mt-5 mx-auto">
@@ -74,8 +73,8 @@ const ReviewsPageContent = ({ collection, product }) => {
         </div>
       </div>
 
-      {/* <div className="flex flex-col w-full py-5 font-public-sans-normal"> */}
-      {/* <div className="pt-2.5 self-center">
+      <div className="flex flex-col w-full py-5 font-public-sans-normal">
+        <div className="pt-2.5 self-center">
           <Link href={`/deepoe/sustainability`}>
             <button
               type="submit"
@@ -84,8 +83,8 @@ const ReviewsPageContent = ({ collection, product }) => {
               Learn More
             </button>
           </Link>
-        </div> */}
-      {/* </div> */}
+        </div>
+      </div>
     </div>
   );
 };

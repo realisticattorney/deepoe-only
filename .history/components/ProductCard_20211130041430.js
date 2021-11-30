@@ -11,8 +11,8 @@ const ProductCard = ({ collection, product }) => {
     <a
       href={`https://deepoe-only.vercel.app/collections/${collection}/${handle}`}
       rel="noreferrer"
-    >
-      {/* // <Link href={`/collections/${collection}/${handle}`}> */}
+    > 
+    {/* // <Link href={`/collections/${collection}/${handle}`}> */}
       <p className="group px-2">
         <div className="w-full  overflow-hidden">
           <div className="relative h-110">
@@ -31,8 +31,8 @@ const ProductCard = ({ collection, product }) => {
           {formatter.format(price)}
         </p>
       </p>
-      {/* </Link> */}
-    </a>
+    </Link>
+      </a> */}
   );
 };
 

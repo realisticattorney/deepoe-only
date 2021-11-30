@@ -130,11 +130,8 @@ const ProductPageContent = ({ collection, product }) => {
                 disable ? 'hidden' : 'inline-block'
               }`}
             >
-              <a
-                href={`https://deepoe-only.vercel.app/reviews/${product.handle}`}
-                rel="noreferrer"
-              >
-                {/* <Link href={`/reviews/${product.handle}`}> */}
+            
+              <Link href={`/reviews/${product.handle}`}>
                 <button
                   type="submit"
                   disabled={disable ? true : false}
@@ -142,8 +139,7 @@ const ProductPageContent = ({ collection, product }) => {
                 >
                   More Reviews
                 </button>
-                {/* </Link> */}
-              </a>
+              </Link>
             </div>
           </div>
         </div>

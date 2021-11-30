@@ -131,10 +131,10 @@ const ProductPageContent = ({ collection, product }) => {
               }`}
             >
               <a
-                href={`https://deepoe-only.vercel.app/reviews/${product.handle}`}
-                rel="noreferrer"
-              >
-                {/* <Link href={`/reviews/${product.handle}`}> */}
+      href={`https://deepoe-only.vercel.app//reviews/${product.handle}`}
+      rel="noreferrer"
+    >
+              {/* <Link href={`/reviews/${product.handle}`}> */}
                 <button
                   type="submit"
                   disabled={disable ? true : false}
@@ -142,8 +142,7 @@ const ProductPageContent = ({ collection, product }) => {
                 >
                   More Reviews
                 </button>
-                {/* </Link> */}
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -75,7 +75,7 @@ const ReviewsPageContent = ({ collection, product }) => {
       </div>
 
       {/* <div className="flex flex-col w-full py-5 font-public-sans-normal"> */}
-      {/* <div className="pt-2.5 self-center">
+        {/* <div className="pt-2.5 self-center">
           <Link href={`/deepoe/sustainability`}>
             <button
               type="submit"
@@ -85,7 +85,7 @@ const ReviewsPageContent = ({ collection, product }) => {
             </button>
           </Link>
         </div> */}
-      {/* </div> */}
+      </div>
     </div>
   );
 };

@@ -179,9 +179,8 @@ body {
 }
 
 .control-arrow {
-  width: 5rem !important;
+  width: 4.5rem !important;
   opacity: 0.3 !important;
-  padding: 0rem !important;
 
 }
 .carousel.carousel-slider .control-arrow:hover {

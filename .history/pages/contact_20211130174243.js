@@ -288,7 +288,7 @@ export default function Contact() {
           <Link href={`deepoe/faq`}>
             <button
               type="submit"
-              className="inline-flex font-mono font-normal items-center self-center justify-center py-0.5 text-base px-4 w-36 mb-12 border border-transparent shadow  text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2 active:outline-none"
+              className="inline-flex font-mono font-lightq items-center self-center justify-center py-0.5 text-base px-4 w-36 mb-12 border border-transparent shadow  text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2 active:outline-none"
             >
               View More
             </button>

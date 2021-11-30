@@ -17,7 +17,7 @@ const ProductPageContent = ({ collection, product }) => {
       let inner = stageCanvasRef.current.innerText
         ? stageCanvasRef.current.innerText
         : 'empty';
-      console.log(inner);
+        console.log(inner);
       let lalala = inner.indexOf('Currently, there');
       if (lalala > -1) {
         setDisable(true);
@@ -108,7 +108,7 @@ const ProductPageContent = ({ collection, product }) => {
 
             <div
               id="reviews-productpage "
-              className=" overflow-hidden focus:outline-none active:outline-none text-center max-h-110"
+              className=" overflow-hidden focus:outline-none active:outline-none text-center"
             >
               <div
                 ref={stageCanvasRef}
@@ -124,21 +124,21 @@ const ProductPageContent = ({ collection, product }) => {
 
               {/* </a> */}
               {/* </Link> */}
-            </div>
-            <div
-              className={`pt-2.5 text-center w-full self-center border-t border-deepoe_default-black ${
-                disable ? 'hidden' : 'inline-block'
-              }`}
-            >
-              <Link href={`/reviews/${product.handle}`}>
-                <button
-                  type="submit"
-                  disabled={disable ? true : false}
-                  className="inline-flex justify-center py-1 px-10 mt-2 border border-transparent font-sans shadow text-xl font-light text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
-                >
-                  More Reviews
-                </button>
-              </Link>
+              <div
+                className={`pt-2.5 self-center ${
+                  disable ? 'hidden' : 'inline-block'
+                }`}
+              >
+                <Link href={`/reviews/${product.handle}`}>
+                  <button
+                    type="submit"
+                    disabled={disable ? true : false}
+                    className="inline-flex justify-center py-1 px-10 mt-2 border border-transparent font-sans shadow text-xl font-light text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
+                  >
+                    More Reviews
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

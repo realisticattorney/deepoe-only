@@ -138,7 +138,7 @@ const ProductPageContent = ({ collection, product }) => {
                 <button
                   type="submit"
                   disabled={disable ? true : false}
-                  className="inline-flex justify-center py-1 px-10 mt-2 font-mono font-light border border-transparent shadow text-xl  text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
+                  className="inline-flex justify-center py-1 px-10 mt-2 font-mono font-light border border-transparent shadow text-xl font-light text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
                 >
                   More Reviews
                 </button>

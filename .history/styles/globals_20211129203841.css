@@ -38,12 +38,10 @@ body {
   @apply text-deepoe_default-black font-semibold;
   font-size: 0.7rem !important;
   margin-left: 0.2rem !important;
-  font-family: 'Public Sans' !important;
 }
 .text-m {
   @apply text-deepoe_default-black font-semibold;
   font-size: 0.72rem !important;
-  font-family: 'Public Sans' !important;
 }
 
 #reviews-complete > * > * > * > .yotpo-display-wrapper {
@@ -72,28 +70,14 @@ body {
 #reviews-complete > * > * > * > * > .rating-stars {
   @apply flex items-center;
   font-size: 1.5rem !important;
-  font-family: 'Public Sans' !important;
+
   color: #fff !important;
 }
 
 .yotpo-icon-profile {
   /* display: none !important; */
-  background-color: #302e2f !important;
-  color: #f5f3ee !important;
-  font-family: 'Public Sans' !important;
-  margin-right: 0.7rem !important;
-}
-
-.yotpo-user-letter {
-  color: #f5f3ee !important;
-}
-
-.yotpo-main-widget {
-  font-family: 'Public Sans' !important;
-  src: url('/fonts/PublicSans/PublicSans-Regular.ttf') !important;
-  font-style: normal !important;
-  font-weight: 400 !important;
-  font-display: swap !important;
+  background-color: #302E2F !important;
+  align-self: center !important;
 }
 .footer-actions {
   display: none !important;
@@ -101,24 +85,7 @@ body {
 .yotpo-user-name {
   font-size: 1rem !important;
   font-weight: 500 !important;
-}
-
-.content-title {
   font-family: 'Public Sans' !important;
-  src: url('/fonts/PublicSans/PublicSans-Regular.ttf') !important;
-  font-style: normal !important;
-  font-weight: 600 !important;
-  font-display: swap !important;
-}
-.content-review {
-  font-family: 'Public Sans' !important;
-  src: url('/fonts/PublicSans/PublicSans-Regular.ttf') !important;
-  font-style: normal !important;
-  font-display: swap !important;
-}
-
-.yotpo-footer {
-  display: none !important;
 }
 
 #reviews-complete > * > * > * > * > * > .yotpo-icon-default-star:before,

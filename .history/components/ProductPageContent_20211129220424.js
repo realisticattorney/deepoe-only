@@ -100,13 +100,14 @@ const ProductPageContent = ({ collection, product }) => {
               </span>
             </div>
 
-            <div id="reviews-productpage " className="max-h-36 overflow-hidden duration-300 text-sm  group-focus:pb-2 font-public-sans-normal group-focus:max-h-56 ">
+            <div id="reviews-productpage max-h-0 overflow-hidden duration-300 text-sm  group-focus:pb-2 font-public-sans-normal group-focus:max-h-56  ">
               <YotpoReviews product={product} atobId={atobId} />
             </div>
 
             {/* </a> */}
             {/* </Link> */}
-          <div className="pt-2.5 self-center hidden group-focus:inline-block">
+          </button>
+          <div className="pt-2.5 self-center">
             <Link href={`/reviews/${product.handle}`}>
               <button
                 type="submit"
@@ -116,7 +117,6 @@ const ProductPageContent = ({ collection, product }) => {
               </button>
             </Link>
           </div>
-          </button>
         </div>
       </div>
 

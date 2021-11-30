@@ -76,24 +76,23 @@ body {
   color: #fff !important;
 }
 
-.yotpo-icon-profile {
-  /* display: none !important; */
-  background-color: #302e2f !important;
-  color: #f5f3ee !important;
-  font-family: 'Public Sans' !important;
-  margin-right: 0.7rem !important;
-}
-
-.yotpo-user-letter {
-  color: #f5f3ee !important;
-}
-
-.yotpo-main-widget {
+.yotpo-review {
   font-family: 'Public Sans' !important;
   src: url('/fonts/PublicSans/PublicSans-Regular.ttf') !important;
   font-style: normal !important;
   font-weight: 400 !important;
   font-display: swap !important;
+}
+
+.yotpo-icon-profile {
+  /* display: none !important; */
+  background-color: #302e2f !important;
+  color: #f5f3ee !important;
+  font-family: 'Public Sans' !important;
+}
+
+.yotpo-user-letter {
+  color: #f5f3ee !important;
 }
 .footer-actions {
   display: none !important;
@@ -103,19 +102,13 @@ body {
   font-weight: 500 !important;
 }
 
-.content-title {
+/* .content-title {
   font-family: 'Public Sans' !important;
   src: url('/fonts/PublicSans/PublicSans-Regular.ttf') !important;
   font-style: normal !important;
-  font-weight: 600 !important;
+  font-weight: 400 !important;
   font-display: swap !important;
-}
-.content-review {
-  font-family: 'Public Sans' !important;
-  src: url('/fonts/PublicSans/PublicSans-Regular.ttf') !important;
-  font-style: normal !important;
-  font-display: swap !important;
-}
+} */
 
 .yotpo-footer {
   display: none !important;

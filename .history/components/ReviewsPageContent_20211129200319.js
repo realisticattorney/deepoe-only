@@ -57,7 +57,7 @@ const ReviewsPageContent = ({ collection, product }) => {
                 <span className="font-mono font-extralight text-lg2">
                   Reviews For
                 </span>
-                <span className="font-mono font-extralight text-lg2 -mt-1.3">
+                <span className="font-mono font-extralight text-lg2">
                   {product.title}
                 </span>
                 <div id="reviews-complete">

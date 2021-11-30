@@ -100,7 +100,7 @@ const ProductPageContent = ({ collection, product }) => {
               </span>
             </div>
 
-            <div id="reviews-productpage " className="max-h-36 overflow-hidden duration-300 text-sm  group-focus:pb-2 font-public-sans-normal group-focus:max-h-56 ">
+            <div id="reviews-productpage " className="max-h-32 overflow-hidden duration-300 text-sm  group-focus:pb-2 font-public-sans-normal group-focus:max-h-56 ">
               <YotpoReviews product={product} atobId={atobId} />
             </div>
 

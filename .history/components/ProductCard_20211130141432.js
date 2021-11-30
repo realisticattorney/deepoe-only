@@ -24,10 +24,10 @@ const ProductCard = ({ collection, product }) => {
             />
           </div>
         </div>
-        <h3 className="mt-2 text-xl font-mono font-extralight text-deepoe_default-black">
+        <h3 className="mt-2 text-2xl font-public-sans-normal font-extralight text-deepoe">
           {title}
         </h3>
-        <p className="mt-1 text-md font-mono font-extralight">
+        <p className="mt-1 text-lg font-public-sans-normal font-extralight">
           {formatter.format(price)}
         </p>
       </p>

@@ -27,7 +27,7 @@ const ProductCard = ({ collection, product }) => {
         <h3 className="mt-2 text-xl font-mono font-extralight text-deepoe_default-black">
           {title}
         </h3>
-        <p className="mt-1 text-md font-mono font-extralight">
+        <p className="mt-1 text- font-mono font-extralight">
           {formatter.format(price)}
         </p>
       </p>

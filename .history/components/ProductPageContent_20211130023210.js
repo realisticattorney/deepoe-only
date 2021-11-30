@@ -94,7 +94,7 @@ const ProductPageContent = ({ collection, product }) => {
                 {itemsSpecs2.map((item, index) => {
                   return (
                     <li key={index}>
-                      <p className="font-mono font-extralight">
+                      <p className="font-mono font-thin">
                       {item}
                       </p>
                     </li>

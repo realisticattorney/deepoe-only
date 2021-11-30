@@ -90,17 +90,16 @@ const ProductPageContent = ({ collection, product }) => {
               </p>
             </div>
             <div className="max-h-0 overflow-hidden duration-300 text-sm  group-focus:pb-2 font-public-sans-normal group-focus:max-h-56  text-left font-extralight border-b border-gray-700">
-              <ul>
-                {itemsSpecs2.map((item, index) => {
-                  return (
-                    <li key={index}>
-                      <p className="font-mono font-extralight">
-                      {item}
-                      </p>
-                    </li>
-                  );
-                })}
-              </ul>
+            {itemsSpecs2.map((item, index) => {
+              return (
+                <div key={index}>
+                  <p className="font-mono font-extralight text-lg2">
+                    {item}
+                  </p>
+                </div>
+              );
+            }
+            )}
             </div>
           </button>
           <div className="max-h-111">

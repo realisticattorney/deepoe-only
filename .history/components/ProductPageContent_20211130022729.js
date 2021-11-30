@@ -34,11 +34,9 @@ const ProductPageContent = ({ collection, product }) => {
   const { description } = product;
   let [intro, details] = description.split('^^^DETAILS');
   [details, itemsSpecs] = details.split('^^^ITEM SPECIFICATIONS');
-  const itemsSpecs2 = itemsSpecs.split('**');
   console.log('intro', intro);
   console.log('details', details);
   console.log('itemsSpecs', itemsSpecs);
-  console.log('itemsSpecs2', itemsSpecs2);
   return (
     <div>
       <div className="px-3.5 pb-0  z-0">
@@ -73,7 +71,7 @@ const ProductPageContent = ({ collection, product }) => {
               </p>
             </div>
             <div className="max-h-0 overflow-hidden duration-300   group-focus:py-2 font-public-sans-normal  group-focus:max-h-56  text-sm text-left font-extralight  border-b border-gray-700">
-              {details}
+              {product.description}
             </div>
           </button>
           <button className="group focus:outline-none">
@@ -90,17 +88,21 @@ const ProductPageContent = ({ collection, product }) => {
               </p>
             </div>
             <div className="max-h-0 overflow-hidden duration-300 text-sm  group-focus:pb-2 font-public-sans-normal group-focus:max-h-56  text-left font-extralight border-b border-gray-700">
-              <ul>
-                {itemsSpecs2.map((item, index) => {
-                  return (
-                    <li key={index}>
-                      <p className="font-mono font-extralight">
-                      {item}
-                      </p>
-                    </li>
-                  );
-                })}
-              </ul>
+              9.85” in diameter (25cm)
+              <li>Non-toxic and compostable </li>
+              <li>
+                Composed of bamboo fiber and corn starch and printed with food
+                grade ink
+              </li>
+              <li>BPA, PVC and Phthalates free</li>
+              <li>General Care</li>
+              <li>Do not microwave</li>
+              <li>Handwash before use </li>
+              <li>Dishwasher safe</li>
+              <li>Avoid soaking in water for prolonged times </li>
+              <li>Suitable for hot foods </li>
+              <li>Store in cool and dry place</li>
+              <p className="group-focus:pt-1"> Set of 4</p>
             </div>
           </button>
           <div className="max-h-111">

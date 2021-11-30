@@ -33,16 +33,16 @@ const ReviewsPageContent = ({ collection, product }) => {
 
   return (
     <div>
-      <div className="px-3.5 pb-0 z-0">
+      <div className="px-3.5 pb-0  z-0">
         <Link href={`/collections/${collection}/${product.handle}`}>
           <a className="text-left pl-3 text-lg font-extralight font-mono">
             {'<'} back to{' '}
-            {product.title}
+            {product.handle}
           </a>
         </Link>
       </div>
 
-      <div className="flex flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 px-2 mt-5 mx-auto">
+      <div className="flex flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 px-2 mx-auto">
         <div className="flex flex-col w-full  pt-2 ">
           {/* <button className="group focus:outline-none" onClick={handleShow}>
             <div className="flex justify-between pb-2 pt-0.5 text-lg font-extralight items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">

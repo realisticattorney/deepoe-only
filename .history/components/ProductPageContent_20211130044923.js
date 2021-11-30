@@ -70,7 +70,7 @@ const ProductPageContent = ({ collection, product }) => {
                 _
               </p>
             </div>
-            <div className="max-h-0 overflow-hidden duration-300  group-focus:py-2 font-mono  group-focus:max-h-72  text-sm text-left font-extralight  border-b border-gray-700">
+            <div className="max-h-0 overflow-hidden duration-300  group-focus:py-2 font-public-sans-normal  group-focus:max-h-72  text-sm text-left font-extralight  border-b border-gray-700">
              <p className="mb-1">{details}</p> 
             </div>
           </button>
@@ -87,7 +87,7 @@ const ProductPageContent = ({ collection, product }) => {
                 _
               </p>
             </div>
-            <div className="max-h-0 overflow-hidden duration-300 text-sm  group-focus:pb-2 font-mono group-focus:max-h-56  text-left font-extralight border-b border-gray-700">
+            <div className="max-h-0 overflow-hidden duration-300 text-sm  group-focus:pb-2 font-public-sans-normal group-focus:max-h-56  text-left font-extralight border-b border-gray-700">
               <ul className="list-disc list-outside font-mono font-extralight ">
                 {itemsSpecs2.map((item, index) => (
                   <li key={index} className="">
@@ -149,7 +149,7 @@ const ProductPageContent = ({ collection, product }) => {
         </div>
       </div>
 
-      <div className="flex flex-col w-full py-5 font-mono">
+      <div className="flex flex-col w-full py-5 font-public-sans-normal">
         <div className="relative h-96">
           <Image src="/brunch.jpg" layout="fill" objectFit="cover" />
         </div>

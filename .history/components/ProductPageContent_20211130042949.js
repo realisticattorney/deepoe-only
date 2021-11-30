@@ -52,7 +52,7 @@ const ProductPageContent = ({ collection, product }) => {
         <div className="w-full max-w-md  overflow-hidden"></div>
         <ProductForm product={product} collection={collection} />
 
-        <div className="font-mono text-sm font-extralight">
+        <div className="font-mono text-sm">
           <p>{intro}</p>
         </div>
         <div className="flex flex-col w-full border-t pt-2 border-deepoe-chocolate">
@@ -70,8 +70,8 @@ const ProductPageContent = ({ collection, product }) => {
                 _
               </p>
             </div>
-            <div className="max-h-0 overflow-hidden duration-300  group-focus:py-2 font-mono  group-focus:max-h-72  text-sm text-left font-extralight  border-b border-gray-700">
-             <p className="mb-1">{details}</p> 
+            <div className="max-h-0 overflow-hidden duration-300   group-focus:py-2 font-public-sans-normal  group-focus:max-h-56  text-sm text-left font-extralight  border-b border-gray-700">
+              {details}
             </div>
           </button>
           <button className="group focus:outline-none">
@@ -87,7 +87,7 @@ const ProductPageContent = ({ collection, product }) => {
                 _
               </p>
             </div>
-            <div className="max-h-0 overflow-hidden duration-300 text-sm  group-focus:pb-2 font-mono group-focus:max-h-56  text-left font-extralight border-b border-gray-700">
+            <div className="max-h-0 overflow-hidden duration-300 text-sm  group-focus:pb-2 font-public-sans-normal group-focus:max-h-56  text-left font-extralight border-b border-gray-700">
               <ul className="list-disc list-outside font-mono font-extralight ">
                 {itemsSpecs2.map((item, index) => (
                   <li key={index} className="">
@@ -108,7 +108,7 @@ const ProductPageContent = ({ collection, product }) => {
 
             <div
               id="reviews-productpage "
-              className=" overflow-hidden focus:outline-none active:outline-none text-center max-h-75"
+              className=" overflow-hidden focus:outline-none active:outline-none text-center max-h-110"
             >
               <div
                 ref={stageCanvasRef}
@@ -138,7 +138,7 @@ const ProductPageContent = ({ collection, product }) => {
                 <button
                   type="submit"
                   disabled={disable ? true : false}
-                  className="inline-flex justify-center py-1 px-10 mt-2 font-sans border border-transparent shadow text-xl font-light text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
+                  className="inline-flex justify-center py-1 px-10 mt-2  border border-transparent font-sans shadow text-xl font-light text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
                 >
                   More Reviews
                 </button>
@@ -149,7 +149,7 @@ const ProductPageContent = ({ collection, product }) => {
         </div>
       </div>
 
-      <div className="flex flex-col w-full py-5 font-mono">
+      <div className="flex flex-col w-full py-5 font-public-sans-normal">
         <div className="relative h-96">
           <Image src="/brunch.jpg" layout="fill" objectFit="cover" />
         </div>

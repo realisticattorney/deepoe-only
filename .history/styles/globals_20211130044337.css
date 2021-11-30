@@ -113,10 +113,10 @@ body {
 .content-title {
   font-family: 'Public Sans' !important;
   src: url('/fonts/PublicSans/PublicSans-Regular.ttf') !important;
-  font-weight: 400 !important;
+  font-weight: 300 !important;
   font-style: normal !important;
   font-display: swap !important;
-  /* font-size: 1.125rem !important; */
+  font-size: 1.125rem !important;
 }
 .content-review {
   font-family: 'Public Sans' !important;

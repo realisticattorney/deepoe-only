@@ -31,7 +31,7 @@ const ProductCard = ({ collection, product }) => {
         <h3 className="mt-2 text-xl font-mono font-light text-deepoe_default-black">
           {title}
         </h3>
-        <div className="inline-flex items-baseline justify-between w-full reviews-for-collections">
+        <div className="inline-flex items-baseline">
         <p className="mt-1 text-md font-mono font-extralight">
           {formatter.format(price)}{' '}
         </p>

@@ -53,9 +53,7 @@ body {
   font-family: 'Public Sans' !important;
 }
 
-.reviews-for-collections > * > * > * > * > .text-m {
-  margin-left: 0.8rem !important;
-}
+.reviews-for-collections > .bottomLine
 
 #reviews-complete > * > * > * > .yotpo-display-wrapper {
 }

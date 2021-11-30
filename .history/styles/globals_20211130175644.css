@@ -53,10 +53,6 @@ body {
   font-family: 'Public Sans' !important;
 }
 
-.reviews-for-collections > * > * > * > * > .text-m {
-  margin-left: 0.8rem !important;
-}
-
 #reviews-complete > * > * > * > .yotpo-display-wrapper {
 }
 #reviews-complete > .standalone-bottomline.star-clickable {
@@ -116,8 +112,8 @@ body {
   font-family: 'Public Sans' !important;
   src: url('/fonts/PublicSans/PublicSans-Regular.ttf') !important;
   font-size: 0.875rem !important;
-  font-weight: 200 !important;
-  margin-bottom: -0.3rem !important;
+  font-weight: 300 !important;
+  margin-top: -0.2rem !important;
 }
 
 .content-title {

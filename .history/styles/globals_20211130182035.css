@@ -54,7 +54,8 @@ body {
 }
 
 .reviews-for-collections > * > * > * > * > .text-m {
-  margin-left: 0.8rem !important;
+  margin-left: 2rem !important;
+  color: #fff !important;
 }
 
 #reviews-complete > * > * > * > .yotpo-display-wrapper {

@@ -39,17 +39,16 @@ body {
 }
 
 #reviews-complete > * > * > * > * > .text-m {
-  @apply text-deepoe_default-black font-normal;
-  font-size: 0.75rem !important;
+  @apply text-deepoe_default-black font-semibold;
+  font-size: 0.7rem !important;
   margin-left: 0.2rem !important;
   font-family: 'Public Sans' !important;
 }
 .text-m {
-  @apply text-deepoe_default-black font-normal;
+  @apply text-deepoe_default-black font-semibold;
   font-size: 0.75rem !important;
   margin-left: 0.28rem !important;
   margin-top: 0.05rem !important;
-
   font-family: 'Public Sans' !important;
 }
 

@@ -57,7 +57,7 @@ const ProductPageContent = ({ collection, product }) => {
         </div>
         <div className="flex flex-col w-full border-t pt-2 border-deepoe-chocolate">
           <button className="group focus:outline-none" onClick={handleShow}>
-            <div className="flex justify-between pb-2 pt-0.5 text-lg font-extralight items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-deepoe_default-black group-focus:font-medium">
+            <div className="flex justify-between pb-2 pt-0.5 text-lg font-extralight items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
               <span className="truncate font-mono font-extralight text-lg2">
                 Details
               </span>
@@ -70,12 +70,12 @@ const ProductPageContent = ({ collection, product }) => {
                 _
               </p>
             </div>
-            <div className="max-h-0 overflow-hidden duration-300  group-focus:py-2 font-mono  group-focus:max-h-72  text-sm text-left font-extralight  border-b border-deepoe_default-black">
-              <p className="mb-1">{details}</p>
+            <div className="max-h-0 overflow-hidden duration-300  group-focus:py-2 font-mono  group-focus:max-h-72  text-sm text-left font-extralight  border-b border-gray-700">
+             <p className="mb-1">{details}</p> 
             </div>
           </button>
           <button className="group focus:outline-none">
-            <div className="flex justify-between py-2 text-lg font-extralight text-left items-center text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-deepoe_default-black group-focus:font-medium">
+            <div className="flex justify-between py-2 text-lg font-extralight text-left items-center text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
               <span className="truncate font-mono font-extralight text-lg2">
                 Item Specifications
               </span>
@@ -87,7 +87,7 @@ const ProductPageContent = ({ collection, product }) => {
                 _
               </p>
             </div>
-            <div className="max-h-0 overflow-hidden duration-300 text-sm  group-focus:pb-2 font-mono group-focus:max-h-56  text-left font-extralight border-b border-deepoe_default-black">
+            <div className="max-h-0 overflow-hidden duration-300 text-sm  group-focus:pb-2 font-mono group-focus:max-h-56  text-left font-extralight border-b border-gray-700">
               <ul className="list-disc list-outside font-mono font-extralight ">
                 {itemsSpecs2.map((item, index) => (
                   <li key={index} className="">
@@ -100,7 +100,7 @@ const ProductPageContent = ({ collection, product }) => {
           <div className="">
             {/* <Link href={`/reviews/${product.handle}`}> */}
             {/* <a> */}
-            <div className="flex justify-between pt-2 -mb-2 font-extralight text-left text-lg text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-deepoe_default-black group-focus:font-medium">
+            <div className="flex justify-between pt-2 -mb-2 font-extralight text-left text-lg text-gray-900 items-center focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
               <span className="font-mono font-extralight text-lg2">
                 Reviews
               </span>
@@ -130,11 +130,11 @@ const ProductPageContent = ({ collection, product }) => {
                 disable ? 'hidden' : 'inline-block'
               }`}
             >
-              {/* <a
+              <a
                 href={`https://deepoe-only.vercel.app/reviews/${product.handle}`}
                 rel="noreferrer"
-              > */}
-              <Link href={`/reviews/${product.handle}`}>
+              >
+                {/* <Link href={`/reviews/${product.handle}`}> */}
                 <button
                   type="submit"
                   disabled={disable ? true : false}
@@ -142,8 +142,8 @@ const ProductPageContent = ({ collection, product }) => {
                 >
                   More Reviews
                 </button>
-              </Link>
-              {/* </a> */}
+                {/* </Link> */}
+              </a>
             </div>
           </div>
         </div>

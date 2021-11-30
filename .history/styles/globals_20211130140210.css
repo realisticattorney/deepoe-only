@@ -39,17 +39,16 @@ body {
 }
 
 #reviews-complete > * > * > * > * > .text-m {
-  @apply text-deepoe_default-black font-normal;
-  font-size: 0.75rem !important;
+  @apply text-deepoe_default-black font-semibold;
+  font-size: 0.7rem !important;
   margin-left: 0.2rem !important;
   font-family: 'Public Sans' !important;
 }
 .text-m {
-  @apply text-deepoe_default-black font-normal;
-  font-size: 0.75rem !important;
+  @apply text-deepoe_default-black font-semibold;
+  font-size: 0.72rem !important;
   margin-left: 0.28rem !important;
   margin-top: 0.05rem !important;
-
   font-family: 'Public Sans' !important;
 }
 
@@ -135,11 +134,6 @@ body {
 
 .yotpo-footer {
   display: none !important;
-}
-
-.yotpo-regular-box {
-  padding-bottom: 0.5rem !important;
-  border-bottom: 0.8px solid #302e2f !important;
 }
 
 #reviews-complete > * > * > * > * > * > .yotpo-icon-default-star:before,

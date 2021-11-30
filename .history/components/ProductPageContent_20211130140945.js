@@ -71,7 +71,7 @@ const ProductPageContent = ({ collection, product }) => {
               </p>
             </div>
             <div className="max-h-0 overflow-hidden duration-300  group-focus:py-2 font-mono  group-focus:max-h-72  text-sm text-left font-extralight  border-b border-deepoe_default-black">
-              <p className="mb-1">{details}</p>
+             <p className="mb-1">{details}</p> 
             </div>
           </button>
           <button className="group focus:outline-none">
@@ -134,7 +134,7 @@ const ProductPageContent = ({ collection, product }) => {
                 href={`https://deepoe-only.vercel.app/reviews/${product.handle}`}
                 rel="noreferrer"
               > */}
-              <Link href={`/reviews/${product.handle}`}>
+                <Link href={`/reviews/${product.handle}`}>
                 <button
                   type="submit"
                   disabled={disable ? true : false}
@@ -142,7 +142,7 @@ const ProductPageContent = ({ collection, product }) => {
                 >
                   More Reviews
                 </button>
-              </Link>
+                </Link>
               {/* </a> */}
             </div>
           </div>

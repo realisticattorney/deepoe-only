@@ -75,7 +75,7 @@ export default function Home({ products, carouselProducts }) {
         </div>
 
         <h2 className="text-center font-mono text-lg">Shop this table</h2>
-        <HomeCarousel carouselProducts={carouselProducts} selectedItem={selectedItem}  />
+        <HomeCarousel carouselProducts={products} selectedItem={selectedItem}  />
       </div>
     </div>
   );

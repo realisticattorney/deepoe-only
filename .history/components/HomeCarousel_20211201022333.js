@@ -3,12 +3,12 @@ import { useEffect, useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-const Banner = ({ carouselProducts, selectedItem }) => {
-  //   const imageSrc = [selectedItem.image];
+const Banner = ({ carouselProducts, selectedVariant }) => {
+  //   const imageSrc = [selectedVariant.image];
   //   const imageColorSrc = product.images.edges
   //     .filter(
   //       (node) =>
-  //         node.node.altText === selectedItem.options.Color ||
+  //         node.node.altText === selectedVariant.options.Color ||
   //         node.node.altText === 'All'
   //     )
   //     .sort((a, b) => (a.node.altText > b.node.altText ? -1 : 1))
@@ -17,12 +17,11 @@ const Banner = ({ carouselProducts, selectedItem }) => {
   //   imageSrc.push(...imageColorSrc);
 
   //change carousel index to 0
-  const [index, setIndex] = useState(1);
-  console.log('index', index);
-  console.log('selectedItem', selectedItem);
+  const [index, setIndex] = useState(0);
+  console.log("index",index);
   useEffect(() => {
-    setIndex(selectedItem);
-  }, [selectedItem]);
+    setIndex(selectedVariant);
+  }, [selectedVariant]);
 
   return (
     <div className="relative z-0  mb-10 classes.my__carousel_main">
@@ -35,14 +34,12 @@ const Banner = ({ carouselProducts, selectedItem }) => {
         swipeScrollTolerance={50}
         autoFocus={false}
         selectedItem={index}
-        centerSlidePercentage={53}
-        centerMode={true}
-        onChange={(selectedItem) => setIndex(selectedItem)}
+        onChange={(selectedVariant) => setIndex(selectedVariant)}
         showArrows={false}
       >
         {carouselProducts.map((i) => (
           <div
-            className="w-53 h-64  ml-2 from-gray-100  bottom-0 relative"
+            className="w-full h-110  from-gray-100  bottom-0 relative"
             key={i.number}
           >
             <Image

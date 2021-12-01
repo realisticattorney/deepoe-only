@@ -35,14 +35,14 @@ const Banner = ({ carouselProducts, selectedItem }) => {
         swipeScrollTolerance={50}
         autoFocus={false}
         selectedItem={index}
-        centerSlidePercentage={53}
-        centerMode={true}
+        centerSlidePercentage={50}
+        centerMode
         onChange={(selectedItem) => setIndex(selectedItem)}
         showArrows={false}
       >
         {carouselProducts.map((i) => (
           <div
-            className="w-53 h-64  ml-2 from-gray-100  bottom-0 relative"
+            className="w-full h-110  from-gray-100  bottom-0 relative"
             key={i.number}
           >
             <Image

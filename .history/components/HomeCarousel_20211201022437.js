@@ -17,7 +17,7 @@ const Banner = ({ carouselProducts, selectedItem }) => {
   //   imageSrc.push(...imageColorSrc);
 
   //change carousel index to 0
-  const [index, setIndex] = useState(1);
+  const [index, setIndex] = useState(0);
   console.log('index', index);
   console.log('selectedItem', selectedItem);
   useEffect(() => {
@@ -35,14 +35,12 @@ const Banner = ({ carouselProducts, selectedItem }) => {
         swipeScrollTolerance={50}
         autoFocus={false}
         selectedItem={index}
-        centerSlidePercentage={53}
-        centerMode={true}
         onChange={(selectedItem) => setIndex(selectedItem)}
         showArrows={false}
       >
         {carouselProducts.map((i) => (
           <div
-            className="w-53 h-64  ml-2 from-gray-100  bottom-0 relative"
+            className="w-full h-110  from-gray-100  bottom-0 relative"
             key={i.number}
           >
             <Image

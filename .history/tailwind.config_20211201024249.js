@@ -43,7 +43,7 @@ module.exports = {
       },
       width: {
         150: '50rem',
-        53: '12.625rem',
+        53: '18rem',
       },
       borderWidth: {
         DEFAULT: '0.8px',

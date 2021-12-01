@@ -42,7 +42,7 @@ const Banner = ({ carouselProducts, selectedItem }) => {
       >
         {carouselProducts.map((i) => (
           <div
-            className="w-53 h-64  ml-2 from-gray-100  bottom-0 relative"
+            className="w-53 h-64   from-gray-100  bottom-0 relative"
             key={i.number}
           >
             <Image

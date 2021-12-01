@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 export default function Home({ products, carouselProducts }) {
   console.log(products.products.edges);
-  console.log("aaaaaa'",carouselProducts);
+  console.log(carouselProducts);
 
   const [selectedItem, setSelectedItem] = useState(1);
   console.log(selectedItem);
@@ -75,7 +75,7 @@ export default function Home({ products, carouselProducts }) {
         </div>
 
         <h2 className="text-center font-mono text-lg">Shop this table</h2>
-        <HomeCarousel carouselProducts={carouselProducts} selectedItem={selectedItem}  />
+        <HomeCarousel products={products} selectedItem={selectedItem}  />
       </div>
     </div>
   );

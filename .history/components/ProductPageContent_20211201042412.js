@@ -235,7 +235,7 @@ const ProductPageContent = ({ collection, product }) => {
           <Link href={`/deepoe/sustainability`}>
             <button
               type="submit"
-              className=" text-sm  font-extralight text-center mt-5 mb-7 w-40 underline font-mono focus:outline-none focus:ring-2 focus:ring-offset-2"
+              className=" text-sm  font-light text-center right-0 mr-auto mb-6 bottom-0 left-0 ml-auto w-40 underline font-mono focus:outline-none focus:ring-2 focus:ring-offset-2"
             >
               Learn More
             </button>

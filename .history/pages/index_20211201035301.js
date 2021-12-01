@@ -19,7 +19,7 @@ export default function Home({ products, carouselProducts }) {
       </Head>
 
       <div className="w-full  overflow-hidden">
-        <div className="relative h-65">
+        <div className="relative h-6">
           <Image
             src={products.image.originalSrc}
             layout="fill"
@@ -35,7 +35,7 @@ export default function Home({ products, carouselProducts }) {
             href={`https://deepoe-only.vercel.app/collections/frontpage`}
             rel="noreferrer"
           >
-            <p className="text-white text-sm absolute  font-light text-center right-0 mr-auto mb-6 bottom-0 left-0 ml-auto w-40 underline font-mono">
+            <p className="text-white text-sm absolute  font-light text-center right-0 mr-auto mb-4 bottom-0 left-0 ml-auto w-40 underline font-mono">
               Shop All Products
             </p>
           </a>

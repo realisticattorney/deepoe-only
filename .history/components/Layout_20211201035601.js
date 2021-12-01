@@ -22,11 +22,11 @@ const Layout = ({ children }) => {
       <footer className=" text-white h-60 text-sm font-extralight font-mono grid col-span-3 grid-cols-3 grid-rows-2 p-5 bg-deepoe-chocolate">
         <div className="inline-flex col-span-1 row-span-1 ">
           <ul className="flex-col space-y-1.5 ">
-            <li className="font-extralight">Instagram</li>
-            <li className="font-extralight">Twitter</li>
-            <li className="font-extralight">Facebook</li>
-            <li className="font-extralight">Tik Tok</li>
-            <li className="font-extralight">Pinterest</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+            <li>Facebook</li>
+            <li>Tik Tok</li>
+            <li>Pinterest</li>
           </ul>
         </div>
 

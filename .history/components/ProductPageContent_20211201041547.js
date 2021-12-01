@@ -166,38 +166,13 @@ const ProductPageContent = ({ collection, product }) => {
         </div>
       </div>
       <div className={`${disable ? 'my-10' : ''}`}></div>
-      <div className="flex flex-col w-full  font-mono">
-        {/* <div className="relative h-96">
+      {/* <div className="flex flex-col w-full py-5 font-mono">
+        <div className="relative h-96">
           <Image src="/brunch.jpg" layout="fill" objectFit="cover" />
         </div> */}
-
-        <div className="px-6 my-6 mt-10">
-          <div className="w-full  overflow-hidden">
-            <div className="relative h-110">
-              <Image
-                src="/people.png"
-                layout="fill"
-                objectFit="cover"
-                objectPosition="top"
-              />
-            </div>
-          </div>
-        </div>
-             <div className="font-sans italic font-medium mx-auto text-3xl mb-5 mt-1 tracking-tighter px-6">
-          what we offer...
-        </div>
-          <h2 className="text-center w-60 mx-auto font-light leading-6  font-mono text-md">
-            Vibrant and sustainably-considered, pieces for the home.
-          </h2>
-
-          <h2 className="text-center w-60 mx-auto font-light leading-6 my-4 font-mono text-md">
-            Functional designs to mix and match.
-          </h2>
-
-          <h2 className="text-center w-60 mx-auto font-light leading-6  font-mono text-md">
-            Considered materials, low-waste packaging.
-          </h2>
-    
+        {/* <div className="font-sans italic font-medium text-xl2 tracking-tighter mt-8 mb-3 px-6">
+          At deepoe, we believe in
+        </div> */}
         {/* <div className="py-3.5">
           <h2 className="text-left text-2xl pb-2 px-6 font-mono font-light">
             Sustainable Style
@@ -235,7 +210,7 @@ const ProductPageContent = ({ collection, product }) => {
           <Link href={`/deepoe/sustainability`}>
             <button
               type="submit"
-              className=" text-sm  font-extralight text-center mt-5 mb-7 w-40 underline font-mono focus:outline-none focus:ring-2 focus:ring-offset-2"
+              className="inline-flex justify-center py-1 px-10 mt-2 border border-transparent font-mono font-light shadow text-xl font-light text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
             >
               Learn More
             </button>

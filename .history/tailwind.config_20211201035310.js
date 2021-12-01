@@ -29,7 +29,7 @@ module.exports = {
         100: '26rem',
         105: '28rem',
         110: '31.67rem',
-        65: '16.25rem',
+        65: "16.25rem",
         111: '33.67rem',
       },
       maxHeight: {
@@ -45,7 +45,7 @@ module.exports = {
       width: {
         150: '50rem',
         53: '12.625rem',
-        65: '16.25rem',
+        65: "16.25rem",
       },
       borderWidth: {
         DEFAULT: '0.8px',

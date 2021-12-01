@@ -26,7 +26,11 @@ const Nav = () => {
   );
 
   return (
-    <header className={`sticky top-0 z-30 bg-deepoe-cream`}>
+    <header
+      className={`sticky top-0 ${
+        // router.pathname === '/' ? 'bg-transparent' : 'bg-deepoe-cream'
+      } z-30 `}
+    >
       <div className="flex items-center justify-between max-w-6xl  pt-0 px-5 mx-auto">
         <div className="w-14 pl-1 pt-0 z-50">
           {!parentState && !cartOpen ? (

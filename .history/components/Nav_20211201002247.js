@@ -89,11 +89,11 @@ const Nav = () => {
         </div>
         <MiniCart cart={cart} />
       </div>
-      {/* {router.pathname === '/' && (
+      {router.pathname === '/' && (
         <Link href="/collections/frontpage" passHref>
           <div className="absolute w-full h-24 top-0 left-0 z-40"></div>
         </Link>
-      )} */}
+      )}
     </header>
   );
 };

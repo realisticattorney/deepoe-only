@@ -49,17 +49,16 @@ const ProductPageContent = ({ collection, product }) => {
   return (
     <div className={`${parentReviewState ? 'overflow-y-hidden' : ''}`}>
       <div className="px-3.5 pb-0  z-0">
-        <a
-          href={`https://deepoe-only.vercel.app/collections/${collection}/`}
-          rel="noreferrer"
-        >
-          {/* <Link href={`/collections/${collection}/`}> */}
+      <a
+      href={`https://deepoe-only.vercel.app/collections/${collection}/${handle}`}
+      rel="noreferrer"
+    >
+        <Link href={`/collections/${collection}/`}>
           <a className="text-left pl-3 text-lg font-extralight font-mono">
             {'<'} back to{' '}
             {collection === 'frontpage' ? 'all products' : collection}
           </a>
-          {/* </Link> */}
-        </a>
+        </Link>
       </div>
 
       <div className="flex flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 px-2 mx-auto">

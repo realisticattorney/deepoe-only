@@ -49,17 +49,12 @@ const ProductPageContent = ({ collection, product }) => {
   return (
     <div className={`${parentReviewState ? 'overflow-y-hidden' : ''}`}>
       <div className="px-3.5 pb-0  z-0">
-        <a
-          href={`https://deepoe-only.vercel.app/collections/${collection}/`}
-          rel="noreferrer"
-        >
-          {/* <Link href={`/collections/${collection}/`}> */}
+        <Link href={`/collections/${collection}/`}>
           <a className="text-left pl-3 text-lg font-extralight font-mono">
             {'<'} back to{' '}
             {collection === 'frontpage' ? 'all products' : collection}
           </a>
-          {/* </Link> */}
-        </a>
+        </Link>
       </div>
 
       <div className="flex flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 px-2 mx-auto">
@@ -181,20 +176,21 @@ const ProductPageContent = ({ collection, product }) => {
             </div>
           </div>
         </div>
-        <div className="font-sans italic font-medium mx-auto text-3xl mb-5 mt-1 tracking-tighter px-6">
+             <div className="font-sans italic font-medium mx-auto text-3xl mb-5 mt-1 tracking-tighter px-6">
           what we offer...
         </div>
-        <h2 className="text-center w-60 mx-auto font-light leading-6  font-mono text-md">
-          Vibrant and sustainably-considered, pieces for the home.
-        </h2>
+          <h2 className="text-center w-60 mx-auto font-light leading-6  font-mono text-md">
+            Vibrant and sustainably-considered, pieces for the home.
+          </h2>
 
-        <h2 className="text-center w-60 mx-auto font-light leading-6 my-4 font-mono text-md">
-          Functional designs to mix and match.
-        </h2>
+          <h2 className="text-center w-60 mx-auto font-light leading-6 my-4 font-mono text-md">
+            Functional designs to mix and match.
+          </h2>
 
-        <h2 className="text-center w-60 mx-auto font-light leading-6  font-mono text-md">
-          Considered materials, low-waste packaging.
-        </h2>
+          <h2 className="text-center w-60 mx-auto font-light leading-6  font-mono text-md">
+            Considered materials, low-waste packaging.
+          </h2>
+    
 
         <div className="pt-2.5 self-center">
           <Link href={`/deepoe/sustainability`}>

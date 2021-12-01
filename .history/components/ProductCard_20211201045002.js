@@ -41,7 +41,7 @@ const ProductCard = ({ collection, product }) => {
           ></div>
       </div></div>
     {/* </Link> */}
-    </a>
+    // </a>
   );
 };
 

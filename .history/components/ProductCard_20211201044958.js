@@ -40,8 +40,8 @@ const ProductCard = ({ collection, product }) => {
             data-yotpo-product-id={`${atobId}`}
           ></div>
       </div></div>
-    {/* </Link> */}
-    </a>
+    </Link>
+    // </a>
   );
 };
 

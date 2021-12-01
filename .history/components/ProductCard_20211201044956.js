@@ -16,7 +16,7 @@ const ProductCard = ({ collection, product }) => {
       href={`https://deepoe-only.vercel.app/collections/${collection}/${handle}`}
       rel="noreferrer"
     >
-    {/* <Link href={`/collections/${collection}/${handle}`}> */}
+    <Link href={`/collections/${collection}/${handle}`}>
       <div className="group px-2">
         <div className="w-full  overflow-hidden">
           <div className="relative h-110">
@@ -40,8 +40,8 @@ const ProductCard = ({ collection, product }) => {
             data-yotpo-product-id={`${atobId}`}
           ></div>
       </div></div>
-    {/* </Link> */}
-    </a>
+    </Link>
+    // </a>
   );
 };
 

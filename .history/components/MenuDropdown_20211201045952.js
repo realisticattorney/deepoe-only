@@ -81,10 +81,11 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                           <a
                             href={`https://deepoe-only.vercel.app/collections/frontpage`}
                             rel="noreferrer"
+                            
                           >
                             {/* <Link href={`/collections/frontpage`}> */}
                             <button
-                              className="block text-sm my-2 font-extralight"
+                              className="block text-sm my-1 font-extralight"
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Shop All
@@ -95,41 +96,41 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                             href={`https://deepoe-only.vercel.app/collections/dinnerware`}
                             rel="noreferrer"
                           >
-                            {/* <Link href={`/collections/dinnerware`}> */}
+                          {/* <Link href={`/collections/dinnerware`}> */}
                             <button
-                              className="block text-sm my-2 font-extralight"
+                              className="block text-sm my-1 font-extralight"
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Dinnerware
                             </button>
-                            {/* </Link> */}
-                          </a>
-                          <a
+                          {/* </Link> */}
+                            </a>
+                            <a
                             href={`https://deepoe-only.vercel.app/collections/drinkware`}
                             rel="noreferrer"
                           >
-                            {/* <Link href={`/collections/drinkware`}> */}
+                          {/* <Link href={`/collections/drinkware`}> */}
                             <button
-                              className="block text-sm my-2 font-extralight"
+                              className="block text-sm my-1 font-extralight"
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Drinkware
                             </button>
-                            {/* </Link> */}
-                          </a>
-                          <a
+                          {/* </Link> */}
+                            </a>
+                            <a
                             href={`https://deepoe-only.vercel.app/collections/drinkware`}
                             rel="noreferrer"
                           >
-                            {/* <Link href={`/collections/accessories`}> */}
+                          {/* <Link href={`/collections/accessories`}> */}
                             <button
-                              className="block text-sm my-2 font-extralight"
+                              className="block text-sm my-1 font-extralight"
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Accessories
                             </button>
-                            {/* </Link> */}
-                          </a>
+                          {/* </Link> */}
+                            </a>
                           {/* <Link href={`/collections/furniture`}>
                             <a
                               className="block text-lg"

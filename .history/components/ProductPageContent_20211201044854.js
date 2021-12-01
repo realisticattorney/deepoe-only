@@ -49,17 +49,12 @@ const ProductPageContent = ({ collection, product }) => {
   return (
     <div className={`${parentReviewState ? 'overflow-y-hidden' : ''}`}>
       <div className="px-3.5 pb-0  z-0">
-        <a
-          href={`https://deepoe-only.vercel.app/collections/${collection}/`}
-          rel="noreferrer"
-        >
-          {/* <Link href={`/collections/${collection}/`}> */}
+        <Link href={`/collections/${collection}/`}>
           <a className="text-left pl-3 text-lg font-extralight font-mono">
             {'<'} back to{' '}
             {collection === 'frontpage' ? 'all products' : collection}
           </a>
-          {/* </Link> */}
-        </a>
+        </Link>
       </div>
 
       <div className="flex flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 px-2 mx-auto">
@@ -181,21 +176,54 @@ const ProductPageContent = ({ collection, product }) => {
             </div>
           </div>
         </div>
-        <div className="font-sans italic font-medium mx-auto text-3xl mb-5 mt-1 tracking-tighter px-6">
+             <div className="font-sans italic font-medium mx-auto text-3xl mb-5 mt-1 tracking-tighter px-6">
           what we offer...
         </div>
-        <h2 className="text-center w-60 mx-auto font-light leading-6  font-mono text-md">
-          Vibrant and sustainably-considered, pieces for the home.
-        </h2>
+          <h2 className="text-center w-60 mx-auto font-light leading-6  font-mono text-md">
+            Vibrant and sustainably-considered, pieces for the home.
+          </h2>
 
-        <h2 className="text-center w-60 mx-auto font-light leading-6 my-4 font-mono text-md">
-          Functional designs to mix and match.
-        </h2>
+          <h2 className="text-center w-60 mx-auto font-light leading-6 my-4 font-mono text-md">
+            Functional designs to mix and match.
+          </h2>
 
-        <h2 className="text-center w-60 mx-auto font-light leading-6  font-mono text-md">
-          Considered materials, low-waste packaging.
-        </h2>
-
+          <h2 className="text-center w-60 mx-auto font-light leading-6  font-mono text-md">
+            Considered materials, low-waste packaging.
+          </h2>
+    
+        {/* <div className="py-3.5">
+          <h2 className="text-left text-2xl pb-2 px-6 font-mono font-light">
+            Sustainable Style
+          </h2>
+          <p className="text-left text-sm font-extralight pt-1 px-6">
+            Sustainability should not be dull, muted, or monotone. We believe
+            sustainabile choices should be designed for impact and bring joy and
+            smiles. Our bamboo plate avoid plastics and melamines and are
+            crafted from renewable bamboo and cornstarch.
+          </p>
+        </div>
+        <div className="py-3.5 bg-deepoe-chocolate">
+          <h2 className="text-left text-2xl pb-2 px-6 font-mono font-light text-deepoe-cream">
+            Function First
+          </h2>
+          <p className="text-left text-sm font-extralight pt-1 px-6 text-deepoe-cream">
+            We aim to provide products that actually work, and ideally across
+            settings. These sturdy plates are perfect for outdoor BBQs, picnics
+            or an evening on the porch but perform just as well when
+            entertaining a dinner party or snack time with the kids.
+          </p>
+        </div>
+        <div className="py-3.5">
+          <h2 className="text-left text-2xl pb-2 px-6 font-mono font-light">
+            Conscious Commerce
+          </h2>
+          <p className="text-left text-sm font-extralight pt-1 px-6">
+            Deepoe aims to consider each step of the product’s journey and
+            ensure conscious decisions fuel our business success. We have
+            removed plastics from packaing and are on the path to carbon
+            neutrality.
+          </p>
+        </div> */}
         <div className="pt-2.5 self-center">
           <Link href={`/deepoe/sustainability`}>
             <button

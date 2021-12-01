@@ -30,7 +30,7 @@ const Banner = ({ carouselProducts, selectedItem }) => {
         infiniteLoop
         showStatus={false}
         showThumbs={false}
-         showIndicators={false}
+        
         preventMovementUntilSwipeScrollTolerance={true}
         interval={5000}
         swipeScrollTolerance={50}

@@ -45,19 +45,19 @@ export default function Home({ products }) {
                 objectFit="cover"
                 objectPosition="top"
               />
-              <div class="pt-10 flex items-center justify-center space-x-8">
-                <div class="relative w-6 h-6 font-extralight  bg-opacity-70 bg-gray-600  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
+              <div class="py-24 flex items-center justify-center space-x-8">
+                <div class="relative w-6 h-6  bg-opacity-70 bg-gray-600  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
                   1
                 </div>
               </div>
-              <div class="pt-28  flex items-center pl-28 justify-center space-x-8">
-                <div class="relative w-6 h-6 font-extralight  bg-opacity-70 bg-gray-600  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
-                  2
+              <div class="py-24 flex items-center justify-center space-x-8">
+                <div class="relative w-6 h-6  bg-opacity-70 bg-gray-600  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
+                  1
                 </div>
               </div>
-              <div class="pt-28 pr-36 flex items-center justify-center space-x-8">
-                <div class="relative w-6 h-6 font-extralight  bg-opacity-70 bg-gray-600  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
-                  3
+              <div class="py-24 flex items-center justify-center space-x-8">
+                <div class="relative w-6 h-6  bg-opacity-70 bg-gray-600  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
+                  1
                 </div>
               </div>
             </div>

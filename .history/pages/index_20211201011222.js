@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import { getProductsInCollection } from '../lib/shopify';
 import ProductList from '../components/ProductList';
-import HomeCarousel from '../components/HomeCarousel';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Carousel } from 'react-responsive-carousel';
 
 export default function Home({ products }) {
   console.log(products);
@@ -45,27 +45,43 @@ export default function Home({ products }) {
                 objectFit="cover"
                 objectPosition="top"
               />
-              <div class="pt-10 flex items-center justify-center space-x-8">
-                <div class="relative w-6 h-6 font-extralight  bg-opacity-70 bg-gray-600  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
-                  1
-                </div>
-              </div>
-              <div class="pt-28  flex items-center pl-28 justify-center space-x-8">
-                <div class="relative w-6 h-6 font-extralight  bg-opacity-70 bg-gray-600  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
-                  2
-                </div>
-              </div>
-              <div class="pt-28 pr-36 flex items-center justify-center space-x-8">
-                <div class="relative w-6 h-6 font-extralight  bg-opacity-70 bg-gray-600  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
-                  3
-                </div>
-              </div>
             </div>
           </div>
         </div>
 
         <h2 className="text-center font-mono text-lg">Shop this table</h2>
-        {/* <HomeCarousel products={products}  /> */}
+
+        <div className="relative z-0  mb-10 classes.my__carousel_main">
+      <Carousel
+        infiniteLoop
+        showStatus={false}
+        showThumbs={false}
+        preventMovementUntilSwipeScrollTolerance={true}
+        interval={5000}
+        swipeScrollTolerance={50}
+        autoFocus={false}
+        selectedItem={index}
+        onChange={(index) => setIndex(index)}
+        showArrows={false}
+      >
+        {imageSrc.map((i) => (
+          <div
+            className="w-full h-110  from-gray-100  bottom-0 relative"
+            key={i}
+          >
+            <Image
+              quality={100}
+              loading="lazy"
+              objectFit="cover"
+              layout="fill"
+              objectPosition="center"
+              src={i}
+              alt=""
+            />
+          </div>
+        ))}
+      </Carousel>
+    </div>
       </div>
     </div>
   );

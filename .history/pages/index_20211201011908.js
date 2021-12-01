@@ -45,21 +45,7 @@ export default function Home({ products }) {
                 objectFit="cover"
                 objectPosition="top"
               />
-              <div class="pt-10 flex items-center justify-center space-x-8">
-                <div class="relative w-6 h-6 font-extralight  bg-opacity-70 bg-gray-600  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
-                  1
-                </div>
-              </div>
-              <div class="pt-28  flex items-center pl-28 justify-center space-x-8">
-                <div class="relative w-6 h-6 font-extralight  bg-opacity-70 bg-gray-600  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
-                  2
-                </div>
-              </div>
-              <div class="pt-28 pr-36 flex items-center justify-center space-x-8">
-                <div class="relative w-6 h-6 font-extralight  bg-opacity-70 bg-gray-600  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
-                  3
-                </div>
-              </div>
+              <button>  <p className="text-white text-sm absolute  font-light text-center right-0 mr-auto mb-4 bottom-0 left-0 ml-auto w-40 underline font-mono">a</p></button>
             </div>
           </div>
         </div>

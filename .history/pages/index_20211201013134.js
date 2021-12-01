@@ -45,21 +45,19 @@ export default function Home({ products }) {
                 objectFit="cover"
                 objectPosition="top"
               />
-              <div class="pt-10 flex items-center justify-center space-x-8">
-                <div class="relative w-6 h-6 font-extralight  bg-opacity-70 bg-gray-600  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
-                  1
-                </div>
-              </div>
-              <div class="pt-28  flex items-center pl-28 justify-center space-x-8">
-                <div class="relative w-6 h-6 font-extralight  bg-opacity-70 bg-gray-600  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
-                  2
-                </div>
-              </div>
-              <div class="pt-28 pr-36 flex items-center justify-center space-x-8">
-                <div class="relative w-6 h-6 font-extralight  bg-opacity-70 bg-gray-600  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
-                  3
-                </div>
-              </div>
+        <div class="py-24 flex items-center justify-center bg-purple-500 space-x-8">
+   <div class="relative w-36 h-36 bg-purple-50 rounded-full flex justify-center items-center text-center p-5 shadow-xl">
+      Make it simple, but significant.
+   </div>
+   <div class="relative w-24 h-24 bg-purple-100 rounded-full flex justify-center items-center text-center p-5 shadow-xl">
+      Great work.
+   </div>
+   <div class="relative w-12 h-12 bg-purple-200 rounded-full flex justify-center items-center text-center p-5 shadow-xl">
+      <span class="absolute text-3xl left-0 top-0 text-purple-800">"
+      </span>
+      Yes.
+   </div>
+</div>
             </div>
           </div>
         </div>

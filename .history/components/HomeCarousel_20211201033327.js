@@ -56,7 +56,7 @@ const Banner = ({ carouselProducts, selectedItem }) => {
                 alt=""
               />
             </div>
-            <h2 className="absolute w-6 h-6 z-50 top-1 left-4 text-md  font-extralight font-mono rounded-full flex justify-center items-center text-center p-3.5 bg-gray-200">
+            <h2 className="absolute w-6 h-6 z-50 top-1 left-4 text-md  font-thin font-mono rounded-full flex justify-center items-center text-center p-3.5 bg-gray-200">
               {i.number}
             </h2>
           </div>

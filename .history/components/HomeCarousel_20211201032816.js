@@ -41,24 +41,22 @@ const Banner = ({ carouselProducts, selectedItem }) => {
         showArrows={false}
       >
         {carouselProducts.map((i) => (
-          <div>
-            <div
-              className="w-53 h-64  ml-2.5 from-gray-100  bottom-0 relative"
-              key={i.number}
-            >
-              <Image
-                quality={100}
-                loading="lazy"
-                objectFit="cover"
-                layout="fill"
-                objectPosition="center"
-                src={i.product}
-                alt=""
-              />
-            </div>
-            <h2 className="absolute w-6 h-6 z-50 top-1 left-4 text-md  font-extralight font-mono rounded-full flex justify-center items-center text-center p-3.5 bg-gray-200">
-              {i.number}
-            </h2>
+           <div>
+          <div
+            className="w-53 h-64  ml-2.5 from-gray-100  bottom-0 relative"
+            key={i.number}
+          >
+            <Image
+              quality={100}
+              loading="lazy"
+              objectFit="cover"
+              layout="fill"
+              objectPosition="center"
+              src={i.product}
+              alt=""
+            />
+          </div>
+          <h2 className="absolute z-50 top-0 left-10">d</h2>
           </div>
         ))}
       </Carousel>

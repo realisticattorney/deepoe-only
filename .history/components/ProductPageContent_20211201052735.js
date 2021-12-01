@@ -23,8 +23,6 @@ const ProductPageContent = ({ collection, product }) => {
   useEffect(() => {
     if (parentReviewState) {
       document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
     }
   }, [parentReviewState]);
 
@@ -57,7 +55,7 @@ const ProductPageContent = ({ collection, product }) => {
   return (
     <div
       className={`${
-        parentReviewState ? 'overflow-y-hidden overscroll-y-none' : ''
+        parentReviewState ? 'overflow-y-hidden overscroll-y-none' : 'z-10'
       }`}
     >
       <div className="px-3.5 pb-0  z-0">

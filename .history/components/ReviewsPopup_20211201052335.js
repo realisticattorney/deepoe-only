@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from 'react';
+import { Fragment, useState } from 'react';
 import { Dialog, Transition, Disclosure, Popover } from '@headlessui/react';
 import { ChevronUpIcon } from '@heroicons/react/outline';
 import Link from 'next/link';
@@ -15,27 +15,19 @@ export default function ReviewsPopup({
   const atobURL = atob(product.id);
   const atobId = atobURL.split('Product/')[1];
   console.log('atobId', atobId);
-  useEffect(() => {
-    document.body.style.overflow = 'hidden';
-    return () => (document.body.style.overflow = 'unset');
-  }, []);
-
   return (
-    <Popover className="">
+    <Popover className="overflow-y-hidden">
       {({ parentReviewState }) => (
         <>
           <Popover.Button
             className={`inline-flex justify-center py-1 px-10 mt-2 font-mono font-light border border-transparent shadow text-xl  text-white bg-deepoe-chocolate focus:outline-none active:outline-none focus:ring-2 focus:ring-offset-2 ${
               disable ? 'hidden' : 'inline-block'
             }`}
-            onClick={() => {
-              wrapperSetParentReviewState(!parentReviewState);
-            }}
           >
             More Reviews
           </Popover.Button>
 
-          <Popover.Panel static className="absolute z-50 ">
+          <Popover.Panel static className="absolute z-50 overflow-y-hidden">
             <Transition.Child
               as={Fragment}
               unmount={false}
@@ -46,7 +38,7 @@ export default function ReviewsPopup({
               leaveFrom="translate-x-0"
               leaveTo="-translate-x-full"
             >
-              <div className="bg-deepoe-cream w-full h-screen   z-50 fixed inset-y-0 top-0 left-0 right-0 bottom-0 max-w-full  overflow-y-auto">
+              <div className="bg-deepoe-cream w-full h-screen   z-50 fixed inset-y-0 top-0 left-0 right-0 bottom-0 max-w-full  overflow-y-hidden">
                 <div className="z-50 fixed w-full h-16 bg-deepoe-cream  text-right">
                   <button
                     type="button"

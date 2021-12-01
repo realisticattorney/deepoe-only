@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from 'react';
+import { Fragment, useState } from 'react';
 import { Dialog, Transition, Disclosure, Popover } from '@headlessui/react';
 import { ChevronUpIcon } from '@heroicons/react/outline';
 import Link from 'next/link';

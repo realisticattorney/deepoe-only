@@ -21,11 +21,9 @@ const ProductPageContent = ({ collection, product }) => {
   );
 
   useEffect(() => {
-    if (parentReviewState) {
+    // if (parentReviewState === true) {
       document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
+    // }
   }, [parentReviewState]);
 
   useEffect(() => {

@@ -21,14 +21,6 @@ const ProductPageContent = ({ collection, product }) => {
   );
 
   useEffect(() => {
-    if (parentReviewState) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
-  }, [parentReviewState]);
-
-  useEffect(() => {
     const timer = setTimeout(() => {
       console.log('This will run after 1 second!', stageCanvasRef);
       let inner = stageCanvasRef.current.innerText
@@ -55,11 +47,7 @@ const ProductPageContent = ({ collection, product }) => {
   const itemsSpecs2 = itemsSpecs.split('**');
 
   return (
-    <div
-      className={`${
-        parentReviewState ? 'overflow-y-hidden overscroll-y-none' : ''
-      }`}
-    >
+    <div className={`${parentReviewState ? 'overflow-y-hidden over' : ''}`}>
       <div className="px-3.5 pb-0  z-0">
         <a
           href={`https://deepoe-only.vercel.app/collections/${collection}/`}
@@ -74,11 +62,7 @@ const ProductPageContent = ({ collection, product }) => {
         </a>
       </div>
 
-      <div
-        className={`flex flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 px-2 mx-auto ${
-          parentReviewState ? 'overflow-y-hidden overscroll-y-none' : ''
-        }`}
-      >
+      <div className="flex flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 px-2 mx-auto">
         <div className="w-full max-w-md  overflow-hidden"></div>
         <ProductForm product={product} collection={collection} />
 

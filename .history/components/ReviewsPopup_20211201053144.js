@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from 'react';
+import { Fragment, useState } from 'react';
 import { Dialog, Transition, Disclosure, Popover } from '@headlessui/react';
 import { ChevronUpIcon } from '@heroicons/react/outline';
 import Link from 'next/link';
@@ -15,11 +15,6 @@ export default function ReviewsPopup({
   const atobURL = atob(product.id);
   const atobId = atobURL.split('Product/')[1];
   console.log('atobId', atobId);
-  useEffect(() => {
-    document.body.style.overflow = 'hidden';
-    return () => (document.body.style.overflow = 'unset');
-  }, []);
-
   return (
     <Popover className="">
       {({ parentReviewState }) => (
@@ -29,8 +24,8 @@ export default function ReviewsPopup({
               disable ? 'hidden' : 'inline-block'
             }`}
             onClick={() => {
-              wrapperSetParentReviewState(!parentReviewState);
-            }}
+                  wrapperSetParentReviewState(!parentReviewState);
+                }}
           >
             More Reviews
           </Popover.Button>

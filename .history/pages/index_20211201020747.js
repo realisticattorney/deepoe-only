@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 export default function Home({ products, carouselProducts }) {
   console.log(products.products.edges);
-  console.log(carouselProducts);
+  console.log(carouselProducts)
 
   const [selectedItem, setSelectedItem] = useState(1);
   console.log(selectedItem);
@@ -75,7 +75,7 @@ export default function Home({ products, carouselProducts }) {
         </div>
 
         <h2 className="text-center font-mono text-lg">Shop this table</h2>
-        <HomeCarousel products={products} selectedItem={selectedItem}  />
+        {/* <HomeCarousel products={products} selectedItem={selectedItem}  /> */}
       </div>
     </div>
   );
@@ -87,34 +87,26 @@ export async function getStaticProps() {
   let carouselProducts = [];
   products.products.edges.map((product) => {
     //get the first image
-    console.log(product.node.id);
-    if (
-      product.node.id === 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY3MTExNjY2MzE5OTY='
-    ) {
+    if (product.id === 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY3MTExNjY2MzE5OTY=') {
       carouselProducts[2] = {
         number: 2,
-        product: product.node.images.edges[0].node.originalSrc,
+        product: product.images.edges[0].node.originalSrc,
       };
     }
 
-    if (
-      product.node.id === 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY3MTExMzY1NTA5NzI='
-    ) {
+    if (product.id === 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY3MTExMzY1NTA5NzI=') {
       carouselProducts[0] = {
         number: 3,
-        product: product.node.images.edges[0].node.originalSrc,
+        product: product.images.edges[0].node.originalSrc,
       };
     }
-    if (
-      product.node.id === 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY3MDgxMjg3NDM0ODQ='
-    ) {
+    if (product.id === 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY3MDgxMjg3NDM0ODQ=') {
       carouselProducts[1] = {
         number: 1,
-        product: product.node.images.edges[0].node.originalSrc,
+        product: product.images.edges[0].node.originalSrc,
       };
     }
   });
-  console.log(carouselProducts);
 
   return {
     props: { products, carouselProducts },

@@ -20,7 +20,7 @@ const Banner = ({ product, selectedItem }) => {
   const [index, setIndex] = useState(0);
   useEffect(() => {
     setIndex(0);
-  }, [selectedItem]);
+  }, [selectedVariant]);
 
   return (
     <div className="relative z-0  mb-10 classes.my__carousel_main">
@@ -33,7 +33,7 @@ const Banner = ({ product, selectedItem }) => {
         swipeScrollTolerance={50}
         autoFocus={false}
         selectedItem={index}
-        onChange={(selectedItem) => setIndex(selectedItem)}
+        onChange={(index) => setIndex(selectedItem)}
         showArrows={false}
       >
         {imageSrc.map((i) => (

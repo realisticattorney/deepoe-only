@@ -14,13 +14,13 @@ const Banner = ({ product, selectedItem }) => {
     // .sort((a, b) => (a.node.altText > b.node.altText ? -1 : 1))
     // .map((node) => node.node.originalSrc);
 
-  // imageSrc.push(...imageColorSrc);
+  imageSrc.push(...imageColorSrc);
 
   //change carousel index to 0
   const [index, setIndex] = useState(0);
   useEffect(() => {
     setIndex(0);
-  }, [selectedItem]);
+  }, [selectedVariant]);
 
   return (
     <div className="relative z-0  mb-10 classes.my__carousel_main">
@@ -33,7 +33,7 @@ const Banner = ({ product, selectedItem }) => {
         swipeScrollTolerance={50}
         autoFocus={false}
         selectedItem={index}
-        onChange={(selectedItem) => setIndex(selectedItem)}
+        onChange={(index) => setIndex(index)}
         showArrows={false}
       >
         {imageSrc.map((i) => (

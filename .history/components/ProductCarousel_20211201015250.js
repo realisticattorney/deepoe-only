@@ -4,23 +4,23 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Banner = ({ product, selectedItem }) => {
-  // const imageSrc = [selectedVariant.image];
-  // const imageColorSrc = product.images.edges
-    // .filter(
-      // (node) =>
-        // node.node.altText === selectedVariant.options.Color ||
-        // node.node.altText === 'All'
-    // )
-    // .sort((a, b) => (a.node.altText > b.node.altText ? -1 : 1))
-    // .map((node) => node.node.originalSrc);
+  const imageSrc = [selectedVariant.image];
+  const imageColorSrc = product.images.edges
+    .filter(
+      (node) =>
+        node.node.altText === selectedVariant.options.Color ||
+        node.node.altText === 'All'
+    )
+    .sort((a, b) => (a.node.altText > b.node.altText ? -1 : 1))
+    .map((node) => node.node.originalSrc);
 
-  // imageSrc.push(...imageColorSrc);
+  imageSrc.push(...imageColorSrc);
 
   //change carousel index to 0
   const [index, setIndex] = useState(0);
   useEffect(() => {
     setIndex(0);
-  }, [selectedItem]);
+  }, [selectedVariant]);
 
   return (
     <div className="relative z-0  mb-10 classes.my__carousel_main">
@@ -33,7 +33,7 @@ const Banner = ({ product, selectedItem }) => {
         swipeScrollTolerance={50}
         autoFocus={false}
         selectedItem={index}
-        onChange={(selectedItem) => setIndex(selectedItem)}
+        onChange={(index) => setIndex(index)}
         showArrows={false}
       >
         {imageSrc.map((i) => (

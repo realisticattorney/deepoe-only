@@ -20,7 +20,7 @@ const Banner = ({ product, selectedItem }) => {
   const [index, setIndex] = useState(0);
   useEffect(() => {
     setIndex(0);
-  }, [selectedItem]);
+  }, [selectedVariant]);
 
   return (
     <div className="relative z-0  mb-10 classes.my__carousel_main">

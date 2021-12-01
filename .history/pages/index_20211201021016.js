@@ -75,7 +75,7 @@ export default function Home({ products, carouselProducts }) {
         </div>
 
         <h2 className="text-center font-mono text-lg">Shop this table</h2>
-        <HomeCarousel products={products} selectedItem={selectedItem}  />
+        {/* <HomeCarousel products={products} selectedItem={selectedItem}  /> */}
       </div>
     </div>
   );
@@ -87,7 +87,7 @@ export async function getStaticProps() {
   let carouselProducts = [];
   products.products.edges.map((product) => {
     //get the first image
-    console.log(product.node.id);
+    console.log(produce.node.id);
     if (
       product.node.id === 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY3MTExNjY2MzE5OTY='
     ) {

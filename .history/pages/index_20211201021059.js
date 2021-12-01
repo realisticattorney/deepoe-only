@@ -75,7 +75,7 @@ export default function Home({ products, carouselProducts }) {
         </div>
 
         <h2 className="text-center font-mono text-lg">Shop this table</h2>
-        <HomeCarousel products={products} selectedItem={selectedItem}  />
+        {/* <HomeCarousel products={products} selectedItem={selectedItem}  /> */}
       </div>
     </div>
   );
@@ -89,7 +89,7 @@ export async function getStaticProps() {
     //get the first image
     console.log(product.node.id);
     if (
-      product.node.id === 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY3MTExNjY2MzE5OTY='
+      product.node.id == 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY3MTExNjY2MzE5OTY='
     ) {
       carouselProducts[2] = {
         number: 2,
@@ -98,7 +98,7 @@ export async function getStaticProps() {
     }
 
     if (
-      product.node.id === 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY3MTExMzY1NTA5NzI='
+      product.node.id == 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY3MTExMzY1NTA5NzI='
     ) {
       carouselProducts[0] = {
         number: 3,

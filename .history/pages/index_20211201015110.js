@@ -5,12 +5,11 @@ import HomeCarousel from '../components/HomeCarousel';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-export default function Home({ products, carouselProducts }) {
-  console.log(products.products.edges);
-  console.log(carouselProducts);
+export default function Home({ products }) {
+  console.log(products);
 
-  const [selectedItem, setSelectedItem] = useState(1);
-  console.log(selectedItem);
+const [selectedItem, setSelectedItem] = useState(1);
+
   return (
     <div className="">
       <Head>
@@ -50,24 +49,24 @@ export default function Home({ products, carouselProducts }) {
                 objectPosition="top"
               />
               <div class="pt-2 flex items-center justify-center space-x-8">
-                <button className="p-5" onClick={() => setSelectedItem(1)}>
-                  <div class="relative w-6 h-6 font-thin  bg-opacity-60 bg-gray-700  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
-                    1
-                  </div>
+              <button className="p-5" onClick={() => setOpen(!open)}>
+                <div class="relative w-6 h-6 font-thin  bg-opacity-60 bg-gray-700  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
+                  1
+                </div>
                 </button>
               </div>
               <div class="pt-20  flex items-center pl-28 justify-center space-x-8">
-                <button className="p-5" onClick={() => setSelectedItem(2)}>
-                  <div class="relative w-6 h-6 font-thin  bg-opacity-60 bg-gray-700  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
-                    2
-                  </div>
+              <button className="p-5">
+                <div class="relative w-6 h-6 font-thin  bg-opacity-60 bg-gray-700  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
+                  2
+                </div>
                 </button>
               </div>
               <div class="pt-18 pr-36 flex items-center justify-center space-x-8">
-                <button className="p-5" onClick={() => setSelectedItem(3)}>
-                  <div class="relative w-6 h-6 font-thin  bg-opacity-60 bg-gray-700  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
-                    3
-                  </div>
+              <button className="p-5">
+                <div class="relative w-6 h-6 font-thin  bg-opacity-60 bg-gray-700  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
+                  3
+                </div>
                 </button>
               </div>
             </div>
@@ -75,7 +74,7 @@ export default function Home({ products, carouselProducts }) {
         </div>
 
         <h2 className="text-center font-mono text-lg">Shop this table</h2>
-        <HomeCarousel products={products} selectedItem={selectedItem}  />
+        {/* <HomeCarousel products={products}  /> */}
       </div>
     </div>
   );
@@ -84,39 +83,7 @@ export default function Home({ products, carouselProducts }) {
 export async function getStaticProps() {
   const products = await getProductsInCollection('frontpage');
 
-  let carouselProducts = [];
-  products.products.edges.map((product) => {
-    //get the first image
-    console.log(product.node.id);
-    if (
-      product.node.id === 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY3MTExNjY2MzE5OTY='
-    ) {
-      carouselProducts[2] = {
-        number: 2,
-        product: product.node.images.edges[0].node.originalSrc,
-      };
-    }
-
-    if (
-      product.node.id === 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY3MTExMzY1NTA5NzI='
-    ) {
-      carouselProducts[0] = {
-        number: 3,
-        product: product.node.images.edges[0].node.originalSrc,
-      };
-    }
-    if (
-      product.node.id === 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY3MDgxMjg3NDM0ODQ='
-    ) {
-      carouselProducts[1] = {
-        number: 1,
-        product: product.node.images.edges[0].node.originalSrc,
-      };
-    }
-  });
-  console.log(carouselProducts);
-
   return {
-    props: { products, carouselProducts },
+    props: { products },
   };
 }

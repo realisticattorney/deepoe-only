@@ -8,7 +8,6 @@ export default function ReviewsPopup({
   wrapperSetParentReviewState,
   product,
   collection,
-  disable
 }) {
   console.log('product_id', product);
   console.log('collection_id', collection);
@@ -19,7 +18,7 @@ export default function ReviewsPopup({
     <Popover className="overflow-y-hidden">
       {({ parentReviewState }) => (
         <>
-          <Popover.Button className={`inline-flex justify-center py-1 px-10 mt-2 font-mono font-light border border-transparent shadow text-xl  text-white bg-deepoe-chocolate focus:outline-none active:outline-none focus:ring-2 focus:ring-offset-2 ${disable ? 'hidden' : 'inline-block'}`}>
+          <Popover.Button className={`inline-flex justify-center py-1 px-10 mt-2 font-mono font-light border border-transparent shadow text-xl  text-white bg-deepoe-chocolate focus:outline-none active:outline-none focus:ring-2 focus:ring-offset-2`}>
             More Reviews
           </Popover.Button>
 

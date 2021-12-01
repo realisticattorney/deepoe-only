@@ -153,7 +153,7 @@ const ProductPageContent = ({ collection, product }) => {
               <ReviewsPopup
                 parentReviewState={parentReviewState}
                 product={product}
-                disable={disable}
+                disable
                 collection={collection}
                 wrapperSetParentReviewState={wrapperSetParentReviewState}
                 // cancelButtonRef={cancelButtonRef}

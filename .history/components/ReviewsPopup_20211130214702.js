@@ -8,7 +8,7 @@ export default function ReviewsPopup({
   wrapperSetParentReviewState,
   product,
   collection,
-  disable
+  
 }) {
   console.log('product_id', product);
   console.log('collection_id', collection);

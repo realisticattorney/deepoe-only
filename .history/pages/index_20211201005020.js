@@ -24,7 +24,7 @@ export default function Home({ products }) {
             className={`text-3xl text-white absolute left-0 right-0 ml-auto mr-auto top-16 italic font-medium w-80 mb-6 text-center 
               `}
           >
-            Considered materials, lively design.
+            Considered materials, lively design
           </h2>
           <a
             href={`https://deepoe-only.vercel.app/collections/frontpage`}
@@ -34,18 +34,6 @@ export default function Home({ products }) {
               Shop All Products
             </p>
           </a>
-        </div>
-        <div className="px-6">
-          <div className="w-full  overflow-hidden">
-            <div className="relative h-110">
-              <Image
-                src={originalSrc}
-                alt={altText}
-                layout="fill"
-                objectFit="cover"
-              />
-            </div>
-          </div>
         </div>
       </div>
     </div>

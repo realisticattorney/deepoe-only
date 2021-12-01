@@ -74,7 +74,7 @@ export default function Home({ products, carouselProducts }) {
           </div>
         </div>
 
-        <h2 className="text-center font-mono text-xl -mt-1.5">
+        <h2 className="text-center font-mono text-lg -mt-1.5">
           Shop this table
         </h2>
         <HomeCarousel
@@ -82,7 +82,7 @@ export default function Home({ products, carouselProducts }) {
           selectedItem={selectedItem}
         />
 
-        <h2 className="text-center w-64 mx-auto font-light font-mono text-xl">
+        <h2 className="text-center w-64 mx-auto font-mono text-xl">
           We create and curate designs for your home and our shared one
         </h2>
 
@@ -98,8 +98,8 @@ export default function Home({ products, carouselProducts }) {
             </div>
           </div>
         </div>
-        <div className=" mx-6 mb-12">
-          <h2 className="text-center w-full font-light leading-6  font-mono text-lg">
+        <div className=" mx-6">
+          <h2 className="text-center w-full font-light heading mx-6  font-mono text-lg">
             At deepoe, we strive to create an open and honest experience for our
             customers. We recognize the challenges surrounding sustainability
             and are working daily to reduce our footprint.

@@ -35,13 +35,13 @@ export default function Home({ products }) {
             </p>
           </a>
         </div>
-        <div className="px-6 my-6">
+        <div className="px-5">
           <div className="w-full  overflow-hidden">
             <div className="relative h-110">
               <Image
                 src="/newHome.png"
                 layout="fill"
-                objectFit="cover"
+                objectFit="contain"
                 objectPosition="top"
               />
             </div>

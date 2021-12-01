@@ -87,7 +87,7 @@ export default function Home({ products, carouselProducts }) {
         </h2>
 
 
-        <div className="px-6 my-6 mt-10">
+        <div className="px-6 my-6">
           <div className="w-full  overflow-hidden">
             <div className="relative h-110">
               <Image

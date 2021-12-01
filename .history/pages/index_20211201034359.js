@@ -85,18 +85,6 @@ export default function Home({ products, carouselProducts }) {
         <h2 className="text-center w-64 mx-auto font-mono text-xl">
           We create and curate designs for your home and our shared one
         </h2>
-
-
-        <div className="px-6 my-6 mt-10">
-          <div className="w-full  overflow-hidden">
-            <div className="relative h-110">
-              <Image
-                src="/newHome.png"
-                layout="fill"
-                objectFit="cover"
-                objectPosition="top"
-              />
-              </div></div></div>
       </div>
     </div>
   );

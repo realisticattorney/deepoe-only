@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 export default function Home({ products, carouselProducts }) {
   console.log(products.products.edges);
-  console.log("aaaaaa'", carouselProducts);
+  console.log("aaaaaa'",carouselProducts);
 
   const [selectedItem, setSelectedItem] = useState(1);
   console.log(selectedItem);
@@ -74,29 +74,11 @@ export default function Home({ products, carouselProducts }) {
           </div>
         </div>
 
-        <h2 className="text-center font-mono text-lg -mt-1.5">
-          Shop this table
-        </h2>
-        <HomeCarousel
-          carouselProducts={carouselProducts}
-          selectedItem={selectedItem}
-        />
+        <h2 className="text-center font-mono text-lg -mt-1.5">Shop this table</h2>
+        <HomeCarousel carouselProducts={carouselProducts} selectedItem={selectedItem}  />
 
-        <h2 className="text-center w-64 mx-auto font-mono text-xl">
-          We create and curate designs for your home and our shared one
-        </h2>
-
-
-        <div className="px-6 my-6 mt-10">
-          <div className="w-full  overflow-hidden">
-            <div className="relative h-110">
-              <Image
-                src="/newHome.png"
-                layout="fill"
-                objectFit="cover"
-                objectPosition="top"
-              />
-              </div></div></div>
+        <h2 className="text-center w-48 mx-auto font-mono text-lg -mt-1.5">We create and curate designs for your home and our shared one</h2>
+        
       </div>
     </div>
   );
@@ -135,7 +117,7 @@ export async function getStaticProps() {
       };
     }
   });
-  console.log('AAAAAAAAAAAAAAAAAAAA', carouselProducts);
+  console.log("AAAAAAAAAAAAAAAAAAAA",carouselProducts);
 
   return {
     props: { products, carouselProducts },

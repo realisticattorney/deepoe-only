@@ -27,8 +27,7 @@ const Banner = ({ carouselProducts, selectedItem }) => {
   return (
     <div className="relative z-0 mt-4  mb-10 classes.my__carousel_main">
       <Carousel
-        infiniteLoop
-      //   autoPlay={true}
+      //   infiniteLoop
         showStatus={false}
         showThumbs={false}
          showIndicators={false}

@@ -82,12 +82,12 @@ export default function Home({ products, carouselProducts }) {
           selectedItem={selectedItem}
         />
 
-        <h2 className="text-center w-64 mx-auto font-mono text-xl">
+        <h2 className="text-center w-64 mx-auto font-mono text-xl m">
           We create and curate designs for your home and our shared one
         </h2>
 
 
-        <div className="px-6 my-6 mt-10">
+        <div className="px-6 my-6">
           <div className="w-full  overflow-hidden">
             <div className="relative h-110">
               <Image

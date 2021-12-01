@@ -28,13 +28,13 @@ const Banner = ({ carouselProducts, selectedItem }) => {
     <div className="relative z-0 mt-4  mb-10 classes.my__carousel_main">
       <Carousel
         infiniteLoop
-      //   autoPlay={true}
+        autoPlay
         showStatus={false}
         showThumbs={false}
          showIndicators={false}
-        preventMovementUntilSwipeScrollTolerance={true}
+      //   preventMovementUntilSwipeScrollTolerance={true}
         interval={5000}
-        swipeScrollTolerance={50}
+        swipeScrollTolerance={0}
         autoFocus={false}
         selectedItem={index}
         centerSlidePercentage={53}

@@ -47,7 +47,7 @@ const ProductPageContent = ({ collection, product }) => {
   const itemsSpecs2 = itemsSpecs.split('**');
 
   return (
-    <div className={`${parentReviewState ? 'overflow-y-hidden' : ''}`}>
+    <div className={`${preventReviewState ? 'overflow-y-hidden' : ''}`}>
       <div className="px-3.5 pb-0  z-0">
         <Link href={`/collections/${collection}/`}>
           <a className="text-left pl-3 text-lg font-extralight font-mono">

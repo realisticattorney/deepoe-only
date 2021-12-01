@@ -34,10 +34,10 @@ export default function ReviewsPopup({
               leaveTo="-translate-x-full"
             >
               <div className="bg-deepoe-cream w-full   z-50 fixed inset-y-0 top-0 left-0 right-0 bottom-0 max-w-full  overflow-y-auto">
-              <div className="z-50 fixed w-full h-5 bg-deepoe-cream  text-right">
+              <div className="z-50 fixed w-full h-5 bg-deepoe-cream  text">
                         <button
                           type="button"
-                          className=" font-extralight text-lg mt-5 pt-0.5 mr-9 font-mono "
+                          className=" font-light text-lg mt-3 mr-5 font-mono "
                           onClick={() => wrapperSetParentReviewState(false)}
                         >
                           close

@@ -37,7 +37,7 @@ export default function ReviewsPopup({
               <div className="z-50 fixed w-full h-5 bg-deepoe-cream  text-right">
                         <button
                           type="button"
-                          className=" font-extralight text-lg mt-5 pt-0.5 mr-9 font-mono "
+                          className=" font-extralight text-lg2 mt-3 mr-5 font-mono "
                           onClick={() => wrapperSetParentReviewState(false)}
                         >
                           close

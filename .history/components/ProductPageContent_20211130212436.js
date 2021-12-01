@@ -47,7 +47,8 @@ const ProductPageContent = ({ collection, product }) => {
   const itemsSpecs2 = itemsSpecs.split('**');
 
   return (
-    <div className={`${parentReviewState ? 'overflow-y-hidden' : ''}`}>
+    <div className="">
+       
       <div className="px-3.5 pb-0  z-0">
         <Link href={`/collections/${collection}/`}>
           <a className="text-left pl-3 text-lg font-extralight font-mono">
@@ -144,20 +145,20 @@ const ProductPageContent = ({ collection, product }) => {
                 rel="noreferrer"
               > */}
               {/* <Link href={`/reviews/${product.handle}`}> */}
-              {/* <button
+                {/* <button
                   type="submit"
                   disabled={disable ? true : false}
                   onClick={() => wrapperSetParentReviewState(!parentReviewState)}
                 
                 > */}
-              <ReviewsPopup
-                parentReviewState={parentReviewState}
-                product={product}
-                collection={collection}
-                wrapperSetParentReviewState={wrapperSetParentReviewState}
-                // cancelButtonRef={cancelButtonRef}
-              />
-              {/* </button> */}
+                  <ReviewsPopup
+          parentReviewState={parentReviewState}
+          product={product}
+          collection={collection}
+          wrapperSetParentReviewState={wrapperSetParentReviewState}
+          // cancelButtonRef={cancelButtonRef}
+        />
+                {/* </button> */}
               {/* </Link> */}
               {/* </a> */}
             </div>

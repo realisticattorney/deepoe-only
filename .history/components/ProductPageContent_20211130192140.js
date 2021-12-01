@@ -2,9 +2,9 @@ import Image from 'next/image';
 import ProductForm from './ProductForm';
 import Link from 'next/link';
 import atob from 'atob';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import YotpoReviews from './YotpoReviews';
-import ReviewsPopup from './ReviewsPopup';
+import Rev
 const ProductPageContent = ({ collection, product }) => {
   const atobURL = atob(product.id);
   const atobId = atobURL.split('Product/')[1];
@@ -12,13 +12,6 @@ const ProductPageContent = ({ collection, product }) => {
   const stageCanvasRef = useRef(null);
   const [disable, setDisable] = useState(false);
   const [parentReviewState, setParentReviewState] = useState(false);
-
-  const wrapperSetParentReviewState = useCallback(
-    (val) => {
-      setParentReviewState(val);
-    },
-    [setParentReviewState]
-  );
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -48,7 +41,6 @@ const ProductPageContent = ({ collection, product }) => {
 
   return (
     <div>
-       
       <div className="px-3.5 pb-0  z-0">
         <Link href={`/collections/${collection}/`}>
           <a className="text-left pl-3 text-lg font-extralight font-mono">
@@ -144,22 +136,16 @@ const ProductPageContent = ({ collection, product }) => {
                 href={`https://deepoe-only.vercel.app/reviews/${product.handle}`}
                 rel="noreferrer"
               > */}
-              {/* <Link href={`/reviews/${product.handle}`}> */}
-                {/* <button
+              <Link href={`/reviews/${product.handle}`}>
+                <button
                   type="submit"
                   disabled={disable ? true : false}
                   onClick={() => wrapperSetParentReviewState(!parentReviewState)}
-                
-                > */}
-                  <ReviewsPopup
-          parentReviewState={parentReviewState}
-          product={product}
-          collection={collection}
-          wrapperSetParentReviewState={wrapperSetParentReviewState}
-          // cancelButtonRef={cancelButtonRef}
-        />
-                {/* </button> */}
-              {/* </Link> */}
+                  className="inline-flex justify-center py-1 px-10 mt-2 font-mono font-light border border-transparent shadow text-xl  text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
+                >
+                  More Reviews
+                </button>
+              </Link>
               {/* </a> */}
             </div>
           </div>

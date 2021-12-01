@@ -51,7 +51,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                         className="py-6 overflow-y-auto mt-7 px-6 sm:px-6 flex justify-between items-center"
                         onClick={() => setOpen(!open)}
                       >
-                        <p className="font-thin text-2xl">Products</p>
+                        <p className="font-thin text-3xl">Products</p>
                         <span className="mr-7 justify-self-end">
                           <ChevronUpIcon
                             className={`w-5 h-5 ${
@@ -80,7 +80,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                         <ul className="space-y-2 pl-11 mb-6">
                           <Link href={`/collections/frontpage`}>
                             <a
-                              className="block text-sm "
+                              className="block text-lg "
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Shop All
@@ -88,7 +88,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                           </Link>
                           <Link href={`/collections/dinnerware`}>
                             <a
-                              className="block text-sm"
+                              className="block text-lg"
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Dinnerware
@@ -96,7 +96,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                           </Link>
                           <Link href={`/collections/drinkware`}>
                             <a
-                              className="block text-sm"
+                              className="block text-lg"
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Drinkware
@@ -104,7 +104,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                           </Link>
                           <Link href={`/collections/accessories`}>
                             <a
-                              className="block text-sm"
+                              className="block text-lg"
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Accessories
@@ -132,7 +132,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                     <div className="flex-1 overflow-y-auto space-y-6 px-6 sm:px-6">
                       <Link href={`/deepoe/sustainability`}>
                         <a
-                          className="font-thin text-2xl block"
+                          className="font-thin text-3xl block"
                           onClick={() => wrapperSetParentState(false)}
                         >
                           Sustainability
@@ -141,7 +141,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
 
                       <Link href={`/deepoe/faq`}>
                         <a
-                          className="font-thin text-2xl block"
+                          className="font-thin text-3xl block"
                           onClick={() => wrapperSetParentState(false)}
                         >
                           FAQ
@@ -150,7 +150,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
 
                       <Link href={`/contact`}>
                         <a
-                          className="font-thin text-2xl block"
+                          className="font-thin text-3xl block"
                           onClick={() => wrapperSetParentState(false)}
                         >
                           Contact
@@ -159,7 +159,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
 
                       {/* <Link href={`/login`}>
                         <a
-                          className="font-extralight text-2xl block pt-14"
+                          className="font-extralight text-3xl block pt-14"
                           onClick={() => wrapperSetParentState(false)}
                         >
                           Log In/Sign Up

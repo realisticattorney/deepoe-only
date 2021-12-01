@@ -145,12 +145,12 @@ const ProductPageContent = ({ collection, product }) => {
                 rel="noreferrer"
               > */}
               {/* <Link href={`/reviews/${product.handle}`}> */}
-                {/* <button
+                <button
                   type="submit"
                   disabled={disable ? true : false}
                   onClick={() => wrapperSetParentReviewState(!parentReviewState)}
                 
-                > */}
+                >
                   <ReviewsPopup
           parentReviewState={parentReviewState}
           product={product}
@@ -158,7 +158,7 @@ const ProductPageContent = ({ collection, product }) => {
           wrapperSetParentReviewState={wrapperSetParentReviewState}
           // cancelButtonRef={cancelButtonRef}
         />
-                {/* </button> */}
+                </button>
               {/* </Link> */}
               {/* </a> */}
             </div>

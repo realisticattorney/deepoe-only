@@ -3,7 +3,7 @@ import { Dialog, Transition, Disclosure } from '@headlessui/react';
 import { ChevronUpIcon } from '@heroicons/react/outline';
 import Link from 'next/link';
 
-export default function MenuDropdown({ parentState, wrapperSetParentState }) {
+export default function ReviewsPopup({ parentState, wrapperSetParentState }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -80,7 +80,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                         <ul className="space-y-2 pl-11 mb-6">
                           <Link href={`/collections/frontpage`}>
                             <a
-                              className="block text-sm "
+                              className="block text-md "
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Shop All
@@ -88,7 +88,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                           </Link>
                           <Link href={`/collections/dinnerware`}>
                             <a
-                              className="block text-sm"
+                              className="block text-md"
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Dinnerware
@@ -96,7 +96,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                           </Link>
                           <Link href={`/collections/drinkware`}>
                             <a
-                              className="block text-sm"
+                              className="block text-md"
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Drinkware
@@ -104,7 +104,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                           </Link>
                           <Link href={`/collections/accessories`}>
                             <a
-                              className="block text-sm"
+                              className="block text-md"
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Accessories

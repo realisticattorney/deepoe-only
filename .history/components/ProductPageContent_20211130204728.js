@@ -145,12 +145,12 @@ const ProductPageContent = ({ collection, product }) => {
                 rel="noreferrer"
               > */}
               {/* <Link href={`/reviews/${product.handle}`}> */}
-                {/* <button
+                <button
                   type="submit"
                   disabled={disable ? true : false}
                   onClick={() => wrapperSetParentReviewState(!parentReviewState)}
-                
-                > */}
+                  className="inline-flex justify-center py-1 px-10 mt-2 font-mono font-light border border-transparent shadow text-xl  text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
+                >
                   <ReviewsPopup
           parentReviewState={parentReviewState}
           product={product}
@@ -158,7 +158,7 @@ const ProductPageContent = ({ collection, product }) => {
           wrapperSetParentReviewState={wrapperSetParentReviewState}
           // cancelButtonRef={cancelButtonRef}
         />
-                {/* </button> */}
+                </button>
               {/* </Link> */}
               {/* </a> */}
             </div>

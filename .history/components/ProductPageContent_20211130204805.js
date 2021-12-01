@@ -158,7 +158,7 @@ const ProductPageContent = ({ collection, product }) => {
           wrapperSetParentReviewState={wrapperSetParentReviewState}
           // cancelButtonRef={cancelButtonRef}
         />
-                {/* </button> */}
+                </button>
               {/* </Link> */}
               {/* </a> */}
             </div>

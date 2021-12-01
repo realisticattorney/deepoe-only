@@ -3,12 +3,12 @@ import { Dialog, Transition, Disclosure } from '@headlessui/react';
 import { ChevronUpIcon } from '@heroicons/react/outline';
 import Link from 'next/link';
 
-export default function MenuDropdown({ parentState, wrapperSetParentState }) {
+export default function ReviewsPopup({ parentReviewState, wrapperSetParentReviewState }) {
   const [open, setOpen] = useState(false);
 
   return (
     <Transition.Root
-      show={parentState}
+      show={parentReviewState}
       as={Fragment}
       className="z-40 font-public-sans-normal"
     >
@@ -17,7 +17,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
         as="div"
         className="fixed  inset-0 overflow-hidden"
         onClose={() => {
-          wrapperSetParentState(!parentState);
+          wrapperSetParentReviewState(!parentReviewState);
         }}
       >
         <div className="absolute  inset-0 overflow-hidden">
@@ -80,52 +80,36 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                         <ul className="space-y-2 pl-11 mb-6">
                           <Link href={`/collections/frontpage`}>
                             <a
-                              className="block text-sm "
-                              onClick={() => wrapperSetParentState(false)}
+                              className="block text-md "
+                              onClick={() => wrapperSetParentReviewState(false)}
                             >
                               Shop All
                             </a>
                           </Link>
                           <Link href={`/collections/dinnerware`}>
                             <a
-                              className="block text-sm"
-                              onClick={() => wrapperSetParentState(false)}
+                              className="block text-md"
+                              onClick={() => wrapperSetParentReviewState(false)}
                             >
                               Dinnerware
                             </a>
                           </Link>
                           <Link href={`/collections/drinkware`}>
                             <a
-                              className="block text-sm"
-                              onClick={() => wrapperSetParentState(false)}
+                              className="block text-md"
+                              onClick={() => wrapperSetParentReviewState(false)}
                             >
                               Drinkware
                             </a>
                           </Link>
                           <Link href={`/collections/accessories`}>
                             <a
-                              className="block text-sm"
-                              onClick={() => wrapperSetParentState(false)}
+                              className="block text-md"
+                              onClick={() => wrapperSetParentReviewState(false)}
                             >
                               Accessories
                             </a>
                           </Link>
-                          {/* <Link href={`/collections/furniture`}>
-                            <a
-                              className="block text-lg"
-                              onClick={() => wrapperSetParentState(false)}
-                            >
-                              Furniture
-                            </a>
-                          </Link>
-                          <Link href={`/collections/miscellaneous`}>
-                            <a
-                              className="block text-lg"
-                              onClick={() => wrapperSetParentState(false)}
-                            >
-                              Miscellaneous
-                            </a> */}
-                          {/* </Link> */}
                         </ul>
                       </Disclosure.Panel>{' '}
                     </Transition>
@@ -133,7 +117,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                       <Link href={`/deepoe/sustainability`}>
                         <a
                           className="font-thin text-2xl block"
-                          onClick={() => wrapperSetParentState(false)}
+                          onClick={() => wrapperSetParentReviewState(false)}
                         >
                           Sustainability
                         </a>
@@ -142,7 +126,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                       <Link href={`/deepoe/faq`}>
                         <a
                           className="font-thin text-2xl block"
-                          onClick={() => wrapperSetParentState(false)}
+                          onClick={() => wrapperSetParentReviewState(false)}
                         >
                           FAQ
                         </a>
@@ -151,7 +135,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                       <Link href={`/contact`}>
                         <a
                           className="font-thin text-2xl block"
-                          onClick={() => wrapperSetParentState(false)}
+                          onClick={() => wrapperSetParentReviewState(false)}
                         >
                           Contact
                         </a>
@@ -160,7 +144,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                       {/* <Link href={`/login`}>
                         <a
                           className="font-extralight text-2xl block pt-14"
-                          onClick={() => wrapperSetParentState(false)}
+                          onClick={() => wrapperSetParentReviewState(false)}
                         >
                           Log In/Sign Up
                         </a>

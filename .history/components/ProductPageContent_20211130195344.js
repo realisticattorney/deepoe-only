@@ -11,7 +11,7 @@ const ProductPageContent = ({ collection, product }) => {
 
   const stageCanvasRef = useRef(null);
   const [disable, setDisable] = useState(false);
-  const [parentReviewState, setParentReviewState] = useState(false);
+  const [parentReviewState, setParentReviewState] = useState(true);
 
   const wrapperSetParentReviewState = useCallback(
     (val) => {
@@ -48,7 +48,13 @@ const ProductPageContent = ({ collection, product }) => {
 
   return (
     <div>
-       
+       <ReviewsPopup
+          parentReviewState={parentReviewState}
+          product={product}
+          collection={collection}
+          wrapperSetParentReviewState={wrapperSetParentReviewState}
+          // cancelButtonRef={cancelButtonRef}
+        />
       <div className="px-3.5 pb-0  z-0">
         <Link href={`/collections/${collection}/`}>
           <a className="text-left pl-3 text-lg font-extralight font-mono">
@@ -145,20 +151,14 @@ const ProductPageContent = ({ collection, product }) => {
                 rel="noreferrer"
               > */}
               {/* <Link href={`/reviews/${product.handle}`}> */}
-                {/* <button
+                <button
                   type="submit"
                   disabled={disable ? true : false}
                   onClick={() => wrapperSetParentReviewState(!parentReviewState)}
-                
-                > */}
-                  <ReviewsPopup
-          parentReviewState={parentReviewState}
-          product={product}
-          collection={collection}
-          wrapperSetParentReviewState={wrapperSetParentReviewState}
-          // cancelButtonRef={cancelButtonRef}
-        />
-                {/* </button> */}
+                  className="inline-flex justify-center py-1 px-10 mt-2 font-mono font-light border border-transparent shadow text-xl  text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
+                >
+                  More Reviews
+                </button>
               {/* </Link> */}
               {/* </a> */}
             </div>

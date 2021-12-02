@@ -37,42 +37,34 @@ export default function Home({ products, carouselProducts }) {
           </a>
         </div>
         <div className="px-6 my-6">
-          <div className=" relative  overflow-hidden">
-            <Image
-              src="/deepoeLandscape.png"
-              layout="responsive"
-              sizes="100vw"
-              height="0"
-              width="0"
-              maxWidth="100%"
-              maxHeight="100%"
-              minHeight="100%"
-              minWidth="100%"
-              objectFit="contain"
-              objectPosition="center"
-              style="position:absolute; top:0; left:0; width:0 ;height:0; min-height:100%;min-width:100% ;max-width:100%; max-height:100%"
-            />
-            {/* <div className="flex">
-              <button className="p-5" onClick={() => setSelectedItem(1)}>
-                <div className="absolute w-6 h-6 font-thin  bg-opacity-60 bg-gray-700  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
-                  1
-                </div>
-              </button>
+          <div className="w-full relative h-full overflow-hidden">
+              <Image
+                src="/deepoeLandscape.png"
+                layout="fill"
+                objectFit="contain"
+                objectPosition="top"
+              />
+              <div className="flex">
+                <button className="p-5" onClick={() => setSelectedItem(1)}>
+                  <div className="relative w-6 h-6 font-thin  bg-opacity-60 bg-gray-700  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
+                    1
+                  </div>
+                </button>
+              </div>
+              <div className="pt-20  flex items-center pl-28 justify-center space-x-8">
+                <button className="p-5" onClick={() => setSelectedItem(2)}>
+                  <div className="relative w-6 h-6 font-thin  bg-opacity-60 bg-gray-700  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
+                    2
+                  </div>
+                </button>
+              </div>
+              <div className="">
+                <button className="p-5" onClick={() => setSelectedItem(3)}>
+                  <div className="relative w-6 h-6 font-thin  bg-opacity-60 bg-gray-700  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
+                    3
+                  </div>
+                </button>
             </div>
-            <div className="pt-20  flex items-center pl-28 justify-center space-x-8">
-              <button className="p-5" onClick={() => setSelectedItem(2)}>
-                <div className="absolute w-6 h-6 font-thin  bg-opacity-60 bg-gray-700  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
-                  2
-                </div>
-              </button>
-            </div>
-            <div className="">
-              <button className="p-5" onClick={() => setSelectedItem(3)}>
-                <div className="absolute w-6 h-6 font-thin  bg-opacity-60 bg-gray-700  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
-                  3
-                </div>
-              </button>
-            </div> */}
           </div>
         </div>
 

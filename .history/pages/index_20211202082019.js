@@ -37,20 +37,13 @@ export default function Home({ products, carouselProducts }) {
           </a>
         </div>
         <div className="px-6 my-6">
-          <div className=" relative  overflow-hidden">
+          <div className="relative w-full   overflow-hidden">
             <Image
               src="/deepoeLandscape.png"
               layout="responsive"
-              sizes="100vw"
-              height="0"
-              width="0"
-              maxWidth="100%"
-              maxHeight="100%"
-              minHeight="100%"
-              minWidth="100%"
+              sizes="50vw"
               objectFit="contain"
               objectPosition="center"
-              style="position:absolute; top:0; left:0; width:0 ;height:0; min-height:100%;min-width:100% ;max-width:100%; max-height:100%"
             />
             {/* <div className="flex">
               <button className="p-5" onClick={() => setSelectedItem(1)}>

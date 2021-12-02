@@ -45,9 +45,7 @@ export default function Home({ products, carouselProducts }) {
               height="0"
               width="0"
               maxWidth="100%"
-              maxHeight="100%"
-              minHeight="100%"
-              minWidth="100%"
+              maxH
               objectFit="contain"
               objectPosition="center"
               style="position:absolute; top:0; left:0; width:0 ;height:0; min-height:100%;min-width:100% ;max-width:100%; max-height:100%"

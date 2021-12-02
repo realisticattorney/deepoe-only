@@ -3,27 +3,22 @@ import { useEffect, useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-const HomeCarousel = ({ carouselProducts, selectedItem, setSelectedItem }) => {
+const HomeCarousel = ({ carouselProducts, selectedItem,setSelectedItem }) => {
   // const [selectedItem, setSelectedItem] = useState(9);
   // console.log('selectedItem', selectedItem);
   // setSelectedItem(9);
   useEffect(() => {
-    setSelectedItem(10);
-  }, []);
+    setSelectedItem(selectedItem);
+  }, [selectedItem]);
+  setSelectedItem(10);
   console.log('selectedItem', selectedItem);
   useEffect(() => {
     setSelectedItem(selectedItem);
   }, [selectedItem]);
 
-  const carouselLong = carouselProducts.concat(
-    carouselProducts,
-    carouselProducts,
-    carouselProducts,
-    carouselProducts,
-    carouselProducts,
-    carouselProducts,
-    carouselProducts
-  );
+
+const carouselLong = carouselProducts.concat(carouselProducts, carouselProducts, carouselProducts, carouselProducts, carouselProducts,carouselProducts,carouselProducts);
+
 
   const [windowSize, setWindowSize] = useState({
     width: undefined,
@@ -44,7 +39,7 @@ const HomeCarousel = ({ carouselProducts, selectedItem, setSelectedItem }) => {
 
       return () => window.removeEventListener('resize', handleResize);
     }
-  }, []);
+  }, []); 
 
   console.log('windowSize', windowSize);
   const [slidePercentage, setSlidePercentage] = useState(

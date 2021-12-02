@@ -178,11 +178,11 @@ export default function Contact() {
               {...register('message', {
                 required: {
                   value: true,
-                  message: 'Please enter your message',
+                  message: 'You need to enter your message',
                 },
                 maxLength: {
                   value: 1000,
-                  message: 'Maximum length is 1000 characters',
+                  message: "Minumum length is 20 characters",
                 },
                 minLength: {
                   value: 20,

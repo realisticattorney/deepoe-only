@@ -178,15 +178,15 @@ export default function Contact() {
               {...register('message', {
                 required: {
                   value: true,
-                  message: 'Please enter your message',
+                  message: 'You need to enter your message',
                 },
                 maxLength: {
                   value: 1000,
-                  message: 'Maximum length is 1000 characters',
+                  message: "Your message can't be more than 1000 characters",
                 },
                 minLength: {
                   value: 20,
-                  message: 'Minumum length is 20 characters',
+                  message: 'Message ',
                 },
               })}
               className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none  focus:ring-1 ${

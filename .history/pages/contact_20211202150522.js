@@ -182,7 +182,7 @@ export default function Contact() {
                 },
                 maxLength: {
                   value: 1000,
-                  message: 'Maximum length is 1000 characters',
+                  message: "Maximum length is 1000 characters",
                 },
                 minLength: {
                   value: 20,

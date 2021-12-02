@@ -10,18 +10,8 @@ module.exports = {
         mono: ["'Public Sans'", ...defaultTheme.fontFamily.mono],
         sans: ["'TiffanyStd-Demi'", ...defaultTheme.fontFamily.sans],
       },
-      inset: {
-        '1/5': '20%',
-        '1/9': '11.11%',
-        '1/6': '16.67%',
-        '1/7': '14.28%',
-        '1/11': '9.01%',
-        '1/13': '7.7%',
-        '2/5': '40%',
-        '2/9': '22.22%',
-        '3/7': '42.82%',
-        '3/11': '27.27%',
-        '1/20': '5%',
+      top: {
+1/8: '10%',
       },
 
       spacing: {

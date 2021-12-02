@@ -46,15 +46,13 @@ export default function Home({ products, carouselProducts }) {
               objectFit="contain"
             />
 
-            <button
-              className="absolute top-3/7 left-1/20 "
-              onClick={() => setSelectedItem(1)}
-            >
-              <div className="w-6 h-6 font-thin  bg-opacity-60 bg-gray-700  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
-                1
-              </div>
-            </button>
-            {/*
+            <div className="">
+              <button className="absolute p-5" onClick={() => setSelectedItem(1)}>
+                <div className="w-6 h-6 font-thin  bg-opacity-60 bg-gray-700  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
+                  1
+                </div>
+              </button>
+            </div> {/*
             <div className="pt-20  flex items-center pl-28 justify-center space-x-8">
               <button className="p-5" onClick={() => setSelectedItem(2)}>
                 <div className="absolute w-6 h-6 font-thin  bg-opacity-60 bg-gray-700  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">

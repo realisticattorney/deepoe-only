@@ -47,7 +47,7 @@ export default function Home({ products, carouselProducts }) {
             />
 
             <button
-              className="absolute top-3/7 left-1/20 "
+              className="absolute "
               onClick={() => setSelectedItem(1)}
             >
               <div className="w-6 h-6 font-thin  bg-opacity-60 bg-gray-700  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">

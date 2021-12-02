@@ -79,7 +79,7 @@ const HomeCarousel = ({ carouselProducts, selectedItem, setSelectedItem }) => {
         selectedItem={selectedItem}
         centerSlidePercentage={slidePercentage}
         centerMode={true}
-        transitionTime={680}
+        transitionTime={500}
         onChange={(selectedItem) => setSelectedItem(selectedItem)}
         showArrows={false}
       >

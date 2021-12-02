@@ -17,7 +17,7 @@ const Banner = ({ carouselProducts, selectedItem }) => {
   //   imageSrc.push(...imageColorSrc);
 
   //change carousel index to 0
-  const [index, setIndex] = useState(1);
+  const [index, setIndex] = useState(0);
   console.log('index', index);
   console.log('selectedItem', selectedItem);
   useEffect(() => {
@@ -31,8 +31,7 @@ const Banner = ({ carouselProducts, selectedItem }) => {
     height: undefined,
   });
 
-  const [slidePercentage, setSlidePercentage] = useState(0);
-
+  
   useEffect(() => {
     // only execute all the code below in client side
     if (typeof window !== 'undefined') {
@@ -44,24 +43,28 @@ const Banner = ({ carouselProducts, selectedItem }) => {
           height: window.innerHeight,
         });
       }
-
       // Add event listener
       window.addEventListener('resize', handleResize);
-
+      
       // Call handler right away so state gets updated with initial window size
       handleResize();
-
+      
       // Remove event listener on cleanup
       return () => window.removeEventListener('resize', handleResize);
     }
   }, []); // Empty array ensures that effect is only run on mount
-
+  
   console.log('windowSize', windowSize);
+  const [slidePercentage, setSlidePercentage] = useState((226 / windowSize.width) * 100);
+  console.log('slidePercentage', slidePercentage);
 
   useEffect(() => {
-    let newSlidePercentage = (226 / windowSize.width) * 100;
-    setSlidePercentage(newSlidePercentage);
-    return slidePercentage;
+    if (windowSize.width) {
+      let newSlidePercentage = (226 / windowSize.width) * 100;
+      setSlidePercentage(newSlidePercentage);
+      console.log('slidePercentage', slidePercentage);
+      return slidePercentage;
+    }
   }, [windowSize]);
 
   return (
@@ -85,7 +88,7 @@ const Banner = ({ carouselProducts, selectedItem }) => {
         {carouselProducts.map((i) => (
           <div className="w-53">
             <div
-              className="w-full h-64 from-gray-100  bottom-0 relative"
+              className="w-full h-64 from-gray-100  ml-2 bottom-0 relative"
               key={i.number}
             >
               <Image
@@ -106,6 +109,13 @@ const Banner = ({ carouselProducts, selectedItem }) => {
             <h2 className="absolute w-6 h-6 z-50 top-1 left-4 text-md  font-extralight font-mono rounded-full flex justify-center items-center text-center p-3.5 bg-gray-200">
               {i.number}
             </h2>
+
+            <a
+              className="absolute w-full z-50 bottom-3 font-mono font-extralight underline text-deepoe_default-black left-0"
+              href={`https://deepoe-only.vercel.app/collections/frontpage/${i.handle}`}
+            >
+              <p>Details</p>
+            </a>
           </div>
         ))}
       </Carousel>

@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 export default function Home({ products, carouselProducts }) {
-  console.log(products.products.edges);
+  console.log("proooooooducts",products.products.edges);
   console.log("aaaaaa'", carouselProducts);
 
   const [selectedItem, setSelectedItem] = useState(1);
@@ -21,7 +21,7 @@ export default function Home({ products, carouselProducts }) {
       <div className="w-full  overflow-hidden">
         <div className="relative h-65">
           <Image
-            src={products.image.originalSrc}
+            src="/heroHome.jpg"
             layout="fill"
             objectFit="cover"
           />
@@ -49,23 +49,23 @@ export default function Home({ products, carouselProducts }) {
                 objectFit="contain"
                 objectPosition="top"
               />
-              <div class="pt-2 flex items-center justify-center space-x-8">
+              <div className="pt-2 flex items-center justify-center space-x-8">
                 <button className="p-5" onClick={() => setSelectedItem(1)}>
-                  <div class="relative w-6 h-6 font-thin  bg-opacity-60 bg-gray-700  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
+                  <div className="relative w-6 h-6 font-thin  bg-opacity-60 bg-gray-700  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
                     1
                   </div>
                 </button>
               </div>
-              <div class="pt-20  flex items-center pl-28 justify-center space-x-8">
+              <div className="pt-20  flex items-center pl-28 justify-center space-x-8">
                 <button className="p-5" onClick={() => setSelectedItem(2)}>
-                  <div class="relative w-6 h-6 font-thin  bg-opacity-60 bg-gray-700  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
+                  <div className="relative w-6 h-6 font-thin  bg-opacity-60 bg-gray-700  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
                     2
                   </div>
                 </button>
               </div>
-              <div class="pt-18 pr-36 flex items-center justify-center space-x-8">
+              <div className="pt-18 pr-36 flex items-center justify-center space-x-8">
                 <button className="p-5" onClick={() => setSelectedItem(3)}>
-                  <div class="relative w-6 h-6 font-thin  bg-opacity-60 bg-gray-700  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
+                  <div className="relative w-6 h-6 font-thin  bg-opacity-60 bg-gray-700  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">
                     3
                   </div>
                 </button>
@@ -115,14 +115,15 @@ export async function getStaticProps() {
 
   let carouselProducts = [];
   products.products.edges.map((product) => {
-    //get the first image
-    console.log(product.node.id);
+    // //get the first image
+    // console.log("prroooodcut",product.node);
     if (
       product.node.id === 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY3MTExNjY2MzE5OTY='
     ) {
       carouselProducts[2] = {
         number: 2,
         product: product.node.images.edges[0].node.originalSrc,
+        handle: product.node.handle,
       };
     }
 
@@ -132,6 +133,7 @@ export async function getStaticProps() {
       carouselProducts[0] = {
         number: 3,
         product: product.node.images.edges[0].node.originalSrc,
+        handle: product.node.handle,
       };
     }
     if (
@@ -140,6 +142,7 @@ export async function getStaticProps() {
       carouselProducts[1] = {
         number: 1,
         product: product.node.images.edges[0].node.originalSrc,
+        handle: product.node.handle,
       };
     }
   });

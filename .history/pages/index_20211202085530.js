@@ -17,7 +17,14 @@ export default function Home({ products, carouselProducts }) {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <div className="relative  w-full">
+            <Image
+              src="/deepoeLandscape.png"
+              layout="responsive"
+              width="100"
+              height="100"
+              objectFit="contain"
+            />
       <div className="w-full  overflow-hidden">
         <div className="relative h-65">
           <Image src="/heroHome.jpg" layout="fill" objectFit="cover" />
@@ -37,14 +44,7 @@ export default function Home({ products, carouselProducts }) {
           </a>
         </div>
         <div className="px-6 my-6">
-          <div className="relative  w-full">
-            <Image
-              src="/deepoeLandscape.png"
-              layout="responsive"
-              width={378}
-              height={284}
-              objectFit="contain"
-            />
+     
 
             {/* <div className="flex">
               <button className="p-5" onClick={() => setSelectedItem(1)}>
@@ -67,7 +67,7 @@ export default function Home({ products, carouselProducts }) {
                 </div>
               </button>
             </div> */}
-          </div>
+          {/* </div> */}
         </div>
 
         <h2 className="text-center font-mono text-xl -mt-1.5">

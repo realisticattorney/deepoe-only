@@ -41,8 +41,8 @@ export default function Home({ products, carouselProducts }) {
             <Image
               src="/deepoeLandscape.png"
               layout="responsive"
-              width={378}
-              height={284}
+              width={}
+              height={}
               objectFit="contain"
             />
 

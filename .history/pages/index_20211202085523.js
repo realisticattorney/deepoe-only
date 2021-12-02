@@ -37,14 +37,7 @@ export default function Home({ products, carouselProducts }) {
           </a>
         </div>
         <div className="px-6 my-6">
-          <div className="relative  w-full">
-            <Image
-              src="/deepoeLandscape.png"
-              layout="responsive"
-              width={378}
-              height={284}
-              objectFit="contain"
-            />
+     
 
             {/* <div className="flex">
               <button className="p-5" onClick={() => setSelectedItem(1)}>

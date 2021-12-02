@@ -37,12 +37,12 @@ export default function Home({ products, carouselProducts }) {
           </a>
         </div>
         <div className="px-6 my-6">
-          <div className="relative  w-full">
+          <div className="relative  w-full h-auto">
             <Image
               src="/deepoeLandscape.png"
               layout="responsive"
-              width={378}
-              height={284}
+              width="100%"
+              height="0"
               objectFit="contain"
             />
 

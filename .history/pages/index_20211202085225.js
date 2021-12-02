@@ -18,6 +18,7 @@ export default function Home({ products, carouselProducts }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+
       <div className="w-full  overflow-hidden">
         <div className="relative h-65">
           <Image src="/heroHome.jpg" layout="fill" objectFit="cover" />
@@ -37,15 +38,7 @@ export default function Home({ products, carouselProducts }) {
           </a>
         </div>
         <div className="px-6 my-6">
-          <div className="relative  w-full">
-            <Image
-              src="/deepoeLandscape.png"
-              layout="responsive"
-              width={378}
-              height={284}
-              objectFit="contain"
-            />
-
+          
             {/* <div className="flex">
               <button className="p-5" onClick={() => setSelectedItem(1)}>
                 <div className="absolute w-6 h-6 font-thin  bg-opacity-60 bg-gray-700  font-mono rounded-full flex justify-center items-center text-center p-4 shadow-xl text-white">

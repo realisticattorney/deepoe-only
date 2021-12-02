@@ -42,7 +42,7 @@ export default function Home({ products, carouselProducts }) {
               src="/deepoeLandscape.png"
               layout="responsive"
               width={378}
-              height={284}
+              height={}
               objectFit="contain"
             />
 

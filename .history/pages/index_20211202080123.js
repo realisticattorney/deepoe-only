@@ -100,9 +100,9 @@ export default function Home({ products, carouselProducts }) {
             customers. We recognize the challenges surrounding sustainability
             and are working daily to reduce our footprint.
           </h2>
-          <div className="w-full text-center my-6">
+          <div className="w-full justify-center">
             <Link href="/deepoe/about">
-              <a className="text-deepoe_default-black font-mono underline w-full">
+              <a className="text-deepoe_default-black font-mono underline w-full text-center ">
                 About
               </a>
             </Link>

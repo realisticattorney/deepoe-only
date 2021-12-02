@@ -99,14 +99,12 @@ export default function Home({ products, carouselProducts }) {
             At deepoe, we strive to create an open and honest experience for our
             customers. We recognize the challenges surrounding sustainability
             and are working daily to reduce our footprint.
+          <Link href="/deepoe/about">
+            <a className="text-deepoe_default-black font-mono underline text-center w-full">
+              About
+            </a>
+          </Link>
           </h2>
-          <div className="w-full text-center my-6">
-            <Link href="/deepoe/about">
-              <a className="text-deepoe_default-black font-mono underline w-full">
-                About
-              </a>
-            </Link>
-          </div>
         </div>
       </div>
     </div>

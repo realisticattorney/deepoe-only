@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 export default function Home({ products, carouselProducts }) {
-  console.log('proooooooducts', products.products.edges);
+  console.log("proooooooducts",products.products.edges);
   console.log("aaaaaa'", carouselProducts);
 
   const [selectedItem, setSelectedItem] = useState(1);
@@ -20,7 +20,11 @@ export default function Home({ products, carouselProducts }) {
 
       <div className="w-full  overflow-hidden">
         <div className="relative h-65">
-          <Image src="/heroHome.jpg" layout="fill" objectFit="cover" />
+          <Image
+            src="/heroHome.jpg"
+            layout="fill"
+            objectFit="cover"
+          />
           <h2
             className={`text-3xl text-white absolute left-0 right-0 ml-auto mr-auto top-16 italic font-medium w-80 mb-6 text-center 
               `}
@@ -100,13 +104,9 @@ export default function Home({ products, carouselProducts }) {
             customers. We recognize the challenges surrounding sustainability
             and are working daily to reduce our footprint.
           </h2>
-          <div className="w-full text-center my-6">
-            <Link href="/deepoe/about">
-              <a className="text-deepoe_default-black font-mono underline w-full">
-                About
-              </a>
-            </Link>
-          </div>
+          <Link href="/deepoe/about">
+                <a className="">About</a>
+              </Link>
         </div>
       </div>
     </div>

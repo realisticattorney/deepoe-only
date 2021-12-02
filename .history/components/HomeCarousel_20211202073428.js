@@ -31,6 +31,7 @@ const Banner = ({ carouselProducts, selectedItem }) => {
     height: undefined,
   });
 
+  
   useEffect(() => {
     // only execute all the code below in client side
     if (typeof window !== 'undefined') {
@@ -44,19 +45,17 @@ const Banner = ({ carouselProducts, selectedItem }) => {
       }
       // Add event listener
       window.addEventListener('resize', handleResize);
-
+      
       // Call handler right away so state gets updated with initial window size
       handleResize();
-
+      
       // Remove event listener on cleanup
       return () => window.removeEventListener('resize', handleResize);
     }
   }, []); // Empty array ensures that effect is only run on mount
-
+  
   console.log('windowSize', windowSize);
-  const [slidePercentage, setSlidePercentage] = useState(
-    (226 / windowSize.width) * 100
-  );
+  const [slidePercentage, setSlidePercentage] = useState((226 / windowSize.width) * 100);
   console.log('slidePercentage', slidePercentage);
 
   useEffect(() => {
@@ -71,8 +70,8 @@ const Banner = ({ carouselProducts, selectedItem }) => {
   return (
     <div className="relative z-0 mt-4  mb-10 classes.my__carousel_main">
       <Carousel
-        infiniteLoop
-        // autoPlay={true}
+        // infiniteLoop
+        //   autoPlay={true}
         showStatus={false}
         showThumbs={false}
         showIndicators={false}
@@ -87,8 +86,11 @@ const Banner = ({ carouselProducts, selectedItem }) => {
         showArrows={false}
       >
         {carouselProducts.map((i) => (
-          <div className="w-53" key={i.number}>
-            <div className="w-full h-64 from-gray-100  ml-2 bottom-0 relative">
+          <div className="w-53">
+            <div
+              className="w-full h-64 from-gray-100  ml-2 bottom-0 relative"
+              key={i.number}
+            >
               <Image
                 quality={100}
                 loading="lazy"

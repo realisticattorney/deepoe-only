@@ -68,12 +68,12 @@ export default function Contact() {
                   message: 'Please enter your name',
                 },
               })}
-              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-1 ${
-                errors.name ? 'ring-0 focus:outline-none ' : null
+              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2 ${
+                errors.name ? 'ring-2 ring-red-500' : null
               }`}
               placeholder="name*"
             />
-            <span className="font-mono text-sm py-2">
+            <span className="text-red-400 text-sm py-2">
               {errors?.name?.message}
             </span>
           </div>
@@ -102,12 +102,12 @@ export default function Contact() {
                   message: 'This needs to be a valid email address',
                 },
               })}
-              className={`block w-full border shadow-sm bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-1 ${
-                errors.email ? 'ring-0 focus:outline-none ' : null
+              className={`block w-full border shadow-sm bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2 ${
+                errors.email ? 'ring-2 ring-red-500' : null
               }`}
               placeholder="e-mail*"
             />
-            <span className="font-mono text-sm py-2">
+            <span className="text-red-400 text-sm py-2">
               {errors?.email?.message}
             </span>
           </div>
@@ -136,14 +136,14 @@ export default function Contact() {
                   message: 'This needs to be a valid US number',
                 },
               })}
-              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none focus:ring-1 ${
-                errors.message ? 'ring-0 focus:outline-none ' : null
+              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none focus:ring-2 ${
+                errors.message ? 'ring-2 ring-red-500' : null
               }`}
               placeholder="phone number (optional)"
             ></textarea>
-            {/* <span className="font-mono text-sm py-2">
+            <span className="text-red-400 text-sm py-2">
               {errors?.message?.message}
-            </span> */}
+            </span>
           </div>
           <div>
             <label htmlFor="subject" className="sr-only">
@@ -167,12 +167,12 @@ export default function Contact() {
                   message: 'Your subject must be longer than this!',
                 },
               })}
-              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none focus:ring-1 ${
-                errors.message ? 'ring-0 focus:outline-none ' : null
+              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none focus:ring-2 ${
+                errors.message ? 'ring-2 ring-red-500' : null
               }`}
               placeholder="subject"
             ></textarea>
-            <span className="font-mono text-sm py-2">
+            <span className="text-red-400 text-sm py-2">
               {errors?.message?.message}
             </span>
           </div>
@@ -197,19 +197,19 @@ export default function Contact() {
                   message: 'Your message must be longer than this!',
                 },
               })}
-              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none  focus:ring-1 ${
-                errors.message ? 'ring-0 focus:outline-none ' : null
+              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none focus:ring-2 ${
+                errors.message ? 'ring-2 focus:outline-none ring-red-500' : null
               }`}
               placeholder="message"
             ></textarea>
-            <span className="font-mono text-sm py-2">
+            <span className="text-red-400 text-sm py-2">
               {errors?.message?.message}
             </span>
           </div>
           <div className="justify-self-end">
             <button
               type="submit"
-              className="inline-flex font-mono font-lightq items-center self-center justify-center py-1.5 mt-2.5 w-36 border border-transparent shadow text-2xl  text-white bg-deepoe-chocolate focus:outline-none focus:ring-1 focus:ring-offset-2 active:outline-none"
+              className="inline-flex font-mono font-lightq items-center self-center justify-center py-1.5 mt-2.5 w-36 border border-transparent shadow text-2xl  text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2 active:outline-none"
             >
               Submit
             </button>
@@ -288,7 +288,7 @@ export default function Contact() {
           <Link href={`deepoe/faq`}>
             <button
               type="submit"
-              className="inline-flex font-mono font-normal items-center self-center justify-center py-0.5 text-base px-4 w-36 mb-12 border border-transparent shadow  text-white bg-deepoe-chocolate focus:outline-none focus:ring-1 focus:ring-offset-2 active:outline-none"
+              className="inline-flex font-mono font-normal items-center self-center justify-center py-0.5 text-base px-4 w-36 mb-12 border border-transparent shadow  text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2 active:outline-none"
             >
               View More
             </button>

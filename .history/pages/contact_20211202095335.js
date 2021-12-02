@@ -141,9 +141,9 @@ export default function Contact() {
               }`}
               placeholder="phone number (optional)"
             ></textarea>
-            {/* <span className="font-mono text-sm py-2">
+            <span className="font-mono text-sm py-2">
               {errors?.message?.message}
-            </span> */}
+            </span>
           </div>
           <div>
             <label htmlFor="subject" className="sr-only">

@@ -118,32 +118,32 @@ export default function Contact() {
             <textarea
               name="phone"
               rows="1"
-              {...register('phone', {
-                required: {
-                  value: false,
-                  // message: 'You need to enter your message',
-                },
-                maxLength: {
-                  value: 30,
-                  message: "Your phone number can't be this long",
-                },
-                minLength: {
-                  value: 8,
-                  message: "Your phone number can't be this long",
-                },
-                pattern: {
-                  value: /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/,
-                  message: 'This needs to be a valid US number',
-                },
-              })}
+              // {...register('phone', {
+              //   required: {
+              //     value: false,
+              //     // message: 'You need to enter your message',
+              //   },
+              //   maxLength: {
+              //     value: 30,
+              //     message: "Your phone number can't be this long",
+              //   },
+              //   minLength: {
+              //     value: 8,
+              //     message: "Your phone number can't be this long",
+              //   },
+              //   pattern: {
+              //     value: /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/,
+              //     message: 'This needs to be a valid US number',
+              //   },
+              )}
               className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none focus:ring-1 ${
                 errors.message ? 'ring-0 focus:outline-none ' : null
               }`}
               placeholder="phone number (optional)"
             ></textarea>
-            {/* <span className="font-mono text-sm py-2">
+            <span className="font-mono text-sm py-2">
               {errors?.message?.message}
-            </span> */}
+            </span>
           </div>
           <div>
             <label htmlFor="subject" className="sr-only">

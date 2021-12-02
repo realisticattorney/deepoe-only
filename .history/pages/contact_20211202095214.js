@@ -69,7 +69,7 @@ export default function Contact() {
                 },
               })}
               className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-1 ${
-                errors.name ? 'ring-0 focus:outline-none ' : null
+                errors.name ? 'ring-1 ' : null
               }`}
               placeholder="name*"
             />
@@ -103,7 +103,7 @@ export default function Contact() {
                 },
               })}
               className={`block w-full border shadow-sm bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-1 ${
-                errors.email ? 'ring-0 focus:outline-none ' : null
+                errors.email ? 'ring-1 ' : null
               }`}
               placeholder="e-mail*"
             />
@@ -137,13 +137,13 @@ export default function Contact() {
                 },
               })}
               className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none focus:ring-1 ${
-                errors.message ? 'ring-0 focus:outline-none ' : null
+                errors.message ? 'ring-1 ' : null
               }`}
               placeholder="phone number (optional)"
             ></textarea>
-            {/* <span className="font-mono text-sm py-2">
+            <span className="font-mono text-sm py-2">
               {errors?.message?.message}
-            </span> */}
+            </span>
           </div>
           <div>
             <label htmlFor="subject" className="sr-only">
@@ -168,7 +168,7 @@ export default function Contact() {
                 },
               })}
               className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none focus:ring-1 ${
-                errors.message ? 'ring-0 focus:outline-none ' : null
+                errors.message ? 'ring-1 ' : null
               }`}
               placeholder="subject"
             ></textarea>
@@ -197,7 +197,7 @@ export default function Contact() {
                   message: 'Your message must be longer than this!',
                 },
               })}
-              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none  focus:ring-1 ${
+              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none  focus:ring-1 focus:ring ${
                 errors.message ? 'ring-0 focus:outline-none ' : null
               }`}
               placeholder="message"

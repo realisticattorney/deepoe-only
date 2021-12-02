@@ -211,25 +211,17 @@ const ProductPageContent = ({ collection, product }) => {
         <h2 className="text-center w-60 mx-auto font-light leading-6  font-mono text-md">
           Vibrant and sustainably-considered, pieces for the home.
         </h2>
-        <div className="text-center mt-5">
+        <div className="text-center mt">
               <Image
-                src="/radix-icons_mix.svg"
+                src="/clarity_home-line.svg"
                 height={48}
                 width={48}
                 className="svg-stroke"
               />
             </div>
-        <h2 className="text-center w-60 mx-auto font-light leading-6 mb-5 font-mono text-md">
+        <h2 className="text-center w-60 mx-auto font-light leading-6 my-4 font-mono text-md">
           Functional designs to mix and match.
         </h2>
-        <div className="text-center">
-              <Image
-                src="/bi_box-seam.svg"
-                height={48}
-                width={48}
-                className="svg-stroke"
-              />
-            </div>
 
         <h2 className="text-center w-60 mx-auto font-light leading-6  font-mono text-md">
           Considered materials, low-waste packaging.

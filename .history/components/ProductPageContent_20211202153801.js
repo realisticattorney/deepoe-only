@@ -213,7 +213,7 @@ const ProductPageContent = ({ collection, product }) => {
         </h2>
         <div className="text-center mt-5">
               <Image
-                src="/radix-icons_mix.svg"
+                src="/clarity_home-line.svg"
                 height={48}
                 width={48}
                 className="svg-stroke"
@@ -224,7 +224,7 @@ const ProductPageContent = ({ collection, product }) => {
         </h2>
         <div className="text-center">
               <Image
-                src="/bi_box-seam.svg"
+                src="/clarity_home-line.svg"
                 height={48}
                 width={48}
                 className="svg-stroke"

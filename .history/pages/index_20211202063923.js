@@ -42,11 +42,11 @@ export default function Home({ products, carouselProducts }) {
         </div>
         <div className="px-6 my-6">
           <div className="w-full  overflow-hidden">
-            <div className="relative ">
+            <div className="relative h-71">
               <Image
                 src="/deepoeLandscape.png"
                 layout="fill"
-                objectFit="contain"
+                objectFit="cover"
                 objectPosition="top"
               />
               <div class="pt-2 flex items-center justify-center space-x-8">

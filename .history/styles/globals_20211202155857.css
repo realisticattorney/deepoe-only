@@ -71,18 +71,11 @@ body {
   margin-bottom: -0.2rem !important;
 }
 
-#reviews-productpage
-  > *
-  > *
-  > *
-  > .yotpo-reviews
-  > .yotpo-review:nth-child(n + 9) {
-  display: none !important;
-  /* height: 300px !important; */
-  /* max-height: 300px !important; */
-}
+.reviews-productpage > * > .yotpo-reviews,
+.reviews-productpage > * > .yotpo-active {
+ height: 3;
+},
 
-,
 #reviews-complete > * > * > * > * > .yotpo-stars {
   @apply flex items-center;
   margin-right: 0.5rem !important;

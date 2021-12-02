@@ -76,7 +76,7 @@ body {
   > *
   > *
   > .yotpo-reviews
-  > .yotpo-review:nth-child(n + 9) {
+  > .yotpo-review:nth-child(n + 4) {
   display: none !important;
   /* height: 300px !important; */
   /* max-height: 300px !important; */

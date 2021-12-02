@@ -84,7 +84,7 @@ export default function MiniCart({ cart }) {
                                     <div className="flex justify-between text-lg font-medium">
                                       <h3 className="mt-0.5">
                                         <Link
-                                          href={`/collections/frontpage/${product.handle}`}
+                                          href={`/frontpage/${product.handle}`}
                                           passHref
                                         >
                                           <a

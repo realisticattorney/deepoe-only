@@ -137,7 +137,7 @@ const ProductPageContent = ({ collection, product }) => {
             </div>
 
             <div
-              id="reviews-productpage"
+              id="reviews-productpage "
               className=" overflow-hidden focus:outline-none active:outline-none text-center max-h-96 h-96"
             >
               <div

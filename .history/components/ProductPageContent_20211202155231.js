@@ -137,12 +137,12 @@ const ProductPageContent = ({ collection, product }) => {
             </div>
 
             <div
-              id="reviews-productpage"
+              id="reviews-productpage "
               className=" overflow-hidden focus:outline-none active:outline-none text-center max-h-96 h-96"
             >
               <div
                 ref={stageCanvasRef}
-                className="yotpo yotpo-main-widget "
+                className="yotpo yotpo-main-widget yotpo-main-widget-responsive"
                 data-product-id={`${atobId}`}
                 data-currency="USD"
                 data-price={`${product.variants.edges[0].node.priceV2.amount}`}

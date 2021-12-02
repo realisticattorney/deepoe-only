@@ -71,15 +71,10 @@ body {
   margin-bottom: -0.2rem !important;
 }
 
-#reviews-productpage
-  > *
-  > *
-  > *
-  > .yotpo-reviews
-  > .yotpo-review:nth-child(n + 9) {
-  display: none !important;
-  /* height: 300px !important; */
-  /* max-height: 300px !important; */
+.reviews-productpage > .yotpo-reviews,
+.reviews-productpage > .yotpo-active {
+  height: 384px !important;
+  max-height: 384px !important;
 }
 
 ,
@@ -87,7 +82,7 @@ body {
   @apply flex items-center;
   margin-right: 0.5rem !important;
   color: #fff !important;
-}
+}//*[@id="yotpo-reviews-8295daa3-5981-4c3b-a2fe-899a951fe0ba"]/div[3]
 
 .yotpo-stars {
   @apply flex items-baseline;

@@ -71,15 +71,37 @@ body {
   margin-bottom: -0.2rem !important;
 }
 
-#reviews-productpage
+.reviews-productpage
+  > *
+  > *
+  > *
+  > *
+  > *
+  > *
+  > *
+  > *
+  > *
   > *
   > *
   > *
   > .yotpo-reviews
-  > .yotpo-review:nth-child(n + 9) {
+  > .yotpo-review,
+.reviews-productpage
+  > *
+  > *
+  > *
+  > *
+  > *
+  > *
+  > *
+  > *
+  > *
+  > *
+  > *
+  > *
+  > .yotpo-active
+  > .yotpo-review {
   display: none !important;
-  /* height: 300px !important; */
-  /* max-height: 300px !important; */
 }
 
 ,

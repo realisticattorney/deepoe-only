@@ -96,7 +96,7 @@ const HomeCarousel = ({ carouselProducts, selectedItem, setSelectedItem }) => {
               alt=""
               className="px-4"
             />
-            <h2 className="absolute w-6 h-6 z-50 top-1.5 left-1.5 text-md  font-extralight font-mono rounded-full flex justify-center items-center text-center p-3.5 bg-gray-200">
+            <h2 className="absolute w-6 h-6 z-50 top-1 left-2 text-md  font-extralight font-mono rounded-full flex justify-center items-center text-center p-3.5 bg-gray-200">
               {i.number}
             </h2>
 

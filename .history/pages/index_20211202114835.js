@@ -88,9 +88,9 @@ export default function Home({ products, carouselProducts }) {
               className="absolute top-2/3 left-5/8 "
               onClick={() => {
                 if (selectedItem % 3 === 1 || selectedItem === 1) {
-                  setSelectedItem(selectedItem - 1);
-                } else if (selectedItem % 3 === 2 || selectedItem === 2) {
                   setSelectedItem(selectedItem + 1);
+                } else if (selectedItem % 3 === 2 || selectedItem === 2) {
+                  setSelectedItem(selectedItem - 1);
                 } else {
                   setSelectedItem(selectedItem);
                 }

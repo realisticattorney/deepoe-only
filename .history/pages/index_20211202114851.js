@@ -90,7 +90,7 @@ export default function Home({ products, carouselProducts }) {
                 if (selectedItem % 3 === 1 || selectedItem === 1) {
                   setSelectedItem(selectedItem - 1);
                 } else if (selectedItem % 3 === 2 || selectedItem === 2) {
-                  setSelectedItem(selectedItem + 1);
+                  setSelectedItem(selectedItem _ 1);
                 } else {
                   setSelectedItem(selectedItem);
                 }

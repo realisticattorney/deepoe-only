@@ -56,7 +56,7 @@ export default function Home({ products, carouselProducts }) {
               className="absolute top-3/7 left-1/20 "
               onClick={() => {
                 if (selectedItem % 3 === 0 || selectedItem === 0) {
-                  setSelectedItem(selectedItem + 1);
+                  setSelectedItem(selectedItem - 1);
                 } else if (selectedItem % 3 === 2 || selectedItem === 2) {
                   setSelectedItem(selectedItem - 1);
                 } else {
@@ -70,15 +70,7 @@ export default function Home({ products, carouselProducts }) {
             </button>
             <button
               className="absolute top-1/9 left-3/7 "
-              onClick={() => {
-                if (selectedItem % 3 === 0 || selectedItem === 0) {
-                  setSelectedItem(selectedItem - 1);
-                } else if (selectedItem % 3 === 1 || selectedItem === 1) {
-                  setSelectedItem(selectedItem + 1);
-                } else {
-                  setSelectedItem(selectedItem);
-                }
-              }}
+              onClick={() => setSelectedItem(2)}
             >
               <div className="w-6 h-6 font-thin p-4 bg-opacity-60 bg-gray-700  font-mono rounded-full flex justify-center items-center text-center  shadow-xl text-white">
                 2
@@ -86,15 +78,7 @@ export default function Home({ products, carouselProducts }) {
             </button>
             <button
               className="absolute top-2/3 left-5/8 "
-              onClick={() => {
-                if (selectedItem % 3 === 1 || selectedItem === 1) {
-                  setSelectedItem(selectedItem - 1);
-                } else if (selectedItem % 3 === 2 || selectedItem === 2) {
-                  setSelectedItem(selectedItem + 1);
-                } else {
-                  setSelectedItem(selectedItem);
-                }
-              }}
+              onClick={() => setSelectedItem(0)}
             >
               <div className="w-6 h-6 font-thin p-4 bg-opacity-60 bg-gray-700  font-mono rounded-full flex justify-center items-center text-center  shadow-xl text-white">
                 3

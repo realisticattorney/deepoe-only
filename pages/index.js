@@ -44,7 +44,7 @@ export default function Home({ products, carouselProducts }) {
         <div className="px-6 my-6">
           <div className="relative  w-full">
             <Image
-              src="/deepoeLandscape.png"
+              src="/deepoeHome3.jpg"
               layout="responsive"
               width={378}
               height={284}

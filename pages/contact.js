@@ -46,9 +46,9 @@ export default function Contact() {
   };
 
   return (
-    <div className="flex-col bg-deepoe-cream px-6 sm:px-6 flex">
+    <div className="flex-col bg-deepoe-cream px-6 sm:px-6 flex ">
       <div className="mx-auto w-full max-w-2xl  bg-deepoe-cream py-2 items-center">
-        <h2 className="text-3xl font-thin pt-5 py-2 font-mono tracking-tighter">
+        <h2 className="text-2xl font-thin pt-5 font-mono tracking-tighter">
           Questions? Get in touch.
         </h2>
         <form
@@ -87,15 +87,7 @@ export default function Contact() {
               {...register('email', {
                 required: {
                   value: true,
-                  message: 'You must enter your email address',
-                },
-                minLength: {
-                  value: 8,
-                  message: 'This is not long enough to be an email',
-                },
-                maxLength: {
-                  value: 120,
-                  message: 'This is too long',
+                  message: 'Please enter your email address',
                 },
                 pattern: {
                   value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -209,7 +201,7 @@ export default function Contact() {
           <div className="justify-self-end">
             <button
               type="submit"
-              className="inline-flex font-mono font-lightq items-center self-center justify-center py-1.5 mt-2.5 w-36 border border-transparent shadow text-2xl  text-white bg-deepoe-chocolate focus:outline-none focus:ring-1 focus:ring-offset-2 active:outline-none"
+              className="inline-flex font-mono font-light items-center self-center justify-center py-1.5 mt-2.5 w-36 border border-transparent shadow text-2xl  text-white bg-deepoe-chocolate focus:outline-none focus:ring-1 focus:ring-offset-2 active:outline-none"
             >
               Submit
             </button>
@@ -217,8 +209,8 @@ export default function Contact() {
         </form>
       </div>
 
-      <div className="flex flex-col w-full pt-8 font-mono">
-        <h4 className="text-3xl font-thin pt-5 py-2 font-mono tracking-tighter">
+      <div className="flex flex-col w-full  font-mono">
+        <h4 className="text-2xl font-thin pt-2 py-2 font-mono tracking-tighter">
           Or check our{' '}
           <span className="underline">
             <Link href={`/deepoe/faq`}>

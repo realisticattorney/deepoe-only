@@ -226,7 +226,7 @@ export default function Contact() {
             </Link>
           </span>
         </h4>
-        {/* <button
+        <button
           className="group focus:outline-none pr-0.5"
           onClick={handleShow}
         >
@@ -293,7 +293,7 @@ export default function Contact() {
               View More
             </button>
           </Link>
-        </div> */}
+        </div>
       </div>
     </div>
   );

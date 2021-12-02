@@ -226,11 +226,11 @@ export default function Contact() {
             </Link>
           </span>
         </h4>
-        {/* <button
+        <button
           className="group focus:outline-none pr-0.5"
           onClick={handleShow}
         >
-          <div className="flex justify-between pb-1 pt-2 tracking-tight text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+          {/* <div className="flex justify-between pb-1 pt-2 tracking-tight text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
             <span className="truncate text-lg font-extralight group-focus:font-light">
               Where's my order?
             </span>
@@ -294,7 +294,7 @@ export default function Contact() {
             </button>
           </Link>
         </div> */}
-      </div>
+      {/* </div> */}
     </div>
   );
 }

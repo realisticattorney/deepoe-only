@@ -77,14 +77,14 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                       leaveTo="-translate-y-4  opacity-0"
                     >
                       <Disclosure.Panel className="font-extralight font-mono">
-                        <ul className="space-y-3 pl-11 mb-6">
+                        <ul className="space-y-3 pl-11 mb-5">
                           <a
                             href={`https://deepoe-only.vercel.app/collections/frontpage`}
                             rel="noreferrer"
                           >
                             {/* <Link href={`/collections/frontpage`}> */}
                             <button
-                              className="block text-lg my-2 font-extralight"
+                              className="block text-md my-2 font-extralight"
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Shop All
@@ -97,7 +97,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                           >
                             {/* <Link href={`/collections/dinnerware`}> */}
                             <button
-                              className="block text-lg my-2 font-extralight"
+                              className="block text-md my-2 font-extralight"
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Dinnerware
@@ -110,7 +110,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                           >
                             {/* <Link href={`/collections/drinkware`}> */}
                             <button
-                              className="block text-lg my-2 font-extralight"
+                              className="block text-md my-2 font-extralight"
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Drinkware
@@ -123,7 +123,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                           >
                             {/* <Link href={`/collections/accessories`}> */}
                             <button
-                              className="block text-lg my-2 font-extralight"
+                              className="block text-md my-2 font-extralight"
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Accessories

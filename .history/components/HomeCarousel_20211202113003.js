@@ -66,7 +66,7 @@ const carouselLong = carouselProducts.concat(carouselProducts, carouselProducts,
         selectedItem={selectedItem}
         centerSlidePercentage={slidePercentage}
         centerMode={true}
-        onChange={(selectedItem) => setSelectedItem(selectedItem)}
+        onChange={() => setSelectedItem(selectedItem)}
         showArrows={false}
       >
         {carouselLong.map((i) => (

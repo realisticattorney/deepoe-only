@@ -3,17 +3,22 @@ import { useEffect, useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-const Banner = ({ carouselProducts, selectedItem,setSelectedItem }) => {
-  // const [selectedItem, setSelectedItem] = useState(9);
-  // console.log('selectedItem', selectedItem);
+const HomeCarousel = ({ carouselProducts, selectedItem, setSelectedItem }) => {
+  setSelectedItem(9);
   console.log('selectedItem', selectedItem);
   useEffect(() => {
     setSelectedItem(selectedItem);
   }, [selectedItem]);
 
-
-const carouselLong = carouselProducts.concat(carouselProducts, carouselProducts, carouselProducts, carouselProducts, carouselProducts,carouselProducts,carouselProducts);
-
+  const carouselLong = carouselProducts.concat(
+    carouselProducts,
+    carouselProducts,
+    carouselProducts,
+    carouselProducts,
+    carouselProducts,
+    carouselProducts,
+    carouselProducts
+  );
 
   const [windowSize, setWindowSize] = useState({
     width: undefined,
@@ -34,7 +39,7 @@ const carouselLong = carouselProducts.concat(carouselProducts, carouselProducts,
 
       return () => window.removeEventListener('resize', handleResize);
     }
-  }, []); 
+  }, []);
 
   console.log('windowSize', windowSize);
   const [slidePercentage, setSlidePercentage] = useState(
@@ -102,4 +107,4 @@ const carouselLong = carouselProducts.concat(carouselProducts, carouselProducts,
   );
 };
 
-export default Banner;
+export default HomeCarousel;

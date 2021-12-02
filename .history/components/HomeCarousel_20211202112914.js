@@ -4,8 +4,8 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Banner = ({ carouselProducts, selectedItem,setSelectedItem }) => {
-  // const [selectedItem, setSelectedItem] = useState(9);
-  // console.log('selectedItem', selectedItem);
+  // const [index, setSelectedItem] = useState(9);
+  console.log('index', index);
   console.log('selectedItem', selectedItem);
   useEffect(() => {
     setSelectedItem(selectedItem);
@@ -63,7 +63,7 @@ const carouselLong = carouselProducts.concat(carouselProducts, carouselProducts,
         interval={5000}
         swipeScrollTolerance={50}
         autoFocus={false}
-        selectedItem={selectedItem}
+        selectedItem={index}
         centerSlidePercentage={slidePercentage}
         centerMode={true}
         onChange={(selectedItem) => setSelectedItem(selectedItem)}

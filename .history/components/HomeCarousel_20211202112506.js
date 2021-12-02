@@ -3,12 +3,12 @@ import { useEffect, useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-const Banner = ({ carouselProducts, selectedItem,setSelectedItem }) => {
-  // const [selectedItem, setSelectedItem] = useState(9);
-  // console.log('selectedItem', selectedItem);
+const Banner = ({ carouselProducts, selectedItem }) => {
+  // const [index, setIndex] = useState(9);
+  console.log('index', index);
   console.log('selectedItem', selectedItem);
   useEffect(() => {
-    setSelectedItem(selectedItem);
+    setIndex(selectedItem);
   }, [selectedItem]);
 
 
@@ -66,7 +66,7 @@ const carouselLong = carouselProducts.concat(carouselProducts, carouselProducts,
         selectedItem={selectedItem}
         centerSlidePercentage={slidePercentage}
         centerMode={true}
-        onChange={(selectedItem) => setSelectedItem(selectedItem)}
+        onChange={(selectedItem) => setIndex(selectedItem)}
         showArrows={false}
       >
         {carouselLong.map((i) => (

@@ -63,11 +63,11 @@ export default function Home({ products, carouselProducts }) {
               </div>
             </button>
             <button
-              className="absolute top-2/3 left-5/8 "
-              onClick={() => setSelectedItem(3)}
+              className="absolute top-1/9 left-3/7 "
+              onClick={() => setSelectedItem(2)}
             >
               <div className="w-6 h-6 font-thin p-4 bg-opacity-60 bg-gray-700  font-mono rounded-full flex justify-center items-center text-center  shadow-xl text-white">
-                3
+                2
               </div>
             </button>
            

@@ -53,8 +53,8 @@ const HomeCarousel = ({ carouselProducts, selectedItem, setSelectedItem }) => {
   console.log('slidePercentage', slidePercentage);
 
   useEffect(() => {
-    if(selectedItem === 9) {
-      setSelectedItem(10);
+    if(setSelectedItem(10)) {
+      // setSelectedItem(10);
     }
     if (windowSize.width) {
       let newSlidePercentage = (226 / windowSize.width) * 100;

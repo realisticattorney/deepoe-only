@@ -4,6 +4,18 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Banner = ({ carouselProducts, selectedItem }) => {
+  //   const imageSrc = [selectedItem.image];
+  //   const imageColorSrc = product.images.edges
+  //     .filter(
+  //       (node) =>
+  //         node.node.altText === selectedItem.options.Color ||
+  //         node.node.altText === 'All'
+  //     )
+  //     .sort((a, b) => (a.node.altText > b.node.altText ? -1 : 1))
+  //     .map((node) => node.node.originalSrc);
+
+  //   imageSrc.push(...imageColorSrc);
+
   //change carousel index to 0
   const [index, setIndex] = useState(0);
   console.log('index', index);
@@ -12,6 +24,7 @@ const Banner = ({ carouselProducts, selectedItem }) => {
     setIndex(selectedItem);
   }, [selectedItem]);
 
+  // Initialize state with undefined width/height so server and client renders match
   // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
   const [windowSize, setWindowSize] = useState({
     width: undefined,

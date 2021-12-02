@@ -20,12 +20,8 @@ export default function Home({ products, carouselProducts }) {
 
       <div className="w-full  overflow-hidden">
         <div className="relative h-65">
-          <Image
-            src="/heroHome.jpg"
-            layout="fill"
-            objectFit="cover"
-            quality={100}
-          />
+          <Image src="/heroHome.jpg" layout="fill" objectFit="cover"
+           />
           <h2
             className={`text-3xl text-white absolute left-0 right-0 ml-auto mr-auto top-16 italic font-medium w-80 mb-6 text-center 
               `}
@@ -48,7 +44,6 @@ export default function Home({ products, carouselProducts }) {
               layout="responsive"
               width={378}
               height={284}
-              quality={100}
               objectFit="contain"
             />
 
@@ -76,6 +71,10 @@ export default function Home({ products, carouselProducts }) {
                 3
               </div>
             </button>
+           
+
+
+
           </div>
         </div>
 

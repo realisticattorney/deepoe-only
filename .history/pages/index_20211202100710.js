@@ -48,7 +48,6 @@ export default function Home({ products, carouselProducts }) {
               layout="responsive"
               width={378}
               height={284}
-              quality={100}
               objectFit="contain"
             />
 

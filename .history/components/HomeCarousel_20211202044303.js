@@ -17,53 +17,38 @@ const Banner = ({ carouselProducts, selectedItem }) => {
   //   imageSrc.push(...imageColorSrc);
 
   //change carousel index to 0
-  const [index, setIndex] = useState(1);
-  console.log('index', index);
-  console.log('selectedItem', selectedItem);
-  useEffect(() => {
-    setIndex(selectedItem);
-  }, [selectedItem]);
-
-  // Initialize state with undefined width/height so server and client renders match
-  // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
-  const [windowSize, setWindowSize] = useState({
-    width: undefined,
-    height: undefined,
-  });
-
-  const [slidePercentage, setSlidePercentage] = useState(0);
-
-  useEffect(() => {
-    // only execute all the code below in client side
-    if (typeof window !== 'undefined') {
-      // Handler to call on window resize
-      function handleResize() {
-        // Set window width/height to state
-        setWindowSize({
-          width: window.innerWidth,
-          height: window.innerHeight,
-        });
+  function useWindowSize() {
+    // Initialize state with undefined width/height so server and client renders match
+    // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
+    const [windowSize, setWindowSize] = useState({
+      width: undefined,
+      height: undefined,
+    });
+  
+    useEffect(() => {
+      // only execute all the code below in client side
+      if (typeof window !== 'undefined') {
+        // Handler to call on window resize
+        function handleResize() {
+          // Set window width/height to state
+          setWindowSize({
+            width: window.innerWidth,
+            height: window.innerHeight,
+          });
+        }
+      
+        // Add event listener
+        window.addEventListener("resize", handleResize);
+       
+        // Call handler right away so state gets updated with initial window size
+        handleResize();
+      
+        // Remove event listener on cleanup
+        return () => window.removeEventListener("resize", handleResize);
       }
-
-      // Add event listener
-      window.addEventListener('resize', handleResize);
-
-      // Call handler right away so state gets updated with initial window size
-      handleResize();
-
-      // Remove event listener on cleanup
-      return () => window.removeEventListener('resize', handleResize);
-    }
-  }, []); // Empty array ensures that effect is only run on mount
-
-  console.log('windowSize', windowSize);
-
-  useEffect(() => {
-    let newSlidePercentage = (226 / windowSize.width) * 100;
-    setSlidePercentage(newSlidePercentage);
-    return slidePercentage;
-  }, [windowSize]);
-
+    }, []); // Empty array ensures that effect is only run on mount
+    return windowSize;
+  }
   return (
     <div className="relative z-0 mt-4  mb-10 classes.my__carousel_main">
       <Carousel
@@ -77,14 +62,13 @@ const Banner = ({ carouselProducts, selectedItem }) => {
         swipeScrollTolerance={50}
         autoFocus={false}
         selectedItem={index}
-        centerSlidePercentage={slidePercentage}
+        centerSlidePercentage={85}
         centerMode={true}
         onChange={(selectedItem) => setIndex(selectedItem)}
-        // onChange={(windowSize) => setSlidePercentageFunction(windowSize)}
         showArrows={false}
       >
         {carouselProducts.map((i) => (
-          <div className="w-53">
+          <div className="w-11/12">
             <div
               className="w-full h-64 from-gray-100  bottom-0 relative"
               key={i.number}

@@ -44,8 +44,9 @@ module.exports = {
       },
       width: {
         150: '50rem',
-        53: '12.563rem',
+        53: '12.9rem',
         65: '16.25rem',
+        "11/12": 90%
       },
       borderWidth: {
         DEFAULT: '0.8px',

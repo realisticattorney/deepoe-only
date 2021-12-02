@@ -60,8 +60,8 @@ const Banner = ({ carouselProducts, selectedItem }) => {
 
   useEffect(() => {
     let newSlidePercentage = (226 / windowSize.width) * 100;
-    setSlidePercentage(newSlidePercentage);
-    return slidePercentage;
+
+  
   }, [windowSize]);
 
   return (

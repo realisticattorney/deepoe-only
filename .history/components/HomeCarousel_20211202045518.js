@@ -58,11 +58,22 @@ const Banner = ({ carouselProducts, selectedItem }) => {
 
   console.log('windowSize', windowSize);
 
-  useEffect(() => {
-    let newSlidePercentage = (226 / windowSize.width) * 100;
-    setSlidePercentage(newSlidePercentage);
-    return slidePercentage;
-  }, [windowSize]);
+  // useEffect(() => { 
+
+  // }, [windowSize]);
+
+  const setSlidePercentage = (windowSizeWidth) => {
+    if (windowSizeWidth < 330) {
+      slidePercentage
+      return 90;
+    } else if (windowSizeWidth < 992) {
+      return 0.25;
+    } else if (windowSizeWidth < 1200) {
+      return 0.5;
+    } else {
+      return 0.75;
+    }
+  };
 
   return (
     <div className="relative z-0 mt-4  mb-10 classes.my__carousel_main">
@@ -77,10 +88,9 @@ const Banner = ({ carouselProducts, selectedItem }) => {
         swipeScrollTolerance={50}
         autoFocus={false}
         selectedItem={index}
-        centerSlidePercentage={slidePercentage}
+        centerSlidePercentage={(slidePercentage) => setSlidePercentage(slidePercentage)}
         centerMode={true}
         onChange={(selectedItem) => setIndex(selectedItem)}
-        // onChange={(windowSize) => setSlidePercentageFunction(windowSize)}
         showArrows={false}
       >
         {carouselProducts.map((i) => (

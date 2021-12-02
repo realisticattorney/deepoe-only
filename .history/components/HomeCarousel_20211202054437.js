@@ -59,9 +59,9 @@ const Banner = ({ carouselProducts, selectedItem }) => {
   console.log('windowSize', windowSize);
 
   useEffect(() => {
-    let newSlidePercentage = (226 / windowSize.width) * 100;
-    setSlidePercentage(newSlidePercentage);
-    return slidePercentage;
+//find the equation based on the following data points: for the windows 329px wide, the slide percentage is 68.7% and for the windows 368px wide, the slide percentage is 61.415%
+    const log =
+
   }, [windowSize]);
 
   return (

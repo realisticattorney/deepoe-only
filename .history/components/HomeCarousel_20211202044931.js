@@ -31,8 +31,6 @@ const Banner = ({ carouselProducts, selectedItem }) => {
     height: undefined,
   });
 
-  const [slidePercentage, setSlidePercentage] = useState(0);
-
   useEffect(() => {
     // only execute all the code below in client side
     if (typeof window !== 'undefined') {
@@ -58,11 +56,17 @@ const Banner = ({ carouselProducts, selectedItem }) => {
 
   console.log('windowSize', windowSize);
 
-  useEffect(() => {
-    let newSlidePercentage = (226 / windowSize.width) * 100;
-    setSlidePercentage(newSlidePercentage);
-    return slidePercentage;
-  }, [windowSize]);
+  const setSlidePercentage(windowSizeWidth) {
+    if (windowSizeWidth < 768) {
+      return 0;
+    } else if (windowSizeWidth < 992) {
+      return 0.25;
+    } else if (windowSizeWidth < 1200) {
+      return 0.5;
+    } else {
+      return 0.75;
+    }
+  }
 
   return (
     <div className="relative z-0 mt-4  mb-10 classes.my__carousel_main">
@@ -77,14 +81,13 @@ const Banner = ({ carouselProducts, selectedItem }) => {
         swipeScrollTolerance={50}
         autoFocus={false}
         selectedItem={index}
-        centerSlidePercentage={slidePercentage}
+        centerSlidePercentage={() => setSlidePercentage(windowSize.width)}
         centerMode={true}
         onChange={(selectedItem) => setIndex(selectedItem)}
-        // onChange={(windowSize) => setSlidePercentageFunction(windowSize)}
         showArrows={false}
       >
         {carouselProducts.map((i) => (
-          <div className="w-53">
+          <div className="w-11/12">
             <div
               className="w-full h-64 from-gray-100  bottom-0 relative"
               key={i.number}

@@ -44,7 +44,7 @@ module.exports = {
       },
       width: {
         150: '50rem',
-        53: '12.563rem',
+        53: '12.3rem',
         65: '16.25rem',
       },
       borderWidth: {

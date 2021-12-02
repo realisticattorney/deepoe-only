@@ -59,9 +59,37 @@ const Banner = ({ carouselProducts, selectedItem }) => {
   console.log('windowSize', windowSize);
 
   useEffect(() => {
-    let newSlidePercentage = (226 / windowSize.width) * 100;
-    setSlidePercentage(newSlidePercentage);
-    return slidePercentage;
+
+    
+    console.log('is this running?');
+    if (windowSize.width < 330) {
+      setSlidePercentage(68.70);
+      return slidePercentage;
+    } else if (windowSize.width < 340) {
+      setSlidePercentage(66.87);
+      return slidePercentage;
+    } else if (windowSize.width < 350) {
+      setSlidePercentage(65);
+      return slidePercentage;
+    } else if (windowSize.width < 360) {
+      setSlidePercentage(63);
+      return slidePercentage;
+    } else if (windowSize.width < 369) {
+      setSlidePercentage(61.415);
+      return slidePercentage;
+    } else if (windowSize.width < 379) {
+      setSlidePercentage(59.415);
+      return slidePercentage;
+    } else if (windowSize.width < 389) {
+      setSlidePercentage(58.0);
+      return slidePercentage;
+    } else if (windowSize.width < 401) {
+      setSlidePercentage(56.5);
+      return slidePercentage;
+    } else {
+      setSlidePercentage(0);
+      return slidePercentage;
+    }
   }, [windowSize]);
 
   return (

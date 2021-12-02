@@ -59,10 +59,15 @@ const Banner = ({ carouselProducts, selectedItem }) => {
   console.log('windowSize', windowSize);
 
   useEffect(() => {
-    let newSlidePercentage = (226 / windowSize.width) * 100;
-    setSlidePercentage(newSlidePercentage);
-    return slidePercentage;
+
+    
+    
+
   }, [windowSize]);
+
+  
+ 
+ 
 
   return (
     <div className="relative z-0 mt-4  mb-10 classes.my__carousel_main">

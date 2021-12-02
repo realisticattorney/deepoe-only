@@ -3,44 +3,42 @@ import { useEffect, useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-const Banner = ({ carouselProducts, selectedItem, setSelectedItem }) => {
-  // const [index, setIndex] = useState(9);
-  // console.log('index', index);
+const Banner = ({ carouselProducts, selectedItem }) => {
+  //change carousel index to 0
+  const [index, setIndex] = useState(0);
+  console.log('index', index);
   console.log('selectedItem', selectedItem);
   useEffect(() => {
-    setSelectedItem(selectedItem);
+    setIndex(selectedItem);
   }, [selectedItem]);
 
-  const carouselLong = carouselProducts.concat(
-    carouselProducts,
-    carouselProducts,
-    carouselProducts,
-    carouselProducts,
-    carouselProducts,
-    carouselProducts,
-    carouselProducts
-  );
-
+  // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
   const [windowSize, setWindowSize] = useState({
     width: undefined,
     height: undefined,
   });
 
   useEffect(() => {
+    // only execute all the code below in client side
     if (typeof window !== 'undefined') {
+      // Handler to call on window resize
       function handleResize() {
+        // Set window width/height to state
         setWindowSize({
           width: window.innerWidth,
           height: window.innerHeight,
         });
       }
+      // Add event listener
       window.addEventListener('resize', handleResize);
 
+      // Call handler right away so state gets updated with initial window size
       handleResize();
 
+      // Remove event listener on cleanup
       return () => window.removeEventListener('resize', handleResize);
     }
-  }, []);
+  }, []); // Empty array ensures that effect is only run on mount
 
   console.log('windowSize', windowSize);
   const [slidePercentage, setSlidePercentage] = useState(
@@ -66,16 +64,16 @@ const Banner = ({ carouselProducts, selectedItem, setSelectedItem }) => {
         showThumbs={false}
         showIndicators={false}
         preventMovementUntilSwipeScrollTolerance={true}
-        interval={5000}
+        interval={2000}
         swipeScrollTolerance={50}
         autoFocus={false}
-        selectedItem={selectedItem}
+        selectedItem={index}
         centerSlidePercentage={slidePercentage}
         centerMode={true}
-        onChange={(selectedItem) => setSelectedItem(selectedItem)}
+        // onChange={(selectedItem) => setIndex(selectedItem)}
         showArrows={false}
       >
-        {carouselLong.map((i) => (
+        {carouselProducts.map((i) => (
           <div
             className="w-53 h-66 from-gray-100  ml-2 bottom-0 relative"
             key={i.number}

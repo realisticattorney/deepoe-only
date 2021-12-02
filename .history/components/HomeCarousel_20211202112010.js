@@ -11,15 +11,9 @@ const Banner = ({ carouselProducts, selectedItem, setSelectedItem }) => {
     setSelectedItem(selectedItem);
   }, [selectedItem]);
 
-  const carouselLong = carouselProducts.concat(
-    carouselProducts,
-    carouselProducts,
-    carouselProducts,
-    carouselProducts,
-    carouselProducts,
-    carouselProducts,
-    carouselProducts
-  );
+
+const carouselLong = carouselProducts.concat(carouselProducts, carouselProducts, carouselProducts, carouselProducts, carouselProducts,carouselProducts,carouselProducts);
+
 
   const [windowSize, setWindowSize] = useState({
     width: undefined,
@@ -40,7 +34,7 @@ const Banner = ({ carouselProducts, selectedItem, setSelectedItem }) => {
 
       return () => window.removeEventListener('resize', handleResize);
     }
-  }, []);
+  }, []); 
 
   console.log('windowSize', windowSize);
   const [slidePercentage, setSlidePercentage] = useState(

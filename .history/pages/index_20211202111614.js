@@ -9,7 +9,7 @@ export default function Home({ products, carouselProducts }) {
   console.log('proooooooducts', products.products.edges);
   console.log("aaaaaa'", carouselProducts);
 
-  const [selectedItem, setSelectedItem] = useState(10);
+  const [selectedItem, setSelectedItem] = useState(9);
   console.log(selectedItem);
   return (
     <div className="">
@@ -85,7 +85,6 @@ export default function Home({ products, carouselProducts }) {
         <HomeCarousel
           carouselProducts={carouselProducts}
           selectedItem={selectedItem}
-          setSelectedItem={setSelectedItem}
         />
 
         <h2 className="text-center w-64 mx-auto font-light font-mono text-xl">

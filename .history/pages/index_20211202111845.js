@@ -85,7 +85,7 @@ export default function Home({ products, carouselProducts }) {
         <HomeCarousel
           carouselProducts={carouselProducts}
           selectedItem={selectedItem}
-          setSelectedItem={setSelectedItem}
+          setSelectedItem
         />
 
         <h2 className="text-center w-64 mx-auto font-light font-mono text-xl">

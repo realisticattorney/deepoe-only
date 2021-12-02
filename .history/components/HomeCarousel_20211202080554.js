@@ -88,7 +88,7 @@ const Banner = ({ carouselProducts, selectedItem }) => {
       >
         {carouselProducts.map((i) => (
           <div className="w-53" key={i.number}>
-            <div className="w-full h-66 from-gray-100  ml-2 bottom-0 relative">
+            <div className="w-full h-65 from-gray-100  ml-2 bottom-0 relative">
               <Image
                 quality={100}
                 loading="lazy"

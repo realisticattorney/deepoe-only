@@ -55,9 +55,6 @@ export default function Home({ products, carouselProducts }) {
               </div>
             </button>
            
-
-
-           
           </div>
         </div>
 

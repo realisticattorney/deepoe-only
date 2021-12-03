@@ -120,7 +120,7 @@ export default function Home({ products, carouselProducts }) {
               <Image
                 src="/people.png"
                 layout="fill"
-                objectFit="contain"
+                objectFit="cover"
                 objectPosition="top"
               />
             </div>

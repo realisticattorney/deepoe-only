@@ -27,7 +27,7 @@ export default function Home({ products, carouselProducts }) {
             quality={100}
           />
           <h2
-            className={`text-3xl md:text-4xl text-white absolute left-0 right-0 ml-auto mr-auto top-16 italic font-medium w-80 md:w-96 mb-6 text-center 
+            className={`text-3xl md:text-4xl text-white absolute left-0 right-0 ml-auto mr-auto top-16 italic font-medium w-80 mb-6 text-center 
               `}
           >
             Considered materials, lively design.
@@ -120,7 +120,7 @@ export default function Home({ products, carouselProducts }) {
               <Image
                 src="/people.png"
                 layout="fill"
-                objectFit="contain"
+                objectFit="cover"
                 objectPosition="top"
               />
             </div>

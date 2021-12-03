@@ -251,7 +251,7 @@ export default function MiniCart({ cart }) {
 
                   {cart.length > 0 ? (
                     <div className="px-4 sm:px-6 font-mono ">
-                      <div className="pt-4 border-t border-gray-900 space-y-2 flex-col  text-gray-900">
+                      <div className="pt-4 border-t border-gray-900 space-y-1.5 flex-col  text-gray-900">
                         <div className="flex justify-between">
                           <p>Subtotal</p>
                           <p>{formatter.format(cartTotal)}</p>
@@ -263,7 +263,7 @@ export default function MiniCart({ cart }) {
                         <div className="flex  underline">
                           <form
                             onSubmit={handleSubmit(onSubmitForm)}
-                            className="flex-grow w-full relative mb-0.5"
+                            className="flex"
                           >
                             <div>
                               <label htmlFor="promocode" className="sr-only">
@@ -288,7 +288,7 @@ export default function MiniCart({ cart }) {
                                     message: 'This is too long',
                                   },
                                 })}
-                                className={`w-full border-2 border-deepoe_default-black shadow-sm  min-w-max  bg-deepoe-cream text-base  font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate focus:outline-none focus:ring-2 ${
+                                className={` border shadow-sm  min-w-max flex-grow bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2 ${
                                   errors.email ? 'ring-0 ring-red-500' : ''
                                 }`}
                                 placeholder="Add promo code"
@@ -300,13 +300,13 @@ export default function MiniCart({ cart }) {
 
                             <button
                               type="submit"
-                              className="absolute top-0 bottom-0 right-0  inline-flex   px-3  border border-transparent items-center font-extralight  text-base   text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2 "
+                              className=" w-full inline-flex justify-center  px-3 border border-transparent shadow text-base   text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
                             >
                               Apply
                             </button>
                           </form>
                         </div>
-                        <div className="flex justify-between font-semibold ">
+                        <div className="flex justify-between font-semibold">
                           <p>Subtotal</p>
                           <p>{formatter.format(cartTotal)}</p>
                         </div>

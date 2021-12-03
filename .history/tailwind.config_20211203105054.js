@@ -54,8 +54,9 @@ module.exports = {
         111: '33.67rem',
       },
       maxWidth: {
-        xs2: '23rem',
-        xs1: '21rem',
+        '1/4': '25%',
+        '1/2': '50%',
+        '3/4': '75%',
        },
       maxHeight: {
         75: '19rem',

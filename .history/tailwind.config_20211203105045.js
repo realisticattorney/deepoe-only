@@ -54,9 +54,10 @@ module.exports = {
         111: '33.67rem',
       },
       maxWidth: {
-        xs2: '23rem',
-        xs1: '21rem',
-       },
+        '1/4': '25%',
+        '1/2': '50%',
+        '3/4': '75%',
+       }
       maxHeight: {
         75: '19rem',
         100: '26rem',
@@ -71,7 +72,7 @@ module.exports = {
         150: '50rem',
         53: '12.563rem',
         65: '16.25rem',
-        
+        xs2: '10rem',
       },
       borderWidth: {
         DEFAULT: '0.8px',

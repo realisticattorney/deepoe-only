@@ -288,7 +288,7 @@ export default function MiniCart({ cart }) {
                                     message: 'This is too long',
                                   },
                                 })}
-                                className={`w-full border-2 border-deepoe_default-black shadow-sm  min-w-max  bg-deepoe-cream text-base  font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate focus:outline-none focus:ring-2 ${
+                                className={`w-full border-2 border-deepoe_default-black shadow-sm  min-w-max  bg-deepoe-cream text-base -pl-1 font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate focus:outline-none focus:ring-2 ${
                                   errors.email ? 'ring-0 ring-red-500' : ''
                                 }`}
                                 placeholder="Add promo code"

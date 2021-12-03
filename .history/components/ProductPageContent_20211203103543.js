@@ -56,7 +56,7 @@ const ProductPageContent = ({ collection, product }) => {
 
   return (
     <div
-      className={`md:max-w-md mx-auto ${
+      className={`md:maxw ${
         parentReviewState ? 'overflow-y-hidden overscroll-y-none' : ''
       }`}
     >

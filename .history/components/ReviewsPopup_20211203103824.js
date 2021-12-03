@@ -46,7 +46,7 @@ export default function ReviewsPopup({
               leaveFrom="translate-x-0"
               leaveTo="-translate-x-full"
             >
-              <div className="bg-deepoe-cream w-full h-screen md:max-w-md   z-50 fixed inset-y-0 top-0 left-0 right-0 bottom-0 max-w-full  overflow-y-auto">
+              <div className="bg-deepoe-cream w-full h-screen md:max-w-3xl   z-50 fixed inset-y-0 top-0 left-0 right-0 bottom-0 max-w-full  overflow-y-auto">
                 <div className="z-50 fixed w-full h-16 bg-deepoe-cream  text-right">
                   <button
                     type="button"

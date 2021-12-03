@@ -1,4 +1,4 @@
-import { Fragment, useContext, useEffect, useRef, useState } from 'react';
+import { Fragment, useContext, useRef, useState } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import { TrashIcon } from '@heroicons/react/outline';
 import Image from 'next/image';
@@ -44,13 +44,6 @@ export default function MiniCart({ cart }) {
     }
   `;
 
-  useEffect(() => {
-    // Perform localStorage action
-    const checkoutId = localStorage.getItem('checkout_id');
-    const checkoutIdJson = JSON.parse(checkoutId);
-    const checkoutIdJsonId = checkoutIdJson[1].id;
-    console.log('checkoutIdJsonId', checkoutIdJsonId);
-  }, []);
 
   const toast = useToast();
   const {
@@ -61,37 +54,11 @@ export default function MiniCart({ cart }) {
   } = useForm();
   const router = useRouter();
 
-  const [cartDiscountCodesUpdate, { data, loading, error }] = useMutation(
-    CART_DISCOUNT_CODE_UPDATE
-  );
+  const [createCustomer, { data, loading, error }] =
+    useMutation(CREATE_CUSTOMER);
 
-  async function onSubmitForm(values) {
-    // const { promocode } = values;
-    // console.log(values);
-    try {
-      const response = await cartDiscountCodesUpdate({
-        // variables: {
-          // input: {
-            ID: 'Z2lkOi8vc2hvcGlmeS9DaGVja291dC8wZWUxNDU1NGM1MTExYmY1Y2M1OGNmYjgwMzliMTk5Nj9rZXk9YjJjZDlmM2Q1YmNiMjIxMjlhOGM0NDI3YjM5Mzk2NmM=',
-          // },
-        // },
-      });
-      console.log('response', response);
-      if (response.data) {
-        console.log('data', response.data);
-        toast('success', 'Check your email box to confirm your account');
 
-        reset();
-      } else if (response.data) {
-        error = response.data;
-        console.log('eerr', response.data);
-        toast('error', `${response.data}`);
-      }
-    } catch (err) {
-      console.log('err', err);
-      toast('error', `${err}`);
-    }
-  }
+    
 
   return (
     <Transition.Root show={cartOpen} as={Fragment}>
@@ -269,7 +236,7 @@ export default function MiniCart({ cart }) {
                                 type="text"
                                 {...register('promocode', {
                                   required: {
-                                    value: false,
+                                    value: true,
                                     message:
                                       'You must enter your email address',
                                   },

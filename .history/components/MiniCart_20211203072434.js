@@ -73,7 +73,7 @@ export default function MiniCart({ cart }) {
         // variables: {
           // input: {
             ID: 'Z2lkOi8vc2hvcGlmeS9DaGVja291dC8wZWUxNDU1NGM1MTExYmY1Y2M1OGNmYjgwMzliMTk5Nj9rZXk9YjJjZDlmM2Q1YmNiMjIxMjlhOGM0NDI3YjM5Mzk2NmM=',
-          // },
+          },
         // },
       });
       console.log('response', response);

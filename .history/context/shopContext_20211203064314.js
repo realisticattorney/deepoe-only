@@ -19,7 +19,7 @@ export default function ShopProvider({ children }) {
       }
 
       setCheckoutId(cartObject[1].id);
-      console.log("cartObjectAAAA",cartObject);
+      console.log("checkoutId",cartObject);
       setCheckoutUrl(cartObject[1].webUrl);
     }
   }, []);

@@ -47,11 +47,13 @@ export default function MiniCart({ cart }) {
   useEffect(() => {
     // Perform localStorage action
     const checkoutId = localStorage.getItem('checkout_id');
-    const checkoutIdJson = JSON.parse(checkoutId);
-    const checkoutIdJsonId = checkoutIdJson[1].id;
+    const checkoutIdJson =  JSON.parse(checkoutId);
+    const checkoutIdJsonId = checkoutIdJson[1].id
     console.log('checkoutIdJsonId', checkoutIdJsonId);
-  }, []);
+  }, [])
 
+  
+  
   const toast = useToast();
   const {
     register,
@@ -66,27 +68,34 @@ export default function MiniCart({ cart }) {
   );
 
   async function onSubmitForm(values) {
+    
     // const { promocode } = values;
     // console.log(values);
     try {
       const response = await cartDiscountCodesUpdate({
-        // variables: {
-          // input: {
-            ID: 'Z2lkOi8vc2hvcGlmeS9DaGVja291dC8wZWUxNDU1NGM1MTExYmY1Y2M1OGNmYjgwMzliMTk5Nj9rZXk9YjJjZDlmM2Q1YmNiMjIxMjlhOGM0NDI3YjM5Mzk2NmM=',
-          // },
-        // },
+        variables: {
+          input: {
+            ID: "Z2lkOi8vc2hvcGlmeS9DaGVja291dC8wZWUxNDU1NGM1MTExYmY1Y2M1OGNmYjgwMzliMTk5Nj9rZXk9YjJjZDlmM2Q1YmNiMjIxMjlhOGM0NDI3YjM5Mzk2NmM="
+          },
+        },
       });
       console.log('response', response);
-      if (response.data) {
-        console.log('data', response.data);
-        toast('success', 'Check your email box to confirm your account');
+      // if (response.data) {
+      //   console.log('data', response.data);
+      //   toast('success', 'Check your email box to confirm your account');
 
-        reset();
-      } else if (response.data) {
-        error = response.data;
-        console.log('eerr', response.data);
-        toast('error', `${response.data}`);
-      }
+      //   reset();
+      // } else if (response.data) {
+      //   error = response.data;
+      //   console.log(
+      //     'eerr',
+      //     response.data.customerCreate.customerUserErrors[0].message
+      //   );
+      //   toast(
+      //     'error',
+      //     `${response.data.customerCreate.customerUserErrors[0].message}`
+      //   );
+      // }
     } catch (err) {
       console.log('err', err);
       toast('error', `${err}`);

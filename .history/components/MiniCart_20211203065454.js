@@ -1,4 +1,4 @@
-import { Fragment, useContext, useEffect, useRef, useState } from 'react';
+import { Fragment, useContext, useRef, useState } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import { TrashIcon } from '@heroicons/react/outline';
 import Image from 'next/image';
@@ -6,9 +6,6 @@ import Link from 'next/link';
 import { CartContext } from '../context/shopContext';
 import { formatter } from '../utils/helpers';
 import { gql, useMutation } from '@apollo/client';
-import { useRouter } from 'next/router';
-import { useToast } from '../hooks/useToast';
-import { useForm } from 'react-hook-form';
 
 export default function MiniCart({ cart }) {
   const cancelButtonRef = useRef();
@@ -29,69 +26,25 @@ export default function MiniCart({ cart }) {
 
   const [isButtonDisabled, setButtonDisabled] = useState(false);
 
+
+
   const CART_DISCOUNT_CODE_UPDATE = gql`
-    mutation cartDiscountCodesUpdate($cartId: ID!) {
-      cartDiscountCodesUpdate(cartId: $cartId) {
-        cart {
-          id
-        }
-        userErrors {
-          code
-          field
-          message
-        }
+  mutation cartDiscountCodesUpdate($cartId: ID!) {
+    cartDiscountCodesUpdate(cartId: $cartId) {
+      cart {
+        id
+      }
+      userErrors {
+        code
+        field
+        message
       }
     }
-  `;
+  }  
+`;
 
-  useEffect(() => {
-    // Perform localStorage action
-    const checkoutId = localStorage.getItem('checkout_id');
-    const checkoutIdJson = JSON.parse(checkoutId);
-    const checkoutIdJsonId = checkoutIdJson[1].id;
-    console.log('checkoutIdJsonId', checkoutIdJsonId);
-  }, []);
 
-  const toast = useToast();
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-    reset,
-  } = useForm();
-  const router = useRouter();
-
-  const [cartDiscountCodesUpdate, { data, loading, error }] = useMutation(
-    CART_DISCOUNT_CODE_UPDATE
-  );
-
-  async function onSubmitForm(values) {
-    // const { promocode } = values;
-    // console.log(values);
-    try {
-      const response = await cartDiscountCodesUpdate({
-        // variables: {
-          // input: {
-            ID: 'Z2lkOi8vc2hvcGlmeS9DaGVja291dC8wZWUxNDU1NGM1MTExYmY1Y2M1OGNmYjgwMzliMTk5Nj9rZXk9YjJjZDlmM2Q1YmNiMjIxMjlhOGM0NDI3YjM5Mzk2NmM=',
-          // },
-        // },
-      });
-      console.log('response', response);
-      if (response.data) {
-        console.log('data', response.data);
-        toast('success', 'Check your email box to confirm your account');
-
-        reset();
-      } else if (response.data) {
-        error = response.data;
-        console.log('eerr', response.data);
-        toast('error', `${response.data}`);
-      }
-    } catch (err) {
-      console.log('err', err);
-      toast('error', `${err}`);
-    }
-  }
+  
 
   return (
     <Transition.Root show={cartOpen} as={Fragment}>
@@ -259,47 +212,11 @@ export default function MiniCart({ cart }) {
                           <p>Free</p>
                         </div>
                         <div className="flex justify-between underline">
-                          <form onSubmit={handleSubmit(onSubmitForm)}>
-                            <div>
-                              <label htmlFor="promocode" className="sr-only">
-                                Promo Code
-                              </label>
-                              <input
-                                name="promocode"
-                                type="text"
-                                {...register('promocode', {
-                                  required: {
-                                    value: false,
-                                    message:
-                                      'You must enter your email address',
-                                  },
-                                  minLength: {
-                                    value: 4,
-                                    message:
-                                      'This is not long enough to be an email',
-                                  },
-                                  maxLength: {
-                                    value: 20,
-                                    message: 'This is too long',
-                                  },
-                                })}
-                                className={`block w-full border shadow-sm bg-deepoe-cream text-sm font-light font-mono  py-0.5 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-2 ${
-                                  errors.email ? 'ring-0 ring-red-500' : ''
-                                }`}
-                                placeholder="Add promo code"
-                              />
-                              <span className="text-red-400 text-sm py-2">
-                                {errors?.email?.message}
-                              </span>
-                            </div>
-
-                            <button
-                              type="submit"
-                              className=" w-full inline-flex justify-center py-1.5 px-6 border border-transparent shadow text-base   text-white bg-deepoe-chocolate focus:outline-none focus:ring-2 focus:ring-offset-2"
-                            >
-                              Add Promo Code
-                            </button>
-                          </form>
+                        
+                        
+                        
+                        
+                          <p>Add Promo Code</p>
                         </div>
                         <div className="flex justify-between font-semibold">
                           <p>Subtotal</p>

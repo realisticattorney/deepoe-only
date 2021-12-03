@@ -63,8 +63,9 @@ export default function Signup() {
 
     try {
 
-      const checkoutId = await localStorage.getItem('checkout_id');
-      console.log("checkoutId",checkoutId); 
+      const checkoutId = await localStorage.setItem(
+        '',
+
       const response = await createCustomer({
         variables: {
           input: {

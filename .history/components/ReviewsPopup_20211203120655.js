@@ -61,16 +61,16 @@ export default function ReviewsPopup({
                 leaveTo="-translate-x-full"
               >
                 <div className="bg-deepoe-cream w-full h-screen md:max-w-md    z-50 fixed inset-y-0 top-0 left-0 right-0 bottom-0 max-w-full  overflow-y-auto">
-                  <div className=" w-full h-16 bg-deepoe-cream  text-right">
+                  <div className="z-50 fixed w-full h-16 bg-deepoe-cream  text-right">
                     <button
                       type="button"
-                      className=" font-extralight text-lg mt-5 pt-0.5 mr-9 font-mono "
+                      className=" font-extralight text-lg mt-5 pt-0.5 mr-9 font-mono md:hidden "
                       onClick={() => wrapperSetParentReviewState(false)}
                     >
                       close
                     </button>
                   </div>
-                  <div className="w-full block  overflow-y-auto">
+                  <div className="w-full block mt-8 overflow-y-auto">
                     <div className="flex z-0 flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 px-2 mt-5 mx-auto overflow-y-auto">
                       <div className="flex flex-col w-full  ">
                         <div className="flex flex-col justify-between items-baseline py-2 font-extralight text-left text-lg text-deepoe_default-black focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75   group-focus:font-medium">

@@ -21,7 +21,7 @@ export default function ReviewsPopup({
   }, []);
 
   return (
-    <Popover as={Fragment} className="fixed inset-0 overflow-hidden ">
+    <Popover className="" as={Fragment}>
       {({ parentReviewState }) => (
         <>
           <Popover.Button
@@ -34,9 +34,17 @@ export default function ReviewsPopup({
           >
             All Reviews
           </Popover.Button>
+          <Dialog
+            // initialFocus={cancelButtonRef}
+            as="div"
+            className="fixed inset-0 overflow-hidden "
+            onClose={() => {
+              wrapperSetParentReviewState(false);
+            }}
+          ></Dialog>
 
-          {/* <Popover.Overlay className="absolute inset-0 overflow-y-hidden  bg-gray-500 bg-opacity-75 transition-opacity " /> */}
-          <Popover.Panel static className="absolute ">
+          {/* <Popover.Overlay className="absolute inset-0 z-50 bg-gray-500 bg-opacity-75 transition-opacity " /> */}
+          <Popover.Panel static className="absolute z-50">
             <div className="absolute inset-0 overflow-hidden">
               <Transition.Child
                 as={Fragment}
@@ -47,7 +55,7 @@ export default function ReviewsPopup({
                 leaveFrom="opacity-100"
                 leaveTo="opacity-0"
               >
-                <div className=" z-50 inset-0 fixed bg-gray-500 bg-opacity-75 transition-opacity" />
+                <Dialog.Overlay className="absolute inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
               </Transition.Child>
 
               <Transition.Child
@@ -60,8 +68,8 @@ export default function ReviewsPopup({
                 leaveFrom="translate-x-0"
                 leaveTo="-translate-x-full"
               >
-                <div className="bg-deepoe-cream w-full h-screen md:max-w-md    z-50 fixed inset-y-0 top-0 left-0 right-0 bottom-0 max-w-full  overflow-y-auto">
-                  <div className=" w-full h-16 bg-deepoe-cream  text-right">
+                <div className="bg-deepoe-cream w-full h-screen md:max-w-md md:border-r border-deepoe_default-black    z-50 fixed inset-y-0 top-0 left-0 right-0 bottom-0 max-w-full  overflow-y-auto">
+                  <div className="z-50 fixed w-full h-16 bg-deepoe-cream  text-right">
                     <button
                       type="button"
                       className=" font-extralight text-lg mt-5 pt-0.5 mr-9 font-mono "
@@ -70,7 +78,7 @@ export default function ReviewsPopup({
                       close
                     </button>
                   </div>
-                  <div className="w-full block  overflow-y-auto">
+                  <div className="w-full block mt-8 overflow-y-auto">
                     <div className="flex z-0 flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 px-2 mt-5 mx-auto overflow-y-auto">
                       <div className="flex flex-col w-full  ">
                         <div className="flex flex-col justify-between items-baseline py-2 font-extralight text-left text-lg text-deepoe_default-black focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75   group-focus:font-medium">

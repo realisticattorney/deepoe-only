@@ -2,7 +2,6 @@ import Image from 'next/image';
 import ProductForm from './ProductForm';
 import Link from 'next/link';
 import atob from 'atob';
-import { MinusIcon, PlusIcon } from '@heroicons/react/outline';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import YotpoReviews from './YotpoReviews';
 import ReviewsPopup from './ReviewsPopup';
@@ -46,9 +45,9 @@ const ProductPageContent = ({ collection, product }) => {
 
   const [show, setShow] = useState(false);
 
-  // const handleShow = () => {
-  //   show ? setShow(false) : setShow(true);
-  // };
+  const handleShow = () => {
+    show ? setShow(false) : setShow(true);
+  };
   let itemsSpecs;
   const { description } = product;
   let [intro, details] = description.split('^^^DETAILS');
@@ -83,15 +82,19 @@ const ProductPageContent = ({ collection, product }) => {
           <p>{intro}</p>
         </div>
         <div className="flex flex-col w-full border-t pt-2 border-deepoe-chocolate">
-          <button className="group focus:outline-none">
+          <button className="group focus:outline-none" onClick={handleShow}>
             <div className="flex justify-between pb-2 pt-0.5 text-lg font-extralight items-center text-left text-deepoe_default-black focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-deepoe_default-black group-focus:font-medium">
               <span className="truncate font-mono font-extralight text-lg2">
                 Details
               </span>
 
-              <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
+              <p className="font-mono font-thin text-3xl group-focus:hidden">
+                +
+              </p>
 
-<MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
+              <p className="font-mono font-thin text-3xl  -mt-5  hidden group-focus:flex">
+                _
+              </p>
             </div>
             <div className="max-h-0 overflow-hidden duration-300  text-sm  group-focus:py-2 font-mono  group-focus:max-h-72  text-left font-extralight  border-b border-deepoe_default-black">
               <p className="mb-1">{details}</p>

@@ -89,9 +89,13 @@ const ProductPageContent = ({ collection, product }) => {
                 Details
               </span>
 
-              <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
+              <p className="font-mono font-thin text-3xl group-focus:hidden">
+                +
+              </p>
 
-<MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
+              <p className="font-mono font-thin text-3xl  -mt-5  hidden group-focus:flex">
+                _
+              </p>
             </div>
             <div className="max-h-0 overflow-hidden duration-300  text-sm  group-focus:py-2 font-mono  group-focus:max-h-72  text-left font-extralight  border-b border-deepoe_default-black">
               <p className="mb-1">{details}</p>

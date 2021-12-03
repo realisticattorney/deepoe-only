@@ -25,7 +25,7 @@ export default function ReviewsPopup({
       {({ parentReviewState }) => (
         <>
           <Popover.Button
-            className={`inline-flex justify-center py-1 px-7  underline  mt-7 mb-6 font-mono font-extralight  text-xl  text-deepoe_default-black  focus:outline-none active:outline-none  focus:ring-0 ${
+            className={`inline-flex justify-center py-1 px-7 underline mt-7 mb-6 font-mono font-light space-x-3  text-xl  text-deepoe_default-black  focus:outline-none active:outline-none  focus:ring-0 ${
               disable ? 'hidden' : 'inline-block'
             }`}
             onClick={() => {

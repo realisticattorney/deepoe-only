@@ -73,7 +73,9 @@ const ProductPageContent = ({ collection, product }) => {
       </div>
 
       <div
-        className={`flex flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 px-2 mx-auto `}
+        className={`flex flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 px-2 mx-auto ${
+          parentReviewState ? 'overflow-y-hidden overscroll-y-none' : ''
+        }`}
       >
         <div className="w-full max-w-md  overflow-hidden"></div>
         <ProductForm product={product} collection={collection} />

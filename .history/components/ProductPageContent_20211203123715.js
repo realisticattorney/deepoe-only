@@ -56,7 +56,9 @@ const ProductPageContent = ({ collection, product }) => {
 
   return (
     <div
-      className={`md:max-w-md mx-auto`}
+      className={`md:max-w-md mx-auto ${
+        parentReviewState ? 'overflow-y-hidden overscroll-y-none' : ''
+      }`}
     >
       <div className="px-3.5 pb-0  z-0">
         <a
@@ -73,7 +75,9 @@ const ProductPageContent = ({ collection, product }) => {
       </div>
 
       <div
-        className={`flex flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 px-2 mx-auto `}
+        className={`flex flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 px-2 mx-auto ${
+          parentReviewState ? 'overflow-y-hidden overscroll-y-none' : ''
+        }`}
       >
         <div className="w-full max-w-md  overflow-hidden"></div>
         <ProductForm product={product} collection={collection} />
@@ -183,7 +187,7 @@ const ProductPageContent = ({ collection, product }) => {
 
         <div className="px-6 my-6 mt-5">
           <div className="w-full">
-            <div className="relative h-110 ">
+            <div className="relative h-110">
               <Image
                 src="/peopleFood.png"
                 layout="fill"

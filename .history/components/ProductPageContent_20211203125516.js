@@ -56,7 +56,7 @@ const ProductPageContent = ({ collection, product }) => {
 
   return (
     <div
-      className={`md:max-w-md mx-auto`}
+      className={`md:max-w-md mx-auto overflow-visible overscroll-none`}
     >
       <div className="px-3.5 pb-0  z-0">
         <a

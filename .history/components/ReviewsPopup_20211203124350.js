@@ -45,7 +45,7 @@ export default function ReviewsPopup({
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="z-10  inset-0 fixed bg-gray-500 bg-opacity-75 transition-opacity lalalala overflow-y-scroll" />
+            <div className="z-10  inset-0 fixed bg-gray-500 bg-opacity-75 transition-opacity lalalala" />
           </Transition.Child>
           <div className=" z-0 inset-0">
             <Transition.Child
@@ -69,7 +69,7 @@ export default function ReviewsPopup({
                   </button>
                 </div>
                 <div className="w-full block  overflow-y-auto">
-                  <div className="flex z-50 flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 px-2 mt-5 mx-auto overflow-y-auto">
+                  <div className="flex z-0 flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 px-2 mt-5 mx-auto overflow-y-auto">
                     <div className="flex flex-col w-full  ">
                       <div className="flex flex-col justify-between items-baseline py-2 font-extralight text-left text-lg text-deepoe_default-black focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75   group-focus:font-medium">
                         <span className="font-mono font-light text-lg2">

@@ -67,7 +67,7 @@ module.exports = {
         150: '50rem',
         53: '12.563rem',
         65: '16.25rem',
-        xs2: '10rem',
+
       },
       borderWidth: {
         DEFAULT: '0.8px',
@@ -97,6 +97,7 @@ module.exports = {
         lg2: '1.25rem',
         xl2: '2rem',
       },
+      
     },
   },
 

@@ -43,8 +43,8 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
               leaveFrom="translate-x-0"
               leaveTo="-translate-x-full"
             >
-              <div className="w-screen max-w-md md:max-w-xs">
-                <div className="h-full min-h-screen flex flex-col bg-deepoe-cream shadow-xl overflow-y-hidden">
+              <div className="w-screen max-w-xs2">
+                <div className="h-full min-h-screen flex flex-col bg-deepoe-cream shadow-xl overflow-y-scroll">
                   <Disclosure>
                     <Disclosure.Button className=" focus:outline-none active:outline-none active:no-underline">
                       <div

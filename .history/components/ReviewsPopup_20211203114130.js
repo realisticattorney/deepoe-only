@@ -36,7 +36,7 @@ export default function ReviewsPopup({
           </Popover.Button>
 
           {/* <Popover.Overlay className="absolute inset-0 z-50 bg-gray-500 bg-opacity-75 transition-opacity " /> */}
-          <Popover.Panel static className="absolute z-50">
+          <Popover.Panel static className="absolute ">
             <Transition.Child
               as={Fragment}
               unmount={false}

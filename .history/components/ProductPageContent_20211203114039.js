@@ -60,7 +60,7 @@ const ProductPageContent = ({ collection, product }) => {
         parentReviewState ? 'overflow-y-hidden overscroll-y-none' : ''
       }`}
     >
-      <div className="px-3.5 pb-0  z-0">
+      <div className="px-3.5 pb-0  z-50">
         <a
           href={`https://deepoe-only.vercel.app/collections/${collection}/`}
           rel="noreferrer"
@@ -201,35 +201,35 @@ const ProductPageContent = ({ collection, product }) => {
           what we offer...
         </div>
         <div className="text-center">
-          <Image
-            src="/clarity_home-line.svg"
-            height={48}
-            width={48}
-            className="svg-stroke"
-          />
-        </div>
+              <Image
+                src="/clarity_home-line.svg"
+                height={48}
+                width={48}
+                className="svg-stroke"
+              />
+            </div>
         <h2 className="text-center w-60 mx-auto font-light leading-6  font-mono text-md">
           Vibrant and sustainably-considered, pieces for the home.
         </h2>
         <div className="text-center mt-5">
-          <Image
-            src="/radix-icons_mix.svg"
-            height={48}
-            width={48}
-            className="svg-stroke"
-          />
-        </div>
+              <Image
+                src="/radix-icons_mix.svg"
+                height={48}
+                width={48}
+                className="svg-stroke"
+              />
+            </div>
         <h2 className="text-center w-60 mx-auto font-light leading-6 mb-5 font-mono text-md">
           Functional designs to mix and match.
         </h2>
         <div className="text-center">
-          <Image
-            src="/bi_box-seam.svg"
-            height={48}
-            width={48}
-            className="svg-stroke"
-          />
-        </div>
+              <Image
+                src="/bi_box-seam.svg"
+                height={48}
+                width={48}
+                className="svg-stroke"
+              />
+            </div>
 
         <h2 className="text-center w-60 mx-auto font-light leading-6  font-mono text-md">
           Considered materials, low-waste packaging.

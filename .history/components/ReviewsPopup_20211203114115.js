@@ -36,7 +36,7 @@ export default function ReviewsPopup({
           </Popover.Button>
 
           {/* <Popover.Overlay className="absolute inset-0 z-50 bg-gray-500 bg-opacity-75 transition-opacity " /> */}
-          <Popover.Panel static className="absolute z-50">
+          <Popover.Panel static className="absolute ">
             <Transition.Child
               as={Fragment}
               unmount={false}
@@ -48,7 +48,7 @@ export default function ReviewsPopup({
               leaveTo="-translate-x-full"
             >
               <div className="bg-deepoe-cream w-full h-screen md:max-w-md md:border-r border-deepoe_default-black    z-50 fixed inset-y-0 top-0 left-0 right-0 bottom-0 max-w-full  overflow-y-auto">
-                <div className="z-50 fixed w-full h-16 bg-deepoe-cream  text-right">
+                <div className="z-0 fixed w-full h-16 bg-deepoe-cream  text-right">
                   <button
                     type="button"
                     className=" font-extralight text-lg mt-5 pt-0.5 mr-9 font-mono "

@@ -10,6 +10,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
     <Transition.Root
       show={parentState}
       as={Fragment}
+      className=" font-public-sans-normal"
     >
       <Dialog
         //   initialFocus={cancelButtonRef}
@@ -29,7 +30,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Dialog.Overlay className="absolute inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+               <Dialog.Overlay className="absolute inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
           </Transition.Child>
 
           <div className="fixed inset-y-0 top-16 left-0 pr-0 max-w-full flex">
@@ -42,7 +43,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
               leaveFrom="translate-x-0"
               leaveTo="-translate-x-full"
             >
-              <div className="w-screen max-w-xs font-mono md:max-w-xs2 lg:max-w-md xl:max-w-lg">
+              <div className="w-screen max-w-xs md:max-w-xs2 lg:max-w-md xl:max-w-lg">
                 <div className="h-full min-h-screen flex flex-col bg-deepoe-cream shadow-xl overflow-y-hidden">
                   <Disclosure>
                     <Disclosure.Button className=" focus:outline-none active:outline-none active:no-underline">

@@ -21,7 +21,7 @@ export default function ReviewsPopup({
   }, []);
 
   return (
-    <Popover className="" as={Fragment}>
+    <Popover className="z-50" as={Fragment}>
       {({ parentReviewState }) => (
         <>
           <Popover.Button

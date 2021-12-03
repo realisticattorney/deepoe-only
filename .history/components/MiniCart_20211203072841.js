@@ -75,8 +75,12 @@ export default function MiniCart({ cart }) {
     console.log('atobCart', atobCart);
     try {
       const response = await cartDiscountCodesUpdate({
+        // variables: {
+        // input: {
         cartId:
           'Z2lkOi8vc2hvcGlmeS9DaGVja291dC8wZWUxNDU1NGM1MTExYmY1Y2M1OGNmYjgwMzliMTk5Nj9rZXk9YjJjZDlmM2Q1YmNiMjIxMjlhOGM0NDI3YjM5Mzk2NmM=',
+        // },
+        // },
       });
       console.log('response', response);
       if (response.data) {

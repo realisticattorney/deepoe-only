@@ -69,14 +69,14 @@ export default function MiniCart({ cart }) {
   async function onSubmitForm(values) {
     // const { promocode } = values;
     // console.log(values);
-    const atobCart = atob(
-      'Z2lkOi8vc2hvcGlmeS9DaGVja291dC8wZWUxNDU1NGM1MTExYmY1Y2M1OGNmYjgwMzliMTk5Nj9rZXk9YjJjZDlmM2Q1YmNiMjIxMjlhOGM0NDI3YjM5Mzk2NmM='
-    );
-    console.log('atobCart', atobCart);
+    const atobCart = atob()
     try {
       const response = await cartDiscountCodesUpdate({
-        cartId:
-          'Z2lkOi8vc2hvcGlmeS9DaGVja291dC8wZWUxNDU1NGM1MTExYmY1Y2M1OGNmYjgwMzliMTk5Nj9rZXk9YjJjZDlmM2Q1YmNiMjIxMjlhOGM0NDI3YjM5Mzk2NmM=',
+        // variables: {
+          // input: {
+            ID: 'Z2lkOi8vc2hvcGlmeS9DaGVja291dC8wZWUxNDU1NGM1MTExYmY1Y2M1OGNmYjgwMzliMTk5Nj9rZXk9YjJjZDlmM2Q1YmNiMjIxMjlhOGM0NDI3YjM5Mzk2NmM=',
+          // },
+        // },
       });
       console.log('response', response);
       if (response.data) {

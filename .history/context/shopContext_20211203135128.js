@@ -48,7 +48,7 @@ export default function ShopProvider({ children }) {
   async function addToCart(newItem) {
     setCartOpen(true); //annoying
 
-    // console.log('addToCart', newItem);
+    console.log('addToCart', newItem);
     if (cart.length === 0) {
       setCart([newItem]);
       const checkout = await createCheckout(

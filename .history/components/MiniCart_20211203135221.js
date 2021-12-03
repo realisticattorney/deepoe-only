@@ -30,20 +30,20 @@ export default function MiniCart({ cart }) {
 
   const [isButtonDisabled, setButtonDisabled] = useState(false);
 
-  // const CART_DISCOUNT_CODE_UPDATE = gql`
-  //   mutation cartDiscountCodesUpdate($cartId: ID!) {
-  //     cartDiscountCodesUpdate(cartId: $cartId) {
-  //       cart {
-  //         id
-  //       }
-  //       userErrors {
-  //         code
-  //         field
-  //         message
-  //       }
-  //     }
-  //   }
-  // `;
+  const CART_DISCOUNT_CODE_UPDATE = gql`
+    mutation cartDiscountCodesUpdate($cartId: ID!) {
+      cartDiscountCodesUpdate(cartId: $cartId) {
+        cart {
+          id
+        }
+        userErrors {
+          code
+          field
+          message
+        }
+      }
+    }
+  `;
 
   // useEffect(() => {
   //   // Perform localStorage action
@@ -52,47 +52,47 @@ export default function MiniCart({ cart }) {
   //   const checkoutIdJsonId = checkoutIdJson[1].id;
   // }, []);
 
-  // const toast = useToast();
-  // const {
-  //   register,
-  //   handleSubmit,
-  //   formState: { errors },
-  //   reset,
-  // } = useForm();
-  // const router = useRouter();
+  const toast = useToast();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm();
+  const router = useRouter();
 
-  // const [cartDiscountCodesUpdate, { data, loading, error }] = useMutation(
-  //   CART_DISCOUNT_CODE_UPDATE
-  // );
+  const [cartDiscountCodesUpdate, { data, loading, error }] = useMutation(
+    CART_DISCOUNT_CODE_UPDATE
+  );
 
-  // async function onSubmitForm(values) {
-  //   // const { promocode } = values;
-  //   // console.log(values);
-  //   const atobCart = atob(
-  //     'Z2lkOi8vc2hvcGlmeS9DaGVja291dC8wZWUxNDU1NGM1MTExYmY1Y2M1OGNmYjgwMzliMTk5Nj9rZXk9YjJjZDlmM2Q1YmNiMjIxMjlhOGM0NDI3YjM5Mzk2NmM='
-  //   );
-  //   console.log('atobCart', atobCart);
-  //   try {
-  //     const response = await cartDiscountCodesUpdate({
-  //       cartId:
-  //         'Z2lkOi8vc2hvcGlmeS9DaGVja291dC8wZWUxNDU1NGM1MTExYmY1Y2M1OGNmYjgwMzliMTk5Nj9rZXk9YjJjZDlmM2Q1YmNiMjIxMjlhOGM0NDI3YjM5Mzk2NmM=',
-  //     });
-  //     console.log('response', response);
-  //     if (response.data) {
-  //       console.log('data', response.data);
-  //       toast('success', 'Check your email box to confirm your account');
+  async function onSubmitForm(values) {
+    // const { promocode } = values;
+    // console.log(values);
+    const atobCart = atob(
+      'Z2lkOi8vc2hvcGlmeS9DaGVja291dC8wZWUxNDU1NGM1MTExYmY1Y2M1OGNmYjgwMzliMTk5Nj9rZXk9YjJjZDlmM2Q1YmNiMjIxMjlhOGM0NDI3YjM5Mzk2NmM='
+    );
+    console.log('atobCart', atobCart);
+    try {
+      const response = await cartDiscountCodesUpdate({
+        cartId:
+          'Z2lkOi8vc2hvcGlmeS9DaGVja291dC8wZWUxNDU1NGM1MTExYmY1Y2M1OGNmYjgwMzliMTk5Nj9rZXk9YjJjZDlmM2Q1YmNiMjIxMjlhOGM0NDI3YjM5Mzk2NmM=',
+      });
+      console.log('response', response);
+      if (response.data) {
+        console.log('data', response.data);
+        toast('success', 'Check your email box to confirm your account');
 
-  //       reset();
-  //     } else if (response.data) {
-  //       error = response.data;
-  //       console.log('eerr', response.data);
-  //       toast('error', `${response.data}`);
-  //     }
-  //   } catch (err) {
-  //     console.log('err', err);
-  //     toast('error', `${err}`);
-  //   }
-  // }
+        reset();
+      } else if (response.data) {
+        error = response.data;
+        console.log('eerr', response.data);
+        toast('error', `${response.data}`);
+      }
+    } catch (err) {
+      console.log('err', err);
+      toast('error', `${err}`);
+    }
+  }
 
   return (
     <Transition.Root show={cartOpen} as={Fragment}>
@@ -259,7 +259,7 @@ export default function MiniCart({ cart }) {
                           <p>Shipping</p>
                           <p>Free</p>
                         </div>
-                        {/* <div className="flex  underline">
+                        <div className="flex  underline">
                           <form
                             onSubmit={handleSubmit(onSubmitForm)}
                             className="flex-grow w-full relative mb-0.5"
@@ -304,7 +304,7 @@ export default function MiniCart({ cart }) {
                               Apply
                             </button>
                           </form>
-                        </div> */}
+                        </div>
                         <div className="flex justify-between font-semibold ">
                           <p>Subtotal</p>
                           <p>{formatter.format(cartTotal)}</p>

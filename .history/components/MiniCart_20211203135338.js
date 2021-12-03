@@ -30,20 +30,20 @@ export default function MiniCart({ cart }) {
 
   const [isButtonDisabled, setButtonDisabled] = useState(false);
 
-  // const CART_DISCOUNT_CODE_UPDATE = gql`
-  //   mutation cartDiscountCodesUpdate($cartId: ID!) {
-  //     cartDiscountCodesUpdate(cartId: $cartId) {
-  //       cart {
-  //         id
-  //       }
-  //       userErrors {
-  //         code
-  //         field
-  //         message
-  //       }
-  //     }
-  //   }
-  // `;
+  const CART_DISCOUNT_CODE_UPDATE = gql`
+    mutation cartDiscountCodesUpdate($cartId: ID!) {
+      cartDiscountCodesUpdate(cartId: $cartId) {
+        cart {
+          id
+        }
+        userErrors {
+          code
+          field
+          message
+        }
+      }
+    }
+  `;
 
   // useEffect(() => {
   //   // Perform localStorage action
@@ -259,7 +259,7 @@ export default function MiniCart({ cart }) {
                           <p>Shipping</p>
                           <p>Free</p>
                         </div>
-                        {/* <div className="flex  underline">
+                        <div className="flex  underline">
                           <form
                             onSubmit={handleSubmit(onSubmitForm)}
                             className="flex-grow w-full relative mb-0.5"
@@ -304,7 +304,7 @@ export default function MiniCart({ cart }) {
                               Apply
                             </button>
                           </form>
-                        </div> */}
+                        </div>
                         <div className="flex justify-between font-semibold ">
                           <p>Subtotal</p>
                           <p>{formatter.format(cartTotal)}</p>

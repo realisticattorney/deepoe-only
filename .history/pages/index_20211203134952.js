@@ -8,6 +8,7 @@ import { useState } from 'react';
 export default function Home({ products, carouselProducts }) {
 
   const [selectedItem, setSelectedItem] = useState(9);
+  console.log(selectedItem);
   return (
     <div className="">
       <Head>

@@ -10,6 +10,7 @@ const HomeCarousel = ({ carouselProducts, selectedItem, setSelectedItem }) => {
   useEffect(() => {
     setSelectedItem(10);
   }, []);
+  console.log('selectedItem', selectedItem);
   useEffect(() => {
     setSelectedItem(selectedItem);
   }, [selectedItem]);
@@ -45,12 +46,14 @@ const HomeCarousel = ({ carouselProducts, selectedItem, setSelectedItem }) => {
     }
   }, []);
 
+  console.log('windowSize', windowSize);
   const [slidePercentage, setSlidePercentage] = useState(
     (226 / windowSize.width) * 100
   );
+  console.log('slidePercentage', slidePercentage);
 
   useEffect(() => {
-    if (selectedItem === 9) {
+    if(selectedItem === 9) {
       setSelectedItem(10);
     }
     if (windowSize.width) {
@@ -64,6 +67,7 @@ const HomeCarousel = ({ carouselProducts, selectedItem, setSelectedItem }) => {
     <div className="relative z-0 mt-4  mb-10 classes.my__carousel_main">
       <Carousel
         infiniteLoop
+        // autoPlay={true}
         showStatus={false}
         showThumbs={false}
         showIndicators={false}

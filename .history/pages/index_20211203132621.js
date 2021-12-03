@@ -6,8 +6,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 export default function Home({ products, carouselProducts }) {
+  console.log('proooooooducts', products.products.edges);
+  console.log("aaaaaa'", carouselProducts);
 
   const [selectedItem, setSelectedItem] = useState(9);
+  console.log(selectedItem);
   return (
     <div className="">
       <Head>
@@ -38,7 +41,7 @@ export default function Home({ products, carouselProducts }) {
             </p>
           </a>
         </div>
-        <div className="px-6 my-6 w-full relative md:w-150 md:mx-auto">
+        <div className="px-6 my-6 w-full relative md:px-32">
           <Image
             src="/deepoeHome3.jpg"
             layout="responsive"
@@ -176,6 +179,7 @@ export async function getStaticProps() {
       };
     }
   });
+  console.log('AAAAAAAAAAAAAAAAAAAA', carouselProducts);
 
   return {
     props: { products, carouselProducts },

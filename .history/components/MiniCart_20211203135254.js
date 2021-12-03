@@ -259,7 +259,7 @@ export default function MiniCart({ cart }) {
                           <p>Shipping</p>
                           <p>Free</p>
                         </div>
-                        {/* <div className="flex  underline">
+                        <div className="flex  underline">
                           <form
                             onSubmit={handleSubmit(onSubmitForm)}
                             className="flex-grow w-full relative mb-0.5"
@@ -304,7 +304,7 @@ export default function MiniCart({ cart }) {
                               Apply
                             </button>
                           </form>
-                        </div> */}
+                        </div>
                         <div className="flex justify-between font-semibold ">
                           <p>Subtotal</p>
                           <p>{formatter.format(cartTotal)}</p>

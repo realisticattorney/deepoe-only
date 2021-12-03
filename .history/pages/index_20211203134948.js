@@ -6,8 +6,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 export default function Home({ products, carouselProducts }) {
+  console.log('proooooooducts', products.products.edges);
+  console.log("aaaaaa'", carouselProducts);
 
   const [selectedItem, setSelectedItem] = useState(9);
+  console.log(selectedItem);
   return (
     <div className="">
       <Head>

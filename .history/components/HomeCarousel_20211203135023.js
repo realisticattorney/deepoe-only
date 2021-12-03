@@ -10,6 +10,7 @@ const HomeCarousel = ({ carouselProducts, selectedItem, setSelectedItem }) => {
   useEffect(() => {
     setSelectedItem(10);
   }, []);
+  console.log('selectedItem', selectedItem);
   useEffect(() => {
     setSelectedItem(selectedItem);
   }, [selectedItem]);
@@ -64,6 +65,7 @@ const HomeCarousel = ({ carouselProducts, selectedItem, setSelectedItem }) => {
     <div className="relative z-0 mt-4  mb-10 classes.my__carousel_main">
       <Carousel
         infiniteLoop
+        // autoPlay={true}
         showStatus={false}
         showThumbs={false}
         showIndicators={false}

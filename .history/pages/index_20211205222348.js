@@ -49,7 +49,7 @@ export default function Home({ products, carouselProducts }) {
           />
 
           <button
-            className="absolute top-2/5 lg:top-3/7 left-1/13 "
+            className="absolute top-2/5 lg:3/7 left-1/13 "
             onClick={() => {
               if (selectedItem % 3 === 0 || selectedItem === 0) {
                 setSelectedItem(selectedItem + 1);
@@ -65,7 +65,7 @@ export default function Home({ products, carouselProducts }) {
             </div>
           </button>
           <button
-            className="absolute top-1/9 md:top-1/11 left-3/7 "
+            className="absolute top-1/9 left-3/7 "
             onClick={() => {
               if (selectedItem % 3 === 0 || selectedItem === 0) {
                 setSelectedItem(selectedItem - 1);

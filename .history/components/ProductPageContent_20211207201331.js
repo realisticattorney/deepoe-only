@@ -103,8 +103,8 @@ const ProductPageContent = ({ collection, product }) => {
         <div className="font-sans italic font-medium mx-auto text-3xl mb-5 mt-1 tracking-tighter px-6">
           what we offer...
         </div>
-        <div className="lg:flex lg:items-center lg:justify-around lg:px-40">
-        <div className="lg:flex-col">
+        <div className="lg:flex">
+        <div>
         <div className="text-center">
           <Image
             src="/clarity_home-line.svg"
@@ -117,7 +117,6 @@ const ProductPageContent = ({ collection, product }) => {
           Vibrant and sustainably-considered, pieces for the home.
         </h2>
         </div>
-        <div className="lg:flex-col">
         <div className="text-center mt-5">
           <Image
             src="/radix-icons_mix.svg"
@@ -130,7 +129,6 @@ const ProductPageContent = ({ collection, product }) => {
           Functional designs to mix and match.
         </h2>
         </div>
-        <div className="lg:flex-col">
         <div className="text-center">
           <Image
             src="/bi_box-seam.svg"
@@ -143,7 +141,7 @@ const ProductPageContent = ({ collection, product }) => {
         <h2 className="text-center w-60 mx-auto font-light leading-6  font-mono text-md">
           Considered materials, low-waste packaging.
         </h2>
-</div></div>
+</div>
         <div className="pt-2.5 self-center">
           <Link href={`/deepoe/sustainability`}>
             <button
@@ -153,7 +151,7 @@ const ProductPageContent = ({ collection, product }) => {
               Learn More
             </button>
           </Link>
-        </div>
+        </div></div>
       </div>
     </div>
   );

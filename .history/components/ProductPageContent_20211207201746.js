@@ -103,7 +103,7 @@ const ProductPageContent = ({ collection, product }) => {
         <div className="font-sans italic font-medium mx-auto text-3xl mb-5 mt-1 tracking-tighter px-6">
           what we offer...
         </div>
-        <div className="lg:flex lg:items-center lg:justify-around lg:px-40">
+        <div className="lg:flex lg:items-center lg:justify-around lg:w-5xl lg:mx-auto">
         <div className="lg:flex-col">
         <div className="text-center">
           <Image

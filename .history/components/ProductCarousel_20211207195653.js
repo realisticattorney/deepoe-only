@@ -39,7 +39,7 @@ const Banner = ({ product, selectedVariant }) => {
       >
         {imageSrc.map((i) => (
           <div
-            className="w-full h-110 lg:h-133 xxl:h-157 from-gray-100  bottom-0 relative"
+            className="w-full h-110 lg:h-133 xxl:h-15 from-gray-100  bottom-0 relative"
             key={i}
           >
             <Image

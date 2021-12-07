@@ -17,7 +17,7 @@ const ProductCard = ({ collection, product }) => {
       rel="noreferrer"
     >
     {/* <Link href={`/collections/${collection}/${handle}`}> */}
-      <div className="group px-2 sm:max-w-md sm:mx-auto">
+      <div className="group px-2 flex">
         <div className=" overflow-hidden">
           <div className="relative h-110">
             <Image

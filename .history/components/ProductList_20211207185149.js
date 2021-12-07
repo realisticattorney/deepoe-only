@@ -18,7 +18,7 @@ const ProductList = ({ collection, products }) => {
         </h2>
       </div>
 
-      <div className="px-8 pt-6 xl:px-4 ">
+      <div className="px-8 pt-6 xl:px-6 ">
         <div className="grid grid-cols-1 gap-y-10 gap-x-6 lg:grid-cols-2 xxl:grid-cols-3 ">
           {products.products.edges.map((product) => (
             <ProductCard

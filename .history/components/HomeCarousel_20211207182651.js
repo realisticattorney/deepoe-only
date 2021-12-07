@@ -61,7 +61,7 @@ const HomeCarousel = ({ carouselProducts, selectedItem, setSelectedItem }) => {
   }, [windowSize]);
 
   return (
-    <div className="relative z-0 mt-4  mb-10 classes.my__carousel_main lg:max-w-screen-lg">
+    <div className="relative z-0 mt-4  mb-10 classes.my__carousel_main lg:max">
       <Carousel
         infiniteLoop
         showStatus={false}

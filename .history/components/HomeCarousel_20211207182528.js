@@ -61,7 +61,7 @@ const HomeCarousel = ({ carouselProducts, selectedItem, setSelectedItem }) => {
   }, [windowSize]);
 
   return (
-    <div className="relative z-0 mt-4  mb-10 classes.my__carousel_main lg:max-w-screen-lg">
+    <div className="relative z-0 mt-4  mb-10 classes.my__carousel_main">
       <Carousel
         infiniteLoop
         showStatus={false}
@@ -80,7 +80,7 @@ const HomeCarousel = ({ carouselProducts, selectedItem, setSelectedItem }) => {
       >
         {carouselLong.map((i) => (
           <div
-            className="w-53 h-66 from-gray-100  ml-2 bottom-0 relative"
+            className="w-53 mx-20 h-66 from-gray-100  ml-2 bottom-0 relative"
             key={i.number}
           >
             <Image

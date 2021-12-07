@@ -101,7 +101,7 @@ const HomeMain = ({ products, carouselProducts }) => {
       <h2 className="text-center w-64 mx-auto font-light font-mono text-xl">
         We create and curate designs for your home and our shared one
       </h2>
-<div className="lg:grid lg:grid-cols-2 lg:max-w-screen-lg xl:mx-auto">
+<div className="lg:grid lg:grid-cols-2 lg:max-w-screen-xl">
       <div className="px-6 my-6 mt-10">
         <div className="w-full  overflow-hidden">
           <div className="relative h-110">

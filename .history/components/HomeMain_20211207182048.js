@@ -101,7 +101,7 @@ const HomeMain = ({ products, carouselProducts }) => {
       <h2 className="text-center w-64 mx-auto font-light font-mono text-xl">
         We create and curate designs for your home and our shared one
       </h2>
-<div className="lg:grid lg:grid-cols-2 lg:max-w-screen-lg xl:mx-auto">
+<div className="lg: flex-col fl">
       <div className="px-6 my-6 mt-10">
         <div className="w-full  overflow-hidden">
           <div className="relative h-110">
@@ -115,7 +115,7 @@ const HomeMain = ({ products, carouselProducts }) => {
         </div>
       </div>
       <div className=" mx-6 mb-12">
-        <h2 className="text-center w-full font-light leading-6 lg:text-left lg:mt-12  font-mono text-lg">
+        <h2 className="text-center w-full font-light leading-6  font-mono text-lg">
           At deepoe, we strive to create an open and honest experience for our
           customers. We recognize the challenges surrounding sustainability and
           are working daily to reduce our footprint.

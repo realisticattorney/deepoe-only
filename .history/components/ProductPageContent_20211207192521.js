@@ -10,24 +10,24 @@ const ProductPageContent = ({ collection, product }) => {
   const atobURL = atob(product.id);
   const atobId = atobURL.split('Product/')[1];
 
-  const stageCanvasRef = useRef(null);
-  const [disable, setDisable] = useState(false);
-  const [parentReviewState, setParentReviewState] = useState(false);
+  // const stageCanvasRef = useRef(null);
+  // const [disable, setDisable] = useState(false);
+  // const [parentReviewState, setParentReviewState] = useState(false);
 
-  const wrapperSetParentReviewState = useCallback(
-    (val) => {
-      setParentReviewState(val);
-    },
-    [setParentReviewState]
-  );
+  // const wrapperSetParentReviewState = useCallback(
+  //   (val) => {
+  //     setParentReviewState(val);
+  //   },
+  //   [setParentReviewState]
+  // );
 
-  useEffect(() => {
-    if (parentReviewState) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
-  }, [parentReviewState]);
+  // useEffect(() => {
+  //   if (parentReviewState) {
+  //     document.body.style.overflow = 'hidden';
+  //   } else {
+  //     document.body.style.overflow = 'unset';
+  //   }
+  // }, [parentReviewState]);
 
   // useEffect(() => {
   //   const timer = setTimeout(() => {
@@ -78,7 +78,10 @@ const ProductPageContent = ({ collection, product }) => {
         <ProductForm
           product={product}
           collection={collection}
-   
+          parentReviewState={parentReviewState}
+          disable={disable}
+          intro={intro}
+          wrapperSetParentReviewState={wrapperSetParentReviewState}
         />
       </div>
       <div className={`${disable ? 'my-10' : ''}`}></div>

@@ -29,20 +29,20 @@ const ProductPageContent = ({ collection, product }) => {
     }
   }, [parentReviewState]);
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     console.log('This will run after 1 second!', stageCanvasRef);
-  //     let inner = stageCanvasRef.current.innerText
-  //       ? stageCanvasRef.current.innerText
-  //       : 'empty';
-  //     console.log(inner);
-  //     let lalala = inner.indexOf('Currently, there');
-  //     if (lalala > -1) {
-  //       setDisable(true);
-  //     }
-  //   }, 300);
-  //   return () => clearTimeout(timer);
-  // }, []);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      console.log('This will run after 1 second!', stageCanvasRef);
+      let inner = stageCanvasRef.current.innerText
+        ? stageCanvasRef.current.innerText
+        : 'empty';
+      console.log(inner);
+      let lalala = inner.indexOf('Currently, there');
+      if (lalala > -1) {
+        setDisable(true);
+      }
+    }, 300);
+    return () => clearTimeout(timer);
+  }, []);
 
   const [show, setShow] = useState(false);
 
@@ -78,7 +78,10 @@ const ProductPageContent = ({ collection, product }) => {
         <ProductForm
           product={product}
           collection={collection}
-   
+          parentReviewState={parentReviewState}
+          disable={disable}
+          intro={intro}
+          wrapperSetParentReviewState={wrapperSetParentReviewState}
         />
       </div>
       <div className={`${disable ? 'my-10' : ''}`}></div>

@@ -121,7 +121,7 @@ const ProductForm = ({ product, collection  }) => {
   }
 
   return (
-    <div className="flex-col flex w-full pt-1 font-public-sans-normal lg:grid lg:grid-cols-2 lg:grid-flow-col-dense">
+    <div className="flex-col flex w-full pt-1 font-public-sans-normal lg:grid lg:grid-cols-2 lg:">
       <div className="relative h-111 w-full lg:col-start-1 lg:col-end-1">
         <ProductCarousel
           product={product}

@@ -29,20 +29,7 @@ const ProductForm = ({ product, collection  }) => {
     }
   }, [parentReviewState]);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      console.log('This will run after 1 second!', stageCanvasRef);
-      let inner = stageCanvasRef.current.innerText
-        ? stageCanvasRef.current.innerText
-        : 'empty';
-      console.log(inner);
-      let lalala = inner.indexOf('Currently, there');
-      if (lalala > -1) {
-        setDisable(true);
-      }
-    }, 300);
-    return () => clearTimeout(timer);
-  }, []);
+
 
   // const [show, setShow] = useState(false);
 

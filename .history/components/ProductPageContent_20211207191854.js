@@ -29,20 +29,20 @@ const ProductPageContent = ({ collection, product }) => {
     }
   }, [parentReviewState]);
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     console.log('This will run after 1 second!', stageCanvasRef);
-  //     let inner = stageCanvasRef.current.innerText
-  //       ? stageCanvasRef.current.innerText
-  //       : 'empty';
-  //     console.log(inner);
-  //     let lalala = inner.indexOf('Currently, there');
-  //     if (lalala > -1) {
-  //       setDisable(true);
-  //     }
-  //   }, 300);
-  //   return () => clearTimeout(timer);
-  // }, []);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      console.log('This will run after 1 second!', stageCanvasRef);
+      let inner = stageCanvasRef.current.innerText
+        ? stageCanvasRef.current.innerText
+        : 'empty';
+      console.log(inner);
+      let lalala = inner.indexOf('Currently, there');
+      if (lalala > -1) {
+        setDisable(true);
+      }
+    }, 300);
+    return () => clearTimeout(timer);
+  }, []);
 
   const [show, setShow] = useState(false);
 
@@ -56,7 +56,9 @@ const ProductPageContent = ({ collection, product }) => {
   const itemsSpecs2 = itemsSpecs.split('**');
 
   return (
-    <div className={`sm:max-w-2xl mx-auto lg:max-w-xxl lg:grid lg:grid-cols-2`}>
+    <div
+      className={`sm:max-w-2xl mx-auto lg:max-w-xxl lg:grid lg:grid-cols-2`}
+    >
       <div className="px-3.5 pb-0  z-0 lg:col-span-1">
         <a
           href={`https://deepoe-only.vercel.app/collections/${collection}/`}
@@ -75,11 +77,9 @@ const ProductPageContent = ({ collection, product }) => {
         className={`flex flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 px-2 mx-auto lg:col-span-2 `}
       >
         <div className="w-full max-w-md  overflow-hidden"></div>
-        <ProductForm
-          product={product}
-          collection={collection}
-   
-        />
+        <ProductForm product={product} collection={collection} />
+
+    
       </div>
       <div className={`${disable ? 'my-10' : ''}`}></div>
       <div className="flex flex-col w-full  font-mono">

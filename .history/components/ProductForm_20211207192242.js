@@ -1,4 +1,4 @@
-import { useState, useContext, useRef, useCallback, useEffect } from 'react';
+import { useState, useContext } from 'react';
 import { formatter } from '../utils/helpers';
 import ProductOptions from './ProductOptions';
 import { CartContext } from '../context/shopContext';
@@ -8,7 +8,7 @@ import { ExclamationCircleIcon, TruckIcon } from '@heroicons/react/outline';
 import atob from 'atob';
 import ReviewsPopup from './ReviewsPopup';
 
-const ProductForm = ({ product, collection  }) => {
+const ProductForm = ({ product, collection, intro,  }) => {
 
   const stageCanvasRef = useRef(null);
   const [disable, setDisable] = useState(false);
@@ -44,7 +44,7 @@ const ProductForm = ({ product, collection  }) => {
     return () => clearTimeout(timer);
   }, []);
 
-  // const [show, setShow] = useState(false);
+  const [show, setShow] = useState(false);
 
   // const handleShow = () => {
   //   show ? setShow(false) : setShow(true);
@@ -121,7 +121,7 @@ const ProductForm = ({ product, collection  }) => {
   }
 
   return (
-    <div className="flex-col flex w-full pt-1 font-public-sans-normal lg:grid lg:grid-cols-2 lg:grid-flow-col-dense">
+    <div className="flex-col flex w-full pt-1 font-public-sans-normal lg:grid lg:grid-cols-2">
       <div className="relative h-111 w-full lg:col-start-1 lg:col-end-1">
         <ProductCarousel
           product={product}
@@ -129,7 +129,7 @@ const ProductForm = ({ product, collection  }) => {
           key={selectedVariant.id}
         />
       </div>
-      <div className="lg:col-start-2 ">
+      <div className="lg:col-start-2 lg:col-end-2">
         <h2 className="text-2xl font-mono font-extralight -mt-5 mb-1">
           {product.title}
         </h2>
@@ -204,10 +204,10 @@ const ProductForm = ({ product, collection  }) => {
         </div>
       </div>
 
-      <div className="font-mono text-sm font-extralight lg:col-end-2 lg:col-start-2">
+      <div className="font-mono text-sm font-extralight">
           <p>{intro}</p>
         </div>
-        <div className="flex flex-col w-full border-t pt-2 border-deepoe-chocolate lg:col-end-2 lg:col-start-2">
+        <div className="flex flex-col w-full border-t pt-2 border-deepoe-chocolate">
           <button className="group focus:outline-none">
             <div className="flex justify-between pb-2 pt-0.5 text-lg font-extralight items-center text-left text-deepoe_default-black focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-deepoe_default-black group-focus:font-medium">
               <span className="truncate font-mono font-extralight text-lg2">

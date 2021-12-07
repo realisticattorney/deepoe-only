@@ -82,19 +82,20 @@ const ProductPageContent = ({ collection, product }) => {
         />
       </div>
       <div className={`${disable ? 'my-10' : ''}`}></div>
-      <div className="flex flex-col w-full  font-mono">
+      <div className="flex flex-col w-full lg:col-span-2 font-mono">
         {/* <div className="relative h-96">
           <Image src="/brunch.jpg" layout="fill" objectFit="cover" />
         </div> */}
 
-        <div className="px-6 my-6 mt-5">
+        <div className="px-6 my-6 mt-5 lg:mt-12 xxl:mt-32 lg:px-16 xxl:px-24">
           <div className="w-full">
-            <div className="relative h-110 ">
+            <div className="relative h-110 lg:h-66 xxl:h-80">
               <Image
-                src="/peopleFood.png"
+                src="/peopleFood.jpg"
                 layout="fill"
                 objectFit="cover"
-                objectPosition="top"
+                objectPosition="center"
+                quality={100}
               />
             </div>
           </div>

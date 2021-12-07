@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
         src="//staticw2.yotpo.com/SpF8vLr2RDGVGtgQstgtn3wGbb1k5PpFKS4GRrhD/widget.js"
       ></Script>
       <Nav />
-      <main className="h-full flex-grow overflow-scroll xl:max-w-screen-xl xl:mx-auto xl:overflow-y-auto">{children}</main>
+      <main className="h-full flex-grow overflow-scroll xl:max-w-screen-xl xl:mx-auto xl:s">{children}</main>
       {/* {router.pathname !== '/' && ( */}
       <footer className=" text-white h-60 text-sm font-extralight font-mono grid col-span-3 grid-cols-3 grid-rows-2 p-5 bg-deepoe-chocolate">
         <div className="inline-flex col-span-1 row-span-1 ">

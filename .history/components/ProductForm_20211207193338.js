@@ -121,7 +121,7 @@ const ProductForm = ({ product, collection  }) => {
   }
 
   return (
-    <div className="flex-col flex w-full pt-1 font-public-sans-normal lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-x-10 ">
+    <div className="flex-col flex w-full pt-1 font-public-sans-normal lg:grid lg:grid-cols-2 lg:grid-flow-col-dense">
       <div className="relative h-111 w-full lg:col-start-1 lg:col-end-1">
         <ProductCarousel
           product={product}
@@ -129,7 +129,7 @@ const ProductForm = ({ product, collection  }) => {
           key={selectedVariant.id}
         />
       </div>
-      <div className="lg:col-start-2 lg:col-end-2 lg:mt-8">
+      <div className="lg:col-start-2 lg:col-end-2">
         <h2 className="text-2xl font-mono font-extralight -mt-5 mb-1">
           {product.title}
         </h2>
@@ -202,9 +202,9 @@ const ProductForm = ({ product, collection  }) => {
               : 'Add to Cart'}
           </button>
         </div>
-      
+      </div>
 
-      <div className="font-mono text-sm font-extralight ">
+      <div className="font-mono text-sm font-extralight lg:col-end-2 lg:col-start-2">
           <p>{intro}</p>
         </div>
         <div className="flex flex-col w-full border-t pt-2 border-deepoe-chocolate lg:col-end-2 lg:col-start-2">
@@ -294,7 +294,7 @@ const ProductForm = ({ product, collection  }) => {
                 // cancelButtonRef={cancelButtonRef}
               />
             </div>
-          </div></div>
+          </div>
         </div>
     </div>
   );

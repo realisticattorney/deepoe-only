@@ -129,7 +129,7 @@ const ProductForm = ({ product, collection  }) => {
           key={selectedVariant.id}
         />
       </div>
-      <div className="lg:col-start-2 lg:col-end-2 lg:mt-8">
+      <div className="lg:col-start-2 lg:col-end-2 lg:mt-10">
         <h2 className="text-2xl font-mono font-extralight -mt-5 mb-1">
           {product.title}
         </h2>

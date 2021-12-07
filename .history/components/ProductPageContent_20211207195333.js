@@ -56,8 +56,8 @@ const ProductPageContent = ({ collection, product }) => {
   const itemsSpecs2 = itemsSpecs.split('**');
 
   return (
-    <div className={`sm:max-w-2xl mx-auto lg:max-w-xxl lg:grid lg:grid-cols-2 xxl:px-6`}>
-      <div className="px-3.5  pb-0  z-0 lg:col-span-1">
+    <div className={`sm:max-w-2xl mx-auto lg:max-w-xxl lg:grid lg:grid-cols-2`}>
+      <div className="px-3.5 lg:px-0 pb-0  z-0 lg:col-span-1">
         <a
           href={`https://deepoe-only.vercel.app/collections/${collection}/`}
           rel="noreferrer"

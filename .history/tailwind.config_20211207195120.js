@@ -52,7 +52,7 @@ module.exports = {
         65: '16.25rem',
         66: '16.75rem',
         111: '33.67rem',
-        133: '42.34rem',
+        133: '42.5rem',
       },
       screens: {
         xxl: '1440px',

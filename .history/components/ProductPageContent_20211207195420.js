@@ -56,7 +56,7 @@ const ProductPageContent = ({ collection, product }) => {
   const itemsSpecs2 = itemsSpecs.split('**');
 
   return (
-    <div className={`sm:max-w-2xl mx-auto lg:max-w-xxl lg:grid lg:grid-cols-2 xxl:px-6`}>
+    <div className={`sm:max-w-2xl mx-auto lg:max-w-xxl lg:grid lg:grid-cols-2`}>
       <div className="px-3.5  pb-0  z-0 lg:col-span-1">
         <a
           href={`https://deepoe-only.vercel.app/collections/${collection}/`}
@@ -72,7 +72,7 @@ const ProductPageContent = ({ collection, product }) => {
       </div>
 
       <div
-        className={`flex flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 lg:w-full lg:px-6 lg:max-w-xxl px-2 mx-auto lg:col-span-2 `}
+        className={`flex flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 lg:w-full lg:px-6 lg:max-w-xxl px-2 mx-auto lg:col-span-2 xxl:px-10`}
       >
         <div className="w-full max-w-md  overflow-hidden"></div>
         <ProductForm

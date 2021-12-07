@@ -100,7 +100,7 @@ const ProductPageContent = ({ collection, product }) => {
             </div>
           </div>
         </div>
-        <div className="font-sans italic font-medium mx-auto text-3xl mb-5 mt-1 tracking-tighter px-6 lg:text-4xl lg:mt-4 lg:mb-9">
+        <div className="font-sans italic font-medium mx-auto text-3xl mb-5 mt-1 tracking-tighter px-6 lg:text-4xl lg:mt-5">
           what we offer...
         </div>
         <div className="lg:flex lg:items-center lg:justify-around lg:px-40">
@@ -148,7 +148,7 @@ const ProductPageContent = ({ collection, product }) => {
           <Link href={`/deepoe/sustainability`}>
             <button
               type="submit"
-              className=" text-sm  font-extralight text-center mt-5 mb-7 w-40 underline font-mono focus:outline-none focus:ring-2 focus:ring-offset-2 lg:text-lg lg:mb-12 lg:mt-10"
+              className=" text-sm  font-extralight text-center mt-5 mb-7 w-40 underline font-mono focus:outline-none focus:ring-2 focus:ring-offset-2"
             >
               Learn More
             </button>

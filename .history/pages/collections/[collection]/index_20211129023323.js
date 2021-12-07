@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default function Collection({ collection, products }) {
   // console.log('collection223123123', products);
   return (
-    <div>
+    <div className="">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />

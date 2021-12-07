@@ -3,7 +3,7 @@ import Image from 'next/image';
 const ProductList = ({ collection, products }) => {
   return (
     <div className=" w-full   overflow-hidden pb-2 ">
-      <div className="relative h-60 w-screen">
+      <div className="relative h-60 ">
         <Image
           src={products.image.originalSrc}
           layout="fill"
@@ -18,8 +18,8 @@ const ProductList = ({ collection, products }) => {
         </h2>
       </div>
 
-      <div className="px-4 pt-6 ">
-        <div className="grid grid-cols-1 gap-y-10 gap-x-6">
+      <div className="px-4 pt-6 w-full">
+        <div className="grid grid-cols-1 gap-y-10 gap-x-6 w-full">
           {products.products.edges.map((product) => (
             <ProductCard
               key={product.node.id}

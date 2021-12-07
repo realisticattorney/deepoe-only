@@ -56,8 +56,8 @@ module.exports = {
       maxWidth: {
         xs2: '23rem',
         xs1: '21rem',
-        xxl: '1440px',
-      },
+        xxl: '80rem',
+       },
       maxHeight: {
         75: '19rem',
         100: '26rem',
@@ -72,6 +72,7 @@ module.exports = {
         150: '50rem',
         53: '12.563rem',
         65: '16.25rem',
+        
       },
       borderWidth: {
         DEFAULT: '0.8px',

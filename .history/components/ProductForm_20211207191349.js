@@ -79,79 +79,77 @@ const ProductForm = ({ product, collection }) => {
           key={selectedVariant.id}
         />
       </div>
-      <div className="lg:col-start-2 lg:col-end-2">
-        <h2 className="text-2xl font-mono font-extralight -mt-5 mb-1">
-          {product.title}
-        </h2>
+<div className="lg:col-start-2 lg:col-end-2">
+      <h2 className="text-2xl font-mono font-extralight -mt-5 mb-1">
+        {product.title}
+      </h2>
 
-        <div
-          className="yotpo bottomLine"
-          data-yotpo-product-id={`${atobId}`}
-        ></div>
-        <div>
-          <div className="pb-3.5 pt-2 items-center flex justify-between">
-            <div className="flex items-start">
-              <span className="text-lg font-extralight">
+      <div
+        className="yotpo bottomLine"
+        data-yotpo-product-id={`${atobId}`}
+      ></div>
+      <div>
+        <div className="pb-3.5 pt-2 items-center flex justify-between">
+          <div className="flex items-start">
+            <span className="text-lg font-extralight">
+              {formatter.format(product.variants.edges[0].node.priceV2.amount)}
+            </span>
+            {product.variants.edges[0].node.compareAtPriceV2 ? (
+              <span className="text-lg font-mono font-thin pl-2 line-through">
                 {formatter.format(
-                  product.variants.edges[0].node.priceV2.amount
+                  product.variants.edges[0].node.compareAtPriceV2?.amount
                 )}
               </span>
-              {product.variants.edges[0].node.compareAtPriceV2 ? (
-                <span className="text-lg font-mono font-thin pl-2 line-through">
-                  {formatter.format(
-                    product.variants.edges[0].node.compareAtPriceV2?.amount
-                  )}
-                </span>
-              ) : (
-                <></>
-              )}
-            </div>
-            <h3
-              className={`text-right text-sm font-normal text-gray-600 ${
-                selectedVariant.availableForSale === false
-                  ? 'text-red-800'
-                  : 'text-gray-700'
-              }`}
-            >
-              {selectedVariant.availableForSale === false
-                ? 'Currently out of stock'
-                : ''}
-            </h3>
-          </div>
-          {product.options.map(({ name, values }) => (
-            <ProductOptions
-              key={`key-${name}`}
-              name={name}
-              values={values}
-              selectedOptions={selectedOptions}
-              setOptions={setOptions} //just passing the function to the ProductOptions component to be called when the user changes the selected option
-            />
-          ))}
-          <div className="text-sm font-light mb-3 mt-1.5 space-y-1.5">
-            <p className="flex items-center text-sm">
-              <TruckIcon className="h-5 flex pr-1" /> Usually ships in 1-2 weeks
-            </p>
-            {product.variants.edges[0].node.compareAtPriceV2?.amount && (
-              <p className="flex items-center text-xs">
-                <ExclamationCircleIcon className="h-4 flex pr-1" />
-                Final Sale! No Returns
-              </p>
+            ) : (
+              <></>
             )}
           </div>
-          <button
-            onClick={() => {
-              addToCart(selectedVariant);
-            }}
-            className={`bg-deepoe-chocolate text-white px-2 pt-2 pb-1.5 mt-1 mb-3 text-2xl font-sans self-center justify-self-center items-center  w-full active:scale-95 ${
-              selectedVariant.availableForSale ? 'disabled' : ''
-            }`} //disabled if the selected variant is not available for sale (out of stock)
-            disabled={selectedVariant.availableForSale === false ? true : false}
+          <h3
+            className={`text-right text-sm font-normal text-gray-600 ${
+              selectedVariant.availableForSale === false
+                ? 'text-red-800'
+                : 'text-gray-700'
+            }`}
           >
             {selectedVariant.availableForSale === false
-              ? 'Out of Stock'
-              : 'Add to Cart'}
-          </button>
+              ? 'Currently out of stock'
+              : ''}
+          </h3>
         </div>
+        {product.options.map(({ name, values }) => (
+          <ProductOptions
+            key={`key-${name}`}
+            name={name}
+            values={values}
+            selectedOptions={selectedOptions}
+            setOptions={setOptions} //just passing the function to the ProductOptions component to be called when the user changes the selected option
+          />
+        ))}
+        <div className="text-sm font-light mb-3 mt-1.5 space-y-1.5">
+          <p className="flex items-center text-sm">
+            <TruckIcon className="h-5 flex pr-1" /> Usually ships in 1-2 weeks
+          </p>
+          {product.variants.edges[0].node.compareAtPriceV2?.amount && (
+            <p className="flex items-center text-xs">
+              <ExclamationCircleIcon className="h-4 flex pr-1" />
+              Final Sale! No Returns
+            </p>
+          )}
+        </div>
+        <button
+          onClick={() => {
+            addToCart(selectedVariant);
+          }}
+          className={`bg-deepoe-chocolate text-white px-2 pt-2 pb-1.5 mt-1 mb-3 text-2xl font-sans self-center justify-self-center items-center  w-full active:scale-95 ${
+            selectedVariant.availableForSale ? 'disabled' : ''
+          }`} //disabled if the selected variant is not available for sale (out of stock)
+          disabled={selectedVariant.availableForSale === false ? true : false}
+        >
+          {selectedVariant.availableForSale === false
+            ? 'Out of Stock'
+            : 'Add to Cart'}
+        </button>
+      </div>
       </div>
     </div>
   );

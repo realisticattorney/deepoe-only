@@ -59,7 +59,7 @@ const ProductPageContent = ({ collection, product }) => {
     <div
       className={`sm:max-w-2xl mx-auto lg:max-w-xxl lg:grid lg:grid-cols-2`}
     >
-      <div className="px-3.5 pb-0  z-0 lg:col-span-1">
+      <div className="px-3.5 pb-0  z-0 col-span-1">
         <a
           href={`https://deepoe-only.vercel.app/collections/${collection}/`}
           rel="noreferrer"

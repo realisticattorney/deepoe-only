@@ -204,7 +204,7 @@ const ProductForm = ({ product, collection  }) => {
         </div>
       
 
-      <div className="font-mono text-sm font-extralight mb-4">
+      <div className="font-mono text-sm font-extralight lg:mb-4">
           <p>{intro}</p>
         </div>
         <div className="flex flex-col w-full border-t pt-2 border-deepoe-chocolate lg:col-end-2 lg:col-start-2">

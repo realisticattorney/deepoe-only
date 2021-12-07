@@ -5,12 +5,11 @@ const ProductList = ({ collection, products }) => {
     <div className="bg-deepoe-cream">
       <div className="w-full mx-auto pb-2 ">
         <div className="w-full   overflow-hidden">
-          <div className="relative h-60 ">
+          <div className="relative h-60 xl:max-w-screen-xl">
             <Image
               src={products.image.originalSrc}
               layout="fill"
               objectFit="cover"
-              quality={100}
             />
             <h2
               className={`text-5xl text-white absolute left-0 right-0 ml-auto mr-auto top-24 italic font-medium w-80 mb-6 text-center 

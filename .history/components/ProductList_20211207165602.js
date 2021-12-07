@@ -3,7 +3,7 @@ import Image from 'next/image';
 const ProductList = ({ collection, products }) => {
   return (
     <div className="bg-deepoe-cream">
-      <div className="w-full mx-auto pb-2 ">
+      <div className=" pb-2 ">
         <div className="w-full   overflow-hidden">
           <div className="relative h-60 ">
             <Image

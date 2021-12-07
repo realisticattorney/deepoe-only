@@ -8,14 +8,14 @@ import { useState } from 'react';
 import HomeMain from '../components/HomeMain';
 export default function Home({ products, carouselProducts }) {
 
-  
+  const [selectedItem, setSelectedItem] = useState(9);
   return (
     <div className="">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <HomeMain products={products} carouselProducts={carouselProducts} />
+      <HomeMain products={products} collection={collection} />
     
     </div>
   );

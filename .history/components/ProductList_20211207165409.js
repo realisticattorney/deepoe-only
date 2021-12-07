@@ -10,7 +10,6 @@ const ProductList = ({ collection, products }) => {
               src={products.image.originalSrc}
               layout="fill"
               objectFit="cover"
-              quality={100}
             />
             <h2
               className={`text-5xl text-white absolute left-0 right-0 ml-auto mr-auto top-24 italic font-medium w-80 mb-6 text-center 

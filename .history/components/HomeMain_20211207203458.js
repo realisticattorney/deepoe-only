@@ -98,7 +98,7 @@ const HomeMain = ({ products, carouselProducts }) => {
         setSelectedItem={setSelectedItem}
       />
 
-      <h2 className="text-center w-64 lg:w-130 lg:text-3xl lg:font-extralight mx-auto font-light font-mono text-xl lg:px-20">
+      <h2 className="text-center w-64 mx-auto font-light font-mono text-xl">
         We create and curate designs for your home and our shared one
       </h2>
 <div className="lg:grid lg:grid-cols-2 lg:max-w-screen-lg xl:mx-auto lg:my-5 lg:px-3">
@@ -114,7 +114,7 @@ const HomeMain = ({ products, carouselProducts }) => {
           </div>
         </div>
       </div>
-      <div className=" mx-6 mb-12 lg:ml-0 w-96">
+      <div className=" mx-6 mb-12 lg:-ml-0">
         <h2 className="text-center w-full font-light leading-6 lg:text-left lg:mt-12  font-mono text-lg">
           At deepoe, we strive to create an open and honest experience for our
           customers. We recognize the challenges surrounding sustainability and

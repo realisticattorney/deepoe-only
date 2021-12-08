@@ -119,7 +119,7 @@ const HomeMain = ({ products, carouselProducts }) => {
         </div>
       </div>
       <div className="w-full mx-auto">
-        <h2 className="text-center w-full font-light xs:w-96 xs:mx-auto leading-6 lg:text-left lg:mt-14  font-mono text-lg lg:pl-10 lg:pr-7">
+        <h2 className="text-center w-full font-light xs:w-96 xs:mx-auto leading-6 lg:text-left lg:mt-14  font-mono text-lg lg:pl-14">
           At deepoe, we strive to create an open and honest experience for our
           customers. We recognize the challenges surrounding sustainability and
           are working daily to reduce our footprint.

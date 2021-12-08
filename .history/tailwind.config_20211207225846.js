@@ -61,8 +61,8 @@ module.exports = {
         fivexs: '300px',
         fourxs: '330px',
         xxxs: '350px',
-        xxs: '385px',
-        xs: '414px',
+        xxs: '375px',
+        xs: '380px',
 
       },
       maxWidth: {

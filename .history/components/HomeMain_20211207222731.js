@@ -105,7 +105,7 @@ const HomeMain = ({ products, carouselProducts }) => {
       <h2 className="text-center w-64 lg:w-130 lg:text-3xl lg:font-extralight mx-auto font-light font-mono text-xl lg:px-20">
         We create and curate designs for your home and our shared one
       </h2>
-<div className="lg:grid lg:grid-cols-2 lg:max-w-screen-lg xl:mx-auto mx-6 lg:m-5 lg:w-145 lg:px-6 lg:mx-auto">
+<div className="lg:grid lg:grid-cols-2 lg:max-w-screen-lg xl:mx-auto lg:m-5 lg:px-3 md:w-145 md:px-6 md:mx-auto">
       <div className="my-6 mt-10 lg:pr-0">
         <div className="lg:w-96 w-full overflow-hidden">
           <div className="relative h-110">

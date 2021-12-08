@@ -65,7 +65,7 @@ const HomeCarousel = ({ carouselProducts, selectedItem, setSelectedItem }) => {
 
   return (
     <div>
-      <div className="relative z-0 mt-4  mb-10 classes.my__carousel_main  md:hidden">
+      <div className="relative z-0 mt-4  mb-10 classes.my__carousel_main lg:max-w-screen-lg xxl:max-w-screen-xxl lg:hidden">
         <Carousel
           infiniteLoop
           showStatus={false}

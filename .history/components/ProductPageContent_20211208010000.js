@@ -95,7 +95,7 @@ const ProductPageContent = ({ collection, product }) => {
                 layout="fill"
                 objectFit="cover"
                 objectPosition="center"
-                quality={70}
+                quality={700}
               />
             </div>
           </div>

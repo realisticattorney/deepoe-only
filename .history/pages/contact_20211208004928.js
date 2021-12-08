@@ -68,7 +68,7 @@ export default function Contact() {
                   message: 'Please enter your name',
                 },
               })}
-              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-1 resize-none ${
+              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-1 ${
                 errors.name ? 'ring-0 focus:outline-none ' : null
               }`}
               placeholder="name*"
@@ -159,7 +159,7 @@ export default function Contact() {
                   message: 'Your subject must be longer than this!',
                 },
               })}
-              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none focus:ring-1 resize-none ${
+              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none focus:ring-1 ${
                 errors.message ? 'ring-0 focus:outline-none ' : null
               }`}
               placeholder="subject"
@@ -189,7 +189,7 @@ export default function Contact() {
                   message: 'Minumum length is 20 characters',
                 },
               })}
-              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none  focus:ring-1 resize-none ${
+              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none  focus:ring-1 ${
                 errors.message ? 'ring-0 focus:outline-none ' : null
               }`}
               placeholder="message"

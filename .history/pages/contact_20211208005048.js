@@ -160,7 +160,7 @@ export default function Contact() {
                 },
               })}
               className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none focus:ring-1 resize-none ${
-                errors.message ? 'ring-0 focus:outline-none ' : null
+                errors.message ? 'ring-0 focus:outline-none resize-none' : null
               }`}
               placeholder="subject"
             ></textarea>
@@ -189,7 +189,7 @@ export default function Contact() {
                   message: 'Minumum length is 20 characters',
                 },
               })}
-              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none  focus:ring-1 resize-none ${
+              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none  focus:ring-1 ${
                 errors.message ? 'ring-0 focus:outline-none ' : null
               }`}
               placeholder="message"

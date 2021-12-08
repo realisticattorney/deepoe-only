@@ -68,7 +68,7 @@ export default function Contact() {
                   message: 'Please enter your name',
                 },
               })}
-              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-1 resize-none ${
+              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-1 ${
                 errors.name ? 'ring-0 focus:outline-none ' : null
               }`}
               placeholder="name*"
@@ -94,7 +94,7 @@ export default function Contact() {
                   message: 'This needs to be a valid email address',
                 },
               })}
-              className={`block w-full border shadow-sm bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-1 resize-none ${
+              className={`block w-full border shadow-sm bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-1 ${
                 errors.email ? 'ring-0 focus:outline-none ' : null
               }`}
               placeholder="e-mail*"
@@ -110,6 +110,7 @@ export default function Contact() {
             <textarea
               name="phone"
               rows="1"
+              resize-none
               {...register('phone', {
                 required: {
                   value: false,
@@ -128,7 +129,7 @@ export default function Contact() {
                   message: 'This needs to be a valid US number',
                 },
               })}
-              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none focus:ring-1 resize-none ${
+              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none focus:ring-1 ${
                 errors.message ? 'ring-0 focus:outline-none ' : null
               }`}
               placeholder="phone number (optional)"
@@ -159,7 +160,7 @@ export default function Contact() {
                   message: 'Your subject must be longer than this!',
                 },
               })}
-              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none focus:ring-1 resize-none ${
+              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none focus:ring-1 ${
                 errors.message ? 'ring-0 focus:outline-none ' : null
               }`}
               placeholder="subject"
@@ -189,7 +190,7 @@ export default function Contact() {
                   message: 'Minumum length is 20 characters',
                 },
               })}
-              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none  focus:ring-1 resize-none ${
+              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none  focus:ring-1 ${
                 errors.message ? 'ring-0 focus:outline-none ' : null
               }`}
               placeholder="message"

@@ -46,8 +46,8 @@ export default function Contact() {
   };
 
   return (
-    <div className="flex-col bg-deepoe-cream px-6 sm:px-6 flex md:w-145 mx-auto">
-      <div className="mx-auto w-full    bg-deepoe-cream py-2 items-center">
+    <div className="flex-col bg-deepoe-cream px-6 sm:px-6 flex sm:w-110 md:w-145">
+      <div className="mx-auto w-full max-w-2xl   bg-deepoe-cream py-2 items-center">
         <h2 className="text-2xl font-thin pt-5 font-mono tracking-tighter">
           Questions? Get in touch.
         </h2>
@@ -68,7 +68,7 @@ export default function Contact() {
                   message: 'Please enter your name',
                 },
               })}
-              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-1 resize-none ${
+              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-1 ${
                 errors.name ? 'ring-0 focus:outline-none ' : null
               }`}
               placeholder="name*"
@@ -94,7 +94,7 @@ export default function Contact() {
                   message: 'This needs to be a valid email address',
                 },
               })}
-              className={`block w-full border shadow-sm bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-1 resize-none ${
+              className={`block w-full border shadow-sm bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-600 focus:outline-none focus:ring-1 ${
                 errors.email ? 'ring-0 focus:outline-none ' : null
               }`}
               placeholder="e-mail*"
@@ -128,7 +128,7 @@ export default function Contact() {
                   message: 'This needs to be a valid US number',
                 },
               })}
-              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none focus:ring-1 resize-none ${
+              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none focus:ring-1 ${
                 errors.message ? 'ring-0 focus:outline-none ' : null
               }`}
               placeholder="phone number (optional)"
@@ -159,7 +159,7 @@ export default function Contact() {
                   message: 'Your subject must be longer than this!',
                 },
               })}
-              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none focus:ring-1 resize-none ${
+              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none focus:ring-1 ${
                 errors.message ? 'ring-0 focus:outline-none ' : null
               }`}
               placeholder="subject"
@@ -189,7 +189,7 @@ export default function Contact() {
                   message: 'Minumum length is 20 characters',
                 },
               })}
-              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none  focus:ring-1 resize-none ${
+              className={`block w-full shadow-sm border bg-deepoe-cream text-sm font-light font-mono  py-1 px-1.5 placeholder-gray-700 focus:ring-deepoe-chocolate focus:border-deepoe-chocolate border-gray-500 focus:outline-none  focus:ring-1 ${
                 errors.message ? 'ring-0 focus:outline-none ' : null
               }`}
               placeholder="message"

@@ -99,9 +99,7 @@ const HomeMain = ({ products, carouselProducts }) => {
         selectedItem={selectedItem}
         setSelectedItem={setSelectedItem}
       />
-    <div className="w-screen">
 
-</div>
       <h2 className="text-center w-64 lg:w-130 lg:text-3xl lg:font-extralight mx-auto font-light font-mono text-xl lg:px-20">
         We create and curate designs for your home and our shared one
       </h2>

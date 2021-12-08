@@ -178,7 +178,7 @@ const HomeCarousel = ({ carouselProducts, selectedItem, setSelectedItem }) => {
         >
           {carouselLong.map((i) => (
             <div
-              className="w-53 h-66 from-gray-100  ml-6  bottom-0 relative"
+              className="w-53 h-66 from-gray-100   bottom-0 relative"
               key={i.number}
             >
               <Image

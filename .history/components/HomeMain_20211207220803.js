@@ -8,7 +8,7 @@ const HomeMain = ({ products, carouselProducts }) => {
   const [selectedItem, setSelectedItem] = useState(9);
 
   return (
-    <div className="w-full  overflow-hidden">
+    <div className="w-full  overflow-hidden xxl:">
       <div className="relative h-65">
         <Image
           src="/heroHome.jpg"
@@ -90,18 +90,14 @@ const HomeMain = ({ products, carouselProducts }) => {
           </div>
         </button>
       </div>
-    <div className="w-screen">
 
-      </div>
       <h2 className="text-center font-mono text-xl -mt-1.5">Shop this table</h2>
       <HomeCarousel
         carouselProducts={carouselProducts}
         selectedItem={selectedItem}
         setSelectedItem={setSelectedItem}
       />
-    <div className="w-screen">
 
-</div>
       <h2 className="text-center w-64 lg:w-130 lg:text-3xl lg:font-extralight mx-auto font-light font-mono text-xl lg:px-20">
         We create and curate designs for your home and our shared one
       </h2>

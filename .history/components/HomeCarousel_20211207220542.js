@@ -159,7 +159,7 @@ const HomeCarousel = ({ carouselProducts, selectedItem, setSelectedItem }) => {
           ))}
         </Carousel>
       </div>
-      <div className="relative z-0 mt-4  mb-10 classes.my__carousel_main xxl:w-145  hidden xxl:block xxl:mx-auto">
+      <div className="relative z-0 mt-4  mb-10 classes.my__carousel_main xxl:w-145  hidden xxl:block">
         <Carousel
           infiniteLoop
           showStatus={false}
@@ -178,7 +178,7 @@ const HomeCarousel = ({ carouselProducts, selectedItem, setSelectedItem }) => {
         >
           {carouselLong.map((i) => (
             <div
-              className="w-53 h-66 from-gray-100  ml-6  bottom-0 relative"
+              className="w-53 h-66 from-gray-100  ml-16 bottom-0 relative"
               key={i.number}
             >
               <Image

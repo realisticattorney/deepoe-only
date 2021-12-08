@@ -106,7 +106,7 @@ const HomeMain = ({ products, carouselProducts }) => {
       <div className="lg:grid lg:grid-cols-2 lg:max-w-screen-lg  mx-6 lg:m-5 lg:w-145 lg:px-4 lg:mx-auto">
         <div className="my-6 mt-10 lg:pr-0">
           <div className="lg:w-96 w-full overflow-hidden">
-            <div className="relative zero:h-80 fourxs:h-96   xxs:h-105">
+            <div className="relative zero:h-80 fivexs:h-96  fourxs:h-100 xxs:h-105">
               <Image
                 src="/people.png"
                 layout="fill"

@@ -60,7 +60,7 @@ const Banner = ({ product, selectedVariant }) => {
       <Carousel
         infiniteLoop
         autoPlay={true}
-        showArrows={true}
+        sho
         showStatus={false}
         showThumbs={false}
         preventMovementUntilSwipeScrollTolerance={true}
@@ -70,6 +70,7 @@ const Banner = ({ product, selectedVariant }) => {
         autoFocus={false}
         selectedItem={index}
         onChange={(index) => setIndex(index)}
+        showArrows={false}
       >
         {imageSrc.map((i) => (
           <div

@@ -209,17 +209,16 @@ body {
   /* background-color: #fff !important; */
 }
 
-.control-arrow {
-  width: 3.5rem !important;
-  opacity: 0 !important;
+/* .control-arrow {
+  width: 5rem !important;
+  opacity: 0.3 !important;
   padding: 0rem !important;
-  
-}
-.carousel.carousel-slider .control-arrow:hover {
+
+} */
+/* .carousel.carousel-slider .control-arrow:hover {
   background: transparent !important;
-  background-image: linear-gradient(rgba(0,0,0,0), rgba(255,255,255,0.1)) !important;
-  opacity: 0.9 !important;
-}
+  opacity: 0.7 !important;
+} */
 
 /* 
 @media only screen and (min-device-width: 10px) and (max-device-width: 329px) {

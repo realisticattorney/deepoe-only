@@ -87,7 +87,7 @@ const ProductPageContent = ({ collection, product }) => {
           <Image src="/brunch.jpg" layout="fill" objectFit="cover" />
         </div> */}
 
-        <div className="px-6 my-6 mt-5 lg:mt-12 lg:px-16 ">
+        <div className="px-6 my-6 mt-5 lg:mt-12 lg:px-16 xxl:px-20">
           <div className="w-full">
             <div className="relative h-110 lg:h-66 xxl:h-66">
               <Image

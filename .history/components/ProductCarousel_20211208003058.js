@@ -56,7 +56,7 @@ const Banner = ({ product, selectedVariant }) => {
         ))}
       </Carousel>
     </div>
-    <div className="relative z-0  mb-10 classes.my__carousel_main hidden md:block">
+    <div className="relative z-0  mb-10 .my__carousel_main hidden md:block">
       <Carousel
         infiniteLoop
         autoPlay={true}

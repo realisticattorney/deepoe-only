@@ -217,8 +217,8 @@ body {
 }
 .carousel.carousel-slider .control-arrow:hover {
   background: transparent !important;
-  background-image: linear-gradient(rgba(0,0,0,0), rgba(255,255,255,0.1)) !important;
-  opacity: 0.9 !important;
+  background-image: gba(255,255,255,0.1)!important;
+  opacity: 0.7 !important;
 }
 
 /* 

@@ -59,8 +59,7 @@ const Banner = ({ product, selectedVariant }) => {
     <div className="relative z-0  mb-10 classes.my__carousel_main hidden md:block">
       <Carousel
         infiniteLoop
-        autoPlay={true}
-        showArrows={true}
+        
         showStatus={false}
         showThumbs={false}
         preventMovementUntilSwipeScrollTolerance={true}
@@ -70,6 +69,7 @@ const Banner = ({ product, selectedVariant }) => {
         autoFocus={false}
         selectedItem={index}
         onChange={(index) => setIndex(index)}
+        showArrows={false}
       >
         {imageSrc.map((i) => (
           <div

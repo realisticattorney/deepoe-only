@@ -11,7 +11,7 @@ const HomeMain = ({ products, carouselProducts }) => {
     <div className="w-full  overflow-hidden">
       <div className="relative h-65">
         <Image
-          src="/heroHome.jpg"
+          src="/homepageBanner2.png"
           layout="fill"
           objectFit="cover"
           quality={100}

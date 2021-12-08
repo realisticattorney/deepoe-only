@@ -56,14 +56,14 @@ const ProductPageContent = ({ collection, product }) => {
   const itemsSpecs2 = itemsSpecs.split('**');
 
   return (
-    <div className={`sm:max-w-2xl mx-auto lg:max-w-xxl lg:grid lg:grid-cols-2 xxl:px-50`}>
+    <div className={`sm:max-w-2xl mx-auto lg:max-w-xxl lg:grid lg:grid-cols-2 xxl:px-6`}>
       <div className="px-3.5  pb-0  z-0 lg:col-span-1">
         <a
           href={`https://deepoe-only.vercel.app/collections/${collection}/`}
           rel="noreferrer"
         >
           {/* <Link href={`/collections/${collection}/`}> */}
-          <p className="text-left pl-3 text-lg font-extralight font-mono lg:mb-8 lg:mt-2">
+          <p className="text-left pl-3 text-lg font-extralight font-mono lg:mb-8">
             {'<'} back to{' '}
             {collection === 'frontpage' ? 'all products' : collection}
           </p>
@@ -87,9 +87,9 @@ const ProductPageContent = ({ collection, product }) => {
           <Image src="/brunch.jpg" layout="fill" objectFit="cover" />
         </div> */}
 
-        <div className="px-6 my-6 mt-5 lg:mt-12 xxl:mt-20 lg:px-16 xxl:px-20">
+        <div className="px-6 my-6 mt-5 lg:mt-12 xxl:mt-20 lg:px-16 xxl:px-24">
           <div className="w-full">
-            <div className="relative h-110 lg:h-66 xxl:h-66">
+            <div className="relative h-110 lg:h-66 xxl:h-80">
               <Image
                 src="/peopleFood.jpg"
                 layout="fill"

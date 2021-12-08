@@ -90,46 +90,50 @@ const HomeMain = ({ products, carouselProducts }) => {
           </div>
         </button>
       </div>
-      <div className="w-screen"></div>
-      <h2 className="text-center font-mono text-xl -mt-1.5 md:text-2xl md:my-2 md:-mt-2 md:font-light text-deepoe_default-black">
-        Shop this table
-      </h2>
+    <div className="w-screen">
+
+      </div>
+      <h2 className="text-center font-mono text-xl -mt-1.5 md:text-2xl md:my-2 md:">Shop this table</h2>
       <HomeCarousel
         carouselProducts={carouselProducts}
         selectedItem={selectedItem}
         setSelectedItem={setSelectedItem}
       />
-      <div className="w-screen"></div>
+    <div className="w-screen">
+
+</div>
       <h2 className="text-center w-64 lg:w-130 lg:text-3xl lg:font-extralight mx-auto font-light font-mono text-xl lg:px-20">
         We create and curate designs for your home and our shared one
       </h2>
-      <div className="lg:grid lg:grid-cols-2 lg:max-w-screen-lg  mx-6 lg:m-5 lg:w-145 lg:px-4 lg:mx-auto">
-        <div className="my-6 mt-10 lg:pr-0">
-          <div className="lg:w-96 w-full overflow-hidden">
-            <div className="relative zero:h-80 fivexs:h-96  xxxs:h-100 xxs:h-110">
-              <Image
-                src="/people.png"
-                layout="fill"
-                objectFit="contain"
-                objectPosition="top"
-              />
-            </div>
+<div className="lg:grid lg:grid-cols-2 lg:max-w-screen-lg  mx-6 lg:m-5 lg:w-145 lg:px-4 lg:mx-auto">
+      <div className="my-6 mt-10 lg:pr-0">
+        <div className="lg:w-96 w-full overflow-hidden">
+          <div className="relative zero:h-80 fivexs:h-96  xxxs:h-100 xxs:h-110">
+            <Image
+              src="/people.png"
+              layout="fill"
+              objectFit="contain"
+              objectPosition="top"
+            />
           </div>
         </div>
-        <div className="w-full mx-auto">
-          <h2 className="text-center w-full font-light xs:w-96 xs:mx-auto leading-6 lg:text-left lg:mt-14  font-mono text-lg lg:pl-10 lg:pr-7">
-            At deepoe, we strive to create an open and honest experience for our
-            customers. We recognize the challenges surrounding sustainability
-            and are working daily to reduce our footprint.
-          </h2>
-          <div className="w-full text-center my-6 ">
-            <Link href="/deepoe/about">
-              <a className="text-deepoe_default-black font-mono underline w-full">
-                About
-              </a>
-            </Link>
-          </div>
+      </div>
+      <div className="w-full mx-auto">
+        <h2 className="text-center w-full font-light xs:w-96 xs:mx-auto leading-6 lg:text-left lg:mt-14  font-mono text-lg lg:pl-10 lg:pr-7">
+          At deepoe, we strive to create an open and honest experience for our
+          customers. We recognize the challenges surrounding sustainability and
+          are working daily to reduce our footprint.
+        </h2>
+        <div className="w-full text-center my-6 ">
+          <Link href="/deepoe/about">
+            <a className="text-deepoe_default-black font-mono underline w-full">
+              About
+            </a>
+          </Link>
         </div>
+      </div>
+
+      
       </div>
     </div>
   );

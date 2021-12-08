@@ -91,7 +91,7 @@ const HomeMain = ({ products, carouselProducts }) => {
         </button>
       </div>
       <div className="w-screen"></div>
-      <h2 className="text-center font-mono text-xl -mt-1.5 md:text-2xl md:my-2 md:-mt-2 md:font-light text-deepoe_default-black">
+      <h2 className="text-center font-mono text-xl -mt-1.5 md:text-2xl md:my-2.5 md:-mt-2">
         Shop this table
       </h2>
       <HomeCarousel

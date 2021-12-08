@@ -31,7 +31,7 @@ const HomeMain = ({ products, carouselProducts }) => {
           </p>
         </a>
       </div>
-      <div className="px-6 my-6 md:my-9 w-full relative md:w-145 md:mx-auto">
+      <div className="px-6 my-6 w-full relative md:w-145 md:mx-auto">
         <Image
           src="/deepoeHome3.jpg"
           layout="responsive"
@@ -103,7 +103,7 @@ const HomeMain = ({ products, carouselProducts }) => {
       <h2 className="text-center w-64 lg:w-130 lg:text-3xl lg:font-extralight mx-auto font-light font-mono text-xl lg:px-20">
         We create and curate designs for your home and our shared one
       </h2>
-      <div className="lg:grid lg:grid-cols-2 lg:max-w-screen-lg  mx-6 lg:mb-5 lg:w-145 lg:px-4 lg:mx-auto">
+      <div className="lg:grid lg:grid-cols-2 lg:max-w-screen-lg  mx-6 lg:m-5 lg:w-145 lg:px-4 lg:mx-auto">
         <div className="my-6 mt-10 lg:pr-0">
           <div className="lg:w-96 w-full overflow-hidden">
             <div className="relative zero:h-80 fourxs:h-96   xxs:h-105">

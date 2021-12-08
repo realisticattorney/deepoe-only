@@ -31,7 +31,7 @@ const HomeMain = ({ products, carouselProducts }) => {
           </p>
         </a>
       </div>
-      <div className="px-6 my-6 md:my-9 w-full relative md:w-145 md:mx-auto">
+      <div className="px-6 my-6 w-full relative md:w-145 md:mx-auto">
         <Image
           src="/deepoeHome3.jpg"
           layout="responsive"

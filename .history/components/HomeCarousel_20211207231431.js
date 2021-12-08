@@ -170,7 +170,7 @@ const HomeCarousel = ({ carouselProducts, selectedItem, setSelectedItem }) => {
           swipeScrollTolerance={15}
           autoFocus={false}
           selectedItem={selectedItem}
-          centerSlidePercentage={33.5}
+          centerSlidePercentage={33.6}
           centerMode={true}
           transitionTime={680}
           onChange={(selectedItem) => setSelectedItem(selectedItem)}

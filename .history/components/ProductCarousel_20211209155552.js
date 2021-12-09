@@ -108,7 +108,7 @@ const Banner = ({ product, selectedVariant }) => {
       </div>
     );
   } else {
-    return (
+    return ()
     <div>
     <div className="relative z-0  mb-10 classes.my__carousel_main md:hidden">
       <Carousel
@@ -176,7 +176,6 @@ const Banner = ({ product, selectedVariant }) => {
       </Carousel>
     </div>
     </div>
-    )
   }
 };
 

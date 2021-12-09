@@ -109,74 +109,74 @@ const Banner = ({ product, selectedVariant }) => {
     );
   } else {
     return (
-      <div>
-        <div className="relative z-0  mb-10 classes.my__carousel_main md:hidden">
-          <Carousel
-            infiniteLoop
-            showStatus={false}
-            showThumbs={false}
-            preventMovementUntilSwipeScrollTolerance={true}
-            interval={5000}
-            swipeable={true}
-            swipeScrollTolerance={50}
-            autoFocus={false}
-            selectedItem={index}
-            onChange={(index) => setIndex(index)}
-            showArrows={false}
+    <div>
+    <div className="relative z-0  mb-10 classes.my__carousel_main md:hidden">
+      <Carousel
+        infiniteLoop
+        showStatus={false}
+        showThumbs={false}
+        preventMovementUntilSwipeScrollTolerance={true}
+        interval={5000}
+        swipeable={true}
+        swipeScrollTolerance={50}
+        autoFocus={false}
+        selectedItem={index}
+        onChange={(index) => setIndex(index)}
+        showArrows={false}
+      >
+        {imageSrc.map((i) => (
+          <div
+            className="w-full h-110 lg:h-133 xxl:h-133 from-gray-100  bottom-0 relative"
+            key={i}
           >
-            {imageSrc.map((i) => (
-              <div
-                className="w-full h-110 lg:h-133 xxl:h-133 from-gray-100  bottom-0 relative"
-                key={i}
-              >
-                <Image
-                  quality={30}
-                  loading="lazy"
-                  objectFit="cover"
-                  layout="fill"
-                  objectPosition="center"
-                  src={i}
-                  alt=""
-                />
-              </div>
-            ))}
-          </Carousel>
-        </div>
-        <div className="relative z-0  mb-10 classes.my__carousel_main hidden md:block">
-          <Carousel
-            infiniteLoop
-            autoPlay={true}
-            showArrows={true}
-            showStatus={false}
-            showThumbs={false}
-            preventMovementUntilSwipeScrollTolerance={true}
-            interval={5000}
-            swipeable={true}
-            swipeScrollTolerance={50}
-            autoFocus={false}
-            selectedItem={index}
-            onChange={(index) => setIndex(index)}
+            <Image
+              quality={30}
+              loading="lazy"
+              objectFit="cover"
+              layout="fill"
+              objectPosition="center"
+              src={i}
+              alt=""
+            />
+          </div>
+        ))}
+      </Carousel>
+    </div>
+    <div className="relative z-0  mb-10 classes.my__carousel_main hidden md:block">
+      <Carousel
+        infiniteLoop
+        autoPlay={true}
+        showArrows={true}
+        showStatus={false}
+        showThumbs={false}
+        preventMovementUntilSwipeScrollTolerance={true}
+        interval={5000}
+        swipeable={true}
+        swipeScrollTolerance={50}
+        autoFocus={false}
+        selectedItem={index}
+        onChange={(index) => setIndex(index)}
+      >
+        {imageSrc.map((i) => (
+          <div
+            className="w-full h-110 lg:h-133 xxl:h-133 from-gray-100  bottom-0 relative"
+            key={i}
           >
-            {imageSrc.map((i) => (
-              <div
-                className="w-full h-110 lg:h-133 xxl:h-133 from-gray-100  bottom-0 relative"
-                key={i}
-              >
-                <Image
-                  quality={30}
-                  loading="lazy"
-                  objectFit="cover"
-                  layout="fill"
-                  objectPosition="center"
-                  src={i}
-                  alt=""
-                />
-              </div>
-            ))}
-          </Carousel>
-        </div>
-      </div>
-    );
+            <Image
+              quality={30}
+              loading="lazy"
+              objectFit="cover"
+              layout="fill"
+              objectPosition="center"
+              src={i}
+              alt=""
+            />
+          </div>
+        ))}
+      </Carousel>
+    </div>
+    </div>
+    )
   }
 };
 

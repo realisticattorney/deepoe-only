@@ -58,7 +58,7 @@ const Banner = ({ product, selectedVariant }) => {
               key={i}
             >
               <Image
-                quality={70}
+                quality={50}
                 loading="lazy"
                 objectFit="cover"
                 layout="fill"
@@ -94,7 +94,7 @@ const Banner = ({ product, selectedVariant }) => {
               key={i}
             >
               <Image
-                quality={70}
+                quality={50}
                 // loading="lazy"
                 objectFit="cover"
                 layout="fill"
@@ -130,7 +130,7 @@ const Banner = ({ product, selectedVariant }) => {
             key={i}
           >
             <Image
-              quality={70}
+              quality={50}
               loading="lazy"
               objectFit="cover"
               layout="fill"
@@ -163,7 +163,7 @@ const Banner = ({ product, selectedVariant }) => {
             key={i}
           >
             <Image
-              quality={70}
+              quality={50}
               loading="lazy"
               objectFit="cover"
               layout="fill"

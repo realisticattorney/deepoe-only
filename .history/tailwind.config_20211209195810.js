@@ -39,7 +39,7 @@ module.exports = {
         18: '4.5rem',
         '2%': '2%',
         '40%': '40%',
-        50: '12.85rem',
+        "50": "12.85rem",
       },
       height: {
         120: '60rem',
@@ -67,6 +67,7 @@ module.exports = {
         xxs: '385px',
         xxs2: '399px',
         xs: '414px',
+
       },
       maxWidth: {
         xs2: '23rem',
@@ -93,10 +94,6 @@ module.exports = {
         130: '40rem',
         53: '12.563rem',
         65: '16.25rem',
-        100: '26rem',
-        102: '27rem',
-        105: '28rem',
-        107: '30rem',
       },
       borderWidth: {
         DEFAULT: '0.8px',

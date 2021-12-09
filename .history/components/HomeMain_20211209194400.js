@@ -103,7 +103,7 @@ const HomeMain = ({ products, carouselProducts }) => {
       <div className="lg:grid lg:grid-cols-2 lg:max-w-screen-lg  mx-6 lg:mb-4 lg:w-145 lg:px-4 lg:mx-auto">
         <div className="my-6 mt-10 lg:pr-0">
           <div className="lg:w-96 w-full overflow-hidden">
-            <div className="relative zero:h-80 fourxs:h-96 xxxs:h-102  xxs:h-105 xxs2:h-107">
+            <div className="relative zero:h-80 fourxs:h-96   xxs:h-105">
               <Image
                 src="/people.png"
                 layout="fill"
@@ -115,7 +115,9 @@ const HomeMain = ({ products, carouselProducts }) => {
         </div>
         <div className="w-full mx-auto">
           <h2 className="text-center w-full font-light xs:w-96 xs:mx-auto leading-6 lg:text-left lg:mt-14  font-mono text-lg lg:pl-10 lg:pr-7">
-          What’s a sustainable good? At deepoe, we see sustainability as an ongoing process and a daily challenge. We’re on a journey as we try, with each product and package, to reduce our footprint, increase our knowledge, and head towards a better future.
+            At deepoe, we strive to create an open and honest experience for our
+            customers. We recognize the challenges surrounding sustainability
+            and are working daily to reduce our footprint.
           </h2>
           <div className="w-full text-center my-6 ">
             <Link href="/deepoe/about">

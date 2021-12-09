@@ -88,7 +88,7 @@ const HomeCarousel = ({ carouselProducts, selectedItem, setSelectedItem }) => {
               key={i.number}
             >
               <Image
-                quality={80}
+                quality={100}
                 loading="lazy"
                 objectFit="cover"
                 layout="fill"
@@ -182,7 +182,7 @@ const HomeCarousel = ({ carouselProducts, selectedItem, setSelectedItem }) => {
               key={i.number}
             >
               <Image
-                quality={80}
+                quality={70}
                 loading="lazy"
                 objectFit="cover"
                 layout="fill"

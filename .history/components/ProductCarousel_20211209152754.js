@@ -77,7 +77,7 @@ const Banner = ({ product, selectedVariant }) => {
             key={i}
           >
             <Image
-              quality={70}
+              quality={100}
               loading="lazy"
               objectFit="cover"
               layout="fill"

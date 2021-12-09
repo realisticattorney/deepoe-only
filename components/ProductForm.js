@@ -8,8 +8,7 @@ import { ExclamationCircleIcon, TruckIcon } from '@heroicons/react/outline';
 import atob from 'atob';
 import ReviewsPopup from './ReviewsPopup';
 
-const ProductForm = ({ product, collection  }) => {
-
+const ProductForm = ({ product, collection }) => {
   const stageCanvasRef = useRef(null);
   const [disable, setDisable] = useState(false);
   const [parentReviewState, setParentReviewState] = useState(false);
@@ -54,8 +53,6 @@ const ProductForm = ({ product, collection  }) => {
   let [intro, details] = description.split('^^^DETAILS');
   [details, itemsSpecs] = details.split('^^^ITEM SPECIFICATIONS');
   const itemsSpecs2 = itemsSpecs.split('**');
-
-
 
   const { addToCart } = useContext(CartContext);
 
@@ -202,9 +199,8 @@ const ProductForm = ({ product, collection  }) => {
               : 'Add to Cart'}
           </button>
         </div>
-      
 
-      <div className="font-mono text-sm font-extralight mb-4">
+        <div className="font-mono text-sm font-extralight mb-4">
           <p>{intro}</p>
         </div>
         <div className="flex flex-col w-full border-t pt-2 border-deepoe-chocolate lg:col-end-2 lg:col-start-2">
@@ -216,7 +212,7 @@ const ProductForm = ({ product, collection  }) => {
 
               <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
 
-<MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
+              <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
             </div>
             <div className="max-h-0 overflow-hidden duration-300  text-sm  group-focus:py-2 font-mono  group-focus:max-h-72  text-left font-extralight  border-b border-deepoe_default-black">
               <p className="mb-1">{details}</p>
@@ -275,7 +271,7 @@ const ProductForm = ({ product, collection  }) => {
               } focus:outline-none active:outline-none focus:ring-2 focus:ring-offset-2`}
             >
               {/* <a
-                href={`https://deepoe-only.vercel.app/reviews/${product.handle}`}
+                href={`https://deepoe.com/reviews/${product.handle}`}
                 rel="noreferrer"
               > */}
               {/* <Link href={`/reviews/${product.handle}`}> */}
@@ -294,8 +290,9 @@ const ProductForm = ({ product, collection  }) => {
                 // cancelButtonRef={cancelButtonRef}
               />
             </div>
-          </div></div>
+          </div>
         </div>
+      </div>
     </div>
   );
 };

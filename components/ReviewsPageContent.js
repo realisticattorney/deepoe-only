@@ -35,7 +35,7 @@ const ReviewsPageContent = ({ collection, product }) => {
     <div>
       <div className="px-3.5 pb-0 z-0">
         {/* <a
-          href={`https://deepoe-only.vercel.app/collections/${collection}/${product.handle}`}
+          href={`https://deepoe.com/collections/${collection}/${product.handle}`}
           rel="noreferrer"
         > */}
         <Link href={`/collections/${collection}/${product.handle}`}>
@@ -73,7 +73,7 @@ const ReviewsPageContent = ({ collection, product }) => {
           ></div>
         </div>
       </div>
-        <div className="mb-10"></div>
+      <div className="mb-10"></div>
       {/* <div className="flex flex-col w-full py-5 font-public-sans-normal"> */}
       {/* <div className="pt-2.5 self-center">
           <Link href={`/deepoe/sustainability`}>

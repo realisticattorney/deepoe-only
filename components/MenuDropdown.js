@@ -7,10 +7,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <Transition.Root
-      show={parentState}
-      as={Fragment}
-    >
+    <Transition.Root show={parentState} as={Fragment}>
       <Dialog
         //   initialFocus={cancelButtonRef}
         as="div"
@@ -78,7 +75,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                       <Disclosure.Panel className="font-extralight font-mono">
                         <ul className="space-y-3 pl-11 mb-6">
                           <a
-                            href={`https://deepoe-only.vercel.app/collections/frontpage`}
+                            href={`https://deepoe.com/collections/frontpage`}
                             rel="noreferrer"
                           >
                             {/* <Link href={`/collections/frontpage`}> */}
@@ -91,7 +88,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                             {/* </Link> */}
                           </a>
                           <a
-                            href={`https://deepoe-only.vercel.app/collections/dinnerware`}
+                            href={`https://deepoe.com/collections/dinnerware`}
                             rel="noreferrer"
                           >
                             {/* <Link href={`/collections/dinnerware`}> */}
@@ -104,7 +101,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                             {/* </Link> */}
                           </a>
                           <a
-                            href={`https://deepoe-only.vercel.app/collections/drinkware`}
+                            href={`https://deepoe.com/collections/drinkware`}
                             rel="noreferrer"
                           >
                             {/* <Link href={`/collections/drinkware`}> */}
@@ -117,7 +114,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                             {/* </Link> */}
                           </a>
                           <a
-                            href={`https://deepoe-only.vercel.app/collections/accessories`}
+                            href={`https://deepoe.com/collections/accessories`}
                             rel="noreferrer"
                           >
                             {/* <Link href={`/collections/accessories`}> */}

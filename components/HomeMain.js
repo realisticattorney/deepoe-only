@@ -22,10 +22,7 @@ const HomeMain = ({ products, carouselProducts }) => {
         >
           Considered materials, lively design.
         </h2>
-        <a
-          href={`https://deepoe-only.vercel.app/collections/frontpage`}
-          rel="noreferrer"
-        >
+        <a href={`https://deepoe.com/collections/frontpage`} rel="noreferrer">
           <p className="text-white text-sm absolute  font-light text-center right-0 mr-auto mb-6 bottom-0 left-0 ml-auto w-40 underline font-mono">
             Shop All Products
           </p>

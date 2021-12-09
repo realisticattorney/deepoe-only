@@ -13,10 +13,10 @@ const ProductCard = ({ collection, product }) => {
 
   return (
     <a
-      href={`https://deepoe-only.vercel.app/collections/${collection}/${handle}`}
+      href={`https://deepoe.com/collections/${collection}/${handle}`}
       rel="noreferrer"
     >
-    {/* <Link href={`/collections/${collection}/${handle}`}> */}
+      {/* <Link href={`/collections/${collection}/${handle}`}> */}
       <div className="group px-2 max-w-md mx-auto">
         <div className=" overflow-hidden">
           <div className="relative h-110">
@@ -32,15 +32,16 @@ const ProductCard = ({ collection, product }) => {
           {title}
         </h3>
         <div className="inline-flex items-baseline justify-between w-full reviews-for-collections">
-        <p className="mt-1 text-md font-mono font-extralight">
-          {formatter.format(price)}{' '}
-        </p>
+          <p className="mt-1 text-md font-mono font-extralight">
+            {formatter.format(price)}{' '}
+          </p>
           <div
             className="yotpo bottomLine inline-flex"
             data-yotpo-product-id={`${atobId}`}
           ></div>
-      </div></div>
-    {/* </Link> */}
+        </div>
+      </div>
+      {/* </Link> */}
     </a>
   );
 };

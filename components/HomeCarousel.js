@@ -104,7 +104,7 @@ const HomeCarousel = ({ carouselProducts, selectedItem, setSelectedItem }) => {
 
               <a
                 className="absolute w-full pr-1 z-50 bottom-3 font-mono font-extralight underline text-deepoe_default-black left-0"
-                href={`https://deepoe-only.vercel.app/collections/frontpage/${i.handle}`}
+                href={`https://deepoe.com/collections/frontpage/${i.handle}`}
               >
                 <p>Details</p>
               </a>
@@ -151,7 +151,7 @@ const HomeCarousel = ({ carouselProducts, selectedItem, setSelectedItem }) => {
 
               <a
                 className="absolute w-full pr-1 z-50 bottom-3 font-mono font-extralight underline text-deepoe_default-black left-0"
-                href={`https://deepoe-only.vercel.app/collections/frontpage/${i.handle}`}
+                href={`https://deepoe.com/collections/frontpage/${i.handle}`}
               >
                 <p>Details</p>
               </a>
@@ -198,7 +198,7 @@ const HomeCarousel = ({ carouselProducts, selectedItem, setSelectedItem }) => {
 
               <a
                 className="absolute w-full pr-1 z-50 bottom-3 font-mono font-extralight underline text-deepoe_default-black left-0"
-                href={`https://deepoe-only.vercel.app/collections/frontpage/${i.handle}`}
+                href={`https://deepoe.com/collections/frontpage/${i.handle}`}
               >
                 <p>Details</p>
               </a>

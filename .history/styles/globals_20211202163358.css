@@ -1,0 +1,476 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  font-family: 'TiffanyStd-Demi';
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+svg path {
+  stroke-width: 1.2;
+  /* color: #302e2f; */
+}
+
+.svg-stroke {
+  stroke-width: 3;
+}
+body {
+  @apply text-deepoe_default-black;
+}
+
+.my__carousel_main {
+  div {
+    ol {
+      li {
+        background-color: red;
+        border-radius: 50%;
+        height: 10px;
+        width: 10px;
+      }
+    }
+  }
+}
+
+.items-specs-list {
+  list-style-type: disc !important;
+}
+
+#reviews-complete > * > * > * > * > .text-m {
+  @apply text-deepoe_default-black font-normal;
+  font-size: 0.75rem !important;
+  margin-left: 0.2rem !important;
+  font-family: 'Public Sans' !important;
+}
+.text-m {
+  @apply text-deepoe_default-black font-normal;
+  font-size: 0.75rem !important;
+  margin-left: 0.28rem !important;
+  margin-top: 0.05rem !important;
+
+  font-family: 'Public Sans' !important;
+}
+
+.reviews-for-collections > * > * > * > * > .text-m {
+  margin-left: 0.8rem !important;
+}
+
+#reviews-complete > * > * > * > .yotpo-display-wrapper {
+}
+#reviews-complete > .standalone-bottomline.star-clickable {
+}
+
+#reviews-complete > * > * > * > .yotpo-bottomline {
+  @apply gap-1 flex-col;
+  margin-bottom: -0.2rem !important;
+}
+#reviews-productpage > .yotpo-bottomline {
+  @apply gap-12  items-baseline flex;
+  margin-bottom: -0.2rem !important;
+}
+
+#reviews-productpage
+  > *
+  > *
+  > *
+  > .yotpo-reviews
+  > .yotpo-review:nth-child(n + 7)
+  #reviews-productpage
+  > *
+  > *
+  > *
+  > .yotpo-active
+  > .yotpo-review:nth-child(n + 7) {
+  display: none !important;
+  /* height: 300px !important; */
+  /* max-height: 300px !important; */
+}
+
+,
+#reviews-complete > * > * > * > * > .yotpo-stars {
+  @apply flex items-center;
+  margin-right: 0.5rem !important;
+  color: #fff !important;
+}
+
+.yotpo-stars {
+  @apply flex items-baseline;
+}
+#reviews-complete > * > * > * > * > .rating-stars {
+  @apply flex items-center;
+  font-size: 1.5rem !important;
+  font-family: 'Public Sans' !important;
+  color: #fff !important;
+}
+.yotpo-main-widget-product-page {
+  height: 300px !important;
+}
+
+.yotpo-icon-profile {
+  /* display: none !important; */
+  background-color: #302e2f !important;
+  color: #f5f3ee !important;
+  font-family: 'Public Sans' !important;
+  margin-right: 0.7rem !important;
+}
+
+.yotpo-user-letter {
+  color: #f5f3ee !important;
+  margin-top: 0.15rem !important;
+  margin-left: -0.1rem !important;
+}
+
+.yotpo-main-widget {
+  font-family: 'Public Sans' !important;
+  src: url('/fonts/PublicSans/PublicSans-Regular.ttf') !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-display: swap !important;
+}
+.footer-actions {
+  display: none !important;
+}
+
+.yotpo-user-name {
+  font-family: 'Public Sans' !important;
+  src: url('/fonts/PublicSans/PublicSans-Regular.ttf') !important;
+  font-size: 0.875rem !important;
+  font-weight: 200 !important;
+  margin-bottom: -0.3rem !important;
+}
+
+.content-title {
+  font-family: 'Public Sans' !important;
+  src: url('/fonts/PublicSans/PublicSans-Regular.ttf') !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-display: swap !important;
+  margin-top: 0.5rem !important;
+  /* font-size: 1.125rem !important; */
+}
+.content-review {
+  font-family: 'Public Sans' !important;
+  src: url('/fonts/PublicSans/PublicSans-Regular.ttf') !important;
+  font-style: normal !important;
+  font-weight: 200 !important;
+  font-display: swap !important;
+}
+
+.yotpo-footer {
+  display: none !important;
+}
+
+.yotpo-regular-box {
+  padding-bottom: 0.5rem !important;
+  border-bottom: 0.8px solid #302e2f !important;
+}
+
+#reviews-complete > * > * > * > * > * > .yotpo-icon-default-star:before,
+#reviews-complete > * > * > * > * > * > .yotpo-icon-empty-star:before,
+#reviews-complete > * > * > * > * > * > .yotpo-icon-star:before {
+  /* content: '\e60e' !important; */
+  /* size: 3.5rem !important; */
+  font-size: 2rem !important;
+}
+
+.yotpo-main > *,
+.yotpo-review-wrapper > * {
+  color: #302e2f !important;
+}
+
+.yotpo-small-box {
+  display: none !important;
+}
+
+.yotpo-bottomline-empty-state {
+  margin-top: -4.1rem !important;
+  margin-bottom: -1.2rem !important;
+  /* align-self: baseline !important; */
+
+  margin-left: 20% !important;
+  display: none !important;
+}
+
+.control-dots > .dot {
+  background: #fff !important;
+  opacity: 0.2 !important;
+  box-shadow: none !important;
+}
+.control-dots > .selected {
+  background: #fff !important;
+  opacity: 0.8 !important;
+}
+
+.yotpo-first-review > * > span,
+.yotpo-first-review > * > * > .yotpo-icon-star {
+  font-family: 'Public Sans' !important;
+  src: url('/fonts/PublicSans/PublicSans-Regular.ttf') !important;
+  font-weight: 300 !important;
+  font-style: normal !important;
+  font-display: swap !important;
+  color: #302e2f !important;
+  /* background-color: #fff !important; */
+}
+
+/* .control-arrow {
+  width: 5rem !important;
+  opacity: 0.3 !important;
+  padding: 0rem !important;
+
+} */
+/* .carousel.carousel-slider .control-arrow:hover {
+  background: transparent !important;
+  opacity: 0.7 !important;
+} */
+
+/* 
+@media only screen and (min-device-width: 10px) and (max-device-width: 329px) {
+  .yotpo-bottomline-empty-state {
+    display: none !important;
+  }
+}
+@media only screen and (min-device-width: 330px) and (max-device-width: 345px) {
+  .yotpo-bottomline-empty-state {
+    margin-left: 47% !important;
+  }
+}
+@media only screen and (min-device-width: 346px) and (max-device-width: 364px) {
+  .yotpo-bottomline-empty-state {
+    margin-left: 51% !important;
+  }
+}
+@media only screen and (min-device-width: 365px) and (max-device-width: 379px) {
+  .yotpo-bottomline-empty-state {
+    margin-left: 53% !important;
+  }
+}
+@media only screen and (min-device-width: 380px) and (max-device-width: 404px) {
+  .yotpo-bottomline-empty-state {
+    margin-left: 56% !important;
+  }
+}
+@media only screen and (min-device-width: 405px) and (max-device-width: 423px) {
+  .yotpo-bottomline-empty-state {
+    margin-left: 58% !important;
+  }
+}
+@media only screen and (min-device-width: 424px) and (max-device-width: 458px) {
+  .yotpo-bottomline-empty-state {
+    margin-left: 59% !important;
+  }
+} */
+
+.yotpo-sum-reviews {
+  margin-bottom: -0.3rem !important;
+  margin-left: -0.3rem !important;
+}
+/* .font-color-gray {
+  /* margin-left: -0.3rem !important; */
+
+.yotpo-review {
+  border-top: none !important;
+  border-bottom: 0.8px solid #302e2f !important;
+  width: 100% !important;
+  margin: auto !important;
+}
+
+@layer components {
+  .font-public-sans-normal {
+    @apply font-mono font-normal;
+  }
+  .font-public-sans-medium {
+    @apply font-mono font-medium;
+  }
+  .font-public-sans-light {
+    @apply font-mono font-light;
+  }
+  .font-public-sans-extralight {
+    @apply font-mono font-extralight;
+  }
+  .font-public-sans-thin {
+    @apply font-mono font-thin;
+  }
+  .font-public-sans-semibold {
+    @apply font-mono font-semibold;
+  }
+  .font-public-sans-bold {
+    @apply font-mono font-bold;
+  }
+  .font-public-sans-extrabold {
+    @apply font-mono font-extrabold;
+  }
+  .font-public-sans-black {
+    @apply font-mono font-black;
+  }
+  .font-public-sans-normal-italic {
+    @apply font-mono font-normal italic;
+  }
+  .font-public-sans-medium-italic {
+    @apply font-mono font-medium italic;
+  }
+  .font-public-sans-light-italic {
+    @apply font-mono font-light italic;
+  }
+  .font-public-sans-extralight-italic {
+    @apply font-mono font-extralight italic;
+  }
+  .font-public-sans-thin-italic {
+    @apply font-mono font-thin italic;
+  }
+  .font-public-sans-semibold-italic {
+    @apply font-mono font-semibold italic;
+  }
+  .font-public-sans-bold-italic {
+    @apply font-mono font-bold italic;
+  }
+  .font-public-sans-extrabold-italic {
+    @apply font-mono font-extrabold italic;
+  }
+  .font-public-sans-black-italic {
+    @apply font-mono font-black italic;
+  }
+}
+
+@font-face {
+  font-family: 'TiffanyStd-Demi';
+  src: url('/fonts/Tiffany/TiffanyStd-Light.otf');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TiffanyStd-Demi';
+  src: url('/fonts/Tiffany/TiffanyStd.otf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TiffanyStd-Demi';
+  src: url('/fonts/Tiffany/TiffanyStd-Demi.otf');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TiffanyStd-Demi';
+  src: url('/fonts/Tiffany/TiffanyStd-Heavy.otf');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TiffanyStd-Demi';
+  src: url('/fonts/Tiffany/TiffanyStd-LightItalic.otf');
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TiffanyStd-Demi';
+  src: url('/fonts/Tiffany/TiffanyStd-Italic.otf');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TiffanyStd-Demi';
+  src: url('/fonts/Tiffany/TiffanyStd-DemiItalic.otf');
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TiffanyStd-Demi';
+  src: url('/fonts/Tiffany/TiffanyStd-HeavyItalic.otf');
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/fonts/PublicSans/PublicSans-Thin.ttf');
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/fonts/PublicSans/PublicSans-ExtraLight.ttf');
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/fonts/PublicSans/PublicSans-ThinItalic.ttf');
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/fonts/PublicSans/PublicSans-SemiBold.ttf');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/fonts/PublicSans/PublicSans-SemiBoldItalic.ttf');
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/fonts/PublicSans/PublicSans-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/fonts/PublicSans/PublicSans-Light.ttf');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/fonts/PublicSans/PublicSans-MediumItalic.ttf');
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/fonts/PublicSans/PublicSans-Medium.ttf');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/fonts/PublicSans/PublicSans-LightItalic.ttf');
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/fonts/PublicSans/PublicSans-Light.ttf');
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/fonts/PublicSans/PublicSans-Italic.ttf');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}

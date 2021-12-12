@@ -22,6 +22,7 @@ export default function MiniCart({ cart }) {
     subtractCartItem,
     addItemToCart,
   } = useContext(CartContext);
+  console.log('cart', cart);
   let cartTotal = 0;
   cart.map((item) => {
     cartTotal += item?.variantPrice * item?.variantQuantity;

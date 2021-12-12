@@ -4,7 +4,7 @@ import { BuilderComponent, Builder, builder } from '@builder.io/react';
 import DefaultErrorPage from 'next/error';
 import Head from 'next/head';
 import '../components/FaqSection';
-import '../components/FaqQuestion';
+import '../components/FaqSection';
 
 const BUILDER_API_KEY = '4a1ff4a5cfa24cfe9eaaddc710a33a27';
 builder.init(BUILDER_API_KEY);
@@ -15,7 +15,7 @@ export async function getStaticProps({
   const page =
     (await builder
       .get('page', {
-        userAttributes: {
+        userAttributes: { 
           urlPath: '/' + (params?.page?.join('/') || ''),
         },
       })
@@ -59,6 +59,8 @@ export default function Page({
       </>
     );
   }
+
+  
 
   return (
     <>

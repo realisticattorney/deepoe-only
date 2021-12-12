@@ -15,6 +15,10 @@ const FaqSection = (props: any) => {
         <h3 className="text-3xl pt-5 py-2 font-thin px-3 tracking-tighter">
           Frequently Asked Questions
         </h3>
+
+    
+
+       
       </div>
     </div>
   );
@@ -22,6 +26,9 @@ const FaqSection = (props: any) => {
 
 Builder.registerComponent(FaqSection, {
   name: 'FaqSection',
+ 
 });
 
 export default FaqSection;
+
+

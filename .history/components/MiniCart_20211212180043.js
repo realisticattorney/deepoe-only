@@ -22,12 +22,77 @@ export default function MiniCart({ cart }) {
     subtractCartItem,
     addItemToCart,
   } = useContext(CartContext);
+  console.log('cart', cart);
   let cartTotal = 0;
   cart.map((item) => {
     cartTotal += item?.variantPrice * item?.variantQuantity;
   });
 
   const [isButtonDisabled, setButtonDisabled] = useState(false);
+
+  // const CART_DISCOUNT_CODE_UPDATE = gql`
+  //   mutation cartDiscountCodesUpdate($cartId: ID!) {
+  //     cartDiscountCodesUpdate(cartId: $cartId) {
+  //       cart {
+  //         id
+  //       }
+  //       userErrors {
+  //         code
+  //         field
+  //         message
+  //       }
+  //     }
+  //   }
+  // `;
+
+  // useEffect(() => {
+  //   // Perform localStorage action
+  //   const checkoutId = localStorage.getItem('checkout_id');
+  //   const checkoutIdJson = JSON.parse(checkoutId);
+  //   const checkoutIdJsonId = checkoutIdJson[1].id;
+  // }, []);
+
+  // const toast = useToast();
+  // const {
+  //   register,
+  //   handleSubmit,
+  //   formState: { errors },
+  //   reset,
+  // } = useForm();
+  // const router = useRouter();
+
+  // const [cartDiscountCodesUpdate, { data, loading, error }] = useMutation(
+  //   CART_DISCOUNT_CODE_UPDATE
+  // );
+
+  // async function onSubmitForm(values) {
+  //   // const { promocode } = values;
+  //   // console.log(values);
+  //   const atobCart = atob(
+  //     'Z2lkOi8vc2hvcGlmeS9DaGVja291dC8wZWUxNDU1NGM1MTExYmY1Y2M1OGNmYjgwMzliMTk5Nj9rZXk9YjJjZDlmM2Q1YmNiMjIxMjlhOGM0NDI3YjM5Mzk2NmM='
+  //   );
+  //   console.log('atobCart', atobCart);
+  //   try {
+  //     const response = await cartDiscountCodesUpdate({
+  //       cartId:
+  //         'Z2lkOi8vc2hvcGlmeS9DaGVja291dC8wZWUxNDU1NGM1MTExYmY1Y2M1OGNmYjgwMzliMTk5Nj9rZXk9YjJjZDlmM2Q1YmNiMjIxMjlhOGM0NDI3YjM5Mzk2NmM=',
+  //     });
+  //     console.log('response', response);
+  //     if (response.data) {
+  //       console.log('data', response.data);
+  //       toast('success', 'Check your email box to confirm your account');
+
+  //       reset();
+  //     } else if (response.data) {
+  //       error = response.data;
+  //       console.log('eerr', response.data);
+  //       toast('error', `${response.data}`);
+  //     }
+  //   } catch (err) {
+  //     console.log('err', err);
+  //     toast('error', `${err}`);
+  //   }
+  // }
 
   return (
     <Transition.Root show={cartOpen} as={Fragment}>

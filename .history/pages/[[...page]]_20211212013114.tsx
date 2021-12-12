@@ -14,7 +14,7 @@ export async function getStaticProps({
   const page =
     (await builder
       .get('page', {
-        userAttributes: { 
+        userAttributes: {
           urlPath: '/' + (params?.page?.join('/') || ''),
         },
       })

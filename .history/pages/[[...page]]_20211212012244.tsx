@@ -59,7 +59,7 @@ export default function Page({
     );
   }
 
-  
+  console.log("ROOOUTER", router);
 
   return (
     <>

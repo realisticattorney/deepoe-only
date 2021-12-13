@@ -5,9 +5,9 @@ import DefaultErrorPage from 'next/error';
 import Head from 'next/head';
 import '../components/FaqSection';
 import '../components/FaqQuestion';
-import '../components/Sustainability';
+import '../components/FaqQuestion';
 
-const BUILDER_API_KEY = '9886b56a779b4bbfa9835e6e7938f1e6';
+const BUILDER_API_KEY = '4a1ff4a5cfa24cfe9eaaddc710a33a27';
 builder.init(BUILDER_API_KEY);
 
 export async function getStaticProps({

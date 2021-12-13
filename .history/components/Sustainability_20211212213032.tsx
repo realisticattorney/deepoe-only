@@ -16,7 +16,7 @@ const Sustainability = (props: any) => {
           Sustainability
         </h3>
         <div>
-          <p className="text-lg font-thin px-3 leading-8">
+          <p className="text-lg font-thin px-3 leadi">
             What{'`'}s a sustainable good? At deepoe, we see sustainability as
             an ongoing process and a daily challenge. We’re on a journey as we
             try, with each product and package, to reduce our footprint,

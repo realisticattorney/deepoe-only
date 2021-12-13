@@ -140,7 +140,7 @@ const Layout = ({ children }) => {
           </div>
         </div>
 
-        <div className="self-end md:-ml-4">
+        <div className="self-end ">
           <ul className="text-xs flex-col">
             <li className="text-deepoe-cream font-thin text-opacity-70 -mb-1.5">
               designed & developed by

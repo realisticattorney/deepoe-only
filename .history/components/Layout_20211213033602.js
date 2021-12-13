@@ -140,7 +140,7 @@ const Layout = ({ children }) => {
           </div>
         </div>
 
-        <div className="self-end md:-ml-4">
+        <div className="self-end  md:col-start-6 md:-ml-2">
           <ul className="text-xs flex-col">
             <li className="text-deepoe-cream font-thin text-opacity-70 -mb-1.5">
               designed & developed by
@@ -154,7 +154,7 @@ const Layout = ({ children }) => {
             <li className="-mb-1.5">Alan Padilla</li>
           </ul>
         </div>
-        <div className="self-end">
+        <div className="self-end md:col-start-5 md:-ml-4 md:row-start-1">
           <ul className="text-xs flex-col">
             <li className="text-deepoe-cream font-thin text-opacity-70 -mb-1.5">
               a brand of

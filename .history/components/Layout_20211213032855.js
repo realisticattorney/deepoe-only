@@ -128,7 +128,7 @@ const Layout = ({ children }) => {
         </div>
         <div className="flex-col text-xs self-end -mb-2">
           <div className="flex-col space-y-0">
-            <div className="-pl-2 -mb-1 pr-3 md:pr-0">
+            <div className="-pl-2 -mb-1 pr-3">
               <Image
                 src="/logo.svg"
                 height={48}
@@ -140,7 +140,7 @@ const Layout = ({ children }) => {
           </div>
         </div>
 
-        <div className="self-end md:-ml-4">
+        <div className="self-end">
           <ul className="text-xs flex-col">
             <li className="text-deepoe-cream font-thin text-opacity-70 -mb-1.5">
               designed & developed by

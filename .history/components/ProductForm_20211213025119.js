@@ -156,7 +156,7 @@ const ProductForm = ({ product, collection }) => {
             <h3
               className={`text-right text-sm font-normal text-gray-600 ${
                 selectedVariant.availableForSale === false
-                  ? 'text-deepoe_default-black font-semibold'
+                  ? 'text-deepoe_default-black font'
                   : ''
               }`}
             >
@@ -189,11 +189,9 @@ const ProductForm = ({ product, collection }) => {
             onClick={() => {
               addToCart(selectedVariant);
             }}
-            className={`  px-2 pt-2 pb-1.5 mt-1 mb-3 text-2xl font-sans self-center justify-self-center items-center  w-full active:scale-95 ${
-              selectedVariant.availableForSale
-                ? 'disabled bg-deepoe-chocolate text-white'
-                : 'text-deepoe-chocolate border border-deepoe-chocolate bg-white font-medium'
-            }`}
+            className={`bg-deepoe-chocolate text-white px-2 pt-2 pb-1.5 mt-1 mb-3 text-2xl font-sans self-center justify-self-center items-center  w-full active:scale-95 ${
+              selectedVariant.availableForSale ? 'disabled' : ''
+            }`} //disabled if the selected variant is not available for sale (out of stock)
             disabled={selectedVariant.availableForSale === false ? true : false}
           >
             {selectedVariant.availableForSale === false

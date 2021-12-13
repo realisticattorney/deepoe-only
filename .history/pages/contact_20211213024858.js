@@ -202,7 +202,7 @@ export default function Contact() {
         </form>
       </div>
 
-      <div className="flex flex-col w-full  font-mono  mb-32">
+      <div className="flex flex-col w-full  font-mono  mb-28">
         <h4 className="text-2xl font-thin pt-2 py-2 font-mono tracking-tighter">
           Or check our{' '}
           <span className="underline">

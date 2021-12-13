@@ -189,10 +189,8 @@ const ProductForm = ({ product, collection }) => {
             onClick={() => {
               addToCart(selectedVariant);
             }}
-            className={`  px-2 pt-2 pb-1.5 mt-1 mb-3 text-2xl font-sans self-center justify-self-center items-center  w-full active:scale-95 ${
-              selectedVariant.availableForSale
-                ? 'disabled bg-deepoe-chocolate text-white'
-                : 'text-deepoe-chocolate border border-deepoe-chocolate bg-white font-medium'
+            className={`bg-deepoe-chocolate text-white px-2 pt-2 pb-1.5 mt-1 mb-3 text-2xl font-sans self-center justify-self-center items-center  w-full active:scale-95 ${
+              selectedVariant.availableForSale ? 'disabled text-deepoe-cream' : ''
             }`}
             disabled={selectedVariant.availableForSale === false ? true : false}
           >

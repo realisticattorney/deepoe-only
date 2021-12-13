@@ -105,7 +105,7 @@ const HomeMain = ({ products, carouselProducts }) => {
           <div className="lg:w-96 w-full overflow-hidden">
             <div className="relative zero:h-80 fourxs:h-96 xxxs:h-102  xxs:h-105 xxs2:h-107">
               <Image
-                src="/people.png"
+                src="/pexels-cottonbro-4877873.jpg"
                 layout="fill"
                 objectFit="contain"
                 objectPosition="top"

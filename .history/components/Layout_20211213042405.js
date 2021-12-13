@@ -147,7 +147,7 @@ const Layout = ({ children }) => {
               </li>
               <li className="-mb-1.5">
                 <a
-                  href="https://www.germanaquila.com"
+                  href="https://www.facebook.com/shopdeepoe"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -157,16 +157,7 @@ const Layout = ({ children }) => {
                   &
                 </span>
               </li>
-              <li className="-mb-1.5">
-                {' '}
-                <a
-                  href="https://alandavidpadilla.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Alan Padilla
-                </a>
-              </li>
+              <li className="-mb-1.5">Alan Padilla</li>
             </ul>
           </div>
           <div className="self-end">

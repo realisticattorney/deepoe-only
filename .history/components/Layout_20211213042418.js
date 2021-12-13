@@ -157,16 +157,7 @@ const Layout = ({ children }) => {
                   &
                 </span>
               </li>
-              <li className="-mb-1.5">
-                {' '}
-                <a
-                  href="https://alandavidpadilla.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Alan Padilla
-                </a>
-              </li>
+              <li className="-mb-1.5">Alan Padilla</li>
             </ul>
           </div>
           <div className="self-end">

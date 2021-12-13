@@ -12,17 +12,16 @@ builder.init(BUILDER_API_KEY);
 
 export async function getStaticProps({
   params,
-}: GetStaticPropsContext<{ page: string[] }>) {
+}: GetStaticPropsContext<{ page: string }>) {
   const page =
     (await builder
       .get('page', {
-        userAttributes: {
-          urlPath: '/' + (params?.page?.join('/') || ''),
+        query: {
+          'data.slug': params?.page,
         },
       })
       .toPromise()) || null;
 
-      console.log("PAGE",page)
   return {
     props: {
       page,
@@ -37,7 +36,7 @@ export async function getStaticPaths() {
   });
 
   return {
-    paths: pages.map((page) => `${page.data?.url}`),
+    paths: [],
     fallback: true,
   };
 }
@@ -68,7 +67,7 @@ export default function Page({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <BuilderComponent model="page" content={page} />
+      <BuilderComponent model="page"  content={page} />
     </>
   );
 }

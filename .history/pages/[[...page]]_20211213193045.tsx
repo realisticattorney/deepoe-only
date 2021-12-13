@@ -16,13 +16,12 @@ export async function getStaticProps({
   const page =
     (await builder
       .get('page', {
-        userAttributes: {
-          urlPath: '/' + (params?.page?.join('/') || ''),
+        query: {
+          'data.slug': params?.page,
         },
       })
       .toPromise()) || null;
 
-      console.log("PAGE",page)
   return {
     props: {
       page,

@@ -22,7 +22,7 @@ export async function getStaticProps({
       })
       .toPromise()) || null;
 
-      console.log("PAGE",page)
+      console.log()
   return {
     props: {
       page,

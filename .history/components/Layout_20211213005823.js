@@ -78,7 +78,7 @@ const Layout = ({ children }) => {
         <div className="flex-col text-xs self-end -mb-2">
           <div className="flex-col space-y-0">
             {/* <li>Careers</li> */}
-            <div className="-pl-2 -mb-1 pr-3">
+            <div className="-pl-2 -mb-3 pr-3">
               <Image
                 src="/logo.svg"
                 height={48}
@@ -92,15 +92,10 @@ const Layout = ({ children }) => {
 
         <div className="self-end">
           <ul className="text-xs flex-col">
-            <li className="text-deepoe-cream font-thin text-opacity-70 -mb-1.5">designed & developed by</li>
-            <li className="-mb-1.5">German Aquila <span  className="text-deepoe-cream font-thin text-opacity-70 -mb-1.5">&</span></li>
-            <li className="-mb-1.5">Alan Padilla</li>
-          </ul>
-        </div>
-        <div className="self-end">
-          <ul className="text-xs flex-col">
-            <li className="text-deepoe-cream font-thin text-opacity-70 -mb-1.5">a brand of</li>
+            <li className="text-deepoe-cream font-thin -mb-1.5">a brand of</li>
             <li className="-mb-1.5">Mereride Brands, LLC</li>
+            <li className="-mb-1.5">1018 Tenessee St.</li>
+            <li className="-mb-1.5">San Francisco, CA 94107</li>
           </ul>
         </div>
       </footer>

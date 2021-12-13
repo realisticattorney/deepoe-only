@@ -9,6 +9,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
   return (
     <Transition.Root show={parentState} as={Fragment}>
       <Dialog
+        //   initialFocus={cancelButtonRef}
         as="div"
         className="fixed  inset-0 overflow-hidden"
         onClose={() => {
@@ -53,6 +54,11 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                               open ? 'transform rotate-180' : ''
                             } text-gray-600 `}
                           />
+                          {/* {open ? (
+                              <ChevronUpIcon className="w-5 h-5" />
+                            ) : (
+                              <ChevronDownIcon className="w-5 h-5" />
+                            )} */}
                         </span>
                       </div>
                     </Disclosure.Button>
@@ -112,7 +118,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                             </button>
                           </a>
                         </ul>
-                      </Disclosure.Panel>
+                      </Disclosure.Panel>{' '}
                     </Transition>
                     <div className="flex-1 overflow-y-auto space-y-6 px-6 sm:px-6">
                       <Link href={`/deepoe/sustainability`}>

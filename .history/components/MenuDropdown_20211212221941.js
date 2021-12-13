@@ -9,6 +9,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
   return (
     <Transition.Root show={parentState} as={Fragment}>
       <Dialog
+        //   initialFocus={cancelButtonRef}
         as="div"
         className="fixed  inset-0 overflow-hidden"
         onClose={() => {
@@ -53,10 +54,16 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                               open ? 'transform rotate-180' : ''
                             } text-gray-600 `}
                           />
+                          {/* {open ? (
+                              <ChevronUpIcon className="w-5 h-5" />
+                            ) : (
+                              <ChevronDownIcon className="w-5 h-5" />
+                            )} */}
                         </span>
                       </div>
                     </Disclosure.Button>
                     <Transition
+                      //  show={open}
                       appear={true}
                       enter="transform transition ease-in duration-250"
                       enterFrom="-translate-y-1/4 opacity-0"
@@ -71,48 +78,57 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                             href={`https://deepoe.com/collections/frontpage`}
                             rel="noreferrer"
                           >
+                            {/* <Link href={`/collections/frontpage`}> */}
                             <button
                               className="block text-lg my-2 font-extralight"
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Shop All
                             </button>
+                            {/* </Link> */}
                           </a>
                           <a
                             href={`https://deepoe.com/collections/dinnerware`}
                             rel="noreferrer"
                           >
+                            {/* <Link href={`/collections/dinnerware`}> */}
                             <button
                               className="block text-lg my-2 font-extralight"
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Dinnerware
                             </button>
+                            {/* </Link> */}
                           </a>
                           <a
                             href={`https://deepoe.com/collections/drinkware`}
                             rel="noreferrer"
                           >
+                            {/* <Link href={`/collections/drinkware`}> */}
                             <button
                               className="block text-lg my-2 font-extralight"
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Drinkware
                             </button>
+                            {/* </Link> */}
                           </a>
                           <a
                             href={`https://deepoe.com/collections/accessories`}
                             rel="noreferrer"
                           >
+                            {/* <Link href={`/collections/accessories`}> */}
                             <button
                               className="block text-lg my-2 font-extralight"
                               onClick={() => wrapperSetParentState(false)}
                             >
                               Accessories
                             </button>
+                            {/* </Link> */}
                           </a>
+                       
                         </ul>
-                      </Disclosure.Panel>
+                      </Disclosure.Panel>{' '}
                     </Transition>
                     <div className="flex-1 overflow-y-auto space-y-6 px-6 sm:px-6">
                       <Link href={`/deepoe/sustainability`}>
@@ -141,6 +157,16 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                           Contact
                         </a>
                       </Link>
+
+                      {/* <Link href={`/login`}>
+                        <a
+                          className="font-extralight text-2xl block pt-14"
+                          onClick={() => wrapperSetParentState(false)}
+                        >
+                          Log In/Sign Up
+                        </a>
+                      </Link>
+             */}
                     </div>
                   </Disclosure>
                 </div>

@@ -92,14 +92,15 @@ const Layout = ({ children }) => {
 
         <div className="self-end">
           <ul className="text-xs flex-col">
-            <li className="text-deepoe-cream font-thin text-opacity-70 -mb-1.5">designed & developed by</li>
-            <li className="-mb-1.5">German Aquila <span  className="text-deepoe-cream font-thin text-opacity-70 -mb-1.5">&</span></li>
-            <li className="-mb-1.5">Alan Padilla</li>
+            <li className="text-deepoe-cream font-thin -mb-1.5">a brand of</li>
+            <li className="-mb-1.5">Mereride Brands, LLC</li>
+            <li className="-mb-1.5">1018 Tenessee St.</li>
+            <li className="-mb-1.5">San Francisco, CA 94107</li>
           </ul>
         </div>
         <div className="self-end">
           <ul className="text-xs flex-col">
-            <li className="text-deepoe-cream font-thin text-opacity-70 -mb-1.5">a brand of</li>
+            <li className="text-deepoe-cream font-thin -mb-1.5">a brand of</li>
             <li className="-mb-1.5">Mereride Brands, LLC</li>
           </ul>
         </div>

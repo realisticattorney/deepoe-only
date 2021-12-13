@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
       {/* {router.pathname !== '/' && ( */}
       <footer className=" text-white h-72 text-sm font-extralight font-mono grid col-span-3 grid-cols-3 grid-rows-2 p-5 bg-deepoe-chocolate">
         <div className="inline-flex col-span-1 row-span-1 ">
-          <ul className="flex-col space-y-1.7 ">
+          <ul className="flex-col space-y-1. ">
             <li className="font-extralight">Instagram</li>
             <li className="font-extralight">Pinterest</li>
             <li className="font-extralight">Facebook</li>
@@ -73,12 +73,17 @@ const Layout = ({ children }) => {
             <li>Terms</li>
             <li>Privacy</li>
             <li>Accessibility</li>
+            <li>
+              <Link href="/deepoe/sustainability">
+                <a>Sustainability</a>
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="flex-col text-xs self-end -mb-2">
           <div className="flex-col space-y-0">
             {/* <li>Careers</li> */}
-            <div className="-pl-2 -mb-1 pr-3">
+            <div className="-pl-2 -mb-2.5 pr-3">
               <Image
                 src="/logo.svg"
                 height={48}
@@ -92,15 +97,10 @@ const Layout = ({ children }) => {
 
         <div className="self-end">
           <ul className="text-xs flex-col">
-            <li className="text-deepoe-cream font-thin text-opacity-70 -mb-1.5">designed & developed by</li>
-            <li className="-mb-1.5">German Aquila <span  className="text-deepoe-cream font-thin text-opacity-70 -mb-1.5">&</span></li>
-            <li className="-mb-1.5">Alan Padilla</li>
-          </ul>
-        </div>
-        <div className="self-end">
-          <ul className="text-xs flex-col">
-            <li className="text-deepoe-cream font-thin text-opacity-70 -mb-1.5">a brand of</li>
+            <li className="text-deepoe-cream font-thin -mb-1.5">a brand of</li>
             <li className="-mb-1.5">Mereride Brands, LLC</li>
+            <li className="-mb-1.5">1018 Tenessee St.</li>
+            <li className="-mb-1.5">San Francisco, CA 94107</li>
           </ul>
         </div>
       </footer>

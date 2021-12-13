@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
         {children}
       </main>
       {/* {router.pathname !== '/' && ( */}
-      <footer className=" text-white h-72 text-sm font-extralight font-mono grid col-span-3 grid-cols-3 grid-rows-2 p-5 bg-deepoe-chocolate">
+      <footer className=" text-white h-72 text-sm font-extralight font-mono grid col-span-3 grid-cols-3 grid-rows-2 px-5 py-3.5 bg-deepoe-chocolate">
         <div className="inline-flex col-span-1 row-span-1 ">
           <ul className="flex-col space-y-1.7 ">
             <li className="font-extralight">Instagram</li>

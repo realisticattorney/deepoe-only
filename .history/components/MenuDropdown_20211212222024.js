@@ -112,7 +112,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                             </button>
                           </a>
                         </ul>
-                      </Disclosure.Panel>
+                      </Disclosure.Panel>{' '}
                     </Transition>
                     <div className="flex-1 overflow-y-auto space-y-6 px-6 sm:px-6">
                       <Link href={`/deepoe/sustainability`}>

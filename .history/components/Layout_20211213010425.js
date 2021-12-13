@@ -80,11 +80,7 @@ const Layout = ({ children }) => {
                 <a>Privacy</a>
               </Link>
             </li>
-            <li>
-              <Link href="/accessibility">
-                <a>Accessibility</a>
-              </Link>
-            </li>
+            <li>Accessibility</li>
           </ul>
         </div>
         <div className="flex-col text-xs self-end -mb-2">

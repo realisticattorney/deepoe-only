@@ -82,7 +82,7 @@ const Layout = ({ children }) => {
             </li>
             <li>
               <Link href="/accessibility">
-                <a>Accessibility</a>
+                <a>Terms</a>
               </Link>
             </li>
           </ul>

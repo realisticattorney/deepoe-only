@@ -71,20 +71,12 @@ const Layout = ({ children }) => {
         <div className="flex-col justify-between">
           <ul className="flex-col space-y-1.5  ">
           <li>
-              <Link href="/terms">
+              <Link href="/product-care">
                 <a>Terms</a>
               </Link>
             </li>
-            <li>
-              <Link href="/privacy">
-                <a>Privacy</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/accessibility">
-                <a>Accessibility</a>
-              </Link>
-            </li>
+            <li>Privacy</li>
+            <li>Accessibility</li>
           </ul>
         </div>
         <div className="flex-col text-xs self-end -mb-2">

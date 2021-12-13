@@ -81,8 +81,8 @@ const Layout = ({ children }) => {
               </Link>
             </li>
             <li>
-              <Link href="/accessibility">
-                <a>Accessibility</a>
+              <Link href="/terms">
+                <a>Terms</a>
               </Link>
             </li>
           </ul>

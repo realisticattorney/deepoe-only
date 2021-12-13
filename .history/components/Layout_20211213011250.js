@@ -127,6 +127,7 @@ const Layout = ({ children }) => {
         </div>
         <div className="flex-col text-xs self-end -mb-2">
           <div className="flex-col space-y-0">
+            {/* <li>Careers</li> */}
             <div className="-pl-2 -mb-1 pr-3">
               <Image
                 src="/logo.svg"
@@ -162,6 +163,7 @@ const Layout = ({ children }) => {
           </ul>
         </div>
       </footer>
+      {/* )} */}
     </div>
   );
 };

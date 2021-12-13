@@ -162,6 +162,7 @@ const Layout = ({ children }) => {
           </ul>
         </div>
       </footer>
+      {/* )} */}
     </div>
   );
 };

@@ -30,7 +30,7 @@ const HomeMain = ({ products, carouselProducts }) => {
       </div>
       <div className="px-6 my-6 md:my-9 w-full relative md:w-145 md:mx-auto">
         <Image
-          src="/deepoeHome3.jpg"
+          src="/2021.11.14_deepoe.product-11-14.jpg"
           layout="responsive"
           width={378}
           height={284}

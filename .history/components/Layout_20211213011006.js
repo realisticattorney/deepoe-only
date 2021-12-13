@@ -24,47 +24,27 @@ const Layout = ({ children }) => {
         <div className="inline-flex col-span-1 row-span-1 ">
           <ul className="flex-col space-y-1.7 ">
             <li>
-              <a
-                href="https://www.instagram.com/shopdeepoe/"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="https://www.instagram.com/shopdeepoe/" rel="noreferrer">
                 Instagram
               </a>
             </li>
             <li>
-              <a
-                href="www.pinterest.com/shopdeepoe"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="www.pinterest.com/shopdeepoe" rel="noreferrer">
                 Pinterest
               </a>
             </li>
             <li>
-              <a
-                href="https://www.facebook.com/shopdeepoe"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="https://www.facebook.com/shopdeepoe" target="_blank" rel="noreferrer">
                 Facebook
               </a>
             </li>
             <li>
-              <a
-                href="www.tiktok.com/@shopdeepoe"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="www.tiktok.com/@shopdeepoe" target="_blank" rel="noreferrer">
                 Tik Tok
               </a>
             </li>
             <li>
-              <a
-                href="https://twitter.com/shopdeepoe"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="https://twitter.com/shopdeepoe" target="_blank" rel="noreferrer">
                 Twitter
               </a>
             </li>

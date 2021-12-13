@@ -23,51 +23,16 @@ const Layout = ({ children }) => {
       <footer className=" text-white h-72 text-sm font-extralight font-mono grid col-span-3 grid-cols-3 grid-rows-2 p-5 bg-deepoe-chocolate">
         <div className="inline-flex col-span-1 row-span-1 ">
           <ul className="flex-col space-y-1.7 ">
-            <li>
-              <a
-                href="https://www.instagram.com/shopdeepoe/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Instagram
-              </a>
-            </li>
-            <li>
-              <a
-                href="www.pinterest.com/shopdeepoe"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Pinterest
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.facebook.com/shopdeepoe"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Facebook
-              </a>
-            </li>
-            <li>
-              <a
-                href="www.tiktok.com/@shopdeepoe"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Tik Tok
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/shopdeepoe"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Twitter
-              </a>
-            </li>
+            <li>   <a
+      href={`https://deepoe.com/collections/${collection}/${handle}`}
+      rel="noreferrer"
+    >
+      
+    </a></li>
+            <li className="font-extralight">Pinterest</li>
+            <li className="font-extralight">Facebook</li>
+            <li className="font-extralight">Tik Tok</li>
+            <li className="font-extralight">Twitter</li>
           </ul>
         </div>
 
@@ -93,23 +58,24 @@ const Layout = ({ children }) => {
                 <a>FAQ</a>
               </Link>
             </li>
-
+            
             <li>
               <Link href="/policies">
                 <a>Policies</a>
               </Link>
             </li>
-
+            
             <li>
               <Link href="/product-care">
                 <a>Product Care</a>
               </Link>
             </li>
+            
           </ul>
         </div>
         <div className="flex-col justify-between">
           <ul className="flex-col space-y-1.5  ">
-            <li>
+          <li>
               <Link href="/terms">
                 <a>Terms</a>
               </Link>
@@ -143,23 +109,14 @@ const Layout = ({ children }) => {
 
         <div className="self-end">
           <ul className="text-xs flex-col">
-            <li className="text-deepoe-cream font-thin text-opacity-70 -mb-1.5">
-              designed & developed by
-            </li>
-            <li className="-mb-1.5">
-              German Aquila{' '}
-              <span className="text-deepoe-cream font-thin text-opacity-70 -mb-1.5">
-                &
-              </span>
-            </li>
+            <li className="text-deepoe-cream font-thin text-opacity-70 -mb-1.5">designed & developed by</li>
+            <li className="-mb-1.5">German Aquila <span  className="text-deepoe-cream font-thin text-opacity-70 -mb-1.5">&</span></li>
             <li className="-mb-1.5">Alan Padilla</li>
           </ul>
         </div>
         <div className="self-end">
           <ul className="text-xs flex-col">
-            <li className="text-deepoe-cream font-thin text-opacity-70 -mb-1.5">
-              a brand of
-            </li>
+            <li className="text-deepoe-cream font-thin text-opacity-70 -mb-1.5">a brand of</li>
             <li className="-mb-1.5">Mereride Brands, LLC</li>
           </ul>
         </div>

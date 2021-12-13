@@ -59,8 +59,6 @@ const FaqQuestion = (props: any) => {
         </div>
       </button>
     </div>
-    </div>
-    </div>
   );
 };
 

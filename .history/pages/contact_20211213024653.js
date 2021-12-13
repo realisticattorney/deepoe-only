@@ -113,6 +113,7 @@ export default function Contact() {
               {...register('phone', {
                 required: {
                   value: false,
+                  // message: 'You need to enter your message',
                 },
                 maxLength: {
                   value: 30,
@@ -211,6 +212,7 @@ export default function Contact() {
             </Link>
           </span>
         </h4>
+       
       </div>
     </div>
   );

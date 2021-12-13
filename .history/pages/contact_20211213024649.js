@@ -113,6 +113,7 @@ export default function Contact() {
               {...register('phone', {
                 required: {
                   value: false,
+                  // message: 'You need to enter your message',
                 },
                 maxLength: {
                   value: 30,
@@ -132,6 +133,9 @@ export default function Contact() {
               }`}
               placeholder="phone number (optional)"
             ></textarea>
+            {/* <span className="font-mono text-sm py-2">
+              {errors?.message?.message}
+            </span> */}
           </div>
           <div>
             <label htmlFor="subject" className="sr-only">
@@ -211,6 +215,7 @@ export default function Contact() {
             </Link>
           </span>
         </h4>
+       
       </div>
     </div>
   );

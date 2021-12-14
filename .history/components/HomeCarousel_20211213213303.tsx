@@ -105,6 +105,53 @@ const HomeCarousel = ({ carouselProducts, selectedItem, setSelectedItem }) => {
           ))}
         </Carousel>
       </div>
+      {/* <div className="relative z-0 mt-4  mb-10 classes.my__carousel_main lg:max-w-screen-lg  hidden lg:block xxl:hidden">
+        <Carousel
+          infiniteLoop
+          showStatus={false}
+          showThumbs={false}
+          showIndicators={false}
+          preventMovementUntilSwipeScrollTolerance={true}
+          interval={5000}
+          swipeScrollTolerance={15}
+          autoFocus={false}
+          selectedItem={selectedItem}
+          centerSlidePercentage={24.4}
+          centerMode={true}
+          transitionTime={680}
+          onChange={(selectedItem) => setSelectedItem(selectedItem)}
+          showArrows={false}
+        >
+          {carouselLong.map((i) => (
+            <div
+              className="w-53 h-66 from-gray-100  ml-6 bottom-0 relative"
+              key={i.number}
+            >
+              <Image
+                quality={100}
+                loading="lazy"
+                objectFit="cover"
+                layout="fill"
+                sizes="47vw"
+                objectPosition="center"
+                src={i.product}
+                alt=""
+                className="px-4"
+              />
+              <h2 className="absolute w-6 h-6 z-50 top-1.5 left-1.5 text-md  font-extralight font-mono rounded-full flex justify-center items-center text-center p-3.5 bg-gray-200">
+                {i.number}
+              </h2>
+
+              <a
+                className="absolute w-full pr-1 z-50 bottom-3 font-mono font-extralight underline text-deepoe_default-black left-0"
+                href={`https://deepoe.com/collections/frontpage/${i.handle}`}
+              >
+                <p>Details</p>
+              </a>
+            </div>
+          ))}
+        </Carousel>
+      </div> */}
       <div className="relative z-0 mt-4  mb-10 classes.my__carousel_main md:w-145  hidden md:block md:mx-auto">
         <Carousel
           infiniteLoop

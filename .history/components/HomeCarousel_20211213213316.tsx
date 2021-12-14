@@ -105,6 +105,7 @@ const HomeCarousel = ({ carouselProducts, selectedItem, setSelectedItem }) => {
           ))}
         </Carousel>
       </div>
+  
       <div className="relative z-0 mt-4  mb-10 classes.my__carousel_main md:w-145  hidden md:block md:mx-auto">
         <Carousel
           infiniteLoop

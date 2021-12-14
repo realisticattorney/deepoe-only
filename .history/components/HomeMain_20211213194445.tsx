@@ -138,11 +138,11 @@ export const HomeMain = ({ products, carouselProducts }: HomeProps) =>
         <h2 className="text-center font-mono text-xl -mt-1.5 md:text-2xl md:my-2 md:-mt-2 md:font-light text-deepoe_default-black">
           Shop this table
         </h2>
-        <HomeCarousel
+        {/* <HomeCarousel
         carouselProducts={carouselProducts}
         selectedItem={selectedItem}
         setSelectedItem={setSelectedItem}
-      />
+      /> */}
         <div className="lg:w-screen xl:hidden"></div>
         <h2 className="text-center w-64 lg:w-130 lg:text-3xl lg:font-extralight mx-auto font-light font-mono text-xl lg:px-20">
           We create and curate designs for your home and our shared one

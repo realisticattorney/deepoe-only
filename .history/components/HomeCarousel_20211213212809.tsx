@@ -4,7 +4,6 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const HomeCarousel = ({ carouselProducts, selectedItem, setSelectedItem }) => {
-
   useEffect(() => {
     setSelectedItem(10);
   }, []);
@@ -29,7 +28,7 @@ const HomeCarousel = ({ carouselProducts, selectedItem, setSelectedItem }) => {
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      function handleResize() {
+      const handleResize = () => {
         setWindowSize({
           width: window.innerWidth,
           height: window.innerHeight,
@@ -46,9 +45,6 @@ const HomeCarousel = ({ carouselProducts, selectedItem, setSelectedItem }) => {
   const [slidePercentage, setSlidePercentage] = useState(
     (226 / windowSize.width) * 100
   );
-  const [slidePercentageLg, setSlidePercentageLg] = useState(
-    (226 / windowSize.width) * 100
-  );
 
   useEffect(() => {
     if (selectedItem === 9) {
@@ -57,7 +53,6 @@ const HomeCarousel = ({ carouselProducts, selectedItem, setSelectedItem }) => {
     if (windowSize.width) {
       let newSlidePercentage = (226 / windowSize.width) * 100;
       setSlidePercentage(newSlidePercentage);
-      return slidePercentage;
     }
   }, [windowSize]);
 

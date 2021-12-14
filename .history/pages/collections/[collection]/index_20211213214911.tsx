@@ -3,30 +3,14 @@ import { getCollections, getProductsInCollection } from '../../../lib/shopify';
 import ProductList from '../../../components/ProductList';
 
 export interface AllCollections {
-  node: {
-    id: string;
-    handle: string;
-    title: string;
-    description: string;
-    image: {
-      id: string;
-      originalSrc: string;
-    };
-    products: {
-      edges: {
-        node: {
-          images: {
-            edges: {
-              node: {
-                originalSrc: string;
-              };
-            };
-          };
-        };
-      };
-    };
-  };
-}
+  id: string;
+  handle: string;
+  title: string;
+  description: string
+  image: {
+    id
+
+
 
 export interface ProductsProps {
   products: CollectionProducts;
@@ -78,7 +62,7 @@ export default function Collection({ collection, products }: ProductsProps) {
 }
 
 export async function getStaticPaths() {
-  const collections: AllCollections[] = await getCollections();
+  const collections = await getCollections();
   console.log('COLLECTIONS', collections);
   const paths = collections.map((collection) => ({
     params: { collection: String(collection.node.handle) },

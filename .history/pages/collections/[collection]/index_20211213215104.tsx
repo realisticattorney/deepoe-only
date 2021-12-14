@@ -3,23 +3,22 @@ import { getCollections, getProductsInCollection } from '../../../lib/shopify';
 import ProductList from '../../../components/ProductList';
 
 export interface AllCollections {
-  node: {
+  node:{}
+  id: string;
+  handle: string;
+  title: string;
+  description: string;
+  image: {
     id: string;
-    handle: string;
-    title: string;
-    description: string;
-    image: {
-      id: string;
-      originalSrc: string;
-    };
-    products: {
-      edges: {
-        node: {
-          images: {
-            edges: {
-              node: {
-                originalSrc: string;
-              };
+    originalSrc: string;
+  };
+  products: {
+    edges: {
+      node: {
+        images: {
+          edges: {
+            node: {
+              originalSrc: string;
             };
           };
         };

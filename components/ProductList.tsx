@@ -1,6 +1,44 @@
 import ProductCard from './ProductCard';
 import Image from 'next/image';
-const ProductList = ({ collection, products }) => {
+
+export interface ProductListProps {
+  products: ProductList;
+  collection: string;
+}
+
+export interface ProductList {
+  title: string;
+  image: {
+    id: string;
+    originalSrc: string;
+  };
+  products: {
+    edges: Product[];
+  };
+}
+export interface Product {
+  node: {
+    handle: string;
+    title: string;
+    id: string;
+    images: {
+      edges: ImagesEdges[];
+    };
+    priceRange: {
+      minVariantPrice: {
+        amount: string;
+      };
+    };
+  };
+}
+export interface ImagesEdges {
+  node: {
+    originalSrc: string;
+    altText: string | null;
+  };
+}
+
+const ProductList = ({ collection, products }: ProductListProps) => {
   return (
     <div className=" w-full   overflow-hidden ">
       <div className="relative h-60">

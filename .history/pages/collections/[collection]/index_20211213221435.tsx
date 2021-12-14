@@ -1,7 +1,10 @@
 import Head from 'next/head';
 import { getCollections, getProductsInCollection } from '../../../lib/shopify';
 import ProductList from '../../../components/ProductList';
-import { GetStaticPropsContext } from 'next';
+import {
+  GetStaticPaths,
+  GetStaticPropsContext,
+} from 'next';
 
 export interface AllCollections {
   node: {

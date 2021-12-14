@@ -1,7 +1,11 @@
 import Head from 'next/head';
 import { getCollections, getProductsInCollection } from '../../../lib/shopify';
 import ProductList from '../../../components/ProductList';
-import { GetStaticPropsContext } from 'next';
+import {
+  GetStaticPaths,
+  GetStaticPropsContext,
+  InferGetStaticPropsType,
+} from 'next';
 
 export interface AllCollections {
   node: {
@@ -80,6 +84,7 @@ export default function Collection({ collection, products }: ProductsProps) {
 
 export async function getStaticPaths() {
   const collections: AllCollections[] = await getCollections();
+  // console.log('COLLECTIONS', collections);
   const paths = collections.map((collection) => ({
     params: { collection: String(collection.node.handle) },
   }));

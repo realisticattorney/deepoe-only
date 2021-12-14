@@ -49,7 +49,7 @@ const ProductCard = ({ collection, product }: ProductCardProps) => {
           <div className="relative h-110">
             <Image
               src={originalSrc}
-              alt={altText || title}
+              alt={altText | ''}
               layout="fill"
               objectFit="cover"
             />

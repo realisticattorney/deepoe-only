@@ -10,7 +10,7 @@ export default function Home({
   carouselProducts,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <div>
+    <div className="">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -23,7 +23,7 @@ export default function Home({
 export async function getStaticProps() {
   const products = await getProductsInCollection('frontpage');
 
-  let carouselProducts: any = [];
+  let carouselProducts;
 
   products.products.edges.map((product: Product) => {
     if (

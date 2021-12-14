@@ -23,7 +23,7 @@ export default function Home({
 export async function getStaticProps() {
   const products = await getProductsInCollection('frontpage');
 
-  let carouselProducts: any = [];
+  let carouselProducts;
 
   products.products.edges.map((product: Product) => {
     if (

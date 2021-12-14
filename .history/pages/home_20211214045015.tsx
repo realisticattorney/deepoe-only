@@ -8,7 +8,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import HomeMain from '../components/HomeMain';
 import type { InferGetStaticPropsType } from 'next';
-import { Product } from '../lib/types/all';
+import { Product } from '../lib/types';
 
 export default function Home({
   products,

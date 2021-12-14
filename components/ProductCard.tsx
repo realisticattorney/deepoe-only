@@ -3,7 +3,34 @@ import Image from 'next/image';
 import { formatter } from '../utils/helpers';
 import atob from 'atob';
 
-const ProductCard = ({ collection, product }) => {
+export interface ProductProps {
+  node: {
+    handle: string;
+    title: string;
+    id: string;
+    images: {
+      edges: ImagesEdges[];
+    };
+    priceRange: {
+      minVariantPrice: {
+        amount: string;
+      };
+    };
+  };
+}
+export interface ImagesEdges {
+  node: {
+    originalSrc: string;
+    altText: string | null;
+  };
+}
+
+export interface ProductCardProps {
+  collection: string;
+  product: ProductProps;
+}
+
+const ProductCard = ({ collection, product }: ProductCardProps) => {
   const { handle, title } = product.node;
   const { altText, originalSrc } = product.node.images.edges[0].node;
   const price = product.node.priceRange.minVariantPrice.amount;

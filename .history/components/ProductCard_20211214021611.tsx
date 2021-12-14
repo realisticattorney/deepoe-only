@@ -33,7 +33,7 @@ export interface ProductCardProps {
 const ProductCard = ({ collection, product }: ProductCardProps) => {
   const { handle, title } = product.node;
   const { altText, originalSrc } = product.node.images.edges[0].node;
-  const price = parseInt(product.node.priceRange.minVariantPrice.amount);
+  const price = product.node.priceRange.minVariantPrice.amount;
   const atobURL = atob(product.node.id);
   const atobId = atobURL.split('Product/')[1];
   console.log('atobId', atobId);

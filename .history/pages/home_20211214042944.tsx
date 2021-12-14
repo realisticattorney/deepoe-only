@@ -7,28 +7,28 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import HomeMain from '../components/HomeMain';
-import type { InferGetStaticPropsType } from 'next';
-// interface CarouselProduct {
-//   handle: string;
-//   number: number;
-//   product: string;
-// }
 
-// export interface HomeProps {
-//   products: ProductList;
-//   carouselProducts: any;
-// }
+interface CarouselProduct {
+  handle: string;
+  number: number;
+  product: string;
+}
 
-// interface ProductList {
-//   title: string;
-//   image: {
-//     id: string;
-//     originalSrc: string;
-//   };
-//   products: {
-//     edges: Product[];
-//   };
-// }
+export interface HomeProps {
+  products: ProductList;
+  carouselProducts: any;
+}
+
+interface ProductList {
+  title: string;
+  image: {
+    id: string;
+    originalSrc: string;
+  };
+  products: {
+    edges: Product[];
+  };
+}
 export interface Product {
   node: {
     handle: string;
@@ -51,10 +51,7 @@ export interface ImagesEdges {
   };
 }
 
-export default function Home({
-  products,
-  carouselProducts,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
+export default function Home({ products, carouselProducts }: HomeProps) {
   return (
     <div className="">
       <Head>
@@ -69,7 +66,7 @@ export default function Home({
 export async function getStaticProps() {
   const products = await getProductsInCollection('frontpage');
 
-  let carouselProducts;
+  let carouselProducts: CarouselProduct[] = [];
 
   products.products.edges.map((product: Product) => {
     if (

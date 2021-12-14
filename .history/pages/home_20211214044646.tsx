@@ -44,12 +44,12 @@ export interface Product {
     };
   };
 }
-export interface ImagesEdges {
-  node: {
-    originalSrc: string;
-    altText: string | null;
-  };
-}
+// export interface ImagesEdges {
+//   node: {
+//     originalSrc: string;
+//     altText: string | null;
+//   };
+// }
 
 export default function Home({
   products,

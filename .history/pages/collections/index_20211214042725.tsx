@@ -8,10 +8,10 @@ interface AllCollections {
 
 export interface Collection {
   node: {
-    description: string;
-    handle: string;
     id: string;
+    handle: string;
     title: string;
+    description: string;
     image: {
       id: string;
       originalSrc: string;

@@ -29,27 +29,27 @@ import type { InferGetStaticPropsType } from 'next';
 //     edges: Product[];
 //   };
 // }
-export interface Product {
-  node: {
-    handle: string;
-    title: string;
-    id: string;
-    images: {
-      edges: ImagesEdges[];
-    };
-    priceRange: {
-      minVariantPrice: {
-        amount: string;
-      };
-    };
-  };
-}
-export interface ImagesEdges {
-  node: {
-    originalSrc: string;
-    altText: string | null;
-  };
-}
+// export interface Product {
+//   node: {
+//     handle: string;
+//     title: string;
+//     id: string;
+//     images: {
+//       edges: ImagesEdges[];
+//     };
+//     priceRange: {
+//       minVariantPrice: {
+//         amount: string;
+//       };
+//     };
+//   };
+// }
+// export interface ImagesEdges {
+//   node: {
+//     originalSrc: string;
+//     altText: string | null;
+//   };
+// }
 
 export default function Home({
   products,
@@ -69,9 +69,9 @@ export default function Home({
 export async function getStaticProps() {
   const products = await getProductsInCollection('frontpage');
 
-  let carouselProducts;
+  // let carouselProducts: CarouselProduct[] = [];
 
-  products.products.edges.map((product: Product) => {
+  products.products.edges.map((product) => {
     if (
       product.node.id === 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY3MTExNjY2MzE5OTY='
     ) {

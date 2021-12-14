@@ -102,7 +102,7 @@ export const getStaticProps = async ({
   console.log('get products in collection', products);
   return {
     props: {
-      collection: params?.collection,
+      collection: params.collection,
       products,
     },
   };

@@ -1,11 +1,7 @@
 import Head from 'next/head';
 import { getCollections, getProductsInCollection } from '../../../lib/shopify';
 import ProductList from '../../../components/ProductList';
-import {
-  GetStaticPaths,
-  GetStaticPropsContext,
-  InferGetStaticPropsType,
-} from 'next';
+import { GetStaticPaths, GetStaticPropsContext, InferGetStaticPropsType } from "next"
 
 export interface AllCollections {
   node: {
@@ -84,26 +80,24 @@ export default function Collection({ collection, products }: ProductsProps) {
 
 export async function getStaticPaths() {
   const collections: AllCollections[] = await getCollections();
-  // console.log('COLLECTIONS', collections);
+  console.log('COLLECTIONS', collections);
   const paths = collections.map((collection) => ({
     params: { collection: String(collection.node.handle) },
   }));
-  console.log('paths', paths);
+
   return {
     paths,
     fallback: false,
   };
 }
 
-export const getStaticProps = async ({
-  params,
-}: GetStaticPropsContext<{ collection: string }>) => {
-  const products = await getProductsInCollection(params?.collection);
+export const getStaticProps = async ({ params }: GetStaticPropsContext<{slug: string}>) => {
+  const products = await getProductsInCollection(params.collection);
   console.log('get products in collection', products);
   return {
     props: {
-      collection: params?.collection,
+      collection: params.collection,
       products,
     },
   };
-};
+}

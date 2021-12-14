@@ -84,11 +84,11 @@ export default function Collection({ collection, products }: ProductsProps) {
 
 export async function getStaticPaths() {
   const collections: AllCollections[] = await getCollections();
-  // console.log('COLLECTIONS', collections);
+  console.log('COLLECTIONS', collections);
   const paths = collections.map((collection) => ({
     params: { collection: String(collection.node.handle) },
   }));
-  console.log('paths', paths);
+
   return {
     paths,
     fallback: false,
@@ -97,12 +97,12 @@ export async function getStaticPaths() {
 
 export const getStaticProps = async ({
   params,
-}: GetStaticPropsContext<{ collection: string }>) => {
-  const products = await getProductsInCollection(params?.collection);
+}: GetStaticPropsContext<>) => {
+  const products = await getProductsInCollection(params.collection);
   console.log('get products in collection', products);
   return {
     props: {
-      collection: params?.collection,
+      collection: params.collection,
       products,
     },
   };

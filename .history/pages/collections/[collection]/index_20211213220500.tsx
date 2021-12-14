@@ -97,12 +97,12 @@ export async function getStaticPaths() {
 
 export const getStaticProps = async ({
   params,
-}: GetStaticPropsContext<{ collection: string }>) => {
-  const products = await getProductsInCollection(params?.collection);
+}: GetStaticPropsContext<{ collection: string }[]>) => {
+  const products = await getProductsInCollection(params.collection);
   console.log('get products in collection', products);
   return {
     props: {
-      collection: params?.collection,
+      collection: params.collection,
       products,
     },
   };

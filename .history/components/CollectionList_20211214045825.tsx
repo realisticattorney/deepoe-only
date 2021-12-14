@@ -1,6 +1,39 @@
 import { FC } from 'react';
 import CollectionCard from './CollectionCard';
-import { AllCollections } from '../lib/types/all';
+
+interface AllCollections {
+  allCollections: Collection[];
+}
+
+export interface Collection {
+  node: {
+    id: string;
+    handle: string;
+    title: string;
+    description: string;
+    image: {
+      id: string;
+      originalSrc: string;
+    };
+    products: {
+      edges: [
+        {
+          node: {
+            images: {
+              edges: [
+                {
+                  node: {
+                    originalSrc: string;
+                  };
+                }
+              ];
+            };
+          };
+        }
+      ];
+    };
+  };
+}
 
 const ProductList = ({ allCollections }: AllCollections) => {
   console.log('BIIIIITCH', allCollections);

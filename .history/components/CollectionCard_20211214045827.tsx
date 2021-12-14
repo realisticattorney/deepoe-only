@@ -1,7 +1,36 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { formatter } from '../utils/helpers';
-import { Collection } from '../lib/types/all';
+
+export interface Collection {
+  node: {
+    id: string;
+    handle: string;
+    title: string;
+    description: string;
+    image: {
+      id: string;
+      originalSrc: string;
+    };
+    products: {
+      edges: [
+        {
+          node: {
+            images: {
+              edges: [
+                {
+                  node: {
+                    originalSrc: string;
+                  };
+                }
+              ];
+            };
+          };
+        }
+      ];
+    };
+  };
+}
 
 const CollectionCard = (collection: Collection) => {
   console.log('COOOOLLEECTION', collection);

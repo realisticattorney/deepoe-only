@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
         {children}
       </main>
       <footer className=" text-white  text-sm font-extralight font-mono  p-5 bg-deepoe-chocolate">
-        <div className="grid col-span-3 grid-cols-3 grid-rows-2 h-60 lg:max-w-4xl md:mx-auto md:max-w-2xl md:grid-cols-6 md:grid-rows-1 md:h-40">
+        <div className="grid col-span-3 grid-cols-3 grid-rows-2 h-64 lg:max-w-4xl md:mx-auto md:max-w-2xl md:grid-cols-6 md:grid-rows-1 md:h-40">
           <div className="inline-flex col-span-1 row-span-1 ">
             <ul className="flex-col space-y-1.7 ">
               <li>

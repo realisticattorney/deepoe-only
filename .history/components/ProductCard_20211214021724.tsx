@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Image from 'next/image';
 import { formatter } from '../utils/helpers';
 import atob from 'atob';
@@ -66,6 +67,7 @@ const ProductCard = ({ collection, product }: ProductCardProps) => {
           ></div>
         </div>
       </div>
+      {/* </Link> */}
     </a>
   );
 };

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Image from 'next/image';
 import { formatter } from '../utils/helpers';
 import atob from 'atob';

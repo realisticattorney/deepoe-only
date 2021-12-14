@@ -36,7 +36,7 @@ const HomeCarousel = ({
     carouselProducts
   );
 
-  interface WindowSize {
+  interface windowSize {
     width: number | undefined;
     height: number | undefined;
   }
@@ -44,7 +44,7 @@ const HomeCarousel = ({
   const [windowSize, setWindowSize] = useState({
     width: undefined,
     height: undefined,
-  } as WindowSize);
+  });
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -63,7 +63,7 @@ const HomeCarousel = ({
   }, []);
 
   const [slidePercentage, setSlidePercentage] = useState(
-    (226 / windowSize.width!) * 100
+    (226 / windowSize.width) * 100
   );
 
   useEffect(() => {

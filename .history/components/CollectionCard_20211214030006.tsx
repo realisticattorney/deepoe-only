@@ -13,24 +13,22 @@ export interface Collection {
       originalSrc: string;
     };
     products: {
-      edges: [
-        {
-          node: {
-            images: {
-              edges: [
-                {
-                  node: {
-                    originalSrc: string;
-                  };
-                }
-              ];
-            };
-          };
-        }
-      ];
+      edges: Product[];
     };
   };
 }
+
+interface Product {
+    node: {
+      images: {
+        edges: {
+          node: {
+            originalSrc: string;
+          };
+        };
+      };
+    };
+  };
 
 const CollectionCard = (collection: Collection) => {
   console.log('COOOOLLEECTION', collection);

@@ -13,28 +13,26 @@ export interface Collection {
       originalSrc: string;
     };
     products: {
-      edges: [
-        {
-          node: {
-            images: {
-              edges: [
-                {
-                  node: {
-                    originalSrc: string;
-                  };
-                }
-              ];
-            };
-          };
-        }
-      ];
+      edges: Product[];
     };
   };
 }
 
+interface Product {
+    node: {
+      images: {
+        edges: {
+          node: {
+            originalSrc: string;
+          };
+        };
+      };
+    };
+  };
+
 const CollectionCard = (collection: Collection) => {
   console.log('COOOOLLEECTION', collection);
-  console.log('COOOOLLEECTIONasdadsad', collection.node.products.edges);
+  console.log('COOOOLLEECTION', collection);
   const { handle, title } = collection.node;
   const { originalSrc } = collection.node.image
     ? collection.node.image

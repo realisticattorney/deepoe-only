@@ -16,21 +16,17 @@ export interface Collection {
       originalSrc: string;
     };
     products: {
-      edges: [
-        {
-          node: {
-            images: {
-              edges: [
-                {
-                  node: {
-                    originalSrc: string;
-                  };
-                }
-              ];
+      edges: {
+        node: {
+          images: {
+            edges: {
+              node: {
+                originalSrc: string;
+              };
             };
           };
-        }
-      ];
+        };
+      };
     };
   };
 }
@@ -44,7 +40,7 @@ const ProductList = ({ allCollections }: AllCollections) => {
           Collections
         </h2>
         <div className="grid grid-cols-1 gap-y-10 gap-x-6">
-          {allCollections.map((collection) => (
+          {allCollections.map((collection: Collection) => (
             <CollectionCard key={collection.node.id} {...collection} />
           ))}
         </div>

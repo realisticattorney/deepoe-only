@@ -29,8 +29,26 @@ const ProductPageContent = ({ collection, product }) => {
     }
   }, [parentReviewState]);
 
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     console.log('This will run after 1 second!', stageCanvasRef);
+  //     let inner = stageCanvasRef.current.innerText
+  //       ? stageCanvasRef.current.innerText
+  //       : 'empty';
+  //     console.log(inner);
+  //     let lalala = inner.indexOf('Currently, there');
+  //     if (lalala > -1) {
+  //       setDisable(true);
+  //     }
+  //   }, 300);
+  //   return () => clearTimeout(timer);
+  // }, []);
+
   const [show, setShow] = useState(false);
 
+  // const handleShow = () => {
+  //   show ? setShow(false) : setShow(true);
+  // };
   let itemsSpecs;
   const { description } = product;
   let [intro, details] = description.split('^^^DETAILS');

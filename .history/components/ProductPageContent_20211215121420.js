@@ -29,8 +29,26 @@ const ProductPageContent = ({ collection, product }) => {
     }
   }, [parentReviewState]);
 
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     console.log('This will run after 1 second!', stageCanvasRef);
+  //     let inner = stageCanvasRef.current.innerText
+  //       ? stageCanvasRef.current.innerText
+  //       : 'empty';
+  //     console.log(inner);
+  //     let lalala = inner.indexOf('Currently, there');
+  //     if (lalala > -1) {
+  //       setDisable(true);
+  //     }
+  //   }, 300);
+  //   return () => clearTimeout(timer);
+  // }, []);
+
   const [show, setShow] = useState(false);
 
+  // const handleShow = () => {
+  //   show ? setShow(false) : setShow(true);
+  // };
   let itemsSpecs;
   const { description } = product;
   let [intro, details] = description.split('^^^DETAILS');
@@ -61,6 +79,10 @@ const ProductPageContent = ({ collection, product }) => {
       </div>
       <div className={`${disable ? 'my-10' : ''}`}></div>
       <div className="flex flex-col w-full lg:col-span-2 font-mono">
+        {/* <div className="relative h-96">
+          <Image src="/brunch.jpg" layout="fill" objectFit="cover" />
+        </div> */}
+
         <div className="px-6 my-6 mt-5 lg:mt-12 lg:px-16 ">
           <div className="w-full">
             <div className="relative h-110 lg:h-66 xxl:h-66">

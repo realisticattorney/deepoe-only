@@ -31,6 +31,9 @@ const ProductPageContent = ({ collection, product }) => {
 
   const [show, setShow] = useState(false);
 
+  // const handleShow = () => {
+  //   show ? setShow(false) : setShow(true);
+  // };
   let itemsSpecs;
   const { description } = product;
   let [intro, details] = description.split('^^^DETAILS');

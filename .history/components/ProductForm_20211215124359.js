@@ -45,8 +45,8 @@ const ProductForm = ({ product, collection }) => {
 
   let itemsSpecs;
   const { description } = product;
-  let [shipping, restOfDescription] = description.split('%%%');
-  let [intro, details] = restOfDescription.split('^^^DETAILS');
+  let[shipping, restOfDescription] = description.split('%%%');
+  let [intro, details] = description.split('^^^DETAILS');
   [details, itemsSpecs] = details.split('^^^ITEM SPECIFICATIONS');
   const itemsSpecs2 = itemsSpecs.split('**');
 
@@ -172,7 +172,7 @@ const ProductForm = ({ product, collection }) => {
           ))}
           <div className="text-sm font-light mb-3 mt-1.5 space-y-1.5">
             <p className="flex items-center text-sm">
-              <TruckIcon className="h-5 flex pr-1" /> {shipping}
+              <TruckIcon className="h-5 flex pr-1" /> Usually ships in 1-2 weeks
             </p>
             {product.variants.edges[0].node.compareAtPriceV2?.amount && (
               <p className="flex items-center text-xs">

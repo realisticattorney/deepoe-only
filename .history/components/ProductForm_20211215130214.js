@@ -45,7 +45,7 @@ const ProductForm = ({ product, collection }) => {
 
   let itemsSpecs;
   const { description } = product;
-  let [shipping, restOfDescription] = description.split('%%%');
+  let [shipping, restOfDescription] = description.split('^^^');
   let [intro, details] = restOfDescription.split('^^^DETAILS');
   [details, itemsSpecs] = details.split('^^^ITEM SPECIFICATIONS');
   const itemsSpecs2 = itemsSpecs.split('**');

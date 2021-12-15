@@ -3,6 +3,9 @@ import { useRouter } from 'next/router';
 import { BuilderComponent, Builder, builder } from '@builder.io/react';
 import DefaultErrorPage from 'next/error';
 import Head from 'next/head';
+import '../components/FaqSection';
+import '../components/FaqQuestion';
+import '../components/Sustainability';
 
 const BUILDER_API_KEY = '9886b56a779b4bbfa9835e6e7938f1e6';
 builder.init(BUILDER_API_KEY);

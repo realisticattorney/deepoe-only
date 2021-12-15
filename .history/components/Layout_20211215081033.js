@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
               </li>
               <li>
                 <a
-                  href="https://www.pinterest.com/shopdeepoe"
+                  href="www.pinterest.com/shopdeepoe"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -61,7 +61,7 @@ const Layout = ({ children }) => {
               </li>
               <li>
                 <a
-                  href="https://www.twitter.com/shopdeepoe"
+                  href="https://twitter.com/shopdeepoe"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -140,7 +140,7 @@ const Layout = ({ children }) => {
             </div>
           </div>
 
-          <div className="self-end -ml-3.5 md:-ml-4">
+          <div className="self-end -ml-2 md:-ml-4">
             <ul className="text-xs flex-col">
               <li className="text-deepoe-cream font-thin text-opacity-70 -mb-1.5">
                 designed & developed by

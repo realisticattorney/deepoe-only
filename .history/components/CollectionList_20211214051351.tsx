@@ -1,5 +1,5 @@
 import CollectionCard from './CollectionCard';
-import { AllCollections } from '@components';
+import { AllCollections } from '@components/components';
 
 const ProductList = ({ allCollections }: AllCollections) => {
   return (

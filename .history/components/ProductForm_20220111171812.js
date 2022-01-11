@@ -243,12 +243,12 @@ const ProductForm = ({ product, collection }) => {
               </ul>
             </div>
           </button>
-          <Accordion className=" shadow-none bg-deepoe-cream border-b border-deepoe_default-black">
+          <Accordion className="border-none shadow-none bg-deepoe-cream">
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
+              aria-controls="none"
               id="panel1a-header"
-              className='flex px-0 justify-between  text-lg font-extralight items-center text-left text-deepoe_default-black'
+              className='flex justify-between pb-2 pt-0.5 text-lg font-extralight items-center text-left text-deepoe_default-black'
             >
               <p className='truncate font-mono font-extralight text-lg2'>Details</p>
             </AccordionSummary>
@@ -260,17 +260,16 @@ const ProductForm = ({ product, collection }) => {
               </p>
             </AccordionDetails>
           </Accordion>
-          <Accordion className=" shadow-none bg-deepoe-cream  border-b border-deepoe_default-black ">
+          <Accordion className="border-none shadow-none bg-deepoe-cream">
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel2a-content"
               id="panel2a-header"
-              className='flex px-0 justify-between text-lg font-extralight items-center text-left text-deepoe_default-black'
             >
               <p className='truncate font-mono font-extralight text-lg2'>Items Specifications</p>
             </AccordionSummary>
             <AccordionDetails>
-            <div className=" overflow-hidden duration-300 text-sm  group-focus:pb-2 font-mono group-focus:max-h-56  text-left font-extralight border-deepoe_default-black">
+            <div className=" overflow-hidden duration-300 text-sm  group-focus:pb-2 font-mono group-focus:max-h-56  text-left font-extralight border-b border-deepoe_default-black">
               <ul className="list-disc list-outside font-mono font-extralight ">
                 {itemsSpecs2.map((item, index) => (
                   <li key={index} className="">

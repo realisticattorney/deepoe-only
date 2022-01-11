@@ -248,7 +248,7 @@ const ProductForm = ({ product, collection }) => {
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
-              className='flex px-0 justify-between  text-lg font-extralight items-center text-left text-deepoe_default-black'
+              className='flex justify-between  pt-0.5 text-lg font-extralight items-center text-left text-deepoe_default-black'
             >
               <p className='truncate font-mono font-extralight text-lg2'>Details</p>
             </AccordionSummary>
@@ -265,7 +265,7 @@ const ProductForm = ({ product, collection }) => {
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel2a-content"
               id="panel2a-header"
-              className='flex px-0 justify-between text-lg font-extralight items-center text-left text-deepoe_default-black'
+              className='flex justify-between pb-2 pt-0.5 text-lg font-extralight items-center text-left text-deepoe_default-black'
             >
               <p className='truncate font-mono font-extralight text-lg2'>Items Specifications</p>
             </AccordionSummary>

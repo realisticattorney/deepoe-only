@@ -206,7 +206,7 @@ const ProductForm = ({ product, collection }) => {
           <p>{intro}</p>
         </div>
         <div className="flex flex-col w-full border-t pt-2 border-deepoe-chocolate lg:col-end-2 lg:col-start-2">
-          <button className="group focus:outline-none">
+          {/* <button className="group focus:outline-none">
             <div className="flex justify-between pb-2 pt-0.5 text-lg font-extralight items-center text-left text-deepoe_default-black focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-deepoe_default-black group-focus:font-medium">
               <span className="truncate font-mono font-extralight text-lg2">
                 Details
@@ -219,8 +219,8 @@ const ProductForm = ({ product, collection }) => {
             <div className="max-h-0 overflow-hidden duration-300  text-sm  group-focus:py-2 font-mono  group-focus:max-h-72  text-left font-extralight  border-b border-deepoe_default-black">
               <p className="mb-1">{details}</p>
             </div>
-          </button>
-          <button className="group focus:outline-none">
+          </button> */}
+          {/* <button className="group focus:outline-none">
             <div className="flex justify-between py-2 text-lg font-extralight text-left items-center text-deepoe_default-black focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-deepoe_default-black group-focus:font-medium">
               <span className="truncate font-mono font-extralight text-lg2">
                 Item Specifications
@@ -242,13 +242,12 @@ const ProductForm = ({ product, collection }) => {
                 ))}
               </ul>
             </div>
-          </button>
-          <Accordion className=" shadow-none bg-deepoe-cream border-b border-deepoe_default-black">
+          </button> */}
+          <Accordion className="flex justify-between pb-2 pt-0.5 text-lg font-extralight items-center text-left text-deepoe_default-black">
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
-              className='flex px-0 justify-between  text-lg font-extralight items-center text-left text-deepoe_default-black'
             >
               <p className='truncate font-mono font-extralight text-lg2'>Details</p>
             </AccordionSummary>
@@ -260,25 +259,20 @@ const ProductForm = ({ product, collection }) => {
               </p>
             </AccordionDetails>
           </Accordion>
-          <Accordion className=" shadow-none bg-deepoe-cream  border-b border-deepoe_default-black ">
+          <Accordion>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel2a-content"
               id="panel2a-header"
-              className='flex px-0 justify-between text-lg font-extralight items-center text-left text-deepoe_default-black'
             >
               <p className='truncate font-mono font-extralight text-lg2'>Items Specifications</p>
             </AccordionSummary>
             <AccordionDetails>
-            <div className=" overflow-hidden duration-300 text-sm  group-focus:pb-2 font-mono group-focus:max-h-56  text-left font-extralight border-deepoe_default-black">
-              <ul className="list-disc list-outside font-mono font-extralight ">
-                {itemsSpecs2.map((item, index) => (
-                  <li key={index} className="">
-                    <span className="px-1 text-base font-black">•</span> {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+                eget.
+              </p>
             </AccordionDetails>
           </Accordion>
           <div className="">

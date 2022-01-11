@@ -248,7 +248,7 @@ const ProductForm = ({ product, collection }) => {
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
-              className='flex px-0 justify-between  text-lg font-extralight items-center text-left text-deepoe_default-black'
+              className='flex justify-between  text-lg font-extralight items-center text-left text-deepoe_default-black'
             >
               <p className='truncate font-mono font-extralight text-lg2'>Details</p>
             </AccordionSummary>

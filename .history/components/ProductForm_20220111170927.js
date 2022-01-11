@@ -249,14 +249,14 @@ const ProductForm = ({ product, collection }) => {
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <p>Accordion 1</p>
+              <Typography>Accordion 1</Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <p>
+              <Typography>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
                 eget.
-              </p>
+              </Typography>
             </AccordionDetails>
           </Accordion>
           <Accordion>
@@ -265,14 +265,14 @@ const ProductForm = ({ product, collection }) => {
               aria-controls="panel2a-content"
               id="panel2a-header"
             >
-              <p>Accordion 2</p>
+              <Typography>Accordion 2</Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <p>
+              <Typography>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
                 eget.
-              </p>
+              </Typography>
             </AccordionDetails>
           </Accordion>
           <div className="">

@@ -205,8 +205,8 @@ const ProductForm = ({ product, collection }) => {
         <div className="font-mono text-sm font-extralight mb-4">
           <p>{intro}</p>
         </div>
-        <div className="flex flex-col w-full border-t pt-2 border-deepoe-chocolate lg:col-end-2 lg:col-start-2">
-          {/* <button className="group focus:outline-none">
+        {/* <div className="flex flex-col w-full border-t pt-2 border-deepoe-chocolate lg:col-end-2 lg:col-start-2">
+          <button className="group focus:outline-none">
             <div className="flex justify-between pb-2 pt-0.5 text-lg font-extralight items-center text-left text-deepoe_default-black focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-deepoe_default-black group-focus:font-medium">
               <span className="truncate font-mono font-extralight text-lg2">
                 Details
@@ -219,8 +219,8 @@ const ProductForm = ({ product, collection }) => {
             <div className="max-h-0 overflow-hidden duration-300  text-sm  group-focus:py-2 font-mono  group-focus:max-h-72  text-left font-extralight  border-b border-deepoe_default-black">
               <p className="mb-1">{details}</p>
             </div>
-          </button> */}
-          {/* <button className="group focus:outline-none">
+          </button>
+          <button className="group focus:outline-none">
             <div className="flex justify-between py-2 text-lg font-extralight text-left items-center text-deepoe_default-black focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-deepoe_default-black group-focus:font-medium">
               <span className="truncate font-mono font-extralight text-lg2">
                 Item Specifications
@@ -243,38 +243,37 @@ const ProductForm = ({ product, collection }) => {
               </ul>
             </div>
           </button> */}
+          <div>
           <Accordion>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <p>Accordion 1</p>
-            </AccordionSummary>
-            <AccordionDetails>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </p>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel2a-content"
-              id="panel2a-header"
-            >
-              <p>Accordion 2</p>
-            </AccordionSummary>
-            <AccordionDetails>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </p>
-            </AccordionDetails>
-          </Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Typography>Accordion 1</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            malesuada lacus ex, sit amet blandit leo lobortis eget.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel2a-content"
+          id="panel2a-header"
+        >
+          <Typography>Accordion 2</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            malesuada lacus ex, sit amet blandit leo lobortis eget.
+          </Typography>
+        </AccordionDetails>
+        </div>
           <div className="">
             {/* <Link href={`/reviews/${product.handle}`}> */}
             {/* <a> */}

@@ -12,13 +12,9 @@ const FaqSection = (props: any) => {
   return (
     <div className=" w-full px-2.5 font-mono">
       <div className="w-full max-w-md  mx-auto bg-deepoe-cream rounded-2xl space-y-5">
-        <h3 className="text-3xl pt-5 py-2 font-thin px-3 tracking-tighter">
+        <h3 className="text-3xl pt-5 py-2 font-thin px-0 tracking-tighter">
           Frequently Asked Questions
         </h3>
-
-    
-
-       
       </div>
     </div>
   );
@@ -26,14 +22,6 @@ const FaqSection = (props: any) => {
 
 Builder.registerComponent(FaqSection, {
   name: 'FaqSection',
-  inputs: [
-    { name: 'firtTitle', type: 'string', defaultValue: "Where's my order, dude?" },
-    { name: 'firstFirst', type: 'string', defaultValue: "Where's my order, dude?" },
-    { name: 'ordersSecond', type: 'string', defaultValue: "Where's my order, dude?" },
-      { name: 'ordersThird', type: 'string', defaultValue: "Where's my order, dude?" },   
-  ],
 });
 
 export default FaqSection;
-
-

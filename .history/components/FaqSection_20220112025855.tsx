@@ -10,15 +10,11 @@ const FaqSection = (props: any) => {
   };
 
   return (
-    <div className=" w-full px-2.5 font-mono">
+    <div className=" w-full  font-mono">
       <div className="w-full max-w-md  mx-auto bg-deepoe-cream rounded-2xl space-y-5">
         <h3 className="text-3xl pt-5 py-2 font-thin px-3 tracking-tighter">
           Frequently Asked Questions
         </h3>
-
-    
-
-       
       </div>
     </div>
   );
@@ -26,9 +22,6 @@ const FaqSection = (props: any) => {
 
 Builder.registerComponent(FaqSection, {
   name: 'FaqSection',
- 
 });
 
 export default FaqSection;
-
-

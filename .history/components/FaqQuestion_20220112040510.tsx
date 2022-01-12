@@ -3,9 +3,7 @@ import React, { FC, Fragment, useRef, useState } from 'react';
 import { Builder } from '@builder.io/react';
 import { styled } from '@mui/material/styles';
 import MuiAccordion, { AccordionProps } from '@mui/material/Accordion';
-import MuiAccordionSummary, {
-  AccordionSummaryProps,
-} from '@mui/material/AccordionSummary';
+import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import RemoveIcon from '@mui/icons-material/Remove';
 import AddIcon from '@mui/icons-material/Add';
@@ -47,7 +45,7 @@ const Icon = styled((props) => (
   }
 `;
 
-const AccordionSummary = styled((props: AccordionSummaryProps) => (
+const AccordionSummary = styled((props) => (
   <MuiAccordionSummary
     expandIcon={<Icon sx={{ fontSize: '0.9rem' }} />}
     {...props}
@@ -105,8 +103,8 @@ const FaqQuestion = (props: any) => {
           </h4>
           <Accordion className="p-0 m-0 shadow-none    border-b border-deepoe_default-black ">
             <AccordionSummary
-              aria-controls="panel1a-content"
-              id="panel1a-header"
+              aria-controls="panel1d-content"
+              id="panel1d-header"
               className="flex p-0   justify-between text-lg font-extralight text-left text-deepoe_default-black"
             >
               <p className="font-mono font-extralight text-lg2 py-0 my-0 ">

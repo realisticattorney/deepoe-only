@@ -131,7 +131,7 @@ const FaqQuestion = (props: any) => {
             </AccordionSummary>
             <AccordionDetails>
               <div className="overflow-hidden duration-300  text-sm  font-mono  text-left font-extralight  ">
-                <p className="mb-4">{props.secondAnswer}</p>
+                <p className="mb-4">{props.firstAnswer}</p>
               </div>
             </AccordionDetails>
           </Accordion>
@@ -142,12 +142,12 @@ const FaqQuestion = (props: any) => {
               className="flex p-0   justify-between text-lg font-extralight text-left text-deepoe_default-black"
             >
               <p className="font-mono font-extralight text-lg2 py-0 my-0 ">
-                {props.thirdQuestion}
+                {props.firstQuestion}
               </p>
             </AccordionSummary>
             <AccordionDetails>
               <div className="overflow-hidden duration-300  text-sm  font-mono  text-left font-extralight  ">
-                <p className="mb-4">{props.thirdAnswer}</p>
+                <p className="mb-4">{props.firstAnswer}</p>
               </div>
             </AccordionDetails>
           </Accordion>

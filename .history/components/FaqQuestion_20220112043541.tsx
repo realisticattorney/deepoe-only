@@ -147,7 +147,7 @@ const FaqQuestion = (props: any) => {
             </AccordionSummary>
             <AccordionDetails>
               <div className="overflow-hidden duration-300  text-sm  font-mono  text-left font-extralight  ">
-                <p className="mb-4">{props.thirdAnswer}</p>
+                <p className="mb-4">{props.firstAnswer}</p>
               </div>
             </AccordionDetails>
           </Accordion>

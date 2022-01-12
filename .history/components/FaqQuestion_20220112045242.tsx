@@ -16,7 +16,7 @@ const Accordion = styled((props: AccordionProps) => (
   // '&:not(:last-child)': {
   backgroundColor: '#F5F3EE',
   // width: '90%',
-  
+
   borderBottom: '1px solid rgba(0, 0, 0, 0.8)',
   // paddingBottom: "1px",
   // },
@@ -81,7 +81,7 @@ const FaqSection = (props: any) => {
   };
 
   return (
-    <div className=" w-full px-2.5 font-mono">
+    <div className=" w-full px-0 font-mono">
       <div className="w-full max-w-md  mx-auto bg-deepoe-cream rounded-2xl space-y-5">
         <h3 className="text-3xl pt-5 py-2 font-thin px-3 tracking-tighter">
           Frequently Asked Questions
@@ -99,10 +99,10 @@ const FaqQuestion = (props: any) => {
   };
 
   return (
-    <div className=" w-full px-6  font-mono">
+    <div className=" w-full px-5  font-mono">
       <div className="w-full max-w-md  mx-auto bg-deepoe-cream  space-y-5">
         <div className="flex flex-col w-full">
-          <h4 className="px-0 truncate text-2xl font-light text-gray-800">
+          <h4 className="px-3 truncate text-2xl font-light text-gray-800">
             {props.title}
           </h4>
           <Accordion className=" shadow-none    border-b border-deepoe_default-black ">

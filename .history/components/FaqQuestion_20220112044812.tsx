@@ -15,8 +15,11 @@ const Accordion = styled((props: AccordionProps) => (
 ))(({ theme }) => ({
   // '&:not(:last-child)': {
   backgroundColor: '#F5F3EE',
-  // width: '90%',
-  
+  marginLeft: 'auto',
+  marginRight: 'auto',
+  justifyContent: 'center',
+
+  width: 'full',
   borderBottom: '1px solid rgba(0, 0, 0, 0.8)',
   // paddingBottom: "1px",
   // },
@@ -99,13 +102,13 @@ const FaqQuestion = (props: any) => {
   };
 
   return (
-    <div className=" w-full px-6  font-mono">
+    <div className=" w-full px-2.5  font-mono">
       <div className="w-full max-w-md  mx-auto bg-deepoe-cream  space-y-5">
         <div className="flex flex-col w-full">
           <h4 className="px-0 truncate text-2xl font-light text-gray-800">
             {props.title}
           </h4>
-          <Accordion className=" shadow-none    border-b border-deepoe_default-black ">
+          <Accordion className="p-0 m-0 shadow-none    border-b border-deepoe_default-black ">
             <AccordionSummary
               aria-controls="panel1b-content"
               id="panel1b-header"

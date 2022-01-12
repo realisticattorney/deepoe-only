@@ -57,7 +57,7 @@ const AccordionSummary = styled((props: AccordionSummaryProps) => (
 ))(({ theme }) => ({
   // paddingLeft: '20px',
   paddingRight: '0px',
-
+  marginLeft: '0px',
   '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
     // transform: 'rotate(90deg)',
     paddingRight: '0px',
@@ -102,7 +102,7 @@ const FaqQuestion = (props: any) => {
     <div className=" w-full px-6  font-mono">
       <div className="w-full max-w-md  mx-auto bg-deepoe-cream  space-y-5">
         <div className="flex flex-col w-full">
-          <h4 className="px-0 truncate text-2xl font-light text-gray-800">
+          <h4 className="px-3 truncate text-2xl font-light text-gray-800">
             {props.title}
           </h4>
           <Accordion className=" shadow-none    border-b border-deepoe_default-black ">

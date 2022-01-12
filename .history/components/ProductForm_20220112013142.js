@@ -16,11 +16,9 @@ import AddIcon from '@mui/icons-material/Add';
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} {...props} />
 ))(({ theme }) => ({
-  // '&:not(:last-child)': {
-
-  borderBottom: '1px solid rgba(0, 0, 0, 1)',
-  // paddingBottom: "1px",
-  // },
+  '&:not(:last-child)': {
+    borderBottom: 1,
+  },
   '&:before': {
     display: 'none',
   },
@@ -264,7 +262,7 @@ const ProductForm = ({ product, collection }) => {
         <div className="font-mono text-sm font-extralight mb-4">
           <p>{intro}</p>
         </div>
-        <div className="flex flex-col w-full border-t border-deepoe-chocolate lg:col-end-2 lg:col-start-2">
+        <div className="flex flex-col w-full border-t pt-2 border-deepoe-chocolate lg:col-end-2 lg:col-start-2">
           {/* <button className="group focus:outline-none">
             <div className="flex justify-between pb-2 pt-0.5 text-lg font-extralight items-center text-left text-deepoe_default-black focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-deepoe_default-black group-focus:font-medium">
               <span className="truncate font-mono font-extralight text-lg2">
@@ -314,7 +312,7 @@ const ProductForm = ({ product, collection }) => {
             </AccordionSummary>
             <AccordionDetails>
               <div className="overflow-hidden duration-300  text-sm  font-mono  text-left font-extralight  ">
-                <p className="mb-4">{details}</p>
+                <p className="mb-1">{details}</p>
               </div>
             </AccordionDetails>
           </Accordion>

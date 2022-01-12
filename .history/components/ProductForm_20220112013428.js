@@ -314,7 +314,7 @@ const ProductForm = ({ product, collection }) => {
             </AccordionSummary>
             <AccordionDetails>
               <div className="overflow-hidden duration-300  text-sm  font-mono  text-left font-extralight  ">
-                <p className="mb-4">{details}</p>
+                <p className="mb-1">{details}</p>
               </div>
             </AccordionDetails>
           </Accordion>

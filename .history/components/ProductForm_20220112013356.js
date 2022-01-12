@@ -264,8 +264,8 @@ const ProductForm = ({ product, collection }) => {
         <div className="font-mono text-sm font-extralight mb-4">
           <p>{intro}</p>
         </div>
-        <div className="flex flex-col w-full border-t border-deepoe-chocolate lg:col-end-2 lg:col-start-2">
-          {/* <button className="group focus:outline-none">
+        <div className="flex flex-col w-full border-t pt-2 border-deepoe-chocolate lg:col-end-2 lg:col-start-2">
+          <button className="group focus:outline-none">
             <div className="flex justify-between pb-2 pt-0.5 text-lg font-extralight items-center text-left text-deepoe_default-black focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-deepoe_default-black group-focus:font-medium">
               <span className="truncate font-mono font-extralight text-lg2">
                 Details
@@ -301,7 +301,7 @@ const ProductForm = ({ product, collection }) => {
                 ))}
               </ul>
             </div>
-          </button> */}
+          </button>
           <Accordion className="p-0 m-0 shadow-none bg-deepoe-cream   border-b border-deepoe_default-black ">
             <AccordionSummary
               aria-controls="panel1a-content"
@@ -314,7 +314,7 @@ const ProductForm = ({ product, collection }) => {
             </AccordionSummary>
             <AccordionDetails>
               <div className="overflow-hidden duration-300  text-sm  font-mono  text-left font-extralight  ">
-                <p className="mb-4">{details}</p>
+                <p className="mb-1">{details}</p>
               </div>
             </AccordionDetails>
           </Accordion>

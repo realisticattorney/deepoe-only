@@ -7,6 +7,72 @@ import { MinusIcon, PlusIcon } from '@heroicons/react/outline';
 import { ExclamationCircleIcon, TruckIcon } from '@heroicons/react/outline';
 import atob from 'atob';
 import ReviewsPopup from './ReviewsPopup';
+import { styled } from '@mui/material/styles';
+import MuiAccordion from '@mui/material/Accordion';
+import MuiAccordionSummary from '@mui/material/AccordionSummary';
+import MuiAccordionDetails from '@mui/material/AccordionDetails';
+import RemoveIcon from '@mui/icons-material/Remove';
+import AddIcon from '@mui/icons-material/Add';
+const Accordion = styled((props) => (
+  <MuiAccordion disableGutters elevation={0} {...props} />
+))(({ theme }) => ({
+  // '&:not(:last-child)': {
+  backgroundColor: '#F5F3EE',
+  borderBottom: '1px solid rgba(0, 0, 0, 1)',
+  // paddingBottom: "1px",
+  // },
+  '&:before': {
+    display: 'none',
+  },
+}));
+
+const Icon = styled((props) => (
+  <div {...props}>
+    <div className="n">
+      <RemoveIcon className="h-5 w-5" />
+    </div>
+    <div className="y">
+      <AddIcon className="h-5 w-5" />
+    </div>
+  </div>
+))`
+  & > .y {
+    display: block;
+  }
+  & > .n {
+    display: none;
+  }
+  .Mui-expanded & > .n {
+    display: block;
+  }
+  .Mui-expanded & > .y {
+    display: none;
+  }
+`;
+
+const AccordionSummary = styled((props) => (
+  <MuiAccordionSummary
+    expandIcon={<Icon sx={{ fontSize: '0.9rem' }} />}
+    {...props}
+  />
+))(({ theme }) => ({
+  paddingLeft: '0px',
+  paddingRight: '0px',
+  '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
+    // transform: 'rotate(90deg)',
+    marginRight: '0px',
+    paddingRight: '0px',
+  },
+
+  '& .MuiAccordionSummary-content': {
+    marginLeft: theme.spacing(0),
+    marginRight: theme.spacing(0),
+  },
+}));
+
+const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
+  padding: theme.spacing(0),
+}));
 
 const ProductForm = ({ product, collection }) => {
   const stageCanvasRef = useRef(null);
@@ -43,14 +109,10 @@ const ProductForm = ({ product, collection }) => {
     return () => clearTimeout(timer);
   }, []);
 
-  // const [show, setShow] = useState(false);
-
-  // const handleShow = () => {
-  //   show ? setShow(false) : setShow(true);
-  // };
   let itemsSpecs;
   const { description } = product;
-  let [intro, details] = description.split('^^^DETAILS');
+  let [shipping, restOfDescription] = description.split('%%%');
+  let [intro, details] = restOfDescription.split('^^^DETAILS');
   [details, itemsSpecs] = details.split('^^^ITEM SPECIFICATIONS');
   const itemsSpecs2 = itemsSpecs.split('**');
 
@@ -156,7 +218,7 @@ const ProductForm = ({ product, collection }) => {
             <h3
               className={`text-right text-sm font-normal text-gray-600 ${
                 selectedVariant.availableForSale === false
-                  ? 'text-deepoe_default-black font-medium'
+                  ? 'text-deepoe_default-black font-semibold'
                   : ''
               }`}
             >
@@ -176,7 +238,7 @@ const ProductForm = ({ product, collection }) => {
           ))}
           <div className="text-sm font-light mb-3 mt-1.5 space-y-1.5">
             <p className="flex items-center text-sm">
-              <TruckIcon className="h-5 flex pr-1" /> Usually ships in 1-2 weeks
+              <TruckIcon className="h-5 flex pr-1" /> {shipping}
             </p>
             {product.variants.edges[0].node.compareAtPriceV2?.amount && (
               <p className="flex items-center text-xs">
@@ -189,9 +251,11 @@ const ProductForm = ({ product, collection }) => {
             onClick={() => {
               addToCart(selectedVariant);
             }}
-            className={`bg-deepoe-chocolate text-white px-2 pt-2 pb-1.5 mt-1 mb-3 text-2xl font-sans self-center justify-self-center items-center  w-full active:scale-95 ${
-              selectedVariant.availableForSale ? 'disabled' : ''
-            }`} //disabled if the selected variant is not available for sale (out of stock)
+            className={`  px-2 pt-2 pb-1.5 mt-1 mb-3 text-2xl font-sans self-center justify-self-center items-center  w-full active:scale-95 ${
+              selectedVariant.availableForSale
+                ? 'disabled bg-deepoe-chocolate text-white'
+                : 'text-deepoe-chocolate border border-deepoe-chocolate bg-white font-medium focus:outline-none'
+            }`}
             disabled={selectedVariant.availableForSale === false ? true : false}
           >
             {selectedVariant.availableForSale === false
@@ -203,8 +267,8 @@ const ProductForm = ({ product, collection }) => {
         <div className="font-mono text-sm font-extralight mb-4">
           <p>{intro}</p>
         </div>
-        <div className="flex flex-col w-full border-t pt-2 border-deepoe-chocolate lg:col-end-2 lg:col-start-2">
-          <button className="group focus:outline-none">
+        <div className="flex flex-col w-full border-t border-deepoe-chocolate lg:col-end-2 lg:col-start-2">
+          {/* <button className="group focus:outline-none">
             <div className="flex justify-between pb-2 pt-0.5 text-lg font-extralight items-center text-left text-deepoe_default-black focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-deepoe_default-black group-focus:font-medium">
               <span className="truncate font-mono font-extralight text-lg2">
                 Details
@@ -240,7 +304,76 @@ const ProductForm = ({ product, collection }) => {
                 ))}
               </ul>
             </div>
-          </button>
+          </button> */}
+          <Accordion className="p-0 m-0 shadow-none    border-b border-deepoe_default-black ">
+            <AccordionSummary
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+              className="flex p-0   justify-between text-lg font-extralight text-left text-deepoe_default-black"
+            >
+              <p className="font-mono font-extralight text-lg2 py-0 my-0 ">
+                Details
+              </p>
+            </AccordionSummary>
+            <AccordionDetails>
+              <div className="overflow-hidden duration-300  text-sm  font-mono  text-left font-extralight  ">
+                <p className="mb-4">{details}</p>
+              </div>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion
+            sx={{
+              margin: '0px',
+              pardding: '0px',
+              '& .MuiAccordionDetails-root': {
+                paddingTop: '10px',
+                paddingBottom: '0px',
+              },
+
+              '& .MuiAccordionSummary-content': {
+                paddingBottom: '0px',
+                marginTop: '0px',
+                marginBottom: '0px',
+              },
+
+              '& .MuiButtonBase-root': {
+                minHeight: 'auto',
+                alignItems: 'center',
+              },
+              '& .MuiSvgIcon-root': {
+                paddingTop: '0px',
+                paddingBottom: '0px',
+                marginTop: '0px',
+              },
+              '& .MuiPaper-root & .MuiAccordion-root & .Mui-expanded': {
+                marginTop: '0px',
+              },
+            }}
+            className="py-3 m-0 shadow-none border-b border-deepoe_default-black "
+            id="accordion"
+          >
+            <AccordionSummary
+              aria-controls="panel2a-content"
+              id="panel2a-header"
+              className="flex justify-between text-lg font-extralight text-left text-deepoe_default-black"
+            >
+              <p className="font-mono font-extralight text-lg2 py-0 my-0 ">
+                Items Specifications
+              </p>
+            </AccordionSummary>
+            <AccordionDetails>
+              <div className="m-0 overflow-hidden  text-sm   font-mono  text-left font-extralight border-deepoe_default-black">
+                <ul className="list-disc list-outside font-mono font-extralight ">
+                  {itemsSpecs2.map((item, index) => (
+                    <li key={index} className="">
+                      <span className="px-1 text-base font-black">•</span>{' '}
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </AccordionDetails>
+          </Accordion>
           <div className="">
             {/* <Link href={`/reviews/${product.handle}`}> */}
             {/* <a> */}

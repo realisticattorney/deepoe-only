@@ -327,7 +327,7 @@ const ProductForm = ({ product, collection }) => {
               pardding: '0px',
               '& .MuiAccordionDetails-root': {
                 paddingTop: '10px',
-                paddingBottom: '10px',
+                paddingBottom: '4px',
               },
 
               '& .MuiAccordionSummary-content': {
@@ -362,7 +362,7 @@ const ProductForm = ({ product, collection }) => {
               </p>
             </AccordionSummary>
             <AccordionDetails>
-              <div className="mx-0 overflow-hidden  text-sm   font-mono  text-left font-extralight border-deepoe_default-black">
+              <div className="m-0 overflow-hidden  text-sm   font-mono  text-left font-extralight border-deepoe_default-black">
                 <ul className="list-disc list-outside font-mono font-extralight ">
                   {itemsSpecs2.map((item, index) => (
                     <li key={index} className="">

@@ -39,20 +39,10 @@ body {
   list-style-type: disc !important;
 }
 
-/* #accordion  {
-  min-height: auto !important;
-  margin-bottom: 0 !important;
-  margin-top: 0 !important;
-} */
-
-/* .css-o4b71y-MuiAccordionSummary-content.Mui-expanded,
-.css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded,
-.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded,
-.css-o4b71y-MuiAccordionSummary-content.Mui-expanded {
-  min-height: auto !important;
-  margin-bottom: 0 !important;
-  martin-top: 0 !important;
-} */
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded {
+ min-height: auto !important;
+ margin-bottom: 0 !important;
+}
 
 #reviews-complete > * > * > * > * > .text-m {
   @apply text-deepoe_default-black font-normal;

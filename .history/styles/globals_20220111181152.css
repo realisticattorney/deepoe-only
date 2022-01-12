@@ -39,11 +39,11 @@ body {
   list-style-type: disc !important;
 }
 
-/* #accordion  {
+#accordion  {
   min-height: auto !important;
   margin-bottom: 0 !important;
-  margin-top: 0 !important;
-} */
+  martin-top: 0 !important;
+}
 
 /* .css-o4b71y-MuiAccordionSummary-content.Mui-expanded,
 .css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded,

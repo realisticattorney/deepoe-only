@@ -12,7 +12,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import AddIcon from '@mui/icons-material/Add';
-import Remove from '@mui/icons-material/Remove';
+import Minimize from '@mui/icons-material/Minimize';
 
 const ProductForm = ({ product, collection }) => {
   const [expanded, setExpanded] = useState(false);
@@ -283,6 +283,7 @@ const ProductForm = ({ product, collection }) => {
                 marginTop: '0px',
               },
             }}
+            id="accordion"
           >
             <AccordionSummary
               expandIcon={expanded === 'panel1' ? <Remove /> : <AddIcon />}

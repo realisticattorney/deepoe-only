@@ -283,6 +283,7 @@ const ProductForm = ({ product, collection }) => {
                 marginTop: '0px',
               },
             }}
+            
           >
             <AccordionSummary
               expandIcon={expanded === 'panel1' ? <Remove /> : <AddIcon />}

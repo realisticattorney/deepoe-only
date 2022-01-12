@@ -12,7 +12,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import AddIcon from '@mui/icons-material/Add';
-import Remove from '@mui/icons-material/Remove';
+import Minimize from '@mui/icons-material/Minimize';
 
 const ProductForm = ({ product, collection }) => {
   const [expanded, setExpanded] = useState(false);
@@ -250,17 +250,18 @@ const ProductForm = ({ product, collection }) => {
               </ul>
             </div>
           </button>
+          {/* min-height: auto !important;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important; */}
           <Accordion
             expanded={expanded === 'panel1'}
             onChange={handleChange('panel1')}
             className="py-3  m-0 shadow-none bg-deepoe-cream  border-b border-deepoe_default-black"
             sx={{
+              minHeight: 'auto !important',
               margin: '0px',
               pardding: '0px',
-
               '& .MuiAccordionDetails-root': {
-                alignItems: 'center',
-                minHeight: 'auto',
                 paddingTop: '10px',
                 paddingBottom: '10px',
                 paddingLeft: '0px',
@@ -283,9 +284,10 @@ const ProductForm = ({ product, collection }) => {
                 marginTop: '0px',
               },
             }}
+            id="accordion"
           >
             <AccordionSummary
-              expandIcon={expanded === 'panel1' ? <Remove /> : <AddIcon />}
+              expandIcon={expanded === 'panel1' ? <Minimize /> : <AddIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
               className="flex p-0 justify-between text-lg font-extralight text-left text-deepoe_default-black"

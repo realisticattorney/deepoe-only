@@ -11,15 +11,8 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import AddIcon from '@mui/icons-material/Add';
-import Remove from '@mui/icons-material/Remove';
 
 const ProductForm = ({ product, collection }) => {
-  const [expanded, setExpanded] = useState(false);
-
-  const handleChange = (panel) => (event, isExpanded) => {
-    setExpanded(isExpanded ? panel : false);
-  };
   const stageCanvasRef = useRef(null);
   const [disable, setDisable] = useState(false);
   const [parentReviewState, setParentReviewState] = useState(false);
@@ -251,41 +244,11 @@ const ProductForm = ({ product, collection }) => {
             </div>
           </button>
           <Accordion
-            expanded={expanded === 'panel1'}
-            onChange={handleChange('panel1')}
-            className="py-3  m-0 shadow-none bg-deepoe-cream  border-b border-deepoe_default-black"
-            sx={{
-              margin: '0px',
-              pardding: '0px',
-
-              '& .MuiAccordionDetails-root': {
-                alignItems: 'center',
-                minHeight: 'auto',
-                paddingTop: '10px',
-                paddingBottom: '10px',
-                paddingLeft: '0px',
-                paddingRight: '0px',
-              },
-
-              '& .MuiAccordionSummary-content': {
-                paddingBottom: '0px',
-                marginTop: '0px',
-                marginBottom: '0px',
-              },
-
-              '& .MuiButtonBase-root': {
-                minHeight: 'auto',
-                alignItems: 'center',
-              },
-              '& .MuiSvgIcon-root': {
-                paddingTop: '0px',
-                paddingBottom: '0px',
-                marginTop: '0px',
-              },
-            }}
+            className="p-0 m-0 shadow-none bg-deepoe-cream  border-b border-deepoe_default-black "
+            id="accordion"
           >
             <AccordionSummary
-              expandIcon={expanded === 'panel1' ? <Remove /> : <AddIcon />}
+              expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
               className="flex p-0 justify-between text-lg font-extralight text-left text-deepoe_default-black"
@@ -301,33 +264,7 @@ const ProductForm = ({ product, collection }) => {
             </AccordionDetails>
           </Accordion>
           <Accordion
-            sx={{
-              margin: '0px',
-              pardding: '0px',
-              '& .MuiAccordionDetails-root': {
-                paddingTop: '10px',
-                paddingBottom: '10px',
-                paddingLeft: '0px',
-                paddingRight: '0px',
-              },
-
-              '& .MuiAccordionSummary-content': {
-                paddingBottom: '0px',
-                marginTop: '0px',
-                marginBottom: '0px',
-              },
-
-              '& .MuiButtonBase-root': {
-                minHeight: 'auto',
-                alignItems: 'center',
-              },
-              '& .MuiSvgIcon-root': {
-                paddingTop: '0px',
-                paddingBottom: '0px',
-                marginTop: '0px',
-              },
-            }}
-            className="py-3 m-0 shadow-none bg-deepoe-cream  border-b border-deepoe_default-black "
+            className="p-0 m-0 shadow-none bg-deepoe-cream  border-b border-deepoe_default-black "
             id="accordion"
           >
             <AccordionSummary
@@ -335,13 +272,21 @@ const ProductForm = ({ product, collection }) => {
               aria-controls="panel2a-content"
               id="panel2a-header"
               className="flex p-0 justify-between text-lg font-extralight text-left text-deepoe_default-black"
+              sx={{
+                width: 300,
+                color: 'success.main',
+                '& .Mui-expanded': {
+                  minHeight: '1px',
+                  margin
+                },
+              }}
             >
               <p className="font-mono font-extralight text-lg2 py-0 my-0 ">
                 Items Specifications
               </p>
             </AccordionSummary>
             <AccordionDetails>
-              <div className="mx-0 overflow-hidden  text-sm   font-mono  text-left font-extralight border-deepoe_default-black">
+              <div className=" overflow-hidden  text-sm   font-mono  text-left font-extralight border-deepoe_default-black">
                 <ul className="list-disc list-outside font-mono font-extralight ">
                   {itemsSpecs2.map((item, index) => (
                     <li key={index} className="">

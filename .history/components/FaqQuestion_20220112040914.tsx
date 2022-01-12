@@ -15,7 +15,7 @@ const Accordion = styled((props: AccordionProps) => (
 ))(({ theme }) => ({
   // '&:not(:last-child)': {
   backgroundColor: '#F5F3EE',
-  borderBottom: '1px solid rgba(0, 0, 0, 0.8)',
+  borderBottom: '1px solid rgba(0, 0, 0, 1)',
   // paddingBottom: "1px",
   // },
   '&:before': {

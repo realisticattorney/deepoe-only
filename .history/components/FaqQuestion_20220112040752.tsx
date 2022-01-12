@@ -15,7 +15,7 @@ const Accordion = styled((props: AccordionProps) => (
 ))(({ theme }) => ({
   // '&:not(:last-child)': {
   backgroundColor: '#F5F3EE',
-  borderBottom: '1px solid rgba(0, 0, 0, 0.8)',
+  borderBottom: '1px solid rgba(0, 0, 0, 1)',
   // paddingBottom: "1px",
   // },
   '&:before': {
@@ -105,8 +105,8 @@ const FaqQuestion = (props: any) => {
           </h4>
           <Accordion className="p-0 m-0 shadow-none    border-b border-deepoe_default-black ">
             <AccordionSummary
-              aria-controls="panel1b-content"
-              id="panel1b-header"
+              aria-controls="panel1a-content"
+              id="panel1a-header"
               className="flex p-0   justify-between text-lg font-extralight text-left text-deepoe_default-black"
             >
               <p className="font-mono font-extralight text-lg2 py-0 my-0 ">
@@ -119,38 +119,36 @@ const FaqQuestion = (props: any) => {
               </div>
             </AccordionDetails>
           </Accordion>
-          <Accordion className="p-0 m-0 shadow-none    border-b border-deepoe_default-black ">
-            <AccordionSummary
-              aria-controls="panel2b-content"
-              id="panel2b-header"
-              className="flex p-0   justify-between text-lg font-extralight text-left text-deepoe_default-black"
-            >
-              <p className="font-mono font-extralight text-lg2 py-0 my-0 ">
-                {props.firstQuestion}
+          <button className="group focus:outline-none px-3">
+            <div className="flex justify-between py-1 tracking-tight text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+              <span className="truncate text-lg font-extralight group-focus:font-light">
+                {props.secondQuestion}
+              </span>
+              <p className="font-thin text-3xl group-focus:hidden">+</p>
+
+              <p className="font-thin text-3xl  -mt-5  hidden group-focus:flex">
+                _
               </p>
-            </AccordionSummary>
-            <AccordionDetails>
-              <div className="overflow-hidden duration-300  text-sm  font-mono  text-left font-extralight  ">
-                <p className="mb-4">{props.firstAnswer}</p>
-              </div>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion className="p-0 m-0 shadow-none    border-b border-deepoe_default-black ">
-            <AccordionSummary
-              aria-controls="panel3b-content"
-              id="panel3b-header"
-              className="flex p-0   justify-between text-lg font-extralight text-left text-deepoe_default-black"
-            >
-              <p className="font-mono font-extralight text-lg2 py-0 my-0 ">
-                {props.firstQuestion}
+            </div>
+            <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2  group-focus:max-h-40  text-sm text-left font-extralight  border-b">
+              {props.secondAnswer}
+            </div>
+          </button>
+          <button className="group focus:outline-none px-3">
+            <div className="flex justify-between py-1 tracking-tight text-sm  items-center text-left text-gray-900 focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-gray-700 group-focus:font-medium">
+              <span className="truncate text-lg font-extralight group-focus:font-light">
+                {props.thirdQuestion}
+              </span>
+              <p className="font-thin text-3xl group-focus:hidden">+</p>
+
+              <p className="font-thin text-3xl  -mt-5  hidden group-focus:flex">
+                _
               </p>
-            </AccordionSummary>
-            <AccordionDetails>
-              <div className="overflow-hidden duration-300  text-sm  font-mono  text-left font-extralight  ">
-                <p className="mb-4">{props.firstAnswer}</p>
-              </div>
-            </AccordionDetails>
-          </Accordion>
+            </div>
+            <div className="max-h-0 overflow-hidden duration-300 group-focus:py-2  group-focus:max-h-40  text-sm text-left font-extralight  border-b">
+              {props.thirdAnswer}
+            </div>
+          </button>
         </div>
       </div>
     </div>

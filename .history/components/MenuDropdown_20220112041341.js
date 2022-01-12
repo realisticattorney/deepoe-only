@@ -124,7 +124,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                         </a>
                       </Link>
 
-                      <Link href={`/about`}>
+                      <Link href={`/faq`}>
                         <a
                           className="font-extralight text-2xl block"
                           onClick={() => wrapperSetParentState(false)}
@@ -132,7 +132,7 @@ export default function MenuDropdown({ parentState, wrapperSetParentState }) {
                           FAQ
                         </a>
                       </Link>
-
+                      
                       <Link href={`/faq`}>
                         <a
                           className="font-extralight text-2xl block"

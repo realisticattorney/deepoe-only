@@ -7,44 +7,10 @@ import { MinusIcon, PlusIcon } from '@heroicons/react/outline';
 import { ExclamationCircleIcon, TruckIcon } from '@heroicons/react/outline';
 import atob from 'atob';
 import ReviewsPopup from './ReviewsPopup';
-// import Accordion from '@mui/material/Accordion';
-// import AccordionSummary from '@mui/material/AccordionSummary';
-// import AccordionDetails from '@mui/material/AccordionDetails';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { styled } from '@mui/material/styles';
-import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
-import MuiAccordion from '@mui/material/Accordion';
-import MuiAccordionSummary from '@mui/material/AccordionSummary';
-import MuiAccordionDetails from '@mui/material/AccordionDetails';
-
-const Accordion = styled((props) => (
-  <MuiAccordion disableGutters elevation={0}  {...props} />
-))(({ theme }) => ({
-  '&:not(:last-child)': {
-    borderBottom: 0,
-  },
-  '&:before': {
-    display: 'none',
-  },
-}));
-
-const AccordionSummary = styled((props) => (
-  <MuiAccordionSummary
-    expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem' }} />}
-    {...props}
-  />
-))(({ theme }) => ({
-  '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
-    transform: 'rotate(90deg)',
-  },
-  '& .MuiAccordionSummary-content': {
-    marginLeft: theme.spacing(0),
-  },
-}));
-
-const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
-  padding: theme.spacing(2),
-}));
 
 const ProductForm = ({ product, collection }) => {
   const stageCanvasRef = useRef(null);
@@ -298,33 +264,7 @@ const ProductForm = ({ product, collection }) => {
             </AccordionDetails>
           </Accordion>
           <Accordion
-            sx={{
-              margin: '0px',
-              pardding: '0px',
-              '& .MuiAccordionDetails-root': {
-                paddingTop: '10px',
-                paddingBottom: '10px',
-              },
-
-              '& .MuiAccordionSummary-content': {
-                paddingBottom: '0px',
-                marginTop: '0px',
-                marginBottom: '0px',
-              },
-
-              '& .MuiButtonBase-root': {
-                minHeight: 'auto',
-                alignItems: 'center',
-              },
-              '& .MuiSvgIcon-root': {
-                paddingTop: '0px',
-                paddingBottom: '0px',
-                marginTop: '0px',
-              },
-              '& .MuiPaper-root & .MuiAccordion-root & .Mui-expanded': {
-                marginTop: '0px',
-              },
-            }}
+           
             className="py-3 m-0 shadow-none bg-deepoe-cream  border-b border-deepoe_default-black "
             id="accordion"
           >

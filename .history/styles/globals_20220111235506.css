@@ -39,6 +39,12 @@ body {
   list-style-type: disc !important;
 }
 
+.MuiAccordionDetails-root,
+.MuiAccordionSummary-root,
+.AccordionSummary-root,
+.AccordionDetails-root {
+  min-height: 20px !important;
+}
 
 /* #accordion  {
   min-height: auto !important;

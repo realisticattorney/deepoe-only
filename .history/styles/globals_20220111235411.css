@@ -39,6 +39,9 @@ body {
   list-style-type: disc !important;
 }
 
+.MuiAccordionDetails-root {
+  min-height: auto !important;
+}
 
 /* #accordion  {
   min-height: auto !important;

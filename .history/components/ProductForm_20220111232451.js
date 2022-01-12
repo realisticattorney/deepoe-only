@@ -7,46 +7,19 @@ import { MinusIcon, PlusIcon } from '@heroicons/react/outline';
 import { ExclamationCircleIcon, TruckIcon } from '@heroicons/react/outline';
 import atob from 'atob';
 import ReviewsPopup from './ReviewsPopup';
-// import Accordion from '@mui/material/Accordion';
-// import AccordionSummary from '@mui/material/AccordionSummary';
-// import AccordionDetails from '@mui/material/AccordionDetails';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { styled } from '@mui/material/styles';
-import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
-import MuiAccordion from '@mui/material/Accordion';
-import MuiAccordionSummary from '@mui/material/AccordionSummary';
-import MuiAccordionDetails from '@mui/material/AccordionDetails';
-
-const Accordion = styled((props) => (
-  <MuiAccordion disableGutters elevation={0}  {...props} />
-))(({ theme }) => ({
-  '&:not(:last-child)': {
-    borderBottom: 0,
-  },
-  '&:before': {
-    display: 'none',
-  },
-}));
-
-const AccordionSummary = styled((props) => (
-  <MuiAccordionSummary
-    expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem' }} />}
-    {...props}
-  />
-))(({ theme }) => ({
-  '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
-    transform: 'rotate(90deg)',
-  },
-  '& .MuiAccordionSummary-content': {
-    marginLeft: theme.spacing(0),
-  },
-}));
-
-const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
-  padding: theme.spacing(2),
-}));
+import AddIcon from '@mui/icons-material/Add';
+import Remove from '@mui/icons-material/Remove';
 
 const ProductForm = ({ product, collection }) => {
+  const [expanded, setExpanded] = useState(false);
+
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
   const stageCanvasRef = useRef(null);
   const [disable, setDisable] = useState(false);
   const [parentReviewState, setParentReviewState] = useState(false);
@@ -278,11 +251,41 @@ const ProductForm = ({ product, collection }) => {
             </div>
           </button>
           <Accordion
-            className="p-0 m-0 shadow-none bg-deepoe-cream  border-b border-deepoe_default-black "
-            id="accordion"
+            expanded={expanded === 'panel1'}
+            onChange={handleChange('panel1')}
+            className="py-3  m-0 shadow-none bg-deepoe-cream  border-b border-deepoe_default-black"
+            sx={{
+              margin: '0px',
+              pardding: '0px',
+
+              '& .MuiAccordionDetails-root': {
+                alignItems: 'center',
+                minHeight: 'auto',
+                paddingTop: '10px',
+                paddingBottom: '10px',
+                paddingLeft: '0px',
+                paddingRight: '0px',
+              },
+
+              '& .MuiAccordionSummary-content': {
+                paddingBottom: '0px',
+                marginTop: '0px',
+                marginBottom: '0px',
+              },
+
+              '& .MuiButtonBase-root': {
+                minHeight: 'auto',
+                alignItems: 'center',
+              },
+              '& .MuiSvgIcon-root': {
+                paddingTop: '0px',
+                paddingBottom: '0px',
+                marginTop: '0px',
+              },
+            }}
           >
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
+              expandIcon={expanded === 'panel1' ? <Remove /> : <AddIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
               className="flex p-0 justify-between text-lg font-extralight text-left text-deepoe_default-black"
@@ -304,6 +307,8 @@ const ProductForm = ({ product, collection }) => {
               '& .MuiAccordionDetails-root': {
                 paddingTop: '10px',
                 paddingBottom: '10px',
+                paddingLeft: '0px',
+                paddingRight: '0px',
               },
 
               '& .MuiAccordionSummary-content': {
@@ -321,17 +326,14 @@ const ProductForm = ({ product, collection }) => {
                 paddingBottom: '0px',
                 marginTop: '0px',
               },
-              '& .MuiPaper-root & .MuiAccordion-root & .Mui-expanded': {
-                marginTop: '0px',
-              },
             }}
             className="py-3 m-0 shadow-none bg-deepoe-cream  border-b border-deepoe_default-black "
             id="accordion"
           >
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel2a-content"
-              id="panel2a-header"
+              expandIcon={expanded === 'panel1' ? <Remove /> : <AddIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
               className="flex p-0 justify-between text-lg font-extralight text-left text-deepoe_default-black"
             >
               <p className="font-mono font-extralight text-lg2 py-0 my-0 ">

@@ -13,6 +13,7 @@ import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import RemoveIcon from '@mui/icons-material/Remove';
 import AddIcon from '@mui/icons-material/Add';
+import styled from "styled-components";
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} {...props} />
 ))(({ theme }) => ({
@@ -24,14 +25,11 @@ const Accordion = styled((props) => (
   },
 }));
 
-const Icon = styled((props) => (
+
+const Icon = styled(props => (
   <div {...props}>
-    <div className="n">
-      <RemoveIcon className="h-5 w-5" />
-    </div>
-    <div className="y">
-      <AddIcon className="h-5 w-5" />
-    </div>
+    <div className="n">n</div>
+    <div className="y">y</div>
   </div>
 ))`
   & > .y {
@@ -48,28 +46,31 @@ const Icon = styled((props) => (
   }
 `;
 
-const AccordionSummary = styled((props) => (
-  <MuiAccordionSummary
-    expandIcon={<Icon sx={{ fontSize: '0.9rem' }} />}
-    {...props}
-  />
-))(({ theme }) => ({
-  '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
-    // transform: 'rotate(90deg)',
-    marginRight: '0px',
-    paddingRight: '0px',
-  },
-  '& .MuiAccordionSummary-content': {
-    marginLeft: theme.spacing(0),
-    marginRight: theme.spacing(0),
-  },
-}));
+const AccordionSummary = styled((props) => <MuiAccordionSummary
+  expandIcon={<Icon />}
+ {...props} />)(
+  ({ theme }) => ({
+    '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
+      transform: 'rotate(90deg)',
+    },
+    '& .MuiAccordionSummary-content': {
+      marginLeft: theme.spacing(0),
+      marginRight: theme.spacing(0),
+    },
+  })
+);
 
 const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   padding: theme.spacing(0),
 }));
 
 const ProductForm = ({ product, collection }) => {
+  handleToggleOne = (index) => () => {
+    const { expanded } = this.state;
+    expanded[index] = !expanded[index];
+    this.setState({ expanded });
+  };
+
   const stageCanvasRef = useRef(null);
   const [disable, setDisable] = useState(false);
   const [parentReviewState, setParentReviewState] = useState(false);

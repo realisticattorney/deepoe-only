@@ -27,10 +27,10 @@ const Accordion = styled((props) => (
 const Icon = styled((props) => (
   <div {...props}>
     <div className="n">
-      <RemoveIcon className="h-5 w-5" />
+      <RemoveIcon className="h-2 w-2" />
     </div>
     <div className="y">
-      <AddIcon className="h-5 w-5" />
+      <AddIcon className="text-gray-700 h-5 w-5 " />
     </div>
   </div>
 ))`
@@ -62,6 +62,7 @@ const AccordionSummary = styled((props) => (
   '& .MuiAccordionSummary-content': {
     marginLeft: theme.spacing(0),
     marginRight: theme.spacing(0),
+    fontSize: '0.9rem',
   },
 }));
 

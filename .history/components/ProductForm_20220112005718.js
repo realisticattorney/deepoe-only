@@ -24,14 +24,10 @@ const Accordion = styled((props) => (
   },
 }));
 
-const Icon = styled((props) => (
+const Icon = styled(props => (
   <div {...props}>
-    <div className="n">
-      <RemoveIcon className="h-5 w-5" />
-    </div>
-    <div className="y">
-      <AddIcon className="h-5 w-5" />
-    </div>
+    <div className="n"><RemoveIcon /></div>
+    <div className="y"><AddIcon /></div>
   </div>
 ))`
   & > .y {
@@ -50,7 +46,11 @@ const Icon = styled((props) => (
 
 const AccordionSummary = styled((props) => (
   <MuiAccordionSummary
-    expandIcon={<Icon sx={{ fontSize: '0.9rem' }} />}
+    expandIcon={
+      <Icon
+      />
+      sx={{ fontSize: '0.9rem' }}
+    }
     {...props}
   />
 ))(({ theme }) => ({

@@ -24,38 +24,14 @@ const Accordion = styled((props) => (
   },
 }));
 
-const Icon = styled((props) => (
-  <div {...props}>
-    <div className="n">
-      <RemoveIcon className="h-5 w-5" />
-    </div>
-    <div className="y">
-      <AddIcon className="h-5 w-5" />
-    </div>
-  </div>
-))`
-  & > .y {
-    display: block;
-  }
-  & > .n {
-    display: none;
-  }
-  .Mui-expanded & > .n {
-    display: block;
-  }
-  .Mui-expanded & > .y {
-    display: none;
-  }
-`;
-
 const AccordionSummary = styled((props) => (
   <MuiAccordionSummary
-    expandIcon={<Icon sx={{ fontSize: '0.9rem' }} />}
+    expandIcon={<AddIcon sx={{ fontSize: '1.2rem', marginRight: '0px',  }} />}
     {...props}
   />
 ))(({ theme }) => ({
   '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
-    // transform: 'rotate(90deg)',
+    transform: 'rotate(90deg)',
     marginRight: '0px',
     paddingRight: '0px',
   },

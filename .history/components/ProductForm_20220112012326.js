@@ -27,15 +27,17 @@ const Accordion = styled((props) => (
 const Icon = styled((props) => (
   <div {...props}>
     <div className="n">
-      <RemoveIcon className="h-5 w-5" />
+      <RemoveIcon />
     </div>
     <div className="y">
-      <AddIcon className="h-5 w-5" />
+      <AddIcon />
     </div>
   </div>
 ))`
   & > .y {
     display: block;
+    height: 5px;
+    width: 5px;
   }
   & > .n {
     display: none;

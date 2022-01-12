@@ -7,7 +7,9 @@ import { MinusIcon, PlusIcon } from '@heroicons/react/outline';
 import { ExclamationCircleIcon, TruckIcon } from '@heroicons/react/outline';
 import atob from 'atob';
 import ReviewsPopup from './ReviewsPopup';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { styled } from '@mui/material/styles';
+import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
@@ -24,44 +26,17 @@ const Accordion = styled((props) => (
   },
 }));
 
-const Icon = styled((props) => (
-  <div {...props}>
-    <div className="n">
-      <RemoveIcon className="h-5 w-5" />
-    </div>
-    <div className="y">
-      <AddIcon className="h-5 w-5" />
-    </div>
-  </div>
-))`
-  & > .y {
-    display: block;
-  }
-  & > .n {
-    display: none;
-  }
-  .Mui-expanded & > .n {
-    display: block;
-  }
-  .Mui-expanded & > .y {
-    display: none;
-  }
-`;
-
 const AccordionSummary = styled((props) => (
   <MuiAccordionSummary
-    expandIcon={<Icon sx={{ fontSize: '0.9rem' }} />}
+    expandIcon={<AddIcon sx={{ fontSize: '0.9rem' }} />}
     {...props}
   />
 ))(({ theme }) => ({
   '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
-    // transform: 'rotate(90deg)',
-    marginRight: '0px',
-    paddingRight: '0px',
+    transform: 'rotate(90deg)',
   },
   '& .MuiAccordionSummary-content': {
     marginLeft: theme.spacing(0),
-    marginRight: theme.spacing(0),
   },
 }));
 
@@ -305,6 +280,7 @@ const ProductForm = ({ product, collection }) => {
             id="accordion"
           >
             <AccordionSummary
+              expandIcon={<AddIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
               className="flex p-0 justify-between text-lg font-extralight text-left text-deepoe_default-black"
@@ -351,6 +327,7 @@ const ProductForm = ({ product, collection }) => {
             id="accordion"
           >
             <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
               aria-controls="panel2a-content"
               id="panel2a-header"
               className="flex p-0 justify-between text-lg font-extralight text-left text-deepoe_default-black"

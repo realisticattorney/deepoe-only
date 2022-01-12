@@ -24,40 +24,15 @@ const Accordion = styled((props) => (
   },
 }));
 
-const Icon = styled((props) => (
-  <div {...props}>
-    <div className="n">
-      <RemoveIcon className="h-5 w-5" />
-    </div>
-    <div className="y">
-      <AddIcon className="h-5 w-5" />
-    </div>
-  </div>
-))`
-  & > .y {
-    display: block;
-  }
-  & > .n {
-    display: none;
-  }
-  .Mui-expanded & > .n {
-    display: block;
-  }
-  .Mui-expanded & > .y {
-    display: none;
-  }
-`;
-
 const AccordionSummary = styled((props) => (
   <MuiAccordionSummary
-    expandIcon={<Icon sx={{ fontSize: '0.9rem' }} />}
+    
+    
     {...props}
   />
 ))(({ theme }) => ({
   '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
-    // transform: 'rotate(90deg)',
-    marginRight: '0px',
-    paddingRight: '0px',
+    transform: 'rotate(45deg)',
   },
   '& .MuiAccordionSummary-content': {
     marginLeft: theme.spacing(0),
@@ -70,6 +45,12 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 }));
 
 const ProductForm = ({ product, collection }) => {
+  handleToggleOne = (index) => () => {
+    const { expanded } = this.state;
+    expanded[index] = !expanded[index];
+    this.setState({ expanded });
+  };
+
   const stageCanvasRef = useRef(null);
   const [disable, setDisable] = useState(false);
   const [parentReviewState, setParentReviewState] = useState(false);

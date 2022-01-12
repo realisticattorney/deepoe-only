@@ -17,7 +17,7 @@ const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} {...props} />
 ))(({ theme }) => ({
   // '&:not(:last-child)': {
-  backgroundColor: '#F5F3EE',
+
   borderBottom: '1px solid rgba(0, 0, 0, 1)',
   // paddingBottom: "1px",
   // },
@@ -349,7 +349,7 @@ const ProductForm = ({ product, collection }) => {
                 marginTop: '0px',
               },
             }}
-            className="py-3 m-0 shadow-none border-b border-deepoe_default-black "
+            className="py-3 m-0 shadow-none bg-deepoe-cream  border-b border-deepoe_default-black "
             id="accordion"
           >
             <AccordionSummary

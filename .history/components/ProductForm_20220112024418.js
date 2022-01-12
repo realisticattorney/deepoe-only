@@ -17,7 +17,7 @@ const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} {...props} />
 ))(({ theme }) => ({
   // '&:not(:last-child)': {
-  backgroundColor: '#F5F3EE',
+  backgroundColor: "#F5F3EE",
   borderBottom: '1px solid rgba(0, 0, 0, 1)',
   // paddingBottom: "1px",
   // },

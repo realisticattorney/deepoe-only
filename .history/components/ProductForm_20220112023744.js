@@ -17,7 +17,7 @@ const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} {...props} />
 ))(({ theme }) => ({
   // '&:not(:last-child)': {
-  backgroundColor: '#F5F3EE',
+
   borderBottom: '1px solid rgba(0, 0, 0, 1)',
   // paddingBottom: "1px",
   // },
@@ -56,14 +56,11 @@ const AccordionSummary = styled((props) => (
     {...props}
   />
 ))(({ theme }) => ({
-  paddingLeft: '0px',
-  paddingRight: '0px',
   '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
     // transform: 'rotate(90deg)',
     marginRight: '0px',
     paddingRight: '0px',
   },
-
   '& .MuiAccordionSummary-content': {
     marginLeft: theme.spacing(0),
     marginRight: theme.spacing(0),
@@ -305,7 +302,7 @@ const ProductForm = ({ product, collection }) => {
               </ul>
             </div>
           </button> */}
-          <Accordion className="p-0 m-0 shadow-none    border-b border-deepoe_default-black ">
+          <Accordion className="p-0 m-0 shadow-none bg-deepoe-cream   border-b border-deepoe_default-black ">
             <AccordionSummary
               aria-controls="panel1a-content"
               id="panel1a-header"
@@ -322,40 +319,40 @@ const ProductForm = ({ product, collection }) => {
             </AccordionDetails>
           </Accordion>
           <Accordion
-            sx={{
-              margin: '0px',
-              pardding: '0px',
-              '& .MuiAccordionDetails-root': {
-                paddingTop: '10px',
-                paddingBottom: '10px',
-              },
+            // sx={{
+            //   margin: '0px',
+            //   pardding: '0px',
+            //   '& .MuiAccordionDetails-root': {
+            //     paddingTop: '10px',
+            //     paddingBottom: '10px',
+            //   },
 
-              '& .MuiAccordionSummary-content': {
-                paddingBottom: '0px',
-                marginTop: '0px',
-                marginBottom: '0px',
-              },
+            //   '& .MuiAccordionSummary-content': {
+            //     paddingBottom: '0px',
+            //     marginTop: '0px',
+            //     marginBottom: '0px',
+            //   },
 
-              '& .MuiButtonBase-root': {
-                minHeight: 'auto',
-                alignItems: 'center',
-              },
-              '& .MuiSvgIcon-root': {
-                paddingTop: '0px',
-                paddingBottom: '0px',
-                marginTop: '0px',
-              },
-              '& .MuiPaper-root & .MuiAccordion-root & .Mui-expanded': {
-                marginTop: '0px',
-              },
-            }}
-            className="py-3 m-0 shadow-none border-b border-deepoe_default-black "
+            //   '& .MuiButtonBase-root': {
+            //     minHeight: 'auto',
+            //     alignItems: 'center',
+            //   },
+            //   '& .MuiSvgIcon-root': {
+            //     paddingTop: '0px',
+            //     paddingBottom: '0px',
+            //     marginTop: '0px',
+            //   },
+            //   '& .MuiPaper-root & .MuiAccordion-root & .Mui-expanded': {
+            //     marginTop: '0px',
+            //   },
+            // }}
+            className="py-3 m-0 shadow-none bg-deepoe-cream  border-b border-deepoe_default-black "
             id="accordion"
           >
             <AccordionSummary
               aria-controls="panel2a-content"
               id="panel2a-header"
-              className="flex justify-between text-lg font-extralight text-left text-deepoe_default-black"
+              className="flex p-0 justify-between text-lg font-extralight text-left text-deepoe_default-black"
             >
               <p className="font-mono font-extralight text-lg2 py-0 my-0 ">
                 Items Specifications

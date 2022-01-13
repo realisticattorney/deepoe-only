@@ -76,15 +76,16 @@ export default function Page({
     import('react-facebook-pixel')
       .then((x) => x.default)
       .then((ReactPixel) => {
-        ReactPixel.init(FB_PIXEL); // facebookPixelId
-        ReactPixel.pageView();
+        ReactPixel.init('XXXXXXXXXXXXXXXXXXXXX') // facebookPixelId
+        ReactPixel.pageView()
 
         router.events.on('routeChangeComplete', () => {
-          ReactPixel.pageView();
-        });
-      });
-  }, [router.events]);
+          ReactPixel.pageView()
+        })
+      })
+  }, [router.events])
 
+  
   return (
     <>
       <Head>

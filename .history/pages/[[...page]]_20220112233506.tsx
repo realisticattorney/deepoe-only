@@ -73,17 +73,14 @@ export default function Page({
   }
 
   useEffect(() => {
-    import('react-facebook-pixel')
-      .then((x) => x.default)
-      .then((ReactPixel) => {
-        ReactPixel.init(FB_PIXEL); // facebookPixelId
-        ReactPixel.pageView();
-
-        router.events.on('routeChangeComplete', () => {
-          ReactPixel.pageView();
-        });
-      });
-  }, [router.events]);
+    (async () => {
+      const { default: ReactPixel } = await import('react-facebook-pixel');
+      ReactPixel.init(FB_PIXEL
+    });
+      ReactPixel.pageView();
+      ReactPixel.track('ViewContent');
+    })();
+  }, []);
 
   return (
     <>

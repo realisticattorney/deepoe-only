@@ -75,7 +75,7 @@ export default function Page({
   useEffect(() => {
     (async () => {
       const { default: ReactPixel } = await import('react-facebook-pixel');
-      ReactPixel.init(FB_PIXEL, undefined, {
+      ReactPixel.init(FB_PIXEL, null, {
         autoConfig: true,
         debug: true,
       });

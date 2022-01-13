@@ -18,8 +18,6 @@ const styles = {
   },
 };
 
-const FB_PIXEL = '334061461828502';
-
 export async function getStaticProps({
   params,
 }: GetStaticPropsContext<{ page: string[] }>) {
@@ -72,17 +70,17 @@ export default function Page({
     );
   }
 
-  useEffect(() => {
-    (async () => {
-      const { default: ReactPixel } = await import('react-facebook-pixel');
-      ReactPixel.init(FB_PIXEL, undefined, {
-        autoConfig: true,
-        debug: true,
-      });
-      ReactPixel.pageView();
-      ReactPixel.track('ViewContent');
-    })();
-  }, []);
+  // useEffect(() => {
+  //   (async () => {
+  //     const { default: ReactPixel } = await import('react-facebook-pixel');
+  //     ReactPixel.init(FB_PIXEL, null, {
+  //       autoConfig: true,
+  //       debug: true,
+  //     });
+  //     ReactPixel.pageView();
+  //     ReactPixel.track('ViewContent');
+  //   })();
+  // }, []);
 
   return (
     <>

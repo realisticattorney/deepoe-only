@@ -128,8 +128,7 @@ pintrk('page');
             src="https://ct.pinterest.com/v3/?event=init&tid=2614361493940&pd[em]=<hashed_email_address>&noscript=1"
           />
         </noscript>
-        <Script>
-          {`
+        <script>{`
 window['_fs_debug'] = false;
 window['_fs_host'] = 'fullstory.com';
 window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
@@ -152,8 +151,9 @@ window['_fs_namespace'] = 'FS';
     if(m[y])m[y]=function(){return g._w[y].apply(this,arguments)};
     g._v="1.3.0";
 })(window,document,window['_fs_namespace'],'script','user');
-`}
-        </Script>
+'}
+</script>
+        
       </Head>
 
       <BuilderComponent model="page" content={page} />

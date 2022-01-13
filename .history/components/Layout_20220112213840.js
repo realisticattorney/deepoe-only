@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Head from 'next/head';
 import Script from 'next/script';
+import <noScript></noScript>
 import { useRouter } from 'next/router';
 
 const Layout = ({ children }) => {
@@ -20,7 +21,7 @@ const Layout = ({ children }) => {
         {children}
       </main>
       <footer className=" text-white  text-sm font-extralight font-mono  p-5 bg-deepoe-chocolate">
-        <div className="grid col-span-3 grid-cols-3 grid-rows-2 h-72 lg:max-w-4xl md:mx-auto md:max-w-2xl md:grid-cols-6 md:grid-rows-1 md:h-40">
+        <div className="grid col-span-3 grid-cols-3 grid-rows-2 h-60 lg:max-w-4xl md:mx-auto md:max-w-2xl md:grid-cols-6 md:grid-rows-1 md:h-40">
           <div className="inline-flex col-span-1 row-span-1 ">
             <ul className="flex-col space-y-1.7 ">
               <li>
@@ -34,7 +35,7 @@ const Layout = ({ children }) => {
               </li>
               <li>
                 <a
-                  href="www.pinterest.com/shopdeepoe"
+                  href="https://www.pinterest.com/shopdeepoe"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -52,7 +53,7 @@ const Layout = ({ children }) => {
               </li>
               <li>
                 <a
-                  href="www.tiktok.com/@shopdeepoe"
+                  href="https://tiktok.com/@shopdeepoe"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -61,7 +62,7 @@ const Layout = ({ children }) => {
               </li>
               <li>
                 <a
-                  href="https://twitter.com/shopdeepoe"
+                  href="https://www.twitter.com/shopdeepoe"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -95,8 +96,8 @@ const Layout = ({ children }) => {
               </li>
 
               <li>
-                <Link href="/policies">
-                  <a>Policies</a>
+                <Link href="/shipping">
+                  <a>Shipping</a>
                 </Link>
               </li>
 
@@ -140,7 +141,7 @@ const Layout = ({ children }) => {
             </div>
           </div>
 
-          <div className="self-end -ml-2 md:-ml-4">
+          <div className="self-end -ml-3.5 md:-ml-4">
             <ul className="text-xs flex-col">
               <li className="text-deepoe-cream font-thin text-opacity-70 -mb-1.5">
                 designed & developed by

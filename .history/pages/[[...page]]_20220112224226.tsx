@@ -62,26 +62,22 @@ export default function Page({
     );
   }
 
-  // useEffect(() => {
-  //   (async () => {
-  //     const { default: ReactPixel } = await import('react-facebook-pixel');
-  //     ReactPixel.init(FB_PIXEL, null, {
-  //       autoConfig: true,
-  //       debug: true,
-  //     });
-  //     ReactPixel.pageView();
-  //     ReactPixel.track('ViewContent');
-  //   })();
-  // }, []);
+  useEffect(() => {
+    (async () => {
+    const { default: ReactPixel } = await import('react-facebook-pixel');
+    ReactPixel.init(FB_PIXEL, null, {
+        autoConfig: true,
+        debug: true,
+      });
+    ReactPixel.pageView();
+    ReactPixel.track("ViewContent")
+},[]);
 
   return (
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-          name="facebook-domain-verification"
-          content="ot1ezg22hof7z8194qomrznl0jhwoe"
-        />
+        
       </Head>
 
       <BuilderComponent model="page" content={page} />

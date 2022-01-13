@@ -5,7 +5,6 @@ import DefaultErrorPage from 'next/error';
 import Head from 'next/head';
 import '../components/FaqSection';
 import '../components/FaqQuestion';
-import { useEffect } from 'react';
 
 const BUILDER_API_KEY = '9886b56a779b4bbfa9835e6e7938f1e6';
 builder.init(BUILDER_API_KEY);
@@ -62,26 +61,21 @@ export default function Page({
     );
   }
 
-  // useEffect(() => {
-  //   (async () => {
-  //     const { default: ReactPixel } = await import('react-facebook-pixel');
-  //     ReactPixel.init(FB_PIXEL, null, {
-  //       autoConfig: true,
-  //       debug: true,
-  //     });
-  //     ReactPixel.pageView();
-  //     ReactPixel.track('ViewContent');
-  //   })();
-  // }, []);
+  useEffect(async () => {
+    const { default: ReactPixel } = await import('react-facebook-pixel');
+    ReactPixel.init(FB_PIXEL, null, {
+        autoConfig: true,
+        debug: true,
+      });
+    ReactPixel.pageView();
+    ReactPixel.track("ViewContent")
+});
 
   return (
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-          name="facebook-domain-verification"
-          content="ot1ezg22hof7z8194qomrznl0jhwoe"
-        />
+        
       </Head>
 
       <BuilderComponent model="page" content={page} />

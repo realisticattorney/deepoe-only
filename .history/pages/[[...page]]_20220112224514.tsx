@@ -78,10 +78,6 @@ export default function Page({
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-          name="facebook-domain-verification"
-          content="ot1ezg22hof7z8194qomrznl0jhwoe"
-        />
       </Head>
 
       <BuilderComponent model="page" content={page} />

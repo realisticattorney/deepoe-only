@@ -11,13 +11,6 @@ import Script from 'next/script';
 const BUILDER_API_KEY = '9886b56a779b4bbfa9835e6e7938f1e6';
 builder.init(BUILDER_API_KEY);
 
-/** @type {{search: React.CSSProperties}} */
-const styles = {
-  pinterest: {
-    display: 'none',
-  },
-};
-
 export async function getStaticProps({
   params,
 }: GetStaticPropsContext<{ page: string[] }>) {
@@ -90,44 +83,20 @@ export default function Page({
           name="facebook-domain-verification"
           content="ot1ezg22hof7z8194qomrznl0jhwoe"
         />
-        <meta
-          name="google-site-verification"
-          content="0F31tahZUvZJcqhtJJ59K15BctCPq6-MDVyEiWu53ok"
-        />
-        <Script
+        <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-37WPFMF2V3"
-        ></Script>
+        ></script>
         <Script>
+          {' '}
           {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-37WPFMF2V3');
   `}
         </Script>
-        <Script>
-          {`
-!function(e){if(!window.pintrk){window.pintrk = function () {
-window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var
-  n=window.pintrk;n.queue=[],n.version="3.0";var
-  t=document.createElement("script");t.async=!0,t.src=e;var
-  r=document.getElementsByTagName("script")[0];
-  r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
-pintrk('load', '2614361493940', {em: '<user_email_address>'});
-pintrk('page');
-`}
-        </Script>
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={styles.pinterest}
-            alt=""
-            src="https://ct.pinterest.com/v3/?event=init&tid=2614361493940&pd[em]=<hashed_email_address>&noscript=1"
-          />
-        </noscript>
       </Head>
 
       <BuilderComponent model="page" content={page} />

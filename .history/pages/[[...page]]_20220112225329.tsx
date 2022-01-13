@@ -13,10 +13,10 @@ builder.init(BUILDER_API_KEY);
 
 /** @type {{search: React.CSSProperties}} */
 const styles = {
-  pinterest: {
-    display: 'none',
-  },
-};
+  search: {
+      display: "none",
+  }
+}
 
 export async function getStaticProps({
   params,

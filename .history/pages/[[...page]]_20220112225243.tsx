@@ -12,11 +12,11 @@ const BUILDER_API_KEY = '9886b56a779b4bbfa9835e6e7938f1e6';
 builder.init(BUILDER_API_KEY);
 
 /** @type {{search: React.CSSProperties}} */
-const styles = {
-  pinterest: {
-    display: 'none',
-  },
-};
+const style = {
+  search: {
+      display: "none",
+  }
+}
 
 export async function getStaticProps({
   params,
@@ -123,7 +123,7 @@ pintrk('page');
           <img
             height="1"
             width="1"
-            style={styles.pinterest}
+            style="display:none;"
             alt=""
             src="https://ct.pinterest.com/v3/?event=init&tid=2614361493940&pd[em]=<hashed_email_address>&noscript=1"
           />

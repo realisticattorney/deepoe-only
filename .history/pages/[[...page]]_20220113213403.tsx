@@ -22,6 +22,7 @@ const styles = {
 };
 
 const FB_PIXEL = '334061461828502';
+const AMPLITUDE_KEY = '334061461828502';
 
 export async function getStaticProps({
   params,

@@ -15,10 +15,10 @@ const Layout = ({ children }) => {
         type="text/javascript"
         src="//staticw2.yotpo.com/SpF8vLr2RDGVGtgQstgtn3wGbb1k5PpFKS4GRrhD/widget.js"
       ></Script>
-      <Script
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
+       <Script
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
             n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -30,12 +30,12 @@ const Layout = ({ children }) => {
             fbq('init', '334061461828502');
             fbq('track', 'PageView');
           `,
-        }}
-      />
-      <Script
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
+          }}
+        />
+        <Script
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
             window['_fs_debug'] = false;
             window['_fs_host'] = 'fullstory.com';
             window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
@@ -59,12 +59,12 @@ const Layout = ({ children }) => {
                 g._v="1.3.0";
             })(window,document,window['_fs_namespace'],'script','user');
           `,
-        }}
-      />
-      <Script
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
+          }}
+        />
+        <Script
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
             (function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script")
             ;r.type="text/javascript"
             ;r.integrity="sha384-tzcaaCH5+KXD4sGaDozev6oElQhsVfbJvdi3//c2YvbY02LrNlbpGdt3Wq4rWonS"
@@ -91,35 +91,8 @@ const Layout = ({ children }) => {
           
             amplitude.getInstance().init("460e44712bae1f4f05b86c68ca2f0f46");
           `,
-        }}
-      />
-      <Script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-37WPFMF2V3"
-      ></Script>
-      <Script>
-        {`
-!function(e){if(!window.pintrk){window.pintrk = function () {
-window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var
-  n=window.pintrk;n.queue=[],n.version="3.0";var
-  t=document.createElement("script");t.async=!0,t.src=e;var
-  r=document.getElementsByTagName("script")[0];
-  r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
-pintrk('load', '2614361493940', {em: '<user_email_address>'});
-pintrk('page');
-`}
-      </Script>
-      <Script
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-37WPFMF2V3');
-          `,
-        }}
-      />
+          }}
+        />
       <Nav />
       <main className="h-full flex-grow overflow-scroll lg:max-w-screen-lg  lg:overflow-y-auto lg:mx-auto xxl:max-w-screen-xxl">
         {children}

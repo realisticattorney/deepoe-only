@@ -22,7 +22,6 @@ const styles = {
 };
 
 const FB_PIXEL = '334061461828502';
-const AMPLITUDE_KEY = '334061461828502';
 
 export async function getStaticProps({
   params,
@@ -191,7 +190,7 @@ export default function Page({
             ;if(!Object.prototype.hasOwnProperty.call(r._iq,e)){r._iq[e]={_q:[]};v(r._iq[e])
             }return r._iq[e]};e.amplitude=r})(window,document);
             
-            amplitude.getInstance().init(${AMPLITUDE_KEY});
+            amplitude.getInstance().init("API_KEY");
           `,
           }}
         />

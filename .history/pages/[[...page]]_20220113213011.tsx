@@ -22,7 +22,6 @@ const styles = {
 };
 
 const FB_PIXEL = '334061461828502';
-const AMPLITUDE_KEY = '334061461828502';
 
 export async function getStaticProps({
   params,
@@ -167,6 +166,7 @@ export default function Page({
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
+            <script type="text/javascript">
             (function(e,t){var r=e.amplitude||{_q:[],_iq:{}};var n=t.createElement("script")
             ;n.type="text/javascript"
             ;n.integrity="sha384-4rr7CTymHc64YjTTL6O3ktfsHYI1yJnQdmKv4zFoe+frjXb05MfzzuLLIAgJ/XHs"
@@ -191,7 +191,8 @@ export default function Page({
             ;if(!Object.prototype.hasOwnProperty.call(r._iq,e)){r._iq[e]={_q:[]};v(r._iq[e])
             }return r._iq[e]};e.amplitude=r})(window,document);
             
-            amplitude.getInstance().init(${AMPLITUDE_KEY});
+            amplitude.getInstance().init("API_KEY");
+            
           `,
           }}
         />

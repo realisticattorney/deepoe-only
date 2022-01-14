@@ -204,9 +204,9 @@ pintrk('page');
           />
         </Head>
         <Script
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
             n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -218,12 +218,12 @@ pintrk('page');
             fbq('init', '334061461828502');
             fbq('track', 'PageView');
           `,
-          }}
-        />
-        <Script
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
+            }}
+          />
+          <Script
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
             window['_fs_debug'] = false;
             window['_fs_host'] = 'fullstory.com';
             window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
@@ -247,12 +247,12 @@ pintrk('page');
                 g._v="1.3.0";
             })(window,document,window['_fs_namespace'],'script','user');
           `,
-          }}
-        />
-        <Script
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
+            }}
+          />
+          <Script
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
             (function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script")
             ;r.type="text/javascript"
             ;r.integrity="sha384-tzcaaCH5+KXD4sGaDozev6oElQhsVfbJvdi3//c2YvbY02LrNlbpGdt3Wq4rWonS"
@@ -279,26 +279,26 @@ pintrk('page');
           
             amplitude.getInstance().init("460e44712bae1f4f05b86c68ca2f0f46");
           `,
-          }}
-        />
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-37WPFMF2V3"
-        ></Script>
+            }}
+          />
+               <Script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-37WPFMF2V3"
+          ></Script>
 
-        <Script
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
+          <Script
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-37WPFMF2V3');
           `,
-          }}
-        />
-        <Script>
-          {`
+            }}
+          />
+          <Script>
+            {`
 !function(e){if(!window.pintrk){window.pintrk = function () {
 window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var
   n=window.pintrk;n.queue=[],n.version="3.0";var
@@ -308,7 +308,7 @@ window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var
 pintrk('load', '2614361493940', {em: '<user_email_address>'});
 pintrk('page');
 `}
-        </Script>
+          </Script>
         <DefaultErrorPage statusCode={404} />
       </>
     );
@@ -466,9 +466,9 @@ pintrk('page');
         </noscript>
       </Head>
       <Script
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
             n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -480,12 +480,12 @@ pintrk('page');
             fbq('init', '334061461828502');
             fbq('track', 'PageView');
           `,
-        }}
-      />
-      <Script
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
+            }}
+          />
+          <Script
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
             window['_fs_debug'] = false;
             window['_fs_host'] = 'fullstory.com';
             window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
@@ -509,12 +509,12 @@ pintrk('page');
                 g._v="1.3.0";
             })(window,document,window['_fs_namespace'],'script','user');
           `,
-        }}
-      />
-      <Script
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
+            }}
+          />
+          <Script
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
             (function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script")
             ;r.type="text/javascript"
             ;r.integrity="sha384-tzcaaCH5+KXD4sGaDozev6oElQhsVfbJvdi3//c2YvbY02LrNlbpGdt3Wq4rWonS"
@@ -541,26 +541,26 @@ pintrk('page');
           
             amplitude.getInstance().init("460e44712bae1f4f05b86c68ca2f0f46");
           `,
-        }}
-      />
-      <Script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-37WPFMF2V3"
-      ></Script>
+            }}
+          />
+               <Script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-37WPFMF2V3"
+          ></Script>
 
-      <Script
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
+          <Script
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-37WPFMF2V3');
           `,
-        }}
-      />
-      <Script>
-        {`
+            }}
+          />
+          <Script>
+            {`
 !function(e){if(!window.pintrk){window.pintrk = function () {
 window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var
   n=window.pintrk;n.queue=[],n.version="3.0";var
@@ -570,12 +570,7 @@ window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var
 pintrk('load', '2614361493940', {em: '<user_email_address>'});
 pintrk('page');
 `}
-      </Script>
-      <Script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-37WPFMF2V3"
-      ></Script>
-
+          </Script>
       <BuilderComponent model="page" content={page} />
     </>
   );

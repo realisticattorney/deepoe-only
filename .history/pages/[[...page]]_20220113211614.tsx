@@ -16,9 +16,6 @@ const styles = {
   pinterest: {
     display: 'none',
   },
-  facebook: {
-    display: 'none',
-  },
 };
 
 const FB_PIXEL = '334061461828502';
@@ -114,7 +111,7 @@ export default function Page({
   `}
         </Script>
         <Script>
-          {`
+        <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -125,17 +122,12 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '334061461828502');
 fbq('track', 'PageView');
-`}
-        </Script>
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={styles.facebook}
-            src="https://www.facebook.com/tr?id=334061461828502&ev=PageView&noscript=1"
-          />
-        </noscript>
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=334061461828502&ev=PageView&noscript=1"
+/></noscript>
 
+        </Script>
         <Script>
           {`
 !function(e){if(!window.pintrk){window.pintrk = function () {

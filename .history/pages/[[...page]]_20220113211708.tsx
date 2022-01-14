@@ -16,9 +16,6 @@ const styles = {
   pinterest: {
     display: 'none',
   },
-  facebook: {
-    display: 'none',
-  },
 };
 
 const FB_PIXEL = '334061461828502';

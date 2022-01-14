@@ -16,7 +16,7 @@ const styles = {
   pinterest: {
     display: 'none',
   },
-  facebook: {
+  pinterest: {
     display: 'none',
   },
 };

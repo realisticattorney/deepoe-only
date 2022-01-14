@@ -16,9 +16,6 @@ const styles = {
   pinterest: {
     display: 'none',
   },
-  facebook: {
-    display: 'none',
-  },
 };
 
 const FB_PIXEL = '334061461828502';
@@ -131,7 +128,7 @@ fbq('track', 'PageView');
           <img
             height="1"
             width="1"
-            style={styles.facebook}
+            style={styles.pinterest}
             src="https://www.facebook.com/tr?id=334061461828502&ev=PageView&noscript=1"
           />
         </noscript>

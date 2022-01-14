@@ -16,12 +16,9 @@ const styles = {
   pinterest: {
     display: 'none',
   },
-  facebook: {
-    display: 'none',
-  },
 };
 
-const FB_PIXEL = '334061461828502';
+const FB_PIXEL = '33406146182';
 
 export async function getStaticProps({
   params,
@@ -75,18 +72,18 @@ export default function Page({
     );
   }
 
-  // useEffect(() => {
-  //   import('react-facebook-pixel')
-  //     .then((x) => x.default)
-  //     .then((ReactPixel) => {
-  //       ReactPixel.init(FB_PIXEL); // facebookPixelId
-  //       ReactPixel.pageView();
+  useEffect(() => {
+    import('react-facebook-pixel')
+      .then((x) => x.default)
+      .then((ReactPixel) => {
+        ReactPixel.init(FB_PIXEL); // facebookPixelId
+        ReactPixel.pageView();
 
-  //       router.events.on('routeChangeComplete', () => {
-  //         ReactPixel.pageView();
-  //       });
-  //     });
-  // }, [router.events]);
+        router.events.on('routeChangeComplete', () => {
+          ReactPixel.pageView();
+        });
+      });
+  }, [router.events]);
 
   return (
     <>
@@ -113,29 +110,6 @@ export default function Page({
   gtag('config', 'G-37WPFMF2V3');
   `}
         </Script>
-        <Script>
-          {`
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '334061461828502');
-fbq('track', 'PageView');
-`}
-        </Script>
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={styles.facebook}
-            src="https://www.facebook.com/tr?id=334061461828502&ev=PageView&noscript=1"
-          />
-        </noscript>
-
         <Script>
           {`
 !function(e){if(!window.pintrk){window.pintrk = function () {

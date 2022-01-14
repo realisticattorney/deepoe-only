@@ -139,6 +139,7 @@ const Banner = ({ product, selectedVariant }) => {
             ))}
           </Carousel>
         </div>
+    
       </div>
     );
   }

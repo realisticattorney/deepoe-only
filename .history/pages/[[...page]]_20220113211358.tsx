@@ -18,7 +18,7 @@ const styles = {
   },
 };
 
-const FB_PIXEL = '334061461828502';
+const FB_PIXEL = '33406';
 
 export async function getStaticProps({
   params,

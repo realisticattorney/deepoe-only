@@ -100,18 +100,17 @@ export default function Page({
           name="google-site-verification"
           content="0F31tahZUvZJcqhtJJ59K15BctCPq6-MDVyEiWu53ok"
         />
-        <script
+        <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-37WPFMF2V3"
-        ></script>
+        ></Script>
         <Script>
           {`
-       window.dataLayer = window.dataLayer || [];
-       function gtag(){dataLayer.push(arguments);}
-       gtag('js', new Date());
-     
-       gtag('config', 'G-37WPFMF2V3');
-     
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-37WPFMF2V3');
   `}
         </Script>
         <Script>
@@ -182,7 +181,6 @@ window['_fs_namespace'] = 'FS';
     if(m[y])m[y]=function(){return g._w[y].apply(this,arguments)};
     g._v="1.3.0";
 })(window,document,window['_fs_namespace'],'script','user');
-
 `}
         </Script>
       </Head>

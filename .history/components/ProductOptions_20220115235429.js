@@ -39,49 +39,8 @@ const ProductOptions = ({
                   ${name === 'Size' ? null : '-mt-2'}`}
                 >
                   <div
-                    className={`p-3.5  text-lg rounded-full block cursor-pointer`}
-                    {...(value == variantsHexArray2[0]?.variantColor
-                      ? {
-                          style: {
-                            backgroundColor: `#${variantsHexArray2[0]?.hex}`,
-                          },
-                        }
-                      : null)}
-                    {...(value == variantsHexArray2[1]?.variantColor
-                      ? {
-                          style: {
-                            backgroundColor: `#${variantsHexArray2[1]?.hex}`,
-                          },
-                        }
-                      : null)}
-                    {...(value == variantsHexArray2[3]?.variantColor
-                      ? {
-                          style: {
-                            backgroundColor: `#${variantsHexArray2[3]?.hex}`,
-                          },
-                        }
-                      : null)}
-                    {...(value == variantsHexArray2[4]?.variantColor
-                      ? {
-                          style: {
-                            backgroundColor: `#${variantsHexArray2[4]?.hex}`,
-                          },
-                        }
-                      : null)}
-                    {...(value == variantsHexArray2[5]?.variantColor
-                      ? {
-                          style: {
-                            backgroundColor: `#${variantsHexArray2[5]?.hex}`,
-                          },
-                        }
-                      : null)}
-                    {...(value == variantsHexArray2[6]?.variantColor
-                      ? {
-                          style: {
-                            backgroundColor: `#${variantsHexArray2[6]?.hex}`,
-                          },
-                        }
-                      : null)}
+                    className={`p-3.5  text-lg rounded-full block cursor-pointer
+                  `}
                   ></div>
                 </div>
               ) : null}

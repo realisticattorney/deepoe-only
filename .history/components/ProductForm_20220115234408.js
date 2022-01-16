@@ -112,21 +112,13 @@ const ProductForm = ({ product, collection }) => {
 
   let itemsSpecs;
   const { description } = product;
-  let [variantsHex, restOfShipping] = description.split('$$$$');
+  let[variantsHex, restOfShipping] = description.split('$$$$');
   let [shipping, restOfDescription] = restOfShipping.split('%%%');
   let [intro, details] = restOfDescription.split('^^^DETAILS');
   [details, itemsSpecs] = details.split('^^^ITEM SPECIFICATIONS');
   const itemsSpecs2 = itemsSpecs.split('**');
 
-  const variantsHexArray = variantsHex.split('$$');
-  const variantsHexArray2 = variantsHexArray.map((variant) => {
-    let [variantColor, hex] = variant.split('#');
-    return {
-      variantColor,
-      hex,
-    };
-  });
-  console.log('varianteHexArray', variantsHexArray2);
+  const variantsHexArray = variantsHex.
 
   const { addToCart } = useContext(CartContext);
 
@@ -245,7 +237,6 @@ const ProductForm = ({ product, collection }) => {
               key={`key-${name}`}
               name={name}
               values={values}
-              variantsHexArray2={variantsHexArray2}
               selectedOptions={selectedOptions}
               setOptions={setOptions} //just passing the function to the ProductOptions component to be called when the user changes the selected option
             />

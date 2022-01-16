@@ -13,7 +13,6 @@ import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import RemoveIcon from '@mui/icons-material/Remove';
 import AddIcon from '@mui/icons-material/Add';
-
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} {...props} />
 ))(({ theme }) => ({
@@ -112,21 +111,10 @@ const ProductForm = ({ product, collection }) => {
 
   let itemsSpecs;
   const { description } = product;
-  let [variantsHex, restOfShipping] = description.split('$$$$');
-  let [shipping, restOfDescription] = restOfShipping.split('%%%');
+  let [shipping, restOfDescription] = description.split('%%%');
   let [intro, details] = restOfDescription.split('^^^DETAILS');
   [details, itemsSpecs] = details.split('^^^ITEM SPECIFICATIONS');
   const itemsSpecs2 = itemsSpecs.split('**');
-
-  const variantsHexArray = variantsHex.split('$$');
-  const variantsHexArray2 = variantsHexArray.map((variant) => {
-    let [variantColor, hex] = variant.split('#');
-    return {
-      variantColor,
-      hex,
-    };
-  });
-  console.log('varianteHexArray', variantsHexArray2);
 
   const { addToCart } = useContext(CartContext);
 
@@ -245,7 +233,6 @@ const ProductForm = ({ product, collection }) => {
               key={`key-${name}`}
               name={name}
               values={values}
-              variantsHexArray2={variantsHexArray2}
               selectedOptions={selectedOptions}
               setOptions={setOptions} //just passing the function to the ProductOptions component to be called when the user changes the selected option
             />

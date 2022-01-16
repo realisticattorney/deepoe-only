@@ -77,14 +77,6 @@ export default function Page({
             name="google-site-verification"
             content="0F31tahZUvZJcqhtJJ59K15BctCPq6-MDVyEiWu53ok"
           />
-            <noscript>
-              <img
-                height="1"
-                width="1"
-                style={styles.facebook}
-                src="https://www.facebook.com/tr?id=334061461828502&ev=PageView&noscript=1"
-              />
-            </noscript>
           <Script
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-37WPFMF2V3"
@@ -102,6 +94,14 @@ export default function Page({
             }}
           />
 
+          <noscript>
+            <img
+              height="1"
+              width="1"
+              style={styles.facebook}
+              src="https://www.facebook.com/tr?id=334061461828502&ev=PageView&noscript=1"
+            />
+          </noscript>
 
           <Script>
             {`

@@ -20,7 +20,7 @@ const Banner = ({ product, selectedVariant }) => {
     width: undefined,
     height: undefined,
   });
-  console.log("alala",imageSrc)
+  console.log("",ima)
   //change carousel index to 0
   const [index, setIndex] = useState(0);
   useEffect(() => {

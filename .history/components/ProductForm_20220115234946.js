@@ -128,6 +128,8 @@ const ProductForm = ({ product, collection }) => {
   });
   console.log('varianteHexArray', variantsHexArray2);
 
+  console.log('varianteHexArray', variantsHexArray);
+
   const { addToCart } = useContext(CartContext);
 
   const allVariantOptions = product.variants.edges?.map((variant) => {
@@ -245,7 +247,6 @@ const ProductForm = ({ product, collection }) => {
               key={`key-${name}`}
               name={name}
               values={values}
-              variantsHexArray2={variantsHexArray2}
               selectedOptions={selectedOptions}
               setOptions={setOptions} //just passing the function to the ProductOptions component to be called when the user changes the selected option
             />

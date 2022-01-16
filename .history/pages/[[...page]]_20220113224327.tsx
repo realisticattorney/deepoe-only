@@ -77,14 +77,6 @@ export default function Page({
             name="google-site-verification"
             content="0F31tahZUvZJcqhtJJ59K15BctCPq6-MDVyEiWu53ok"
           />
-            <noscript>
-              <img
-                height="1"
-                width="1"
-                style={styles.facebook}
-                src="https://www.facebook.com/tr?id=334061461828502&ev=PageView&noscript=1"
-              />
-            </noscript>
           <Script
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-37WPFMF2V3"
@@ -102,6 +94,14 @@ export default function Page({
             }}
           />
 
+          <noscript>
+            <img
+              height="1"
+              width="1"
+              style={styles.facebook}
+              src="https://www.facebook.com/tr?id=334061461828502&ev=PageView&noscript=1"
+            />
+          </noscript>
 
           <Script>
             {`
@@ -330,17 +330,7 @@ pintrk('page');
   return (
     <>
       <Head>
-  
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-          name="facebook-domain-verification"
-          content="ot1ezg22hof7z8194qomrznl0jhwoe"
-        />
-        <meta
-          name="google-site-verification"
-          content="0F31tahZUvZJcqhtJJ59K15BctCPq6-MDVyEiWu53ok"
-        />
-              <Script
+        <Script
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
@@ -418,6 +408,15 @@ pintrk('page');
           `,
           }}
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="facebook-domain-verification"
+          content="ot1ezg22hof7z8194qomrznl0jhwoe"
+        />
+        <meta
+          name="google-site-verification"
+          content="0F31tahZUvZJcqhtJJ59K15BctCPq6-MDVyEiWu53ok"
+        />
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-37WPFMF2V3"
@@ -434,7 +433,17 @@ pintrk('page');
           `,
           }}
         />
-   <Script>
+
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={styles.facebook}
+            src="https://www.facebook.com/tr?id=334061461828502&ev=PageView&noscript=1"
+          />
+        </noscript>
+
+        <Script>
           {`
 !function(e){if(!window.pintrk){window.pintrk = function () {
 window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var
@@ -446,16 +455,6 @@ pintrk('load', '2614361493940', {em: '<user_email_address>'});
 pintrk('page');
 `}
         </Script>
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={styles.facebook}
-            src="https://www.facebook.com/tr?id=334061461828502&ev=PageView&noscript=1"
-          />
-        </noscript>
-
-     
         <noscript>
           <img
             height="1"
@@ -572,7 +571,10 @@ pintrk('load', '2614361493940', {em: '<user_email_address>'});
 pintrk('page');
 `}
       </Script>
-  
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-37WPFMF2V3"
+      ></Script>
 
       <BuilderComponent model="page" content={page} />
     </>

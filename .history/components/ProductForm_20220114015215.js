@@ -13,7 +13,6 @@ import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import RemoveIcon from '@mui/icons-material/Remove';
 import AddIcon from '@mui/icons-material/Add';
-
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} {...props} />
 ))(({ theme }) => ({
@@ -112,21 +111,10 @@ const ProductForm = ({ product, collection }) => {
 
   let itemsSpecs;
   const { description } = product;
-  let [variantsHex, restOfShipping] = description.split('$$$$');
-  let [shipping, restOfDescription] = restOfShipping.split('%%%');
+  let [shipping, restOfDescription] = description.split('%%%');
   let [intro, details] = restOfDescription.split('^^^DETAILS');
   [details, itemsSpecs] = details.split('^^^ITEM SPECIFICATIONS');
   const itemsSpecs2 = itemsSpecs.split('**');
-
-  const variantsHexArray = variantsHex.split('$$');
-  const variantsHexArray2 = variantsHexArray.map((variant) => {
-    let [variantColor, hex] = variant.split('#');
-    return {
-      variantColor,
-      hex,
-    };
-  });
-  console.log('varianteHexArray', variantsHexArray2);
 
   const { addToCart } = useContext(CartContext);
 
@@ -156,7 +144,7 @@ const ProductForm = ({ product, collection }) => {
   const atobId = atobURL.split('Product/')[1];
   console.log('atobURL', atobURL);
   console.log('atobId', atobId);
-  console.log('allVariantOptions', allVariantOptions);
+  all
 
   // console.log(allVariantOptions);
   const defaultValues = {}; //saving here the default values of the form
@@ -245,7 +233,6 @@ const ProductForm = ({ product, collection }) => {
               key={`key-${name}`}
               name={name}
               values={values}
-              variantsHexArray2={variantsHexArray2}
               selectedOptions={selectedOptions}
               setOptions={setOptions} //just passing the function to the ProductOptions component to be called when the user changes the selected option
             />
@@ -282,6 +269,43 @@ const ProductForm = ({ product, collection }) => {
           <p>{intro}</p>
         </div>
         <div className="flex flex-col w-full border-t border-deepoe-chocolate lg:col-end-2 lg:col-start-2">
+          {/* <button className="group focus:outline-none">
+            <div className="flex justify-between pb-2 pt-0.5 text-lg font-extralight items-center text-left text-deepoe_default-black focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-deepoe_default-black group-focus:font-medium">
+              <span className="truncate font-mono font-extralight text-lg2">
+                Details
+              </span>
+
+              <PlusIcon className="text-gray-900 h-4 w-4 group-focus:hidden" />
+
+              <MinusIcon className="text-gray-900 h-4 w-4 hidden group-focus:flex" />
+            </div>
+            <div className="max-h-0 overflow-hidden duration-300  text-sm  group-focus:py-2 font-mono  group-focus:max-h-72  text-left font-extralight  border-b border-deepoe_default-black">
+              <p className="mb-1">{details}</p>
+            </div>
+          </button>
+          <button className="group focus:outline-none">
+            <div className="flex justify-between py-2 text-lg font-extralight text-left items-center text-deepoe_default-black focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75  border-deepoe_default-black group-focus:font-medium">
+              <span className="truncate font-mono font-extralight text-lg2">
+                Item Specifications
+              </span>
+              <p className="font-mono font-thin text-3xl group-focus:hidden">
+                +
+              </p>
+
+              <p className="font-mono font-thin text-3xl  -mt-5  hidden group-focus:flex">
+                _
+              </p>
+            </div>
+            <div className="max-h-0 overflow-hidden duration-300 text-sm  group-focus:pb-2 font-mono group-focus:max-h-56  text-left font-extralight border-b border-deepoe_default-black">
+              <ul className="list-disc list-outside font-mono font-extralight ">
+                {itemsSpecs2.map((item, index) => (
+                  <li key={index} className="">
+                    <span className="px-1 text-base font-black">•</span> {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </button> */}
           <Accordion className="p-0 m-0 shadow-none    border-b border-deepoe_default-black ">
             <AccordionSummary
               aria-controls="panel1a-content"

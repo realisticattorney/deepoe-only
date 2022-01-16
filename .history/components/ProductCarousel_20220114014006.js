@@ -15,12 +15,12 @@ const Banner = ({ product, selectedVariant }) => {
     .map((node) => node.node.originalSrc);
 
   imageSrc.push(...imageColorSrc);
-  
+  console.log('IMAGESRC', imageSrc);
   const [windowSize, setWindowSize] = useState({
     width: undefined,
     height: undefined,
   });
-  console.log("alala",imageSrc)
+
   //change carousel index to 0
   const [index, setIndex] = useState(0);
   useEffect(() => {

@@ -57,23 +57,11 @@ const ProductPageContent = ({ collection, product }) => {
         className={`flex flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 lg:w-full lg:px-6 lg:max-w-xxl px-2 mx-auto lg:col-span-2 `}
       >
         <div className="w-full max-w-md  overflow-hidden"></div>
-        <ProductForm product={product} collection={collection} disable={disable} setDisable={setDisable} />
+        <ProductForm product={product} collection={collection} />
       </div>
       <div className={`${disable ? 'my-10' : ''}`}></div>
       <div className="flex flex-col w-full lg:col-span-2 font-mono">
-        <div className="px-6 my-6 mt-5 lg:mt-20 lg:px-16 ">
-          <div className="w-full">
-            <div className="relative h-110 lg:h-66 xxl:h-66">
-              <Image
-                src="/peopleFood.jpg"
-                layout="fill"
-                objectFit="cover"
-                objectPosition="center"
-                quality={70}
-              />
-            </div>
-          </div>
-        </div>
+    
         <div className="font-sans italic font-medium mx-auto text-3xl mb-5 mt-1 tracking-tighter px-6 lg:text-4xl lg:mt-4 lg:mb-9">
           what we offer...
         </div>

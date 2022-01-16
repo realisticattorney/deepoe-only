@@ -77,6 +77,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 
 const ProductForm = ({ product, collection, disable, setDisable }) => {
   const stageCanvasRef = useRef(null);
+  // const [disable, setDisable] = useState(false);
   const [parentReviewState, setParentReviewState] = useState(false);
 
   const wrapperSetParentReviewState = useCallback(

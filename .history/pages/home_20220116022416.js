@@ -13,10 +13,7 @@ export default function Home({ products, carouselProducts }) {
           name="google-site-verification"
           content="0F31tahZUvZJcqhtJJ59K15BctCPq6-MDVyEiWu53ok"
         />
-        <meta
-          name="description"
-          content="Conscious, colorful, and sustainable home goods. Considered materials. Lively design."
-        />
+        <meta name=”description” content="This is where you add your meta description. Make it count." />
       </Head>
       <HomeMain products={products} carouselProducts={carouselProducts} />
     </div>

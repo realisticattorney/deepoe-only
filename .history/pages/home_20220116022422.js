@@ -15,7 +15,7 @@ export default function Home({ products, carouselProducts }) {
         />
         <meta
           name="description"
-          content="Conscious, colorful, and sustainable home goods. Considered materials. Lively design."
+          content="This is where you add your meta description. Make it count."
         />
       </Head>
       <HomeMain products={products} carouselProducts={carouselProducts} />

@@ -7,8 +7,12 @@ export default function Home({ products, carouselProducts }) {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Deepoe Home</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="google-site-verification"
+          content="0F31tahZUvZJcqhtJJ59K15BctCPq6-MDVyEiWu53ok"
+        />
       </Head>
       <HomeMain products={products} carouselProducts={carouselProducts} />
     </div>

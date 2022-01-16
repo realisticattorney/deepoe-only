@@ -2,40 +2,17 @@ import Head from 'next/head';
 import { getProductsInCollection } from '../lib/shopify';
 import Layout from '../components/Layout';
 import HomeMain from '../components/HomeMain';
-import type { InferGetStaticPropsType } from 'next';
 
-
-export interface Product {
-  node: {
-    handle: string;
-    title: string;
-    id: string;
-    images: {
-      edges: ImagesEdges[];
-    };
-    priceRange: {
-      minVariantPrice: {
-        amount: string;
-      };
-    };
-  };
-}
-export interface ImagesEdges {
-  node: {
-    originalSrc: string;
-    altText: string | null;
-  };
-}
-
-export default function Home({
-  products,
-  carouselProducts,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
+export default function Home({ products, carouselProducts }) {
   return (
     <div>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="google-site-verification"
+          content="0F31tahZUvZJcqhtJJ59K15BctCPq6-MDVyEiWu53ok"
+        />
       </Head>
       <HomeMain products={products} carouselProducts={carouselProducts} />
     </div>
@@ -45,7 +22,7 @@ export default function Home({
 export async function getStaticProps() {
   const products = await getProductsInCollection('frontpage');
 
-  let carouselProducts
+  let carouselProducts = [];
 
   products.products.edges.map((product) => {
     if (

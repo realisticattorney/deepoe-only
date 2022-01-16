@@ -10,12 +10,7 @@ const Layout = ({ children }) => {
 
   return (
     <div className="flex flex-col min-h-screen bg-deepoe-cream  ">
-      <Head>
-        <meta
-          name="google-site-verification"
-          content="0F31tahZUvZJcqhtJJ59K15BctCPq6-MDVyEiWu53ok"
-        />
-      </Head>
+    Head
       <Script
         async
         type="text/javascript"

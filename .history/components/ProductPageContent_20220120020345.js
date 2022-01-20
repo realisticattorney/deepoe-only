@@ -52,11 +52,7 @@ const ProductPageContent = ({ collection, product }) => {
         >
           <p className="text-left pl-3 text-lg font-extralight font-mono lg:mb-8 lg:mt-2">
             {'<'} back to{' '}
-            {collection === 'frontpage'
-              ? 'all products'
-              : collection
-              ? collection
-              : 'all products'}
+            {collection === 'frontpage' ? 'all products' : collection}
           </p>
         </a>
       </div>

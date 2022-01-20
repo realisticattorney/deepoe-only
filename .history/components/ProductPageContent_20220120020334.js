@@ -9,7 +9,7 @@ import ReviewsPopup from './ReviewsPopup';
 const ProductPageContent = ({ collection, product }) => {
   const atobURL = atob(product.id);
   const atobId = atobURL.split('Product/')[1];
-  console.log('COLLLECTIOOOON', collection);
+console.log("COLLLECTIOOOON", collection);
   const stageCanvasRef = useRef(null);
   const [disable, setDisable] = useState(false);
   const [parentReviewState, setParentReviewState] = useState(false);
@@ -43,20 +43,12 @@ const ProductPageContent = ({ collection, product }) => {
     >
       <div className="px-3.5  pb-0  z-0 lg:col-span-1">
         <a
-          href={
-            collection
-              ? `https://deepoe.com/collections/${collection}/`
-              : `https://deepoe.com/collections/frontpage/`
-          }
+          href={collection ? `https://deepoe.com/collections/${collection}/` : `https://deepoe.com/collections/frontpage`}
           rel="noreferrer"
         >
           <p className="text-left pl-3 text-lg font-extralight font-mono lg:mb-8 lg:mt-2">
             {'<'} back to{' '}
-            {collection === 'frontpage'
-              ? 'all products'
-              : collection
-              ? collection
-              : 'all products'}
+            {collection === 'frontpage' ? 'all products' : collection}
           </p>
         </a>
       </div>
@@ -65,12 +57,7 @@ const ProductPageContent = ({ collection, product }) => {
         className={`flex flex-col justify-between items-center space-y-2 max-w-6xl w-11/12 lg:w-full lg:px-6 lg:max-w-xxl px-2 mx-auto lg:col-span-2 `}
       >
         <div className="w-full max-w-md  overflow-hidden"></div>
-        <ProductForm
-          product={product}
-          collection={collection}
-          disable={disable}
-          setDisable={setDisable}
-        />
+        <ProductForm product={product} collection={collection} disable={disable} setDisable={setDisable} />
       </div>
       <div className={`${disable ? 'my-10' : ''}`}></div>
       <div className="flex flex-col w-full lg:col-span-2 font-mono">

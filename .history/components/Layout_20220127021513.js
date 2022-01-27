@@ -14,8 +14,8 @@ const Layout = ({ children }) => {
         <meta
           name="google-site-verification"
           content="0F31tahZUvZJcqhtJJ59K15BctCPq6-MDVyEiWu53ok"
+          
         />
-        <meta property="og:image" content="/images/ogg.png" />
       </Head>
       <Script
         async

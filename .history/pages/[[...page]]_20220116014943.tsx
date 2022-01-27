@@ -77,15 +77,14 @@ export default function Page({
             name="google-site-verification"
             content="0F31tahZUvZJcqhtJJ59K15BctCPq6-MDVyEiWu53ok"
           />
-          <meta property="og:image" content="/images/ogg.png" />
-          <noscript>
-            <img
-              height="1"
-              width="1"
-              style={styles.facebook}
-              src="https://www.facebook.com/tr?id=334061461828502&ev=PageView&noscript=1"
-            />
-          </noscript>
+            <noscript>
+              <img
+                height="1"
+                width="1"
+                style={styles.facebook}
+                src="https://www.facebook.com/tr?id=334061461828502&ev=PageView&noscript=1"
+              />
+            </noscript>
           <Script
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-37WPFMF2V3"
@@ -102,6 +101,7 @@ export default function Page({
           `,
             }}
           />
+
 
           <Script>
             {`
@@ -330,7 +330,7 @@ pintrk('page');
   return (
     <>
       <Head>
-        <meta property="og:image" content="/images/ogg.png" />
+  
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="facebook-domain-verification"
@@ -340,7 +340,7 @@ pintrk('page');
           name="google-site-verification"
           content="0F31tahZUvZJcqhtJJ59K15BctCPq6-MDVyEiWu53ok"
         />
-        <Script
+              <Script
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
@@ -434,7 +434,7 @@ pintrk('page');
           `,
           }}
         />
-        <Script>
+   <Script>
           {`
 !function(e){if(!window.pintrk){window.pintrk = function () {
 window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var
@@ -455,6 +455,7 @@ pintrk('page');
           />
         </noscript>
 
+     
         <noscript>
           <img
             height="1"
@@ -571,6 +572,7 @@ pintrk('load', '2614361493940', {em: '<user_email_address>'});
 pintrk('page');
 `}
       </Script>
+  
 
       <BuilderComponent model="page" content={page} />
     </>

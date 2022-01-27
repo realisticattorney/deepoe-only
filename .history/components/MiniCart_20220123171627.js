@@ -28,7 +28,7 @@ export default function MiniCart({ cart }) {
   });
 
   const [isButtonDisabled, setButtonDisabled] = useState(false);
-
+  
   return (
     <Transition.Root show={cartOpen} as={Fragment}>
       <Dialog

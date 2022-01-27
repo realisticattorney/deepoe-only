@@ -28,7 +28,7 @@ export default function MiniCart({ cart }) {
   });
 
   const [isButtonDisabled, setButtonDisabled] = useState(false);
-
+console.log('cart', cart);
   return (
     <Transition.Root show={cartOpen} as={Fragment}>
       <Dialog
@@ -193,7 +193,7 @@ export default function MiniCart({ cart }) {
                           <p>Shipping</p>
                           <p>Free</p>
                         </div>
-
+                   
                         <div className="flex justify-between font-semibold ">
                           <p>Subtotal</p>
                           <p>{formatter.format(cartTotal)}</p>
